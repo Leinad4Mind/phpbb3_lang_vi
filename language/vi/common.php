@@ -40,7 +40,7 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'TRANSLATION_INFO'   => 'Vietnamese language pack for phpBB 3.0.x <a href="http://www.phpbb.com/community/viewtopic.php?f=66&t=2101639" target="_blank">download and support</a>.',
+	'TRANSLATION_INFO'   => 'Vietnamese language pack for phpBB 3.0.x <a href="http://www.phpbb.com/customise/db/translation/vietnamese/">download and support</a>.',
 	'DIRECTION'			=> 'ltr',
 	'DATE_FORMAT'		=> '|d M Y|', // 01 Jan 2007 (with Relative days enabled)
 	'USER_LANG'			=> 'vi',
