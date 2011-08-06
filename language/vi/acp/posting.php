@@ -170,6 +170,7 @@ $lang = array_merge($lang, array(
 	'SMILIES_EDIT'				=> 'Sửa biểu tượng vui',
 	'SMILIE_NO_CODE'			=> 'Biểu tượng cảm “%s” đã bị bỏ qua, vì không có mã được nhập vào.',
 	'SMILIE_NO_EMOTION'			=> 'Biểu tượng cảm “%s” đã bị bỏ qua, vì không có thiếu dữ liệu nhập vào.',
+	'SMILIE_NO_FILE'			=> 'Biểu tượng cảm “%s” đã bị bỏ qua, vì tập tin tương ứng không tìm thấy.',
 	'SMILIES_NONE_EDITED'		=> 'Không có biểu tượng vui nào được cập nhật.',
 	'SMILIES_ONE_EDITED'		=> 'Biểu tượng vui đã được cập nhật thành công.',
 	'SMILIES_EDITED'			=> 'Những biểu tượng vui đã được cập nhật thành công.',

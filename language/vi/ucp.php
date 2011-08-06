@@ -113,12 +113,13 @@ $lang = array_merge($lang, array(
 	'BOOKMARKS_REMOVED'			=> 'Những trang yêu thích đã được gỡ bỏ thành công.',
 
 	'CANNOT_EDIT_MESSAGE_TIME'		=> 'Bạn không còn có thể sửa hay xoá tin nhắn này.',
-	'CANNOT_MOVE_TO_SAME_FOLDER'	=> 'Những tin nhắn không thể di chuyển đến thư mục đang chứa các tin nhắn này.',
+	'CANNOT_MOVE_TO_SAME_FOLDER'=> 'Những tin nhắn không thể di chuyển đến thư mục đang chứa các tin nhắn này.',
 	'CANNOT_MOVE_FROM_SPECIAL'		=> 'Những tin nhắn không thể di chuyển khỏi hộp tin chuyển đi.',
 	'CANNOT_RENAME_FOLDER'			=> 'Thư mục này không thể đổi tên được.',
 	'CANNOT_REMOVE_FOLDER'			=> 'Thư mục này không thể gỡ bỏ được.',
 	'CHANGE_DEFAULT_GROUP'			=> 'Thay đổi nhóm mặc định',
 	'CHANGE_PASSWORD'				=> 'Thay đổi mật khẩu',
+	'CLICK_GOTO_FOLDER'				=> '%1$sChuyến đến thư mục “%3$s” của bạn%2$s',
 	'CLICK_RETURN_FOLDER'			=> '%1$sQuay về thư mục “%3$s” của bạn%2$s',
 	'CONFIRMATION'					=> 'Xác nhận đăng ký',
 	'CONFIRM_CHANGES'				=> 'Xác nhận thay đổi',	
@@ -194,6 +195,7 @@ $lang = array_merge($lang, array(
 	'FIELD_INVALID_CHARS_ALPHA_ONLY'	=> 'Mục thông tin “%s” có nội dung chứa những ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ cái và chữ số.',
 	'FIELD_INVALID_CHARS_SPACERS_ONLY'	=> 'Mục thông tin “%s” có nội dung chứa những ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ cái và chữ số, khoảng trắng hay những ký tự <strong>-+_[]</strong>.',
 	'FIELD_INVALID_DATE'				=> 'Mục thông tin “%s” có nội dung chứa ngày tháng không hợp lệ.',
+	'FIELD_INVALID_VALUE'				=> 'Mục thông tin “%s” có giá trị tối không hợp lệ.',
 
 	'FOE_MESSAGE'				=> 'Tin nhắn từ kẻ thù',
 	'FOES_EXPLAIN'				=> 'Kẻ thù là những thành viên đã được bạn thiết lập mặc định không quan hệ. Các bài viết được gửi bởi những thành viên này sẽ không được hiển thị khi bạn xem. Các tin nhắn từ kẻ thù vẫn được phép gửi đến bạn. Lưu ý rằng bạn không thể chọn kẻ thù của mình là các điều hành viên hay quản trị viên trong website.',

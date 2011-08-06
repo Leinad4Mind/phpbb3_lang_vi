@@ -285,10 +285,13 @@ $lang = array_merge($lang, array(
 	'INSTALLED_TEMPLATE'		=> 'Khuôn mẫu đã cài đặt',
 	'INSTALLED_THEME'			=> 'Kiểu dáng đã cài đặt',
 
+	'KEEP_IMAGESET'				=> 'Giữ â€œ%sâ€ gói hình ảnh giao diện',
+	'KEEP_TEMPLATE'				=> 'Giữ â€œ%sâ€ khuôn mẫu',
+	'KEEP_THEME'				=> 'Giữ â€œ%sâ€ kiểu dáng',
+
 	'LINE_SPACING'				=> 'Dòng cách khoảng',
 	'LOCALISED_IMAGES'			=> 'Hình ảnh tuỳ thuộc vào gói ngôn ngữ',
 	'LOCATION_DISABLED_EXPLAIN'	=> 'Thiết lập này được kế thừa và không thay đổi được.',
-
 
 	'NO_CLASS'					=> 'Không thể tìm thấy lớp CSS trong kiểu dáng.',
 	'NO_IMAGESET'				=> 'Không thể tìm thấy gói hình ảnh giao diện trong hệ thống tập tin giao diện.',
@@ -322,6 +325,7 @@ $lang = array_merge($lang, array(
 	'REPLACE_TEMPLATE_EXPLAIN'	=> 'Khuôn mẫu này sẽ thay thế cho khuôn mẫu mà bạn đang xoá trong bất kỳ giao diện nào sử dụng đến.',
 	'REPLACE_THEME'				=> 'Thay thế kiểu dáng bằng',
 	'REPLACE_THEME_EXPLAIN'		=> 'Kiểu dáng này sẽ thay thế cho kiểu dáng mà bạn đang xoá trong bất kỳ giao diện nào sử dụng đến.',
+	'REPLACE_WITH_OPTION'		=> 'Thay thế kiểu dáng bằng â€œ%sâ€',
 	'REQUIRES_IMAGESET'			=> 'Giao diện này yêu cầu gói hình ảnh giao diện <strong>%s</strong> phải được cài đặt.',
 	'REQUIRES_TEMPLATE'			=> 'Giao diện này yêu cầu khuôn mẫu <strong>%s</strong> phải được cài đặt.',
 	'REQUIRES_THEME'			=> 'Giao diện này yêu cầu kiểu dáng <strong>%s</strong> phải được cài đặt.',

@@ -116,7 +116,6 @@ $lang = array_merge($lang, array(
 	'REMOVE_FOE'			=> 'Gỡ bỏ kẻ thù',
 	'REMOVE_FRIEND'			=> 'Gỡ bỏ bạn thân',
 
-	'SEARCH_USER_POSTS'		=> 'Tìm tất cả bài viết của thành viên này',
 	'SELECT_MARKED'			=> 'Chọn đánh dấu',
 	'SELECT_SORT_METHOD'	=> 'Chọn cách sắp xếp',
 	'SEND_AIM_MESSAGE'		=> 'Gửi tin nhắn AIM',
@@ -137,7 +136,7 @@ $lang = array_merge($lang, array(
 	'USER_LAST_REMINDED'	=> array(
 		0		=> 'Chưa gửi thư nhắc nhở',
 		1		=> 'Đã gửi thư nhắc nhở %1$d lần<br />» %2$s',
-	),	
+	),
 	'USER_ONLINE'			=> 'Đang trực tuyến',
 	'USER_PRESENCE'			=> 'Hiện diện',
 
