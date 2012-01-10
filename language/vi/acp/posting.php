@@ -258,7 +258,7 @@ $lang = array_merge($lang, array(
 	'IS_NOT_TRANSLATED_EXPLAIN'	=> 'Đây là những nguyên nhân <strong>chưa được</strong> phiên dịch. Nếu bạn muốn cung cấp nội dung trong phần phiên dịch, hãy xác định một khóa chính xác từ các tập tin trong gói ngôn ngữ để báo cáo về nguyên nhân trên.',
 	'IS_TRANSLATED'				=> 'Nguyên nhân đã được phiên dịch',
 	'IS_TRANSLATED_EXPLAIN'		=> 'Đây là những nguyên nhân đã được phiên dịch. Nếu tên nguyên nhân bạn nhập vào ở đây đã được xác định từ các tập tin trong gói ngôn ngữ để báo cáo về nguyên nhân trên, phần nội dung phiên dịch của tên và nội dung nguyên nhân sẽ được sử dụng.',
-	
+
 	'NO_REASON'					=> 'Không thể tìm thấy nguyên nhân.',
 	'NO_REASON_INFO'			=> 'Bạn phải nhập vào tên và nội dung của nguyên nhân này.',
 	'NO_REMOVE_DEFAULT_REASON'	=> 'Bạn không thể gỡ bỏ nguyên nhân mặc định <strong>Những nguyên nhân khác</strong>.',

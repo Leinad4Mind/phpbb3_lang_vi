@@ -48,7 +48,7 @@ $lang = array_merge($lang, array(
 	'BBCODE_A_HELP'				=> 'Đính kèm tập tin trong dòng: [attachment=]tên_tập_tin.đuôi_tập_tin[/attachment]',
 	'BBCODE_B_HELP'				=> 'Văn bản in đậm: [b]văn bản muốn in đậm[/b]',
 	'BBCODE_C_HELP'				=> 'Hiển thị mã: [code]mã muốn hiển thị[/code]',
-	'BBCODE_E_HELP'				=> 'Danh sách: Tạo danh sách liệt kê các mục',
+	'BBCODE_D_HELP'				=> 'Chèn Flash: [flash=chiều rộng,chiều cao]http://địa chỉ URL tập tin Flash[/flash]',
 	'BBCODE_F_HELP'				=> 'Kích thước văn bản: [size=x-small]văn bản muốn thay đổi kích thước[/size]',
 	'BBCODE_IS_OFF'				=> '%sBBCode%s đang <em>TẮT</em>',
 	'BBCODE_IS_ON'				=> '%sBBCode%s đang <em>BẬT</em>',
@@ -61,7 +61,7 @@ $lang = array_merge($lang, array(
 	'BBCODE_S_HELP'				=> 'Màu chữ: [color=red]văn bản muốn tô màu[/color] Lưu ý: Bạn cũng có thể sử dụng dạng color=#FF0000',
 	'BBCODE_U_HELP'				=> 'Văn bản gạch chân: [u]văn bản muốn gạch chân[/u]',
 	'BBCODE_W_HELP'				=> 'Chèn địa chỉ URL: [url]http://địa chỉ URL[/url] hoặc [url=http://địa chỉ URL]Tên liên kết URL[/url] (Phím tắt: Alt + W)',
-	'BBCODE_D_HELP'				=> 'Chèn Flash: [flash=chiều rộng,chiều cao]http://địa chỉ URL tập tin Flash[/flash]',
+	'BBCODE_Y_HELP'				=> 'Danh sách: Tạo danh sách liệt kê các mục',
 	'BUMP_ERROR'				=> 'Bạn không thể đẩy chủ đề này liên tục cùng lúc được.',
 
 	'CANNOT_DELETE_REPLIED'		=> 'Xin lỗi, bạn chỉ có thể xoá những bài viết chưa được trả lời.',

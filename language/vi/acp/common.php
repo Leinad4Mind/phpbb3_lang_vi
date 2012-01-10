@@ -327,6 +327,16 @@ $lang = array_merge($lang, array(
 	'DATABASE_SERVER_INFO'	=> 'Máy chủ cơ sở dữ liệu',
 	'DATABASE_SIZE'			=> 'Dung lượng cơ sở dữ liệu',
 
+	// Enviroment configuration checks, mbstring related
+	'ERROR_MBSTRING_FUNC_OVERLOAD'					=> 'Phương thức overload chưa được cấu hình đúng cách',
+	'ERROR_MBSTRING_FUNC_OVERLOAD_EXPLAIN'			=> '<var>mbstring.func_overload</var> cần được gán bằng 0 hoặc 4. Bạn có thể kiểm tra giá trị hiện hành của nó trong trang <samp>Thông tin PHP</samp>.',
+	'ERROR_MBSTRING_ENCODING_TRANSLATION'			=> 'Mã hóa ký tự trong suốt chưa được cấu hình đúng cách',
+	'ERROR_MBSTRING_ENCODING_TRANSLATION_EXPLAIN'	=> '<var>mbstring.encoding_translation</var> cần được gán bằng 0. Bạn có thể kiểm tra giá trị hiện hành của nó trong trang <samp>Thông tin PHP</samp>.',
+	'ERROR_MBSTRING_HTTP_INPUT'						=> 'Chuyển đổi ký tự nhập cho phương thức HTTP chưa được cấu hình đúng cách',
+	'ERROR_MBSTRING_HTTP_INPUT_EXPLAIN'				=> '<var>mbstring.http_input</var> cần được gán bằng <samp>pass</samp>. Bạn có thể kiểm tra giá trị hiện hành của nó trong trang <samp>Thông tin PHP</samp>.',
+	'ERROR_MBSTRING_HTTP_OUTPUT'					=> 'Chuyển đổi ký tự xuất cho phương thức HTTP chưa được cấu hình đúng cách',
+	'ERROR_MBSTRING_HTTP_OUTPUT_EXPLAIN'			=> '<var>mbstring.http_output</var> cần được gán bằng <samp>pass</samp>. Bạn có thể kiểm tra giá trị hiện hành của nó trong trang <samp>Thông tin PHP</samp>.',
+
 	'FILES_PER_DAY'		=> 'Số tập tin đính kèm/ngày',
 	'FORUM_STATS'		=> 'Thống kê hệ thống',
 
