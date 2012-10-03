@@ -267,6 +267,7 @@ $lang = array_merge($lang, array(
 	'IMG_USER_ICON9'		=> 'Hình xác định thành viên 9',
 	'IMG_USER_ICON10'		=> 'Hình xác định thành viên 10',
 
+	'INACTIVE_STYLES'			=> 'Giao diện chưa kích hoạt',
 	'INCLUDE_DIMENSIONS'		=> 'Đính kèm kích thước',
 	'INCLUDE_IMAGESET'			=> 'Đính kèm gói ngôn ngữ hình ảnh',
 	'INCLUDE_TEMPLATE'			=> 'Đính kèm khuôn mẫu',

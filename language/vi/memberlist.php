@@ -110,7 +110,6 @@ $lang = array_merge($lang, array(
 
 	'POST_IP'				=> 'Gửi bài từ địa chỉ IP/Tên miền',
 
-	'RANK'					=> 'Xếp hạng',
 	'REAL_NAME'				=> 'Tên người nhận',
 	'RECIPIENT'				=> 'Người nhận',
 	'REMOVE_FOE'			=> 'Gỡ bỏ kẻ thù',

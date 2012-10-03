@@ -42,6 +42,7 @@ $lang = array_merge($lang, array(
 	'ADD_POLL'					=> 'Tạo bình chọn',
 	'ADD_POLL_EXPLAIN'			=> 'Nếu bạn không muốn thêm vào một bình chọn trong chủ đề của mình, hãy để trống phần này.',
 	'ALREADY_DELETED'			=> 'Xin lỗi, bài viết này vừa bị xoá.',
+	'ATTACH_DISK_FULL'			=> 'Dung lượng đĩa cứng không đủ để tải tập tin đính kèm này lên.',
 	'ATTACH_QUOTA_REACHED'		=> 'Xin lỗi, dung lượng cấp phép tải lên cho diễn đàn đã hết.',
 	'ATTACH_SIG'				=> 'Đính kèm chữ ký cá nhân (Chữ ký có thể thay đổi từ bảng điều khiển dành cho thành viên của bạn)',
 

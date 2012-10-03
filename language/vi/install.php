@@ -51,7 +51,8 @@ $lang = array_merge($lang, array(
 	'BEGIN_CONVERT'					=> 'Bắt đầu chuyển đổi',
 	'BLANK_PREFIX_FOUND'			=> 'Bạn chưa xác định tiền tố đầu mỗi tên bảng dữ liệu trong cơ sở dữ liệu.',
 	'BOARD_NOT_INSTALLED'			=> 'Không tìm thấy bản cài đặt',
-	'BOARD_NOT_INSTALLED_EXPLAIN'	=> 'Công cụ phpBB Unified Convertor Framework yêu cầu một bản cài đặt mặc định của phpBB3 để có thể sử dụng các chức năng chuyển đổi. Bạn hãy vui lòng <a href="%s">tiến hành cài đặt phpBB3</a> trước.',
+	'BOARD_NOT_INSTALLED_EXPLAIN'	=> 'Công cụ chuyển đổi dữ liệu phpBB hợp nhất yêu cầu một bản cài đặt mặc định của phpBB3 để có thể sử dụng. Bạn hãy vui lòng <a href="%s">tiến hành cài đặt phpBB3</a> trước.',
+	'BACKUP_NOTICE'					=> 'Hãy sao lưu dữ liệu của diễn đàn trước khi nâng cấp nhằm phòng hờ các vấn đề rủi ro có thể xảy ra trong quá trình nâng cấp.',
 
 	'CATEGORY'					=> 'Nhóm thông tin',
 	'CACHE_STORE'				=> 'Lưu trữ bộ nhớ đệm',
