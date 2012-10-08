@@ -88,7 +88,7 @@ $lang = array_merge($lang, array(
 	'ACP_FORUM_MANAGEMENT'			=> 'Quản lý chuyên mục',
 	'ACP_FORUM_MODERATORS'			=> 'Cấp phép điều hành viên cho chuyên mục',
 	'ACP_FORUM_PERMISSIONS'			=> 'Cấp phép chuyên mục',
-	'ACP_FORUM_PERMISSIONS_COPY'	=> 'Xao chép Cấp phép chuyên mục',
+	'ACP_FORUM_PERMISSIONS_COPY'	=> 'Sao chép Cấp phép chuyên mục',
 	'ACP_FORUM_ROLES'				=> 'Nhiệm vụ chuyên mục',
 
 	'ACP_GENERAL_CONFIGURATION'		=> 'Cấu hình tổng quát',
