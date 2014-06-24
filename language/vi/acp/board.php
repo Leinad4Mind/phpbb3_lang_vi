@@ -4,8 +4,8 @@
 * acp_board [Vietnamese]
 *
 * @package language
-* @version $Id: board.php,v 1.071 2007/11/28 09:16:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: board.php,v 1.072 2008/03/27 09:17:00 nedka Exp $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -333,7 +333,7 @@ $lang = array_merge($lang, array(
 	'LDAP_USER'						=> 'Tên tài khoản LDAP <var>dn</var>',
 	'LDAP_USER_EXPLAIN'				=> 'Để trống phần này để sử dụng liên kết ẩn danh. Nếu bạn đã điền vào mục này, hệ thống sẽ sử dụng tên khác biệt đã xác định cho các thao tác đăng nhập để tìm ra tên tài khoản chính xác, ví dụ <samp>uid=Username, ou=MyUnit, o=MyCompany, c=US</samp>. Mục này được yêu cầu cho các thư mục máy chủ đang hoạt động.',
 	'LDAP_USER_FILTER'				=> 'Bộ lọc tên tài khoản LDAP',
-	'LDAP_USER_FILTER_EXPLAIN'		=> 'Tùy chọn này cho phép bạn có thể giới hạn thêm những đối tượng được tìm kiếm với các bộ lọc bổ sung. Ví dụ như <samp>objectClass=posixGroup</samp> sẽ cho ra kết quả sử dụng là <samp>(&(uid=$username)(objectClass=posixGroup))</samp>',
+	'LDAP_USER_FILTER_EXPLAIN'		=> 'Tùy chọn này cho phép bạn có thể giới hạn thêm những đối tượng được tìm kiếm với các bộ lọc bổ sung. Ví dụ như <samp>objectClass=posixGroup</samp> sẽ cho ra kết quả sử dụng là <samp>(&amp;(uid=$username)(objectClass=posixGroup))</samp>',
 ));
 
 // Server Settings

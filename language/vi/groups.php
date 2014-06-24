@@ -4,8 +4,8 @@
 * groups [Vietnamese]
 *
 * @package language
-* @version $Id: groups.php,v 1.018 2007/10/06 08:48:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: groups.php,v 1.019 2008/03/27 09:04:00 nedka Exp $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -49,7 +49,9 @@ $lang = array_merge($lang, array(
 	'ALREADY_IN_GROUP'			=> 'Bạn đã là thành viên trong nhóm vừa chọn.',
 	'ALREADY_IN_GROUP_PENDING'	=> 'Bạn đã gửi yêu cầu tham gia vào nhóm này rồi.',
 
-	'CHANGED_DEFAULT_GROUP'		=> 'Đã thay đổi nhóm mặc định thành công.',
+	'CANNOT_JOIN_GROUP'		=> 'Bạn không thể tham gia vào nhóm này. Bạn chỉ có thể tham gia vào những nhóm tự do.',
+	'CANNOT_RESIGN_GROUP'	=> 'Bạn không thể rút ra khỏi nhóm này. Bạn chỉ có thể rút ra khỏi những nhóm tự do.',
+	'CHANGED_DEFAULT_GROUP'	=> 'Đã thay đổi nhóm mặc định thành công.',
 	
 	'GROUP_AVATAR'						=> 'Hình đại diện của nhóm',
 	'GROUP_CHANGE_DEFAULT'				=> 'Bạn có chắc chắn muốn thay đổi tư cách thành viên mặc định của nhóm “%s”?',
@@ -73,12 +75,12 @@ $lang = array_merge($lang, array(
 	'GROUP_NAME'						=> 'Tên nhóm',
 	'GROUP_OPEN'						=> 'Nhóm tự do',
 	'GROUP_RANK'						=> 'Xếp hạng của nhóm',
-	'GROUP_RESIGN_MEMBERSHIP'			=> 'Từ bỏ tư cách thành viên trong nhóm',
-	'GROUP_RESIGN_MEMBERSHIP_CONFIRM'	=> 'Bạn có chắc chắn muốn từ bỏ tư cách thành viên của mình trong nhóm vừa chọn?',
-	'GROUP_RESIGN_PENDING'				=> 'Từ bỏ tư cách thành viên đang chờ quyết định trong nhóm',
-	'GROUP_RESIGN_PENDING_CONFIRM'		=> 'Bạn có chắc chắn muốn từ bỏ tư cách thành viên đang chờ quyết định của mình trong nhóm vừa chọn?',
-	'GROUP_RESIGNED_MEMBERSHIP'			=> 'Bạn đã được gỡ bỏ thành công khỏi nhóm vừa chọn.',
-	'GROUP_RESIGNED_PENDING'			=> 'Yêu cầu tham gia vào nhóm của bạn đã được gỡ bỏ thành công khỏi nhóm vừa chọn.',
+	'GROUP_RESIGN_MEMBERSHIP'			=> 'Rút ra khỏi nhóm',
+	'GROUP_RESIGN_MEMBERSHIP_CONFIRM'	=> 'Bạn có chắc chắn muốn rút ra không làm thành viên của nhóm vừa chọn?',
+	'GROUP_RESIGN_PENDING'				=> 'Rút ra khỏi nhóm đang chờ quyết định',
+	'GROUP_RESIGN_PENDING_CONFIRM'		=> 'Bạn có chắc chắn muốn rút lại yêu cầu tham gia vào nhóm vừa chọn?',
+	'GROUP_RESIGNED_MEMBERSHIP'			=> 'Bạn đã rút ra khỏi nhóm vừa chọn thành công.',
+	'GROUP_RESIGNED_PENDING'			=> 'Yêu cầu tham gia vào nhóm vừa chọn của bạn đã được rút lại thành công.',
 	'GROUP_TYPE'						=> 'Loại nhóm',
 	'GROUP_UNDISCLOSED'					=> 'Nhóm ẩn',
 	'FORUM_UNDISCLOSED'					=> 'Chuyên mục ẩn đang điều hành',
@@ -88,7 +90,7 @@ $lang = array_merge($lang, array(
 	'NO_LEADERS'					=> 'Bạn không phải là người điều hành của bất kỳ nhóm nào.',
 	'NOT_LEADER_OF_GROUP'			=> 'Yêu cầu không được thực hiện vì bạn không phải là người điều hành của nhóm vừa chọn.',
 	'NOT_MEMBER_OF_GROUP'			=> 'Yêu cầu không được thực hiện vì bạn không phải là thành viên của nhóm vừa chọn hoặc tư cách thành viên của bạn trong nhóm này vẫn chưa được chấp thuận.',
-	'NOT_RESIGN_FROM_DEFAULT_GROUP'	=> 'Bạn không được chấp thuận để từ chức nhóm mặc định của mình.',
+	'NOT_RESIGN_FROM_DEFAULT_GROUP'	=> 'Bạn không được chấp thuận để rút ra khỏi nhóm mặc định của mình.',
 
 	'PRIMARY_GROUP'		=> 'Nhóm chính',
 

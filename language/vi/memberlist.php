@@ -4,8 +4,8 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version $Id: memberlist.php,v 1.027 2007/10/06 08:21:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: memberlist.php,v 1.028 2008/03/27 09:11:00 nedka Exp $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -93,7 +93,7 @@ $lang = array_merge($lang, array(
 	'IM_MSNM_CONNECT'		=> 'Tài khoản MSN của bạn chưa được kết nối.\nBạn phải kết nối đến dịch vụ của MSN để tiếp tục gửi tin nhắn.',		
 	'IM_NAME'				=> 'Tên của bạn',
 	'IM_NO_DATA'			=> 'Không có thông tin liên hệ phù hợp nào về thành viên này.',
-	'IM_NO_JABBER'			=> 'Xin lỗi, chức năng gửi tin nhắn trực tiếp đến các thành viên sử dụng Jabber không được hỗ trợ trên máy chủ này. Bạn sẽ cần phải cài đặt ứng dụng <strong>Jabber</strong> trên máy tính của mình để liên hệ với người nhận trên.',
+	'IM_NO_JABBER'			=> 'Xin lỗi, chức năng gửi tin nhắn trực tiếp đến các thành viên sử dụng Jabber không được hỗ trợ trên diễn đàn này. Bạn sẽ cần phải cài đặt ứng dụng <strong>Jabber</strong> trên máy tính của mình để liên hệ với người nhận trên.',
 	'IM_RECIPIENT'			=> 'Người nhận',
 	'IM_SEND'				=> 'Gửi tin nhắn',
 	'IM_SEND_MESSAGE'		=> 'Gửi tin nhắn',

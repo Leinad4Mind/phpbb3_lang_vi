@@ -4,8 +4,8 @@
 * common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php,v 1.105 2007/11/28 09:13:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: common.php,v 1.107 2008/04/10 04:35:00 nedka Exp $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -115,6 +115,7 @@ $lang = array_merge($lang, array(
 	'BOARD_DISABLE'				=> 'Xin lỗi, hệ thống hiện tại không thể hoạt động được.',
 	'BOARD_DISABLED'			=> 'Hệ thống hiện tại ngưng hoạt động.',	
 	'BOARD_UNAVAILABLE'			=> 'Xin lỗi, hệ thống tạm thời không thể hoạt động được. Bạn hãy vui lòng quay lại sau vài phút nữa.',
+	'BROWSING_FORUM'			=> 'Đang xem chuyên mục này: %1$s',
 	'BROWSING_FORUM_GUEST'		=> 'Đang xem chuyên mục này: <strong>%1$s</strong> và <strong>%2$d</strong> khách.',
 	'BROWSING_FORUM_GUESTS'		=> 'Đang xem chuyên mục này: <strong>%1$s</strong> và <strong>%2$d</strong> khách.',
 	'BYTES'						=> 'Byte',
@@ -254,16 +255,19 @@ $lang = array_merge($lang, array(
 	'G_REGISTERED_COPPA'		=> 'Thành viên trong điều khoản COPPA',
 	'G_GLOBAL_MODERATORS'		=> 'Điều hành viên chính',
 
-	'HIDDEN_USERS_ONLINE'		=> '<strong>%d</strong> thành viên ẩn đang trực tuyến.',
-	'HIDDEN_USERS_TOTAL'		=> '<strong>%d</strong> thành viên ẩn và ',
-	'HIDDEN_USERS_ZERO_ONLINE'	=> '<strong>0</strong> thành viên ẩn đang trực tuyến.',
-	'HIDDEN_USERS_ZERO_TOTAL'	=> '<strong>0</strong> thành viên ẩn và ',
-	'HIDDEN_USER_ONLINE'		=> '<strong>%d</strong> thành viên ẩn đang trực tuyến.',
-	'HIDDEN_USER_TOTAL'			=> '<strong>%d</strong> thành viên ẩn và ',
-	'HIDE_GUESTS'				=> 'Không hiển thị khách',
-	'HIDE_ME'					=> 'Ẩn trạng thái trực tuyến của tôi trong phiên đăng nhập này',
-	'HOURS'						=> 'Giờ',
-	'HOME'						=> 'Trang chủ',
+	'HIDDEN_USERS_ONLINE'			=> '<strong>%d</strong> thành viên ẩn trực tuyến',
+	'HIDDEN_USERS_TOTAL'			=> '<strong>%d</strong> thành viên ẩn',
+	'HIDDEN_USERS_TOTAL_AND'		=> '<strong>%d</strong> thành viên ẩn và ',
+	'HIDDEN_USERS_ZERO_ONLINE'		=> '<strong>0</strong> thành viên ẩn trực tuyến',
+	'HIDDEN_USERS_ZERO_TOTAL'		=> '<strong>0</strong> thành viên ẩn',
+	'HIDDEN_USERS_ZERO_TOTAL_AND'	=> '<strong>0</strong> thành viên ẩn và ',
+	'HIDDEN_USER_ONLINE'			=> '<strong>%d</strong> thành viên ẩn trực tuyến',
+	'HIDDEN_USER_TOTAL'				=> '<strong>%d</strong> thành viên ẩn',
+	'HIDDEN_USER_TOTAL_AND'			=> '<strong>%d</strong> thành viên ẩn và ',
+	'HIDE_GUESTS'					=> 'Không hiển thị khách',
+	'HIDE_ME'						=> 'Ẩn trạng thái trực tuyến trong phiên đăng nhập này',
+	'HOURS'							=> 'Giờ',
+	'HOME'							=> 'Trang chủ',
 
 	'ICQ'						=> 'Tài khoản ICQ',
 	'ICQ_STATUS'				=> 'Trạng thái ICQ',
@@ -287,6 +291,7 @@ $lang = array_merge($lang, array(
 	'JUMP_TO_PAGE'			=> 'Bấm vào đây để chuyển đến trang…',
 
 	'KB'	=> 'KB',
+	'KIB'	=> 'KiB',
 
 	'LAST_POST'							=> 'Bài viết mới nhất',
 	'LAST_UPDATED'						=> 'Cập nhật',
@@ -320,6 +325,7 @@ $lang = array_merge($lang, array(
 	'MARK_ALL'				=> 'Đánh dấu tất cả',
 	'MARK_FORUMS_READ'		=> 'Đánh dấu tất cả chuyên mục như là đã xem',
 	'MB'					=> 'MB',
+	'MIB'					=> 'MiB',
 	'MCP'					=> 'Bảng điều khiển của điều hành viên',
 	'MEMBERLIST'			=> 'Thành viên',
 	'MEMBERLIST_EXPLAIN'	=> 'Xem toàn bộ danh sách thành viên',
@@ -453,10 +459,13 @@ $lang = array_merge($lang, array(
 	'REGISTERED_USERS'			=> 'Các thành viên đang trực tuyến:',
 	'REG_USERS_ONLINE'			=> 'Có <strong>%d</strong> thành viên và ',
 	'REG_USERS_TOTAL'			=> '<strong>%d</strong> thành viên, ',
+	'REG_USERS_TOTAL_AND'		=> '<strong>%d</strong> thành viên và ',
 	'REG_USERS_ZERO_ONLINE'		=> '<strong>0</strong> thành viên và ',
 	'REG_USERS_ZERO_TOTAL'		=> '<strong>0</strong> thành viên, ',
+	'REG_USERS_ZERO_TOTAL_AND'	=> '<strong>0</strong> thành viên và ',
 	'REG_USER_ONLINE'			=> '<strong>%d</strong> thành viên và ',
 	'REG_USER_TOTAL'			=> '<strong>%d</strong> thành viên, ',
+	'REG_USER_TOTAL_AND'		=> '<strong>%d</strong> thành viên và ',
 	'REMOVE'					=> 'Gỡ bỏ',
 	'REMOVE_INSTALL'			=> 'Hãy vui lòng xoá, di chuyển hoặc đổi tên thư mục <samp>install/</samp> trước khi bạn bắt đầu sử dụng hệ thống. Nếu thư mục này vẫn còn hiện diện, bạn sẽ chỉ có thể truy cập vào được bảng điều khiển của quản trị viên.',
 	'REPLIES'					=> 'Trả lời',

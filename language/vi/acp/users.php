@@ -4,8 +4,8 @@
 * acp_users [Vietnamese]
 *
 * @package language
-* @version $Id: users.php,v 1.020 2007/10/10 10:51:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: users.php,v 1.022 2008/04/10 04:36:00 nedka Exp $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -53,10 +53,10 @@ $lang = array_merge($lang, array(
 
 	'CANNOT_BAN_FOUNDER'			=> 'Bạn không thể cấm tài khoản của người sáng lập.',
 	'CANNOT_BAN_YOURSELF'			=> 'Bạn không thể cấm tài khoản của chính mình.',
-	'CANNOT_DEACTIVATE_BOT'			=> 'Bạn không thể ngưng kích hoạt tài khoản của máy tìm kiếm. Hãy vui lòng ngưng kích hoạt từng máy tìm kiếm cụ thể.',
+	'CANNOT_DEACTIVATE_BOT'			=> 'Bạn không thể ngưng kích hoạt tài khoản của máy tìm kiếm. Hãy vui lòng ngưng kích hoạt từng máy tìm kiếm trong trang quản lí chúng.',
 	'CANNOT_DEACTIVATE_FOUNDER'		=> 'Bạn không thể ngưng kích hoạt tài khoản của người sáng lập.',
 	'CANNOT_DEACTIVATE_YOURSELF'	=> 'Bạn không thể ngưng kích hoạt tài khoản của chính mình.',
-	'CANNOT_FORCE_REACT_BOT'		=> 'Bạn không thể yêu cầu kích hoạt lại tài khoản của máy tìm kiếm. Hãy vui lòng yêu cầu kích hoạt lại từng máy tìm kiếm cụ thể.',
+	'CANNOT_FORCE_REACT_BOT'		=> 'Bạn không thể yêu cầu kích hoạt lại tài khoản của máy tìm kiếm. Hãy vui lòng kích hoạt lại từng máy tìm kiếm trong trang quản lí chúng.',
 	'CANNOT_FORCE_REACT_FOUNDER'	=> 'Bạn không thể yêu cầu kích hoạt lại tài khoản của người sáng lập.',
 	'CANNOT_FORCE_REACT_YOURSELF'	=> 'Bạn không thể yêu cầu kích hoạt lại tài khoản của chính mình.',
 	'CANNOT_REMOVE_ANONYMOUS'		=> 'Bạn không thể gỡ bỏ tài khoản của khách.',

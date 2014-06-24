@@ -20,11 +20,11 @@ _ _ _ _ _    |  |_ _ _   _ _ _ _ _     |  |__|  /  |  |__|  /                   
 @ phpBBVietNam Group
 ---[ Information ]--------------------------------------------------------------
 Language Pack Name: Vietnamese Language Pack for phpBB3
-Language Pack Version: 3.0.0-a
+Language Pack Version: 3.0.1-a
 Encoding: Unicode (UTF-8)
-Release Date: 2008/01/25
+Release Date: 2008/04/10
 ---[ Description ]--------------------------------------------------------------
-Vietnamese Language Pack for phpBB 3.0.RC7 (Olympus)
+Vietnamese Language Pack for phpBB 3.0.1-RC1 (Olympus)
 with following parts:
 + Main translation
 + ACP translation
@@ -37,6 +37,12 @@ with following parts:
 ---[ Translator ]----------------------------------------
 # nedka (Nguyen Dang Khoa) <admin@vinabb.com> http://www.vinabb.com
 ---[ History ]------------------------------------------------------------------
+# 2008/04/10: Version 3.0.1-a
+Updated code changes in language files from phpBB 3.0.1-RC1 to phpBB 3.0.1
+
+# 2008/03/27: Version 3.0.1.RC1-a
+Updated code changes in language files from phpBB 3.0.0 to phpBB 3.0.1-RC1
+
 # 2008/01/25: Version 3.0.0-a
 Hello phpBB 3.0.0 GOLD.
 Supported for phpBB 3.0.0 and no changes from previous version.
@@ -129,7 +135,7 @@ Supported for phpBB 3.0.0 Beta1
 Translated completely English Language Pack into Vietnamese [ Main + ACP + Email ]
 First release ...
 ---[ Notes ]--------------------------------------------------------------------
-Only use for phpBB3 Olympus version 3.0.0
+Only use for phpBB3 Olympus version 3.0.1
 Thanks you to use this language pack of mine ( ^ _ ^ )
 ---[ License ]------------------------------------------------------------------
 http://opensource.org/licenses/gpl-license.php GNU General Public License v2

@@ -4,8 +4,8 @@
 * acp_groups [Vietnamese]
 *
 * @package language
-* @version $Id: groups.php,v 1.027 2007/10/06 08:52:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: groups.php,v 1.028 2008/03/27 09:37:00 nedka Exp $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -112,10 +112,11 @@ $lang = array_merge($lang, array(
 	'MAKE_DEFAULT_FOR_ALL'	=> 'Chọn làm nhóm mặc định cho tất cả thành viên',
 	'MEMBERS'				=> 'Thành viên',
 
-	'NO_GROUP'					=> 'Không có nhóm nào được xác định.',
-	'NO_GROUPS_CREATED'			=> 'Chưa có nhóm nào được tạo.',
-	'NO_PERMISSIONS'			=> 'Đừng sao chép thiết lập cấp phép',
-	'NO_USERS'					=> 'Bạn chưa nhập vào bất kỳ thành viên nào.',
+	'NO_GROUP'			=> 'Không có nhóm nào được xác định.',
+	'NO_GROUPS_CREATED'	=> 'Chưa có nhóm nào được tạo.',
+	'NO_PERMISSIONS'	=> 'Đừng sao chép thiết lập cấp phép',
+	'NO_USERS'			=> 'Bạn chưa nhập vào bất kỳ thành viên nào.',
+	'NO_USERS_ADDED'	=> 'Không có thành viên nào được thêm vào nhóm.',
 
 	'SPECIAL_GROUPS'			=> 'Nhóm đặc biệt',
 	'SPECIAL_GROUPS_EXPLAIN'	=> 'Có một vài loại nhóm đặc biệt khác hẳn với các nhóm còn lại, những nhóm này không thể xoá cũng như chỉnh sửa trực tiếp được. Tuy nhiên, bạn vẫn có thể thêm thành viên mới vào những nhóm này và thay đổi những thiết lập đơn giản.',

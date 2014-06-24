@@ -1,11 +1,11 @@
 <?php
 /** 
 *
-* acp common [Vietnamese]
+* acp_common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php,v 1.077 2007/10/06 09:10:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: common.php,v 1.079 2008/04/10 04:39:00 nedka Exp $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -68,7 +68,7 @@ $lang = array_merge($lang, array(
 	'ACP_BOTS'					=> 'Quản lý máy tìm kiếm',
 
 	'ACP_CAPTCHA'				=> 'Thiết lập cơ chế đồ hoạ mã xác nhận',
-	
+
 	'ACP_CAT_DATABASE'			=> 'Cơ sở dữ liệu',
 	'ACP_CAT_DOT_MODS'			=> 'MOD',
 	'ACP_CAT_FORUMS'			=> 'Chuyên mục',
@@ -84,14 +84,14 @@ $lang = array_merge($lang, array(
 	'ACP_COOKIE_SETTINGS'		=> 'Thiết lập cookie',
 	'ACP_CRITICAL_LOGS'			=> 'Ghi nhận lỗi',
 	'ACP_CUSTOM_PROFILE_FIELDS'	=> 'Tuỳ biến mục thông tin cá nhân',
-	
+
 	'ACP_DATABASE'				=> 'Quản lý cơ sở dữ liệu',
 	'ACP_DISALLOW'				=> 'Cấm sử dụng',
 	'ACP_DISALLOW_USERNAMES'	=> 'Tên thành viên bị cấm sử dụng',
-	
+
 	'ACP_EMAIL_SETTINGS'		=> 'Thiết lập Email',
 	'ACP_EXTENSION_GROUPS'		=> 'Quản lý nhóm tập tin đính kèm',
-	
+
 	'ACP_FORUM_BASED_PERMISSIONS'	=> 'Cấp phép cho chuyên mục',
 	'ACP_FORUM_LOGS'				=> 'Ghi nhận chuyên mục',
 	'ACP_FORUM_MANAGEMENT'			=> 'Quản lý chuyên mục',
@@ -108,20 +108,20 @@ $lang = array_merge($lang, array(
 	'ACP_GROUPS_MANAGE'				=> 'Quản lý nhóm',
 	'ACP_GROUPS_MANAGEMENT'			=> 'Quản lý nhóm',
 	'ACP_GROUPS_PERMISSIONS'		=> 'Cấp phép nhóm',
-	
+
 	'ACP_ICONS'					=> 'Biểu tượng bài viết',
 	'ACP_ICONS_SMILIES'			=> 'Biểu tượng bài viết/biểu tượng vui',
 	'ACP_IMAGESETS'				=> 'Gói hình ảnh giao diện',
 	'ACP_INACTIVE_USERS'		=> 'Thành viên chưa kích hoạt',
 	'ACP_INDEX'					=> 'Bảng điều khiển của quản trị viên',
-	
+
 	'ACP_JABBER_SETTINGS'		=> 'Thiết lập Jabber',
-	
+
 	'ACP_LANGUAGE'				=> 'Quản lý ngôn ngữ',
 	'ACP_LANGUAGE_PACKS'		=> 'Gói ngôn ngữ',
 	'ACP_LOAD_SETTINGS'			=> 'Thiết lập nạp trang',
 	'ACP_LOGGING'				=> 'Ghi nhận',
-	
+
 	'ACP_MAIN'					=> 'Bảng điều khiển của quản trị viên',
 	'ACP_MANAGE_EXTENSIONS'		=> 'Quản lý tập tin đính kèm',
 	'ACP_MANAGE_FORUMS'			=> 'Quản lý chuyên mục',
@@ -134,26 +134,26 @@ $lang = array_merge($lang, array(
 	'ACP_MODULE_MANAGEMENT'		=> 'Quản lý gói chức năng',
 	'ACP_MOD_LOGS'				=> 'Ghi nhận điều hành viên',
 	'ACP_MOD_ROLES'				=> 'Nhiệm vụ điều hành viên',
-	
-	'ACP_ORPHAN_ATTACHMENTS'	=> 'Tập tin đính kèm không sử dụng',
-	
-	'ACP_PERMISSIONS'			=> 'Cấp phép',
-	'ACP_PERMISSION_MASKS'		=> 'Danh sách cấp phép',
-	'ACP_PERMISSION_ROLES'		=> 'Cấp phép nhiệm vụ',
-	'ACP_PERMISSION_TRACE'		=> 'Dò theo cấp phép',
-	'ACP_PHP_INFO'				=> 'Thông tin PHP',
-	'ACP_POST_SETTINGS'			=> 'Thiết lập gửi bài',
-	'ACP_PRUNE_FORUMS'			=> 'Dọn dẹp chuyên mục',
-	'ACP_PRUNE_USERS'			=> 'Dọn dẹp thành viên',
-	'ACP_PRUNING'				=> 'Dọn dẹp',
-	
-	'ACP_QUICK_ACCESS'			=> 'Truy cập nhanh',
-	
-	'ACP_RANKS'					=> 'Xếp hạng',
-	'ACP_REASONS'				=> 'Báo cáo/nguyên nhân từ chối',
-	'ACP_REGISTER_SETTINGS'		=> 'Thiết lập đăng ký thành viên',
 
-	'ACP_RESTORE'				=> 'Phục hồi',
+	'ACP_ORPHAN_ATTACHMENTS'	=> 'Tập tin đính kèm không sử dụng',
+
+	'ACP_PERMISSIONS'		=> 'Cấp phép',
+	'ACP_PERMISSION_MASKS'	=> 'Danh sách cấp phép',
+	'ACP_PERMISSION_ROLES'	=> 'Cấp phép nhiệm vụ',
+	'ACP_PERMISSION_TRACE'	=> 'Dò theo cấp phép',
+	'ACP_PHP_INFO'			=> 'Thông tin PHP',
+	'ACP_POST_SETTINGS'		=> 'Thiết lập gửi bài',
+	'ACP_PRUNE_FORUMS'		=> 'Dọn dẹp chuyên mục',
+	'ACP_PRUNE_USERS'		=> 'Dọn dẹp thành viên',
+	'ACP_PRUNING'			=> 'Dọn dẹp',
+
+	'ACP_QUICK_ACCESS'	=> 'Truy cập nhanh',
+
+	'ACP_RANKS'				=> 'Xếp hạng',
+	'ACP_REASONS'			=> 'Báo cáo/nguyên nhân từ chối',
+	'ACP_REGISTER_SETTINGS'	=> 'Thiết lập đăng ký thành viên',
+
+	'ACP_RESTORE'	=> 'Phục hồi',
 
 	'ACP_SEARCH'				=> 'Cấu hình tìm kiếm',
 	'ACP_SEARCH_INDEX'			=> 'Chỉ mục tìm kiếm',
@@ -167,10 +167,10 @@ $lang = array_merge($lang, array(
 	'ACP_STYLE_COMPONENTS'		=> 'Thành phần giao diện',
 	'ACP_STYLE_MANAGEMENT'		=> 'Quản lý giao diện',
 	'ACP_STYLES'				=> 'Giao diện',
-	
-	'ACP_TEMPLATES'				=> 'Khuôn mẫu',
-	'ACP_THEMES'				=> 'Kiểu dáng',
-	
+
+	'ACP_TEMPLATES'	=> 'Khuôn mẫu',
+	'ACP_THEMES'	=> 'Kiểu dáng',
+
 	'ACP_UPDATE'					=> 'Cập nhật',
 	'ACP_USERS_FORUM_PERMISSIONS'	=> 'Cấp phép chuyên mục cho thành viên',
 	'ACP_USERS_LOGS'				=> 'Ghi nhận thành viên',
@@ -197,21 +197,21 @@ $lang = array_merge($lang, array(
 	'ACP_VIEW_FORUM_PERMISSIONS'		=> 'Xem cấp phép dành cho chuyên mục',
 	'ACP_VIEW_GLOBAL_MOD_PERMISSIONS'	=> 'Xem cấp phép dành cho điều hành viên chính',
 	'ACP_VIEW_USER_PERMISSIONS'			=> 'Xem cấp phép dành cho thành viên',
-	
-	'ACP_WORDS'					=> 'Kiểm duyệt từ',
 
-	'ACTION'				=> 'Thao tác',
-	'ACTIONS'				=> 'Các thao tác',
-	'ACTIVATE'				=> 'Kích hoạt',
-	'ADD'					=> 'Thêm',
-	'ADMIN'					=> 'Quản trị viên',
-	'ADMIN_INDEX'			=> 'Bảng điều khiển',
-	'ADMIN_PANEL'			=> 'Bảng điều khiển của quản trị viên',
+	'ACP_WORDS'	=> 'Kiểm duyệt từ',
 
-	'BACK'					=> 'Quay lại',
+	'ACTION'		=> 'Thao tác',
+	'ACTIONS'		=> 'Các thao tác',
+	'ACTIVATE'		=> 'Kích hoạt',
+	'ADD'			=> 'Thêm',
+	'ADMIN'			=> 'Quản trị viên',
+	'ADMIN_INDEX'	=> 'Bảng điều khiển',
+	'ADMIN_PANEL'	=> 'Bảng điều khiển của quản trị viên',
 
-	'COLOUR_SWATCH'			=> 'Bảng mã màu an toàn',
-	'CONFIG_UPDATED'		=> 'Cấu hình hệ thống đã được cập nhật thành công.',
+	'BACK'	=> 'Quay lại',
+
+	'COLOUR_SWATCH'		=> 'Bảng mã màu an toàn',
+	'CONFIG_UPDATED'	=> 'Cấu hình hệ thống đã được cập nhật thành công.',
 
 	'DEACTIVATE'				=> 'Ngưng kích hoạt',
 	'DIRECTORY_DOES_NOT_EXIST'	=> 'Đường dẫn bạn vừa nhập “%s” không tồn tại.',
@@ -223,18 +223,18 @@ $lang = array_merge($lang, array(
 	'DOWNLOAD_STORE'			=> 'Tải về hoặc lưu trữ tập tin',
 	'DOWNLOAD_STORE_EXPLAIN'	=> 'Bạn có thể tải về trực tiếp tập tin hoặc lưu trữ lại trong thư mục <samp>store/</samp> của hệ thống.',
 
-	'EDIT'					=> 'Sửa',
-	'ENABLE'				=> 'Bật',
-	'EXPORT_DOWNLOAD'		=> 'Tải về',
-	'EXPORT_STORE'			=> 'Lưu trữ',
+	'EDIT'				=> 'Sửa',
+	'ENABLE'			=> 'Bật',
+	'EXPORT_DOWNLOAD'	=> 'Tải về',
+	'EXPORT_STORE'		=> 'Lưu trữ',
 
-	'GENERAL_OPTIONS'		=> 'Tuỳ chọn tổng quát',
-	'GENERAL_SETTINGS'		=> 'Thiết lập tổng quát',
-	'GLOBAL_MASK'			=> 'Danh sách cấp phép chung',
+	'GENERAL_OPTIONS'	=> 'Tuỳ chọn tổng quát',
+	'GENERAL_SETTINGS'	=> 'Thiết lập tổng quát',
+	'GLOBAL_MASK'		=> 'Danh sách cấp phép chung',
 
-	'INSTALL'				=> 'Cài đặt',
-	'IP'					=> 'Địa chỉ IP',
-	'IP_HOSTNAME'			=> 'Địa chỉ IP hoặc tên miền',
+	'INSTALL'		=> 'Cài đặt',
+	'IP'			=> 'Địa chỉ IP',
+	'IP_HOSTNAME'	=> 'Địa chỉ IP hoặc tên miền',
 
 	'LOGGED_IN_AS'				=> 'Bạn đã đăng nhập với tên thành viên:',
 	'LOGIN_ADMIN'				=> 'Bạn phải được cấp phép trong hệ thống để chuyển đến bảng điều khiển của quản trị viên.',
@@ -253,15 +253,15 @@ $lang = array_merge($lang, array(
 	'NO_EMAILS_DEFINED'		=> 'Không có địa chỉ Email hợp lệ nào được tìm thấy.',
 	'NO_PASSWORD_SUPPLIED'	=> 'Bạn cần phải nhập mật khẩu của mình để truy cập vào bảng điều khiển dành cho quản trị viên.',
 
-	'OFF'					=> 'Tắt',
-	'ON'					=> 'Bật',
+	'OFF'	=> 'Tắt',
+	'ON'	=> 'Bật',
 
 	'PARSE_BBCODE'						=> 'Phân tách BBCode',
 	'PARSE_SMILIES'						=> 'Phân tách biểu tượng vui',
 	'PARSE_URLS'						=> 'Phân tách liên kết',
 	'PERMISSIONS_TRANSFERRED'			=> 'Thiết lập cấp phép đã được chuyển',
 	'PERMISSIONS_TRANSFERRED_EXPLAIN'	=> 'Bạn hiện đang có những thiết lập cấp phép từ “%1$s”. Bạn có thể truy cập vào hệ thống với thiết lập cấp phép thành viên này nhưng không thể truy cập được vào bảng điều khiển dành cho quản trị viên bởi vì những thiết lập cấp phép dành cho người quản trị không được chuyển đến bạn. Bạn cũng có thể <a href="%2$s"><strong>phục hồi lại thiết lập cấp phép của mình</strong></a> bất cứ lúc nào bạn muốn.',
-	'PIXEL'								=> 'px',	
+	'PIXEL'								=> 'px',
 	'PROCEED_TO_ACP'					=> '%sChuyển đến bảng điều khiển của quản trị viên%s',
 
 	'REMIND'				=> 'Nhắc nhở',
@@ -270,6 +270,11 @@ $lang = array_merge($lang, array(
 
 	'SELECT_ANONYMOUS'		=> 'Chọn thành viên ẩn',
 	'SELECT_OPTION'			=> 'Chọn các mục tuỳ chọn',
+
+	'SETTING_TOO_LOW'		=> 'Giá trị bạn vừa nhập cho thiết lập “%1$s” quá thấp. Giá trị tối thiểu cho phép là <strong>%2$d</strong>.',
+	'SETTING_TOO_BIG'		=> 'Giá trị bạn vừa nhập cho thiết lập “%1$s” quá lớn. Giá trị tối đa cho phép là <strong>%2$d</strong>.',	
+	'SETTING_TOO_LONG'		=> 'Giá trị bạn vừa nhập cho thiết lập “%1$s” quá dài. Độ dài tối đa cho phép là <strong>%2$d</strong>.',
+	'SETTING_TOO_SHORT'		=> 'Giá trị bạn vừa nhập cho thiết lập “%1$s” quá ngắn. Độ dài tối thiểu cho phép là <strong>%2$d</strong>.',
 
 	'UCP'					=> 'Bảng điều khiển của thành viên',
 	'USERNAMES_EXPLAIN'		=> 'Xác định mỗi tên thành viên trên một hàng nhất định.',
@@ -507,7 +512,7 @@ $lang = array_merge($lang, array(
 
 	'LOG_ERROR_JABBER'		=> '<strong>Lỗi Jabber</strong><br />» %s',
 	'LOG_ERROR_EMAIL'		=> '<strong>Lỗi Email</strong><br />» %s',
-	
+
 	'LOG_FORUM_ADD'							=> '<strong>Đã tạo chuyên mục mới</strong><br />» %s',
 	'LOG_FORUM_DEL_FORUM'					=> '<strong>Đã xoá chuyên mục</strong><br />» %s',
 	'LOG_FORUM_DEL_FORUMS'					=> '<strong>Đã xoá chuyên mục và toàn bộ chuyên mục con</strong><br />» %s',

@@ -4,8 +4,8 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version $Id: ucp.php,v 1.086 2007/10/10 10:35:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: ucp.php,v 1.088 2008/04/10 04:24:00 nedka Exp $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -97,7 +97,7 @@ $lang = array_merge($lang, array(
 	'ATTACHMENTS_DELETED'			=> 'Những tập tin đính kèm bạn vừa chọn đã được xoá thành công.',
 	'ATTACHMENT_DELETED'			=> 'Tập tin đính kèm bạn vừa chọn đã được xoá thành công.',
 	'AVATAR_CATEGORY'				=> 'Chủ đề hình đại diện',
-	'AVATAR_EXPLAIN'				=> 'Kích thước tối đa cho phép: <strong>%1$d</strong> Pixel chiều rộng và <strong>%2$d</strong> Pixel chiều cao với dung lượng tập tin tối đa là <strong>%3$d</strong> KB.',
+	'AVATAR_EXPLAIN'				=> 'Kích thước tối đa cho phép: <strong>%1$d</strong> Pixel chiều rộng và <strong>%2$d</strong> Pixel chiều cao với dung lượng tập tin tối đa là <strong>%3$.2f</strong> KiB.',
 	'AVATAR_FEATURES_DISABLED'		=> 'Chức năng sử dụng hình đại diện hiện tại đã bị vô hiệu.',
 	'AVATAR_GALLERY'				=> 'Thư viện hình đại diện',
 	'AVATAR_GENERAL_UPLOAD_ERROR'	=> 'Không thể tải lên hình đại diện đến “%s”.',
@@ -232,6 +232,7 @@ $lang = array_merge($lang, array(
 
 	'IF_FOLDER_FULL'			=> 'Nếu thư mục này vượt quá dung lượng cho phép',
 	'IMPORTANT_NEWS'			=> 'Những thông báo quan trọng',
+	'INVALID_USER_BIRTHDAY'		=> 'Ngày sinh bạn vừa nhập không hợp lệ.',
 	'INVALID_CHARS_USERNAME'	=> 'Tên thành viên bạn vừa nhập có những ký tự không được phép sử dụng.',
 	'INVALID_CHARS_NEW_PASSWORD'=> 'Mật khẩu bạn vừa nhập không có những ký tự được yêu cầu phải sử dụng.',
 	'ITEMS_REQUIRED'			=> 'Những mục đánh dấu * là những mục thông tin cá nhân bắt buộc và bạn bạn phải điền đầy đủ thông tin trong những mục này.',

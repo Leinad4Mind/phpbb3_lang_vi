@@ -1,10 +1,10 @@
 <?php
 /** 
 *
-* posting [Vietnamese]
+* acp_posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php,v 1.040 2008/01/25 04:00:00 nedka Exp $
+* @version $Id: posting.php,v 1.041 2008/03/27 09:45:00 nedka Exp $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -64,7 +64,7 @@ $lang = array_merge($lang, array(
 	'BBCODE_TAG_DEF_TOO_LONG'	=> 'Tên định danh của thẻ BBCode bạn vừa nhập quá dài. Hãy vui lòng sử dụng tên định danh cho thẻ ngắn hơn.',
 	'BBCODE_TAG_TOO_LONG'		=> 'Thẻ BBCode xác định bạn vừa nhập quá dài, hãy vui lòng chọn tên thẻ ngắn hơn.',
 	'BBCODE_USAGE'				=> 'Cách sử dụng thẻ BBCode',
-	'BBCODE_USAGE_EXAMPLE'		=> '[hilight={COLOR}]{TEXT}[/hilight]<br /><br />[font={SIMPLETEXT1}]{SIMPLETEXT2}[/font]',
+	'BBCODE_USAGE_EXAMPLE'		=> '[highlight={COLOR}]{TEXT}[/highlight]<br /><br />[font={SIMPLETEXT1}]{SIMPLETEXT2}[/font]',
 	'BBCODE_USAGE_EXPLAIN'		=> 'Bạn có thể xác định cách sử dụng thẻ BBCode tại đây. Thay thế bất kỳ biến nào nhập vào bằng mã tương ứng (%sXem bên dưới%s).',
 
 	'EXAMPLE'						=> 'Ví dụ:',
@@ -170,6 +170,8 @@ $lang = array_merge($lang, array(
 	'SMILIES_CONFIG'			=> 'Cấu hình biểu tượng vui',
 	'SMILIES_DELETED'			=> 'Biểu tượng vui đã được gỡ bỏ thành công.',
 	'SMILIES_EDIT'				=> 'Sửa biểu tượng vui',
+	'SMILIE_NO_CODE'			=> 'Biểu tượng vui “%s” đã bị cấm dùng, vì thế mã bạn vừa nhập vô hiệu.',
+	'SMILIE_NO_EMOTION'			=> 'Biểu tượng vui “%s” đã bị cấm dùng, vì thế cảm xúc bạn vừa nhập vô hiệu.',
 	'SMILIES_NONE_EDITED'		=> 'Không có biểu tượng vui nào được cập nhật.',
 	'SMILIES_ONE_EDITED'		=> 'Biểu tượng vui đã được cập nhật thành công.',
 	'SMILIES_EDITED'			=> 'Những biểu tượng vui đã được cập nhật thành công.',
@@ -213,7 +215,7 @@ $lang = array_merge($lang, array(
 	'ADD_RANK'				=> 'Thêm xếp hạng mới',
 
 	'MUST_SELECT_RANK'		=> 'Bạn phải chọn một xếp hạng.',
-	
+
 	'NO_ASSIGNED_RANK'		=> 'Không có xếp hạng đặc biệt nào được chỉ định.',
 	'NO_RANK_TITLE'			=> 'Bạn chưa nhập vào tên xếp hạng.',
 	'NO_UPDATE_RANKS'		=> 'Xếp hạng đã được xoá thành công. Tuy nhiên, những tài khoản thành viên đang sử dụng xếp hạng này chưa được cập nhật. Bạn sẽ phải tự mình thay đổi lại xếp hạng cho những tài khoản thành viên này.',
@@ -254,7 +256,7 @@ $lang = array_merge($lang, array(
 	'IS_NOT_TRANSLATED_EXPLAIN'	=> 'Đây là những nguyên nhân <strong>chưa được</strong> phiên dịch. Nếu bạn muốn cung cấp nội dung trong phần phiên dịch, hãy xác định một khóa chính xác từ các tập tin trong gói ngôn ngữ để báo cáo về nguyên nhân trên.',
 	'IS_TRANSLATED'				=> 'Nguyên nhân đã được phiên dịch',
 	'IS_TRANSLATED_EXPLAIN'		=> 'Đây là những nguyên nhân đã được phiên dịch. Nếu tên nguyên nhân bạn nhập vào ở đây đã được xác định từ các tập tin trong gói ngôn ngữ để báo cáo về nguyên nhân trên, phần nội dung phiên dịch của tên và nội dung nguyên nhân sẽ được sử dụng.',
-	
+
 	'NO_REASON'					=> 'Không thể tìm thấy nguyên nhân.',
 	'NO_REASON_INFO'			=> 'Bạn phải nhập vào tên và nội dung của nguyên nhân này.',
 	'NO_REMOVE_DEFAULT_REASON'	=> 'Bạn không thể gỡ bỏ nguyên nhân mặc định “Những nguyên nhân khác”.',

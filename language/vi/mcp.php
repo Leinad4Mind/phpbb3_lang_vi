@@ -4,8 +4,8 @@
 * mcp [Vietnamese]
 *
 * @package language
-* @version $Id: mcp.php,v 1.039 2007/10/06 08:49:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: mcp.php,v 1.040 2008/03/27 09:10:00 nedka Exp $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -282,8 +282,8 @@ $lang = array_merge($lang, array(
 	'REPORT_TOTAL'				=> 'Chỉ có <strong>1</strong> báo cáo để xem lại.',
 	'RESYNC'					=> 'Đồng bộ',
 	'RETURN_MESSAGE'			=> '%sQuay về nội dung vừa xem%s',
-	'RETURN_NEW_FORUM'			=> '%sQuay về chuyên mục mới vừa xem%s',
-	'RETURN_NEW_TOPIC'			=> '%sQuay về chủ đề mới vừa xem%s',
+	'RETURN_NEW_FORUM'			=> '%sChuyển đến chuyên mục mới%s',
+	'RETURN_NEW_TOPIC'			=> '%sChuyển đến chủ đề mới%s',
 	'RETURN_POST'				=> '%sQuay về bài viết vừa xem%s',
 	'RETURN_QUEUE'				=> '%sQuay về hàng vừa xem%s',
 	'RETURN_REPORTS'			=> '%sQuay về báo cáo vừa xem%s',

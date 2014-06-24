@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version $Id: install.php,v 1.084 2008/01/21 10:15:00 nedka Exp $
+* @version $Id: install.php,v 1.085 2008/03/27 09:08:00 nedka Exp $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -469,7 +469,7 @@ $lang = array_merge($lang, array(
 	'NO_VISIBLE_CHANGES'			=> 'Không có thay đổi nào rõ ràng',
 	'NOTICE'						=> 'Thông báo',
 	'NUM_CONFLICTS'					=> 'Tổng số xung đột',
-	'NUMBER_OF_FILES_COLLECTED'		=> 'Hiện tại đã xuất hiện những điểm khác nhau về %1$d từ %2$d tập tin đã dò tìm.<br />Bạn hãy vui lòng chờ đợi cho đến khi quá trình dò tìm tập tin hoàn tất.',
+	'NUMBER_OF_FILES_COLLECTED'		=> 'Những điểm khác nhau hiện tại của %1$d trong %2$d tập tin đã được kiểm tra.<br />Hãy vui lòng chờ đợi cho đến khi tất cả tập tin được kiểm tra xong.',
 
 	'OLD_UPDATE_FILES'		=> 'Những tập tin cập nhật này là dành cho phiên bản cũ. Những tập tin cập nhật này được xác định là dành cho việc cập nhật hệ thống phpBB từ phiên bản %1$s lên phiên bản %2$s trong khi phiên bản phpBB mới nhất là %3$s.',
 

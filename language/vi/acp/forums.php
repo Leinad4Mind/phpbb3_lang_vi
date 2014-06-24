@@ -4,8 +4,8 @@
 * acp_forums [Vietnamese]
 *
 * @package language
-* @version $Id: forums.php,v 1.025 2007/10/06 10:43:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: forums.php,v 1.026 2008/03/27 09:36:00 nedka Exp $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -123,10 +123,12 @@ $lang = array_merge($lang, array(
 
 	'GENERAL_FORUM_SETTINGS'	=> 'Thiết lập chuyên mục tổng quát',
 
-	'LINK'					=> 'Liên kết',
-	'LIST_INDEX'			=> 'Liệt kê chuyên mục con trong phần chú giải của chuyên mục chứa nó',
-	'LIST_INDEX_EXPLAIN'	=> 'Hiển thị chuyên mục này trong trang chính của diễn đàn và nơi khác với một liên kết trong phần chú giải của chuyên mục chứa nó.',
-	'LOCKED'				=> 'Đã khoá',
+	'LINK'						=> 'Liên kết',
+	'LIST_INDEX'				=> 'Hiện chuyên mục con trong phần chú giải của chuyên mục chứa nó',
+	'LIST_INDEX_EXPLAIN'		=> 'Hiển thị chuyên mục này trên trang diễn đàn và bất kỳ đâu với một liên kết trong phần chú giải của chuyên mục chứa nó nếu tùy chọn “Hiện các chuyên mục trong phần chú giải” của chuyên mục chứa được bật.',
+	'LIST_SUBFORUMS'			=> 'Hiện các chuyên mục trong phần chú giải',
+	'LIST_SUBFORUMS_EXPLAIN'	=> 'Hiển thị các chuyên mục con của chuyên mục này trên trang diễn đàn và bất kỳ đâu với một liên kết trong phần chú giải nếu tùy chọn “Hiện chuyên mục con trong phần chú giải của chuyên mục chứa nó” của chúng được bật.',
+	'LOCKED'					=> 'Đã khoá',
 
 	'MOVE_POSTS_NO_POSTABLE_FORUM'	=> 'Chuyên mục bạn vừa chọn để di duyển các bài viết đến không cho phép gửi bài. Bạn hãy vui lòng chọn một chuyên mục cho phép gửi bài.',
 	'MOVE_POSTS_TO'					=> 'Di chuyển bài viết đến',
