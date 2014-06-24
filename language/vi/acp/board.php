@@ -4,7 +4,7 @@
 * acp_board [Vietnamese]
 *
 * @package language
-* @version $Id: board.php 93 2009-11-18 22:26:00Z nedka $
+* @version $Id: board.php 94 2010-03-02 07:45:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -83,7 +83,8 @@ $lang = array_merge($lang, array(
 	'ALLOW_PM_REPORT'			=> 'Cho phép báo cáo tin nhắn',
 	'ALLOW_PM_REPORT_EXPLAIN'	=> 'Nếu tùy chọn này được bật, các thành viên sẽ có thêm tùy chọn báo cáo tin nhắn mà họ nhận được hay gửi đến các điều hành viên. Không có điều hành viên nào được phép xem những báo cáo tin nhắn này.',
 	'ALLOW_QUICK_REPLY'			=> 'Cho phép trả lời nhanh bài viết',
-	'ALLOW_QUICK_REPLY_EXPLAIN'	=> 'Tùy chọn này điều khiển việc bật/tắt toàn bộ chức năng trả lời nhanh. Nếu tùy chọn này được bật, từng chuyên mục cũng phải bật tùy chọn này cho thành viên sử dụng.',
+	'ALLOW_QUICK_REPLY_EXPLAIN'	=> 'Tùy chọn này cho phép bạn bật/tắt chức năng trả lời nhanh trên toàn diễn đàn. Nếu tùy chọn này được bật, danh sách các chuyên mục cho phép dùng trả lời nhanh sẽ được sử dụng để thiết lập riêng cho từng chuyên mục đó.',
+	'ALLOW_QUICK_REPLY_BUTTON'	=> 'Chấp nhận và bật trả lời nhanh trên tất cả chuyên mục',
 	'ALLOW_SIG'					=> 'Cho phép sử dụng chữ ký cá nhân',
 	'ALLOW_SIG_BBCODE'			=> 'Cho phép sử dụng BBCode trong chữ ký cá nhân',
 	'ALLOW_SIG_FLASH'			=> 'Cho phép sử dụng thẻ BBCode <code>[FLASH]</code> trong chữ ký cá nhân',
@@ -157,8 +158,9 @@ $lang = array_merge($lang, array(
 	'ALLOW_POST_LINKS_EXPLAIN'			=> 'Nếu bạn vô hiệu tùy chọn này, thẻ BBCode <code>[URL]</code> và các địa chỉ URL khác trong bài viết/tin nhắn sẽ không được hiển thị như liên kết.',
 	'ALLOW_POST_FLASH'					=> 'Cho phép sử dụng thẻ BBCode <code>[FLASH]</code> trong bài viết',
 	'ALLOW_POST_FLASH_EXPLAIN'			=> 'Nếu bạn vô hiệu tùy chọn này, thẻ BBCode <code>[FLASH]</code> sẽ bị vô hiệu trong các bài viết. Mặc khác, những thiết lập cấp phép cũng quyết định việc thành viên có thể sử dụng được thẻ BBCode <code>[FLASH]</code> hay không.',
+
 	'BUMP_INTERVAL'					=> 'Thời gian giữa hai lần đẩy chủ đề lên',
-	'BUMP_INTERVAL_EXPLAIN'			=> 'Số phút, số giờ hoặc số ngày giữa thời gian bài viết mới nhất được gửi đến chủ đề và việc sử dụng chức năng đẩy chủ đề lên này.',
+	'BUMP_INTERVAL_EXPLAIN'			=> 'Số phút, số giờ hoặc số ngày giữa thời gian bài viết mới nhất được gửi đến chủ đề và thao tác đẩy chủ đề lên. Nhập số <strong>0</strong> để vô hiệu tùy chọn này.',
 	'CHAR_LIMIT'					=> 'Ký tự tối đa mỗi bài viết/tin nhắn',
 	'CHAR_LIMIT_EXPLAIN'			=> 'Số lượng ký tự được phép sử dụng trong nội dung của một bài viết hay tin nhắn. Nhập số <strong>0</strong> để không hạn chế số ký tự.',
 	'DELETE_TIME'					=> 'Giới hạn thời gian xóa',
@@ -260,29 +262,36 @@ $lang = array_merge($lang, array(
 
 // Feeds
 $lang = array_merge($lang, array(
-	'ACP_FEED_MANAGEMENT'				=> 'Thiết lập kênh tin nhanh',
-	'ACP_FEED_MANAGEMENT_EXPLAIN'		=> 'Sử dụng công cụ này, bạn có thể tạo ra các nguồn tin nhanh theo chuẩn ATOM, nhận dạng bất kỳ thẻ BBCode nào trong bài viết để có thể đọc được từ các nguồn bên ngoài.',
 	'ACP_FEED_ENABLE'					=> 'Bật tin nhanh',
 	'ACP_FEED_ENABLE_EXPLAIN'			=> 'Tùy chọn bật/tắt chức năng tạo tin nhanh ATOM cho toàn bộ diễn đàn.<br />Việc vô hiệu tùy chọn này sẽ tắt toàn bộ chức năng tin nhanh, bất kể bạn thiết lập những gì trong phần bên dưới.',
 	'ACP_FEED_EXCLUDE_ID'				=> 'Loại trừ các chuyên mục',
 	'ACP_FEED_EXCLUDE_ID_EXPLAIN'		=> 'Nội dung từ các chuyên mục này sẽ <strong>không được đính kèm</strong> vào trang tin nhanh. Không chọn chuyên mục nào trong phần này nghĩa là bạn chọn sử dụng toàn bộ các chuyên mục.<br />Chọn/bỏ chọn nhiều chuyên mục bằng cách giữ phím <samp>Ctrl</samp> và nhấp chuột.',
 	'ACP_FEED_FORUM'					=> 'Bật tin nhanh cho từng chuyên mục',
-	'ACP_FEED_FORUM_EXPLAIN'			=> 'Hiện những bài viết mới của từng chuyên mục.',
-	'ACP_FEED_GENERAL'					=> 'Thiết lập tổng quát',
+	'ACP_FEED_FORUM_EXPLAIN'			=> 'Hiện những bài viết mới của từng chuyên mục đơn và chuyên mục con.',
+	'ACP_FEED_GENERAL'					=> 'Thiết lập chung',
+	'ACP_FEED_HTTP_AUTH'				=> 'Cho phép xác thực HTTP',
+	'ACP_FEED_HTTP_AUTH_EXPLAIN'		=> 'Tùy chọn cho phép thành viên có thể đọc được nội dung ẩn không dành cho khách bằng cách thêm vào tham số <samp>auth=http</samp> trong địa chỉ URL. Lưu ý rằng một vài bản cài đặt PHP có thể yêu cầu phải chỉnh sửa lại tập tin <code>.htaccess</code>. Bạn có thể đọc hướng dẫn ghi chú trong tập tin này.',
 	'ACP_FEED_ITEM_STATISTICS'			=> 'Thông tin thống kê',
-	'ACP_FEED_ITEM_STATISTICS_EXPLAIN'	=> 'Tùy chọn hiển thị thông tin thống kê cho từng mục tin.<br />(Người gửi, ngày giờ, lượt trả lời, lượt xem)',
+	'ACP_FEED_ITEM_STATISTICS_EXPLAIN'	=> 'Tùy chọn hiển thị thông tin thống kê cho từng mục tin.<br />(Ví dụ: người gửi, ngày giờ, lượt trả lời, lượt xem)',
 	'ACP_FEED_LIMIT'					=> 'Số lượng mục tin',
 	'ACP_FEED_LIMIT_EXPLAIN'			=> 'Số lượng tối đa các mục tin nhanh được hiển thị trên trang tin.',
+	'ACP_FEED_MANAGEMENT'				=> 'Thiết lập kênh tin nhanh',
+	'ACP_FEED_MANAGEMENT_EXPLAIN'		=> 'Sử dụng công cụ này, bạn có thể tạo ra các nguồn tin nhanh theo chuẩn ATOM, nhận dạng bất kỳ thẻ BBCode nào trong bài viết để có thể đọc được từ các nguồn bên ngoài.',
 	'ACP_FEED_NEWS'						=> 'Chuyên mục lấy tin',
 	'ACP_FEED_NEWS_EXPLAIN'				=> 'Lấy nội dung từ các bài viết mới nhất của những chuyên mục này. Không chọn chuyên mục nào trong phần này nghĩa là bạn vô hiệu chức năng tạo tin nhanh.<br />Chọn/bỏ chọn nhiều chuyên mục bằng cách giữ phím <samp>Ctrl</samp> và nhấp chuột.',
+	'ACP_FEED_OVERALL'					=> 'Bật tin nhanh cho toàn bộ diễn đàn',
+	'ACP_FEED_OVERALL_EXPLAIN'			=> 'Hiện những bài viết mới của toàn bộ diễn đàn.',
 	'ACP_FEED_OVERALL_FORUMS'			=> 'Bật tin nhanh cho toàn bộ chuyên mục',
-	'ACP_FEED_OVERALL_FORUMS_EXPLAIN'	=> 'Tùy chọn lấy nội dung từ các bài viết mới nhất của tất cả chuyên mục.',
-	'ACP_FEED_OVERALL_FORUMS_LIMIT'		=> 'Số lượng mục tin cho trang tin nhanh từ các chuyên mục',
-	'ACP_FEED_OVERALL_TOPIC'			=> 'Bật tin nhanh cho toàn bộ chủ đề',
-	'ACP_FEED_OVERALL_TOPIC_EXPLAIN'	=> 'Tùy chọn lấy nội dung từ các bài viết mới nhất của tất cả chủ đề.',
-	'ACP_FEED_OVERALL_TOPIC_LIMIT'		=> 'Số lượng mục tin cho trang tin nhanh từ các chủ đề',
+	'ACP_FEED_OVERALL_FORUMS_EXPLAIN'	=> 'Hiện liên kết “Tất cả chuyên mục”, liệt kê danh sách tất cả các chuyên mục.',
+	'ACP_FEED_POST_BASED'				=> 'Thiết lập cho bài viết',
+	'ACP_FEED_SETTINGS_OTHER'			=> 'Thiết lập khác',
 	'ACP_FEED_TOPIC'					=> 'Bật tin nhanh cho từng chủ đề',
+	'ACP_FEED_TOPIC_BASED'				=> 'Thiết lập cho chủ đề',
 	'ACP_FEED_TOPIC_EXPLAIN'			=> 'Hiện những bài viết mới của từng chủ đề.',
+	'ACP_FEED_TOPICS_ACTIVE'			=> 'Bật tin nhanh cho các chủ đề sôi nổi',
+	'ACP_FEED_TOPICS_ACTIVE_EXPLAIN'	=> 'Hiện liên kết “Chủ đề sôi nổi”, liệt kê những chủ đề vừa được thảo luận, bao gồm cả bài viết cuối cùng.',
+	'ACP_FEED_TOPICS_NEW'				=> 'Bật tin nhanh cho các chủ đề mới',
+	'ACP_FEED_TOPICS_NEW_EXPLAIN'		=> 'Hiện liên kết “Chủ đề mới”, liệt kê những chủ đề vừa được gửi, bao gồm cả bài viết đầu tiên.',
 ));
 
 // Visual Confirmation Settings
@@ -392,7 +401,7 @@ $lang = array_merge($lang, array(
 	'LDAP_NO_EMAIL'					=> 'Thuộc tính của địa chỉ email bạn vừa xác định không tồn tại.',	
 	'LDAP_NO_IDENTITY'				=> 'Không thể tìm khóa định danh đăng nhập cho <strong>%s</strong>.',
 	'LDAP_PASSWORD'					=> 'Mật khẩu LDAP',
-	'LDAP_PASSWORD_EXPLAIN'			=> 'Để trống phần này để sử dụng liên kết ẩn danh. Nếu máy chủ dịch vụ không cho phép truy cập ẩn danh, bạn hãy điền vào mật khẩu cho tài khoản LDAP tương ứng ở trên. Mục này được yêu cầu cho các thư mục máy chủ đang hoạt động. <strong>CẢNH BÁO:</strong> Mật khẩu này sẽ được lưu trữ dưới dạng văn bản thuần trong cơ sở dữ liệu, vì thế nó có thể bị xem bởi bất kì ai có quyền truy cập vào cơ sở dữ liệu của bạn hoặc được phép xem trang cấu hình này.',
+	'LDAP_PASSWORD_EXPLAIN'			=> 'Để trống phần này để sử dụng liên kết ẩn danh. Nếu máy chủ dịch vụ không cho phép truy cập ẩn danh, bạn hãy điền vào mật khẩu cho tài khoản LDAP tương ứng ở trên. Mục này được yêu cầu cho các thư mục máy chủ đang hoạt động.<br /><em><strong>CẢNH BÁO:</strong> Mật khẩu này sẽ được lưu trữ dưới dạng văn bản thuần trong cơ sở dữ liệu, vì thế nó có thể bị xem bởi bất kì ai có quyền truy cập vào cơ sở dữ liệu của bạn hoặc được phép xem trang cấu hình này.</em>',
 	'LDAP_PORT'						=> 'Cổng máy chủ LDAP',
 	'LDAP_PORT_EXPLAIN'				=> 'Tùy chọn này cho phép bạn có thể xác định một cổng khác được sử dụng để kết nối đến máy chủ LDAP thay vì dùng cổng mặc định là <strong>389</strong>.',
 	'LDAP_SERVER'					=> 'Địa chỉ máy chủ LDAP',
@@ -527,6 +536,7 @@ $lang = array_merge($lang, array(
 	'JAB_PACKAGE_SIZE'			=> 'Số lượng tin nhắn trong gói Jabber',
 	'JAB_PACKAGE_SIZE_EXPLAIN'	=> 'Số lượng tin nhắn được gửi đi trong một gói Jabber. Nếu bạn nhập vào số <strong>0</strong>, tin nhắn sẽ được gửi đi ngay lập tức và không phải chờ đợi để được gửi.',
 	'JAB_PASSWORD'				=> 'Mật khẩu đăng nhập tài khoản Jabber',
+	'JAB_PASSWORD_EXPLAIN'		=> '<em><strong>CẢNH BÁO:</strong> Mật khẩu này sẽ được lưu trữ dưới dạng văn bản thuần trong cơ sở dữ liệu, vì thế nó có thể bị xem bởi bất kì ai có quyền truy cập vào cơ sở dữ liệu của bạn hoặc được phép xem trang cấu hình này.</em>',
 	'JAB_PORT'					=> 'Cổng máy chủ Jabber',
 	'JAB_PORT_EXPLAIN'			=> 'Để trống mục này nếu như bạn chắc chắn máy chủ này không chạy trên cổng <strong>5222</strong>.',
 	'JAB_SERVER'				=> 'Địa chỉ máy chủ Jabber',

@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version $Id: ucp.php 105 2009-11-18 22:17:00Z nedka $
+* @version $Id: ucp.php 106 2010-03-02 07:03:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -469,6 +469,7 @@ $lang = array_merge($lang, array(
 	'UCP_ZEBRA'								=> 'Bạn thân &amp; kẻ thù',
 	'UCP_ZEBRA_FOES'						=> 'Quản lí kẻ thù',
 	'UCP_ZEBRA_FRIENDS'						=> 'Quản lí bạn thân',
+	'UNDISCLOSED_RECIPIENT'					=> 'Người nhận ẩn danh',
 	'UNKNOWN_FOLDER'						=> 'Thư mục không biết',
 	'UNWATCH_MARKED'						=> 'Ngừng theo dõi những mục đã đánh dấu',
 	'UPLOAD_AVATAR_FILE'					=> 'Tải hình đại diện từ máy tính của bạn',

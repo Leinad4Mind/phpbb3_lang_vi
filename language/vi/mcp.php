@@ -4,7 +4,7 @@
 * mcp [Vietnamese]
 *
 * @package language
-* @version $Id: mcp.php 52 2009-07-29 02:15:00Z nedka $
+* @version $Id: mcp.php 53 2010-03-02 06:46:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -258,29 +258,31 @@ $lang = array_merge($lang, array(
 	'ONLY_TOPIC'	=> 'Chỉ trong chủ đề “%s”',	
 	'OTHER_USERS'	=> 'Những thành viên khác gửi bài từ địa chỉ IP này',
 
-	'PM_REPORT_CLOSED_SUCCESS'	=> 'Báo cáo tin nhắn vừa chọn đã được kết thúc thành công.',
-	'PM_REPORT_DELETED_SUCCESS'	=> 'Báo cáo tin nhắn vừa chọn đã được kết thúc thành công.',
-	'PM_REPORTED_SUCCESS'		=> 'Tin nhắn vừa chọn đã được báo cáo thành công.',
-	'PM_REPORT_TOTAL'			=> 'Chỉ có <strong>1</strong> báo cáo để xem lại.',
-	'PM_REPORTS_TOTAL'			=> 'Có tất cả <strong>%d</strong> báo cáo để xem lại.',
-	'PM_REPORTS_ZERO_TOTAL'		=> 'Không có báo cáo nào để xem lại.',
-	'PM_REPORT_DETAILS'			=> 'Chi tiết báo cáo tin nhắn',
-	'POSTER'					=> 'Người gửi',
-	'POSTS_APPROVED_SUCCESS'	=> 'Những bài viết vừa chọn đã được duyệt thành công.',
-	'POSTS_DELETED_SUCCESS'		=> 'Những bài viết vừa chọn đã được xóa thành công.',
-	'POSTS_DISAPPROVED_SUCCESS'	=> 'Những bài viết vừa chọn đã được từ chối thành công.',
-	'POSTS_LOCKED_SUCCESS'		=> 'Những bài viết vừa chọn đã được khóa thành công.',
-	'POSTS_MERGED_SUCCESS'		=> 'Những bài viết vừa chọn đã được nhập chung thành công.',
-	'POSTS_UNLOCKED_SUCCESS'	=> 'Những bài viết vừa chọn đã được mở khóa thành công.',
-	'POSTS_PER_PAGE'			=> 'Bài viết mỗi trang',
-	'POSTS_PER_PAGE_EXPLAIN'	=> '(Nhập số <strong>0</strong> để xem tất cả báo cáo)',
-	'POST_APPROVED_SUCCESS'		=> 'Bài viết vừa chọn đã được duyệt thành công.',
-	'POST_DELETED_SUCCESS'		=> 'Bài viết vừa chọn đã được xóa thành công.',
-	'POST_DISAPPROVED_SUCCESS'	=> 'Bài viết vừa chọn đã được từ chối thành công.',
-	'POST_LOCKED_SUCCESS'		=> 'Bài viết đã được khóa thành công.',
-	'POST_NOT_EXIST'			=> 'Bài viết bạn vừa yêu cầu không tồn tại.',
-	'POST_REPORTED_SUCCESS'		=> 'Bài viết đã được báo cáo thành công.',
-	'POST_UNLOCKED_SUCCESS'		=> 'Bài viết đã được mở khóa thành công.',
+	'PM_REPORT_CLOSED_SUCCESS'		=> 'Báo cáo tin nhắn vừa chọn đã được kết thúc thành công.',
+	'PM_REPORT_DELETED_SUCCESS'		=> 'Báo cáo tin nhắn vừa chọn đã được xóa thành công.',
+	'PM_REPORTED_SUCCESS'			=> 'Tin nhắn vừa chọn đã được báo cáo thành công.',
+	'PM_REPORT_TOTAL'				=> 'Chỉ có <strong>1</strong> báo cáo để xem lại.',
+	'PM_REPORTS_CLOSED_SUCCESS'		=> 'Những báo cáo tin nhắn vừa chọn đã được kết thúc thành công.',
+	'PM_REPORTS_DELETED_SUCCESS'	=> 'Những báo cáo tin nhắn vừa chọn đã được xóa thành công.',
+	'PM_REPORTS_TOTAL'				=> 'Có tất cả <strong>%d</strong> báo cáo để xem lại.',
+	'PM_REPORTS_ZERO_TOTAL'			=> 'Không có báo cáo nào để xem lại.',
+	'PM_REPORT_DETAILS'				=> 'Chi tiết báo cáo tin nhắn',
+	'POSTER'						=> 'Người gửi',
+	'POSTS_APPROVED_SUCCESS'		=> 'Những bài viết vừa chọn đã được duyệt thành công.',
+	'POSTS_DELETED_SUCCESS'			=> 'Những bài viết vừa chọn đã được xóa thành công.',
+	'POSTS_DISAPPROVED_SUCCESS'		=> 'Những bài viết vừa chọn đã được từ chối thành công.',
+	'POSTS_LOCKED_SUCCESS'			=> 'Những bài viết vừa chọn đã được khóa thành công.',
+	'POSTS_MERGED_SUCCESS'			=> 'Những bài viết vừa chọn đã được nhập chung thành công.',
+	'POSTS_UNLOCKED_SUCCESS'		=> 'Những bài viết vừa chọn đã được mở khóa thành công.',
+	'POSTS_PER_PAGE'				=> 'Bài viết mỗi trang',
+	'POSTS_PER_PAGE_EXPLAIN'		=> '(Nhập số <strong>0</strong> để xem tất cả báo cáo)',
+	'POST_APPROVED_SUCCESS'			=> 'Bài viết vừa chọn đã được duyệt thành công.',
+	'POST_DELETED_SUCCESS'			=> 'Bài viết vừa chọn đã được xóa thành công.',
+	'POST_DISAPPROVED_SUCCESS'		=> 'Bài viết vừa chọn đã được từ chối thành công.',
+	'POST_LOCKED_SUCCESS'			=> 'Bài viết đã được khóa thành công.',
+	'POST_NOT_EXIST'				=> 'Bài viết bạn vừa yêu cầu không tồn tại.',
+	'POST_REPORTED_SUCCESS'			=> 'Bài viết đã được báo cáo thành công.',
+	'POST_UNLOCKED_SUCCESS'			=> 'Bài viết đã được mở khóa thành công.',
 
 	'READ_USERNOTES'			=> 'Ghi chú thành viên',
 	'READ_WARNINGS'				=> 'Cảnh cáo thành viên',
@@ -336,6 +338,7 @@ $lang = array_merge($lang, array(
 	'SPLIT_TOPIC_BEYOND_CONFIRM'		=> 'Bạn có chắc chắn muốn chia nhỏ chủ đề này từ bài viết đã chọn?',
 	'SPLIT_TOPIC_EXPLAIN'				=> 'Sử dụng bảng điều khiển bên dưới, bạn có thể chia nhỏ một chủ đề thành hai chủ đề khác bằng cách chọn những bài viết riêng lẻ hoặc bằng cách chia nhỏ một bài viết đã chọn.',
 
+	'THIS_PM_IP'				=> 'Địa chỉ IP đã gửi tin nhắn này',
 	'THIS_POST_IP'				=> 'Địa chỉ IP đã gửi bài viết này',
 	'TOPICS_APPROVED_SUCCESS'	=> 'Những chủ đề vừa chọn đã được duyệt thành công.',
 	'TOPICS_DELETED_SUCCESS'	=> 'Những chủ đề vừa chọn đã được xóa thành công.',

@@ -4,7 +4,7 @@
 * acp_common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php 98 2009-11-18 22:48:00Z nedka $
+* @version $Id: common.php 99 2010-03-02 07:47:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -276,7 +276,6 @@ $lang = array_merge($lang, array(
 	'PARSE_URLS'						=> 'Nhận diện liên kết',
 	'PERMISSIONS_TRANSFERRED'			=> 'Thiết lập cấp phép đã được chuyển',
 	'PERMISSIONS_TRANSFERRED_EXPLAIN'	=> 'Bạn hiện đang có những thiết lập cấp phép từ “%1$s”. Bạn có thể truy cập vào hệ thống với thiết lập cấp phép thành viên này nhưng không thể truy cập được vào bảng điều khiển dành cho quản trị viên bởi vì những thiết lập cấp phép dành cho người quản trị không được chuyển đến bạn. Bạn cũng có thể <a href="%2$s"><strong>phục hồi lại thiết lập cấp phép của mình</strong></a> bất cứ lúc nào bạn muốn.',
-	'PIXEL'								=> 'px',
 	'PROCEED_TO_ACP'					=> '%sChuyển đến bảng quản trị viên%s',
 
 	'REMIND'	=> 'Nhắc nhở',
@@ -348,6 +347,8 @@ $lang = array_merge($lang, array(
 	'NUMBER_TOPICS'		=> 'Số chủ đề',
 	'NUMBER_USERS'		=> 'Số thành viên',
 	'NUMBER_ORPHAN'		=> 'Số tập tin đính kèm không sử dụng',
+
+	'PHP_VERSION_OLD'	=> 'Phiên bản PHP trên máy chủ này không còn được hỗ trợ bởi các phiên bản phpBB sau này. %sXem chi tiết%s',
 
 	'POSTS_PER_DAY'		=> 'Số bài viết/ngày',
 

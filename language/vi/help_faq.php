@@ -4,7 +4,7 @@
 * help_faq [Vietnamese]
 *
 * @package language
-* @version $Id: help_faq.php 61 2009-07-25 18:58:00Z nedka $
+* @version $Id: help_faq.php 62 2010-03-02 06:43:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -105,8 +105,8 @@ $help = array(
 		1 => 'Có thể quản trị viên chưa cài đặt gói ngôn ngữ mà bạn dùng vào hệ thống hay đơn giản là chưa từng có ai phiên dịch hệ thống này sang ngôn ngữ của bạn. Hãy cố gắng yêu cầu người quản trị cài đặt gói ngôn ngữ của bạn vào hệ thống nếu nó có sẵn. Nếu chưa có, bạn có thể đề nghị cùng tham gia phiên dịch hệ thống sang ngôn ngữ của bạn. Bạn có thể tìm hiểu nhiều thông tin về các gói ngôn ngữ cho hệ thống này tại website của tổ chức phpBB có ở cuối trang.'
 	),
 	array(
-		0 => 'Làm sao để hiển thị hình ảnh bên dưới tên thành viên của tôi?',
-		1 => 'Có hai hình ảnh có thể được hiển thị bên dưới một tên thành viên trong phần xem bài viết. Tùy thuộc vào mỗi giao diện, hình đầu tiên có thể là hình ảnh đi kèm với xếp hạng hiện tại của bạn. Thông thường, chúng là những hình ngôi sao hay hình khối hiển thị tùy thuộc vào số lượng bài viết mà bạn đã gửi hay trạng thái, vị trí, chức vụ… của bạn trong hệ thống. Hình thứ hai, thường lớn hơn, được gọi là hình đại diện. Đây là những hình ảnh thể hiện cá tính và phong cách riêng của mỗi thành viên. Nếu người quản trị cho phép sử dụng hình đại diện, bạn có thể tự do thay đổi chúng và lựa chọn cách thức sử dụng phù hợp. Nếu bạn không thể sử dụng hình đại diện, bạn hãy liên hệ với người quản trị và hỏi họ lý do tại sao.'
+		0 => 'Làm sao để hiển thị hình ảnh đi kèm tên thành viên của tôi?',
+		1 => 'Có hai hình ảnh có thể được hiển thị kèm theo tên thành viên trong phần xem bài viết. Một trong hai hình có thể là hình ảnh thể hiện xếp hạng hiện tại của bạn. Thông thường, chúng là những hình ngôi sao hay hình khối hiển thị tùy thuộc vào số lượng bài viết mà bạn đã gửi hay trạng thái, vị trí, chức vụ… của bạn trong hệ thống. Hình còn lại, thường lớn hơn, được gọi là hình đại diện. Đây là những hình ảnh thể hiện cá tính và phong cách riêng của mỗi thành viên. Nếu người quản trị cho phép sử dụng hình đại diện, bạn có thể tự do thay đổi chúng và lựa chọn cách thức sử dụng phù hợp. Nếu bạn không thể sử dụng hình đại diện, bạn hãy liên hệ với người quản trị và hỏi họ lý do tại sao.'
 	),
 	array(
 		0 => 'Xếp hạng thành viên là gì và làm sao tôi có thể thay đổi xếp hạng của mình?',

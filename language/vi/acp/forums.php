@@ -4,7 +4,7 @@
 * acp_forums [Vietnamese]
 *
 * @package language
-* @version $Id: forums.php 41 2009-11-18 22:53:00Z nedka $
+* @version $Id: forums.php 42 2010-03-02 07:54:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -75,7 +75,7 @@ $lang = array_merge($lang, array(
 	'ENABLE_POST_REVIEW'			=> 'Cho phép xem lại bài viết',
 	'ENABLE_POST_REVIEW_EXPLAIN'	=> 'Nếu bật tùy chọn này, các thành viên có thể xem lại bài viết của họ nếu có những bài viết mới được gửi đến chủ đề trong khi họ đang soạn bài. Bạn nên tắt tùy chọn này nếu sử dụng diễn đàn chỉ để tán gẫu.',
 	'ENABLE_QUICK_REPLY'			=> 'Bật trả lời nhanh',
-	'ENABLE_QUICK_REPLY_EXPLAIN'	=> 'Nếu bật tùy chọn này, các thành viên có thể sử dụng chức năng trả lời nhanh tại chuyên mục này. Tuy nhiên, nếu chức năng trả lời nhanh bị vô hiệu hay chuyên mục này không cho phép gửi bài thì khung trả lời nhanh sẽ không hiển thị.',
+	'ENABLE_QUICK_REPLY_EXPLAIN'	=> 'Bật trả lời nhanh trong chuyên mục này. Thiết lập này không có tác dụng nếu chức năng trả lời nhanh bị vô hiệu trên toàn bộ diễn đàn. Trả lời nhanh cũng chỉ áp dụng đối với các thành viên được phép gửi bài trong chuyên mục này.',
 	'ENABLE_RECENT'					=> 'Hiển thị những chủ đề sôi nổi',
 	'ENABLE_RECENT_EXPLAIN'			=> 'Nếu bật tùy chọn này, những chủ đề được gửi trong chuyên mục này sẽ được hiển thị trong danh sách chủ đề sôi nổi.',
 	'ENABLE_TOPIC_ICONS'			=> 'Sử dụng biểu tượng cho chủ đề',
@@ -107,9 +107,9 @@ $lang = array_merge($lang, array(
 	'FORUM_PASSWORD_CONFIRM_EXPLAIN'	=> 'Bạn chỉ cần xác nhận lại mật khẩu này nếu đã nhập mật khẩu cho chuyên mục ở trên.',
 	'FORUM_PASSWORD_EXPLAIN'			=> 'Chọn mật khẩu cho chuyên mục này, sử dụng hệ thống cấp phép trong thiết lập.',
 	'FORUM_PASSWORD_UNSET'				=> 'Gỡ bỏ mật khẩu chuyên mục',
-	'FORUM_PASSWORD_UNSET_EXPLAIN'		=> 'Đánh dấu vào tùy chọn này nếu bạn muốn gỡ bỏ mật khẩu của chuyên mục.',
-	'FORUM_PASSWORD_MISMATCH'			=> 'Mật khẩu của chuyên mục bạn vừa nhập không phù hợp.',
-	'FORUM_PASSWORD_OLD'				=> 'Mật khẩu đang sử dụng của chuyên mục được mã hóa theo phương pháp cũ và bạn nên thay đổi lại nó.',
+	'FORUM_PASSWORD_UNSET_EXPLAIN'		=> 'Đánh dấu vào tùy chọn này nếu bạn muốn gỡ bỏ mật khẩu chuyên mục.',
+	'FORUM_PASSWORD_MISMATCH'			=> 'Mật khẩu chuyên mục bạn vừa nhập không phù hợp.',
+	'FORUM_PASSWORD_OLD'				=> 'Mật khẩu chuyên mục này được mã hóa theo phương pháp cũ và bạn nên thay đổi lại nó.',
 	'FORUM_PRUNE_SETTINGS'				=> 'Thiết lập dọn dẹp chuyên mục',	
 	'FORUM_RESYNCED'					=> 'Chuyên mục <strong>%s</strong> đã được đồng bộ thành công.',
 	'FORUM_RULES_EXPLAIN'				=> 'Nội qui chuyên mục được hiển thị trong bất cứ trang nào của chuyên mục đó.',

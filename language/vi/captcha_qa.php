@@ -4,7 +4,7 @@
 * captcha_qa [Vietnamese]
 *
 * @package language
-* @version $Id: captcha_qa.php 4 2009-11-18 18:38:00Z nedka $
+* @version $Id: captcha_qa.php 5 2010-03-02 06:36:00Z nedka $
 * @copyright (c) 2009 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -56,6 +56,7 @@ $lang = array_merge($lang, array(
 	'EDIT_QUESTION'	=> 'Sửa câu hỏi',
 
 	'QA_ERROR_MSG'				=> 'Vui lòng điền đủ thông tin được yêu cầu và nhập ít nhất một phương án trả lời.',
+	'QA_LAST_QUESTION'			=> 'Bạn không thể xóa tất cả câu hỏi khi phần mở rộng này còn được kích hoạt.',
 	'QUESTION_ANSWERS'			=> 'Phương án trả lời',
 	'QUESTION_DELETED'			=> 'Câu hỏi đã được xóa thành công.',
 	'QUESTION_LANG'				=> 'Ngôn ngữ',

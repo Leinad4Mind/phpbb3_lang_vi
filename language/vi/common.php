@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php 137 2009-07-29 02:12:00Z nedka $
+* @version $Id: common.php 138 2010-03-02 06:39:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -190,6 +190,8 @@ $lang = array_merge($lang, array(
 	'FAQ_EXPLAIN'			=> 'Những câu hỏi thường gặp',
 	'FEED'					=> 'Tin nhanh',
 	'FEED_NEWS'				=> 'Tin tức',
+	'FEED_TOPICS_ACTIVE'	=> 'Chủ đề sôi nổi',
+	'FEED_TOPICS_NEW'		=> 'Chủ đề mới',
 	'FILENAME'				=> 'Tên tập tin',
 	'FILESIZE'				=> 'Dung lượng tập tin',
 	'FILEDATE'				=> 'Ngày cập nhật tập tin',
@@ -428,6 +430,7 @@ $lang = array_merge($lang, array(
 
 	'PAGE_OF'					=> 'Trang <strong>%1$d</strong> trên <strong>%2$d</strong>',
 	'PASSWORD'					=> 'Mật khẩu',
+	'PIXEL'						=> 'px',
 	'PLAY_QUICKTIME_FILE'		=> 'Chạy tập tin QuickTime',
 	'PM'						=> 'Tin nhắn',
 	'POSTING_MESSAGE'			=> 'Đang gửi bài trong chuyên mục %s',

@@ -4,7 +4,7 @@
 * acp_posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php 51 2009-11-18 23:00:00Z nedka $
+* @version $Id: posting.php 52 2010-03-02 08:09:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -49,8 +49,10 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'ACP_BBCODES_EXPLAIN'		=> 'BBCode là một dạng thức bổ sung đặc biệt của mã HTML, bản thân tương tự gần giống như HTML, cho phép bạn tùy biến sử dụng và điều khiển dễ dàng hơn mã HTML. Với công cụ này, bạn có thể thêm vào, gỡ bỏ hay chỉnh sửa những thẻ BBCode tùy chọn.',
 	'ADD_BBCODE'				=> 'Tạo thẻ BBCode mới',
- 
+
 	'BBCODE_ADDED'				=> 'Thẻ BBCode đã được tạo thành công.',
+	'BBCODE_DANGER'				=> 'Thẻ BBCode bạn đang tạo dường như sử dụng một mã thay thế <var>{TEXT}</var> bên trong thuộc tính một thẻ HTML. Đây là một vấn đề trong bảo mật XSS. Hãy thử dùng những mã thay thế khác được giới hạn an toàn như <var>{SIMPLETEXT}</var> hoặc <var>{INTTEXT}</var>. Chỉ tiếp tục tiến hành nếu bạn hiểu rõ nguy hiểm đằng sau việc sử dụng nó và chắc chắn rằng dùng <var>{TEXT}</var> là một yêu cầu bắt buộc.',
+	'BBCODE_DANGER_PROCEED'		=> 'Vẫn tiến hành', //'Tôi hiểu sự nguy hiểm',
 	'BBCODE_EDITED'				=> 'Thẻ BBCode đã được chỉnh sửa thành công.',
 	'BBCODE_NOT_EXIST'			=> 'Thẻ BBCode vừa chọn không tồn tại.',
 	'BBCODE_HELPLINE'			=> 'Hướng dẫn sử dụng thẻ BBCode',
@@ -68,8 +70,8 @@ $lang = array_merge($lang, array(
 	'BBCODE_USAGE_EXAMPLE'		=> '[highlight={COLOR}]{TEXT}[/highlight]<br /><br />[font={SIMPLETEXT1}]{SIMPLETEXT2}[/font]',
 	'BBCODE_USAGE_EXPLAIN'		=> 'Bạn có thể xác định cách sử dụng thẻ BBCode tại đây. Thay thế bất kì biến nào nhập vào bằng mã tương ứng (%sXem bên dưới%s).',
 
-	'EXAMPLE'						=> 'Ví dụ:',
-	'EXAMPLES'						=> 'Các ví dụ:',
+	'EXAMPLE'	=> 'Ví dụ:',
+	'EXAMPLES'	=> 'Các ví dụ:',
 
 	'HTML_REPLACEMENT'				=> 'Mã HTML thay thế',
 	'HTML_REPLACEMENT_EXAMPLE'		=> '&lt;span style="background-color: {COLOR};"&gt;{TEXT}&lt;/span&gt;<br /><br />&lt;span style="font-family: {SIMPLETEXT1};"&gt;{SIMPLETEXT2}&lt;/span&gt;',
@@ -82,8 +84,9 @@ $lang = array_merge($lang, array(
 	'TOO_MANY_BBCODES'		=> 'Bạn không thể tạo quá nhiều thẻ BBCode. Hãy gỡ bỏ một hay nhiều thẻ BBCode rồi thử lại.',
 
 	'tokens'	=>	array(
-		'TEXT'			=> 'Bất kì văn bản nào, bao gồm các ký tự, chữ số… Bạn không nên sử dụng những mã thay thế này trong các thẻ lệnh HTML. Thay vào đó, bạn hãy sử dụng <var>IDENTIFIER</var> hoặc <var>SIMPLETEXT</var>.',
+		'TEXT'			=> 'Bất kì văn bản nào, bao gồm các ký tự, chữ số… Bạn không nên sử dụng những mã thay thế này trong các thẻ lệnh HTML. Thay vào đó, bạn hãy sử dụng <var>IDENTIFIER, INTTEXT</var> hoặc <var>SIMPLETEXT</var>.',
 		'SIMPLETEXT'	=> 'Những ký tự từ bảng chữ cái Latinh (A-Z), chữ số, khoảng trắng, dấu phẩy, dấu chấm, dấu trừ, dấu cộng, dấu gạch nối và dấu gạch dưới.',
+		'INTTEXT'		=> 'Những ký tự chữ Unicode, chữ số, khoảng trắng, dấu phẩy, dấu chấm, dấu trừ, dấu cộng, dấu gạch nối và dấu gạch dưới.',
 		'IDENTIFIER'	=> 'Những ký tự từ bảng chữ cái Latinh (A-Z), chữ số, dấu gạch nối và dấu gạch dưới.',
 		'NUMBER'		=> 'Bất kì giá trị số nào.',
 		'EMAIL'			=> 'Địa chỉ email hợp lệ.',
