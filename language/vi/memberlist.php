@@ -4,7 +4,7 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version 1.45
+* @version 1.46
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -41,22 +41,21 @@ if (empty($lang) || !is_array($lang))
 */
 
 $lang = array_merge($lang, array(
-	'ABOUT_USER'			=> 'Thông tin cá nhân',
-	'ACTIVE_IN_FORUM'		=> 'Chuyên mục hoạt động tích cực',
-	'ACTIVE_IN_TOPIC'		=> 'Chủ đề hoạt động tích cực',
-	'ADD_FOE'				=> 'Chặn thêm người',
-	'ADD_FRIEND'			=> 'Thêm bạn bè',
-	'AFTER'					=> 'Sau',
+	'ABOUT_USER'		=> 'Thông tin cá nhân',
+	'ACTIVE_IN_FORUM'	=> 'Chuyên mục hoạt động tích cực',
+	'ACTIVE_IN_TOPIC'	=> 'Chủ đề hoạt động tích cực',
+	'ADD_FOE'			=> 'Chặn thêm người',
+	'ADD_FRIEND'		=> 'Thêm bạn bè',
+	'AFTER'				=> 'Sau',
+	'ALL'				=> 'Tất cả',
 
-	'ALL'					=> 'Tất cả',
+	'BEFORE'	=> 'Trước',
 
-	'BEFORE'				=> 'Trước',
+	'CC_EMAIL'		=> 'Gửi bản sao của email này cho tôi.',
+	'CONTACT_USER'	=> 'Liên hệ',
 
-	'CC_EMAIL'				=> 'Gửi bản sao của email này cho tôi.',
-	'CONTACT_USER'			=> 'Liên hệ',
-
-	'DEST_LANG'				=> 'Ngôn ngữ',
-	'DEST_LANG_EXPLAIN'		=> 'Chọn một ngôn ngữ thích hợp cho người nhận tin nhắn này.',
+	'DEST_LANG'			=> 'Ngôn ngữ',
+	'DEST_LANG_EXPLAIN'	=> 'Chọn một ngôn ngữ thích hợp cho người nhận tin nhắn này.',
 
 	'EMAIL_BODY_EXPLAIN'	=> 'Email này sẽ được gửi dưới dạng văn bản thuần túy, vì thế bạn đừng sử dụng bất cứ thẻ lệnh HTML hay BBCode nào trong nội dung email này. Địa chỉ hồi âm của email này sẽ được thiết lập là địa chỉ email của bạn.',
 	'EMAIL_DISABLED'		=> 'Xin lỗi, tất cả chức năng liên quan đến email trong hệ thống đã bị vô hiệu.',
@@ -96,10 +95,10 @@ $lang = array_merge($lang, array(
 		1	=> '%d thành viên',
 		2	=> '%d thành viên',
 	),
-	'LOGIN_EXPLAIN_LEADERS'		=> 'Bạn phải đăng nhập vào hệ thống mới có thể xem danh sách ban điều hành.',
-	'LOGIN_EXPLAIN_MEMBERLIST'	=> 'Bạn phải đăng nhập vào hệ thống mới có thể xem danh sách thành viên.',
-	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'Bạn phải đăng nhập vào hệ thống mới có thể tìm kiếm thành viên.',	
-	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'Bạn phải đăng nhập vào hệ thống mới có thể xem thông tin cá nhân của thành viên.',
+	'LOGIN_EXPLAIN_TEAM'		=> 'Bạn phải đăng nhập để xem danh sách ban điều hành.',
+	'LOGIN_EXPLAIN_MEMBERLIST'	=> 'Bạn phải đăng nhập để xem danh sách thành viên.',
+	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'Bạn phải đăng nhập để tìm kiếm thành viên.',	
+	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'Bạn phải đăng nhập để xem thông tin cá nhân của thành viên.',
 
 	'MORE_THAN'	=> 'Nhiều hơn',
 
@@ -140,8 +139,7 @@ $lang = array_merge($lang, array(
 	'USER_PRESENCE'			=> 'Hiện diện',
 	'USERS_PER_PAGE'		=> 'Số lượng thành viên mỗi trang',
 
-	'VIEWING_PROFILE'	=> 'Đang xem thông tin cá nhân về %s',
-	'VISITED'			=> 'Lần ghé thăm trước',
+	'VIEWING_PROFILE'	=> 'Đang xem thông tin cá nhân của %s',
 ));
 
 ?>

@@ -4,7 +4,7 @@
 * acp/board [Vietnamese]
 *
 * @package language
-* @version 1.106
+* @version 1.107
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -361,7 +361,7 @@ $lang = array_merge($lang, array(
 	'ACP_LOAD_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể bật hay tắt những chức năng nhất định của hệ thống để giảm bớt số lượng xử lí được yêu cầu gửi đến máy chủ. Trên hều hết các máy chủ, bạn không cần thiết phải tắt bất kì chức năng nào của hệ thống tại đây. Tuy nhiên, trên một vài máy chủ nhất định hoặc các hệ thống sử dụng dịch vụ lưu trữ Web dùng chung với nhiều người khác trên cùng một máy chủ, việc tắt một vài chức năng không cần đến là rất hết sức cần thiết để giảm bớt khối lượng công việc xử lí cho máy chủ. Bạn cũng nên xác định giới hạn thời gian nạp hệ thống và số lượng phiên đăng nhập vượt quá để hệ thống tự động chuyển sang chế độ ngưng hoạt động kịp thời.',
 
 	'ALLOW_CDN'								=> 'Cho phép sử dụng các dịch vụ nội dung bên ngoài',
-	'ALLOW_CDN_EXPLAIN'						=> 'Nếu bạn bật tùy chọn này, một vài tập tin sẽ kết nối ra mạng Internet bên ngoài thay vì trong máy chủ của bạn. Tùy chọn này có thể tốn thêm băng thông của hệ thống nhưng giải quyết được vấn đề lưu giữ thông tin riêng tư.',
+	'ALLOW_CDN_EXPLAIN'						=> 'Nếu bạn bật tùy chọn này, một vài tập tin sẽ kết nối ra mạng Internet bên ngoài thay vì trong máy chủ của bạn. Tùy chọn này có thể tốn thêm băng thông của hệ thống nhưng giải quyết được vấn đề lưu giữ thông tin riêng tư. Trong bản cài mặc định của phpBB, thiết lập này sẽ nạp “jQuery” và phông chữ “Open Sans” từ hệ thống cung cấp nội dung của Google.',
 	'CUSTOM_PROFILE_FIELDS'					=> 'Mục thông tin cá nhân tùy biến',
 	'LIMIT_LOAD'							=> 'Giới hạn thời gian nạp hệ thống',
 	'LIMIT_LOAD_EXPLAIN'					=> 'Nếu trong vòng một phút hệ thống nạp trung bình vượt quá giá trị được thiết lập này thì hệ thống sẽ tự động chuyển sang chế độ ngưng hoạt động. Giá trị 1.0 gần bằng ~100% tài nguyên được sử dụng của một bộ xử lí máy chủ. Chức năng này chỉ có tác dụng trên các máy chủ UNIX và chỉ trên những máy chủ này, thời gian giới hạn được thiết lập mới có thể sử dụng được. Giá trị này sẽ xác lập lại chính nó thành <strong>0</strong> nếu hệ thống phpBB không thể nhận được giới hạn nạp.',

@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version 1.153
+* @version 1.154
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -212,8 +212,6 @@ $lang = array_merge($lang, array(
 	'ERR_CONNECTING_SERVER'				=> 'Có lỗi xảy ra trong khi kết nối đến máy chủ.',
 	'ERR_JAB_AUTH'						=> 'Không thể xác thực trên máy chủ Jabber.',
 	'ERR_JAB_CONNECT'					=> 'Không thể kết nối đến máy chủ Jabber.',
-	'ERR_TEMPLATE_EVENT_LOCATION'		=> 'Vị trí đặt sự kiện trong giao diện <em>[%s]</em> đã được định dạng không đúng.',
-	'ERR_TEMPLATE_COMPILATION'			=> 'Không thể biên dịch tập tin: %s',
 	'ERR_UNABLE_TO_LOGIN'				=> 'Tên tài khoản hoặc mật khẩu đã nhập không chính xác.',	
 	'ERR_UNWATCHING'					=> 'Có một lỗi xảy ra trong quá trình chọn ngừng theo dõi.',
 	'ERR_WATCHING'						=> 'Có một lỗi xảy ra trong quá trình chọn theo dõi.',
@@ -430,18 +428,29 @@ $lang = array_merge($lang, array(
 	'NOT_WATCHING_FORUM'					=> 'Bạn không còn nhận thông báo bài viết mới trong chuyên mục này nữa.',
 	'NOT_WATCHING_TOPIC'					=> 'Bạn không còn nhận thông báo bài viết mới trong chủ đề này nữa.',
 	'NOTIFICATION_ADMIN_ACTIVATE_USER'		=> 'Người dùng “%1$s” mới đăng ký và cần được kích hoạt tài khoản.',
-	'NOTIFICATION_BOOKMARK'					=> '%1$s trả lời chủ đề “%2$s” mà bạn đã đánh dấu.',
-	'NOTIFICATION_BOOKMARK_TRIMMED'			=> '%1$s và %3$d người khác trả lời chủ đề “%2$s” mà bạn đã đánh dấu.',
+	// This applies for NOTIFICATION_BOOKMARK, NOTIFICATION_POST, and NOTIFICATION_QUOTE.
+	// %1$s will return a list of users that's concatenated using "," and "and" - see STRING_LIST
+	// Once the user count reaches 5 users or more, the list is trimmed using NOTIFICATION_X_OTHERS
+	// Examples:
+	// A replied...
+	// A and B replied...
+	// A, B and C replied...
+	// A, B, C and 2 others replied...
+	'NOTIFICATION_BOOKMARK'				=> array(
+		1	=> '%1$s trả lời chủ đề “%2$s” mà bạn đã đánh dấu.',
+	),
 	'NOTIFICATION_GROUP_REQUEST'			=> '%1$s yêu cầu tham gia vào nhóm %2$s.',
 	'NOTIFICATION_GROUP_REQUEST_APPROVED'	=> 'Yêu cầu tham gia vào nhóm %1$s đã được chấp thuận.',
 	'NOTIFICATION_PM'						=> '%1$s gửi cho bạn tin nhắn “%2$s”.',
-	'NOTIFICATION_POST'						=> '%1$s trả lời chủ đề “%2$s”.',
-	'NOTIFICATION_POST_TRIMMED'				=> '%1$s và %3$d người khác trả lời chủ đề “%2$s”',
+	'NOTIFICATION_POST'					=> array(
+		1	=> '%1$s trả lời chủ đề “%2$s”.',
+	),
 	'NOTIFICATION_POST_APPROVED'			=> 'Bài viết “%2$s” của bạn đã được duyệt đăng.',
 	'NOTIFICATION_POST_DISAPPROVED'			=> 'Bài viết “%1$s” của bạn đã bị từ chối đăng vì lý do: “%2$s”.',
 	'NOTIFICATION_POST_IN_QUEUE'			=> 'Bài viết mới “%2$s” gửi bởi %1$s đang chờ duyệt.',
-	'NOTIFICATION_QUOTE'					=> '%1$s nhắc đến bạn trong bài viết “%2$s”.',
-	'NOTIFICATION_QUOTE_TRIMMED'			=> '%1$s và %3$d người khác nhắc đến bạn trong chủ đề “%2$s”',
+	'NOTIFICATION_QUOTE'				=> array(
+		1	=> '%1$s nhắc đến bạn trong bài viết “%2$s”.',
+	),
 	'NOTIFICATION_REPORT_PM'				=> '%1$s báo cáo tin nhắn “%2$s” vì lý do: “%3$s”.',
 	'NOTIFICATION_REPORT_POST'				=> '%1$s báo cáo bài viết “%2$s” vì lý do: "%3$s".',
 	'NOTIFICATION_REPORT_CLOSED'   			=> '%1$s đã đóng báo cáo của bạn về “%2$s”.',
@@ -450,6 +459,10 @@ $lang = array_merge($lang, array(
 	'NOTIFICATION_TOPIC_DISAPPROVED'		=> 'Chủ đề “%1$s” đã bị từ chối đăng vì lý do: “%2$s”.',
 	'NOTIFICATION_TOPIC_IN_QUEUE'			=> 'Chù đề mới “%2$s” gửi bởi %1$s đang chờ duyệt.',
 	'NOTIFICATION_TYPE_NOT_EXIST'			=> 'Loại thông báo “%s” đã khai báo thiếu trong hệ thống tập tin.',
+	// Used in conjuction with NOTIFICATION_BOOKMARK, NOTIFICATION_POST, and NOTIFICATION_QUOTE.
+	'NOTIFICATION_X_OTHERS'				=> array(
+		2	=> '%d người khác',
+	),
 	'NOTIFICATIONS'							=> 'Thông báo',
 	'NOTIFY_ADMIN'							=> 'Bạn hãy vui lòng thông báo cho quản trị viên hoặc người chủ của website này.',
 	'NOTIFY_ADMIN_EMAIL'					=> 'Bạn hãy vui lòng thông báo cho quản trị viên hoặc người chủ của website này: <a href="mailto:%1$s">%1$s</a>',
@@ -670,6 +683,8 @@ $lang = array_merge($lang, array(
 	'START_WATCHING_TOPIC'		=> 'Theo dõi chủ đề',
 	'STOP_WATCHING_FORUM'		=> 'Ngừng theo dõi chuyên mục',
 	'STOP_WATCHING_TOPIC'		=> 'Ngừng theo dõi chủ đề',
+	'STRING_LIST_MULTI'			=> '%1$s cùng với %2$s',
+	'STRING_LIST_SIMPLE'		=> '%1$s và %2$s',
 	'SUBFORUM'					=> 'Chuyên mục con',
 	'SUBFORUMS'					=> 'Chuyên mục con',
 	'SUBJECT'					=> 'Tiêu đề',

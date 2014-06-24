@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version 1.54
+* @version 1.55
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -199,9 +199,9 @@ $lang = array_merge($lang, array(
 	'POST_APPROVAL_NOTIFY'		=> 'Bạn sẽ được thông báo khi bài viết của mình được duyệt.',
 	'POST_CONFIRMATION'			=> 'Xác nhận bài viết',
 	'POST_CONFIRM_EXPLAIN'		=> 'Để ngăn chặn những bài viết được tự động gửi vào hàng loạt, hệ thống yêu cầu bạn phải nhập vào một đoạn mã xác nhận. Mã xác nhận được hiển thị trong hình bên dưới mà bạn nhìn thấy. Nếu bạn gặp vấn đề về thị lực hoặc không thể nhìn thấy đoạn mã này vì một lý do nào đó, hãy liên hệ với %sngười quản trị%s.',
-	'POST_DELETED'				=> 'Bài viết này đã được xóa thành công.',
-	'POST_EDITED'				=> 'Bài viết này đã được sửa thành công.',
-	'POST_EDITED_MOD'			=> 'Bài viết này đã được sửa thành công nhưng vẫn cần phải được duyệt lại bởi một điều hành viên trước khi mọi người có thể xem được.',
+	'POST_DELETED'				=> 'Bài viết đã được xóa thành công.',
+	'POST_EDITED'				=> 'Bài viết đã được sửa thành công.',
+	'POST_EDITED_MOD'			=> 'Bài viết đã được sửa thành công nhưng vẫn cần phải được duyệt lại bởi một điều hành viên trước khi mọi người có thể xem được.',
 	'POST_GLOBAL'				=> 'Thông báo chung',
 	'POST_ICON'					=> 'Biểu tượng bài viết',
 	'POST_NORMAL'				=> 'Bài viết bình thường',

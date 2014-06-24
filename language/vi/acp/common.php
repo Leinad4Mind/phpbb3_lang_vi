@@ -4,7 +4,7 @@
 * acp/common [Vietnamese]
 *
 * @package language
-* @version 1.110
+* @version 1.111
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -53,9 +53,9 @@ $lang = array_merge($lang, array(
 
 	'ACP_BACKUP'				=> 'Sao lưu',
 	'ACP_BAN'					=> 'Danh sách cấm',
-	'ACP_BAN_EMAILS'			=> 'Cấm theo địa chỉ email',
-	'ACP_BAN_IPS'				=> 'Cấm theo địa chỉ IP',
-	'ACP_BAN_USERNAMES'			=> 'Cấm theo tên tài khoản',
+	'ACP_BAN_EMAILS'			=> 'Cấm địa chỉ email',
+	'ACP_BAN_IPS'				=> 'Cấm địa chỉ IP',
+	'ACP_BAN_USERNAMES'			=> 'Cấm người dùng',
 	'ACP_BBCODES'				=> 'Tùy biến thẻ BBCode',
 	'ACP_BOARD_CONFIGURATION'	=> 'Cấu hình hệ thống',
 	'ACP_BOARD_FEATURES'		=> 'Thiết lập chức năng hệ thống',
@@ -363,7 +363,7 @@ $lang = array_merge($lang, array(
 
 	'GZIP_COMPRESSION'	=> 'Chế độ nén Gzip',
 
-	'NO_SEARCH_INDEX'	=> 'Phương pháp tìm kiếm đang dùng chưa được lập chỉ mục.<br >Vui lòng tạo chỉ mục cho “%1$s” trong phần %2$schỉ mục tìm kiếm%3$s.',
+	'NO_SEARCH_INDEX'	=> 'Phương pháp tìm kiếm đang dùng chưa được lập chỉ mục.<br />Vui lòng tạo chỉ mục cho “%1$s” trong phần %2$schỉ mục tìm kiếm%3$s.',
 	'NOT_AVAILABLE'		=> 'Không có sẵn',
 	'NUMBER_FILES'		=> 'Số tập tin đính kèm',
 	'NUMBER_POSTS'		=> 'Số bài viết',

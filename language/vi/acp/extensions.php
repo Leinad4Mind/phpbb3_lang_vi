@@ -4,7 +4,7 @@
 * acp/extensions [Vietnamese]
 *
 * @package language
-* @version 2.01
+* @version 2.02
 * @copyright (c) 2013 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -92,7 +92,7 @@ $lang = array_merge($lang, array(
 
 	'HOMEPAGE'	=> 'Trang chủ',
 
-	'LICENCE'	=> 'Bản quyền',
+	'LICENSE'	=> 'Bản quyền',
 
 	'PATH'			=> 'Đường dẫn tập tin',
 	'PHP_VERSION'	=> 'Phiên bản PHP',

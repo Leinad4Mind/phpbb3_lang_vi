@@ -4,7 +4,7 @@
 * acp/ban [Vietnamese]
 *
 * @package language
-* @version 1.25
+* @version 1.26
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -79,10 +79,10 @@ $lang = array_merge($lang, array(
 	'PERMANENT'	=> 'Vĩnh viễn',
 
 	'UNTIL'						=> 'Cho đến ngày',
-	'USER_BAN'					=> 'Cấm một hay nhiều tên tài khoản',
+	'USER_BAN'					=> 'Cấm một hay nhiều người dùng bằng tên tài khoản',
 	'USER_BAN_EXCLUDE_EXPLAIN'	=> 'Bật tùy chọn này để loại trừ các thành viên đã nhập vào khỏi các lệnh cấm hiện tại.',
 	'USER_BAN_EXPLAIN'			=> 'Để xác định nhiều thành viên cùng lúc, bạn hãy nhập mỗi tên tài khoản trong một dòng. Sử dụng chức năng <span style="text-decoration: underline;">Tìm một người dùng</span> để tra cứu và thêm vào một hay nhiều tài khoản tự động.',
 	'USER_NO_BANNED'			=> 'Không có tài khoản nào bị cấm',
-	'USER_UNBAN'				=> 'Ngưng cấm hoặc ngưng loại trừ tài khoản',
+	'USER_UNBAN'				=> 'Ngưng cấm hoặc ngưng loại trừ người dùng bằng tên tài khoản',
 	'USER_UNBAN_EXPLAIN'		=> 'Bạn có thể ngưng cấm hoặc ngưng loại trừ nhiều tài khoản cùng lúc trong một thao tác bằng cách kết hợp chuột và bàn phím trên máy tính của mình. Những tài khoản bị loại trừ được đánh dấu nổi bật.',
 ));

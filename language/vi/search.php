@@ -4,7 +4,7 @@
 * search [Vietnamese]
 *
 * @package language
-* @version 1.32
+* @version 1.33
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -44,7 +44,7 @@ $lang = array_merge($lang, array(
 	'ALL_AVAILABLE'	=> 'Tất cả',
 	'ALL_RESULTS'	=> 'Tất cả',
 
-	'DISPLAY_RESULTS'	=> 'Xem kết quả tìm kiếm dưới dạng',
+	'DISPLAY_RESULTS'	=> 'Xem kết quả dưới dạng',
 
 	'FOUND_SEARCH_MATCHES'		=> array(
 		1	=> 'Chỉ tìm thấy <strong>%d</strong> kết quả',
@@ -67,47 +67,47 @@ $lang = array_merge($lang, array(
 	'LOGIN_EXPLAIN_NEWPOSTS'		=> 'Hệ thống yêu cầu bạn phải đăng nhập vào để xem những bài viết mới kể từ lần ghé thăm trước.',
 
 	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> array(
-		1	=> 'Bạn đã dùng quá nhiều từ khóa để tìm kiếm. Vui lòng đừng nhập nhiều hơn <strong>%1$d</strong> từ.',
-		2	=> 'Bạn đã dùng quá nhiều từ khóa để tìm kiếm. Vui lòng đừng nhập nhiều hơn <strong>%1$d</strong> từ.',
+		1	=> 'Bạn đã dùng quá nhiều từ khóa để tìm. Vui lòng đừng nhập nhiều hơn <strong>%1$d</strong> từ.',
+		2	=> 'Bạn đã dùng quá nhiều từ khóa để tìm. Vui lòng đừng nhập nhiều hơn <strong>%1$d</strong> từ.',
 	),
 
 	'NO_KEYWORDS'			=> 'Bạn phải xác định ít nhất một từ khóa để thực hiện tìm kiếm. Mỗi từ khóa phải có ít nhất là <strong>%d</strong> và không được nhiều quá <strong>%d</strong>, không tính dấu *.',
-	'NO_RECENT_SEARCHES'	=> 'Không có tìm kiếm nào được thực hiện gần đây.',
+	'NO_RECENT_SEARCHES'	=> 'Không có yêu cầu tìm kiếm nào gần đây.',
 	'NO_SEARCH'				=> 'Xin lỗi, bạn không được phép sử dụng công cụ tìm kiếm trong hệ thống.',
 	'NO_SEARCH_RESULTS'		=> 'Không tìm thấy kết quả nào.',
 	'NO_SEARCH_TIME'		=> 'Xin lỗi, bạn không thể tiếp tục sử dụng công cụ tìm kiếm ngay lúc này. Hãy thử lại sau vài phút nữa.',
-	'NO_SEARCH_UNREADS'		=> 'Xin lỗi, chức năng tìm kiếm những bài viết chưa xem đã bị vô hiệu trên diễn đàn.',
+	'NO_SEARCH_UNREADS'		=> 'Xin lỗi, chức năng tìm những bài viết chưa xem đã bị vô hiệu trên diễn đàn.',
 	'WORD_IN_NO_POST'		=> 'Không tìm thấy kết quả bởi vì từ khóa <strong>%s</strong> không có trong bất cứ bài viết nào.',
 	'WORDS_IN_NO_POST'		=> 'Không tìm thấy kết quả bởi vì những từ khóa <strong>%s</strong> không có trong bất cứ bài viết nào.',
 
 	'POST_CHARACTERS'			=> 'ký tự của bài viết',
-	'PHRASE_SEARCH_DISABLED'	=> 'Chức năng tìm kiếm theo cụm từ chính xác đã bị vô hiệu.',
+	'PHRASE_SEARCH_DISABLED'	=> 'Chức năng tìm theo cụm từ chính xác đã bị vô hiệu.',
 
 	'RECENT_SEARCHES'		=> 'Những tìm kiếm gần đây',
-	'RESULT_DAYS'			=> 'Giới hạn kết quả tìm kiếm cách đây',
-	'RESULT_SORT'			=> 'Sắp xếp kết quả tìm kiếm theo',
+	'RESULT_DAYS'			=> 'Giới hạn kết quả tìm được cách đây',
+	'RESULT_SORT'			=> 'Sắp xếp kết quả tìm được theo',
 	'RETURN_FIRST'			=> 'Xem trước nội dung trong khoảng',
 	'RETURN_TO_SEARCH_ADV'	=> 'Quay về tìm kiếm nâng cao',
 
-	'SEARCHED_FOR'				=> 'Điều kiện tìm kiếm đã sử dụng',
-	'SEARCHED_TOPIC'			=> 'Chủ đề đã tìm kiếm',
+	'SEARCHED_FOR'				=> 'Điều kiện tìm đã sử dụng',
+	'SEARCHED_TOPIC'			=> 'Chủ đề đã tìm',
 	'SEARCHED_QUERY'			=> 'Từ khóa đã tìm',
-	'SEARCH_ALL_TERMS'			=> 'Tìm kiếm theo tất cả điều kiện hoặc sử dụng truy vấn tìm kiếm đã nhập',
-	'SEARCH_ANY_TERMS'			=> 'Tìm kiếm theo bất kì điều kiện nào',
-	'SEARCH_AUTHOR'				=> 'Tìm kiếm theo người gửi',
-	'SEARCH_AUTHOR_EXPLAIN'		=> 'Sử dụng dấu * để tìm kiếm những người gửi có tên giống nhau một phần nào đó.',
-	'SEARCH_FIRST_POST'			=> 'Chỉ tìm kiếm bài viết đầu tiên trong các chủ đề',
-	'SEARCH_FORUMS'				=> 'Tìm kiếm trong các chuyên mục',
-	'SEARCH_FORUMS_EXPLAIN'		=> 'Chọn một hoặc nhiều chuyên mục mà bạn muốn thực hiện tìm kiếm trong phạm vi đó. Các chuyên mục con sẽ được thực hiện tìm kiếm tự động nếu bạn không vô hiệu trong tùy chọn “Tìm kiếm trong các chuyên mục con” bên dưới.',
-	'SEARCH_IN_RESULTS'			=> 'Tìm kiếm trong những kết quả này',
-	'SEARCH_KEYWORDS_EXPLAIN'	=> 'Đặt dấu <strong>+</strong> trước từ khóa mà bạn thực sự muốn tìm kiếm và dấu <strong>-</strong> trước từ khóa mà bạn không muốn hiển thị trong kết quả tìm kiếm. Đặt một danh sách từ khóa tìm kiếm ngăn cách nhau bởi dấu <strong>|</strong> trong dấu ngoặc đơn nếu bạn muốn mỗi kết quả tìm thấy chứa ít nhất một trong những từ khóa này. Sử dụng dấu <strong>*</strong> để tìm kiếm những từ khóa giống nhau theo một số ký tự.',
-	'SEARCH_MSG_ONLY'			=> 'Chỉ tìm kiếm theo nội dung bài viết',
+	'SEARCH_ALL_TERMS'			=> 'Tìm theo tất cả điều kiện hoặc sử dụng truy vấn đã nhập',
+	'SEARCH_ANY_TERMS'			=> 'Tìm theo bất kì điều kiện nào',
+	'SEARCH_AUTHOR'				=> 'Tìm theo người gửi',
+	'SEARCH_AUTHOR_EXPLAIN'		=> 'Sử dụng dấu * để tìm những người gửi có tên giống nhau một phần nào đó.',
+	'SEARCH_FIRST_POST'			=> 'Chỉ tìm bài viết đầu tiên trong các chủ đề',
+	'SEARCH_FORUMS'				=> 'Tìm trong các chuyên mục',
+	'SEARCH_FORUMS_EXPLAIN'		=> 'Chọn một hoặc nhiều chuyên mục mà bạn muốn thực hiện tìm trong phạm vi đó. Các chuyên mục con sẽ được thực hiện tìm tự động nếu bạn không vô hiệu trong tùy chọn “Tìm trong các chuyên mục con” bên dưới.',
+	'SEARCH_IN_RESULTS'			=> 'Tìm trong những kết quả này',
+	'SEARCH_KEYWORDS_EXPLAIN'	=> 'Đặt dấu <strong>+</strong> trước từ khóa mà bạn thực sự muốn tìm và dấu <strong>-</strong> trước từ khóa mà bạn không muốn hiển thị trong kết quả tìm được. Nhập một danh sách từ khóa tìm kiếm ngăn cách nhau bởi dấu <strong>|</strong> trong dấu ngoặc đơn nếu bạn muốn mỗi kết quả tìm thấy chứa ít nhất một trong những từ khóa này. Sử dụng dấu <strong>*</strong> để tìm những từ khóa giống nhau theo một số ký tự.',
+	'SEARCH_MSG_ONLY'			=> 'Chỉ tìm trong nội dung bài viết',
 	'SEARCH_OPTIONS'			=> 'Tùy chọn tìm kiếm',
 	'SEARCH_QUERY'				=> 'Truy vấn tìm kiếm',
-	'SEARCH_SUBFORUMS'			=> 'Tìm kiếm trong các chuyên mục con',
-	'SEARCH_TITLE_MSG'			=> 'Tìm kiếm theo tiêu đề và nội dung bài viết',
-	'SEARCH_TITLE_ONLY'			=> 'Chỉ tìm kiếm theo tiêu đề bài viết',
-	'SEARCH_WITHIN'				=> 'Tìm kiếm trong',
+	'SEARCH_SUBFORUMS'			=> 'Tìm trong các chuyên mục con',
+	'SEARCH_TITLE_MSG'			=> 'Tìm trong tiêu đề và nội dung bài viết',
+	'SEARCH_TITLE_ONLY'			=> 'Chỉ tìm trong tiêu đề bài viết',
+	'SEARCH_WITHIN'				=> 'Tìm trong',
 	'SORT_ASCENDING'			=> 'Tăng dần',
 	'SORT_AUTHOR'				=> 'Tác giả',
 	'SORT_DESCENDING'			=> 'Giảm dần',
