@@ -1,0 +1,8 @@
+Subject: Kết thúc báo cáo - {POST_SUBJECT}
+Charset: utf-8
+
+Chào bạn, {USERNAME}
+
+Bạn nhận được Email thông báo này vì báo cáo của bạn về bài viết "{POST_SUBJECT}" trong chủ đề "{TOPIC_TITLE}" tại website "{SITENAME}" đã được xử lí bởi một Moderator hoặc Administrator của website. Báo cáo này đã được kết thúc sau đó. Nếu bạn có bất cứ thắc mắc nào hãy liên hệ ngay với người đã kết thúc báo cáo này "{CLOSER_NAME}" bằng một tin nhắn cá nhân.
+
+{EMAIL_SIG}

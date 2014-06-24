@@ -1,0 +1,138 @@
+<?php
+/** 
+*
+* acp_forums [Vietnamese]
+*
+* @package language
+* @version $Id: forums.php,v 1.08 2006/06/27 13:17:00 nedka Exp $
+* @copyright (c) 2006 phpBBVietNam Group 
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+*
+*/
+
+/**
+*
+* Vietnamese Language Pack for phpBB3
+* 
+* phpBB iVN (phpBB in Vietnamese) Project
+* Translated by phpBBVietNam Group [ The Vietnamize Team ]
+* Translators in this file: nedka (Nguyen Dang Khoa)
+*
+*/
+
+/**
+* DO NOT CHANGE
+*/
+if (empty($lang) || !is_array($lang))
+{
+	$lang = array();
+}
+
+// DEVELOPERS PLEASE NOTE 
+//
+// Placeholders can now contain order information, e.g. instead of
+// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+// translators to re-order the output of data while ensuring it remains correct
+//
+// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+// equally where a string contains only two placeholders which are used to wrap text
+// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+
+// Forum Admin
+$lang = array_merge($lang, array(
+	'AUTO_PRUNE_DAYS'			=> 'Số ngày tự động dọn dẹp bài viết sau khi gửi',
+	'AUTO_PRUNE_DAYS_EXPLAIN'	=> 'Nếu chủ đề không có bài viết mới nào sau số ngày được thiết lập này thì chủ đề sẽ được tự động gỡ bỏ.',
+	'AUTO_PRUNE_FREQ'			=> 'Chu kỳ thực hiện dọn dẹp tự động',
+	'AUTO_PRUNE_FREQ_EXPLAIN'	=> 'Số ngày giữa hai lần thực hiện việc dọn dẹp tự động.',
+	'AUTO_PRUNE_VIEWED'			=> 'Số ngày tự động dọn dẹp bài viết sau khi xem',
+	'AUTO_PRUNE_VIEWED_EXPLAIN'	=> 'Nếu chủ đề không có ai xem sau số ngày được thiết lập này thì chủ đề sẽ được tự động gỡ bỏ.',
+
+	'COPY_PERMISSIONS'				=> 'Copy thiết lập cấp phép từ',
+	'COPY_PERMISSIONS_EXPLAIN'		=> 'Sau khi copy thiết lập cấp phép, chuyên mục sẽ có thiết lập cấp phép giống như của chuyên mục mà bạn chọn copy. Nếu không có chuyên mục nào được chọn thì chuyên mục vừa mới tạo sẽ không thể truy cập được cho đến khi bạn thiết lập cấp phép xong.',
+	'CREATE_FORUM'					=> 'Tạo chuyên mục mới',
+
+	'DECIDE_MOVE_DELETE_CONTENT'		=> 'Xoá toàn bộ nội dung hoặc di chuyển đến chuyên mục',
+	'DEFAULT_STYLE'						=> 'Giao diện mặc định',
+	'DELETE_ALL_POSTS'					=> 'Xoá bài viết',
+	'DELETE_SUBFORUMS'					=> 'Xoá chuyên mục con và bài viết',
+	'DISPLAY_ACTIVE_TOPICS'				=> 'Hiển thị những chủ đề không bị khoá',
+	'DISPLAY_ACTIVE_TOPICS_EXPLAIN'		=> 'Nếu bật tuỳ chọn này, những chủ đề không bị khoá không các chuyên mục con đã chọn sẽ được hiển thị trong chuyên mục này.',
+
+	'EDIT_FORUM'				=> 'Sửa chuyên mục',
+	'ENABLE_INDEXING'			=> 'Bật chỉ mục tìm kiếm',
+	'ENABLE_INDEXING_EXPLAIN'	=> 'Nếu bạn bật tuỳ chọn này, những bài viết trong chuyên mục này sẽ được tạo chỉ mục để có thể tìm kiếm.',
+	'ENABLE_RECENT'				=> 'Hiển thị những chủ đề không bị khoá',
+	'ENABLE_RECENT_EXPLAIN'		=> 'Nếu bật tuỳ chọn này, những chủ đề được gửi trong các chuyên mục sẽ được hiển thị trong danh sách chủ đề không bị khoá.',
+	'ENABLE_TOPIC_ICONS'		=> 'Sử dụng biểu tượng cho chủ đề',
+
+	'FORUM_ADMIN'						=> 'Quản lý chuyên mục',
+	'FORUM_ADMIN_EXPLAIN'				=> 'Trong hệ thống phpBB mới không có khái niệm loại chuyên mục như trước, mọi thứ bây giờ đều chứa trong chuyên mục với nhau. Mỗi chuyên mục có thể có số chuyên mục con không hạn chế về số lượng và cấp độ. Bạn cũng có thể chọn chuyên mục nào thành viên được phép và không được phép gửi bài. Với công cụ này, bạn có thể thêm vào, chỉnh sửa, xoá, khoá, mở khoá từng chuyên mục riêng lẻ với các công cụ điều khiển. Nếu những chủ đề và bài viết của bạn không được đồng bộ, bạn cũng có thể đồng bộ hoá lại chuyên mục.',
+	'FORUM_AUTO_PRUNE'					=> 'Bật chế độ tự động dọn dẹp',
+	'FORUM_AUTO_PRUNE_EXPLAIN'			=> 'Tuỳ chọn dọn dẹp các chủ đề trong chuyên mục, thiết lập các thông số thời gian bên dưới.',
+	'FORUM_CREATED'						=> 'Chuyên mục mới đã được tạo thành công.',
+	'FORUM_DATA_NEGATIVE'				=> 'Dọn dẹp các thông số không thể vô hiệu.',
+	'FORUM_DELETE'						=> 'Xoá chuyên mục',
+	'FORUM_DELETE_EXPLAIN'				=> 'Bạn có thể xoá chuyên mục trong phần bên dưới và chọn chuyên mục khác mà bạn muốn chuyển toàn bộ chuyên mục con hay chủ đề sang.',
+	'FORUM_DELETED'						=> 'Chuyên mục đã được xoá thành công.',
+	'FORUM_DESC'						=> 'Giới thiệu về chuyên mục',
+	'FORUM_DESC_EXPLAIN'				=> 'Bất kì thẻ đánh dấu nào được nhập trong đây đều được hiển thị.',
+	'FORUM_EDIT_EXPLAIN'				=> 'Bảng điều khiển bên dưới sẽ giúp bạn tuỳ chỉnh chuyên mục này. Lưu ý rằng việc thiết lập Moderator cho chuyên mục này cũng như bảng điều khiển bộ đếm số bài viết được thiết lập từ mục cấp phép chuyên mục trong công cụ cấp phép cho các thành viên và nhóm thành viên.',
+	'FORUM_IMAGE'						=> 'Hình chuyên mục',
+	'FORUM_IMAGE_EXPLAIN'				=> 'Đường dẫn đến hình ảnh sử dụng cho chuyên mục này, nằm trong thư mục chính cài đặt hệ thống.',
+	'FORUM_LINK_EXPLAIN'				=> 'Địa chỉ URL đầy đủ đính kèm cả giao thức, ví dụ như <strong>http://</strong> để xác định liên kết khi thành viên bấm vào chuyên mục liên kết này.',
+	'FORUM_LINK_TRACK'					=> 'Đếm số lượt người ghé thăm',
+	'FORUM_LINK_TRACK_EXPLAIN'			=> 'Ghi nhận số lượt người đã bấm vào chuyên mục liên kết.',
+	'FORUM_NAME'						=> 'Tên chuyên mục',
+	'FORUM_NAME_EMPTY'					=> 'Bạn phải nhập tên cho chuyên mục này.',
+	'FORUM_PARENT'						=> 'Chuyên mục chính',
+	'FORUM_PASSWORD'					=> 'Mật khẩu chuyên mục',
+	'FORUM_PASSWORD_CONFIRM'			=> 'Xác nhận mật khẩu chuyên mục',
+	'FORUM_PASSWORD_CONFIRM_EXPLAIN'	=> 'Bạn chỉ cần xác nhận lại mật khẩu này nếu đã nhập mật khẩu cho chuyên mục ở trên.',
+	'FORUM_PASSWORD_EXPLAIN'			=> 'Chọn mật khẩu cho chuyên mục này, sử dụng hệ thống cấp phép trong thiết lập.',
+	'FORUM_PASSWORD_MISMATCH'			=> 'Mật khẩu của chuyên mục bạn vừa nhập không phù hợp.',
+	'FORUM_RESYNCED'					=> 'Chuyên mục <strong>%s</strong> đã được đồng bộ thành công',
+	'FORUM_RULES_EXPLAIN'				=> 'Nội qui chuyên mục được hiển thị trong bất cứ trang nào của chuyên mục đó.',
+	'FORUM_RULES_LINK'					=> 'Liên kết đến nội qui chuyên mục',
+	'FORUM_RULES_LINK_EXPLAIN'			=> 'Bạn có thể nhập vào địa chỉ URL của trang/bài viết mà bạn muốn dùng làm nội qui cho chuyên mục tại đây. Thiết lập này sẽ thay thế cho nội dung của nội qui chuyên mục mà bạn đã nhập.',
+	'FORUM_RULES_PREVIEW'				=> 'Xem trước nội qui chuyên mục',
+	'FORUM_SETTINGS'					=> 'Thiết lập chuyên mục',
+	'FORUM_STATUS'						=> 'Trạng thái chuyên mục',
+	'FORUM_STYLE'						=> 'Giao diện chuyên mục',
+	'FORUM_TOPICS_PAGE'					=> 'Số chủ đề mỗi trang',
+	'FORUM_TOPICS_PAGE_EXPLAIN'			=> 'Nếu không có giá trị <strong>0</strong>, giá trị này sẽ thay thế cho số chủ đề mặc định hiển thị trong mỗi trang được thiết lập.',
+	'FORUM_TYPE'						=> 'Loại chuyên mục',
+	'FORUM_UPDATED'						=> 'Thông tin về chuyên mục đã được cập nhật thành công.',
+
+	'GENERAL_FORUM_SETTINGS'	=> 'Thiết lập chuyên mục tổng quát',
+
+	'LINK'					=> 'Liên kết',
+	'LIST_INDEX'			=> 'Liệt kê chuyên mục',
+	'LIST_INDEX_EXPLAIN'	=> 'Hiển thị liên kết đến chuyên mục này trong chuyên mục chính của diễn đàn.',
+	'LOCKED'				=> 'Đã khoá',
+
+	'MOVE_POSTS_TO'		=> 'Di chuyển bài viết',
+	'MOVE_SUBFORUMS_TO'	=> 'Di chuyển chuyên mục con',
+
+	'NO_DESTINATION_FORUM'			=> 'Bạn chưa xác định một chuyên mục để di chuyển nội dung đến',
+	'NO_FORUM_ACTION'				=> 'Không có yêu cầu nào được xác định với nội dung chuyên mục',
+	'NO_PARENT'						=> 'Không có chuyên mục chính',
+	'NO_PERMISSIONS'				=> 'Đừng copy cấp phép',
+	'NO_PERMISSION_FORUM_ADD'		=> 'Bạn không được cấp phép để tạo chuyên mục mới',
+	'NO_PERMISSION_FORUM_DELETE'	=> 'Bạn không được cấp phép để xoá chuyên mục',
+
+	'PARENT_NOT_EXIST'			=> 'Chuyên mục chính không tồn tại',
+	'PRUNE_ANNOUNCEMENTS'		=> 'Dọn dẹp thông báo',
+	'PRUNE_STICKY'				=> 'Dọn dẹp chú ý',
+	'PRUNE_OLD_POLLS'			=> 'Dọn dẹp bình chọn cũ',
+	'PRUNE_OLD_POLLS_EXPLAIN'	=> 'Số ngày gỡ bỏ các chủ đề có bình chọn trong bài viết không ai tham gia.',
+	
+	'REDIRECT_ACL'	=> 'Ngay bây giờ bạn có thể %sthiết lập cấp phép%s cho chuyên mục này.',
+
+	'TYPE_CAT'			=> 'Loại chuyên mục',
+	'TYPE_FORUM'		=> 'Chuyên mục',
+	'TYPE_LINK'			=> 'Liên kết',
+
+	'UNLOCKED'			=> 'Không khoá',
+));
+
+?>

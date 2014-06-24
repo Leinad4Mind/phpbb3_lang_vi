@@ -1,0 +1,42 @@
+=========================================================================================================================
+.........................................................................................................................
+ .          _ __                      _ _ _ _ _   _ _ _ _ _                                                             .
+ .         |_   |                      |   __   \  |   __   \                                                           .
+_ _ _ _ _    |  |_ _ _   _ _ _ _ _     |  |__|  /  |  |__|  /                                                           .
+ |   _ _  \  |   _ _   \  |   _ _  \   |   __  |   |   __  |                                                            .
+ |  |_ _|  ) |  |   |  |  |  |_ _|  )  |  |__|  \  |  |__|  \                                                           .
+ |   _ _ _/  |__|   |__|  |   _ _ _/   |_ _ _ _ /  |_ _ _ _ /                                                           . 
+ |  |                     |  |  _ _       _ _  __  _ _ _ _ _ _  _ _ _ _ _ _   _ __    __     _ _ _     _ _         _ _  .
+ |__|                     |__|  \  \     /  / |  | |   _ _ _ _||_ _    _ _ | |    \  |  |  /  _ _  \  |    \     /    | .
+ .                               \  \   /  /  |  | |  |_ _ _       |  |      |  |  \ |  | |  |_ _|  | |  |  \   /  |  | .
+ .                                \  \ /  /   |  | |   _ _ _|      |  |      |  |\  \|  | |   _ _   | |  |\  \ /  /|  | .
+ .                                 \  |  /    |  | |  |_ _ _ _     |  |      |  | \  |  | |  |   |  | |  | \  |  / |  | .
+ .                                  \_ _/     |__| |__ _ _ _ _|    |__|      |__|  \_ __| |__|   |__| |__|  \_ _/  |__| .
+ .                                                                                                                      .
+.........................................................................................................................=========================================================================================================================
+@ Project Name: phpBB iVN (phpBB in Vietnamese)
+@ Main Project: phpBBVietNam
+@ phpBBVietNam Group [ The Vietnamize Team ]
+---[ Information ]--------------------------------------------------------------
+Language Pack Name: Vietnamese Language Pack for phpBB3
+Language Pack Version: 3.0.0 Beta1-a
+Encoding: Unicode (UTF-8)
+Release Date: 2006/06/28
+---[ Description ]--------------------------------------------------------------
+Vietnamese Language Pack for phpBB 3.0.0 Olympus Beta1 (3.x.x)
+---[ Translators in this language pack ]----------------------------------------
+# nedka (Nguyen Dang Khoa) <admin@phpbbvietnam.com> http://www.phpbbvietnam.com
+---[ History ]------------------------------------------------------------------
+# 2006/06/28: Version 3.0.0 Beta1-a
+Support for phpBB 3.0.0 Beta1
+Translated completely English Language Pack into Vietnamese [ Main + ACP + Email ]
+First release ...
+---[ Notes ]--------------------------------------------------------------------
+Only use for phpBB3 Olympus Version 3.0.0 Beta1
+Thanks you to use this language pack of mine ( ^ _ ^ )
+---[ License ]------------------------------------------------------------------
+http://opensource.org/licenses/gpl-license.php GNU General Public License v2
+---[ About ]--------------------------------------------------------------------
+Homepage: http://www.phpbbvietnam.com
+Website: http://phpbbivn.phpbbvietnam.com
+Email: phpbbivn@phpbbvietnam.com									
