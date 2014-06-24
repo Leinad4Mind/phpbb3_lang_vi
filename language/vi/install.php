@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version $Id: install.php,v 1.081 2007/10/14 09:55:00 nedka Exp $
+* @version $Id: install.php,v 1.083 2007/11/28 10:06:00 nedka Exp $
 * @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -199,8 +199,7 @@ $lang = array_merge($lang, array(
 		<h2>Trực tiếp sử dụng bản cài đặt phpBB3 mới này!</h2>
 		<p>Bấm vào nút bên dưới, bạn sẽ được chuyển đến bảng điều khiển dành cho quản trị viên của mình. Đa số mỗi tùy chọn trong bảng điều khiển này đều có hướng dẫn giải thích cho bạn công dụng của chúng. Hãy nhớ rằng bạn luôn được giúp đỡ từ <a href="http://www.phpbb.com/support/documentation/3.0/">tài liệu hướng dẫn sử dụng</a> và <a href="http://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ</a>. Bạn hãy xem tập tin <a href="%3$s">README</a> để biết thêm thông tin.</p><p><strong>Ngay bây giờ, bạn hãy vui lòng xoá, di chuyển hoặc đổi tên thư mục <samp>install</samp> trước khi bạn bắt đầu sử dụng hệ thống. Nếu thư mục này vẫn còn hiện hữu, bạn sẽ chỉ có thể truy cập được vào bảng điều khiển dành cho quản trị viên.</strong></p>',
 	'INSTALL_INTRO'					=> 'Chào mừng bạn đã đến với công cụ cài đặt',
-	// TODO: write some more introductions here
-	'INSTALL_INTRO_BODY'		=> 'Với công cụ này, bạn sẽ bắt đầu quá trình cài đặt hệ thống phpBB trên máy chủ của mình.</p><p>Để bắt đầu cài đặt, bạn sẽ phải cung cấp cho công cụ cài đặt những thông tin về cơ sở dữ liệu của bạn. Nếu bạn không biết thông tin về cơ sở dữ liệu của mình, hãy vui lòng liên hệ với nhà cung cấp dịch vụ lưu trữ Web của bạn và yêu cầu họ cung cấp cho bạn. Bạn sẽ không thể tiếp tục cài đặt mà không có những thông tin này. Bạn cần biết:</p>
+	'INSTALL_INTRO_BODY'		=> 'Với công cụ này, bạn sẽ bắt đầu quá trình cài đặt hệ thống phpBB3 trên máy chủ của mình.</p><p>Để bắt đầu cài đặt, bạn sẽ phải cung cấp cho công cụ cài đặt những thông tin về cơ sở dữ liệu của bạn. Nếu bạn không biết thông tin về cơ sở dữ liệu của mình, hãy vui lòng liên hệ với nhà cung cấp dịch vụ lưu trữ Web của bạn và yêu cầu họ cung cấp cho bạn. Bạn sẽ không thể tiếp tục cài đặt mà không có những thông tin này. Bạn cần biết:</p>
 
 	<ul>
 		<li>Loại cơ sở dữ liệu - hệ quản trị cơ sở dữ liệu mà bạn sẽ sử dụng cho hệ thống.</li>
@@ -287,8 +286,7 @@ $lang = array_merge($lang, array(
 	'NO_LOCATION'			=> 'Không thể chọn thư mục định vị. Nếu bạn chắc chắn Imagemagick đã được cài đặt trên máy chủ, bạn có thể xác định lại đường dẫn sau trong bảng điều khiển của quản trị viên.',
 	'NO_TABLES_FOUND'		=> 'Không tìm thấy bảng dữ liệu nào.',
 
-	// TODO: Write some explanatory introduction text
-	'OVERVIEW_BODY'		=> 'Chào mừng bạn đã sử dụng phiên bản RC (Release Candidate) phát hành công cộng của phpBB 3.0.0 kể từ sau thế hệ phiên bản phpBB 2.x.x! Bản phát hành này dự định dành cho các thành viên có kiến thức sâu rộng về lập trình để giúp đỡ chúng tôi phát hiện các lỗi bug và các vấn đề nan giải còn tồn tại trong hệ thống.</p><p>Bạn hãy vui lòng đọc qua <a href="../docs/INSTALL.html">tài liệu cài đặt</a> để biết thêm nhiều thông tin hơn về việc cài đặt phiên bản phpBB3</p><p><strong style="text-transform: uppercase;">Lưu ý:</strong> Bản phát hành này <strong style="text-transform: uppercase;">vẫn chưa phải là bản hoàn chỉnh cuối cùng</strong> của phpBB 3.0.0. Có thể bạn sẽ muốn chờ đợi cho đến khi bản hoàn chỉnh cuối cùng ra mắt để sử dụng.</p><p>Việc cài đặt hệ thống này sẽ giúp bạn làm quen trong việc cài đặt phiên bản phpBB3 mới, chuyển đổi từ một hệ thống khác sang phiên bản phpBB3 hay cập nhật/nâng cấp lên phiên bản mới nhất. Để biết thêm nhiều thông tin về mỗi tuỳ chọn cài đặt, bạn hãy chọn trong menu thích hợp.',
+	'OVERVIEW_BODY'		=> 'Chào mừng bạn đến với phpBB3!<br /><br />phpBB™ là giải pháp phần mềm diễn đàn mã nguồn mở được sử dụng rộng rãi và phổ biến trên thế giới. phpBB3 là bản cài đặt mới nhất trong suốt 7 năm kể từ khi phần mềm này được ra đời và phát hành chính thức. Giống như những phiên bản trước, phpBB3 có rất nhiều chức năng, giao diện người dùng thân thiện và được hỗ trợ toàn bộ bởi các thành viên trong ban điều hành phpBB. phpBB3 cải thiện toàn bộ những gì phpBB2 đã có và bổ sung thêm những chức năng thông dụng được yêu cầu từ người sử dụng mà chưa hề có trong các phiên bản trước. Chúng tôi hi vọng nó sẽ đáp ứng được sự mong chờ của bạn.<br /><br />Hệ thống cài đặt này sẽ hướng dẫn bạn từng bước cài đặt phpBB3, cập nhật đến phiên bản mới nhất của phpBB3 từ các bản phát hành cũ và tuyệt vời hơn là chuyển đổi đến phpBB3 từ các hệ thống diễn đàn khác (bao gồm cả phpBB2). Để biết thêm nhiều thông tin hơn, chúng tôi khuyên bạn nên đọc qua <a href="../docs/INSTALL.html">tài liệu cài đặt</a>.<br /><br />Để xem bản quyền của phpBB3 hay muốn tìm hiểu về việc hỗ trợ và quan điểm phát triển của chúng tôi về sản phẩm này, bạn hãy vui lòng chọn những tùy chọn tương ứng từ menu. Để tiếp tục, hãy vui lòng chọn thao tác bạn muốn thực hiện.',
 
 	'PCRE_UTF_SUPPORT'					=> 'Hỗ trợ UTF-8 trong PCRE',
 	'PCRE_UTF_SUPPORT_EXPLAIN'			=> 'Hệ thống phpBB sẽ <strong>không hoạt động</strong> được nếu bản cài đặt PHP trên máy chủ của bạn không được biên dịch với phần mở rộng PCRE có hỗ trợ UTF-8.',
@@ -314,7 +312,6 @@ $lang = array_merge($lang, array(
 
 	'REFRESH_PAGE'				=> 'Nạp lại trang để tiếp tục việc chuyển đổi',
 	'REFRESH_PAGE_EXPLAIN'		=> 'Nếu bạn bật tùy chọn này, công cụ chuyển đổi sẽ tự động nạp lại trang để tiếp tục quá trình chuyển đổi hệ thống sau khi hoàn thành xong mỗi bước. Nếu đây là lần đầu tiên bạn thực hiện việc chuyển đổi hệ thống nhằm mục đích kiểm tra thử và xác định bất kỳ lỗi nào có thể xảy ra trước, chúng tôi đề nghị bạn đừng nên bật tùy chọn này.',
-	//'REQUIRED'				=> 'Yêu cầu',
 	'REQUIREMENTS_TITLE'		=> 'Yêu cầu tương thích khi cài đặt',
 	'REQUIREMENTS_EXPLAIN'		=> 'Trước khi tiến hành việc cài đặt hệ thống phpBB, chương trình cài đặt sẽ thực hiện một số kiểm tra về cấu hình và các tập tin trên máy chủ của bạn để chắc chắn rằng máy chủ của bạn có thể cài đặt và sử dụng được hệ thống phpBB. Hãy xem kĩ tất cả các kết quả kiểm tra và đừng tiến hành cài đặt cho đến khi các kiểm tra bắt buộc đều hợp lệ. Nếu bạn muốn kích hoạt bất kỳ gói chức năng nào tùy thuộc vào những kiểm tra tuỳ chọn, bạn cũng hãy chắc chắn rằng những kiểm tra tùy chọn đó cũng hợp lệ.',
 	'RETRY_WRITE'				=> 'Cố gắng tạo lại tập tin cấu hình',
@@ -347,8 +344,7 @@ $lang = array_merge($lang, array(
 	'SUB_SUPPORT'						=> 'Hỗ trợ',
 	'SUCCESSFUL_CONNECT'				=> 'Kết nối thành công',
 
-	// TODO: Write some text on obtaining support
-	'SUPPORT_BODY'		=> 'Trong suốt quá trình sử dụng phiên bản RC (Release Candidate) này của phpBB 3.0.0, bạn có thể được hỗ trợ đầy đủ tại <a href="http://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ phpBB 3.0.x</a>. Chúng tôi sẽ giải đáp các thắc mắc và vấn đề thường gặp trong việc cài đặt, các rắc rối trong việc cấu hình hệ thống và chuyển đổi hệ thống cũng như hỗ trợ giải quyết các rắc rối thường gặp liên quan đến các lỗi bug. Chúng tôi cũng cho phép bạn thảo luận về các gói MOD, mã tùy biến và giao diện bổ sung.</p><p>Để tìm kiếm thêm sự giúp đỡ, bạn hãy tham khảo <a href="http://www.phpbb.com/support/documentation/3.0/quickstart/">tài liệu cài đặt và cấu hình nhanh</a> cũng như <a href="http://www.phpbb.com/support/documentation/3.0/">tài liệu trực tuyến</a> của chúng tôi.</p><p>Để chắc chắn bạn luôn sử dụng phiên bản mới nhất và cập nhật những thông tin mới nhất, tại sao bạn không tham gia vào <a href="http://www.phpbb.com/support/">danh sách tin tức qua Email</a> của chúng tôi',
+	'SUPPORT_BODY'		=> 'Việc hỗ trợ đầy đủ được cung cấp cho bản phát hành chuẩn hiện tại của phpBB3, hoàn toàn miễn phí và phi lợi nhuận. Việc hỗ trợ này bao gồm:</p><ul><li>Cài đặt</li><li>Cấu hình</li><li>Các câu hỏi chuyên môn</li><li>Các rắc rối liên quan đến những lỗi bug tiềm tàng trong phần mềm</li><li>Cập nhật từ các phiên bản RC (Release Candidate) đến bản phát hành chuẩn mới nhất</li><li>Chuyển đổi từ phpBB 2.0.x đến phpBB3</li><li>Chuyển đổi từ phần mềm diễn đàn khác đến phpBB3 (vui lòng xem qua <a href="http://www.phpbb.com/community/viewforum.php?f=65">chuyên mục các công cụ chuyển đổi</a>)</li></ul><p>Chúng tôi khuyến cáo các thành viên vẫn còn sử dụng các phiên bản thử nghiệm (Beta) của phpBB3 hãy thay thế ngay những bản cài đặt này bằng một bản sao của phiên bản mới nhất.</p><h2>Các gói MOD/Giao diện</h2><p>Về những câu hỏi liên quan đến các gói MOD, bạn hãy vui lòng gửi trong <a href="http://www.phpbb.com/community/viewforum.php?f=81">chuyên mục các gói MOD</a> thích hợp.<br />Về những câu hỏi liên quan đến giao diện, khuôn mẫu và các gói hình ảnh giao diện, hãy vui lòng gửi trong <a href="http://www.phpbb.com/community/viewforum.php?f=80">chuyên mục giao diện</a> thích hợp.<br /><br />Nếu câu hỏi của bạn có liên quan đến một công cụ xác định, hãy vui lòng gửi trực tiếp trong chủ đề đã dành cho công cụ đó.</p><h2>Hỗ trợ sử dụng</h2><p><a href="http://www.phpbb.com/community/viewtopic.php?f=14&amp;t=571070">Giới thiệu chào mừng đến với phpBB</a><br /><a href="http://www.phpbb.com/support/">Khu vực hỗ trợ</a><br /><a href="http://www.phpbb.com/support/documentation/3.0/quickstart/">Tài liệu cho người mới bắt đầu</a><br /><br />Để chắc chắn bạn luôn sử dụng phiên bản mới nhất và nắm bắt các tin tức mới nhất của phần mềm này, tại sao bạn không <a href="http://www.phpbb.com/support/">tham gia vào danh sách Email</a> của chúng tôi?<br /><br />',
 
 	'SYNC_FORUMS'			=> 'Bắt đầu đồng bộ hóa các chuyên mục',
 	'SYNC_POST_COUNT'		=> 'Đang đồng bộ <var>post_counts</var>',
@@ -395,7 +391,7 @@ $lang = array_merge($lang, array(
 	'COLLECTING_FILE_DIFFS'			=> 'Đang dò tìm những điểm khác nhau trong tập tin',
 	'COMPLETE_LOGIN_TO_BOARD'		=> 'Ngay bây giờ, bạn nên <a href="../ucp.php?mode=login">đăng nhập vào hệ thống của mình</a> và kiểm tra mọi thứ xem đã hoạt động tốt chưa. Bạn cũng đừng quên xóa, đổi tên thay di chuyển thư mục cài đặt của hệ thống!',
 	'CONTINUE_UPDATE_NOW'			=> 'Tiếp tục quá trình cập nhật',
-	'CURRENT_FILE'					=> 'Tập tin gốc hiện tại',
+	'CURRENT_FILE'					=> 'Phần mở đầu của tập tin gốc hiện tại',
 	'CURRENT_VERSION'				=> 'Phiên bản hiện tại',
 
 	'DATABASE_TYPE'						=> 'Loại cơ sở dữ liệu',
@@ -405,7 +401,7 @@ $lang = array_merge($lang, array(
 	'DESTINATION'						=> 'Tập tin đến',
 	'DIFF_INLINE'						=> 'INLINE-DIFF',
 	'DIFF_RAW'							=> 'RAW-UNIFIED-DIFF',
-	'DIFF_SEP_EXPLAIN'					=> 'Phần kết thúc tập tin hiện tại / Phần bắt đầu tập tin đã cập nhật mới',
+	'DIFF_SEP_EXPLAIN'					=> 'Phần kết thúc của tập tin gốc hiện tại / Phần mở đầu của tập tin đã cập nhật mới',
 	'DIFF_SIDE_BY_SIDE'					=> 'SIDE-BY-SIDE',
 	'DIFF_UNIFIED'						=> 'UNIFIED-DIFF',
 	'DO_NOT_UPDATE'						=> 'Đừng cập nhật tập tin này',
@@ -460,7 +456,7 @@ $lang = array_merge($lang, array(
 	'MERGING_FILES'					=> 'Đang nhập chung những điểm khác nhau',
 	'MERGING_FILES_EXPLAIN'			=> 'Hệ thống hiện tại đang dò tìm những thay đổi cuối cùng từ tập tin.<br /><br />Bạn hãy vui lòng chờ đợi cho đến khi hệ thống hoàn tất các thao tác trên những tập tin đã bị thay đổi.',
 
-	'NEW_FILE'						=> 'Tập tin đã cập nhật mới',
+	'NEW_FILE'						=> 'Phần kết thúc của tập tin đã cập nhật mới',
 	'NEW_USERNAME'					=> 'Tên thành viên mới',
 	'NO_AUTH_UPDATE'				=> 'Bạn không xác thực hợp lệ với hệ thống để tiến hành cập nhật',
 	'NO_ERRORS'						=> 'Không có lỗi',

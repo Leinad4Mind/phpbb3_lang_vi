@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php,v 1.037 2007/10/06 09:01:00 nedka Exp $
+* @version $Id: posting.php,v 1.039 2007/12/02 06:46:00 nedka Exp $
 * @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -120,17 +120,17 @@ $lang = array_merge($lang, array(
 	'EXPORT_SMILIES'			=> 'Xuất và tải về <samp>smilies.pak</samp>',
 	'EXPORT_SMILIES_EXPLAIN'	=> '%sBằng cách bấm vào liên kết này, các giá trị cấu hình cho những biểu tượng vui đã cài đặt của bạn sẽ được đóng gói lại thành tập tin <samp>smilies.pak</samp> để bạn sau khi tải về có thể sử dụng để tạo ra tập tin nén <samp>.zip</samp> hay <samp>.tgz</samp> chứa tất cả các biểu tượng vui của bạn có trong tập tin cấu hình <samp>smilies.pak</samp>%s.',
 
-	'FIRST'			=> 'Đầu tiên',
+	'FIRST'		=> 'Đầu tiên',
 
 	'ICONS_ADD'				=> 'Thêm biểu tượng bài viết mới',
-	'ICON_NONE_ADDED'		=> 'Không có biểu tượng bài viết nào được thêm vào.',
+	'ICONS_NONE_ADDED'		=> 'Không có biểu tượng bài viết nào được thêm vào.',
 	'ICONS_ONE_ADDED'		=> 'Biểu tượng bài viết đã được thêm vào thành công.',
 	'ICONS_ADDED'			=> 'Những biểu tượng bài viết đã được thêm vào thành công.',
 	'ICONS_CONFIG'			=> 'Cấu hình biểu tượng bài viết',
 	'ICONS_DELETED'			=> 'Biểu tượng bài viết đã được gỡ bỏ thành công.',
 	'ICONS_EDIT'			=> 'Sửa biểu tượng bài viết',
 	'ICONS_ONE_EDITED'		=> 'Biểu tượng bài viết đã được cập nhật thành công.',
-	'ICON_NONE_EDITED'		=> 'Không có biểu tượng bài viết nào được cập nhật.',
+	'ICONS_NONE_EDITED'		=> 'Không có biểu tượng bài viết nào được cập nhật.',
 	'ICONS_EDITED'			=> 'Những biểu tượng bài viết đã được cập nhật thành công.',
 	'ICONS_HEIGHT'			=> 'Chiều cao',
 	'ICONS_IMAGE'			=> 'Hình dùng làm biểu tượng bài viết',

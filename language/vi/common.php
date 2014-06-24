@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php,v 1.104 2007/10/06 07:17:00 nedka Exp $
+* @version $Id: common.php,v 1.105 2007/11/28 09:13:00 nedka Exp $
 * @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -584,6 +584,7 @@ $lang = array_merge($lang, array(
 	'TOPICS'				=> 'Chủ đề',
 	'TOPIC_ICON'			=> 'Biểu tượng bài viết',
 	'TOPIC_LOCKED'			=> 'Chủ đề này đã bị khoá, bạn không thể sửa những bài viết của mình hay trả lời bài viết thêm nữa.',
+	'TOPIC_LOCKED_SHORT'	=> 'Chủ đề đã khóa',
 	'TOPIC_MOVED'			=> 'Chủ đề đã di chuyển',
 	'TOPIC_REVIEW'			=> 'Xem lại chủ đề',
 	'TOPIC_TITLE'			=> 'Tiêu đề',
