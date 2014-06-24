@@ -4,7 +4,7 @@
 * groups [Vietnamese]
 *
 * @package language
-* @version 1.26
+* @version 1.27
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,17 +23,22 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE 
-//
-// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-//
-// Placeholders can now contain order information, e.g. instead of
-// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-// translators to re-order the output of data while ensuring it remains correct
-//
-// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-// equally where a string contains only two placeholders which are used to wrap text
-// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+/**
+* DEVELOPERS PLEASE NOTE
+*
+* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+*
+* Placeholders can now contain order information, e.g. instead of
+* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+* translators to re-order the output of data while ensuring it remains correct
+*
+* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+* equally where a string contains only two placeholders which are used to wrap text
+* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+*
+* Some characters you may want to copy & paste:
+* ’ » “ ” …
+*/
 
 $lang = array_merge($lang, array(
 	'ALREADY_DEFAULT_GROUP'		=> 'Nhóm vừa chọn đã được thiết lập là nhóm mặc định.',
@@ -92,5 +97,3 @@ $lang = array_merge($lang, array(
 	'USER_GROUP_DEMOTE_CONFIRM'	=> 'Bạn có chắc chắn muốn giáng chức trưởng nhóm vừa chọn?',
 	'USER_GROUP_DEMOTED'		=> 'Đã giáng chức trưởng nhóm thành công.',
 ));
-
-?>

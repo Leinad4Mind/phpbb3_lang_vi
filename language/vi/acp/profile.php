@@ -4,7 +4,7 @@
 * acp/profile [Vietnamese]
 *
 * @package language
-* @version 1.32
+* @version 1.33
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,17 +23,22 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE
-//
-// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-//
-// Placeholders can now contain order information, e.g. instead of
-// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-// translators to re-order the output of data while ensuring it remains correct
-//
-// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-// equally where a string contains only two placeholders which are used to wrap text
-// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+/**
+* DEVELOPERS PLEASE NOTE
+*
+* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+*
+* Placeholders can now contain order information, e.g. instead of
+* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+* translators to re-order the output of data while ensuring it remains correct
+*
+* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+* equally where a string contains only two placeholders which are used to wrap text
+* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+*
+* Some characters you may want to copy & paste:
+* ’ » “ ” …
+*/
 
 // Custom profile fields
 $lang = array_merge($lang, array(
@@ -66,6 +71,8 @@ $lang = array_merge($lang, array(
 	'DISPLAY_AT_PROFILE_EXPLAIN'	=> 'Cho phép người dùng có thể thay đổi mục thông tin cá nhân này trong bảng điều khiển của mình.',	
 	'DISPLAY_AT_REGISTER'			=> 'Hiển thị trong phần đăng ký tài khoản mới',
 	'DISPLAY_AT_REGISTER_EXPLAIN'	=> 'Nếu tùy chọn này được bật, mục thông tin cá nhân sẽ được thêm vào trong phần đăng ký tài khoản.',
+	'DISPLAY_ON_PM'					=> 'Hiển thị trên màn hình nhắn tin',
+	'DISPLAY_ON_PM_EXPLAIN'			=> 'Nếu tùy chọn này được bật, mục thông tin cá nhân sẽ được hiển thị trong phần thông tin người gửi của tin nhắn.',
 	'DISPLAY_ON_VT'					=> 'Hiển thị trên trang xem chủ đề',
 	'DISPLAY_ON_VT_EXPLAIN'			=> 'Nếu tùy chọn này được bật, mục thông tin cá nhân sẽ được hiển thị trong phần thông tin người gửi trên trang xem chủ đề.',
 	'DISPLAY_PROFILE_FIELD'			=> 'Hiển thị mục thông tin cá nhân',
@@ -154,5 +161,3 @@ $lang = array_merge($lang, array(
 
 	'VISIBILITY_OPTION'	=> 'Các tùy chọn ẩn hiển thị',
 ));
-
-?>

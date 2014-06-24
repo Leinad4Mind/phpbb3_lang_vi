@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version 1.53
+* @version 1.54
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,17 +23,22 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE 
-//
-// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-//
-// Placeholders can now contain order information, e.g. instead of
-// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-// translators to re-order the output of data while ensuring it remains correct
-//
-// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-// equally where a string contains only two placeholders which are used to wrap text
-// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+/**
+* DEVELOPERS PLEASE NOTE
+*
+* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+*
+* Placeholders can now contain order information, e.g. instead of
+* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+* translators to re-order the output of data while ensuring it remains correct
+*
+* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+* equally where a string contains only two placeholders which are used to wrap text
+* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+*
+* Some characters you may want to copy & paste:
+* ’ » “ ” …
+*/
 
 $lang = array_merge($lang, array(
 	'ADD_ATTACHMENT'			=> 'Tải lên tập tin đính kèm',
@@ -74,21 +79,33 @@ $lang = array_merge($lang, array(
 	'CLOSE_TAGS'				=> 'Đóng đuôi lệnh trong các thẻ BBCode',
 	'CURRENT_TOPIC'				=> 'Chủ đề hiện tại',
 
-	'DELETE_FILE'				=> 'Xóa tập tin',
-	'DELETE_MESSAGE'			=> 'Xóa bài viết',
-	'DELETE_MESSAGE_CONFIRM'	=> 'Bạn có chắc chắn muốn xóa bài viết này?',
-	'DELETE_OWN_POSTS'			=> 'Xin lỗi, bạn chỉ có thể xóa những bài viết của chính mình.',
-	'DELETE_POST_CONFIRM'		=> 'Bạn có chắc chắn muốn xóa bài viết này?',
-	'DELETE_POST_WARN'			=> 'Bài viết đã xóa sẽ không thể khôi phục lại được',
-	'DISABLE_BBCODE'			=> 'Tắt các thẻ <strong>BBCode</strong>',
-	'DISABLE_MAGIC_URL'			=> 'Đừng tự động nhận diện các địa chỉ URL',
-	'DISABLE_SMILIES'			=> 'Tắt <strong>Biểu tượng vui</strong>',
-	'DISALLOWED_CONTENT'		=> 'Tập tin bạn vừa tải lên bị từ chối bởi vì nội dung tập tin này đã được xác định có mục đích tấn công hệ thống.',
-	'DISALLOWED_EXTENSION'		=> 'Loại tập tin “%s” không được phép sử dụng.',
-	'DRAFT_LOADED'				=> 'Bản nháp đã được nạp vào phần nội dung, bạn có thể hoàn tất bài viết của mình ngay bây giờ.<br />Bản nháp của bạn sẽ được xóa sau khi bạn gửi xong bài viết này.',
-	'DRAFT_LOADED_PM'			=> 'Bản nháp đã được nạp vào phần nội dung, bạn có thể hoàn tất tin nhắn của mình ngay bây giờ.<br />Bản nháp của bạn sẽ được xóa sau khi bạn gửi xong tin nhắn này.',
-	'DRAFT_SAVED'				=> 'Bản nháp đã được lưu thành công.',
-	'DRAFT_TITLE'				=> 'Tiêu đề nháp',
+	'DELETE_FILE'						=> 'Xóa tập tin',
+	'DELETE_MESSAGE'					=> 'Xóa bài viết',
+	'DELETE_MESSAGE_CONFIRM'			=> 'Bạn có chắc chắn muốn xóa bài viết này?',
+	'DELETE_OWN_POSTS'					=> 'Xin lỗi, bạn chỉ có thể xóa những bài viết của chính mình.',
+	'DELETE_PERMANENTLY'				=> 'Xóa vĩnh viễn',
+	'DELETE_POST_CONFIRM'				=> 'Bạn có chắc chắn muốn xóa bài viết này?',
+	'DELETE_POST_PERMANENTLY_CONFIRM'	=> 'Bạn có chắc chắn muốn xóa <strong>vĩnh viễn</strong> bài viết này?',
+	'DELETE_POST_PERMANENTLY'			=> 'Không thể phục hồi lại bài viết này một khi đã xóa vĩnh viễn',
+	'DELETE_POSTS_CONFIRM'				=> 'Bạn có chắc chắn muốn xóa những bài viết đã chọn?',
+	'DELETE_POSTS_PERMANENTLY_CONFIRM'	=> 'Bạn có chắc chắn muốn xóa <strong>vĩnh viễn</strong> những bài viết này?',
+	'DELETE_REASON'						=> 'Lý do xóa nháp',
+	'DELETE_REASON_EXPLAIN'				=> 'Chỉ có điều hành viên mới xem được lý do xóa bài.',
+	'DELETE_POST_WARN'					=> 'Xóa bài viết này',
+	'DELETE_TOPIC_CONFIRM'				=> 'Bạn có chắc chắn muốn xóa chủ đề này?',
+	'DELETE_TOPIC_PERMANENTLY'			=> 'Không thể phục hồi lại chủ đề này một khi đã xóa vĩnh viễn',
+	'DELETE_TOPIC_PERMANENTLY_CONFIRM'	=> 'Bạn có chắc chắn muốn xóa <strong>vĩnh viễn</strong> chủ đề này?',
+	'DELETE_TOPICS_CONFIRM'				=> 'Bạn có chắc chắn muốn xóa những chủ đề đã chọn?',
+	'DELETE_TOPICS_PERMANENTLY_CONFIRM'	=> 'Bạn có chắc chắn muốn xóa <strong>vĩnh viễn</strong> những chủ đề này?',
+	'DISABLE_BBCODE'					=> 'Tắt các thẻ <strong>BBCode</strong>',
+	'DISABLE_MAGIC_URL'					=> 'Đừng tự động nhận diện các địa chỉ URL',
+	'DISABLE_SMILIES'					=> 'Tắt <strong>Biểu tượng vui</strong>',
+	'DISALLOWED_CONTENT'				=> 'Tập tin bạn vừa tải lên bị từ chối bởi vì nội dung tập tin này đã được xác định có mục đích tấn công hệ thống.',
+	'DISALLOWED_EXTENSION'				=> 'Loại tập tin “%s” không được phép sử dụng.',
+	'DRAFT_LOADED'						=> 'Bản nháp đã được nạp vào phần nội dung, bạn có thể hoàn tất bài viết của mình ngay bây giờ.<br />Bản nháp của bạn sẽ được xóa sau khi bạn gửi xong bài viết này.',
+	'DRAFT_LOADED_PM'					=> 'Bản nháp đã được nạp vào phần nội dung, bạn có thể hoàn tất tin nhắn của mình ngay bây giờ.<br />Bản nháp của bạn sẽ được xóa sau khi bạn gửi xong tin nhắn này.',
+	'DRAFT_SAVED'						=> 'Bản nháp đã được lưu thành công.',
+	'DRAFT_TITLE'						=> 'Tiêu đề nháp',
 
 	'EDIT_REASON'				=> 'Lý do sửa bài viết này',
 	'EMPTY_FILEUPLOAD'			=> 'Tập tin bạn vừa tải lên là tập tin rỗng.',
@@ -122,13 +139,28 @@ $lang = array_merge($lang, array(
 	'LOGIN_EXPLAIN_QUOTE'		=> 'Bạn phải đăng nhập để trích dẫn các bài viết trong chuyên mục này.',
 	'LOGIN_EXPLAIN_REPLY'		=> 'Bạn phải đăng nhập để trả lời các chủ đề trong chuyên mục này.',
 
-	'MAX_FONT_SIZE_EXCEEDED'	=> 'Bạn chỉ có thể chọn kích thước văn bản tối đa là <strong>%1$d</strong>.',
-	'MAX_FLASH_HEIGHT_EXCEEDED'	=> 'Những tập tin Flash mà bạn sử dụng chỉ có thể cao tối đa là <strong>%1$d</strong> Pixel.',
-	'MAX_FLASH_WIDTH_EXCEEDED'	=> 'Những tập tin Flash mà bạn sử dụng chỉ có thể rộng tối đa là <strong>%1$d</strong> Pixel.',	
-	'MAX_IMG_HEIGHT_EXCEEDED'	=> 'Những hình ảnh mà bạn sử dụng chỉ có thể cao tối đa là <strong>%1$d</strong> Pixel.',
-	'MAX_IMG_WIDTH_EXCEEDED'	=> 'Những hình ảnh mà bạn sử dụng chỉ có thể rộng tối đa là <strong>%1$d</strong> Pixel.',
-
-	'MESSAGE_BODY_EXPLAIN'		=> 'Nhập nội dung bài viết của bạn tại đây nhưng không được quá <strong>%d</strong> ký tự.',
+	'MAX_FONT_SIZE_EXCEEDED'	=> 'Bạn chỉ được phép tăng kích cỡ phông chữ đến %d.',
+	'MAX_FLASH_HEIGHT_EXCEEDED'	=> array(
+		1	=> 'Chiều cao tập tin Flash bạn tải lên không được quá %d px.',
+		2	=> 'Chiều cao tập tin Flash bạn tải lên không được quá %d px.',
+	),
+	'MAX_FLASH_WIDTH_EXCEEDED'	=> array(
+		1	=> 'Chiều rộng tập tin Flash bạn tải lên không được quá %d px.',
+		2	=> 'Chiều rộng tập tin Flash bạn tải lên không được quá %d px.',
+	),
+	'MAX_IMG_HEIGHT_EXCEEDED'	=> array(
+		1	=> 'Chiều cao hình bạn tải lên không được quá %1$d px.',
+		2	=> 'Chiều cao hình bạn tải lên không được quá %1$d px.',
+	),
+	'MAX_IMG_WIDTH_EXCEEDED'	=> array(
+		1	=> 'Chiều rộng hình bạn tải lên không được quá %d px.',
+		2	=> 'Chiều rộng hình bạn tải lên không được quá %d px.',
+	),
+	'MESSAGE_BODY_EXPLAIN'		=> array(
+		0	=> '', // zero means no limit, so we don't view a message here.
+		1	=> 'Nhập nội dung tại đây, nội dung không được vượt quá <strong>%d</strong> ký tự.',
+		2	=> 'Nhập nội dung tại đây, nội dung không được vượt quá <strong>%d</strong> ký tự.',
+	),
 	'MESSAGE_DELETED'			=> 'Bài viết này đã được xóa thành công.',
 	'MORE_SMILIES'				=> 'Xem toàn bộ',
 
@@ -146,12 +178,18 @@ $lang = array_merge($lang, array(
 	'PLACE_INLINE'				=> 'Đặt trong dòng',
 	'POLL_DELETE'				=> 'Xóa bình chọn',
 	'POLL_FOR'					=> 'Thời gian bình chọn',
-	'POLL_FOR_EXPLAIN'			=> 'Nhập số <strong>0</strong> hoặc để trống cho bình chọn không giới hạn thời gian.',
+	'POLL_FOR_EXPLAIN'			=> 'Nhập số <strong>0</strong> cho bình chọn không giới hạn thời gian.',
 	'POLL_MAX_OPTIONS'			=> 'Lựa chọn tối đa của mỗi người dùng',
 	'POLL_MAX_OPTIONS_EXPLAIN'	=> 'Đây là số lựa chọn tối đa mà mỗi người dùng tham gia bình chọn có thể thực hiện.',
 	'POLL_OPTIONS'				=> 'Đối tượng bình chọn',
-	'POLL_OPTIONS_EXPLAIN'		=> 'Đặt mỗi đối tượng bình chọn trong một dòng mới. Bạn có thể tạo đến <strong>%d</strong> đối tượng bình chọn.',
-	'POLL_OPTIONS_EDIT_EXPLAIN'	=> 'Đặt mỗi đối tượng bình chọn trong một dòng mới. Bạn có thể tạo đến <strong>%d</strong> đối tượng bình chọn. Nếu bạn gỡ gỏ hay thêm vào những đối tượng bình chọn thì tất cả kết quả bình chọn trước đây sẽ được tạo lại từ đầu.',
+	'POLL_OPTIONS_EXPLAIN'		=> array(
+		1	=> 'Đặt mỗi đối tượng bình chọn trong một dòng mới. Bạn chỉ có thể tạo <strong>%d</strong> đối tượng bình chọn.',
+		2	=> 'Đặt mỗi đối tượng bình chọn trong một dòng mới. Bạn có thể tạo đến <strong>%d</strong> đối tượng bình chọn.',
+	),
+	'POLL_OPTIONS_EDIT_EXPLAIN'	=> array(
+		1	=> 'Đặt mỗi đối tượng bình chọn trong một dòng mới. Bạn chỉ có thể tạo <strong>%d</strong> đối tượng bình chọn. Nếu bạn gỡ gỏ hay thêm vào những đối tượng bình chọn thì tất cả kết quả bình chọn trước sẽ được tạo lại từ đầu.',
+		2	=> 'Đặt mỗi đối tượng bình chọn trong một dòng mới. Bạn có thể tạo đến <strong>%d</strong> đối tượng bình chọn. Nếu bạn gỡ gỏ hay thêm vào những đối tượng bình chọn thì tất cả kết quả bình chọn trước sẽ được tạo lại từ đầu.',
+	),
 	'POLL_QUESTION'				=> 'Câu hỏi bình chọn',
 	'POLL_TITLE_TOO_LONG'		=> 'Tên bình chọn không được vượt quá <strong>100</strong> ký tự.',
 	'POLL_TITLE_COMP_TOO_LONG'	=> 'Độ dài tên bình chọn thực tế của bạn quá lớn, hãy vui lòng bỏ bớt các thẻ lệnh BBCode hay biểu tượng vui.',
@@ -176,27 +214,37 @@ $lang = array_merge($lang, array(
 	'POST_TOPIC_AS'				=> 'Tạo chủ đề dưới dạng',
 	'PROGRESS_BAR'				=> 'Thanh tiến trình',
 
-	'QUOTE_DEPTH_EXCEEDED'		=> 'Bạn chỉ có thể sử dụng <strong>%1$d</strong> trích dẫn trong mỗi bài viết.',
+	'QUOTE_DEPTH_EXCEEDED'	=> array(
+		1	=> 'Bạn chỉ có thể trích dẫn lại <strong>%d</strong> bài trong một bài viết.',
+		2	=> 'Bạn chỉ có thể trích dẫn lại <strong>%d</strong> bài trong một bài viết.',
+	),
 
-	'SAVE'						=> 'Lưu',
-	'SAVE_DATE'					=> 'Đã lưu vào ngày',
-	'SAVE_DRAFT'				=> 'Lưu bản nháp',
-	'SAVE_DRAFT_CONFIRM'		=> 'Lưu ý rằng bạn chỉ có thể lưu vào bản nháp tiêu đề và nội dung của bài viết, bất kì các thành phần khác sẽ được gỡ bỏ. Bạn có chắc chắn muốn lưu bản nháp của mình ngay bây giờ?',	
-	'SMILIES'					=> 'Biểu tượng vui',
-	'SMILIES_ARE_OFF'			=> 'Biểu tượng vui đang <em>TẮT</em>',
-	'SMILIES_ARE_ON'			=> 'Biểu tượng vui đang <em>BẬT</em>',
-	'STICKY_ANNOUNCE_TIME_LIMIT'=> 'Thời gian hiển thị chủ đề dưới dạng chú ý/thông báo',
-	'STICK_TOPIC_FOR'			=> 'Đánh dấu quan trọng cho chủ đề trong',
-	'STICK_TOPIC_FOR_EXPLAIN'	=> 'Nhập số <strong>0</strong> hay để trống cho chú ý/thông báo không giới hạn thời gian. Lưu ý rằng con số này có liên quan đến ngày tháng gửi bài.',
-	'STYLES_TIP'				=> 'Chú ý: Bạn có thể chọn nhanh đoạn văn bản rồi bấm vào những nút bên trên.',
+	'SAVE'							=> 'Lưu',
+	'SAVE_DATE'						=> 'Đã lưu vào ngày',
+	'SAVE_DRAFT'					=> 'Lưu bản nháp',
+	'SAVE_DRAFT_CONFIRM'			=> 'Lưu ý rằng bạn chỉ có thể lưu vào bản nháp tiêu đề và nội dung của bài viết, bất kì các thành phần khác sẽ được gỡ bỏ. Bạn có chắc chắn muốn lưu bản nháp của mình ngay bây giờ?',	
+	'SMILIES'						=> 'Biểu tượng vui',
+	'SMILIES_ARE_OFF'				=> 'Biểu tượng vui đang <em>TẮT</em>',
+	'SMILIES_ARE_ON'				=> 'Biểu tượng vui đang <em>BẬT</em>',
+	'STICKY_ANNOUNCE_TIME_LIMIT'	=> 'Thời gian hiển thị chủ đề dưới dạng chú ý/thông báo',
+	'STICK_TOPIC_FOR'				=> 'Đánh dấu quan trọng cho chủ đề trong',
+	'STICK_TOPIC_FOR_EXPLAIN'		=> 'Nhập số <strong>0</strong> cho chú ý/thông báo không giới hạn thời gian. Lưu ý rằng con số này có liên quan đến ngày tháng gửi bài.',
+	'STYLES_TIP'					=> 'Chú ý: Bạn có thể chọn nhanh đoạn văn bản rồi bấm vào những nút bên trên.',
 
 	'TOO_FEW_CHARS'				=> 'Nội dung bài viết của bạn quá ngắn.',
-	'TOO_FEW_CHARS_LIMIT'		=> 'Nội dung bài viết của bạn chỉ có <strong>%1$d</strong> ký tự. Số ký tự tối thiểu yêu cầu trong một bài viết là <strong>%2$d</strong>.',
+	'TOO_FEW_CHARS_LIMIT'		=> array(
+		1	=> 'Nội dung bài viết của bạn chỉ có <strong>%1$d</strong> ký tự. Số ký tự tối thiểu yêu cầu trong một bài viết là <strong>%2$d</strong>.',
+		2	=> 'Nội dung bài viết của bạn chỉ có <strong>%1$d</strong> ký tự. Số ký tự tối thiểu yêu cầu trong một bài viết là <strong>%2$d</strong>.',
+	),
 	'TOO_FEW_POLL_OPTIONS'		=> 'Bạn phải tạo ít nhất hai đối tượng bình chọn.',
 	'TOO_MANY_ATTACHMENTS'		=> 'Không thể gửi thêm tập tin đính kèm nào khác, số lượng tập tin tối đa cho phép đính kèm là <strong>%d</strong>.',
 	'TOO_MANY_CHARS'			=> 'Nội dung bài viết của bạn quá dài.',
-	'TOO_MANY_CHARS_POST'		=> 'Nội dung bài viết của bạn có đến <strong>%1$d</strong> ký tự. Số ký tự tối đa bạn được phép sử dụng là <strong>%2$d</strong>.',
-	'TOO_MANY_CHARS_SIG'		=> 'Nội dung chữ ký của bạn có đến <strong>%1$d<strong ký tự. Số ký tự tối đa bạn được phép sử dụng là <strong>%2$d</strong>.',
+	'TOO_MANY_CHARS_POST'		=> array(
+		2	=> 'Nội dung bài viết của bạn có đến <strong>%1$d</strong> ký tự. Số ký tự tối đa bạn được phép sử dụng là <strong>%2$d</strong>.',
+	),
+	'TOO_MANY_CHARS_SIG'		=> array(
+		2	=> 'Chữ ký của bạn có đến <strong>%1$d</strong> ký tự. Số ký tự tối đa bạn được phép sử dụng là <strong>%2$d</strong>.',
+	),
 	'TOO_MANY_POLL_OPTIONS'		=> 'Bạn đã tạo quá nhiều đối tượng bình chọn.',
 	'TOO_MANY_SMILIES'			=> 'Bài viết của bạn sử dụng quá nhiều biểu tượng vui. Số lượng biểu tượng vui tối đa cho phép sử dụng trong mỗi bài viết là <strong>%d</strong>.',
 	'TOO_MANY_URLS'				=> 'Bài viết của bạn có quá nhiều địa chỉ URL. Số lượng địa chỉ URL tối đa được phép sử dụng trong mỗi bài viết là <strong>%d</strong>.',
@@ -220,7 +268,5 @@ $lang = array_merge($lang, array(
 	'VIEW_PRIVATE_MESSAGE'	=> '%sXem tin nhắn vừa gửi của bạn%s',
 
 	'WRONG_FILESIZE'	=> 'Dung lượng tập tin đính kèm quá lớn, dung lượng tối đa cho phép là <strong>%1d %2s</strong>.',
-	'WRONG_SIZE'		=> 'Kích thước hình ảnh vừa chọn rộng <strong>%5$d</strong> Pixel và cao <strong>%6$d</strong> Pixel. Kích thước hình ảnh phải rộng ít nhất <strong>%1$d</strong> Pixel và cao ít nhất <strong>%2$d</strong> Pixel cũng như không được phép rộng hơn <strong>%3$d</strong> Pixel và cao hơn <strong>%4$d</strong> Pixel.',
+	'WRONG_SIZE'		=> 'Kích thước hình ảnh vừa chọn rộng <strong>%5$d</strong> và cao <strong>%6$d</strong>. Kích thước hình ảnh phải rộng ít nhất <strong>%1$d</strong> và cao ít nhất <strong>%2$d</strong> cũng như không được phép rộng hơn <strong>%3$d</strong> và cao hơn <strong>%4$d</strong>.',
 ));
-
-?>

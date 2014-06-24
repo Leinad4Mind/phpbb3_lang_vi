@@ -4,7 +4,7 @@
 * acp/posting [Vietnamese]
 *
 * @package language
-* @version 1.56
+* @version 1.57
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,17 +23,22 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE
-//
-// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-//
-// Placeholders can now contain order information, e.g. instead of
-// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-// translators to re-order the output of data while ensuring it remains correct
-//
-// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-// equally where a string contains only two placeholders which are used to wrap text
-// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+/**
+* DEVELOPERS PLEASE NOTE
+*
+* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+*
+* Placeholders can now contain order information, e.g. instead of
+* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+* translators to re-order the output of data while ensuring it remains correct
+*
+* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+* equally where a string contains only two placeholders which are used to wrap text
+* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+*
+* Some characters you may want to copy & paste:
+* ’ » “ ” …
+*/
 
 // BBCodes
 // Note to translators: you can translate everything but what's between { and }
@@ -44,6 +49,7 @@ $lang = array_merge($lang, array(
 	'BBCODE_ADDED'				=> 'Thẻ BBCode đã được tạo thành công.',
 	'BBCODE_DANGER'				=> 'Thẻ BBCode bạn đang tạo dường như sử dụng một mã thay thế <var>{TEXT}</var> bên trong thuộc tính một thẻ HTML. Đây là một vấn đề trong bảo mật XSS. Hãy thử dùng những mã thay thế khác được giới hạn an toàn như <var>{SIMPLETEXT}</var> hoặc <var>{INTTEXT}</var>. Chỉ tiếp tục tiến hành nếu bạn hiểu rõ nguy hiểm đằng sau việc sử dụng nó và chắc chắn rằng dùng <var>{TEXT}</var> là một yêu cầu bắt buộc.',
 	'BBCODE_DANGER_PROCEED'		=> 'Vẫn tiến hành', //'Tôi hiểu sự nguy hiểm',
+	'BBCODE_DELETED'			=> 'Thẻ BBCode đã được gỡ bỏ thành công.',
 	'BBCODE_EDITED'				=> 'Thẻ BBCode đã được chỉnh sửa thành công.',
 	'BBCODE_NOT_EXIST'			=> 'Thẻ BBCode vừa chọn không tồn tại.',
 	'BBCODE_HELPLINE'			=> 'Hướng dẫn sử dụng thẻ BBCode',
@@ -119,15 +125,19 @@ $lang = array_merge($lang, array(
 	'FIRST'		=> 'Đầu tiên',
 
 	'ICONS_ADD'				=> 'Thêm biểu tượng bài viết mới',
-	'ICONS_NONE_ADDED'		=> 'Không có biểu tượng bài viết nào được thêm vào.',
-	'ICONS_ONE_ADDED'		=> 'Biểu tượng bài viết đã được thêm vào thành công.',
-	'ICONS_ADDED'			=> 'Những biểu tượng bài viết đã được thêm vào thành công.',
+	'ICONS_ADDED'			=> array(
+		0	=> 'Không có biểu tượng nào để thêm vào.',
+		1	=> 'Biểu tượng bài viết đã được thêm vào thành công.',
+		2	=> 'Biểu tượng bài viết đã được thêm vào thành công.',
+	),
 	'ICONS_CONFIG'			=> 'Thiết lập biểu tượng bài viết',
 	'ICONS_DELETED'			=> 'Biểu tượng bài viết đã được gỡ bỏ thành công.',
 	'ICONS_EDIT'			=> 'Sửa biểu tượng bài viết',
-	'ICONS_ONE_EDITED'		=> 'Biểu tượng bài viết đã được cập nhật thành công.',
-	'ICONS_NONE_EDITED'		=> 'Không có biểu tượng bài viết nào được cập nhật.',
-	'ICONS_EDITED'			=> 'Những biểu tượng bài viết đã được cập nhật thành công.',
+	'ICONS_EDITED'			=> array(
+		0	=> 'Không có biểu tượng nào để cập nhật.',
+		1	=> 'Biểu tượng bài viết đã được cập nhật thành công.',
+		2	=> 'Biểu tượng bài viết đã được cập nhật thành công.',
+	),
 	'ICONS_HEIGHT'			=> 'Chiều cao',
 	'ICONS_IMAGE'			=> 'Hình dùng làm biểu tượng bài viết',
 	'ICONS_IMPORTED'		=> 'Gói biểu tượng bài viết đã được cài đặt thành công.',
@@ -159,9 +169,11 @@ $lang = array_merge($lang, array(
 
 	'SELECT_PACKAGE'			=> 'Chọn một gói biểu tượng',
 	'SMILIES_ADD'				=> 'Thêm biểu tượng vui mới',
-	'SMILIES_NONE_ADDED'		=> 'Không có biểu tượng vui nào được thêm vào.',
-	'SMILIES_ONE_ADDED'			=> 'Biểu tượng vui đã được thêm vào thành công.',
-	'SMILIES_ADDED'				=> 'Những biểu tượng vui đã được thêm vào thành công.',
+	'SMILIES_ADDED'				=> array(
+		0	=> 'Không có biểu tượng nào để thêm vào.',
+		1	=> 'Biểu tượng vui đã được thêm vào thành công.',
+		2	=> 'Biểu tượng vui đã được thêm vào thành công.',
+	),
 	'SMILIES_CODE'				=> 'Mã nhập',
 	'SMILIES_CONFIG'			=> 'Thiết lập biểu tượng vui',
 	'SMILIES_DELETED'			=> 'Biểu tượng vui đã được gỡ bỏ thành công.',
@@ -169,9 +181,11 @@ $lang = array_merge($lang, array(
 	'SMILIE_NO_CODE'			=> 'Biểu tượng vui “%s” đã bị cấm dùng, vì thế mã bạn nhập vô hiệu.',
 	'SMILIE_NO_EMOTION'			=> 'Biểu tượng vui “%s” đã bị cấm dùng, vì thế cảm xúc bạn nhập vô hiệu.',
 	'SMILIE_NO_FILE'			=> 'Biểu tượng vui “%s” đã bị cấm dùng, bởi vì tập tin hình không tìm thấy.',
-	'SMILIES_NONE_EDITED'		=> 'Không có biểu tượng vui nào được cập nhật.',
-	'SMILIES_ONE_EDITED'		=> 'Biểu tượng vui đã được cập nhật thành công.',
-	'SMILIES_EDITED'			=> 'Những biểu tượng vui đã được cập nhật thành công.',
+	'SMILIES_EDITED'			=> array(
+		0	=> 'Không có biểu tượng nào để cập nhật.',
+		1	=> 'Biểu tượng vui đã được cập nhật thành công.',
+		2	=> 'Biểu tượng vui đã được cập nhật thành công.',
+	),
 	'SMILIES_EMOTION'			=> 'Cảm xúc',
 	'SMILIES_HEIGHT'			=> 'Chiều cao',
 	'SMILIES_IMAGE'				=> 'Hình dùng làm biểu tượng vui',
@@ -183,7 +197,10 @@ $lang = array_merge($lang, array(
 	'SMILIES_URL'				=> 'Hình biểu tượng',
 	'SMILIES_WIDTH'				=> 'Chiều rộng',
 
-	'TOO_MANY_SMILIES'	=> 'Vượt quá giới hạn <strong>%d</strong> biểu tượng vui.',
+	'TOO_MANY_SMILIES'			=> array(
+		1	=> 'Vượt giới hạn %d biểu tượng vui.',
+		2	=> 'Vượt giới hạn %d biểu tượng vui.',
+	),
 
 	'WRONG_PAK_TYPE'	=> 'Gói biểu tượng vừa chọn không chứa dữ liệu thích hợp.',
 ));
@@ -275,5 +292,3 @@ $lang = array_merge($lang, array(
 
 	'USED_IN_REPORTS'		=> 'Đã sử dụng trong báo cáo',
 ));
-
-?>

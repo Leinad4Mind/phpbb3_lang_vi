@@ -4,7 +4,7 @@
 * acp/search [Vietnamese]
 *
 * @package language
-* @version 1.34
+* @version 1.35
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,17 +23,22 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE
-//
-// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-//
-// Placeholders can now contain order information, e.g. instead of
-// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-// translators to re-order the output of data while ensuring it remains correct
-//
-// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-// equally where a string contains only two placeholders which are used to wrap text
-// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+/**
+* DEVELOPERS PLEASE NOTE
+*
+* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+*
+* Placeholders can now contain order information, e.g. instead of
+* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+* translators to re-order the output of data while ensuring it remains correct
+*
+* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+* equally where a string contains only two placeholders which are used to wrap text
+* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+*
+* Some characters you may want to copy & paste:
+* ’ » “ ” …
+*/
 
 $lang = array_merge($lang, array(
 	'ACP_SEARCH_INDEX_EXPLAIN'		=> 'Với công cụ này, bạn có thể quản lí việc tạo chỉ mục tìm kiếm trong hệ thống. Nếu bạn chỉ sử dụng duy nhất một phương pháp tìm kiếm, bạn nên xóa tất cả chỉ mục tìm kiếm mà bạn không sử dụng đến. Sau khi thay đổi một vài thiết lập tìm kiếm ví dụ như số ký tự tối thiểu/tối đa, bạn nên tạo lại chỉ mục tìm kiếm cho những thay đổi này.',
@@ -52,18 +57,40 @@ $lang = array_merge($lang, array(
 	'DELETING_INDEX_IN_PROGRESS'			=> 'Đang tiến hành xóa chỉ mục',
 	'DELETING_INDEX_IN_PROGRESS_EXPLAIN'	=> 'Phương pháp tìm kiếm hiện tại đang dọn dẹp chỉ mục tìm kiếm của nó. Quá trình này có thế mất một vài phút.',
 
-	'FULLTEXT_MYSQL_INCOMPATIBLE_VERSION'		=> 'Phương pháp tìm kiếm FULLTEXT với MySQL chỉ có thể sử dụng được với phiên bản MySQL4 trở lên.',
-	'FULLTEXT_MYSQL_MBSTRING'					=> 'Hỗ trợ những ký tự UTF-8 không thuộc bảng chữ cái Latinh sử dụng <samp>mbstring</samp>:',
+	'FULLTEXT_MYSQL_INCOMPATIBLE_DATABASE'		=> 'Phương pháp tìm kiếm FULLTEXT với MySQL chỉ có thể sử dụng được với phiên bản MySQL4 trở lên.',
 	'FULLTEXT_MYSQL_MAX_SEARCH_CHARS_EXPLAIN'	=> 'Những từ khóa ít hơn số ký tự này mới được lập chỉ mục cho việc tìm kiếm. Chỉ có bạn hoặc người quản lí máy chủ mới có thể thay đổi thiết lập này thông qua việc cấu hình MySQL.',
-	'FULLTEXT_MYSQL_MBSTRING_EXPLAIN'			=> 'Nếu <samp>PCRE</samp> không có thuộc tính hỗ trợ các ký tự Unicode, phương pháp tìm kiếm sẽ cố gắng sử dụng công cụ biểu thức bình thường của <samp>mbstring</samp>.',
 	'FULLTEXT_MYSQL_MIN_SEARCH_CHARS_EXPLAIN'	=> 'Những từ khóa nhiều hơn số ký tự này mới được lập chỉ mục cho việc tìm kiếm. Chỉ có bạn hoặc người quản lí máy chủ mới có thể thay đổi thiết lập này thông qua việc cấu hình MySQL.',
 	'FULLTEXT_MYSQL_NOT_SUPPORTED'				=> 'Những chỉ mục FULLTEXT của MySQL chỉ có thể được sử dụng với các bảng dữ liệu MyISAM hay InnoDB. Hệ thống yêu cầu MySQL phiên bản 5.6.4 trở lên khi tạo chỉ mục FULLTEXT trên InnoDB.',
-	'FULLTEXT_MYSQL_PCRE'						=> 'Hỗ trợ những ký tự UTF-8 không thuộc bảng chữ cái Latinh sử dụng <samp>PCRE</samp>:',
-	'FULLTEXT_MYSQL_PCRE_EXPLAIN'				=> 'Phương pháp tìm kiếm nàu yêu cầu thuộc tính hỗ trợ các ký tự Unicode của <samp>PCRE</samp>, chỉ có sẵn trong phiên bản PHP 4.4, 5.1 trở lên, nếu như bạn muốn tìm kiếm những ký tự không thuộc bảng chữ cái Latinh.',
-	'FULLTEXT_MYSQL_TOTAL_POSTS'				=> 'Số bài viết đã được lập chỉ mục',
+	'FULLTEXT_MYSQL_TOTAL_POSTS'				=> 'Số bài viết đã lập chỉ mục',
+	'FULLTEXT_POSTGRES_INCOMPATIBLE_DATABASE'	=> 'Phương pháp tìm kiếm FULLTEXT với PostgreSQL chỉ dùng cho hệ quản trị PostgreSQL.',
+	'FULLTEXT_POSTGRES_MIN_WORD_LEN'			=> 'Độ dài tối thiểu từ khóa',
+	'FULLTEXT_POSTGRES_MIN_WORD_LEN_EXPLAIN'	=> 'Những từ khóa có độ dài đạt mức tối thiểu này mới được lập chỉ mục trong cơ sở dữ liệu.',
+	'FULLTEXT_POSTGRES_MAX_WORD_LEN'			=> 'Độ dài tối đa từ khóa',
+	'FULLTEXT_POSTGRES_MAX_WORD_LEN_EXPLAIN'	=> 'Những từ khóa có độ dài không quá mức tối đa này mới được lập chỉ mục trong cơ sở dữ liệu.',
+	'FULLTEXT_POSTGRES_TOTAL_POSTS'				=> 'Số bài viết đã lập chỉ mục',
+	'FULLTEXT_POSTGRES_TS_NAME'					=> 'Cấu hình tìm kiếm văn bản:',
+	'FULLTEXT_POSTGRES_TS_NAME_EXPLAIN'			=> 'Thông tin cấu hình tìm kiếm văn bản này được sử dụng để phân tích cú pháp và xây dựng danh mục dữ liệu.',
+	'FULLTEXT_POSTGRES_TS_NOT_USABLE'			=> 'Phương pháp tìm kiếm FULLTEXT với PostgreSQL chỉ dùng cho hệ quản trị PostgreSQL phiên bản 8.3 trở lên.',
+	'FULLTEXT_POSTGRES_VERSION_CHECK'			=> 'Phiên bản PostgreSQL',
+	'FULLTEXT_POSTGRES_VERSION_CHECK_EXPLAIN'	=> 'Phương pháp tìm kiếm này yêu cầu phiên bản PostgreSQL 8.3 trở lên.',
+	'FULLTEXT_SPHINX_CONFIG_FILE'				=> 'Tập tin cấu hình Sphinx',
+	'FULLTEXT_SPHINX_CONFIG_FILE_EXPLAIN'		=> 'Nội dung được tạo ra của tập tin cấu hình Sphinx. Nội dung này cần được sao chép chính xác vào tập tin <samp>sphinx.conf</samp> để thư viện tìm kiếm Sphinx sử dụng.',
+	'FULLTEXT_SPHINX_CONFIGURE'					=> 'Thiết lập các mục dưới đây để tạo ra tập tin cấu hình cho Sphinx',
+	'FULLTEXT_SPHINX_DATA_PATH'					=> 'Đường dẫn đến thư mục dữ liệu',
+	'FULLTEXT_SPHINX_DATA_PATH_EXPLAIN'			=> 'Thư mục này được dùng để lưu các chỉ mục tìm kiếm và tập tin ghi nhận. Bạn nên tạo thư mục này nằm ngoài thư mục quản lí website trên máy chủ và sử dụng dấu / trên đường dẫn thư mục.',
+	'FULLTEXT_SPHINX_DELTA_POSTS'				=> 'Số bài viết được lập chỉ mục thường xuyên',
+	'FULLTEXT_SPHINX_HOST'						=> 'Địa chỉ máy chủ dịch vụ Sphinx',
+	'FULLTEXT_SPHINX_HOST_EXPLAIN'				=> 'Địa chỉ máy chủ cần kết nối để sử dụng dịch vụ Sphinx. Để trống phần này để sử dụng giá trị mặc định.',
+	'FULLTEXT_SPHINX_INDEXER_MEM_LIMIT'			=> 'Giới hạn bộ nhớ lập chỉ mục',
+	'FULLTEXT_SPHINX_INDEXER_MEM_LIMIT_EXPLAIN'	=> 'Thiết lập này giúp bạn giảm bớt bộ nhớ RAM sử dụng trên máy chủ. Nếu máy chủ của bạn gặp vấn đề về hiệu suất hoạt động khi sử dụng phương pháp tìm kiếm này, hãy thử giảm bớt tài nguyên bộ nhớ cấp phát cho bộ lập chỉ mục tại đây.',
+	'FULLTEXT_SPHINX_MAIN_POSTS'				=> 'Số bài viết được lập chỉ mục chính',
+	'FULLTEXT_SPHINX_NO_CONFIG_DATA'			=> 'Thông số cấu hình Sphinx và đường dẫn thư mục chứa dữ liệu chưa được xác định. Hãy vui lòng thiết lập các mục này để tạo ra tập tin cấu hình.',
+	'FULLTEXT_SPHINX_PORT'						=> 'Cổng máy chủ Sphinx',
+	'FULLTEXT_SPHINX_PORT_EXPLAIN'				=> 'Cổng mà máy chủ dịch vụ Sphinx đang chạy và cung cấp dịch vụ. Để trống phần này để sử dụng cổng mặc định là 9312.',
+	'FULLTEXT_SPHINX_WRONG_DATABASE'			=> 'Phương pháp tìm kiếm Sphinx cho hệ thống phpBB chỉ hỗ trợ hệ quản trị MySQL và PostgreSQL.',
 
-	'GENERAL_SEARCH_SETTINGS'				=> 'Thiết lập tìm kiếm tổng quát',
-	'GO_TO_SEARCH_INDEX'					=> 'Chuyển đến trang tìm kiếm',
+	'GENERAL_SEARCH_SETTINGS'	=> 'Thiết lập tìm kiếm tổng quát',
+	'GO_TO_SEARCH_INDEX'		=> 'Chuyển đến trang tìm kiếm',
 
 	'INDEX_STATS'					=> 'Thống kê chỉ mục tìm kiếm',
 	'INDEXING_IN_PROGRESS'			=> 'Đang tiến hành lập chỉ mục',
@@ -83,19 +110,26 @@ $lang = array_merge($lang, array(
 
 	'PROGRESS_BAR'	=> 'Thanh tiến trình',
 
-	'SEARCH_GUEST_INTERVAL'			=> 'Thời gian chờ giữa hai lần tìm kiếm dành cho khách',
-	'SEARCH_GUEST_INTERVAL_EXPLAIN'	=> 'Số giây mà khách phải chờ giữa hai lần thực hiện việc tìm kiếm trong hệ thống. Nếu có một ai đó đang thực hiện việc tìm kiếm thì tất cả những người khác phải chờ đợi cho đến khi hết thời gian chờ đợi được thiết lập này.',
-	'SEARCH_INDEX_CREATE_REDIRECT'	=> 'Tất cả bài viết có số ID trên <strong>%1$d</strong> vẫn đang được tạo chỉ mục tìm kiếm với <strong>%2$d</strong> bài viết đã lập chỉ mục xong trong bước này. Tốc độ tạo chỉ mục tìm kiếm hiện tại là khoảng <strong>%3$.1f</strong> bài viết mỗi giây.<br />Việc tạo chỉ mục vẫn đang được tiến hành…',
-	'SEARCH_INDEX_CREATED'			=> 'Đã lập chỉ mục thành công cho tất cả bài viết trong cơ sở dữ liệu.',
-	'SEARCH_INDEX_DELETE_REDIRECT'	=> 'Tất cả bài viết có số ID trên <strong>%1$d</strong> đã được gỡ bỏ chỉ mục tìm kiếm xong.<br />Việc gỡ bỏ chỉ mục vẫn đang được tiến hành…',
-	'SEARCH_INDEX_REMOVED'			=> 'Đã xóa thành công chỉ mục tìm kiếm cho phương pháp tìm kiếm này.',
-	'SEARCH_INTERVAL'				=> 'Thời gian chờ giữa hai lần tìm kiếm dành cho người dùng',
-	'SEARCH_INTERVAL_EXPLAIN'		=> 'Số giây mà người dùng phải chờ giữa hai lần thực hiện việc tìm kiếm trong hệ thống. Khoảng thời gian này được kiểm tra độc lập riêng cho mỗi người dùng.',
-	'SEARCH_STORE_RESULTS'			=> 'Thời gian lưu trữ bộ nhớ đệm cho kết quả tìm kiếm',
-	'SEARCH_STORE_RESULTS_EXPLAIN'	=> 'Số giây mà những kết quả tìm kiếm đã được lưu vào bộ nhớ đệm sẽ hết hạn. Nhập số <strong>0</strong> nếu bạn muốn vô hiệu chức năng lưu trữ bộ nhớ đệm cho kết quả tìm kiếm.',
-	'SEARCH_TYPE'					=> 'Phương pháp tìm kiếm',
-	'SEARCH_TYPE_EXPLAIN'			=> 'Hệ thống phpBB cho phép bạn chọn phương pháp được sử dụng để thực hiện tìm kiếm nội dung bài viết trong hệ thống. Theo thiết lập mặc định, chức năng tìm kiếm sẽ sử dụng tìm kiếm FULLTEXT của chính hệ thống phpBB.',
-	'SWITCHED_SEARCH_BACKEND'		=> 'Bạn đã chọn chuyển đổi phương pháp tìm kiếm. Ngoài ra, để sử dụng phương pháp tìm kiếm mới này, bạn nên chắc chắn đã tạo chỉ mục cho phương pháp tìm kiếm đã chọn.',
+	'SEARCH_GUEST_INTERVAL'				=> 'Thời gian chờ giữa hai lần tìm kiếm dành cho khách',
+	'SEARCH_GUEST_INTERVAL_EXPLAIN'		=> 'Số giây mà khách phải chờ giữa hai lần thực hiện việc tìm kiếm trong hệ thống. Nếu có một ai đó đang thực hiện việc tìm kiếm thì tất cả những người khác phải chờ đợi cho đến khi hết thời gian chờ đợi được thiết lập này.',
+	'SEARCH_INDEX_CREATE_REDIRECT'		=> array(
+		2	=> 'Tất cả bài viết có số ID trên %2$d đã được lập chỉ mục, với số lượng %1$d bài viết đã hoàn tất.<br />',
+	),
+	'SEARCH_INDEX_CREATE_REDIRECT_RATE'	=> array(
+		2	=> 'Tốc độ lập chỉ mục hiện tại là khoảng %1$.1f bài viết mỗi giây.<br />Việc lập chỉ mục vẫn đang tiếp tục…',
+	),
+	'SEARCH_INDEX_CREATED'				=> 'Đã lập chỉ mục thành công cho tất cả bài viết trong cơ sở dữ liệu.',
+	'SEARCH_INDEX_DELETE_REDIRECT'		=> array(
+		2	=> 'Tất cả bài viết có số ID trên %2$d đã được gỡ bỏ chỉ mục tìm kiếm.<br />Việc xóa chỉ mục vẫn đang tiếp tục…',
+	),
+	'SEARCH_INDEX_REMOVED'				=> 'Đã xóa thành công chỉ mục tìm kiếm cho phương pháp tìm kiếm này.',
+	'SEARCH_INTERVAL'					=> 'Thời gian chờ giữa hai lần tìm kiếm dành cho người dùng',
+	'SEARCH_INTERVAL_EXPLAIN'			=> 'Số giây mà người dùng phải chờ giữa hai lần thực hiện việc tìm kiếm trong hệ thống. Khoảng thời gian này được kiểm tra độc lập riêng cho mỗi người dùng.',
+	'SEARCH_STORE_RESULTS'				=> 'Thời gian lưu trữ bộ nhớ đệm cho kết quả tìm kiếm',
+	'SEARCH_STORE_RESULTS_EXPLAIN'		=> 'Số giây mà những kết quả tìm kiếm đã được lưu vào bộ nhớ đệm sẽ hết hạn. Nhập số <strong>0</strong> nếu bạn muốn vô hiệu chức năng lưu trữ bộ nhớ đệm cho kết quả tìm kiếm.',
+	'SEARCH_TYPE'						=> 'Phương pháp tìm kiếm',
+	'SEARCH_TYPE_EXPLAIN'				=> 'Hệ thống phpBB cho phép bạn chọn phương pháp được sử dụng để thực hiện tìm kiếm nội dung bài viết trong hệ thống. Theo thiết lập mặc định, chức năng tìm kiếm sẽ sử dụng tìm kiếm FULLTEXT của chính hệ thống phpBB.',
+	'SWITCHED_SEARCH_BACKEND'			=> 'Bạn đã chọn chuyển đổi phương pháp tìm kiếm. Ngoài ra, để sử dụng phương pháp tìm kiếm mới này, bạn nên chắc chắn đã tạo chỉ mục cho phương pháp tìm kiếm đã chọn.',
 
 	'TOTAL_WORDS'	=> 'Số từ đã được lập chỉ mục',
 	'TOTAL_MATCHES'	=> 'Số từ trong bài viết đã được lập chỉ mục',
@@ -105,5 +139,3 @@ $lang = array_merge($lang, array(
 	'YES_SEARCH_UPDATE'			=> 'Bật cập nhật FULLTEXT',
 	'YES_SEARCH_UPDATE_EXPLAIN'	=> 'Cập nhật các chỉ mục FULLTEXT khi gửi bài, được thay thế nếu chức năng tìm kiếm bị vô hiệu.',
 ));
-
-?>

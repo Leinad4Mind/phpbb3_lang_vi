@@ -4,7 +4,7 @@
 * help_faq [Vietnamese]
 *
 * @package language
-* @version 1.67
+* @version 1.69
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -18,17 +18,22 @@ if (!defined('IN_PHPBB'))
 	exit;
 }
 
-// DEVELOPERS PLEASE NOTE 
-//
-// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-//
-// Placeholders can now contain order information, e.g. instead of
-// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-// translators to re-order the output of data while ensuring it remains correct
-//
-// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-// equally where a string contains only two placeholders which are used to wrap text
-// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+/**
+* DEVELOPERS PLEASE NOTE
+*
+* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+*
+* Placeholders can now contain order information, e.g. instead of
+* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+* translators to re-order the output of data while ensuring it remains correct
+*
+* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+* equally where a string contains only two placeholders which are used to wrap text
+* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+*
+* Some characters you may want to copy & paste:
+* ’ » “ ” …
+*/
 
 $help = array(
 	array(
@@ -45,7 +50,7 @@ $help = array(
 	),
 	array(
 		0 => 'Tại sao tôi thường xuyên bị thoát ra khỏi hệ thống?',
-		1 => 'Nếu bạn không đánh dấu chọn vào lựa chọn <em>Đăng nhập tự động mỗi lần ghé thăm</em> khi bạn đăng nhập, hệ thống sẽ chỉ cho phép bạn đăng nhập vào trong thời điểm hiện tại. Điều này sẽ giúp ngăn cản việc lạm dụng tài khoản của bạn bởi một ai đó. Để vẫn luôn trong trạng thái đã đăng nhập, hãy đánh dấu vào lựa chọn trên một lần trong khi đăng nhập. Điều này không được khuyến cáo sử dụng nếu bạn đang truy nhập vào hệ thống từ một máy tính dùng chung, ví dụ như trong thư viện, tiệm Internet, phòng vi tính trong trường học. Nếu bạn không nhìn thấy lựa chọn trên thì có nghĩa là người quản trị đã vô hiệu chức năng này.'
+		1 => 'Nếu bạn không đánh dấu chọn vào lựa chọn <em>Đăng nhập tự động</em> khi bạn đăng nhập, hệ thống sẽ chỉ cho phép bạn đăng nhập vào trong thời điểm hiện tại. Điều này sẽ giúp ngăn cản việc lạm dụng tài khoản của bạn bởi một ai đó. Để vẫn luôn trong trạng thái đã đăng nhập, hãy đánh dấu vào lựa chọn trên một lần trong khi đăng nhập. Điều này không được khuyến cáo sử dụng nếu bạn đang truy nhập vào hệ thống từ một máy tính dùng chung, ví dụ như trong thư viện, tiệm Internet, phòng vi tính trong trường học. Nếu bạn không nhìn thấy lựa chọn trên thì có nghĩa là người quản trị đã vô hiệu chức năng này.'
 	),
 	array(
 		0 => 'Làm sao để tên tài khoản của tôi không xuất hiện trong danh sách các thành viên trực tuyến?',
@@ -89,7 +94,7 @@ $help = array(
 	),
 	array(
 		0 => 'Tôi đã thay đổi múi giờ nhưng thời gian vẫn chạy sai!',
-		1 => 'Nếu bạn chắc chắn đã thiết lập múi giờ và giờ mùa hè <abbr title="Daylight Saving Time">DST</abbr> chính xác mà thời gian vẫn chạy sai thì có thể giờ trên máy chủ đã chạy không chính xác. Người quản trị sẽ cần phải chỉnh sửa lại điều này nếu như bạn thông báo sớm cho họ biết.'
+		1 => 'Nếu bạn chắc chắn đã thiết lập múi giờ chính xác mà thời gian vẫn chạy sai thì có thể giờ trên máy chủ đã chạy không chính xác. Người quản trị sẽ cần phải chỉnh sửa lại điều này nếu như bạn thông báo sớm cho họ biết.'
 	),
 	array(
 		0 => 'Ngôn ngữ của tôi không có trong danh sách hỗ trợ!',
@@ -262,15 +267,15 @@ $help = array(
 	),
 	array(
 		0 => '--',
-		1 => 'Những câu hỏi về thiết lập quan hệ bạn thân và kẻ thù'
+		1 => 'Những câu hỏi về thiết lập quan hệ bạn bè và danh sách chặn'
 	),
 	array(
-		0 => 'Danh sách bạn thân và danh sách kẻ thù là gì?',
-		1 => 'Bạn có thể sử dụng những danh sách này để tổ chức quản lí các thành viên khác trong hệ thống. Những thành viên được thêm vào trong danh sách bạn thân sẽ được liệt kê trong bảng thiết lập cá nhân của bạn để bạn bạn có thể biết nhanh trạng thái trực tuyến của họ và gửi tin nhắn cho họ. Nếu giao diện hỗ trợ, các bài viết từ những thành viên này đều được tô sáng nổi bật. Nếu bạn thêm một thành viên vào danh sách kẻ thù của mình thì bất kì bài viết nào của họ theo mặc định trong hệ thống sẽ ẩn đi đối với bạn.'
+		0 => 'Danh sách bạn bè và danh sách chặn là gì?',
+		1 => 'Bạn có thể sử dụng những danh sách này để tổ chức quản lí các người dùng khác trong hệ thống. Những người dùng được thêm vào trong danh sách bạn bè sẽ được liệt kê trong bảng thiết lập cá nhân của bạn để bạn có thể biết nhanh trạng thái trực tuyến của họ và gửi tin nhắn. Nếu giao diện hỗ trợ, các bài viết từ những thành viên này đều được tô sáng nổi bật. Nếu bạn thêm một người dùng vào danh sách chặn của mình thì bất kì bài viết nào của họ theo mặc định trong hệ thống sẽ ẩn đi đối với bạn.'
 	),
 	array(
-		0 => 'Làm thế nào tôi có thể thêm/gỡ bỏ ai đó trong danh sách bạn thân hay kẻ thù của mình?',
-		1 => 'Bạn có thể thêm người khác vào danh sách của mình theo hai cách. Trong mỗi trang thông tin cá nhân của họ, có một liên kết để bạn thêm vào danh sách bạn thân hay kẻ thù của mình. Ngoài ra, trong bảng thiết lập cá nhân của mình, bạn có thể thêm trực tiếp bằng cách nhập vào tên tài khoản của họ. Bạn cũng có thể gỡ bỏ người khác ra khỏi danh sách của mình ngay tại trang này.'
+		0 => 'Làm thế nào tôi có thể thêm/gỡ bỏ ai đó trong danh sách bạn bè hay chặn của mình?',
+		1 => 'Bạn có thể thêm người khác vào danh sách của mình theo hai cách. Trong mỗi trang thông tin cá nhân của họ, có một liên kết để bạn thêm vào danh sách bạn bè hay chặn của mình. Ngoài ra, trong bảng thiết lập cá nhân của mình, bạn có thể thêm trực tiếp bằng cách nhập vào tên tài khoản của họ. Bạn cũng có thể gỡ bỏ người khác ra khỏi danh sách của mình ngay tại trang này.'
 	),
 	array(
 		0 => '--',
@@ -341,5 +346,3 @@ $help = array(
 		1 => 'Bất kì người quản trị nào được liệt kê trong trang “Ban điều hành” đều là người thích hợp cho bạn cần liên hệ hay gửi các thắc mắc của mình. Nếu như việc liên hệ này không có phản hồi nào, bạn nên liên hệ với người quản lí tên miền này bằng cách thực hiện <a href="http://www.google.com/search?q=whois">tra cứu trên miền</a> hoặc nếu website này đang chạy trên một dịch vụ lưu trữ Web miễn phí như Yahoo!, free.fr, f2s.com… thì bạn hãy thử liên hệ với người quản lí hay bộ phận giải quyết các vi phạm của dịch vụ đó. Bạn cần lưu ý rằng <em>tổ chức phpBB</em> hoàn toàn <strong>không liên quan và không chịu trách nhiệm</strong> đến bất kì vấn đề nào xảy ra trong website này ở bất kì đâu và với bất kì ai sử dụng chương trình này. Sẽ hoàn toàn vô nghĩa nếu bạn tìm cách liên hệ với <em>tổ chức phpBB</em> về các vấn đề liên quan đến pháp luật, các trách nhiệm pháp lý, những bài viết nói xấu lẫn nhau… nếu nó <strong>không liên quan trực tiếp</strong> đến website phpBB.com hoặc những chương trình riêng biệt của chính phpBB. Nếu bạn gửi email cho <em>tổ chức phpBB</em> về <strong>bất kì vấn đề nào phát sinh từ bên thứ ba</strong> trong việc sử dụng chương trình này của người dùng cuối thì có thể bạn sẽ nhận được một hồi âm ngắn gọn hoặc không có sự phản hồi nào.'
 	)
 );
-
-?>

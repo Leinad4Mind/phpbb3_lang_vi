@@ -4,7 +4,7 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version 1.41
+* @version 1.43
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,24 +23,29 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE 
-//
-// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-//
-// Placeholders can now contain order information, e.g. instead of
-// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-// translators to re-order the output of data while ensuring it remains correct
-//
-// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-// equally where a string contains only two placeholders which are used to wrap text
-// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+/**
+* DEVELOPERS PLEASE NOTE
+*
+* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+*
+* Placeholders can now contain order information, e.g. instead of
+* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+* translators to re-order the output of data while ensuring it remains correct
+*
+* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+* equally where a string contains only two placeholders which are used to wrap text
+* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+*
+* Some characters you may want to copy & paste:
+* ’ » “ ” …
+*/
 
 $lang = array_merge($lang, array(
 	'ABOUT_USER'			=> 'Thông tin cá nhân',
 	'ACTIVE_IN_FORUM'		=> 'Chuyên mục hoạt động tích cực',
 	'ACTIVE_IN_TOPIC'		=> 'Chủ đề hoạt động tích cực',
-	'ADD_FOE'				=> 'Thêm kẻ thù',
-	'ADD_FRIEND'			=> 'Thêm bạn thân',
+	'ADD_FOE'				=> 'Chặn thêm người',
+	'ADD_FRIEND'			=> 'Thêm bạn bè',
 	'AFTER'					=> 'Sau',
 
 	'ALL'					=> 'Tất cả',
@@ -79,9 +84,9 @@ $lang = array_merge($lang, array(
 	'IM_JABBER'				=> 'Lưu ý rằng các thành viên có thể chọn không nhận những tin nhắn nhanh mà họ không mong muốn.',
 	'IM_JABBER_SUBJECT'		=> 'Đây là tin nhắn thông báo tự động, xin đừng trả lời! Tin nhắn từ thành viên <strong>%1$s</strong> trong %2$s.',
 	'IM_MESSAGE'			=> 'Nội dung tin nhắn nhanh',
-	'IM_MSNM'				=> 'Lưu ý bạn cần phải cài đặt chương trình <strong>Windows Messenger</strong> trên máy tính của mình để có thể sử dụng được chức năng này.',
+	'IM_MSNM'				=> 'Lưu ý bạn cần phải cài đặt chương trình <strong>Windows Live Messenger</strong> trên máy tính của mình để có thể sử dụng được chức năng này.',
 	'IM_MSNM_BROWSER'		=> 'Trình duyệt của bạn không hỗ trợ chương trình này.',
-	'IM_MSNM_CONNECT'		=> 'Tài khoản MSN của bạn chưa được kết nối.\nBạn phải kết nối đến dịch vụ của MSN để tiếp tục gửi tin nhắn.',
+	'IM_MSNM_CONNECT'		=> 'Tài khoản Windows Live của bạn chưa được kết nối.\nBạn phải kết nối đến dịch vụ của Windows Live để tiếp tục gửi tin nhắn.',
 	'IM_NAME'				=> 'Tên của bạn',
 	'IM_NO_DATA'			=> 'Không có thông tin liên hệ phù hợp nào về thành viên này.',
 	'IM_NO_JABBER'			=> 'Xin lỗi, chức năng gửi tin nhắn trực tiếp đến các thành viên sử dụng Jabber không được hỗ trợ trên diễn đàn này. Bạn sẽ cần phải cài đặt ứng dụng <strong>Jabber</strong> trên máy tính của mình để liên hệ với người nhận trên.',
@@ -93,8 +98,10 @@ $lang = array_merge($lang, array(
 
 	'LAST_ACTIVE'				=> 'Lần hoạt động trước',
 	'LESS_THAN'					=> 'Ít hơn',
-	'LIST_USER'					=> '1 thành viên',
-	'LIST_USERS'				=> '%d thành viên',
+	'LIST_USERS'				=> array(
+		1	=> '%d thành viên',
+		2	=> '%d thành viên',
+	),
 	'LOGIN_EXPLAIN_LEADERS'		=> 'Bạn phải đăng nhập vào hệ thống mới có thể xem danh sách ban điều hành.',
 	'LOGIN_EXPLAIN_MEMBERLIST'	=> 'Bạn phải đăng nhập vào hệ thống mới có thể xem danh sách thành viên.',
 	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'Bạn phải đăng nhập vào hệ thống mới có thể tìm kiếm thành viên.',	
@@ -112,8 +119,8 @@ $lang = array_merge($lang, array(
 
 	'REAL_NAME'				=> 'Tên người nhận',
 	'RECIPIENT'				=> 'Người nhận',
-	'REMOVE_FOE'			=> 'Gỡ bỏ kẻ thù',
-	'REMOVE_FRIEND'			=> 'Gỡ bỏ bạn thân',
+	'REMOVE_FOE'			=> 'Gỡ bỏ chặn',
+	'REMOVE_FRIEND'			=> 'Gỡ bỏ bạn bè',
 
 	'SELECT_MARKED'			=> 'Chọn đánh dấu',
 	'SELECT_SORT_METHOD'	=> 'Chọn cách sắp xếp',
@@ -122,7 +129,7 @@ $lang = array_merge($lang, array(
 	'SEND_IM'				=> 'Nhắn tin nhanh',
 	'SEND_JABBER_MESSAGE'	=> 'Gửi tin nhắn Jabber',
 	'SEND_MESSAGE'			=> 'Tin nhắn',
-	'SEND_MSNM_MESSAGE'		=> 'Gửi tin nhắn MSNM/WLM',
+	'SEND_MSNM_MESSAGE'		=> 'Gửi tin nhắn Windows Live',
 	'SEND_YIM_MESSAGE'		=> 'Gửi tin nhắn YIM',
 	'SORT_EMAIL'			=> 'Địa chỉ email',
 	'SORT_LAST_ACTIVE'		=> 'Lần hoạt động trước',
@@ -135,14 +142,15 @@ $lang = array_merge($lang, array(
 	'USER_LAST_REMINDED'	=> array(
 		0	=> 'Hiện tại chưa bị nhắc nhở.',
 		1	=> 'Đã bị nhắc nhở %1$d lần.<br />» %2$s',
+		2	=> 'Đã bị nhắc nhở %1$d lần.<br />» %2$s',
 	),
 	'USER_ONLINE'			=> 'Đang trực tuyến',
 	'USER_PRESENCE'			=> 'Hiện diện',
 
-	'VIEWING_PROFILE'		=> 'Đang xem thông tin cá nhân về %s',
-	'VISITED'				=> 'Lần ghé thăm trước',
+	'VIEWING_PROFILE'	=> 'Đang xem thông tin cá nhân về %s',
+	'VISITED'			=> 'Lần ghé thăm trước',
 
-	'WWW'					=> 'Website',
+	'WWW'	=> 'Website',
 ));
 
 ?>
