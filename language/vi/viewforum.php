@@ -4,7 +4,7 @@
 * viewforum [Vietnamese]
 *
 * @package language
-* @version $Id: viewforum.php 14 2008-11-01 22:55:00Z nedka $
+* @version $Id: viewforum.php 15 2008-12-13 10:45:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -45,7 +45,7 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ACTIVE_TOPICS'			=> 'Những chủ đề không bị khóa',
+	'ACTIVE_TOPICS'			=> 'Chủ đề sôi nổi',
 	'ANNOUNCEMENTS'			=> 'Thông báo',
 
 	'FORUM_PERMISSIONS'		=> 'Cấp phép chuyên mục',

@@ -4,7 +4,7 @@
 * acp_board [Vietnamese]
 *
 * @package language
-* @version $Id: board.php 85 2008-11-13 05:02:00Z nedka $
+* @version $Id: board.php 88 2008-12-13 11:17:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -95,11 +95,11 @@ $lang = array_merge($lang, array(
 
 // Avatar Settings
 $lang = array_merge($lang, array(
-	'ACP_AVATAR_SETTINGS_EXPLAIN'	=> 'Hình đại diện thường là những hình ảnh nhỏ, những hình đơn mà thành viên đính kèm trong thông tin cá nhân của mình. Tùy thuộc vào giao diện được sử dụng, hình đại diện thường hiển thị bên dưới tên thành viên trong phần xem chủ đề. Với công cụ này, bạn có thể thay đổi cách sử dụng hình đại diện của thành viên. Lưu ý rằng trong trường hợp bạn kích hoạt tùy chọn cho phép thành viên tải lên hình đại diện, bạn cần phải tạo thư mục mang tên bên dưới trong hệ thống theo đúng đường dẫn đã thiết lập và chắc chắn thiết lập cấp phép có thể ghi cho thư mục này trên máy chủ. Bạn cũng cần lưu ý rằng dung lượng tập tin hạn chế cho hình đại diện chỉ áp dụng cho những hình đại diện được tải lên và không có tác dụng đối với những hình đại diện được liên kết từ website khác.',
+	'ACP_AVATAR_SETTINGS_EXPLAIN'	=> 'Hình đại diện thường là những hình ảnh nhỏ, những hình đơn mà thành viên đính kèm trong thông tin cá nhân của mình. Tùy thuộc vào giao diện được sử dụng, hình đại diện thường hiển thị bên dưới tên thành viên trong phần xem chủ đề. Với công cụ này, bạn có thể thay đổi cách sử dụng hình đại diện của thành viên. Lưu ý rằng trong trường hợp bạn kích hoạt tùy chọn cho phép thành viên tải lên hình đại diện, bạn cần phải tạo thư mục mang tên bên dưới trong hệ thống theo đúng đường dẫn đã thiết lập và chắc chắn thiết lập cấp phép có thể ghi cho thư mục này trên máy chủ. Bạn cũng cần lưu ý rằng dung lượng tập tin hạn chế cho hình đại diện chỉ áp dụng cho những hình đại diện được tải lên và không có tác dụng đối với những hình đại diện được liên kết từ các website khác.',
 
 	'ALLOW_LOCAL'					=> 'Cho phép sử dụng thư viện hình đại diện',
 	'ALLOW_REMOTE'					=> 'Cho phép liên kết hình đại diện',
-	'ALLOW_REMOTE_EXPLAIN'			=> 'Tùy chọn cho phép thành viên sử dụng hình đại diện được liên kết từ những website khác.',
+	'ALLOW_REMOTE_EXPLAIN'			=> 'Tùy chọn cho phép thành viên sử dụng hình đại diện được liên kết từ các website khác.',
 	'ALLOW_UPLOAD'					=> 'Cho phép tải lên hình đại diện',
 	'AVATAR_GALLERY_PATH'			=> 'Đường dẫn thư viện hình đại diện',
 	'AVATAR_GALLERY_PATH_EXPLAIN'	=> 'Đường dẫn đến thư mục chứa hình ảnh sử dụng cho thư viện hình đại diện trong hệ thống, ví dụ như <samp>images/avatars/gallery</samp>.',
@@ -208,7 +208,7 @@ $lang = array_merge($lang, array(
 	'ACC_ACTIVATION'				=> 'Kích hoạt tài khoản',
 	'ACC_ACTIVATION_EXPLAIN'		=> 'Tùy chọn này cho phép bạn quyết định cách thức kích hoạt tài khoản thành viên khi đăng ký mới. Bạn cũng có thể cho ngưng đăng ký thành viên mới với tùy chọn này.',
 	'ACC_ADMIN'						=> 'Bởi quản trị viên',
-	'ACC_DISABLE'					=> 'Ngưng đăng ký thành viên mới',
+	'ACC_DISABLE'					=> 'Ngưng đăng ký mới',
 	'ACC_NONE'						=> 'Không cần',
 	'ACC_USER'						=> 'Bởi thành viên',
 //	'ACC_USER_ADMIN'				=> 'Thành viên + quản trị viên',
@@ -230,10 +230,10 @@ $lang = array_merge($lang, array(
 	'USERNAME_ALPHA_ONLY'			=> 'Chỉ được dùng vừa chữ cái vừa chữ số',
 	'USERNAME_ALPHA_SPACERS'		=> 'Vừa chữ cái vừa chữ số và có khoảng trắng',
 	'USERNAME_ASCII'				=> 'Chỉ được dùng ký tự ASCII (không có mã Unicode quốc tế)',	
-	'USERNAME_LETTER_NUM'			=> 'Bất kỳ chữ cố và chữ cái nào',
-	'USERNAME_LETTER_NUM_SPACERS'	=> 'Bất kỳ chữ số, chữ cái và khoảng trắng nào',
+	'USERNAME_LETTER_NUM'			=> 'Bất kì chữ cố và chữ cái nào',
+	'USERNAME_LETTER_NUM_SPACERS'	=> 'Bất kì chữ số, chữ cái và khoảng trắng nào',
 	'USERNAME_CHARS'				=> 'Giới hạn ký tự trong tên thành viên',
-	'USERNAME_CHARS_ANY'			=> 'Bất kỳ ký tự nào',
+	'USERNAME_CHARS_ANY'			=> 'Bất kì ký tự nào',
 	'USERNAME_CHARS_EXPLAIN'		=> 'Giới hạn loại ký tự được sử dụng trong tên thành viên và khoảng trắng: -, +, _, [ và ].',
 	'USERNAME_LENGTH'				=> 'Độ dài tên thành viên',
 	'USERNAME_LENGTH_EXPLAIN'		=> 'Số ký tự tối thiểu và tối đa bắt buộc đối với tên thành viên.',
@@ -262,7 +262,7 @@ $lang = array_merge($lang, array(
 
 // Cookie Settings
 $lang = array_merge($lang, array(
-	'ACP_COOKIE_SETTINGS_EXPLAIN'		=> 'Những thiết lập bên dưới được sử dụng để gửi cookie đến trình duyệt của khách ghé thăm website. Trong hều hết các trường hợp, bạn nên sử dụng giá trị mặc định của cookie và đừng thay đổi chúng nếu không đủ khả năng quản lí hay không thực sự cần thiết. Nếu bạn thực sự cần thay đổi giá trị mặc định, hãy cẩn thận vì những thiết lập không chính xác sẽ ngăn cản thành viên đăng nhập vào hệ thống.',
+	'ACP_COOKIE_SETTINGS_EXPLAIN'		=> 'Những thiết lập bên dưới được sử dụng để gửi cookie đến trình duyệt của khách ghé thăm. Trong hều hết các trường hợp, bạn nên sử dụng giá trị mặc định của cookie và đừng thay đổi chúng nếu không đủ khả năng quản lí hay không thực sự cần thiết. Nếu bạn thực sự cần thay đổi giá trị mặc định, hãy cẩn thận vì những thiết lập không chính xác sẽ ngăn cản thành viên đăng nhập vào hệ thống.',
 
 	'COOKIE_DOMAIN'				=> 'Tên miền cookie',
 	'COOKIE_NAME'				=> 'Tên cookie',
@@ -277,7 +277,7 @@ $lang = array_merge($lang, array(
 
 // Load Settings
 $lang = array_merge($lang, array(
-	'ACP_LOAD_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể bật hay tắt những chức năng nhất định của hệ thống để giảm bớt số lượng xử lí được yêu cầu gửi đến máy chủ. Trên hều hết các máy chủ, bạn không cần thiết phải tắt bất kỳ chức năng nào của hệ thống tại đây. Tuy nhiên, trên một vài máy chủ nhất định hoặc các hệ thống sử dụng dịch vụ lưu trữ Web dùng chung với nhiều người khác trên cùng một máy chủ, việc tắt một vài chức năng không cần đến là rất hết sức cần thiết để giảm bớt khối lượng công việc xử lí cho máy chủ. Bạn cũng nên xác định giới hạn thời gian nạp hệ thống và số lượng phiên đăng nhập vượt quá để hệ thống tự động chuyển sang chế độ ngưng hoạt động kịp thời.',
+	'ACP_LOAD_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể bật hay tắt những chức năng nhất định của hệ thống để giảm bớt số lượng xử lí được yêu cầu gửi đến máy chủ. Trên hều hết các máy chủ, bạn không cần thiết phải tắt bất kì chức năng nào của hệ thống tại đây. Tuy nhiên, trên một vài máy chủ nhất định hoặc các hệ thống sử dụng dịch vụ lưu trữ Web dùng chung với nhiều người khác trên cùng một máy chủ, việc tắt một vài chức năng không cần đến là rất hết sức cần thiết để giảm bớt khối lượng công việc xử lí cho máy chủ. Bạn cũng nên xác định giới hạn thời gian nạp hệ thống và số lượng phiên đăng nhập vượt quá để hệ thống tự động chuyển sang chế độ ngưng hoạt động kịp thời.',
 
 	'CUSTOM_PROFILE_FIELDS'			=> 'Mục thông tin cá nhân tùy biến',
 	'LIMIT_LOAD'					=> 'Giới hạn thời gian nạp hệ thống',
@@ -325,7 +325,7 @@ $lang = array_merge($lang, array(
 	'LDAP_NO_EMAIL'					=> 'Thuộc tính của địa chỉ email bạn vừa xác định không tồn tại.',	
 	'LDAP_NO_IDENTITY'				=> 'Không thể tìm khóa định danh đăng nhập cho <strong>%s</strong>.',
 	'LDAP_PASSWORD'					=> 'Mật khẩu LDAP',
-	'LDAP_PASSWORD_EXPLAIN'			=> 'Để trống phần này để sử dụng liên kết ẩn danh. Nếu máy chủ dịch vụ không cho phép truy cập ẩn danh, bạn hãy điền vào mật khẩu cho tài khoản LDAP tương ứng ở trên. Mục này được yêu cầu cho các thư mục máy chủ đang hoạt động. <strong>CẢNH BÁO:</strong> Mật khẩu này sẽ được lưu trữ dưới dạng văn bản thuần trong cơ sở dữ liệu, vì thế nó có thể bị xem bởi bất kỳ ai có quyền truy cập vào cơ sở dữ liệu của bạn hoặc được phép xem trang cấu hình này.',
+	'LDAP_PASSWORD_EXPLAIN'			=> 'Để trống phần này để sử dụng liên kết ẩn danh. Nếu máy chủ dịch vụ không cho phép truy cập ẩn danh, bạn hãy điền vào mật khẩu cho tài khoản LDAP tương ứng ở trên. Mục này được yêu cầu cho các thư mục máy chủ đang hoạt động. <strong>CẢNH BÁO:</strong> Mật khẩu này sẽ được lưu trữ dưới dạng văn bản thuần trong cơ sở dữ liệu, vì thế nó có thể bị xem bởi bất kì ai có quyền truy cập vào cơ sở dữ liệu của bạn hoặc được phép xem trang cấu hình này.',
 	'LDAP_PORT'						=> 'Cổng máy chủ LDAP',
 	'LDAP_PORT_EXPLAIN'				=> 'Tùy chọn này cho phép bạn có thể xác định một cổng khác được sử dụng để kết nối đến máy chủ LDAP thay vì dùng cổng mặc định là <strong>389</strong>.',
 	'LDAP_SERVER'					=> 'Địa chỉ máy chủ LDAP',
@@ -372,7 +372,7 @@ $lang = array_merge($lang, array(
 
 	'ALL'							=> 'Tất cả',
 	'ALLOW_AUTOLOGIN'				=> 'Cho phép đăng nhập tự động',
-	'ALLOW_AUTOLOGIN_EXPLAIN'		=> 'Tùy chọn cho phép thành viên có thể đăng nhập tự động vào hệ thống khi họ ghé thăm website.',
+	'ALLOW_AUTOLOGIN_EXPLAIN'		=> 'Tùy chọn cho phép thành viên có thể đăng nhập tự động vào hệ thống khi họ ghé thăm.',
 	'AUTOLOGIN_LENGTH'				=> 'Số ngày hết hạn khóa đăng nhập tự động',
 	'AUTOLOGIN_LENGTH_EXPLAIN'		=> 'Số ngày kể từ lần ghé thăm trước của thành viên, khóa đăng nhập tự động sẽ hết hạn. Nhập số <strong>0</strong> để vô hiệu chức năng này.',
 	'BROWSER_VALID'					=> 'Kiểm tra trình duyệt',
@@ -413,22 +413,22 @@ $lang = array_merge($lang, array(
 
 // Email Settings
 $lang = array_merge($lang, array(
-	'ACP_EMAIL_SETTINGS_EXPLAIN'	=> 'Những thiết lập này được sử dụng khi hệ thống gửi email đến các thành viên khác. Hãy chắc chắn địa chỉ email liên hệ mà bạn nhập vào là hợp lệ, bất kỳ thư rác hay email không gửi được nào có khả năng sẽ được gửi đến địa chỉ này. Nếu máy chủ của bạn không hỗ trợ gửi email thông qua PHP, bạn có thể thay thế bằng cách gửi email trực tiếp thông qua máy chủ SMTP. Điều này yêu cầu bạn phải cung cấp một địa chỉ máy chủ SMTP chính xác cho hệ thống biết. Bạn có thể hỏi nhà cung cấp dịch vụ lưu trữ Web của bạn nếu cần thiết và đừng xác định những máy chủ đã quá lạc hậu! Nếu máy chủ SMTP yêu cầu phải xác thực và chỉ khi thực sự được yêu cầu, bạn hãy cung cấp cho hệ thống biết tên tài khoản, mật khẩu đăng nhập và phương pháp xác thực của máy chủ SMTP.',
+	'ACP_EMAIL_SETTINGS_EXPLAIN'	=> 'Những thiết lập này được sử dụng khi hệ thống gửi email đến các thành viên khác. Hãy chắc chắn địa chỉ email liên hệ mà bạn nhập vào là hợp lệ, bất kì thư rác hay email không gửi được nào có khả năng sẽ được gửi đến địa chỉ này. Nếu máy chủ của bạn không hỗ trợ gửi email thông qua PHP, bạn có thể thay thế bằng cách gửi email trực tiếp thông qua máy chủ SMTP. Điều này yêu cầu bạn phải cung cấp một địa chỉ máy chủ SMTP chính xác cho hệ thống biết. Bạn có thể hỏi nhà cung cấp dịch vụ lưu trữ Web của bạn nếu cần thiết và đừng xác định những máy chủ đã quá lạc hậu! Nếu máy chủ SMTP yêu cầu phải xác thực và chỉ khi thực sự được yêu cầu, bạn hãy cung cấp cho hệ thống biết tên tài khoản, mật khẩu đăng nhập và phương pháp xác thực của máy chủ SMTP.',
 
 	'ADMIN_EMAIL'					=> 'Địa chỉ email gửi đi',
 	'ADMIN_EMAIL_EXPLAIN'			=> 'Địa chỉ email này được sử dụng làm địa chỉ email của người gửi trên tất cả các email được gửi đi và địa chỉ email hỗ trợ kỹ thuật. Nó sẽ luôn luôn được sử dụng trong phần <samp>Địa chỉ quay về</samp> và <samp>Địa chỉ người gửi</samp> trong các email.',
-	'BOARD_EMAIL_FORM'				=> 'Cho phép thành viên gửi email từ website',
-	'BOARD_EMAIL_FORM_EXPLAIN'		=> 'Thay cho việc hiển thị địa chỉ email của thành viên, tùy chọn này cho phép các thành viên có thể gửi email cho nhau thông qua website.',
+	'BOARD_EMAIL_FORM'				=> 'Cho phép thành viên gửi email từ hệ thống',
+	'BOARD_EMAIL_FORM_EXPLAIN'		=> 'Thay cho việc hiển thị địa chỉ email của thành viên, tùy chọn này cho phép các thành viên có thể gửi email cho nhau thông qua hệ thống.',
 	'BOARD_HIDE_EMAILS'				=> 'Ẩn địa chỉ email',
-	'BOARD_HIDE_EMAILS_EXPLAIN'		=> 'Tùy chọn ẩn toàn bộ địa chỉ email cá nhân trong website.',
+	'BOARD_HIDE_EMAILS_EXPLAIN'		=> 'Tùy chọn ẩn toàn bộ địa chỉ email cá nhân trong hệ thống.',
 	'CONTACT_EMAIL'					=> 'Địa chỉ email liên hệ',
 	'CONTACT_EMAIL_EXPLAIN'			=> 'Địa chỉ email này được sử dụng khi có việc cần liên hệ, ví dụ như vấn đề thư rác, có lỗi xảy ra… Nó sẽ luôn luôn được sử dụng trong phần thông tin <samp>Gửi từ</samp> và <samp>Trả lời đến địa chỉ</samp> của các email.',
 	'EMAIL_FUNCTION_NAME'			=> 'Tên hàm dùng để gửi email',
 	'EMAIL_FUNCTION_NAME_EXPLAIN'	=> 'Hàm chức năng PHP bạn muốn sử dụng để gửi email.',
 	'EMAIL_PACKAGE_SIZE'			=> 'Số lượng email trong mỗi gói email',
-	'EMAIL_PACKAGE_SIZE_EXPLAIN'	=> 'Số lượng email tối đa được gửi đi trong một gói email. Thiết lập này được áp dụng cho những email chờ được gửi đi bên trong máy chủ. Nhập số <strong>0</strong> trong phần này nếu bạn gặp phải bất kỳ rắc rối nào về những email không gửi đi được.',
+	'EMAIL_PACKAGE_SIZE_EXPLAIN'	=> 'Số lượng email tối đa được gửi đi trong một gói email. Thiết lập này được áp dụng cho những email chờ được gửi đi bên trong máy chủ. Nhập số <strong>0</strong> trong phần này nếu bạn gặp phải bất kì rắc rối nào về những email không gửi đi được.',
 	'EMAIL_SIG'						=> 'Chữ ký email',
-	'EMAIL_SIG_EXPLAIN'				=> 'Chữ ký được đính kèm trong tất cả các email được gửi đi từ website.',
+	'EMAIL_SIG_EXPLAIN'				=> 'Chữ ký được đính kèm trong tất cả các email được gửi đi từ hệ thống.',
 	'ENABLE_EMAIL'					=> 'Bật chức năng gửi email trong hệ thống',
 	'ENABLE_EMAIL_EXPLAIN'			=> 'Nếu tắt tùy chọn này, sẽ không có email nào được gửi đi từ diễn đàn.',
 	'SMTP_AUTH_METHOD'				=> 'Chọn phương pháp xác thực cho SMTP',
@@ -452,7 +452,7 @@ $lang = array_merge($lang, array(
 
 // Jabber settings
 $lang = array_merge($lang, array(
-	'ACP_JABBER_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí thiết lập và bật tùy chọn sử dụng máy chủ Jabber để gửi tin nhắn nhanh và thông báo của website. Jabber là một giao thức mã nguồn mở và bất kỳ ai cũng có thể sử dụng miễn phí. Một vài máy chủ Jabber đính kèm cả cổng truy xuất và dịch vụ chuyển tin cho phép bạn liên hệ với các thành viên trên các hệ thống mạng khác. Không phải tất cả các máy chủ đều có dịch vụ chuyển tin và những thay đổi trong giao thức kết nối có thể ngăn cản việc gửi tin nhắn. Hãy chắc chắn rằng bạn nhập thông tin về tài khoản đã được đăng ký. Hệ thống phpBB sẽ sử dụng những thông tin mà bạn cung cấp này tại đây.',
+	'ACP_JABBER_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí thiết lập và bật tùy chọn sử dụng máy chủ Jabber để gửi tin nhắn nhanh và thông báo của hệ thống. Jabber là một giao thức mã nguồn mở và bất kì ai cũng có thể sử dụng miễn phí. Một vài máy chủ Jabber đính kèm cả cổng truy xuất và dịch vụ chuyển tin cho phép bạn liên hệ với các thành viên trên các hệ thống mạng khác. Không phải tất cả các máy chủ đều có dịch vụ chuyển tin và những thay đổi trong giao thức kết nối có thể ngăn cản việc gửi tin nhắn. Hãy chắc chắn rằng bạn nhập thông tin về tài khoản đã được đăng ký. Hệ thống phpBB sẽ sử dụng những thông tin mà bạn cung cấp này tại đây.',
 
 	'JAB_ENABLE'				=> 'Sử dụng tài khoản Jabber',
 	'JAB_ENABLE_EXPLAIN'		=> 'Tùy chọn cho phép nhắn tin và thông báo bằng máy chủ Jabber.',

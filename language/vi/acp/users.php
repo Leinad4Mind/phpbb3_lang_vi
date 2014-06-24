@@ -4,7 +4,7 @@
 * acp_users [Vietnamese]
 *
 * @package language
-* @version $Id: users.php 29 2008-11-02 08:11:00Z nedka $
+* @version $Id: users.php 30 2008-12-13 11:16:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -71,7 +71,7 @@ $lang = array_merge($lang, array(
 
 	'FORCE_REACTIVATION_SUCCESS'	=> 'Việc yêu cầu thành viên kích hoạt lại tài khoản của mình đã được thực hiện thành công.',
 	'FOUNDER'						=> 'Người sáng lập',
-	'FOUNDER_EXPLAIN'				=> 'Người sáng lập có tất cả quyền hạn của quản trị viên và không bao giờ bị cấm, xóa hay thay đổi bởi bất kỳ thành viên nào.',
+	'FOUNDER_EXPLAIN'				=> 'Người sáng lập có tất cả quyền hạn của quản trị viên và không bao giờ bị cấm, xóa hay thay đổi bởi bất kì thành viên nào.',
 
 	'GROUP_APPROVE'		=> 'Chấp nhận thành viên',
 	'GROUP_DEFAULT'		=> 'Chọn làm nhóm mặc định của thành viên',
@@ -125,7 +125,7 @@ $lang = array_merge($lang, array(
 	'USER_GROUP_NORMAL'				=> 'Nhóm do thành viên chỉ định, là thành viên của nhóm',
 	'USER_GROUP_PENDING'			=> 'Nhóm đang trong chế độ chờ quyết định',
 	'USER_GROUP_SPECIAL'			=> 'Nhóm đã được chỉ định trước, là thành viên của nhóm',
-	'USER_NO_ATTACHMENTS'			=> 'Chưa đính kèm bất kỳ tập tin nào.',
+	'USER_NO_ATTACHMENTS'			=> 'Chưa đính kèm bất kì tập tin nào.',
 	'USER_OVERVIEW_UPDATED'			=> 'Thông tin chi tiết về thành viên đã được cập nhật thành công.',
 	'USER_POSTS_DELETED'			=> 'Đã gỡ bỏ thành công tất cả bài viết của thành viên này',
 	'USER_POSTS_MOVED'				=> 'Đã di chuyển thành công tất cả bài viết của thành viên này đến chuyên mục đã chọn',

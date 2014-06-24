@@ -4,7 +4,7 @@
 * groups [Vietnamese]
 *
 * @package language
-* @version $Id: groups.php 23 2008-11-02 08:10:00Z nedka $
+* @version $Id: groups.php 24 2008-12-13 11:15:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -87,7 +87,7 @@ $lang = array_merge($lang, array(
 
 	'LOGIN_EXPLAIN_GROUP'	=> 'Bạn cần đăng nhập để xem thông tin chi tiết về nhóm.',
 	
-	'NO_LEADERS'					=> 'Bạn không phải là người điều hành của bất kỳ nhóm nào.',
+	'NO_LEADERS'					=> 'Bạn không phải là người điều hành của bất kì nhóm nào.',
 	'NOT_LEADER_OF_GROUP'			=> 'Yêu cầu không được thực hiện vì bạn không phải là người điều hành của nhóm vừa chọn.',
 	'NOT_MEMBER_OF_GROUP'			=> 'Yêu cầu không được thực hiện vì bạn không phải là thành viên của nhóm vừa chọn hoặc tư cách thành viên của bạn trong nhóm này vẫn chưa được chấp thuận.',
 	'NOT_RESIGN_FROM_DEFAULT_GROUP'	=> 'Bạn không được chấp thuận để rút ra khỏi nhóm mặc định của mình.',

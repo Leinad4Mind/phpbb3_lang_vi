@@ -4,7 +4,7 @@
 * acp_profile [Vietnamese]
 *
 * @package language
-* @version $Id: profile.php 26 2008-11-01 22:58:00Z nedka $
+* @version $Id: profile.php 28 2008-12-13 11:16:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -55,7 +55,7 @@ $lang = array_merge($lang, array(
 	'BOOL_TYPE_EXPLAIN'		=> 'Xác định loại là ô kiểm vuông nhiều tùy chọn hay ô kiểm tròn một tùy chọn. Ô kiểm vuông nhiều tùy chọn chỉ được hiển thị nếu nó đã được đánh dấu cho thành viên lựa chọn. Trong trường hợp đó, tùy chọn ngôn ngữ <strong>thứ hai</strong> sẽ được sử dụng. Ô kiểm tròn một tùy chọn sẽ hiển thị bất chấp giá trị của chúng.',
 
 	'CHANGED_PROFILE_FIELD'			=> 'Mục thông tin cá nhân đã được thay đổi thành công.',
-	'CHARS_ANY'						=> 'Bất kỳ ký tự nào',
+	'CHARS_ANY'						=> 'Bất kì ký tự nào',
 	'CHECKBOX'						=> 'Ô kiểm vuông nhiều tùy chọn',
 	'COLUMNS'						=> 'Số cột',
 	'CP_LANG_DEFAULT_VALUE'			=> 'Giá trị mặc định',
@@ -74,9 +74,9 @@ $lang = array_merge($lang, array(
 	'DISPLAY_AT_PROFILE'			=> 'Hiển thị trong phần thiết lập cá nhân',
 	'DISPLAY_AT_PROFILE_EXPLAIN'	=> 'Cho phép thành viên có thể thay đổi mục thông tin cá nhân này trong bảng điều khiển của mình.',	
 	'DISPLAY_AT_REGISTER'			=> 'Hiển thị trong phần đăng ký thành viên mới',
-	'DISPLAY_AT_REGISTER_EXPLAIN'	=> 'Nếu tùy chọn này được bật, mục thông tin cá nhân sẽ được thêm vào trong phần đăng ký thành viên và có thể thay đổi sau này trong phần thiết lập cá nhân.',
+	'DISPLAY_AT_REGISTER_EXPLAIN'	=> 'Nếu tùy chọn này được bật, mục thông tin cá nhân sẽ được thêm vào trong phần đăng ký thành viên.',
 	'DISPLAY_PROFILE_FIELD'			=> 'Hiển thị mục thông tin cá nhân',
-	'DISPLAY_PROFILE_FIELD_EXPLAIN'	=> 'Hiển thị mục thông tin cá nhân tại các trang cho phép nếu tùy chọn này được bật trong phần thiết lập nạp trang. Vô hiệu tùy chọn này sẽ ẩn mục thông tin cá nhân khỏi trang xem chủ đề, trang thông tin cá nhân và danh sách thành viên.',
+	'DISPLAY_PROFILE_FIELD_EXPLAIN'	=> 'Hiển thị mục thông tin cá nhân tại tất cả trang cho phép nếu tùy chọn này được bật trong phần thiết lập nạp trang. Vô hiệu tùy chọn này sẽ ẩn mục thông tin cá nhân khỏi trang xem chủ đề, trang thông tin cá nhân và danh sách thành viên.',
 	'DROPDOWN_ENTRIES_EXPLAIN'		=> 'Nhập vào những tùy chọn của bạn với mỗi tùy chọn trên một dòng.',
 
 	'EDIT_DROPDOWN_LANG_EXPLAIN'	=> 'Lưu ý rằng bạn có thể thay đổi những đối tượng ngôn ngữ của mình và cũng có thể thêm vào những đối tượng mới ở phần cuối. Chúng tôi không khuyên bạn thêm vào những đối tượng mới giữa các đối tượng hiện có bởi vì điều này có thể dẫn đến kết quả là những đối tượng sai sẽ được chỉ định cho các thành viên của bạn. Điều này cũng có thể xảy ra nếu bạn gỡ bỏ những đối tượng nửa thế này nửa thế khác. Việc gỡ bỏ những đối tượng từ kết quả sau cùng mà các thành viên được chỉ định những đối tượng này sẽ được quay trả về đối tượng mặc định.',
@@ -104,7 +104,7 @@ $lang = array_merge($lang, array(
 	'FIRST_OPTION'				=> 'Tùy chọn đầu tiên',
 
 	'HIDE_PROFILE_FIELD'			=> 'Ẩn mục thông tin cá nhân',
-	'HIDE_PROFILE_FIELD_EXPLAIN'	=> 'Chỉ có các quản trị viên và điều hành viên mới có thể nhìn thấy và điền vào mục thông tin cá nhân loại này. Nếu tùy chọn này được bật, mục thông tin cá nhân sẽ chỉ hiển thị trong phần thông tin cá nhân của thành viên.',
+	'HIDE_PROFILE_FIELD_EXPLAIN'	=> 'Ẩn mục thông tin cá nhân này đối với các thành viên khác ngoại trừ chính bản thân thành viên, các quản trị viên và điều hành viên. Nếu tùy chọn “Hiển thị trong phần thiết lập cá nhân” bị vô hiệu, thành viên sẽ không thể nhìn thấy hay thay đổi mục thông tin cá nhân này và việc thay đổi chỉ được tiến hành bởi quản trị viên.',
 
 	'INVALID_CHARS_FIELD_IDENT'	=> 'Tên mục thông tin cá nhân chỉ được phép sử dụng ký tự thường a-z và dấu gạch nối _',
 	'INVALID_FIELD_IDENT_LEN'	=> 'Tên mục thông tin cá nhân chỉ có thể dài tối đa là <strong>17</strong> ký tự',
@@ -133,7 +133,7 @@ $lang = array_merge($lang, array(
 	'RADIO_BUTTONS'				=> 'Ô kiểm tròn một tùy chọn',
 	'REMOVED_PROFILE_FIELD'		=> 'Đã gỡ bỏ thành công mục thông tin cá nhân.',
 	'REQUIRED_FIELD'			=> 'Mục thông tin cá nhân bắt buộc',
-	'REQUIRED_FIELD_EXPLAIN'	=> 'Yêu cầu thành viên phải nhập thông tin đầy đủ trong mục này. Nếu thiết lập này được chọn, mục thông tin cá nhân này sẽ được hiển thị trong phần đăng ký thành viên mới và cả trong phần thiết lập cá nhân.',
+	'REQUIRED_FIELD_EXPLAIN'	=> 'Yêu cầu thành viên hay quản trị viên phải nhập thông tin đầy đủ cho mục này. Nếu tùy chọn “Hiển thị trong phần đăng ký thành viên mới” bị vô hiệu, mục này chỉ được yêu cầu khi thành viên thay đổi thông tin cá nhân của họ.',
 	'ROWS'						=> 'Số hàng',
 
 	'SAVE'							=> 'Lưu',
@@ -157,7 +157,7 @@ $lang = array_merge($lang, array(
 
 	'USER_FIELD_NAME'	=> 'Tên mục thông tin cá nhân hiển thị cho thành viên',
 
-	'VISIBILITY_OPTION'	=> 'Tùy chọn hiển thị',
+	'VISIBILITY_OPTION'	=> 'Các tùy chọn ẩn hiển thị',
 ));
 
 ?>

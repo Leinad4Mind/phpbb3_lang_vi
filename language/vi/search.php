@@ -4,7 +4,7 @@
 * search [Vietnamese]
 *
 * @package language
-* @version $Id: search.php 23 2008-11-01 22:55:00Z nedka $
+* @version $Id: search.php 24 2008-12-13 11:18:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -82,7 +82,7 @@ $lang = array_merge($lang, array(
 	'SEARCHED_FOR'				=> 'Điều kiện tìm kiếm đã sử dụng',
 	'SEARCHED_TOPIC'			=> 'Chủ đề đã tìm kiếm',
 	'SEARCH_ALL_TERMS'			=> 'Tìm kiếm theo tất cả điều kiện hoặc sử dụng truy vấn tìm kiếm đã nhập',
-	'SEARCH_ANY_TERMS'			=> 'Tìm kiếm theo bất kỳ điều kiện nào',
+	'SEARCH_ANY_TERMS'			=> 'Tìm kiếm theo bất kì điều kiện nào',
 	'SEARCH_AUTHOR'				=> 'Tìm kiếm theo người gửi',
 	'SEARCH_AUTHOR_EXPLAIN'		=> 'Sử dụng dấu * để tìm kiếm những người gửi có tên giống nhau một phần nào đó.',
 	'SEARCH_FIRST_POST'			=> 'Chỉ tìm kiếm bài viết đầu tiên trong các chủ đề',

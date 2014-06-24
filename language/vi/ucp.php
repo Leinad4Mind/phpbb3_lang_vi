@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version $Id: ucp.php 100 2008-11-13 07:41:00Z nedka $
+* @version $Id: ucp.php 102 2008-12-13 11:18:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -50,7 +50,7 @@ $lang = array_merge($lang, array(
 	<br />
 	Website của chúng tôi sử dụng hệ thống phpBB (Hiểu ở đây là “họ”, “của họ”, “hệ thống phpBB”, “www.phpbb.com”, “tổ chức phpBB”, “ban điều hành phpBB”) là một giải pháp về phần mềm diễn đàn mã nguồn mở được phát hành dưới bản quyền “<a href="http://opensource.org/licenses/gpl-license.php">General Public License</a>” (Hiểu ở đây là “GPL”) và có thể tải về miễn phí tại trang chủ <a href="http://www.phpbb.com/">www.phpbb.com</a>. Hệ thống phpBB được phát triển để xây dựng các diễn đàn thảo luận trên mạng, tổ chức phpBB không liên quan gì đến những việc chúng tôi qui định bạn được phép làm và không được phép làm với nội dung lẫn tư cách chấp nhận được. Để biết thêm nhiều thông tin về phpBB, hãy ghé thăm chúng tôi tại: <a href="http://www.phpbb.com/">http://www.phpbb.com/</a>.<br />
 	<br />
-	Bạn cam kết không gửi bất cứ bài viết nào có nội dung lừa đảo, thô tục, thiếu văn hoá ; vu khống, khiêu khích, đe doạ người khác ; liên quan đến các vấn đề tình dục hay bất cứ nội dung nào vi phạm luật pháp của quốc gia mà bạn đang sống, luật pháp của quốc gia nơi đặt máy chủ cho website “%1$s” hay luật pháp quốc tế. Nếu vẫn cố tình vi phạm, ngay lập tức bạn sẽ bị cấm tham gia vào website giống như một số nhà cung cấp dịch vụ Internet của bạn, nếu bạn vẫn cho rằng những điều này chỉ riêng chúng tôi đòi hỏi. Địa chỉ IP của tất cả các bài viết đều được ghi nhận lại để bảo vệ các điều khoản cam kết này trong trường hợp bạn không tuân thủ. Bạn đồng ý rằng website “%1$s” có quyền gỡ bỏ, sửa, di chuyển hoặc khóa bất kỳ bài viết nào trong website vào bất cứ lúc nào tùy theo nhu cầu công việc. Đăng ký làm thành viên của chúng tôi, bạn cũng phải cam kết bất kỳ thông tin cá nhân nào mà bạn cung cấp đều được lưu trữ trong cơ sở dữ liệu của hệ thống. Trong khi những thông tin này sẽ không được cung cấp cho bất kỳ người thứ ba nào khác mà không được sự đồng ý của bạn, website “%1$s” cũng như tổ chức phpBB sẽ không chịu trách nhiệm về việc những thông tin cá nhân này của bạn bị lộ ra bên ngoài từ những kẻ phá hoại có ý đồ xấu tấn công vào cơ sở dữ liệu của hệ thống.
+	Bạn cam kết không gửi bất cứ bài viết nào có nội dung lừa đảo, thô tục, thiếu văn hoá ; vu khống, khiêu khích, đe doạ người khác ; liên quan đến các vấn đề tình dục hay bất cứ nội dung nào vi phạm luật pháp của quốc gia mà bạn đang sống, luật pháp của quốc gia nơi đặt máy chủ cho website “%1$s” hay luật pháp quốc tế. Nếu vẫn cố tình vi phạm, ngay lập tức bạn sẽ bị cấm tham gia vào website giống như một số nhà cung cấp dịch vụ Internet của bạn, nếu bạn vẫn cho rằng những điều này chỉ riêng chúng tôi đòi hỏi. Địa chỉ IP của tất cả các bài viết đều được ghi nhận lại để bảo vệ các điều khoản cam kết này trong trường hợp bạn không tuân thủ. Bạn đồng ý rằng website “%1$s” có quyền gỡ bỏ, sửa, di chuyển hoặc khóa bất kì bài viết nào trong website vào bất cứ lúc nào tùy theo nhu cầu công việc. Đăng ký làm thành viên của chúng tôi, bạn cũng phải cam kết bất kì thông tin cá nhân nào mà bạn cung cấp đều được lưu trữ trong cơ sở dữ liệu của hệ thống. Trong khi những thông tin này sẽ không được cung cấp cho bất kì người thứ ba nào khác mà không được sự đồng ý của bạn, website “%1$s” cũng như tổ chức phpBB sẽ không chịu trách nhiệm về việc những thông tin cá nhân này của bạn bị lộ ra bên ngoài từ những kẻ phá hoại có ý đồ xấu tấn công vào cơ sở dữ liệu của hệ thống.
 	',
 
 	'PRIVACY_POLICY'		=> 'Qui định cá nhân này sẽ giải thích cho bạn biết mối quan hệ giữa website “%1$s” (Hiểu ở đây là “chúng tôi”, “của chúng tôi”, “%1$s”, “%2$s”) và hệ thống phpBB (Hiểu ở đây là “họ”, “của họ”, “hệ thống phpBB”, “www.phpbb.com”, “tổ chức phpBB”, “ban điều hành phpBB”) trong việc sử dụng những thông tin thu thập được trong suốt phiên đăng nhập sử dụng của bạn vào website (Hiểu ở đây là “bạn”, “của bạn”, “thông tin của bạn”).<br />
@@ -59,9 +59,9 @@ $lang = array_merge($lang, array(
 	<br />
 	Chúng tôi cũng có thể tạo ra các cookie khác không phải từ hệ thống phpBB khi bạn truy cập vào website “%1$s”, mặc dù chúng đã vượt qua phạm vi của văn bản này khi đây không phải vấn đề thuộc về hệ thống phpBB. Bước thứ hai trong quá trình chúng tôi thu thập thông tin của bạn là những thông tin cá nhân bạn đã cung cấp cho chúng tôi. Những thông tin này không bị giới hạn như gửi bài viết từ tài khoản khách (Hiểu ở đây là “bài viết của khách”), đăng ký thành viên trong website “%1$s” (Hiểu ở đây là “tài khoản thành viên của bạn”) cũng như những bài viết được bạn gửi sau khi đã đăng ký thành viên của chúng tôi và đăng nhập vào hệ thống (Hiểu ở đây là “bài viết của bạn”).<br />
 	<br />
-	Tài khoản thành viên của bạn chỉ bao gồm tối thiểu một tên thành viên để định danh (Hiểu ở đây là “tên thành viên của bạn”), một mật khẩu cá nhân dùng để đăng nhập vào tài khoản thành viên của bạn (Hiểu ở đây là “mật khẩu của bạn”) và một địa chỉ email cá nhân hợp lệ (Hiểu ở đây là “địa chỉ email của bạn”). Thông tin của bạn chứa trong tài khoản thành viên tại website “%1$s” được bảo hộ bởi luật bảo vệ thông tin áp dụng tại quốc gia nơi đặt máy chủ cho website của chúng tôi. Bất kỳ thông tin nào khác ngoài tên thành viên của bạn, mật khẩu của bạn và địa chỉ email của bạn được yêu cầu phải cung cấp bởi website “%1$s” trong suốt quá trình đăng ký làm thành viên tại đây là những thông tin có tính bắt buộc hay tùy chọn tùy vào sự thiết lập của website “%1$s”. Trong tất cả trường hợp, bạn đều có quyền hiển thị hay không hiển thị những thông tin này cho mọi người biết trong phần thiết lập cá nhân của mình. Hơn nữa, trong tài khoản thành viên của mình, bạn cũng có quyền nhận hay không nhận những email được gửi đi tự động từ hệ thống phpBB.<br />
+	Tài khoản thành viên của bạn chỉ bao gồm tối thiểu một tên thành viên để định danh (Hiểu ở đây là “tên thành viên của bạn”), một mật khẩu cá nhân dùng để đăng nhập vào tài khoản thành viên của bạn (Hiểu ở đây là “mật khẩu của bạn”) và một địa chỉ email cá nhân hợp lệ (Hiểu ở đây là “địa chỉ email của bạn”). Thông tin của bạn chứa trong tài khoản thành viên tại website “%1$s” được bảo hộ bởi luật bảo vệ thông tin áp dụng tại quốc gia nơi đặt máy chủ cho website của chúng tôi. Bất kì thông tin nào khác ngoài tên thành viên của bạn, mật khẩu của bạn và địa chỉ email của bạn được yêu cầu phải cung cấp bởi website “%1$s” trong suốt quá trình đăng ký làm thành viên tại đây là những thông tin có tính bắt buộc hay tùy chọn tùy vào sự thiết lập của website “%1$s”. Trong tất cả trường hợp, bạn đều có quyền hiển thị hay không hiển thị những thông tin này cho mọi người biết trong phần thiết lập cá nhân của mình. Hơn nữa, trong tài khoản thành viên của mình, bạn cũng có quyền nhận hay không nhận những email được gửi đi tự động từ hệ thống phpBB.<br />
 	<br />
-	Mật khẩu của bạn được bảo vệ bằng phương pháp mã hoá trong cơ sở dữ liệu của hệ thống, vì thế nó rất an toàn. Tuy nhiên, chúng tôi khuyên bạn không nên dùng lại mật khẩu này trên các website khác. Mật khẩu của bạn là cách duy nhất để bạn đăng nhập vào tài khoản thành viên của mình trong website “%1$s”, vì thế hãy cất giữ nó cẩn thận và trong trường hợp nào cũng không cung cấp cho bất kỳ ai có quan hệ với website “%1$s”, phpBB hay bất kỳ người thứ ba nào khác ngoại trừ yêu cầu mật khẩu của bạn là hợp pháp. Bạn cũng đừng nên quên mật khẩu tài khoản thành viên của mình, nếu quên, bạn có thể sử dụng chức năng “Quên mật khẩu” từ hệ thống phpBB. Để thực hiện việc này, bạn cần phải cung cấp cho hệ thống biết tên thành viên và địa chỉ email đang sử dụng của mình trong tài khoản, sau đó hệ thống phpBB sẽ tạo ra cho bạn mật khẩu mới và gửi đến cho bạn để bạn vẫn có thể sử dụng được tài khoản thành viên của mình.<br />
+	Mật khẩu của bạn được bảo vệ bằng phương pháp mã hoá trong cơ sở dữ liệu của hệ thống, vì thế nó rất an toàn. Tuy nhiên, chúng tôi khuyên bạn không nên dùng lại mật khẩu này trên các website khác. Mật khẩu của bạn là cách duy nhất để bạn đăng nhập vào tài khoản thành viên của mình trong website “%1$s”, vì thế hãy cất giữ nó cẩn thận và trong trường hợp nào cũng không cung cấp cho bất kì ai có quan hệ với website “%1$s”, phpBB hay bất kì người thứ ba nào khác ngoại trừ yêu cầu mật khẩu của bạn là hợp pháp. Bạn cũng đừng nên quên mật khẩu tài khoản thành viên của mình, nếu quên, bạn có thể sử dụng chức năng “Quên mật khẩu” từ hệ thống phpBB. Để thực hiện việc này, bạn cần phải cung cấp cho hệ thống biết tên thành viên và địa chỉ email đang sử dụng của mình trong tài khoản, sau đó hệ thống phpBB sẽ tạo ra cho bạn mật khẩu mới và gửi đến cho bạn để bạn vẫn có thể sử dụng được tài khoản thành viên của mình.<br />
 	',
 ));
 
@@ -127,7 +127,7 @@ $lang = array_merge($lang, array(
 	'CHANGE_PASSWORD'				=> 'Thay đổi mật khẩu',
 	'CLICK_RETURN_FOLDER'			=> '%1$sQuay về thư mục “%3$s” của bạn%2$s',
 	'CONFIRMATION'					=> 'Xác nhận đăng ký',
-	'CONFIRM_CHANGES'				=> 'Xác nhận thay đổi',	
+	'CONFIRM_CHANGES'				=> 'Xác nhận thay đổi',
 	'CONFIRM_EMAIL'					=> 'Xác nhận địa chỉ email',
 	'CONFIRM_EMAIL_EXPLAIN'			=> 'Bạn chỉ cần xác nhận lại địa chỉ email nếu như bạn muốn thay đổi địa chỉ email hiện tại của mình ở trên.',
 	'CONFIRM_EXPLAIN'				=> 'Để ngăn chặn việc lợi dụng đăng ký tự động hàng loạt, hệ thống yêu cầu bạn phải nhập vào một đoạn mã xác nhận khi đăng ký. Mã xác nhận được hiển thị trong hình ảnh mà bạn nhìn thấy bên dưới. Nếu thị lực của bạn kém hoặc bạn không thể nhìn thấy đoạn mã này vì một lý do nào đó, hãy vui lòng liên hệ với %sngười quản trị%s.',
@@ -174,7 +174,7 @@ $lang = array_merge($lang, array(
 	'DRAFTS_EXPLAIN'			=> 'Với bảng điều khiển này, bạn có thể xem, sửa và xóa những bản nháp đã lưu của mình.',
 	'DRAFT_UPDATED'				=> 'Bản nháp đã được cập nhật thành công.',
 
-	'EDIT_DRAFT_EXPLAIN'		=> 'Sử dụng bảng điều khiển này, bạn có thể sửa những bản nháp đã lưu của mình. Những bản nháp sẽ không chứa bất kỳ thông tin nào về các tập tin đính kèm hay bình chọn.',
+	'EDIT_DRAFT_EXPLAIN'		=> 'Sử dụng bảng điều khiển này, bạn có thể sửa những bản nháp đã lưu của mình. Những bản nháp sẽ không chứa bất kì thông tin nào về các tập tin đính kèm hay bình chọn.',
 	'EMAIL_BANNED_EMAIL'		=> 'Địa chỉ email bạn vừa nhập không được phép sử dụng.',
 	'EMAIL_INVALID_EMAIL'		=> 'Địa chỉ email bạn vừa nhập không hợp lệ.',
 	'EMAIL_REMIND'				=> 'Bạn phải khai báo địa chỉ email đang sử dụng cho tài khoản của mình. Nếu bạn không thay đổi địa chỉ này thông qua bảng điều khiển thành viên của mình, địa chỉ này sẽ được lấy từ địa chỉ email mà bạn đã đăng ký thành viên.',
@@ -212,7 +212,7 @@ $lang = array_merge($lang, array(
 	'FORCE_PASSWORD_EXPLAIN'	=> 'Trước khi bạn có thể tiếp tục truy cập website, bạn được yêu cầu phải thay đổi mật khẩu hiện tại của mình.',
 	'FRIEND_MESSAGE'			=> 'Tin nhắn từ bạn thân',
 	'FRIENDS'					=> 'Bạn thân',
-	'FRIENDS_EXPLAIN'			=> 'Bạn thân là những thành viên đã được bạn thiết lập mặc định để có thể nhanh chóng liên lạc với họ hoặc liên lạc thường xuyên. Nếu giao diện bạn đang sử dụng trong hệ thống có hỗ trợ, bất kỳ bài viết nào được gửi bạn thân của bạn đều được đánh dấu nổi bật.',
+	'FRIENDS_EXPLAIN'			=> 'Bạn thân là những thành viên đã được bạn thiết lập mặc định để có thể nhanh chóng liên lạc với họ hoặc liên lạc thường xuyên. Nếu giao diện bạn đang sử dụng trong hệ thống có hỗ trợ, bất kì bài viết nào được gửi bạn thân của bạn đều được đánh dấu nổi bật.',
 	'FRIENDS_OFFLINE'			=> 'Bạn thân ngoại tuyến',
 	'FRIENDS_ONLINE'			=> 'Bạn thân trực tuyến',
 	'FRIENDS_UPDATED'			=> 'Danh sách bạn thân của bạn đã được cập nhật thành công.',
@@ -275,7 +275,7 @@ $lang = array_merge($lang, array(
 	'NOTIFY_METHOD'					=> 'Phương pháp thông báo',
 	'NOTIFY_METHOD_BOTH'			=> 'Cả hai',
 	'NOTIFY_METHOD_EMAIL'			=> 'Chỉ gửi email',
-	'NOTIFY_METHOD_EXPLAIN'			=> 'Chọn phương pháp gửi tin nhắn từ website.',
+	'NOTIFY_METHOD_EXPLAIN'			=> 'Chọn phương pháp gửi tin nhắn từ hệ thống.',
 	'NOTIFY_METHOD_IM'				=> 'Chỉ dùng tài khoản Jabber',
 	'NOTIFY_ON_PM'					=> 'Thông báo cho tôi khi có tin nhắn mới',
 	'NOT_ADDED_FRIENDS_ANONYMOUS'	=> 'Bạn không thể thêm các thành viên ẩn danh vào danh sách bạn thân của mình.',
@@ -306,7 +306,7 @@ $lang = array_merge($lang, array(
 
 	'NO_BCC_RECIPIENT'			=> 'Không có',
 	'NO_BOOKMARKS'				=> 'Bạn không có trang yêu thích nào.',
-	'NO_BOOKMARKS_SELECTED'		=> 'Bạn chưa chọn bất kỳ trang yêu thích nào.',
+	'NO_BOOKMARKS_SELECTED'		=> 'Bạn chưa chọn bất kì trang yêu thích nào.',
 	'NO_EDIT_READ_MESSAGE'		=> 'Bạn không thể sửa tin nhắn bởi vì nó đã được người nhận xem rồi.',
 	'NO_EMAIL_USER'				=> 'Không thể tìm thấy địa chỉ email/tên thành viên mà bạn vừa nhập.',
 	'NO_FOES'					=> 'Không có kẻ thù nào được xác định',
@@ -384,61 +384,61 @@ $lang = array_merge($lang, array(
 	'RULE_REMOVED_MESSAGE'				=> 'Một tin nhắn đã bị gỡ bỏ căn cứ theo bộ lọc tin nhắn.',
 	'RULE_REMOVED_MESSAGES'				=> '%d tin nhắn đã bị gỡ bỏ căn cứ theo bộ lọc tin nhắn.',
 
-	'SAME_PASSWORD_ERROR'		=> 'Mật khẩu mới bạn vừa nhập trùng với mật khẩu hiện tại của bạn.',
-	'SEARCH_YOUR_POSTS'			=> 'Xem những bài viết của bạn',
-	'SEND_PASSWORD'				=> 'Gửi mật khẩu',
-	'SENT_AT'					=> 'Ngày gửi',
-	'SHOW_EMAIL'				=> 'Cho phép các thành viên khác liên hệ với tôi qua email',
-	'SIGNATURE_EXPLAIN'			=> 'Chữ ký cá nhân được đính kèm sau mỗi bài viết mà bạn gửi. Số ký tự tối đa được phép sử dụng trong chữ ký cá nhân là <strong>%d</strong> ký tự.',
-	'SIGNATURE_PREVIEW'			=> 'Xem trước chữ ký cá nhân',
-	'SIGNATURE_TOO_LONG'		=> 'Chữ ký cá nhân của bạn quá dài.',
-	'SORT'						=> 'Sắp xếp',
-	'SORT_COMMENT'				=> 'Chú thích tập tin',
-	'SORT_DOWNLOADS'			=> 'Số lần tải về',
-	'SORT_EXTENSION'			=> 'Loại tập tin',
-	'SORT_FILENAME'				=> 'Tên tập tin',
-	'SORT_POST_TIME'			=> 'Thời gian gửi bài',
-	'SORT_SIZE'					=> 'Dung lượng tập tin',
+	'SAME_PASSWORD_ERROR'	=> 'Mật khẩu mới bạn vừa nhập trùng với mật khẩu hiện tại của bạn.',
+	'SEARCH_YOUR_POSTS'		=> 'Xem những bài viết của bạn',
+	'SEND_PASSWORD'			=> 'Gửi mật khẩu',
+	'SENT_AT'				=> 'Ngày gửi',// Used before dates in private messages
+	'SHOW_EMAIL'			=> 'Cho phép các thành viên khác liên hệ với tôi qua email',
+	'SIGNATURE_EXPLAIN'		=> 'Chữ ký cá nhân được đính kèm sau mỗi bài viết mà bạn gửi. Số ký tự tối đa được phép sử dụng trong chữ ký cá nhân là <strong>%d</strong> ký tự.',
+	'SIGNATURE_PREVIEW'		=> 'Xem trước chữ ký cá nhân',
+	'SIGNATURE_TOO_LONG'	=> 'Chữ ký cá nhân của bạn quá dài.',
+	'SORT'					=> 'Sắp xếp',
+	'SORT_COMMENT'			=> 'Chú thích tập tin',
+	'SORT_DOWNLOADS'		=> 'Số lần tải về',
+	'SORT_EXTENSION'		=> 'Loại tập tin',
+	'SORT_FILENAME'			=> 'Tên tập tin',
+	'SORT_POST_TIME'		=> 'Thời gian gửi bài',
+	'SORT_SIZE'				=> 'Dung lượng tập tin',
 
-	'TIMEZONE'					=> 'Múi giờ',
-	'TO'						=> 'Người nhận',
-	'TOO_MANY_RECIPIENTS'		=> 'Bạn đã gửi tin nhắn đến quá nhiều người nhận được phép gửi.',
-	'TOO_MANY_REGISTERS'		=> 'Bạn đã vượt quá số lượng đăng ký thành viên cho phép trong phiên kết nối này. Hãy thử lại vào lúc khác!',
+	'TIMEZONE'				=> 'Múi giờ',
+	'TO'					=> 'Người nhận',
+	'TOO_MANY_RECIPIENTS'	=> 'Bạn đã gửi tin nhắn đến quá nhiều người nhận được phép gửi.',
+	'TOO_MANY_REGISTERS'	=> 'Bạn đã vượt quá số lượng đăng ký thành viên cho phép trong phiên kết nối này. Hãy thử lại vào lúc khác!',
 
-	'UCP'						=> 'Bảng thiết lập cá nhân',
-	'UCP_ACTIVATE'				=> 'Kích hoạt tài khoản',
-	'UCP_ADMIN_ACTIVATE'		=> 'Lưu ý rằng bạn cần phải nhập vào một địa chỉ email hợp lệ trước khi tài khoản của bạn được kích hoạt. Người quản trị sẽ xem qua tài khoản của bạn và nếu được chấp nhận bạn sẽ nhận được một email thông báo đến địa chỉ email mà bạn đã nhập.',
-	'UCP_AIM'					=> 'Tài khoản AIM',
-	'UCP_ATTACHMENTS'			=> 'Tập tin đính kèm của bạn',
-	'UCP_COPPA_BEFORE'			=> 'Trước %s',
-	'UCP_COPPA_ON_AFTER'		=> 'Hoặc sau %s',
-	'UCP_EMAIL_ACTIVATE'		=> 'Lưu ý rằng bạn cần phải nhập vào một địa chỉ email hợp lệ trước khi tài khoản của bạn được kích hoạt. Bạn sẽ nhận được một email thông báo đến địa chỉ email mà bạn đã nhập với khóa kích hoạt được đính kèm bên trong email.',
-	'UCP_ICQ'					=> 'Số tài khoản ICQ',
-	'UCP_JABBER'				=> 'Tài khoản Jabber',
+	'UCP'					=> 'Bảng thiết lập cá nhân',
+	'UCP_ACTIVATE'			=> 'Kích hoạt tài khoản',
+	'UCP_ADMIN_ACTIVATE'	=> 'Lưu ý rằng bạn cần phải nhập vào một địa chỉ email hợp lệ trước khi tài khoản của bạn được kích hoạt. Người quản trị sẽ xem qua tài khoản của bạn và nếu được chấp nhận bạn sẽ nhận được một email thông báo đến địa chỉ email mà bạn đã nhập.',
+	'UCP_AIM'				=> 'Tài khoản AIM',
+	'UCP_ATTACHMENTS'		=> 'Tập tin đính kèm của bạn',
+	'UCP_COPPA_BEFORE'		=> 'Trước %s',
+	'UCP_COPPA_ON_AFTER'	=> 'Hoặc sau %s',
+	'UCP_EMAIL_ACTIVATE'	=> 'Lưu ý rằng bạn cần phải nhập vào một địa chỉ email hợp lệ trước khi tài khoản của bạn được kích hoạt. Bạn sẽ nhận được một email thông báo đến địa chỉ email mà bạn đã nhập với khóa kích hoạt được đính kèm bên trong email.',
+	'UCP_ICQ'				=> 'Số tài khoản ICQ',
+	'UCP_JABBER'			=> 'Tài khoản Jabber',
 
-	'UCP_MAIN'					=> 'Tổng quan',
-	'UCP_MAIN_ATTACHMENTS'		=> 'Tập tin đính kèm',
-	'UCP_MAIN_BOOKMARKS'		=> 'Trang yêu thích',
-	'UCP_MAIN_DRAFTS'			=> 'Bản nháp đã lưu',
-	'UCP_MAIN_FRONT'			=> 'Trang trước',
-	'UCP_MAIN_SUBSCRIBED'		=> 'Bảng theo dõi',
+	'UCP_MAIN'				=> 'Tổng quan',
+	'UCP_MAIN_ATTACHMENTS'	=> 'Tập tin đính kèm',
+	'UCP_MAIN_BOOKMARKS'	=> 'Trang yêu thích',
+	'UCP_MAIN_DRAFTS'		=> 'Bản nháp đã lưu',
+	'UCP_MAIN_FRONT'		=> 'Trang trước',
+	'UCP_MAIN_SUBSCRIBED'	=> 'Bảng theo dõi',
 
-	'UCP_MSNM'					=> 'Tài khoản MSN',
-	'UCP_NO_ATTACHMENTS'		=> 'Bạn chưa tải lên bất kỳ tập tin nào.',
+	'UCP_MSNM'				=> 'Tài khoản MSN',
+	'UCP_NO_ATTACHMENTS'	=> 'Bạn chưa tải lên bất kì tập tin nào.',
 
-	'UCP_PREFS'					=> 'Thiết lập hệ thống',
-	'UCP_PREFS_PERSONAL'		=> 'Sửa thiết lập cá nhân',
-	'UCP_PREFS_POST'			=> 'Sửa thiết lập gửi bài viết',
-	'UCP_PREFS_VIEW'			=> 'Sửa thiết lập xem bài viết',
-	
-	'UCP_PM'					=> 'Tin nhắn',
-	'UCP_PM_COMPOSE'			=> 'Soạn tin nhắn',
-	'UCP_PM_DRAFTS'				=> 'Tin nhắn nháp',
-	'UCP_PM_OPTIONS'			=> 'Qui định cá nhân và tùy chọn thư mục',
-	'UCP_PM_POPUP'				=> 'Tin nhắn',
-	'UCP_PM_POPUP_TITLE'		=> 'Thông báo tin nhắn mới',
-	'UCP_PM_UNREAD'				=> 'Tin nhắn chưa xem',
-	'UCP_PM_VIEW'				=> 'Xem tin nhắn',
+	'UCP_PREFS'				=> 'Thiết lập hệ thống',
+	'UCP_PREFS_PERSONAL'	=> 'Sửa thiết lập cá nhân',
+	'UCP_PREFS_POST'		=> 'Sửa thiết lập gửi bài viết',
+	'UCP_PREFS_VIEW'		=> 'Sửa thiết lập xem bài viết',
+
+	'UCP_PM'				=> 'Tin nhắn',
+	'UCP_PM_COMPOSE'		=> 'Soạn tin nhắn',
+	'UCP_PM_DRAFTS'			=> 'Tin nhắn nháp',
+	'UCP_PM_OPTIONS'		=> 'Qui định cá nhân và tùy chọn thư mục',
+	'UCP_PM_POPUP'			=> 'Tin nhắn',
+	'UCP_PM_POPUP_TITLE'	=> 'Thông báo tin nhắn mới',
+	'UCP_PM_UNREAD'			=> 'Tin nhắn chưa xem',
+	'UCP_PM_VIEW'			=> 'Xem tin nhắn',
 
 	'UCP_PROFILE'				=> 'Thông tin cá nhân',
 	'UCP_PROFILE_AVATAR'		=> 'Sửa hình đại diện',
@@ -446,9 +446,9 @@ $lang = array_merge($lang, array(
 	'UCP_PROFILE_REG_DETAILS'	=> 'Sửa thiết lập tài khoản',
 	'UCP_PROFILE_SIGNATURE'		=> 'Sửa chữ ký cá nhân',
 
-	'UCP_USERGROUPS'			=> 'Nhóm',
-	'UCP_USERGROUPS_MEMBER'		=> 'Sửa tư cách thành viên',
-	'UCP_USERGROUPS_MANAGE'		=> 'Quản lí nhóm',
+	'UCP_USERGROUPS'		=> 'Nhóm',
+	'UCP_USERGROUPS_MEMBER'	=> 'Sửa tư cách thành viên',
+	'UCP_USERGROUPS_MANAGE'	=> 'Quản lí nhóm',
 
 	'UCP_REGISTER_DISABLE'					=> 'Hiện tại hệ thống tạm ngưng đăng ký thành viên mới.',
 	'UCP_REMIND'							=> 'Gửi mật khẩu',
@@ -497,7 +497,7 @@ $lang = array_merge($lang, array(
 	'WATCHED_EXPLAIN'			=> 'Bên dưới là danh sách của tất cả các chuyên mục và chủ đề mà bạn đã chọn theo dõi. Bạn sẽ được thông báo bằng email mỗi khi các chuyên mục hay chủ đề này có bài viết mới. Để ngừng theo dõi, hãy đánh dấu chọn vào ô kiểm trong chuyên mục hay chủ đề tương ứng rồi bấm vào nút <strong>Ngừng theo dõi những mục đã đánh dấu</strong>.',
 	'WATCHED_FORUMS'			=> 'Những chuyên mục đang theo dõi',
 	'WATCHED_TOPICS'			=> 'Những chủ đề đang theo dõi',
-	'WRONG_ACTIVATION'			=> 'Khóa kích hoạt bạn vừa cung cấp không phù hợp với bất kỳ tài khoản nào trong cơ sở dữ liệu.',
+	'WRONG_ACTIVATION'			=> 'Khóa kích hoạt bạn vừa cung cấp không phù hợp với bất kì tài khoản nào trong cơ sở dữ liệu.',
 
 	'YOUR_DETAILS'				=> 'Hoạt động của bạn',
 	'YOUR_FOES'					=> 'Kẻ thù của bạn',

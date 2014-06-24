@@ -4,7 +4,7 @@
 * acp_styles [Vietnamese]
 *
 * @package language
-* @version $Id: styles.php 51 2008-11-13 07:26:00Z nedka $
+* @version $Id: styles.php 53 2008-12-13 11:15:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -106,7 +106,7 @@ $lang = array_merge($lang, array(
 	'EDIT_IMAGESET'						=> 'Sửa gói hình giao diện',
 	'EDIT_IMAGESET_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉnh sửa từng hình hảnh riêng lẻ được sử dụng trong gói hình giao diện. Bạn cũng có thể xác định kích thước hiển thị cho những hình ảnh này. Thông số kích thước hoàn toàn tùy chọn, việc xác định chúng có thể khắc phục các vấn đề nạp trang nhất định trong một vài trình duyệt. Nếu không xác định thông số kích thước, bạn có thể giảm bớt dung lượng cho cơ sở dữ liệu.',
 	'EDIT_TEMPLATE'						=> 'Sửa khuôn mẫu',
-	'EDIT_TEMPLATE_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉnh sửa trực tiếp khuôn mẫu của mình. Hãy nhớ rằng những chỉnh sửa này sẽ áp dụng mãi mãi và không thể phục hồi lại như cũ một khi đã chấp nhận. Nếu các tập tin khuôn mẫu trong thư mục giao diện của hệ thống được cấp phép có thể ghi trên máy chủ thì bất kỳ thay đổi này ở đây sẽ được ghi trực tiếp đến những tập tin này. Còn nếu không, toàn bộ thay đổi sẽ được lưu vào cơ sở dữ liệu và bảng chỉnh sửa này chỉ là tạm thời. Hãy cẩn thận khi chỉnh sửa khuôn mẫu của bạn và hãy nhớ kết thúc tất cả các biến điều kiện <var>{XXXX}</var> cũng như các thông số điều kiện.',
+	'EDIT_TEMPLATE_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉnh sửa trực tiếp khuôn mẫu của mình. Hãy nhớ rằng những chỉnh sửa này sẽ áp dụng mãi mãi và không thể phục hồi lại như cũ một khi đã chấp nhận. Nếu các tập tin khuôn mẫu trong thư mục giao diện của hệ thống được cấp phép có thể ghi trên máy chủ thì bất kì thay đổi này ở đây sẽ được ghi trực tiếp đến những tập tin này. Còn nếu không, toàn bộ thay đổi sẽ được lưu vào cơ sở dữ liệu và bảng chỉnh sửa này chỉ là tạm thời. Hãy cẩn thận khi chỉnh sửa khuôn mẫu của bạn và hãy nhớ kết thúc tất cả các biến điều kiện <var>{XXXX}</var> cũng như các thông số điều kiện.',
 	'EDIT_TEMPLATE_STORED_DB'			=> 'Tập tin khuôn mẫu không thể ghi được trên máy chủ vì thế khuôn mẫu này hiện tại được lưu trữ trong cơ sở dữ liệu với tập tin đã chỉnh sửa.',
 	'EDIT_THEME'						=> 'Sửa kiểu dáng',
 	'EDIT_THEME_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉnh sửa kiểu dáng đã chọn, thay đổi màu sắc, hình ảnh…',
@@ -293,7 +293,7 @@ $lang = array_merge($lang, array(
 	'INSTALLED_TEMPLATE'		=> 'Khuôn mẫu đã cài đặt',
 	'INSTALLED_THEME'			=> 'Kiểu dáng đã cài đặt',
 
-	'LINE_SPACING'				=> 'Dòng cách khoảng',
+	'LINE_SPACING'				=> 'Khoảng cách dòng',
 	'LOCALISED_IMAGES'			=> 'Hình ảnh tùy thuộc vào gói ngôn ngữ',
 	'LOCATION_DISABLED_EXPLAIN'	=> 'Thiết lập này được kế thừa và không thể thay đổi.',
 
@@ -322,13 +322,13 @@ $lang = array_merge($lang, array(
 	'REPEAT_Y'					=> 'Chỉ chiều dọc',
 	'REPEAT_ALL'				=> 'Cả hai chiều',
 	'REPLACE_IMAGESET'			=> 'Thay thế gói hình giao diện bằng',
-	'REPLACE_IMAGESET_EXPLAIN'	=> 'Gói hình giao diện này sẽ thay thế cho gói hình giao diện mà bạn đang xóa trong bất kỳ giao diện nào sử dụng đến.',
+	'REPLACE_IMAGESET_EXPLAIN'	=> 'Gói hình giao diện này sẽ thay thế cho gói hình giao diện mà bạn đang xóa trong bất kì giao diện nào sử dụng đến.',
 	'REPLACE_STYLE'				=> 'Thay thế giao diện bằng',
 	'REPLACE_STYLE_EXPLAIN'		=> 'Giao diện này sẽ thay thế cho giao diện mà bạn đang xóa được thành viên sử dụng.',
 	'REPLACE_TEMPLATE'			=> 'Thay thế khuôn mẫu bằng',
-	'REPLACE_TEMPLATE_EXPLAIN'	=> 'Khuôn mẫu này sẽ thay thế cho khuôn mẫu mà bạn đang xóa trong bất kỳ giao diện nào sử dụng đến.',
+	'REPLACE_TEMPLATE_EXPLAIN'	=> 'Khuôn mẫu này sẽ thay thế cho khuôn mẫu mà bạn đang xóa trong bất kì giao diện nào sử dụng đến.',
 	'REPLACE_THEME'				=> 'Thay thế kiểu dáng bằng',
-	'REPLACE_THEME_EXPLAIN'		=> 'Kiểu dáng này sẽ thay thế cho kiểu dáng mà bạn đang xóa trong bất kỳ giao diện nào sử dụng đến.',
+	'REPLACE_THEME_EXPLAIN'		=> 'Kiểu dáng này sẽ thay thế cho kiểu dáng mà bạn đang xóa trong bất kì giao diện nào sử dụng đến.',
 	'REQUIRES_IMAGESET'			=> 'Giao diện này yêu cầu gói hình giao diện <strong>%s</strong> phải được cài đặt.',
 	'REQUIRES_TEMPLATE'			=> 'Giao diện này yêu cầu khuôn mẫu <strong>%s</strong> phải được cài đặt.',
 	'REQUIRES_THEME'			=> 'Giao diện này yêu cầu kiểu dáng <strong>%s</strong> phải được cài đặt.',

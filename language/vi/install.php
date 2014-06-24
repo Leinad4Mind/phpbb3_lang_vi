@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version $Id: install.php 96 2008-11-13 07:22:00Z nedka $
+* @version $Id: install.php 99 2008-12-13 11:14:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -226,7 +226,7 @@ $lang = array_merge($lang, array(
 	'INSTALL_LOGIN'					=> 'Đăng nhập',
 	'INSTALL_NEXT'					=> 'Bước kế tiếp',
 	'INSTALL_NEXT_FAIL'				=> 'Có một vài thao tác kiểm tra thất bại và bạn nên giải quyết những rắc rối này trước khi tiến hành bước kế tiếp. Những kiểm tra thất bại này có thể dẫn đến việc cài đặt hệ thống không thể hoàn tất hay không trọn vẹn.',
-	'INSTALL_NEXT_PASS'				=> 'Tất cả những kiểm tra đơn giản đều hợp lệ và bạn có thể tiến hành bước kế tiếp trong quá trình cài đặt. Nếu bạn đã thay đổi bất kỳ thiết lập cấp phép, gói chức năng… và bạn muốn kiểm tra lại cho chắc chắn thì bạn có thể thực hiện lại việc kiểm tra.',
+	'INSTALL_NEXT_PASS'				=> 'Tất cả những kiểm tra đơn giản đều hợp lệ và bạn có thể tiến hành bước kế tiếp trong quá trình cài đặt. Nếu bạn đã thay đổi bất kì thiết lập cấp phép, gói chức năng… và bạn muốn kiểm tra lại cho chắc chắn thì bạn có thể thực hiện lại việc kiểm tra.',
 	'INSTALL_PANEL'					=> 'Bảng điều khiển cài đặt',
 	'INSTALL_SEND_CONFIG'			=> 'Thật đáng tiếc, hệ thống không thể ghi những thông tin cấu hình cài đặt đến tập tin <samp>config.php</samp>. Điều này xảy ra bởi vì tập tin này chưa có sẵn hoặc không được cấp phép có thể ghi trên máy chủ. Các tùy chọn được liệt kê bên dưới sẽ giúp bạn hoàn tất việc cài đặt của mình với tập tin cấu hình <samp>config.php</samp> này.',
 	'INSTALL_START'					=> 'Bắt đầu cài đặt',
@@ -235,7 +235,7 @@ $lang = array_merge($lang, array(
 	'INST_ERR_DB_CONNECT'			=> 'Không thể kết nối đến cơ sở dữ liệu, bạn hãy xem thông báo lỗi bên dưới để biết nguyên nhân.',
 	'INST_ERR_DB_FORUM_PATH'		=> 'Tập tin cơ sở dữ liệu vừa chọn đang nằm trong thư mục cài đặt của hệ thống. Bạn không nên để tập tin này trong các thư mục của máy chủ.',
 	'INST_ERR_DB_NO_ERROR'			=> 'Không có thông báo lỗi nào được đưa ra.',
-	'INST_ERR_DB_NO_MYSQLI'			=> 'Phiên bản MySQL được cài đặt trên máy chủ không tương thích với tùy chọn “MySQL với phần mở rộng MySQLi” mà vừa chọn. Hãy thử thay thế bằng tùy chọn “MySQL” để tiếp tục.',
+	'INST_ERR_DB_NO_MYSQLI'			=> 'Phiên bản MySQL được cài đặt trên máy chủ không tương thích với tùy chọn “MySQL với phần mở rộng MySQLi” mà bạn vừa chọn. Hãy thử thay thế bằng tùy chọn “MySQL” để tiếp tục.',
 	'INST_ERR_DB_NO_SQLITE'			=> 'Phiên bản phần mở rộng SQLite được cài đặt trên máy chủ đã quá cũ. Nó phải được nâng cấp ít nhất đến phiên bản 2.8.2 để sử dụng với hệ thống này.',
 	'INST_ERR_DB_NO_ORACLE'			=> 'Phiên bản Oracle được cài đặt trên máy chủ yêu cầu bạn phải thiết lập thông số <var>NLS_CHARACTERSET</var> thành <var>UTF-8</var>. Bạn hãy vui lòng nâng cấp hệ thống lên phiên bản 9.2+ hoặc chỉ cần thay đổi lại thông số trên.',
 	'INST_ERR_DB_NO_FIREBIRD'		=> 'Phiên bản Firebird được cài đặt trên máy chủ cũ hơn phiên bản 2.0, bạn hãy vui lòng nâng cấp hệ thống lên phiên bản mới hơn.',
@@ -311,9 +311,9 @@ $lang = array_merge($lang, array(
 	'PROCESS_LAST'						=> 'Tiến hành lệnh thực thi trước',
 
 	'REFRESH_PAGE'				=> 'Nạp lại trang để tiếp tục việc chuyển đổi',
-	'REFRESH_PAGE_EXPLAIN'		=> 'Nếu bạn bật tùy chọn này, công cụ chuyển đổi sẽ tự động nạp lại trang để tiếp tục quá trình chuyển đổi hệ thống sau khi hoàn thành xong mỗi bước. Nếu đây là lần đầu tiên bạn thực hiện việc chuyển đổi hệ thống nhằm mục đích kiểm tra thử và xác định bất kỳ lỗi nào có thể xảy ra trước, chúng tôi đề nghị bạn đừng nên bật tùy chọn này.',
+	'REFRESH_PAGE_EXPLAIN'		=> 'Nếu bạn bật tùy chọn này, công cụ chuyển đổi sẽ tự động nạp lại trang để tiếp tục quá trình chuyển đổi hệ thống sau khi hoàn thành xong mỗi bước. Nếu đây là lần đầu tiên bạn thực hiện việc chuyển đổi hệ thống nhằm mục đích kiểm tra thử và xác định bất kì lỗi nào có thể xảy ra trước, chúng tôi đề nghị bạn đừng nên bật tùy chọn này.',
 	'REQUIREMENTS_TITLE'		=> 'Yêu cầu tương thích khi cài đặt',
-	'REQUIREMENTS_EXPLAIN'		=> 'Trước khi tiến hành việc cài đặt hệ thống phpBB, chương trình cài đặt sẽ thực hiện một số kiểm tra về cấu hình và các tập tin trên máy chủ của bạn để chắc chắn rằng máy chủ của bạn có thể cài đặt và sử dụng được hệ thống phpBB. Hãy xem kĩ tất cả các kết quả kiểm tra và đừng tiến hành cài đặt cho đến khi các kiểm tra bắt buộc đều hợp lệ. Nếu bạn muốn kích hoạt bất kỳ gói chức năng nào tùy thuộc vào những kiểm tra tùy chọn, bạn cũng hãy chắc chắn rằng những kiểm tra tùy chọn đó cũng hợp lệ.',
+	'REQUIREMENTS_EXPLAIN'		=> 'Trước khi tiến hành việc cài đặt hệ thống phpBB, chương trình cài đặt sẽ thực hiện một số kiểm tra về cấu hình và các tập tin trên máy chủ của bạn để chắc chắn rằng máy chủ của bạn có thể cài đặt và sử dụng được hệ thống phpBB. Hãy xem kĩ tất cả các kết quả kiểm tra và đừng tiến hành cài đặt cho đến khi các kiểm tra bắt buộc đều hợp lệ. Nếu bạn muốn kích hoạt bất kì gói chức năng nào tùy thuộc vào những kiểm tra tùy chọn, bạn cũng hãy chắc chắn rằng những kiểm tra tùy chọn đó cũng hợp lệ.',
 	'RETRY_WRITE'				=> 'Cố gắng tạo lại tập tin cấu hình',
 	'RETRY_WRITE_EXPLAIN'		=> 'Nếu muốn, bạn có thể thay đổi lại thiết lập cấp phép cho tập tin cấu hình <samp>config.php</samp> để hệ thống thực hiện việc tạo tập tin này. Sau khi thay đổi xong thiết lập cấp phép, bạn hãy bấm vào nút <strong>Cố gắng tạo lại tập tin cấu hình</strong> bên dưới để thử lại. Hãy nhớ trả lại những thiết lập cấp phép ban đầu cho tập tin cấu hình <samp>config.php</samp> sau khi việc cài đặt hệ thống hoàn tất.',
 
@@ -390,7 +390,8 @@ $lang = array_merge($lang, array(
 	'COLLECTED_INFORMATION_EXPLAIN'	=> 'Danh sách bên dưới hiển thị thông tin về các tập tin cần được cập nhật. Hãy vui lòng đọc kỹ thông tin trước mỗi ô trạng thái để xem chúng có ý nghĩa gì và bạn cần phải làm những gì để tiến hành cập nhật thành công cho hệ thống.',
 	'COLLECTING_FILE_DIFFS'			=> 'Đang dò tìm những điểm khác nhau trong tập tin',
 	'COMPLETE_LOGIN_TO_BOARD'		=> 'Ngay bây giờ, bạn nên <a href="../ucp.php?mode=login">đăng nhập vào hệ thống của mình</a> và kiểm tra mọi thứ xem đã hoạt động tốt chưa. Bạn cũng đừng quên xóa, đổi tên thay di chuyển thư mục cài đặt của hệ thống!',
-	'CONTINUE_UPDATE_NOW'			=> 'Tiếp tục quá trình cập nhật',
+	'CONTINUE_UPDATE_NOW'			=> 'Tiếp tục quá trình cập nhật',// Shown within the database update script at the end if called from the updater
+	'CONTINUE_UPDATE'				=> 'Tiếp tục cập nhật',// Shown after file upload to indicate the update process is not yet finished
 	'CURRENT_FILE'					=> 'Phần mở đầu của tập tin gốc hiện tại',
 	'CURRENT_VERSION'				=> 'Phiên bản hiện tại',
 
@@ -562,14 +563,14 @@ $lang = array_merge($lang, array(
 	'USER_ACTIVE'					=> 'Thành viên đang hoạt động',
 	'USER_INACTIVE'					=> 'Thành viên ngưng hoạt động',
 
-	'VERSION_CHECK'				=> 'Kiểm tra phiên bản',
-	'VERSION_CHECK_EXPLAIN'		=> 'Tiến hành kiểm tra phiên bản để chắc chắn rằng hệ thống của bạn đang sử dụng phiên bản phpBB mới nhất.',
-	'VERSION_NOT_UP_TO_DATE'	=> 'Phiên bản phpBB bạn đang sử dụng chưa phải là phiên bản mới nhất. Hãy vui lòng tiếp tục tiến hành cập nhật.',
-	'VERSION_NOT_UP_TO_DATE_ACP'=> 'Phiên bản phpBB bạn đang sử dụng chưa phải là phiên bản mới nhất.<br />Trong phần bên dưới, bạn sẽ tìm thấy liên kết đến thông báo phát hành của phiên bản phpBB mới nhất cùng với những hướng dẫn cách tiến hành cập nhật cho hệ thống của mình.',
-	'VERSION_UP_TO_DATE'		=> 'Phiên bản phpBB bạn đang sử dụng là phiên bản mới nhất. Bạn có thể tiếp tục kiểm tra sự hợp lệ của các tập tin trong hệ thống.',
-	'VERSION_UP_TO_DATE_ACP'	=> 'Phiên bản phpBB bạn đang sử dụng là phiên bản mới nhất. Bạn không cần phải tiến hành cập nhật bản cài đặt này.',
-	'VIEWING_FILE_CONTENTS'		=> 'Đang hiển thị nội dung tập tin',
-	'VIEWING_FILE_DIFF'			=> 'Đang hiển thị những thay đổi mã nguồn',
+	'VERSION_CHECK'					=> 'Kiểm tra phiên bản',
+	'VERSION_CHECK_EXPLAIN'			=> 'Tiến hành kiểm tra phiên bản để chắc chắn rằng hệ thống của bạn đang sử dụng phiên bản phpBB mới nhất.',
+	'VERSION_NOT_UP_TO_DATE'		=> 'Phiên bản phpBB bạn đang sử dụng chưa phải là phiên bản mới nhất. Hãy vui lòng tiếp tục tiến hành cập nhật.',
+	'VERSION_NOT_UP_TO_DATE_ACP'	=> 'Phiên bản phpBB bạn đang sử dụng chưa phải là phiên bản mới nhất.<br />Trong phần bên dưới, bạn sẽ tìm thấy liên kết đến thông báo phát hành của phiên bản phpBB mới nhất cùng với những hướng dẫn cách tiến hành cập nhật cho hệ thống của mình.',
+	'VERSION_UP_TO_DATE'			=> 'Phiên bản phpBB bạn đang sử dụng là phiên bản mới nhất. Bạn có thể tiếp tục kiểm tra sự hợp lệ của các tập tin trong hệ thống.',
+	'VERSION_UP_TO_DATE_ACP'		=> 'Phiên bản phpBB bạn đang sử dụng là phiên bản mới nhất. Bạn không cần phải tiến hành cập nhật bản cài đặt này.',
+	'VIEWING_FILE_CONTENTS'			=> 'Đang hiển thị nội dung tập tin',
+	'VIEWING_FILE_DIFF'				=> 'Đang hiển thị những thay đổi mã nguồn',
 
 	'WRONG_INFO_FILE_FORMAT'	=> 'Sai định dạng tập tin thông tin',
 ));
@@ -580,7 +581,7 @@ $lang = array_merge($lang, array(
 	'CONFIG_SITE_DESC'			=> 'Giới thiệu về website của bạn',
 	'CONFIG_SITENAME'			=> 'yourdomain.com',
 
-	'DEFAULT_INSTALL_POST'		=> 'Đây là bài viết mẫu được tạo ra trong quá trình cài đặt hệ thống của bạn. Mọi thứ dường như đang hoạt động tốt. Bạn có thể xóa bài viết này nếu thích và tiếp tục công việc thiết lập hệ thống. Trong suốt quá trình thực thi cài đặt, nhóm chuyên mục và chuyên mục mẫu này đã được cấp phép hợp lệ sẵn cho các nhóm thành viên như: quản trị viên, điều hành viên, máy tìm kiếm, khách, thành viên và các thành viên theo điều khoản COPPA. Bạn cũng có thể xóa nhóm chuyên mục nháp và chuyên mục nháp này nhưng đừng quên cấp phép lại chuyên mục mỗi khi tạo mới sau này cho những nhóm thành viên bên trên. Chúng tôi khuyên bạn nên đổi tên nhóm chuyên mục nháp và chuyên mục nháp này, sau đó mỗi khi tạo mới chuyên mục hãy chọn sao chép thiết lập cập phép từ chúng. Chúc vui vẻ!',
+	'DEFAULT_INSTALL_POST'		=> 'Đây là bài viết mẫu được tạo ra trong quá trình cài đặt hệ thống của bạn. Mọi thứ dường như đang hoạt động tốt. Bạn có thể xóa bài viết này nếu thích và tiếp tục công việc thiết lập hệ thống. Trong suốt quá trình thực thi cài đặt, nhóm chuyên mục và chuyên mục mẫu này đã được cấp phép hợp lệ sẵn cho các nhóm thành viên như: quản trị viên, điều hành viên, máy tìm kiếm, khách, thành viên và các thành viên theo điều khoản COPPA. Bạn cũng có thể xóa nhóm chuyên mục nháp và chuyên mục nháp này nhưng đừng quên cấp phép lại chuyên mục mỗi khi tạo mới sau này cho những nhóm thành viên bên trên. Chúng tôi khuyên bạn nên đổi tên nhóm chuyên mục nháp và chuyên mục nháp này. Sau đó, mỗi khi tạo mới chuyên mục, bạn hãy chọn sao chép thiết lập cấp phép từ chúng. Chúc vui vẻ!',
 
 	'EXT_GROUP_ARCHIVES'			=> 'Tập tin lưu trữ',
 	'EXT_GROUP_DOCUMENTS'			=> 'Tập tin văn bản',
@@ -627,7 +628,7 @@ $lang = array_merge($lang, array(
 	'SMILIES_VERY_HAPPY'	=> 'Rất vui',
 	'SMILIES_WINK'			=> 'Nháy mắt',
 
-	'TOPICS_TOPIC_TITLE'	=> 'Chào mừng bạn đã đến với phpBB',
+	'TOPICS_TOPIC_TITLE'	=> 'Chào mừng bạn đến với phpBB',
 ));
 
 ?>

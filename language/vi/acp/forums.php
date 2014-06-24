@@ -4,7 +4,7 @@
 * acp_forums [Vietnamese]
 *
 * @package language
-* @version $Id: forums.php 34 2008-11-02 08:11:00Z nedka $
+* @version $Id: forums.php 38 2008-12-13 11:17:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -55,7 +55,7 @@ $lang = array_merge($lang, array(
 
 	'COPY_PERMISSIONS'				=> 'Sao chép thiết lập cấp phép từ',
 	'COPY_PERMISSIONS_ADD_EXPLAIN'	=> 'Sau khi sao chép thiết lập cấp phép, chuyên mục sẽ có thiết lập cấp phép giống như của chuyên mục mà bạn chọn sao chép. Nếu không có chuyên mục nào được chọn thì chuyên mục vừa mới tạo sẽ không thể truy cập được cho đến khi bạn thiết lập cấp phép xong.',
-	'COPY_PERMISSIONS_EDIT_EXPLAIN'	=> 'Nếu bạn chọn sao chép thiết lập cấp phép, chuyên mục sẽ có thiết lập cấp phép giống như của chuyên mục mà bạn chọn sao chép. Thiết lập cấp phép mới mà bạn chọn sẽ thay thế cho bất kỳ thiết lập cấp phép nào mà bạn đã thiết lập trước đây cho chuyên mục này. Nếu không có chuyên mục nào được chọn, những thiết lập cấp phép hiện tại của chuyên mục này sẽ được giữ nguyên.',	
+	'COPY_PERMISSIONS_EDIT_EXPLAIN'	=> 'Nếu bạn chọn sao chép thiết lập cấp phép, chuyên mục sẽ có thiết lập cấp phép giống như của chuyên mục mà bạn chọn sao chép. Thiết lập cấp phép mới mà bạn chọn sẽ thay thế cho bất kì thiết lập cấp phép nào mà bạn đã thiết lập trước đây cho chuyên mục này. Nếu không có chuyên mục nào được chọn, những thiết lập cấp phép hiện tại của chuyên mục này sẽ được giữ nguyên.',	
 	'CREATE_FORUM'					=> 'Tạo chuyên mục mới',
 
 	'DECIDE_MOVE_DELETE_CONTENT'		=> 'Xóa toàn bộ nội dung hoặc di chuyển đến chuyên mục',
@@ -63,8 +63,8 @@ $lang = array_merge($lang, array(
 	'DEFAULT_STYLE'						=> 'Giao diện mặc định',
 	'DELETE_ALL_POSTS'					=> 'Xóa bài viết',
 	'DELETE_SUBFORUMS'					=> 'Xóa chuyên mục con và bài viết',
-	'DISPLAY_ACTIVE_TOPICS'				=> 'Hiển thị những chủ đề không bị khóa',
-	'DISPLAY_ACTIVE_TOPICS_EXPLAIN'		=> 'Nếu bật tùy chọn này, những chủ đề không bị khóa không các chuyên mục con đã chọn sẽ được hiển thị trong chuyên mục này.',
+	'DISPLAY_ACTIVE_TOPICS'				=> 'Hiển thị những chủ đề sôi nổi',
+	'DISPLAY_ACTIVE_TOPICS_EXPLAIN'		=> 'Nếu bật tùy chọn này, những chủ đề sôi nổi trong các chuyên mục con đã chọn sẽ được hiển thị trong chuyên mục này.',
 
 	'EDIT_FORUM'				=> 'Sửa chuyên mục',
 	'ENABLE_INDEXING'			=> 'Bật chỉ mục tìm kiếm',
@@ -85,8 +85,8 @@ $lang = array_merge($lang, array(
 	'FORUM_DELETE'						=> 'Xóa chuyên mục',
 	'FORUM_DELETE_EXPLAIN'				=> 'Bạn có thể xóa chuyên mục trong phần bên dưới. Nếu chuyên mục chuyển được, bạn có thể chọn chuyên mục khác mà bạn muốn chuyển toàn bộ chuyên mục con hay chủ đề sang.',
 	'FORUM_DELETED'						=> 'Chuyên mục đã được xóa thành công.',
-	'FORUM_DESC'						=> 'Giới thiệu về chuyên mục',
-	'FORUM_DESC_EXPLAIN'				=> 'Bất kỳ thẻ đánh dấu HTML nào bạn nhập trong đây đều không có tác dụng.',
+	'FORUM_DESC'						=> 'Giới thiệu chuyên mục',
+	'FORUM_DESC_EXPLAIN'				=> 'Bất kì thẻ đánh dấu HTML nào bạn nhập trong đây đều không có tác dụng.',
 	'FORUM_EDIT_EXPLAIN'				=> 'Bảng điều khiển bên dưới sẽ giúp bạn tùy chỉnh chuyên mục này. Lưu ý rằng việc thiết lập điều hành viên cho chuyên mục này cũng như bảng điều khiển bộ đếm số bài viết được thiết lập từ mục cấp phép chuyên mục trong công cụ cấp phép cho các thành viên và nhóm thành viên.',
 	'FORUM_IMAGE'						=> 'Hình chuyên mục',
 	'FORUM_IMAGE_EXPLAIN'				=> 'Đường dẫn đến hình ảnh thêm vào sử dụng cho chuyên mục này, nằm trong thư mục chính cài đặt hệ thống.',
@@ -116,7 +116,7 @@ $lang = array_merge($lang, array(
 	'FORUM_STYLE'						=> 'Giao diện chuyên mục',
 	'FORUM_TOPICS_PAGE'					=> 'Số chủ đề mỗi trang',
 	'FORUM_TOPICS_PAGE_EXPLAIN'			=> 'Nếu không có giá trị <strong>0</strong>, giá trị này sẽ thay thế cho số chủ đề mặc định hiển thị trong mỗi trang được thiết lập.',
-	'FORUM_TYPE'						=> 'Nhóm chuyên mục',
+	'FORUM_TYPE'						=> 'Loại chuyên mục',
 	'FORUM_UPDATED'						=> 'Thông tin về chuyên mục đã được cập nhật thành công.',
 
 	'FORUM_WITH_SUBFORUMS_NOT_TO_LINK'	=> 'Bạn đã chọn thay đổi một chuyên mục có thể gửi bài có các chuyên mục con trở thành một liên kết. Hãy vui lòng di chuyển tất cả chuyên mục con của chuyên mục này trước khi bạn tiến hành, bởi vì sau khi thay đổi chuyên mục này thành một liên kết, bạn sẽ không còn xem được những chuyên mục con hiện tại đang nằm trong chuyên mục này.',
@@ -125,9 +125,9 @@ $lang = array_merge($lang, array(
 
 	'LINK'						=> 'Liên kết',
 	'LIST_INDEX'				=> 'Hiện chuyên mục con trong phần chú giải của chuyên mục chứa nó',
-	'LIST_INDEX_EXPLAIN'		=> 'Hiển thị chuyên mục này trên trang diễn đàn và bất kỳ đâu với một liên kết trong phần chú giải của chuyên mục chứa nó nếu tùy chọn “Hiện các chuyên mục trong phần chú giải” của chuyên mục chứa được bật.',
+	'LIST_INDEX_EXPLAIN'		=> 'Hiển thị chuyên mục này trên trang diễn đàn và bất kì đâu với một liên kết trong phần chú giải của chuyên mục chứa nó nếu tùy chọn “Hiện các chuyên mục trong phần chú giải” của chuyên mục chứa được bật.',
 	'LIST_SUBFORUMS'			=> 'Hiện các chuyên mục trong phần chú giải',
-	'LIST_SUBFORUMS_EXPLAIN'	=> 'Hiển thị các chuyên mục con của chuyên mục này trên trang diễn đàn và bất kỳ đâu với một liên kết trong phần chú giải nếu tùy chọn “Hiện chuyên mục con trong phần chú giải của chuyên mục chứa nó” của chúng được bật.',
+	'LIST_SUBFORUMS_EXPLAIN'	=> 'Hiển thị các chuyên mục con của chuyên mục này trên trang diễn đàn và bất kì đâu với một liên kết trong phần chú giải nếu tùy chọn “Hiện chuyên mục con trong phần chú giải của chuyên mục chứa nó” của chúng được bật.',
 	'LOCKED'					=> 'Đã khóa',
 
 	'MOVE_POSTS_NO_POSTABLE_FORUM'	=> 'Chuyên mục vừa chọn để di duyển các bài viết đến không cho phép gửi bài. Bạn hãy vui lòng chọn một chuyên mục cho phép gửi bài.',
@@ -153,11 +153,11 @@ $lang = array_merge($lang, array(
 	'SYNC_IN_PROGRESS'			=> 'Đang đồng độ hóa chuyên mục',
 	'SYNC_IN_PROGRESS_EXPLAIN'	=> 'Đang đồng bộ hóa chủ đề trong dãy %1$d/%2$d.',
 
-	'TYPE_CAT'			=> 'Nhóm chuyên mục',
-	'TYPE_FORUM'		=> 'Chuyên mục',
-	'TYPE_LINK'			=> 'Liên kết',
+	'TYPE_CAT'		=> 'Nhóm chuyên mục',
+	'TYPE_FORUM'	=> 'Chuyên mục',
+	'TYPE_LINK'		=> 'Liên kết',
 
-	'UNLOCKED'			=> 'Không khóa',
+	'UNLOCKED'	=> 'Không khóa',
 ));
 
 ?>

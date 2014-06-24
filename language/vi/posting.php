@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php 45 2008-11-01 22:54:00Z nedka $
+* @version $Id: posting.php 46 2008-12-13 11:18:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -187,7 +187,7 @@ $lang = array_merge($lang, array(
 	'SAVE'						=> 'Lưu',
 	'SAVE_DATE'					=> 'Đã lưu vào ngày',
 	'SAVE_DRAFT'				=> 'Lưu bản nháp',
-	'SAVE_DRAFT_CONFIRM'		=> 'Lưu ý rằng bạn chỉ có thể lưu vào bản nháp tiêu đề và nội dung của bài viết, bất kỳ các thành phần khác sẽ được gỡ bỏ. Bạn có chắc chắn muốn lưu bản nháp của mình ngay bây giờ?',	
+	'SAVE_DRAFT_CONFIRM'		=> 'Lưu ý rằng bạn chỉ có thể lưu vào bản nháp tiêu đề và nội dung của bài viết, bất kì các thành phần khác sẽ được gỡ bỏ. Bạn có chắc chắn muốn lưu bản nháp của mình ngay bây giờ?',	
 	'SMILIES'					=> 'Biểu tượng vui',
 	'SMILIES_ARE_OFF'			=> 'Biểu tượng vui đang <em>TẮT</em>',
 	'SMILIES_ARE_ON'			=> 'Biểu tượng vui đang <em>BẬT</em>',

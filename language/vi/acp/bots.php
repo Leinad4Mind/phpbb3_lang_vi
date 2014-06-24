@@ -4,7 +4,7 @@
 * acp_bots [Vietnamese]
 *
 * @package language
-* @version $Id: bots.php 15 2008-11-02 08:11:00Z nedka $
+* @version $Id: bots.php 16 2008-12-13 11:17:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -75,7 +75,7 @@ $lang = array_merge($lang, array(
 	'ERR_BOT_NO_IP'				=> 'Địa chỉ IP mà bạn vừa nhập không hợp lệ hoặc do tên miền này không thể sử dụng được.',
 	'ERR_BOT_NO_MATCHES'		=> 'Bạn phải khai báo ít nhất là một kết quả định danh hoặc địa chỉ IP cho kết quả xác định của máy tìm kiếm này.',
 
-	'NO_BOT'		=> 'Không thể tìm thấy bất kỳ máy tìm kiếm nào với số ID đã xác định',
+	'NO_BOT'		=> 'Không thể tìm thấy bất kì máy tìm kiếm nào với số ID đã xác định',
 	'NO_BOT_GROUP'	=> 'Không thể tìm thấy nhóm máy tìm kiếm đặc biệt.',
 ));
 

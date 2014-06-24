@@ -4,7 +4,7 @@
 * acp_permissions [Vietnamese]
 *
 * @package language
-* @version $Id: permissions.php 47 2008-11-02 08:11:00Z nedka $
+* @version $Id: permissions.php 48 2008-12-13 11:16:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -67,7 +67,7 @@ $lang = array_merge($lang, array(
 
 	'ACL_NEVER'				=> 'Chưa bao giờ',	
 	'ACL_SET'				=> 'Thiết lập cấp phép',
-	'ACL_SET_EXPLAIN'		=> 'Những thiết lập cấp phép được thiết lập đơn giản bằng cách chọn <samp>CÓ</samp>/<samp>KHÔNG</samp> trong từng mục tương ứng. Thiết lập một tùy chọn là <samp>CHƯA BAO GIỜ</samp> cho một thành viên hay nhóm sẽ thay thế cho bất kỳ giá trị nào được chỉ định đến. Nếu bạn không muốn chỉ định cấp phép trong một tùy chọn nào dành cho thành viên hay nhóm, hãy chọn <samp>KHÔNG</samp>. Nếu các giá trị được chỉ định trong tùy chọn đã có trong thiết lập cá nhân của thành viên, hãy chọn <samp>CHƯA BAO GIỜ</samp> để sử dụng thiết lập của thành viên. Tất cả các đối tượng được đánh dấu chọn trong ô kiểm phía trước sẽ được sao chép thiết lập cấp phép giống như thiết lập cấp phép bạn đã chỉ định.',
+	'ACL_SET_EXPLAIN'		=> 'Những thiết lập cấp phép được thiết lập đơn giản bằng cách chọn <samp>CÓ</samp>/<samp>KHÔNG</samp> trong từng mục tương ứng. Thiết lập một tùy chọn là <samp>CHƯA BAO GIỜ</samp> cho một thành viên hay nhóm sẽ thay thế cho bất kì giá trị nào được chỉ định đến. Nếu bạn không muốn chỉ định cấp phép trong một tùy chọn nào dành cho thành viên hay nhóm, hãy chọn <samp>KHÔNG</samp>. Nếu các giá trị được chỉ định trong tùy chọn đã có trong thiết lập cá nhân của thành viên, hãy chọn <samp>CHƯA BAO GIỜ</samp> để sử dụng thiết lập của thành viên. Tất cả các đối tượng được đánh dấu chọn trong ô kiểm phía trước sẽ được sao chép thiết lập cấp phép giống như thiết lập cấp phép bạn đã chỉ định.',
 	'ACL_SETTING'			=> 'Thiết lập',
 
 	'ACL_TYPE_A_'			=> 'Cấp phép quản trị viên',
@@ -144,7 +144,7 @@ $lang = array_merge($lang, array(
 	'NO_ROLE_AVAILABLE'			=> 'Không có nhiệm vụ nào hiện tại',
 	'NO_ROLE_NAME_SPECIFIED'	=> 'Bạn chưa nhập tên của nhiệm vụ.',
 	'NO_ROLE_SELECTED'			=> 'Không thể tìm thấy nhiệm vụ.',
-	'NO_USER_GROUP_SELECTED'	=> 'Bạn chưa chọn bất kỳ thành viên hay nhóm nào.',
+	'NO_USER_GROUP_SELECTED'	=> 'Bạn chưa chọn bất kì thành viên hay nhóm nào.',
 
 	'ONLY_FORUM_DEFINED'	=> 'Bạn chỉ có thể chỉ định những chuyên mục trong danh sách chọn. Bạn cũng phải chọn ít nhất là một thành viên hay một nhóm.',
 

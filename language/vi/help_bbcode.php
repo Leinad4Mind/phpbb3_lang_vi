@@ -4,7 +4,7 @@
 * help_bbcode [Vietnamese]
 *
 * @package language
-* @version $Id: help_bbcode.php 32 2008-11-02 07:56:00Z nedka $
+* @version $Id: help_bbcode.php 33 2008-12-13 11:15:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -106,7 +106,7 @@ $help = array(
 	),
 	array(
 		0 => 'Đính kèm tập tin trong bài viết',
-		1 => 'Bạn có thể đặt những tập tin đính kèm ở bất kỳ đâu trong bài viết bằng cách sử dụng cặp thẻ <strong>[attachment=][/attachment]</strong>, nếu chức năng đính kèm tập tin được kích hoạt bởi người quản trị của diễn đàn và nếu thiết lập cấp phép của bạn cho phép bạn được quyền đính kèm tập tin. Trong khung gửi bài sẽ có một danh sách các tập tin đính kèm mà bạn đã tải lên tương ứng với một nút bấm cho bạn chọn lựa việc đặt chúng ở đâu trong phần nội dung bài viết của mình.'
+		1 => 'Bạn có thể đặt những tập tin đính kèm ở bất kì đâu trong bài viết bằng cách sử dụng cặp thẻ <strong>[attachment=][/attachment]</strong>, nếu chức năng đính kèm tập tin được kích hoạt bởi người quản trị của diễn đàn và nếu thiết lập cấp phép của bạn cho phép bạn được quyền đính kèm tập tin. Trong khung gửi bài sẽ có một danh sách các tập tin đính kèm mà bạn đã tải lên tương ứng với một nút bấm cho bạn chọn lựa việc đặt chúng ở đâu trong phần nội dung bài viết của mình.'
 	),
 	array(
 		0 => '--',

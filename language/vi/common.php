@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php 132 2008-11-13 05:31:00Z nedka $
+* @version $Id: common.php 134 2008-12-13 10:44:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -516,7 +516,7 @@ $lang = array_merge($lang, array(
 	'SEARCH_ADV_EXPLAIN'		=> 'Xem những lựa chọn tìm kiếm nâng cao',
 	'SEARCH_KEYWORDS'			=> 'Từ khóa tìm kiếm',
 	'SEARCHING_FORUMS'			=> 'Đang tìm kiếm các chuyên mục',
-	'SEARCH_ACTIVE_TOPICS'		=> 'Chủ đề gần đây',
+	'SEARCH_ACTIVE_TOPICS'		=> 'Chủ đề sôi nổi',
 	'SEARCH_FOR'				=> 'Tìm với từ khóa',
 	'SEARCH_FORUM'				=> 'Tìm trong chuyên mục này…',
 	'SEARCH_NEW'				=> 'Bài viết mới',
@@ -702,10 +702,16 @@ $lang = array_merge($lang, array(
 	'YOU_NEW_PMS'		=> 'Bạn có nhiều tin nhắn mới trong hộp tin nhận của mình.',
 	'YOU_NO_NEW_PM'		=> 'Bạn không có tin nhắn mới nào trong hộp tin nhận của mình.',
 
-	'datetime'			=> array(
+	'datetime'		=> array(
 		'TODAY'		=> 'Hôm nay',
 		'TOMORROW'	=> 'Ngày mai',
 		'YESTERDAY'	=> 'Hôm qua',
+		'AGO'		=> array(
+			0		=> 'chưa đầy một phút trước',
+			1		=> '%d phút trước',
+			2		=> '%d phút trước',
+			60		=> '1 giờ trước',
+		),
 
 		'Sunday'	=> 'Chủ nhật',
 		'Monday'	=> 'Thứ hai',

@@ -4,7 +4,7 @@
 * acp_search [Vietnamese]
 *
 * @package language
-* @version $Id: search.php 29 2008-11-01 22:59:00Z nedka $
+* @version $Id: search.php 30 2008-12-13 10:30:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -49,7 +49,7 @@ $lang = array_merge($lang, array(
 	'ACP_SEARCH_SETTINGS_EXPLAIN'			=> 'Với công cụ này, bạn có thể xác định phương pháp tìm kiếm nào sẽ được sử dụng cho việc tạo chỉ mục các bài viết và thực thi việc tìm kiếm trong hệ thống. Bạn có thể thiết lập những tùy chọn khác nhau có thể ảnh hưởng đến nhiều đến yêu cầu xử lí công việc của hệ thống. Một vài những thiết lập này giống nhau trong tất cả các phương pháp tìm kiếm.',
 
 	'COMMON_WORD_THRESHOLD'					=> 'Giới hạn các từ thông dụng',
-	'COMMON_WORD_THRESHOLD_EXPLAIN'			=> 'Những từ xuất hiện thường xuyên với tỉ lệ phần trăm lớn trong tất cả các bài viết sẽ được xem như là từ thông dụng. Những từ thông dụng này sẽ không được phép sử dụng trong truy vấn tìm kiếm. Nhập số <strong>0</strong> để vô hiệu tùy chọn này. Thiết lập này chỉ có tác dụng nếu diễn đàn bạn có nhiều hơn 100 bài viết.',
+	'COMMON_WORD_THRESHOLD_EXPLAIN'			=> 'Những từ xuất hiện thường xuyên với tỉ lệ phần trăm lớn trong tất cả các bài viết sẽ được xem như là từ thông dụng. Những từ thông dụng này sẽ không được phép sử dụng trong truy vấn tìm kiếm. Nhập số <strong>0</strong> để vô hiệu tùy chọn này. Thiết lập này chỉ có tác dụng nếu diễn đàn bạn có nhiều hơn 100 bài viết. Nếu bạn muốn hệ thống xét lại những từ thông dụng chính xác sau khi thay đổi tỉ lệ này, bạn cần phải tạo lại chỉ mục tìm kiếm.',
 	'CONFIRM_SEARCH_BACKEND'				=> 'Bạn có chắc chắn muốn chuyển đổi sang phương pháp tìm kiếm khác? Sau khi thay đổi phương pháp tìm kiếm, bạn sẽ phải tạo chỉ mục cho phương pháp tìm kiếm mới. Trong trường hợp bạn không chuyển đổi phương pháp tìm kiếm đang sử dụng, bạn cũng có thể xóa chỉ mục tìm kiếm cũ để tiết kiệm tài nguyên hệ thống.',
 	'CONTINUE_DELETING_INDEX'				=> 'Tiếp tục tiến hành việc gỡ bỏ chỉ mục trước',
 	'CONTINUE_DELETING_INDEX_EXPLAIN'		=> 'Quá trình gỡ bỏ chỉ mục đã được bắt đầu. Ngoài ra, để truy cập lại vào trang tìm kiếm bạn cần phải hoàn tất việc xóa chỉ mục trước.',

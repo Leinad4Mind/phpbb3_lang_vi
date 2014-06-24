@@ -4,7 +4,7 @@
 * acp_ban [Vietnamese]
 *
 * @package language
-* @version $Id: ban.php 19 2008-11-01 22:55:00Z nedka $
+* @version $Id: ban.php 20 2008-12-13 11:17:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -50,7 +50,7 @@ $lang = array_merge($lang, array(
 	'30_MINS'		=> '30 phút',
 	'6_HOURS'		=> '6 giờ',
 
-	'ACP_BAN_EXPLAIN'	=> 'Sử dụng công cụ này, bạn có thể điều khiển việc cấm các thành viên theo tên thành viên, địa chỉ IP hay địa chỉ email. Những phương pháp này sẽ ngăn cản thành viên bị cấm truy cập vào bất kỳ thành phần nào trong hệ thống. Bạn có thể đưa ra một nguyên nhân ngắn giới hạn với tối đa là <strong>3000</strong> ký tự về việc vì sao thành viên đó bị cấm. Các thao tác cấm này sẽ được ghi nhận trong bảng ghi nhận của quản trị viên. Bạn cũng có thể xác định thời gian thực hiện lệnh cấm. Nếu bạn muốn xác định chính xác ngày kết thúc lệnh cấm, tốt hơn cách thiết lập một khoảng thời gian cấm trong bao lâu, bạn có thể chọn <span style="text-decoration: underline;">Cho đến ngày -&gt;</span> và nhập vào ngày tháng theo định dạng <kbd>YYYY-MM-DD</kbd>.',
+	'ACP_BAN_EXPLAIN'	=> 'Sử dụng công cụ này, bạn có thể điều khiển việc cấm các thành viên theo tên thành viên, địa chỉ IP hay địa chỉ email. Những phương pháp này sẽ ngăn cản thành viên bị cấm truy cập vào bất kì thành phần nào trong hệ thống. Bạn có thể đưa ra một nguyên nhân ngắn giới hạn với tối đa là <strong>3000</strong> ký tự về việc vì sao thành viên đó bị cấm. Các thao tác cấm này sẽ được ghi nhận trong bảng ghi nhận của quản trị viên. Bạn cũng có thể xác định thời gian thực hiện lệnh cấm. Nếu bạn muốn xác định chính xác ngày kết thúc lệnh cấm, tốt hơn cách thiết lập một khoảng thời gian cấm trong bao lâu, bạn có thể chọn <span style="text-decoration: underline;">Cho đến ngày -&gt;</span> và nhập vào ngày tháng theo định dạng <kbd>YYYY-MM-DD</kbd>.',
 
 	'BAN_EXCLUDE'			=> 'Loại ra từ lệnh cấm',
 	'BAN_LENGTH'			=> 'Thời gian thực hiện lệnh cấm',

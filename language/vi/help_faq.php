@@ -4,7 +4,7 @@
 * help_faq [Vietnamese]
 *
 * @package language
-* @version $Id: help_faq.php 59 2008-11-03 08:10:00Z nedka $
+* @version $Id: help_faq.php 60 2008-12-13 11:15:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -74,7 +74,7 @@ $help = array(
 	),
 	array(
 		0 => 'Điều khoản COPPA là gì?',
-		1 => 'COPPA là tên viết tắt từ <strong>Child Online Privacy and Protection Act</strong>. Đây là một luật lệ ban hành vào năm 1998 trong hệ thống pháp luật của Mỹ. Luật lệ này yêu cầu các website có những hoạt động thu thập thông tin từ trẻ vị thành niên dưới 13 tuổi phải được sự đồng ý của cha mẹ hay người bảo hộ của chúng hoặc sử dụng một vài biện pháp khác từ hệ thống kiến thức bảo hộ pháp luật trong việc cho phép thu thập những thông tin cá nhân có thể nhận biết từ một trẻ vị thành niên dưới 13 tuổi. Nếu bạn chắc chắn rằng mình hay một vài người khác thuộc diện qui định trong điều khoản này hoặc website mà bạn đang đăng ký thành viên có áp dụng điều khoản này, bạn hãy liên hệ với các luật sư tư vấn pháp lý để tìm kiếm sự giúp đỡ. Lưu ý rằng tổ chức phpBB không thể đưa ra cho bạn bất kỳ một lời khuyên nào về pháp luật và cũng đừng liên hệ với chúng tôi về những vấn đề này ngoại trừ một vài nguyên tắc chung bên dưới.',
+		1 => 'COPPA là tên viết tắt từ <strong>Child Online Privacy and Protection Act</strong>. Đây là một luật lệ ban hành vào năm 1998 trong hệ thống pháp luật của Mỹ. Luật lệ này yêu cầu các website có những hoạt động thu thập thông tin từ trẻ vị thành niên dưới 13 tuổi phải được sự đồng ý của cha mẹ hay người bảo hộ của chúng hoặc sử dụng một vài biện pháp khác từ hệ thống kiến thức bảo hộ pháp luật trong việc cho phép thu thập những thông tin cá nhân có thể nhận biết từ một trẻ vị thành niên dưới 13 tuổi. Nếu bạn chắc chắn rằng mình hay một vài người khác thuộc diện qui định trong điều khoản này hoặc website mà bạn đang đăng ký thành viên có áp dụng điều khoản này, bạn hãy liên hệ với các luật sư tư vấn pháp lý để tìm kiếm sự giúp đỡ. Lưu ý rằng tổ chức phpBB không thể đưa ra cho bạn bất kì một lời khuyên nào về pháp luật và cũng đừng liên hệ với chúng tôi về những vấn đề này ngoại trừ một vài nguyên tắc chung bên dưới.',
 	),
 	array(
 		0 => 'Tại sao tôi không thể đăng ký thành viên?',
@@ -142,7 +142,7 @@ $help = array(
 	),
 	array(
 		0 => 'Làm sao để tôi sửa hay xóa một bình chọn?',
-		1 => 'Giống như những bài viết, các bình chọn chỉ có thể được sửa bởi chính người tạo ra nó, điều hành viên hay quản trị viên. Để sửa một bình chọn, trước hết bạn hãy bấm vào nút sửa bài ứng với bài viết đầu tiên của chủ đề có bình chọn đi kèm muốn sửa. Nếu chưa có ai tham gia bình chọn, bạn có thể xóa bình chọn này hoặc sửa đổi bất kỳ đối tượng bình chọn nào. Tuy nhiên, nếu bình chọn đã có người tham gia rồi thì chỉ có điều hành viên hoặc quản trị viên mới có quyền sửa hay xóa nó. Điều này nhằm để ngăn cản một vài người muốn thay đổi tính khách quan của một bình chọn bằng cách thay đổi những đối tượng bình chọn đã được người khác bình chọn.'
+		1 => 'Giống như những bài viết, các bình chọn chỉ có thể được sửa bởi chính người tạo ra nó, điều hành viên hay quản trị viên. Để sửa một bình chọn, trước hết bạn hãy bấm vào nút sửa bài ứng với bài viết đầu tiên của chủ đề có bình chọn đi kèm muốn sửa. Nếu chưa có ai tham gia bình chọn, bạn có thể xóa bình chọn này hoặc sửa đổi bất kì đối tượng bình chọn nào. Tuy nhiên, nếu bình chọn đã có người tham gia rồi thì chỉ có điều hành viên hoặc quản trị viên mới có quyền sửa hay xóa nó. Điều này nhằm để ngăn cản một vài người muốn thay đổi tính khách quan của một bình chọn bằng cách thay đổi những đối tượng bình chọn đã được người khác bình chọn.'
 	),
 	array(
 		0 => 'Tại sao tôi không thể truy cập vào một chuyên mục?',
@@ -206,7 +206,7 @@ $help = array(
 	),
 	array(
 		0 => 'Chủ đề bị khóa là gì?',
-		1 => 'Chủ đề bị khóa là chủ đề mà các thành viên không còn có thể trả lời được và bất kỳ bình chọn nào trong những chủ đề này cũng sẽ tự động kết thúc. Những chủ đề như thế có thể bị khóa vì nhiều nguyên nhân khác nhau và được thực hiện bởi điều hành viên hay quản trị viên. Bạn cũng có thể tự khóa chủ đề của chính mình tùy thuộc vào thiết lập cấp phép mà bạn được chỉ định bởi người quản trị.'
+		1 => 'Chủ đề bị khóa là chủ đề mà các thành viên không còn có thể trả lời được và bất kì bình chọn nào trong những chủ đề này cũng sẽ tự động kết thúc. Những chủ đề như thế có thể bị khóa vì nhiều nguyên nhân khác nhau và được thực hiện bởi điều hành viên hay quản trị viên. Bạn cũng có thể tự khóa chủ đề của chính mình tùy thuộc vào thiết lập cấp phép mà bạn được chỉ định bởi người quản trị.'
 	),
 	array(
 		0 => 'Biểu tượng bài viết là gì?',
@@ -270,7 +270,7 @@ $help = array(
 	),
 	array(
 		0 => 'Danh sách bạn thân và danh sách kẻ thù là gì?',
-		1 => 'Bạn có thể sử dụng những danh sách này để tổ chức quản lí các thành viên khác trong hệ thống. Những thành viên được thêm vào trong danh sách bạn thân sẽ được liệt kê trong bảng thiết lập cá nhân của bạn để bạn bạn có thể biết nhanh trạng thái trực tuyến của họ và gửi tin nhắn cho họ. Nếu giao diện hỗ trợ, các bài viết từ những thành viên này đều được tô sáng nổi bật. Nếu bạn thêm một thành viên vào danh sách kẻ thù của mình thì bất kỳ bài viết nào của họ theo mặc định trong hệ thống sẽ ẩn đi đối với bạn.'
+		1 => 'Bạn có thể sử dụng những danh sách này để tổ chức quản lí các thành viên khác trong hệ thống. Những thành viên được thêm vào trong danh sách bạn thân sẽ được liệt kê trong bảng thiết lập cá nhân của bạn để bạn bạn có thể biết nhanh trạng thái trực tuyến của họ và gửi tin nhắn cho họ. Nếu giao diện hỗ trợ, các bài viết từ những thành viên này đều được tô sáng nổi bật. Nếu bạn thêm một thành viên vào danh sách kẻ thù của mình thì bất kì bài viết nào của họ theo mặc định trong hệ thống sẽ ẩn đi đối với bạn.'
 	),
 	array(
 		0 => 'Làm thế nào tôi có thể thêm/gỡ bỏ các thành viên trong danh sách bạn thân hay kẻ thù của mình?',
@@ -342,7 +342,7 @@ $help = array(
 	),
 	array(
 		0 => 'Tôi phải liên hệ với ai về việc lạm dụng và vi phạm pháp luật liên quan đến website này?',
-		1 => 'Bất kỳ người quản trị nào được liệt kê trong trang “Ban điều hành” đều là người thích hợp cho bạn cần liên hệ hay gửi các thắc mắc của mình. Nếu như việc liên hệ này không có phản hồi nào, bạn nên liên hệ với người quản lí tên miền này bằng cách thực hiện <a href="http://www.google.com/search?q=whois">tra cứu trên miền</a> hoặc nếu website này đang chạy trên một dịch vụ lưu trữ Web miễn phí như Yahoo!, free.fr, f2s.com… thì bạn hãy thử liên hệ với người quản lí hay bộ phận giải quyết các vi phạm của dịch vụ đó. Bạn cần lưu ý rằng <em>tổ chức phpBB</em> hoàn toàn <strong>không liên quan và không chịu trách nhiệm</strong> đến bất kỳ vấn đề nào xảy ra trong website này ở bất kỳ đâu và với bất kỳ ai sử dụng chương trình này. Sẽ hoàn toàn vô nghĩa nếu bạn tìm cách liên hệ với <em>tổ chức phpBB</em> về các vấn đề liên quan đến pháp luật, các trách nhiệm pháp lý, những bài viết nói xấu lẫn nhau… nếu nó <strong>không liên quan trực tiếp</strong> đến website phpBB.com hoặc những chương trình riêng biệt của chính phpBB. Nếu bạn gửi email cho <em>tổ chức phpBB</em> về <strong>bất kỳ vấn đề nào phát sinh từ bên thứ ba</strong> trong việc sử dụng chương trình này của người dùng cuối thì có thể bạn sẽ nhận được một hồi âm ngắn gọn hoặc không có sự phản hồi nào.'
+		1 => 'Bất kì người quản trị nào được liệt kê trong trang “Ban điều hành” đều là người thích hợp cho bạn cần liên hệ hay gửi các thắc mắc của mình. Nếu như việc liên hệ này không có phản hồi nào, bạn nên liên hệ với người quản lí tên miền này bằng cách thực hiện <a href="http://www.google.com/search?q=whois">tra cứu trên miền</a> hoặc nếu website này đang chạy trên một dịch vụ lưu trữ Web miễn phí như Yahoo!, free.fr, f2s.com… thì bạn hãy thử liên hệ với người quản lí hay bộ phận giải quyết các vi phạm của dịch vụ đó. Bạn cần lưu ý rằng <em>tổ chức phpBB</em> hoàn toàn <strong>không liên quan và không chịu trách nhiệm</strong> đến bất kì vấn đề nào xảy ra trong website này ở bất kì đâu và với bất kì ai sử dụng chương trình này. Sẽ hoàn toàn vô nghĩa nếu bạn tìm cách liên hệ với <em>tổ chức phpBB</em> về các vấn đề liên quan đến pháp luật, các trách nhiệm pháp lý, những bài viết nói xấu lẫn nhau… nếu nó <strong>không liên quan trực tiếp</strong> đến website phpBB.com hoặc những chương trình riêng biệt của chính phpBB. Nếu bạn gửi email cho <em>tổ chức phpBB</em> về <strong>bất kì vấn đề nào phát sinh từ bên thứ ba</strong> trong việc sử dụng chương trình này của người dùng cuối thì có thể bạn sẽ nhận được một hồi âm ngắn gọn hoặc không có sự phản hồi nào.'
 	)
 );
 
