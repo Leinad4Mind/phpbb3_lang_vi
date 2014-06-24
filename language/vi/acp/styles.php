@@ -4,7 +4,7 @@
 * acp_styles [Vietnamese]
 *
 * @package language
-* @version $Id: styles.php,v 1.37 2007/05/26 01:47:00 nedka Exp $
+* @version $Id: styles.php,v 1.38 2007/06/13 15:39:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -54,6 +54,7 @@ $lang = array_merge($lang, array(
 	'ADD_THEME'				=> 'Tạo kiểu dáng',
 	'ADD_THEME_EXPLAIN'		=> 'Bạn có thể tạo một kiểu dáng mới tại đây. Tuỳ thuộc vào cấu hình và thiết lập cấp phép tập tin trên máy chủ của mình mà bạn có thể thay đổi những tuỳ chọn thêm vào tại đây. Ví dụ, bạn có thể tạo ra một kiểu dáng mới từ kiểu dáng hiện có. Bạn cũng có thể tải lên hoặc nhập kiểu dáng từ thư mục lưu trữ. Nếu bạn tải lên hoặc nhập kiểu dáng thì tên của kiểu dáng đó có thể tuỳ chọn lấy từ tên được lưu trữ bằng cách để trống trong phần tên kiểu dáng.',
 	'ARCHIVE_FORMAT'		=> 'Loại tập tin lưu trữ',
+	'AUTOMATIC_EXPLAIN'		=> 'Để trống phần này để hệ thống tự động xác định kích thước.',
 
 	'BACKGROUND'			=> 'Nền',
 	'BACKGROUND_COLOUR'		=> 'Màu nền',

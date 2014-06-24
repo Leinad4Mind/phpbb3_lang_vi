@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version $Id: install.php,v 1.60 2007/05/26 20:42:00 nedka Exp $
+* @version $Id: install.php,v 1.63 2007/06/13 15:36:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -83,7 +83,7 @@ $lang = array_merge($lang, array(
 	'CONTINUE_OLD_CONVERSION'	=> 'Tiếp tục chuyển đổi hệ thống đã tiến hành',
 	'CONVERT'					=> 'Chuyển đổi',
 	'CONVERT_COMPLETE'			=> 'Việc chuyển đổi đã hoàn tất',
-	'CONVERT_COMPLETE_EXPLAIN'	=> 'Bạn đã chuyển đổi thành công hệ thống của mình sang hệ thống phpBB 3.0. Bạn có thể đăng nhập ngay bây giờ và <a href="../">truy cập vào hệ thống</a> của mình. Hãy nhớ những giúp đỡ từ cộng đồng trực tuyến trong việc sử dụng phpBB luôn sẵn sàng chờ bạn với <a href="http://www.phpbb.com/support/documentation/3.0/">tài liệu hướng dẫn sử dụng</a> và <a href="http://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ</a>',	
+	'CONVERT_COMPLETE_EXPLAIN'	=> 'Bạn đã chuyển đổi thành công hệ thống của mình sang hệ thống phpBB 3.0. Bạn có thể đăng nhập ngay bây giờ và <a href="../">truy cập vào hệ thống</a> của mình. Hãy chắc chắn rằng những thiết lập hệ thống đã được chuyển đổi sang chính xác trước khi bạn kích hoạt hệ thống hoạt động bằng cách xóa thư mục cài đặt đi. Bạn luôn được giúp đỡ từ cộng đồng trực tuyến trong việc sử dụng phpBB với <a href="http://www.phpbb.com/support/documentation/3.0/">tài liệu hướng dẫn sử dụng</a> và <a href="http://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ</a>.',	
 	'CONVERT_INTRO'				=> 'Chào mừng bạn đã đến với công cụ phpBB Unified Convertor Framework',
 	'CONVERT_INTRO_BODY'		=> 'Với công cụ này, bạn có thể chuyển đổi dữ liệu từ những hệ thống khác phpBB đã cài đặt trước đây sang hệ thống phpBB. Danh sách bên dưới liệt kê tất cả các gói thành phần chức năng chuyển đổi có sẵn hiện tại. Nếu như danh sách này không có gói thành phần chức năng chuyển đổi cho hệ thống mà bạn đang sử dụng, hãy ghé thăm website của chúng tôi để tải về và tìm hiểu nhiều thông tin hơn về các gói thành phần chức năng chuyển đổi sẵn có tại đây.',
 	'CONVERT_NEW_CONVERSION'	=> 'Chuyển đổi mới',
@@ -116,6 +116,7 @@ $lang = array_merge($lang, array(
 	'CONV_ERROR_REPLACE_FORUM'			=> 'Không thể chèn thêm chuyên mục mới để thay thế cho chuyên mục cũ.',
 	'CONV_ERROR_USER_ACCESS'			=> 'Không thể nhận được thông tin xác thực thành viên.',
 	'CONV_ERROR_WRONG_GROUP'			=> 'Nhóm thành viên không chính xác “%1$s” đã được chỉ định trong %2$s.',
+	'CONV_OPTIONS_BODY'					=> 'Trang này thu thập những thông tin cần cho việc truy cập vào hệ thống nguồn. Bạn hãy nhập vào những thông tin chi tiết về cơ sở dữ liệu của hệ thống cũ mà bạn đã cài đặt. Công cụ chuyển đổi sẽ không thay đổi bất cứ thứ gì trong cơ sở dữ liệu mà bạn cung cấp. Hệ thống nguồn nên được tạm ngưng hoạt động để việc chuyển đổi diễn ra được suôn sẻ.',
 	'CONV_SAVED_MESSAGES'				=> 'Nội dung đã lưu',
 
 	'COULD_NOT_COPY'			=> 'Không thể sao chép tập tin <strong>%1$s</strong> đến <strong>%2$s</strong><br /><br />Bạn hãy vui lòng kiểm tra lại thư mục được sao chép đến đã tồn tại và được cấp phép có thể ghi trên máy chủ.',
@@ -172,7 +173,7 @@ $lang = array_merge($lang, array(
 	'FORUM_ADDRESS'				=> 'Địa chỉ hệ thống',
 	'FORUM_ADDRESS_EXPLAIN'		=> 'Đây là địa chỉ URL của hệ thống, ví dụ như <samp>http://www.example.com/phpBB3/</samp>. Nếu bạn nhập vào một địa chỉ trong phần này và không để trống, mọi trường hợp của địa chỉ này sẽ được thay thế bằng địa chỉ hệ thống mới trong các bài biết, tin nhắn cá nhân và chữ ký đính kèm của thành viên.',
 	'FORUM_PATH'				=> 'Đường dẫn hệ thống',
-	'FORUM_PATH_EXPLAIN'		=> 'Đường dẫn đến thư mục chính cài đặt hệ thống phpBB trên máy chủ của bạn',
+	'FORUM_PATH_EXPLAIN'		=> 'Đường dẫn đến thư mục chính cài đặt hệ thống phpBB3 này trên máy chủ của bạn',
 	'FOUND'						=> 'Đã tìm thấy',
 	'FTP_CONFIG'				=> 'Chuyển tập tin cầu hình bằng FTP',
 	'FTP_CONFIG_EXPLAIN'		=> 'Hệ thống đã xác định sự tồn tại của gói thành phần chức năng FTP trên máy chủ của bạn. Bạn có thể chọn cài đặt với tập tin cấu hình <code>config.php</code> của mình thông qua phương pháp này. Bạn sẽ cần phải cung cấp thông tin về FTP trong phần bên dưới. Hãy nhớ tên đăng nhập và mật khẩu kết nối đến máy chủ FTP của bạn. Nếu không nhớ, bạn có thể yêu cầu nhà cung cấp dịch vụ lưu trữ Web của mình gửi lại cho bạn những thông tin này.',
@@ -343,9 +344,11 @@ $lang = array_merge($lang, array(
 
 	'SUPPORT_BODY'		=> 'Trong suốt quá trình sử dụng phiên bản RC (Release Candidate) này của phpBB 3.0.0, bạn có thể được hỗ trợ đầy đủ tại <a href="http://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ phpBB 3.0.x</a>. Chúng tôi sẽ giải đáp các thắc mắc và vấn đề thường gặp trong việc cài đặt, các rắc rối trong việc cấu hình hệ thống và chuyển đổi hệ thống cũng như hỗ trợ giải quyết các rắc rối thường gặp liên quan đến các lỗi bug. Chúng tôi cũng cho phép bạn thảo luận về các gói MOD, mã tùy biến và giao diện bổ sung.</p><p>Để tìm kiếm thêm sự giúp đỡ, bạn hãy tham khảo <a href="http://www.phpbb.com/support/documentation/3.0/quickstart/">tài liệu cài đặt và cấu hình nhanh</a> cũng như <a href="http://www.phpbb.com/support/documentation/3.0/">tài liệu trực tuyến</a> của chúng tôi.</p><p>Để chắc chắn bạn luôn sử dụng phiên bản mới nhất và cập nhật những thông tin mới nhất, tại sao bạn không tham gia vào <a href="http://www.phpbb.com/support/">danh sách tin tức qua Email</a> của chúng tôi',
 
-	'SYNC_FORUMS'		=> 'Bắt đầu đồng bộ chuyên mục',
-	'SYNC_TOPICS'		=> 'Bắt đầu đồng bộ chủ đề',
-	'SYNC_TOPIC_ID'		=> 'Đang đồng bộ những chủ đề có <var>topic_id</var> từ <strong>%1$s</strong> đến <strong>%2$s</strong>.',
+	'SYNC_FORUMS'			=> 'Bắt đầu đồng bộ chuyên mục',
+	'SYNC_POST_COUNT'		=> 'Đang đồng bộ <var>post_counts</var>',
+	'SYNC_POST_COUNT_ID'	=> 'Đang đồng bộ <var>post_counts</var> từ <var>mục</var> %1$s đến %2$s.',
+	'SYNC_TOPICS'			=> 'Bắt đầu đồng bộ chủ đề',
+	'SYNC_TOPIC_ID'			=> 'Đang đồng bộ những chủ đề có <var>topic_id</var> từ <strong>%1$s</strong> đến <strong>%2$s</strong>.',
 
 	'TABLES_MISSING'		=> 'Không thể tìm thấy những bảng dữ liệu sau<br />» <strong>%s</strong>.',
 	'TABLE_PREFIX'			=> 'Tiền tố trước tên của mỗi bảng dữ liệu',
@@ -455,7 +458,7 @@ $lang = array_merge($lang, array(
 	'OLD_UPDATE_FILES'		=> 'Những tập tin cập nhật này là dành cho phiên bản cũ. Những tập tin cập nhật này được xác định là dành cho việc cập nhật hệ thống phpBB từ phiên bản %1$s lên phiên bản %2$s trong khi phiên bản phpBB mới nhất là %3$s.',
 
 	'PERFORM_DATABASE_UPDATE'			=> 'Thực hiện cập nhật cơ sở dữ liệu',
-	'PERFORM_DATABASE_UPDATE_EXPLAIN'	=> 'Trong phần bên dưới, bạn sẽ tìm thấy liên kết đến công cụ cập nhật cơ sở dữ liệu. Công cụ này cần được thực thi độc lập bởi vì việc cập nhật cơ sở dữ liệu có thể dẫn đến những tình huống bất ngờ không thể dự đoán trước một khi bạn vẫn còn đăng nhập vào hệ thống. Việc cập nhật cơ sở dữ liệu có thể mất nhiều thời gian để hoàn tất vì thế bạn đừng ngừng thực thi công cụ cập nhật nếu không tất cả sẽ bị gián đoạn và không thể tiếp tục lại được. Sau khi bạn đã chạy công cụ cập nhật cơ sở dữ liệu hoàn tất, bạn chỉ cần bấm vào liên kết được cung cấp bên dưới để tiếp tục quá trình cập nhật.',
+	'PERFORM_DATABASE_UPDATE_EXPLAIN'	=> 'Trong phần bên dưới, bạn sẽ tìm thấy liên kết đến công cụ cập nhật cơ sở dữ liệu. Công cụ này cần được thực thi độc lập bởi vì việc cập nhật cơ sở dữ liệu có thể dẫn đến những tình huống bất ngờ không thể dự đoán trước một khi bạn vẫn còn đăng nhập vào hệ thống. Việc cập nhật cơ sở dữ liệu có thể mất nhiều thời gian để hoàn tất vì thế bạn đừng ngừng thực thi công cụ cập nhật nếu không tất cả sẽ bị gián đoạn và không thể tiếp tục lại được. Sau khi công cụ cập nhật cơ sở dữ liệu đã hoàn tất, bạn chỉ cần bấm vào liên kết được cung cấp bên dưới để tiếp tục quá trình cập nhật.',
 	'PREVIOUS_VERSION'					=> 'Phiên bản trước',
 	'PROGRESS'							=> 'Tiến hành',
 
@@ -564,6 +567,10 @@ $lang = array_merge($lang, array(
 	'FORUMS_TEST_FORUM_TITLE'	=> 'Chuyên mục nháp',
 
 	'RANKS_SITE_ADMIN_TITLE'	=> 'Quản trị viên',
+	'REPORT_WAREZ'				=> 'Bài viết có chứa các liên kết liên quan đến những phần mềm sao chép trái pháp luật.',
+	'REPORT_SPAM'				=> 'Bài viết chỉ nhằm mục đích quảng cáo cho một website hay các sản phẩm khác.',
+	'REPORT_OFF_TOPIC'			=> 'Bài viết có nội dung không phù hợp.',
+	'REPORT_OTHER'				=> 'Bài viết đã báo cáo không phải vì các nguyên nhân đã liệt kê ở trên, bạn hãy tự nhập vào phần giới thiệu.',
 
 	'SMILIES_ARROW'			=> 'Mũi tên',
 	'SMILIES_CONFUSED'		=> 'Lúng túng',

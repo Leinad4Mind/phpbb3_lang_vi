@@ -4,7 +4,7 @@
 * mcp [Vietnamese]
 *
 * @package language
-* @version $Id: mcp.php,v 1.33 2007/05/26 16:50:00 nedka Exp $
+* @version $Id: mcp.php,v 1.35 2007/06/13 15:35:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -228,11 +228,11 @@ $lang = array_merge($lang, array(
 	'NO_POST_SELECTED'				=> 'Bạn phải chọn ít nhất một bài viết để thực hiện yêu cầu này.',
 	'NO_REASON_DISAPPROVAL'			=> 'Hãy đưa ra một nguyên nhân thích hợp về việc từ chối.',	
 	'NO_REPORT'						=> 'Không có báo cáo nào được tìm thấy.',
-	'NO_REPORTS'					=> 'Không có báo cáo nào',
+	'NO_REPORTS'					=> 'Không có báo cáo nào được tìm thấy.',
 	'NO_REPORT_SELECTED'			=> 'Bạn phải chọn ít nhất một báo cáo để thực hiện yêu cầu này.',
 	'NO_TOPIC_ICON'					=> 'Không dùng biểu tượng',
 	'NO_TOPIC_SELECTED'				=> 'Bạn phải chọn ít nhất một chủ đề để thực hiện yêu cầu này.',
-	'NO_TOPICS_QUEUE'				=> 'Không có chủ đề nào',
+	'NO_TOPICS_QUEUE'				=> 'Không có chủ đề nào chờ được chấp nhận.',
 
 	'ONLY_TOPIC'		=> 'Chỉ trong chủ đề “%s”',	
 	'OTHER_USERS'		=> 'Những thành viên khác gửi bài từ địa chỉ IP này',
@@ -336,7 +336,7 @@ $lang = array_merge($lang, array(
 	'UNAPPROVED_POST_TOTAL'			=> 'Chỉ có <strong>1</strong> bài viết đang chờ đợi được chấp nhận.',
 	'UNLOCK'						=> 'Mở khoá',
 	'UNLOCK_POST'					=> 'Mở khoá bài viết',
-	'UNLOCK_POST_EXPLAIN'			=> 'Cho phép sửa bài viết.',
+	'UNLOCK_POST_EXPLAIN'			=> 'Cho phép sửa bài viết',
 	'UNLOCK_POST_POST'				=> 'Mở khoá bài viết này',
 	'UNLOCK_POST_POST_CONFIRM'		=> 'Bạn có chắc chắn muốn mở khoá bài viết này?',
 	'UNLOCK_POST_POSTS'				=> 'Mở khoá những bài viết này',
@@ -370,9 +370,9 @@ $lang = array_merge($lang, array(
 		),
 		'DESCRIPTION' => array(
 			'WAREZ'		=> 'Bài viết có chứa các liên kết liên quan đến những phần mềm sao chép trái pháp luật.',
-			'SPAM'		=> 'Bài viết chọn báo cáo chỉ nhằm mục đích quảng cáo cho một website hay các sản phẩm khác.',
-			'OFF_TOPIC'	=> 'Bài viết chọn báo cáo không phù hợp.',
-			'OTHER'		=> 'Bài viết chọn báo cáo không phải vì các nguyên nhân đã liệt kê ở trên, bạn hãy tự nhập vào phần giới thiệu.',
+			'SPAM'		=> 'Bài viết chỉ nhằm mục đích quảng cáo cho một website hay các sản phẩm khác.',
+			'OFF_TOPIC'	=> 'Bài viết có nội dung không phù hợp.',
+			'OTHER'		=> 'Bài viết đã báo cáo không phải vì các nguyên nhân đã liệt kê ở trên, bạn hãy tự nhập vào phần giới thiệu.',
 		)
 	),
 ));

@@ -4,7 +4,7 @@
 * acp_groups [Vietnamese]
 *
 * @package language
-* @version $Id: groups.php,v 1.21 2007/05/26 03:41:00 nedka Exp $
+* @version $Id: groups.php,v 1.22 2007/06/05 15:38:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -51,6 +51,7 @@ $lang = array_merge($lang, array(
 
 	'GROUPS_NO_MEMBERS'				=> 'Nhóm này chưa có thành viên',
 	'GROUPS_NO_MODS'				=> 'Bạn chưa xác định người lãnh đạo cho nhóm',
+
 	'GROUP_APPROVE'					=> 'Chấp nhận thành viên',
 	'GROUP_APPROVED'				=> 'Thành viên được chấp nhận',
 	'GROUP_AVATAR'					=> 'Hình đại diện của nhóm',
@@ -58,6 +59,8 @@ $lang = array_merge($lang, array(
 	'GROUP_CLOSED'					=> 'Nhóm cố định',
 	'GROUP_COLOR'					=> 'Màu nhóm',
 	'GROUP_COLOR_EXPLAIN'			=> 'Xác định màu phân biệt cho tên thành viên của các thành viên trong nhóm, để trống để sử dụng màu mặc định dành cho thành viên.',
+	'GROUP_CONFIRM_ADD_USER'		=> 'Bạn có chắc chắn muốn thêm thành viên “%1$s” vào nhóm này?',
+	'GROUP_CONFIRM_ADD_USERS'		=> 'Bạn có chắc chắn muốn thêm những thành viên “%1$s” vào nhóm này?',
 	'GROUP_CREATED'					=> 'Nhóm đã được tạo thành công.',
 	'GROUP_DEFAULT'					=> 'Chọn làm nhóm mặc định của thành viên',
 	'GROUP_DEFS_UPDATED'			=> 'Nhóm mặc định thiết lập cho tất cả thành viên đã chọn.',
@@ -100,6 +103,7 @@ $lang = array_merge($lang, array(
 	'GROUP_TYPE'					=> 'Loại nhóm',
 	'GROUP_TYPE_EXPLAIN'			=> 'Chọn loại nhóm cho phép các thành viên tham gia vào nhóm hay xem thông tin về nhóm.',
 	'GROUP_UPDATED'					=> 'Thiết lập của nhóm đã được cập nhật thành công.',
+
 	'GROUP_USERS_ADDED'				=> 'Thành viên mới đã được thêm vào nhóm thành công.',
 	'GROUP_USERS_EXIST'				=> 'Thành viên bạn vừa chọn đã là thành viên của nhóm.',
 	'GROUP_USERS_REMOVE'			=> 'Thành viên đã được gỡ bỏ khỏi nhóm và những thiết lập mặc định đã được chọn thành công.',

@@ -4,7 +4,7 @@
 * acp_board [Vietnamese]
 *
 * @package language
-* @version $Id: board.php,v 1.47 2007/05/26 12:51:00 nedka Exp $
+* @version $Id: board.php,v 1.54 2007/06/10 15:03:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -55,9 +55,9 @@ $lang = array_merge($lang, array(
 	'OVERRIDE_STYLE_EXPLAIN'		=> 'Tuỳ chọn thay thế toàn bộ những giao diện đã được các thành viên lựa chọn bằng giao diện mặc định duy nhất của hệ thống.',
 	'SITE_DESC'						=> 'Giới thiệu về website',
 	'SITE_NAME'						=> 'Tên website',
-	'SYSTEM_DST'					=> 'Bật chế độ giờ mùa hè/<abbr title="Giờ mùa hè (Daylight Saving Time)">DST</abbr>',
+	'SYSTEM_DST'					=> 'Bật chế độ giờ mùa hè/DST (Daylight Saving Time)',
 	'SYSTEM_TIMEZONE'				=> 'Múi giờ hệ thống',
-	'WARNINGS_EXPIRE'				=> 'Cảnh báo trong vòng',
+	'WARNINGS_EXPIRE'				=> 'Cảnh cáo trong vòng',
 	'WARNINGS_EXPIRE_EXPLAIN'		=> 'Số ngày trải qua trước khi một cảnh cáo tự động hết hiệu lực từ bản ghi của một thành viên.',
 ));
 
@@ -113,6 +113,7 @@ $lang = array_merge($lang, array(
 
 	'ALLOW_BBCODE_PM'			=> 'Cho phép sử dụng BBCode trong tin nhắn',
 	'ALLOW_FLASH_PM'			=> 'Cho phép sử dụng thẻ BBCode <code>[FLASH]</code> trong tin nhắn',
+	'ALLOW_FLASH_PM_EXPLAIN'	=> 'Lưu ý rằng việc cho phép chèn tập tin Flash vào tin nhắn, nếu bạn bật tùy chọn, cũng còn tùy thuộc vào thiết lập cấp phép của thành viên.',
 	'ALLOW_FORWARD_PM'			=> 'Cho phép chuyển tiếp tin nhắn',
 	'ALLOW_IMG_PM'				=> 'Cho phép sử dụng thẻ BBCode <code>[IMG]</code> trong tin nhắn',
 	'ALLOW_MASS_PM'				=> 'Cho phép gửi tin nhắn đến nhiều thành viên và nhóm',
@@ -137,6 +138,8 @@ $lang = array_merge($lang, array(
 	'ACP_POST_SETTINGS_EXPLAIN'			=> 'Với công cụ này, bạn có thể thay đổi những thiết lập mặc định đối với chức năng gửi bài viết trong hệ thống.',
 	'ALLOW_POST_LINKS'					=> 'Cho phép sử dụng liên kết trong bài viết/tin nhắn',
 	'ALLOW_POST_LINKS_EXPLAIN'			=> 'Nếu bạn vô hiệu tùy chọn này, thẻ BBCode <code>[URL]</code> và các địa chỉ URL khác trong bài viết/tin nhắn sẽ không được hiển thị như liên kết.',
+	'ALLOW_POST_FLASH'					=> 'Cho phép sử dụng thẻ BBCode <code>[FLASH]</code> trong bài viết',
+	'ALLOW_POST_FLASH_EXPLAIN'			=> 'Nếu bạn vô hiệu tùy chọn này, thẻ BBCode <code>[FLASH]</code> sẽ bị vô hiệu trong các bài viết. Mặc khác, những thiết lập cấp phép cũng quyết định việc thành viên có thể sử dụng được thẻ BBCode <code>[FLASH]</code> hay không.',
 
 	'BUMP_INTERVAL'					=> 'Thời gian giữa hai lần đẩy chủ đề lên',
 	'BUMP_INTERVAL_EXPLAIN'			=> 'Số phút, số giờ hoặc số ngày giữa thời gian bài viết mới nhất được gửi đến chủ đề và việc sử dụng chức năng đẩy chủ đề lên này.',
@@ -192,10 +195,10 @@ $lang = array_merge($lang, array(
 
 	'ACC_ACTIVATION'				=> 'Kích hoạt tài khoản',
 	'ACC_ACTIVATION_EXPLAIN'		=> 'Tuỳ chọn này cho phép bạn quyết định cách thức kích hoạt tài khoản thành viên khi đăng ký mới. Bạn cũng có thể cho ngưng đăng ký thành viên mới với tuỳ chọn này.',
-	'ACC_ADMIN'						=> 'Quản trị viên',
+	'ACC_ADMIN'						=> 'Bởi quản trị viên',
 	'ACC_DISABLE'					=> 'Ngưng đăng ký thành viên mới',
 	'ACC_NONE'						=> 'Không cần',
-	'ACC_USER'						=> 'Thành viên',
+	'ACC_USER'						=> 'Bởi thành viên',
 //	'ACC_USER_ADMIN'				=> 'Thành viên + quản trị viên',
 	'ALLOW_EMAIL_REUSE'				=> 'Cho phép sử dụng lại địa chỉ Email',
 	'ALLOW_EMAIL_REUSE_EXPLAIN'		=> 'Tuỳ chọn cho phép những thành viên khác nhau có thể sử dụng cùng một địa chỉ Email giống nhau.',
@@ -204,7 +207,7 @@ $lang = array_merge($lang, array(
 	'COPPA_MAIL'					=> 'Địa chỉ Email dùng cho điều khoản COPPA',
 	'COPPA_MAIL_EXPLAIN'			=> 'Địa chỉ Email dùng để cho cha mẹ hay người bảo hộ của các thành viên trong điều khoản COPPA gửi bản cam kết đến.',
 	'ENABLE_COPPA'					=> 'Bật điều khoản COPPA',
-	'ENABLE_COPPA_EXPLAIN'			=> 'Tuỳ chọn này yêu cầu các thành viên từ 13 tuổi trở xuống phải cam kết với điều khoản U.S. COPPA khi tham gia vào website. Nếu bạn vô hiệu điều khoản này thì các nhóm thành viên COPPA sẽ không còn được hiển thị nữa.',
+	'ENABLE_COPPA_EXPLAIN'			=> 'Tuỳ chọn này yêu cầu các thành viên từ 13 tuổi trở xuống phải cam kết với điều khoản U.S. COPPA. Nếu bạn vô hiệu điều khoản này thì các nhóm thành viên COPPA sẽ không còn được hiển thị nữa.',
 	'MAX_CHARS'						=> 'Tối đa',
 	'MIN_CHARS'						=> 'Tối thiểu',
 	'NO_AUTH_PLUGIN'				=> 'Không có phương pháp xác thực thích hợp nào được tìm thấy.',
@@ -351,10 +354,10 @@ $lang = array_merge($lang, array(
 	'ACP_SECURITY_SETTINGS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thay đổi những thiết lập liên quan đến session và đăng nhập trong hệ thống.',
 
 	'ALL'							=> 'Tất cả',
-	'ALLOW_AUTOLOGIN'				=> 'Cho phép đăng nhập tự động', 
-	'ALLOW_AUTOLOGIN_EXPLAIN'		=> 'Tuỳ chọn cho phép thành viên có thể đăng nhập tự động vào hệ thống khi họ ghé thăm website.', 
-	'AUTOLOGIN_LENGTH'				=> 'Số ngày hết hạn khoá đăng nhập tự động', 
-	'AUTOLOGIN_LENGTH_EXPLAIN'		=> 'Số ngày kể từ lần ghé thăm trước của thành viên, khoá đăng nhập tự động sẽ hết hạn. Nhập vào số <strong>0</strong> để vô hiệu chức năng này.', 
+	'ALLOW_AUTOLOGIN'				=> 'Cho phép đăng nhập tự động',
+	'ALLOW_AUTOLOGIN_EXPLAIN'		=> 'Tuỳ chọn cho phép thành viên có thể đăng nhập tự động vào hệ thống khi họ ghé thăm website.',
+	'AUTOLOGIN_LENGTH'				=> 'Số ngày hết hạn khoá đăng nhập tự động',
+	'AUTOLOGIN_LENGTH_EXPLAIN'		=> 'Số ngày kể từ lần ghé thăm trước của thành viên, khoá đăng nhập tự động sẽ hết hạn. Nhập vào số <strong>0</strong> để vô hiệu chức năng này.',
 	'BROWSER_VALID'					=> 'Kiểm tra trình duyệt',
 	'BROWSER_VALID_EXPLAIN'			=> 'Bật chế độ kiểm tra trình duyệt cho mỗi session để tăng cường khả năng bảo mật.',
 	'CHECK_DNSBL'					=> 'Kiểm tra lại địa chỉ IP với danh sách các địa chỉ đen DNS',
@@ -423,32 +426,24 @@ $lang = array_merge($lang, array(
 
 // Jabber settings
 $lang = array_merge($lang, array(
-	'ACP_JABBER_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lý thiết lập và bật tuỳ chọn sử dụng máy chủ Jabber để gửi tin nhắn nhanh và thông báo của website. Jabber là một giao thức mã nguồn mở và bất kỳ ai cũng có thể sử dụng miễn phí. Một vài máy chủ Jabber đính kèm cả cổng truy xuất và dịch vụ chuyển tin cho phép bạn liên hệ với các thành viên trên các hệ thống mạng khác. Không phải tất cả các máy chủ đều có dịch vụ chuyển tin và những thay đổi trong giao thức kết nối có thể ngăn cản việc gửi tin nhắn. Lưu ý rằng việc sử dụng máy chủ Jabber chỉ mất vài giây để cập nhật thông tin về tài khoản Jabber của bạn, vì thế bạn đừng ngừng nạp trang cho đến khi hoàn tất!',
+	'ACP_JABBER_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lý thiết lập và bật tuỳ chọn sử dụng máy chủ Jabber để gửi tin nhắn nhanh và thông báo của website. Jabber là một giao thức mã nguồn mở và bất kỳ ai cũng có thể sử dụng miễn phí. Một vài máy chủ Jabber đính kèm cả cổng truy xuất và dịch vụ chuyển tin cho phép bạn liên hệ với các thành viên trên các hệ thống mạng khác. Không phải tất cả các máy chủ đều có dịch vụ chuyển tin và những thay đổi trong giao thức kết nối có thể ngăn cản việc gửi tin nhắn. Hãy chắc chắn rằng bạn nhập thông tin về tài khoản đã được đăng ký. Hệ thống phpBB sẽ sử dụng những thông tin mà bạn cung cấp này tại đây.',
 
-	'ERR_JAB_AUTH'			=> 'Không thể xác thực trên máy chủ Jabber.',
-	'ERR_JAB_CONNECT'		=> 'Không thể kết nối đến máy chủ Jabber.',
-	'ERR_JAB_PASSCHG'		=> 'Không thể thay đổi mật khẩu tài khoản Jabber.',
-	'ERR_JAB_PASSFAIL'		=> 'Mật khẩu tài khoản Jabber đã cập nhật thất bại, %s.',
-	'ERR_JAB_REGISTER'		=> 'Có một lỗi xảy ra trong khi đăng ký tài khoản Jabber này, %s.',
-	'ERR_JAB_USERNAME'		=> 'Tên tài khoản Jabber bạn vừa chọn đã được sử dụng, hãy chọn một tên khác.',
-
-	'JAB_CHANGED'				=> 'Tài khoản Jabber đã được thay đổi thành công.',
+	'ERR_JAB_AUTH'				=> 'Không thể xác thực trên máy chủ Jabber.',
+	'ERR_JAB_CONNECT'			=> 'Không thể kết nối đến máy chủ Jabber.',
 	'JAB_ENABLE'				=> 'Sử dụng tài khoản Jabber',
 	'JAB_ENABLE_EXPLAIN'		=> 'Tuỳ chọn cho phép nhắn tin và thông báo bằng máy chủ Jabber.',
 	'JAB_PACKAGE_SIZE'			=> 'Số lượng tin nhắn trong gói Jabber',
 	'JAB_PACKAGE_SIZE_EXPLAIN'	=> 'Số lượng tin nhắn được gửi đi trong một gói Jabber. Nếu bạn nhập vào số <strong>0</strong>, tin nhắn sẽ được gửi đi ngay lập tức và không phải chờ đợi để được gửi.',
 	'JAB_PASSWORD'				=> 'Mật khẩu đăng nhập tài khoản Jabber',
-	'JAB_PASS_CHANGED'			=> 'Mật khẩu tài khoản Jabber đã được thay đổi thành công.',
 	'JAB_PORT'					=> 'Cổng máy chủ Jabber',
 	'JAB_PORT_EXPLAIN'			=> 'Để trống mục này nếu như bạn chắc chắn máy chủ này không chạy trên cổng <strong>5222</strong>.',
-	'JAB_REGISTERED'			=> 'Tài khoản Jabber mới đã được đăng ký thành công.',
-	'JAB_RESOURCE'				=> 'Tài nguyên Jabber',
-	'JAB_RESOURCE_EXPLAIN'		=> 'Tài nguyên định vị cho kết nối đặc biệt này, ví dụ như <strong>board, home…</strong>',
 	'JAB_SERVER'				=> 'Địa chỉ máy chủ Jabber',
 	'JAB_SERVER_EXPLAIN'		=> 'Ghé thăm %sjabber.org%s để xem danh sách các máy chủ hiện có.',
 	'JAB_SETTINGS_CHANGED'		=> 'Thiết lập Jabber đã được thay đổi thành công.',
+	'JAB_USE_SSL'				=> 'Sử dụng SSL để kết nối',
+	'JAB_USE_SSL_EXPLAIN'		=> 'Nếu bạn bật tùy chọn này, một kết nối an toàn sẽ được cố gắng thiết lập. Cổng máy chủ Jabber sẽ được chỉnh sửa thành <strong>5223</strong> nếu cổng <strong>5222</strong> được chỉ định.',
 	'JAB_USERNAME'				=> 'Tên đăng nhập tài khoản Jabber',
-	'JAB_USERNAME_EXPLAIN'		=> 'Nếu tài khoản Jabber này chưa được đăng ký, tài khoản mới này sẽ được tạo nếu có thể.',
+	'JAB_USERNAME_EXPLAIN'		=> 'Xác định một tài khoản đã đăng ký. Tên đăng nhập sẽ không được kiểm tra hợp lệ.',
 ));
 
 ?>

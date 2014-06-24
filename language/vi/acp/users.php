@@ -4,7 +4,7 @@
 * acp_users [Vietnamese]
 *
 * @package language
-* @version $Id: users.php,v 1.13 2007/05/26 01:36:00 nedka Exp $
+* @version $Id: users.php,v 1.15 2007/06/25 22:31:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -57,7 +57,7 @@ $lang = array_merge($lang, array(
 	'CANNOT_FORCE_REACT_YOURSELF'	=> 'Bạn không thể yêu cầu kích hoạt lại tài khoản của chính mình.',
 	'CANNOT_REMOVE_ANONYMOUS'		=> 'Bạn không thể gỡ bỏ tài khoản của khách.',
 	'CANNOT_REMOVE_YOURSELF'		=> 'Bạn không thể gỡ bỏ tài khoản thành viên của chính mình.',
-	'CANNOT_SET_FOUNDER_BOT'		=> 'Bạn không thể tăng cấp những thành viên bị cấm trở thành người sáng lập.',
+	'CANNOT_SET_FOUNDER_IGNORED'	=> 'Bạn không thể tăng cấp những thành viên bị cấm trở thành người sáng lập.',
 	'CANNOT_SET_FOUNDER_INACTIVE'	=> 'Bạn cần phải kích hoạt tài khoản của thành viên trước khi bạn tăng cấp cho thành viên này trở thành người sáng lập và chỉ có những thành viên đã kích hoạt mới có thể tăng cấp được.',
 	'CONFIRM_EMAIL_EXPLAIN'			=> 'Bạn chỉ cần xác nhận lại địa chỉ Email nếu bạn muốn thay đổi địa chỉ Email của thành viên.',
 
@@ -121,6 +121,7 @@ $lang = array_merge($lang, array(
 	'USER_GROUP_NORMAL'				=> 'Loại nhóm bình thường, là thành viên của nhóm',
 	'USER_GROUP_PENDING'			=> 'Loại nhóm đang trong chế độ chờ quyết định',
 	'USER_GROUP_SPECIAL'			=> 'Loại nhóm đặc biệt, là thành viên của nhóm',
+	'USER_NO_ATTACHMENTS'			=> 'Chưa đính kèm bất kỳ tập tin nào.',
 	'USER_OVERVIEW_UPDATED'			=> 'Thông tin chi tiết về thành viên đã được cập nhật thành công.',
 	'USER_POSTS_DELETED'			=> 'Đã gỡ bỏ thành công tất cả bài viết của thành viên này',
 	'USER_POSTS_MOVED'				=> 'Đã di chuyển thành công tất cả bài viết của thành viên này đến chuyên mục đã chọn',

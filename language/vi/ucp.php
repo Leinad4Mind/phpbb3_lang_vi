@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version $Id: ucp.php,v 1.68 2007/05/26 15:48:00 nedka Exp $
+* @version $Id: ucp.php,v 1.69 2007/06/15 09:15:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -220,6 +220,7 @@ $lang = array_merge($lang, array(
 	'GLOBAL_ANNOUNCEMENT'		=> 'Thông báo chung',
 
 	'HIDE_ONLINE'				=> 'Luôn ẩn trạng thái trực tuyến của tôi',
+	'HIDE_ONLINE_EXPLAIN'		=> 'Thay đổi thiết lập này thành “Không đồng ý” sẽ không có hiệu lực cho đến lần ghé thăm kế tiếp của bạn.',
 	'HOLD_NEW_MESSAGES'			=> 'Không nhận thêm những tin nhắn mới (Những tin nhắn mới sẽ quay lại khi nào dung lượng đủ cho phép)',
 	'HOLD_NEW_MESSAGES_SHORT'	=> 'Những tin nhắn mới sẽ quay lại',
 

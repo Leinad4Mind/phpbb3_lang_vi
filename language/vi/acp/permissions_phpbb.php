@@ -4,7 +4,7 @@
 * acp_permissions (phpBB Permission Set) [Vietnamese]
 *
 * @package language
-* @version $Id: permissions_phpbb.php,v 1.18 2007/06/08 13:37:00 nedka Exp $
+* @version $Id: permissions_phpbb.php,v 1.20 2007/06/10 15:04:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -44,7 +44,7 @@ if (empty($lang) || !is_array($lang))
 *	MODDERS PLEASE NOTE
 *	
 *	You are able to put your permission sets into a seperate file too by
-*	prefixing the new file with permissions_ and putting it into the acp 
+*	prefixing the new file with permissions_ and putting it into the ACP
 *	language folder.
 *
 *	An example of how the file could look like:
@@ -142,7 +142,7 @@ $lang = array_merge($lang, array(
 	'acl_f_read'		=> array('lang' => 'Có thể xem chuyên mục', 'cat' => 'post'),
 	'acl_f_post'		=> array('lang' => 'Có thể tạo chủ đề mới', 'cat' => 'post'),
 	'acl_f_reply'		=> array('lang' => 'Có thể trả lời bài viết', 'cat' => 'post'),
-	'acl_f_icons'		=> array('lang' => 'Có thể sử dụng biểu tượng bài viết', 'cat' => 'post'),
+	'acl_f_icons'		=> array('lang' => 'Có thể sử dụng biểu tượng cho chủ đề/bài viết', 'cat' => 'post'),
 	'acl_f_announce'	=> array('lang' => 'Có thể tạo thông báo', 'cat' => 'post'),
 	'acl_f_sticky'		=> array('lang' => 'Có thể tạo chú ý', 'cat' => 'post'),
 
@@ -203,7 +203,7 @@ $lang = array_merge($lang, array(
 	'acl_a_forumdel'	=> array('lang' => 'Có thể xoá chuyên mục', 'cat' => 'forums'),
 	'acl_a_prune'		=> array('lang' => 'Có thể dọn dẹp chuyên mục', 'cat' => 'forums'),
 
-	'acl_a_icons'		=> array('lang' => 'Có thể thay đổi biểu tượng bài viết và biểu tượng vui', 'cat' => 'posting'),
+	'acl_a_icons'		=> array('lang' => 'Có thể thay đổi biểu tượng của chủ đề/bài viết và biểu tượng vui', 'cat' => 'posting'),
 	'acl_a_words'		=> array('lang' => 'Có thể thay đổi từ kiểm duyệt', 'cat' => 'posting'),
 	'acl_a_bbcode'		=> array('lang' => 'Có thể xác định thẻ BBCode', 'cat' => 'posting'),
 	'acl_a_attach'		=> array('lang' => 'Có thể thay đổi thiết lập tập tin đính kèm', 'cat' => 'posting'),

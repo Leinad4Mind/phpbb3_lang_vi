@@ -4,7 +4,7 @@
 * acp common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php,v 1.64 2007/05/26 12:06:00 nedka Exp $
+* @version $Id: common.php,v 1.67 2007/06/13 15:41:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -477,7 +477,7 @@ $lang = array_merge($lang, array(
 	'LOG_REPORT_CLOSED'			=> '<strong>Đã kết thúc báo cáo</strong><br />» %s',
 	'LOG_REPORT_DELETED'		=> '<strong>Đã xóa báo cáo</strong><br />» %s',
 	'LOG_SPLIT_DESTINATION'		=> '<strong>Đã di chuyển các bài viết được chia nhỏ</strong><br />» đến %s',
-	'LOG_SPLIT_SOURCE'			=> '<strong>Đã chia nhỏ các bài viết</strong><br />» từ %s',
+	'LOG_SPLIT_SOURCE'			=> '<strong>Các bài viết được chia nhỏ</strong><br />» từ %s',
 
 	'LOG_TOPIC_DELETED'			=> '<strong>Đã xoá chủ đề</strong><br />» %s',
 	'LOG_TOPIC_APPROVED'		=> '<strong>Đã chấp nhận chủ đề</strong><br />» %s',
@@ -657,7 +657,7 @@ $lang = array_merge($lang, array(
 	'LOG_USER_DEL_AVATAR_USER'	=> '<strong>Hình đại diện của thành viên đã được gỡ bỏ</strong>',
 	'LOG_USER_DEL_SIG_USER'		=> '<strong>Chữ ký cá nhân của thành viên đã được gỡ bỏ</strong>',
 	'LOG_USER_FEEDBACK'			=> '<strong>Đã thêm phản hồi thành viên</strong><br />» %s',
-	'LOG_USER_GENERAL'			=> '%s',
+	'LOG_USER_GENERAL'			=> '<strong>Đã thêm vào mục:</strong><br />» %s',
 	'LOG_USER_INACTIVE_USER'	=> '<strong>Tài khoản thành viên đã ngưng kích hoạt</strong>',
 	'LOG_USER_LOCK'				=> '<strong>Thành viên đã khoá chủ đề của mình</strong><br />» %s',
 	'LOG_USER_MOVE_POSTS_USER'	=> '<strong>Đã di chuyển tất cả bài viết đến chuyên mục</strong><br />» %s',

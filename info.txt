@@ -20,11 +20,11 @@ _ _ _ _ _    |  |_ _ _   _ _ _ _ _     |  |__|  /  |  |__|  /                   
 @ phpBBVietNam Group [ The Vietnamize Team ]
 ---[ Information ]--------------------------------------------------------------
 Language Pack Name: Vietnamese Language Pack for phpBB3
-Language Pack Version: 3.0.0 RC1-b
+Language Pack Version: 3.0.0 RC2-a
 Encoding: Unicode (UTF-8)
-Release Date: 2007/06/08
+Release Date: 2007/06/25
 ---[ Description ]--------------------------------------------------------------
-Vietnamese Language Pack for phpBB 3.0.RC1 (Olympus)
+Vietnamese Language Pack for phpBB 3.0.RC2 (Olympus)
 with following parts:
 + Main translation
 + ACP translation
@@ -35,8 +35,12 @@ with following parts:
 + Fixed CSS file with Unicode fonts for subSilver2 style
 + GNU-GPL translation
 ---[ Translators in this language pack ]----------------------------------------
-# nedka (Nguyen Dang Khoa) <admin@wonasti.com> http://www.wonasti.com
+# nedka (Nguyen Dang Khoa) <admin@vinabb.com> http://www.vinabb.com
 ---[ History ]------------------------------------------------------------------
+# 2007/06/25: Version 3.0.0 RC2-a
+Updated code changes in language files from phpBB 3.0.RC1 to phpBB 3.0.RC2
+Supported for phpBB 3.0.RC2
+
 # 2007/06/08: Version 3.0.0 RC1-b
 Fixed a important translation error.
 Added adm/style/admin.css file is fixed with Unicode fonts (for support Vietnamese).
@@ -44,11 +48,11 @@ Added styles/prosilver/theme/common.css, content.css, forms.css, links.css, prin
 Added styles/subsilver2/theme/stylesheet.css file is fixed with Unicode fonts (for support Vietnamese).
 
 # 2007/05/27: Version 3.0.0 RC1-a
-Updated code changes in language files from phpBB 3.0 Beta5 to phpBB 3.0 RC1
+Updated code changes in language files from phpBB 3.0 Beta5 to phpBB 3.0.RC1
 Changed ISO code: "vn" -> "vi" (ISO 639-1)
 Added imageset.cfg file in "styles/subsilver2/imageset/vn" directory.
 Added "Vietnamese Imagesets Pack for proSilver". proSilver style was supported.
-Supported for phpBB 3.0.0 RC1
+Supported for phpBB 3.0.RC1
 
 # 2007/01/30: Version 3.0.0 Beta5-a
 Updated code changes in language from phpBB 3.0 Beta4 to phpBB 3.0 Beta5
@@ -93,5 +97,5 @@ Thanks you to use this language pack of mine ( ^ _ ^ )
 ---[ License ]------------------------------------------------------------------
 http://opensource.org/licenses/gpl-license.php GNU General Public License v2
 ---[ About ]--------------------------------------------------------------------
-Homepage: http://www.wonasti.com
-Email: phpbbivn@wonasti.com
+Homepage: http://www.vinabb.com
+Email: phpbbivn@vinabb.com

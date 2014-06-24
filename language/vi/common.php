@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php,v 1.78 2007/05/25 20:45:00 nedka Exp $
+* @version $Id: common.php,v 1.82 2007/06/25 22:32:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -40,14 +40,14 @@ if (empty($lang) || !is_array($lang))
 // equally where a string contains only two placeholders which are used to wrap text
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 //
-// Some characters you may want to copy&paste: 
+// Some characters you may want to copy&paste:
 // ’ » “ ” …
 //
 
 $lang = array_merge($lang, array(
-	'TRANSLATION_INFO'	=> 'Vietnamese translation by <a href="http://www.wonasti.com/">nedka</a>',
+	'TRANSLATION_INFO'	=> 'Vietnamese translation by <a href="http://www.vinabb.com/">nedka</a>',
 	'DIRECTION'			=> 'ltr',
-	'DATE_FORMAT'		=> '|d M Y|',	// 01 Jan 2007 (with Relative days enabled)
+	'DATE_FORMAT'		=> '|d M Y|', // 01 Jan 2007 (with Relative days enabled)
 	'USER_LANG'			=> 'vi',
 
 	'1_DAY'			=> '1 ngày',
@@ -148,8 +148,8 @@ $lang = array_merge($lang, array(
 	'DISABLED'				=> 'Vô hiệu',
 	'DISPLAY'				=> 'Hiển thị',
 	'DISPLAY_GUESTS'		=> 'Hiển thị khách',
-	'DISPLAY_MESSAGES'		=> 'Hiển thị những tin nhắn trong cách đây',
-	'DISPLAY_POSTS'			=> 'Hiển thị những bài viết trong cách đây',
+	'DISPLAY_MESSAGES'		=> 'Hiển thị những tin nhắn cách đây',
+	'DISPLAY_POSTS'			=> 'Hiển thị những bài viết cách đây',
 	'DISPLAY_TOPICS'		=> 'Hiển thị những chủ đề cách đây',
 	'DOWNLOADED'			=> 'Số lượt tải về',
 	'DOWNLOADING_FILE'		=> 'Đang tải về tập tin',
@@ -301,7 +301,7 @@ $lang = array_merge($lang, array(
 	'LOGIN_ERROR_PASSWORD_CONVERT'		=> 'Hệ thống mới không thể chuyển đổi mật khẩu của bạn trong khi cập nhật từ hệ thống cũ. Bạn hãy vui lòng %syêu cầu một mật khẩu mới%s. Nếu bạn vẫn còn gặp rắc rối này, hãy liên hệ với %sngười quản trị%s.',
 	'LOGIN_ERROR_USERNAME'				=> 'Bạn đã nhập tên thành viên không chính xác. Hãy vui lòng kiểm tra lại tên thành viên của bạn. Nếu bạn vẫn còn gặp rắc rối này, hãy liên hệ với %sngười quản trị%s.',
 	'LOGIN_FORUM'						=> 'Để xem hoặc gửi bài trong chuyên mục này, bạn phải nhập vào mật khẩu.',
-	'LOGIN_INFO'						=> 'Để đăng nhập vào hệ thống, bạn phải có tài khoản thành viên đã đăng ký. Việc đăng ký chỉ tốn mất của bạn vài giây nhưng bù lại bạn có thể sử dụng đầy đủ công cụ và chức năng trong hệ thống dành cho thành viên. Quản trị viên có thể thay đổi quyền hạn của những thành viên đã đăng ký trong hệ thống. Trước khi tiến hành đăng nhập, hãy chắc chắn rằng bạn đã biết rõ về những điều khoản của chúng tôi và những chính sách có liên quan khác. Bạn cũng phải chắc chắn rằng đã đọc kỹ nội quy của từng chuyên mục riêng trong diễn đàn.',
+	'LOGIN_INFO'						=> 'Để đăng nhập vào hệ thống, bạn phải có tài khoản thành viên đã đăng ký. Việc đăng ký chỉ tốn mất của bạn một chút thời gian nhưng bù lại bạn có thể sử dụng đầy đủ công cụ và chức năng trong hệ thống dành cho thành viên. Quản trị viên có thể thay đổi quyền hạn của những thành viên đã đăng ký trong hệ thống. Trước khi tiến hành đăng ký, hãy chắc chắn rằng bạn đã biết rõ về những điều khoản của chúng tôi và những chính sách có liên quan khác. Bạn cũng phải chắc chắn rằng đã đọc kỹ nội quy của từng chuyên mục riêng trong diễn đàn.',
 	'LOGIN_VIEWFORUM'					=> 'Hệ thống yêu cầu bạn phải đăng nhập để xem chuyên mục này.',
 	'LOGIN_EXPLAIN_EDIT'				=> 'Để sửa các bài viết trong chuyên mục này, bạn phải là thành viên đã đăng ký và đã đăng nhập vào hệ thống.',	
 	'LOGOUT'							=> 'Thoát',
@@ -337,7 +337,8 @@ $lang = array_merge($lang, array(
 	'NEW_PMS'					=> 'Bạn có <strong>%d</strong> tin nhắn mới',
 	'NEW_POST'					=> 'Bài viết mới',
 	'NEW_POSTS'					=> 'Bài viết mới',
-	'NEXT'						=> 'Trang kế',
+	'NEXT'						=> 'Trang kế tiếp', // Used in pagination
+	'NEXT_STEP'					=> 'Bước kế tiếp',
 	'NEVER'						=> 'Không bao giờ',	
 	'NO'						=> 'Không đồng ý',
 	'NOT_ALLOWED_MANAGE_GROUP'	=> 'Bạn không được phép quản lý nhóm thành viên này.',
@@ -422,7 +423,8 @@ $lang = array_merge($lang, array(
 	'POST_TOPIC'				=> 'Tạo chủ đề mới',
 	'POST_UNAPPROVED'			=> 'Bài viết này đang chờ đợi được chấp nhận',
 	'PREVIEW'					=> 'Xem trước',
-	'PREVIOUS'					=> 'Trang trước',
+	'PREVIOUS'					=> 'Trang vừa xem', // Used in pagination
+	'PREVIOUS_STEP'				=> 'Bước vừa hoàn tất',
 	'PRIVACY'					=> 'Chế độ riêng tư cá nhân',
 	'PRIVATE_MESSAGE'			=> 'Tin nhắn',
 	'PRIVATE_MESSAGES'			=> 'Tin nhắn',
@@ -500,6 +502,7 @@ $lang = array_merge($lang, array(
 	'SELECT_DESTINATION_FORUM'	=> 'Hãy chọn một chuyên mục để tiếp tục',
 	'SELECT_FORUM'				=> 'Chọn một chuyên mục',
 	'SEND_EMAIL'				=> 'Gửi Email',
+	'SEND_EMAIL_USER'			=> 'Gửi Email cho', // Used as: {L_SEND_EMAIL_USER} {USERNAME} -> E-mail UserX
 	'SEND_PRIVATE_MESSAGE'		=> 'Gửi tin nhắn',
 	'SETTINGS'					=> 'Thiết lập',
 	'SIGNATURE'					=> 'Chữ ký cá nhân',

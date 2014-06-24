@@ -4,7 +4,7 @@
 * acp_profile [Vietnamese]
 *
 * @package language
-* @version $Id: profile.php,v 1.18 2007/05/26 02:37:00 nedka Exp $
+* @version $Id: profile.php,v 1.19 2007/06/05 01:28:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -120,7 +120,6 @@ $lang = array_merge($lang, array(
 	'NO_VALUE_OPTION_EXPLAIN'	=> 'Giá trị không được nhập vào. Nếu mục thông tin cá nhân là bắt buộc, thành viên sẽ được thông báo lỗi nếu chọn tuỳ chọn tại đây.',
 	'NUMBERS_ONLY'				=> 'Chỉ sử dụng chữ số (0-9)',
 
-	'PREVIEW_PROFILE_FIELD'		=> 'Xem trước mục thông tin cá nhân',
 	'PROFILE_BASIC_OPTIONS'		=> 'Tuỳ chọn đơn giản',
 	'PROFILE_FIELD_ACTIVATED'	=> 'Mục thông tin cá nhân đã được kích hoạt thành công.',
 	'PROFILE_FIELD_DEACTIVATED'	=> 'Mục thông tin cá nhân đã được ngưng kích hoạt thành công.',
@@ -140,7 +139,7 @@ $lang = array_merge($lang, array(
 	'STEP_1_TITLE_CREATE'			=> 'Thêm vào mục thông tin cá nhân',
 	'STEP_1_TITLE_EDIT'				=> 'Sửa mục thông tin cá nhân',
 	'STEP_2_EXPLAIN_CREATE'			=> 'Với công cụ này, bạn có thể xác định một vài mục tùy chọn thường gặp mà bạn có thể điều chỉnh.',
-	'STEP_2_EXPLAIN_EDIT'			=> 'Với công cụ này, bạn có thể thay đổi một vài mục tùy chọn thường gặp. Ngoài ra, bạn có thể xem trước những mục thông tin cá nhân đã thay đổi giống như khi thành viên nhìn thấy. Hãy kiểm tra kĩ càng cho đến khi bạn cảm thấy hài lòng với mục thông tin cá nhân.<br /><strong>Lưu ý rằng những thay đổi đến mục thông tin cá nhân sẽ không ảnh hưởng đến những mục thông tin cá nhân hiện có được nhập vào bởi các thành viên.</strong>',
+	'STEP_2_EXPLAIN_EDIT'			=> 'Với công cụ này, bạn có thể thay đổi một vài mục tùy chọn thường gặp.<br /><strong>Lưu ý rằng những thay đổi đến mục thông tin cá nhân sẽ không ảnh hưởng đến những mục thông tin cá nhân hiện có được nhập vào bởi các thành viên.</strong>',
 	'STEP_2_TITLE_CREATE'			=> 'Tuỳ chọn xác định loại thông tin cá nhân',
 	'STEP_2_TITLE_EDIT'				=> 'Tuỳ chọn xác định loại thông tin cá nhân',
 	'STEP_3_EXPLAIN_CREATE'			=> 'Kể từ khi bạn có nhiều gói ngôn ngữ được cài đặt trong hệ thống, bạn phải điền đầy đủ thông tin cho các mục này trong từng gói ngôn ngữ. Mục thông tin cá nhân sẽ hiển thị với gói ngôn ngữ mặc định được chọn, bạn có thể điền đầy đủ thông tin cho các mục này trong từng gói ngôn ngữ sau nếu muốn.',
@@ -152,7 +151,6 @@ $lang = array_merge($lang, array(
 	'TEXT_DEFAULT_VALUE_EXPLAIN'	=> 'Nhập vào một đoạn văn bản mặc định được hiển thị hay một giá trị mặc định. Bỏ trống phần này nếu bạn muốn hiển thị rỗng mục thông tin này cho thành viên tự điền vào.',
 	'TRANSLATE'						=> 'Phiên dịch',
 
-	'UPDATE_PREVIEW'	=> 'Xem trước cập nhật',
 	'USER_FIELD_NAME'	=> 'Tên mục thông tin cá nhân hiển thị cho thành viên',
 
 	'VISIBILITY_OPTION'	=> 'Tuỳ chọn hiển thị',
