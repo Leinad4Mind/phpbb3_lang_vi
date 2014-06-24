@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php 139 2011-03-30 09:44:00Z nedka $
+* @version $Id: common.php 141 2011-06-16 08:24:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -203,7 +203,7 @@ $lang = array_merge($lang, array(
 	'FORM_INVALID'			=> 'Mẫu dữ liệu bạn vừa gửi không hợp lệ. Hãy vui lòng thử lại.',
 	'FORUM'					=> 'Chuyên mục',
 	'FORUMS'				=> 'Chuyên mục',
-	'FORUMS_MARKED'			=> 'Tất cả chuyên mục đã được đánh dấu xem rồi.',
+	'FORUMS_MARKED'			=> 'Các chuyên mục bạn chọn đã được đánh dấu xem rồi.',
 	'FORUM_CAT'				=> 'Diễn đàn',
 	'FORUM_INDEX'			=> 'Trang chủ',
 	'FORUM_LINK'			=> 'Chuyên mục liên kết',
@@ -334,14 +334,15 @@ $lang = array_merge($lang, array(
 	
 	'MARK'					=> 'Chọn',
 	'MARK_ALL'				=> 'Chọn tất cả',
-	'MARK_FORUMS_READ'		=> 'Đánh dấu đã xem tất cả chuyên mục',
+	'MARK_FORUMS_READ'		=> 'Đánh dấu đã xem các chuyên mục',
+	'MARK_SUBFORUMS_READ'	=> 'Đánh dấu đã xem các chuyên mục con',
 	'MB'					=> 'MB',
 	'MIB'					=> 'MiB',
 	'MCP'					=> 'Bảng điều hành viên',
 	'MEMBERLIST'			=> 'Thành viên',
 	'MEMBERLIST_EXPLAIN'	=> 'Xem toàn bộ danh sách thành viên',
 	'MERGE'					=> 'Nhập chung',
-	'MERGE_POSTS'			=> 'Nhập chung bài viết',
+	'MERGE_POSTS'			=> 'Di chuyển bài viết',
 	'MERGE_TOPIC'			=> 'Nhập chung chủ đề',
 	'MESSAGE'				=> 'Nội dung',
 	'MESSAGES'				=> 'Tin nhắn',
@@ -538,6 +539,7 @@ $lang = array_merge($lang, array(
 	'SEARCH_TOPIC'				=> 'Tìm kiếm trong chủ đề này…',
 	'SEARCH_UNANSWERED'			=> 'Bài viết chưa được trả lời',
 	'SEARCH_UNREAD'				=> 'Bài viết chưa xem',
+	'SEARCH_USER_POSTS'			=> 'Tìm các bài viết của thành viên',
 	'SECONDS'					=> 'Giây',
 	'SELECT'					=> 'Chọn',
 	'SELECT_ALL_CODE'			=> 'Chọn tất cả',

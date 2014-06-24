@@ -4,7 +4,7 @@
 * captcha_recaptcha [Vietnamese]
 *
 * @package language
-* @version $Id: captcha_recaptcha.php 3 2009-11-18 18:37:00Z nedka $
+* @version $Id: captcha_recaptcha.php 4 2011-06-16 08:22:00Z nedka $
 * @copyright (c) 2009 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -50,11 +50,11 @@ $lang = array_merge($lang, array(
 	'RECAPTCHA_EXPLAIN'			=> 'Nhằm ngăn cản các chương trình nhập liệu tự động, bạn hãy vui lòng nhập vào cả hai từ nhìn thấy trong hình vào dòng bên dưới.',
 	'RECAPTCHA_INCORRECT'		=> 'Mã xác nhận vừa nhập không chính xác.',
 	'RECAPTCHA_LANG'			=> 'en',// Nên để 'en' nếu dịch vụ reCaptcha chưa hỗ trợ tiếng Việt
-	'RECAPTCHA_NOT_AVAILABLE'	=> 'Để sử dụng được reCaptcha, bạn phải tạo tài khoản tại trang <a href="http://recaptcha.net">reCaptcha.net</a>.',
+	'RECAPTCHA_NOT_AVAILABLE'	=> 'Để sử dụng được reCaptcha, bạn phải tạo tài khoản tại trang <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
 	'RECAPTCHA_PRIVATE'			=> 'Khóa reCaptcha cá nhân',
-	'RECAPTCHA_PRIVATE_EXPLAIN'	=> 'Khóa sử dụng reCaptcha cá nhân mà bạn được cung cấp. Các khóa này được cung cấp tại trang <a href="http://recaptcha.net">reCaptcha.net</a>.',
+	'RECAPTCHA_PRIVATE_EXPLAIN'	=> 'Khóa sử dụng reCaptcha cá nhân mà bạn được cung cấp. Các khóa này được cung cấp tại trang <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
 	'RECAPTCHA_PUBLIC'			=> 'Khóa reCaptcha công cộng',
-	'RECAPTCHA_PUBLIC_EXPLAIN'	=> 'Khóa sử dụng reCaptcha công cộng mà bạn được cung cấp. Các khóa này được cung cấp tại trang <a href="http://recaptcha.net">reCaptcha.net</a>.',
+	'RECAPTCHA_PUBLIC_EXPLAIN'	=> 'Khóa sử dụng reCaptcha công cộng mà bạn được cung cấp. Các khóa này được cung cấp tại trang <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
 ));
 
 ?>

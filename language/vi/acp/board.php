@@ -4,7 +4,7 @@
 * acp_board [Vietnamese]
 *
 * @package language
-* @version $Id: board.php 96 2011-03-30 11:02:00Z nedka $
+* @version $Id: board.php 99 2011-06-22 07:57:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -217,11 +217,11 @@ $lang = array_merge($lang, array(
 $lang = array_merge($lang, array(
 	'ACP_REGISTER_SETTINGS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thay đổi những thiết lập đăng ký thành viên và thông tin cá nhân của thành viên trong hệ thống.',
 	'ACC_ACTIVATION'					=> 'Kích hoạt tài khoản',
-	'ACC_ACTIVATION_EXPLAIN'			=> 'Tùy chọn này cho phép bạn quyết định cách thức kích hoạt tài khoản thành viên khi đăng ký mới. Bạn cũng có thể cho ngưng đăng ký thành viên mới với tùy chọn này.',
+	'ACC_ACTIVATION_EXPLAIN'			=> 'Tùy chọn này cho phép bạn quyết định cách thức kích hoạt tài khoản thành viên khi đăng ký mới. Bạn cũng có thể cho ngưng đăng ký thành viên mới với tùy chọn này. Chức năng gửi email trong hệ thống phải được bật để có thể kích hoạt tài khoản bởi thành viên hoặc quản trị viên.',
 	'ACC_ADMIN'							=> 'Bởi quản trị viên',
 	'ACC_DISABLE'						=> 'Ngưng đăng ký mới',
-	'ACC_NONE'							=> 'Không cần',
-	'ACC_USER'							=> 'Bởi thành viên',
+	'ACC_NONE'							=> 'Không cần (tham gia ngay)',
+	'ACC_USER'							=> 'Bởi thành viên (xác nhận qua email)',
 //	'ACC_USER_ADMIN'					=> 'Thành viên + quản trị viên',
 	'ALLOW_EMAIL_REUSE'					=> 'Cho phép sử dụng lại địa chỉ email',
 	'ALLOW_EMAIL_REUSE_EXPLAIN'			=> 'Tùy chọn cho phép những thành viên khác nhau có thể sử dụng cùng một địa chỉ email giống nhau.',
@@ -403,7 +403,7 @@ $lang = array_merge($lang, array(
 	'LDAP_NO_EMAIL'					=> 'Thuộc tính của địa chỉ email bạn vừa xác định không tồn tại.',	
 	'LDAP_NO_IDENTITY'				=> 'Không thể tìm khóa định danh đăng nhập cho <strong>%s</strong>.',
 	'LDAP_PASSWORD'					=> 'Mật khẩu LDAP',
-	'LDAP_PASSWORD_EXPLAIN'			=> 'Để trống phần này để sử dụng liên kết ẩn danh. Nếu máy chủ dịch vụ không cho phép truy cập ẩn danh, bạn hãy điền vào mật khẩu cho tài khoản LDAP tương ứng ở trên. Mục này được yêu cầu cho các thư mục máy chủ đang hoạt động.<br /><em><strong>CẢNH BÁO:</strong> Mật khẩu này sẽ được lưu trữ dưới dạng văn bản thuần trong cơ sở dữ liệu, vì thế nó có thể bị xem bởi bất kì ai có quyền truy cập vào cơ sở dữ liệu của bạn hoặc được phép xem trang cấu hình này.</em>',
+	'LDAP_PASSWORD_EXPLAIN'			=> 'Để trống phần này để sử dụng kết nối ẩn danh. Nếu không, bạn hãy điền vào mật khẩu cho tài khoản LDAP ở trên. Mục này được yêu cầu cho các thư mục máy chủ đang hoạt động.<br /><em><strong>CẢNH BÁO:</strong> Mật khẩu này sẽ được lưu trữ dưới dạng văn bản thuần trong cơ sở dữ liệu, vì thế nó có thể bị xem bởi bất kì ai có quyền truy cập vào cơ sở dữ liệu của bạn hoặc được phép xem trang cấu hình này.</em>',
 	'LDAP_PORT'						=> 'Cổng máy chủ LDAP',
 	'LDAP_PORT_EXPLAIN'				=> 'Tùy chọn này cho phép bạn có thể xác định một cổng khác được sử dụng để kết nối đến máy chủ LDAP thay vì dùng cổng mặc định là <strong>389</strong>.',
 	'LDAP_SERVER'					=> 'Địa chỉ máy chủ LDAP',
@@ -471,22 +471,28 @@ $lang = array_merge($lang, array(
 	'FORWARDED_FOR_VALID_EXPLAIN'	=> 'Những phiên đăng nhập này sẽ chỉ được tiếp tục nếu khai báo <var>X_FORWARDED_FOR</var> gửi đi bằng với một phiên đăng nhập đã gửi trong yêu cầu trước đó. Những thiết lập cấm cũng sẽ được kiểm tra lại các địa chỉ IP trong <var>X_FORWARDED_FOR</var>.',
 	'IP_VALID'						=> 'Kiểm tra địa chỉ IP ',
 	'IP_VALID_EXPLAIN'				=> 'Tùy chọn xác định số lượng địa chỉ IP được sử dụng để kiểm tra phiên đăng nhập của thành viên. Chọn <samp>Tất cả</samp> sẽ so sánh toàn bộ địa chỉ IP: <samp>A.B.C</samp> thay cho x.x.x, <samp>A.B</samp> thay cho x.x. Chọn <samp>Không có</samp> để tắt chức năng kiểm tra này. Với những địa chỉ IP dùng IPv6, <samp>A.B.C</samp> sẽ so sánh 4 khối đầu tiên và <samp>A.B</samp> là 3 khối đầu tiên.',
-	'MAX_LOGIN_ATTEMPTS'			=> 'Số lần đăng nhập tối đa cho phép',
-	'MAX_LOGIN_ATTEMPTS_EXPLAIN'	=> 'Số lần tối đa cho phép thành viên đăng nhập vào hệ thống khi đăng nhập thất bại nhiều lần. Nếu vượt quá số lần thiết lập này, thành viên sẽ được kiểm tra chống nhập liệu tự động.',
-	'NO_IP_VALIDATION'				=> 'Không',
-	'NO_REF_VALIDATION'				=> 'Không',
-	'PASSWORD_TYPE'					=> 'Độ phức tạp của mật khẩu',
-	'PASSWORD_TYPE_EXPLAIN'			=> 'Tùy chọn xác định mức độ phức tạp yêu cầu đối với mật khẩu của thành viên khi được tạo hay thay đổi, những tùy chọn sau bao gồm cả những tùy chọn trước.',
-	'PASS_TYPE_ALPHA'				=> 'Phải sử dụng chữ số và chữ cái',
-	'PASS_TYPE_ANY'					=> 'Không yêu cầu',
-	'PASS_TYPE_CASE'				=> 'Phải sử dụng hỗn hợp',
-	'PASS_TYPE_SYMBOL'				=> 'Phải sử dụng ký hiệu',
-	'REF_HOST'						=> 'Chỉ kiểm tra máy chủ',
-	'REF_PATH'						=> 'Kiểm tra luôn đường dẫn',
-	'REFERER_VALID'					=> 'Kiểm tra tham chiếu',
-	'REFERER_VALID_EXPLAIN'			=> 'Nếu bật tùy chọn này, tham chiếu của các yêu cầu <var>POST</var> sẽ được kiểm tra lại những thiết lập về máy chủ/đường dẫn. Thiết lập này có thể gây ra rắc rối cho những hệ thống đang sử dụng nhiều tên miền khác nhau hay các phương pháp xác thực bổ sung.',
-	'TPL_ALLOW_PHP'					=> 'Cho phép sử dụng mã PHP trong các tập tin khuôn mẫu',
-	'TPL_ALLOW_PHP_EXPLAIN'			=> 'Nếu bật tùy chọn này, các lệnh <code>PHP</code> và <code>INCLUDEPHP</code> sẽ có thể được sử dụng và biên dịch trong các tập tin khuôn mẫu.',
+	'IP_LOGIN_LIMIT_MAX'			=> 'Maximum number of login attempts per IP address',
+	'IP_LOGIN_LIMIT_MAX_EXPLAIN'	=> 'The threshold of login attempts allowed from a single IP address before an anti-spambot task is triggered. Enter 0 to prevent the anti-spambot task from being triggered by IP addresses.',
+	'IP_LOGIN_LIMIT_TIME'					=> 'Thời gian giới hạn địa chỉ IP đăng nhập',
+	'IP_LOGIN_LIMIT_TIME_EXPLAIN'			=> 'Việc cho phép đăng nhập lại sẽ kết thúc sau khoảng thời gian này.',
+	'IP_LOGIN_LIMIT_USE_FORWARDED'			=> 'Giới hạn số lần đăng nhập bằng khai báo <var>X_FORWARDED_FOR</var>',
+	'IP_LOGIN_LIMIT_USE_FORWARDED_EXPLAIN'	=> 'Thay vì giới hạn số lần đăng nhập bằng địa chỉ IP, bạn có thể giới hạn bằng giá trị của khai báo <var>X_FORWARDED_FOR</var>. <br /><em><strong>Cảnh báo:</strong> Chỉ bật chức năng này nếu hệ thống của bạn đang chạy trên một máy chủ proxy có thiết lập <var>X_FORWARDED_FOR</var> làm giá trị tin cậy.</em>',
+	'MAX_LOGIN_ATTEMPTS'					=> 'Số lần đăng nhập tối đa cho phép mỗi người',
+	'MAX_LOGIN_ATTEMPTS_EXPLAIN'			=> 'Số lần cho phép một tài khoản cố gắng đăng nhập trước khi công cụ kiểm tra nhập liệu tự động được bật. Nhập số <strong>0</strong> để không giới hạn số lần đăng nhập thất bại vào hệ thống.',
+	'NO_IP_VALIDATION'						=> 'Không',
+	'NO_REF_VALIDATION'						=> 'Không',
+	'PASSWORD_TYPE'							=> 'Độ phức tạp của mật khẩu',
+	'PASSWORD_TYPE_EXPLAIN'					=> 'Tùy chọn xác định mức độ phức tạp yêu cầu đối với mật khẩu của thành viên khi được tạo hay thay đổi, những tùy chọn sau bao gồm cả những tùy chọn trước.',
+	'PASS_TYPE_ALPHA'						=> 'Phải sử dụng chữ số và chữ cái',
+	'PASS_TYPE_ANY'							=> 'Không yêu cầu',
+	'PASS_TYPE_CASE'						=> 'Phải sử dụng hỗn hợp',
+	'PASS_TYPE_SYMBOL'						=> 'Phải sử dụng ký hiệu',
+	'REF_HOST'								=> 'Chỉ kiểm tra máy chủ',
+	'REF_PATH'								=> 'Kiểm tra luôn đường dẫn',
+	'REFERER_VALID'							=> 'Kiểm tra tham chiếu',
+	'REFERER_VALID_EXPLAIN'					=> 'Nếu bật tùy chọn này, tham chiếu của các yêu cầu <var>POST</var> sẽ được kiểm tra lại những thiết lập về máy chủ/đường dẫn. Thiết lập này có thể gây ra rắc rối cho những hệ thống đang sử dụng nhiều tên miền khác nhau hay các phương pháp xác thực bổ sung.',
+	'TPL_ALLOW_PHP'							=> 'Cho phép sử dụng mã PHP trong các tập tin khuôn mẫu',
+	'TPL_ALLOW_PHP_EXPLAIN'					=> 'Nếu bật tùy chọn này, các lệnh <code>PHP</code> và <code>INCLUDEPHP</code> sẽ có thể được sử dụng và biên dịch trong các tập tin khuôn mẫu.',
 ));
 
 // Email Settings

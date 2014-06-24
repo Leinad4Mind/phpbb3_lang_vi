@@ -4,7 +4,7 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version $Id: memberlist.php 37 2009-11-18 22:11:00Z nedka $
+* @version $Id: memberlist.php 38 2011-06-16 08:33:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -125,7 +125,6 @@ $lang = array_merge($lang, array(
 	'REMOVE_FOE'			=> 'Gỡ bỏ kẻ thù',
 	'REMOVE_FRIEND'			=> 'Gỡ bỏ bạn thân',
 
-	'SEARCH_USER_POSTS'		=> 'Tìm tất cả bài viết của thành viên này',
 	'SELECT_MARKED'			=> 'Chọn đánh dấu',
 	'SELECT_SORT_METHOD'	=> 'Chọn cách sắp xếp',
 	'SEND_AIM_MESSAGE'		=> 'Gửi tin nhắn AIM',

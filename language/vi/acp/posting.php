@@ -4,7 +4,7 @@
 * acp_posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php 52 2010-03-02 08:09:00Z nedka $
+* @version $Id: posting.php 53 2011-04-29 10:09:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -176,6 +176,7 @@ $lang = array_merge($lang, array(
 	'SMILIES_EDIT'				=> 'Sửa biểu tượng vui',
 	'SMILIE_NO_CODE'			=> 'Biểu tượng vui “%s” đã bị cấm dùng, vì thế mã bạn vừa nhập vô hiệu.',
 	'SMILIE_NO_EMOTION'			=> 'Biểu tượng vui “%s” đã bị cấm dùng, vì thế cảm xúc bạn vừa nhập vô hiệu.',
+	'SMILIE_NO_FILE'			=> 'Biểu tượng vui “%s” đã bị cấm dùng, bởi vì tập tin hình không tìm thấy.',
 	'SMILIES_NONE_EDITED'		=> 'Không có biểu tượng vui nào được cập nhật.',
 	'SMILIES_ONE_EDITED'		=> 'Biểu tượng vui đã được cập nhật thành công.',
 	'SMILIES_EDITED'			=> 'Những biểu tượng vui đã được cập nhật thành công.',
@@ -239,13 +240,13 @@ $lang = array_merge($lang, array(
 
 // Disallow Usernames
 $lang = array_merge($lang, array(
-	'ACP_DISALLOW_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí các tên thành viên cấm sử dụng. Với những tên thành viên bị cấm sử dụng, bạn có thể dùng dấu * để cấm thành viên sử dụng nhiều tên giống nhau. Lưu ý rằng bạn không thể cấm sử dụng những tên thành viên đã được thành viên sử dụng để đăng ký mà trước hết bạn cần xóa tên này rồi hãy cấm sử dụng nó tại đây.',
+	'ACP_DISALLOW_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí các tên thành viên cấm sử dụng. Với những tên thành viên bị cấm sử dụng, bạn có thể dùng dấu * để cấm thành viên sử dụng nhiều tên giống nhau.',
 	'ADD_DISALLOW_EXPLAIN'	=> 'Bạn có thể cấm sử dụng một tên thành viên bằng cách dùng dấu * để cấm nhiều ký tự đi cùng.',
 	'ADD_DISALLOW_TITLE'	=> 'Thêm tên thành viên cấm sử dụng',
 
 	'DELETE_DISALLOW_EXPLAIN'	=> 'Bạn có thể gỡ bỏ một tên thành viên đã bị cấm sử dụng bằng cách chọn tên thành viên đó từ danh sách này và bấm vào nút chấp nhận.',
 	'DELETE_DISALLOW_TITLE'		=> 'Gỡ bỏ tên thành viên cấm sử dụng',
-	'DISALLOWED_ALREADY'		=> 'Tên thành viên bạn vừa nhập không thể bị cấm sử dụng. Có thể tên này đã tồn tại trong danh sách tên thành viên cấm sử dụng, trong danh sách từ kiểm duyệt hay đã được một thành viên nào đó sử dụng.',
+	'DISALLOWED_ALREADY'		=> 'Tên thành viên bạn vừa nhập đã bị cấm rồi.',
 	'DISALLOWED_DELETED'		=> 'Tên thành viên cấm sử dụng đã được gỡ bỏ thành công.',
 	'DISALLOW_SUCCESSFUL'		=> 'Tên thành viên cấm sử dụng đã được thêm vào thành công.',
 

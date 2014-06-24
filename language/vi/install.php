@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version $Id: install.php 104 2011-03-30 10:03:00Z nedka $
+* @version $Id: install.php 105 2011-04-29 09:55:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -137,7 +137,7 @@ $lang = array_merge($lang, array(
 	'DB_ERR_QUERY_FIRST_TABLE'	=> 'Có lỗi trong khi thực thi <var>query_first</var>, %s (“%s”).',
 	'DB_ERR_SELECT'				=> 'Có lỗi trong khi tiến hành truy vấn <code>SELECT</code>.',
 	'DB_HOST'					=> 'Tên miền hoặc địa chỉ DSN của máy chủ cơ sở dữ liệu',
-	'DB_HOST_EXPLAIN'			=> 'DSN là tên viết tắt của <strong>Data Source Name</strong> và chỉ được sử dụng khi bạn chọn cài đặt với ODBC. Trên PostgreSQL, sử dụng <samp>localhost</samp> để kết nối đến máy chủ thông qua giao thức tên miền UNIX và <samp>127.0.0.1</samp> để kết nối thông qua TCP.',
+	'DB_HOST_EXPLAIN'			=> 'DSN là tên viết tắt của <strong>Data Source Name</strong> và chỉ được sử dụng khi bạn chọn cài đặt với ODBC. Trên PostgreSQL, sử dụng <samp>localhost</samp> để kết nối đến máy chủ thông qua giao thức tên miền UNIX và <samp>127.0.0.1</samp> để kết nối thông qua TCP. Với SQLite, bạn phải nhập đường dẫn đầy đủ đến tập tin cơ sở dữ liệu.',
 	'DB_NAME'					=> 'Tên cơ sở dữ liệu',
 	'DB_PASSWORD'				=> 'Mật khẩu kết nối cơ sở dữ liệu',
 	'DB_PORT'					=> 'Cổng máy chủ cơ sở dữ liệu',
@@ -380,7 +380,7 @@ $lang = array_merge($lang, array(
 
 // Updater
 $lang = array_merge($lang, array(
-	'ALL_FILES_UP_TO_DATE'		=> 'Tất cả các tập tin đã được cập nhật lên phiên bản mới nhất của phpBB. Ngay bây giờ bạn nên <a href="../ucp.php?mode=login&amp;redirect=adm/index.php%3Fi=send_statistics%26mode=send_statistics">đăng nhập vào hệ thống</a> và kiểm tra lại để đảm bảo mọi thứ đều hoạt động tốt. Bạn cũng đừng quên xóa, đổi tên hay di chuyển thư mục cài đặt của hệ thống! Hãy vui lòng gửi cho chúng tôi thông tin đã cập nhật về máy chủ và cấu hình hệ thống phpBB của bạn từ trang <a href="../ucp.php?mode=login&amp;redirect=adm/index.php%3Fi=send_statistics%26mode=send_statistics">gửi thống kê</a> trong bảng quản trị viên.',
+	'ALL_FILES_UP_TO_DATE'		=> 'Tất cả các tập tin đã được cập nhật lên phiên bản mới nhất của phpBB. Ngay bây giờ bạn nên <a href="../ucp.php?mode=login">đăng nhập vào hệ thống</a> và kiểm tra lại để đảm bảo mọi thứ đều hoạt động tốt. Bạn cũng đừng quên xóa, đổi tên hay di chuyển thư mục cài đặt của hệ thống! Hãy vui lòng gửi cho chúng tôi thông tin đã cập nhật về máy chủ và cấu hình hệ thống phpBB của bạn từ trang <a href="../ucp.php?mode=login&amp;redirect=adm/index.php%3Fi=send_statistics%26mode=send_statistics">gửi thống kê</a> trong bảng quản trị viên.',
 	'ARCHIVE_FILE'				=> 'Tập tin gốc được lưu trữ',
 
 	'BACK'				=> 'Quay lại',

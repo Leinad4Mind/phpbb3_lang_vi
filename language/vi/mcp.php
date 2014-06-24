@@ -4,7 +4,7 @@
 * mcp [Vietnamese]
 *
 * @package language
-* @version $Id: mcp.php 53 2010-03-02 06:46:00Z nedka $
+* @version $Id: mcp.php 54 2011-06-16 08:32:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -218,9 +218,8 @@ $lang = array_merge($lang, array(
 	'MCP_WARN_POST'			=> 'Cảnh cáo bài viết xác định',
 	'MCP_WARN_USER'			=> 'Cảnh cáo thành viên',
 
-	'MERGE_POSTS'			=> 'Nhập chung bài viết',
-	'MERGE_POSTS_CONFIRM'	=> 'Bạn có chắc chắn muốn nhập chung những bài viết đã chọn?',
-	'MERGE_TOPIC_EXPLAIN'	=> 'Sử dụng bảng điều khiển bên dưới, bạn có thể nhập chung những bài viết đã chọn tạo thành chủ đề khác. Những bài viết này sẽ không thể sắp xếp trở lại như cũ và sẽ hiển thị như khi thành viên tạo chủ đề mới.<br />Bạn hãy nhập vào số ID của chủ đề muốn thực hiện hoặc bấm vào “Chọn chủ đề” để tìm kiếm trong danh sách.',
+	'MERGE_POSTS_CONFIRM'	=> 'Bạn có chắc chắn muốn di chuyển những bài viết đã chọn?',
+	'MERGE_TOPIC_EXPLAIN'	=> 'Sử dụng bảng điều khiển bên dưới, bạn có thể di chuyển những bài viết đã chọn sang một chủ đề khác. Bài viết sẽ được chia nhỏ từ chủ đề này và nhập chung sang chủ đề khác. Những bài viết này có thể không giữ được thứ tự như cũ và sẽ hiển thị như khi thành viên trả lời trong chủ đề mới.<br />Bạn hãy nhập vào số ID của chủ đề muốn thực hiện hoặc bấm vào “Chọn chủ đề” để tìm kiếm.',
 	'MERGE_TOPIC_ID'		=> 'Số ID của chủ đề muốn nhập chung',
 	'MERGE_TOPICS'			=> 'Nhập chung chủ đề',
 	'MERGE_TOPICS_CONFIRM'	=> 'Bạn có chắc chắn muốn nhập chung những chủ đề đã chọn?',

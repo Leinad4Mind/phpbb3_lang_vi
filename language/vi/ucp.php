@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version $Id: ucp.php 106 2010-03-02 07:03:00Z nedka $
+* @version $Id: ucp.php 107 2011-06-16 08:37:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -128,6 +128,7 @@ $lang = array_merge($lang, array(
 	'CANNOT_REMOVE_FOLDER'			=> 'Thư mục này không thể gỡ bỏ được.',
 	'CHANGE_DEFAULT_GROUP'			=> 'Thay đổi nhóm mặc định',
 	'CHANGE_PASSWORD'				=> 'Thay đổi mật khẩu',
+	'CLICK_GOTO_FOLDER'				=> '%1$sChuyển đến thư mục “%3$s” của bạn%2$s',
 	'CLICK_RETURN_FOLDER'			=> '%1$sQuay về thư mục “%3$s” của bạn%2$s',
 	'CONFIRMATION'					=> 'Xác nhận đăng ký',
 	'CONFIRM_CHANGES'				=> 'Xác nhận thay đổi',
@@ -199,10 +200,11 @@ $lang = array_merge($lang, array(
 	'FIELD_TOO_LONG'					=> 'Mục thông tin “%1$s” có nội dung quá dài, tối đa chỉ có <strong>%2$d</strong> ký tự được phép sử dụng.',
 	'FIELD_TOO_SMALL'					=> 'Giá trị “%1$s” quá nhỏ, giá trị tối thiểu bắt buộc sử dụng là <strong>%2$d</strong>.',
 	'FIELD_TOO_LARGE'					=> 'Giá trị “%1$s” quá lớn, giá trị tối đa được phép sử dụng là <strong>%2$d</strong>.',
-	'FIELD_INVALID_CHARS_NUMBERS_ONLY'	=> 'Mục thông tin “%s” có nội dung chứa những ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ số.',
-	'FIELD_INVALID_CHARS_ALPHA_ONLY'	=> 'Mục thông tin “%s” có nội dung chứa những ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ cái và chữ số.',
-	'FIELD_INVALID_CHARS_SPACERS_ONLY'	=> 'Mục thông tin “%s” có nội dung chứa những ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ cái và chữ số, khoảng trắng hay những ký tự <strong>-+_[]</strong>.',
-	'FIELD_INVALID_DATE'				=> 'Mục thông tin “%s” có nội dung chứa ngày tháng không hợp lệ.',
+	'FIELD_INVALID_CHARS_NUMBERS_ONLY'	=> 'Mục thông tin “%s” chứa những ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ số.',
+	'FIELD_INVALID_CHARS_ALPHA_ONLY'	=> 'Mục thông tin “%s” chứa những ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ cái và chữ số.',
+	'FIELD_INVALID_CHARS_SPACERS_ONLY'	=> 'Mục thông tin “%s” chứa những ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ cái và chữ số, khoảng trắng hay những ký tự <strong>-+_[]</strong>.',
+	'FIELD_INVALID_DATE'				=> 'Mục thông tin “%s” chứa ngày tháng không hợp lệ.',
+	'FIELD_INVALID_VALUE'				=> 'Mục thông tin “%s” chứa giá trị không hợp lệ.',
 
 	'FOE_MESSAGE'				=> 'Tin nhắn từ kẻ thù',
 	'FOES_EXPLAIN'				=> 'Kẻ thù là những thành viên đã được bạn thiết lập mặc định không quan hệ. Các bài viết được gửi bởi những thành viên này sẽ không được hiển thị khi bạn xem. Các tin nhắn từ kẻ thù vẫn được phép gửi đến bạn. Lưu ý rằng bạn không thể chọn kẻ thù của mình là các điều hành viên hay quản trị viên trong website.',

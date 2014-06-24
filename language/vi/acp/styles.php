@@ -4,7 +4,7 @@
 * acp_styles [Vietnamese]
 *
 * @package language
-* @version $Id: styles.php 55 2011-03-30 11:21:00Z nedka $
+* @version $Id: styles.php 56 2011-04-29 10:16:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -87,7 +87,7 @@ $lang = array_merge($lang, array(
 	'DELETE_IMAGESET'			=> 'Xóa gói hình giao diện',
 	'DELETE_IMAGESET_EXPLAIN'	=> 'Bạn có thể gỡ bỏ gói hình giao diện đã chọn khỏi cơ sở dữ liệu tại đây. Lưu ý rằng thao tác này không thể hoàn lại. Chúng tôi khuyên bạn nên xuất gói hình giao diện ra trước để sử dụng sau này.',
 	'DELETE_STYLE'				=> 'Xóa giao diện',
-	'DELETE_STYLE_EXPLAIN'		=> 'Bạn có thể gỡ bỏ giao diện đã chọn tại đây. Bạn không thể gỡ bỏ toàn bộ thành phần giao diện đi kèm tại đây. Những thành phần này phải được gỡ bỏ riêng lẻ trong từng phần quản lí của chúng. hãy cẩn thận vì việc xóa giao diện không thể phục hồi lại được.',
+	'DELETE_STYLE_EXPLAIN'		=> 'Bạn có thể gỡ bỏ giao diện đã chọn tại đây. Hãy cẩn thận vì việc xóa giao diện không thể phục hồi lại được.',
 	'DELETE_TEMPLATE'			=> 'Xóa khuôn mẫu',
 	'DELETE_TEMPLATE_EXPLAIN'	=> 'Bạn có thể gỡ bỏ khuôn mẫu đã chọn khỏi cơ sở dữ liệu tại đây. Lưu ý rằng thao tác này không thể hoàn lại. Chúng tôi khuyên bạn nên xuất khuôn mẫu ra trước để sử dụng sau này.',
 	'DELETE_THEME'				=> 'Xóa kiểu dáng',
@@ -293,6 +293,10 @@ $lang = array_merge($lang, array(
 	'INSTALLED_TEMPLATE'		=> 'Khuôn mẫu đã cài đặt',
 	'INSTALLED_THEME'			=> 'Kiểu dáng đã cài đặt',
 
+	'KEEP_IMAGESET'	=> 'Giữ lại gói hình giao diện “%s”',
+	'KEEP_TEMPLATE'	=> 'Giữ lại khuôn mẫu “%s”',
+	'KEEP_THEME'	=> 'Giữ lại kiểu dáng “%s”',
+
 	'LINE_SPACING'				=> 'Khoảng cách dòng',
 	'LOCALISED_IMAGES'			=> 'Hình ảnh tùy thuộc vào gói ngôn ngữ',
 	'LOCATION_DISABLED_EXPLAIN'	=> 'Thiết lập này được kế thừa và không thể thay đổi.',
@@ -329,6 +333,7 @@ $lang = array_merge($lang, array(
 	'REPLACE_TEMPLATE_EXPLAIN'	=> 'Khuôn mẫu này sẽ thay thế cho khuôn mẫu mà bạn đang xóa trong bất kì giao diện nào sử dụng đến.',
 	'REPLACE_THEME'				=> 'Thay thế kiểu dáng bằng',
 	'REPLACE_THEME_EXPLAIN'		=> 'Kiểu dáng này sẽ thay thế cho kiểu dáng mà bạn đang xóa trong bất kì giao diện nào sử dụng đến.',
+	'REPLACE_WITH_OPTION'		=> 'Thay bằng “%s”',
 	'REQUIRES_IMAGESET'			=> 'Giao diện này yêu cầu gói hình giao diện “%s” phải được cài đặt.',
 	'REQUIRES_TEMPLATE'			=> 'Giao diện này yêu cầu khuôn mẫu “%s” phải được cài đặt.',
 	'REQUIRES_THEME'			=> 'Giao diện này yêu cầu kiểu dáng “%s” phải được cài đặt.',

@@ -4,7 +4,7 @@
 * search [Vietnamese]
 *
 * @package language
-* @version $Id: search.php 27 2011-03-30 10:06:00Z nedka $
+* @version $Id: search.php 28 2011-04-29 09:57:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -63,6 +63,7 @@ $lang = array_merge($lang, array(
 
 	'LOGIN_EXPLAIN_EGOSEARCH'		=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào để xem những bài viết của mình.',
 	'LOGIN_EXPLAIN_UNREADSEARCH'	=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào để tìm những bài viết chưa xem của mình.',
+	'LOGIN_EXPLAIN_NEWPOSTS'		=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào để xem những bài viết mới kể từ lần ghé thăm trước của bạn.',
 
 	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> 'Bạn đã dùng quá nhiều từ khóa để tìm kiếm. Xin đừng nhập vào nhiều hơn <strong>%1$d</strong> từ.',
 
