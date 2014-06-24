@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php,v 1.29 2007/06/17 09:59:00 nedka Exp $
+* @version $Id: posting.php,v 1.30 2007/07/06 14:21:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -161,18 +161,19 @@ $lang = array_merge($lang, array(
 	'POLL_VOTE_CHANGE'			=> 'Cho phép bình chọn lại',
 	'POLL_VOTE_CHANGE_EXPLAIN'	=> 'Nếu lựa chọn này được bật, những thành viên có thể thay đổi lựa chọn mà họ đã tham gia bình chọn.',
 	'POSTED_ATTACHMENTS'		=> 'Tập tin đã được đính kèm',
+	'POST_APPROVAL_NOTIFY'		=> ' Bạn sẽ được thông báo khi bài viết của mình được chấp nhận.',
 	'POST_CONFIRMATION'			=> 'Xác nhận bài viết',
 	'POST_CONFIRM_EXPLAIN'		=> 'Để ngăn chặn những bài viết được tự động gửi vào hàng loạt, hệ thống yêu cầu bạn phải nhập vào một đoạn mã xác nhận. Mã xác nhận được hiển thị trong hình bên dưới mà bạn nhìn thấy. Nếu bạn gặp vấn đề về thị lực hoặc không thể nhìn thấy đoạn mã này vì một lý do nào đó, hãy liên hệ với %sngười quản trị%s.',
 	'POST_DELETED'				=> 'Bài viết này đã được xoá thành công.',
 	'POST_EDITED'				=> 'Bài viết này đã được sửa thành công.',
-	'POST_EDITED_MOD'			=> 'Bài viết này đã được sửa thành công nhưng vẫn cần phải được chấp nhận bởi một điều hành viên trước khi mọi người có thể xem được. Bạn sẽ được thông báo khi bài viết của mình được chấp nhận.',
+	'POST_EDITED_MOD'			=> 'Bài viết này đã được sửa thành công nhưng vẫn cần phải được chấp nhận bởi một điều hành viên trước khi mọi người có thể xem được.',
 	'POST_GLOBAL'				=> 'Thông báo chung',
 	'POST_ICON'					=> 'Biểu tượng bài viết',
 	'POST_NORMAL'				=> 'Bài viết bình thường',
 	'POST_REVIEW'				=> 'Xem lại bài viết',
 	'POST_REVIEW_EXPLAIN'		=> 'Có ít nhất một bài viết mới được gửi trong chủ đề này. Có thể bạn muốn xem lại nội dung của nó trước khi tiếp tục gửi bài trả lời.',
 	'POST_STORED'				=> 'Bài viết này đã được gửi thành công.',
-	'POST_STORED_MOD'			=> 'Bài viết này đã được gửi thành công nhưng vẫn cần phải được chấp nhận bởi một điều hành viên trước khi mọi người có thể xem được. Bạn sẽ được thông báo khi bài viết của mình được chấp nhận.',
+	'POST_STORED_MOD'			=> 'Bài viết này đã được gửi thành công nhưng vẫn cần phải được chấp nhận bởi một điều hành viên trước khi mọi người có thể xem được.',
 	'POST_TOPIC_AS'				=> 'Tạo chủ đề dưới dạng',
 	'PROGRESS_BAR'				=> 'Thanh tiến trình',
 

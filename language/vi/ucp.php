@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version $Id: ucp.php,v 1.69 2007/06/15 09:15:00 nedka Exp $
+* @version $Id: ucp.php,v 1.70 2007/07/06 14:31:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -92,7 +92,7 @@ $lang = array_merge($lang, array(
 	'ATTACHMENTS_DELETED'			=> 'Những tập tin đính kèm bạn vừa chọn đã được xoá thành công.',
 	'ATTACHMENT_DELETED'			=> 'Tập tin đính kèm bạn vừa chọn đã được xoá thành công.',
 	'AVATAR_CATEGORY'				=> 'Chủ đề hình đại diện',
-	'AVATAR_EXPLAIN'				=> 'Kích thước tối đa cho phép: <strong>%1$d</strong> Pixel chiều rộng và <strong>%2$d</strong> Pixel chiều cáo với dung lượng tập tin tối đa là <strong>%3$d</strong> KB.',
+	'AVATAR_EXPLAIN'				=> 'Kích thước tối đa cho phép: <strong>%1$d</strong> Pixel chiều rộng và <strong>%2$d</strong> Pixel chiều cao với dung lượng tập tin tối đa là <strong>%3$d</strong> KB.',
 	'AVATAR_FEATURES_DISABLED'		=> 'Chức năng sử dụng hình đại diện hiện tại đã bị vô hiệu.',
 	'AVATAR_GALLERY'				=> 'Thư viện hình đại diện',
 	'AVATAR_GENERAL_UPLOAD_ERROR'	=> 'Không thể tải lên hình đại diện đến “%s”.',
@@ -220,7 +220,7 @@ $lang = array_merge($lang, array(
 	'GLOBAL_ANNOUNCEMENT'		=> 'Thông báo chung',
 
 	'HIDE_ONLINE'				=> 'Luôn ẩn trạng thái trực tuyến của tôi',
-	'HIDE_ONLINE_EXPLAIN'		=> 'Thay đổi thiết lập này thành “Không đồng ý” sẽ không có hiệu lực cho đến lần ghé thăm kế tiếp của bạn.',
+	'HIDE_ONLINE_EXPLAIN'		=> 'Thay đổi thiết lập này sẽ không có hiệu lực cho đến lần ghé thăm kế tiếp của bạn.',
 	'HOLD_NEW_MESSAGES'			=> 'Không nhận thêm những tin nhắn mới (Những tin nhắn mới sẽ quay lại khi nào dung lượng đủ cho phép)',
 	'HOLD_NEW_MESSAGES_SHORT'	=> 'Những tin nhắn mới sẽ quay lại',
 
@@ -451,7 +451,7 @@ $lang = array_merge($lang, array(
 	'UNWATCH_MARKED'						=> 'Ngừng theo dõi những mục đã đánh dấu',
 	'UPLOAD_AVATAR_FILE'					=> 'Tải hình đại diện từ máy tính của bạn',
 	'UPLOAD_AVATAR_URL'						=> 'Tải hình đại diện từ địa chỉ URL',
-	'UPLOAD_AVATAR_URL_EXPLAIN'				=> 'Nhập vào địa chỉ URL của hình đại diện và nó sẽ được sao chép đến website này.',
+	'UPLOAD_AVATAR_URL_EXPLAIN'				=> 'Nhập vào địa chỉ URL của hình đại diện. Hình đại diện sẽ được sao chép vào website này.',
 	'USERNAME_ALPHA_ONLY_EXPLAIN'			=> 'Tên thành viên không được phép ít hơn <strong>%1$d</strong> và vượt quá <strong>%2$d</strong> ký tự. Bạn cũng chỉ được phép sử dụng vừa chữ số vừa chữ cái.',
 	'USERNAME_ALPHA_SPACERS_EXPLAIN'		=> 'Tên thành viên không được phép ít hơn <strong>%1$d</strong> và vượt quá <strong>%2$d</strong> ký tự. Bạn cũng chỉ được phép sử dụng vừa chữ số vừa chữ cái, khoảng trắng hoặc các ký tự <strong>-+_[]</strong>.',
 	'USERNAME_ASCII_EXPLAIN'				=> 'Tên thành viên không được phép ít hơn <strong>%1$d</strong> và vượt quá <strong>%2$d</strong> ký tự. Bạn cũng chỉ được phép sử dụng những ký tự ASCII và không có các ký tự đặc biệt.',

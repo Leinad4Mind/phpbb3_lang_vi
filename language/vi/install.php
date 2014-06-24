@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version $Id: install.php,v 1.63 2007/06/13 15:36:00 nedka Exp $
+* @version $Id: install.php,v 1.65 2007/07/06 14:17:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -500,16 +500,16 @@ $lang = array_merge($lang, array(
 
 		<h1>Thông báo phát hành</h1>
 
-		<p>Bạn hãy vui lòng xem qua <a href="%1$s" title="%1$s">thông báo phát hành của phiên bản phpBB mới nhất</a> trước khi bạn tiếp tục tiến hành việc cập nhật của mình bởi vì nó có nhiều thông tin hữu ích dành cho bạn. Thông báo này cũng đính kèm liên kết tải về phiên bản phpBB mới nhất cũng như những thay đổi kể từ phiên bản trước.</p>
+		<p>Bạn hãy vui lòng xem qua <a href="%1$s" title="%1$s"><strong>thông báo phát hành của phiên bản phpBB mới nhất</strong></a> trước khi bạn tiếp tục tiến hành việc cập nhật của mình bởi vì nó có nhiều thông tin hữu ích dành cho bạn. Thông báo này cũng đính kèm liên kết tải về phiên bản phpBB mới nhất cũng như những thay đổi kể từ phiên bản trước.</p>
 
 		<br />
 
-		<h1>Làm thế nào để cập nhật bản cài đặt phpBB của bạn?</h1>
+		<h1>Làm thế nào để cập nhật bản cài đặt phpBB3 của bạn với gói cập nhật tự động?</h1>
 
-		<p>Chúng tôi khuyên bạn nên tiến hành cập nhật bản cài đặt của mình theo những bước sau:</p>
+		<p>Khuyến cáo bạn rằng đây là cách cập nhật bản cài đặt phpBB3 chỉ hợp lệ với gói cập nhật tự động. Bạn cũng có thể cập nhật bản cài đặt phpBB3 của mình bằng những phương pháp khác đã được liệt kê trong tài liệu <samp>INSTALL.html</samp>. Những bước tiến hành cập nhật tự động phpBB3 như sau:</p>
 
 		<ul style="margin-left: 20px; font-size: 1.1em;">
-			<li>Chuyển đến trang <a href="http://www.phpbb.com/downloads/" title="http://www.phpbb.com/downloads/">phpBB.com downloads page</a> và tải về “Gói cập nhật phpBB” chính xác.<br /><br /></li>
+			<li>Chuyển đến trang <a href="http://www.phpbb.com/downloads/" title="http://www.phpbb.com/downloads/">phpBB.com downloads page</a> và tải về “Gói cập nhật tự động” chính xác.<br /><br /></li>
 			<li>Giải nén gói tập tin vừa tải về.<br /><br /></li>
 			<li>Tải toàn bộ thư mục chính cài đặt hệ thống phpBB sau khi giải nén lên máy chủ của bạn (chung thư mục với tập tin <code>config.php</code>).<br /><br /></li>
 		</ul>
@@ -517,8 +517,13 @@ $lang = array_merge($lang, array(
 		<p>Sau khi đã tải lên xong, hệ thống của bạn sẽ tạm ngưng hoạt động đối với các thành viên bình thường trong suốt thời gian thư mục cài đặt hệ thống mà bạn đã tải lên còn hiện diện.<br /><br />
 		<strong><a href="%2$s" title="%2$s">Bây giờ, bạn hãy bắt đầu tiến hành cập nhật bằng cách duyệt thư mục cài đặt hệ thống từ trình duyệt của mình</a>.</strong><br />
 		<br />
-		Sau đó bạn sẽ được hướng dẫn từng bước để tiến hành cập nhật. Bạn sẽ được thông báo khi việc cập nhật đã hoàn tất.
-		</p>
+		Sau đó, bạn sẽ được hướng dẫn từng bước để tiến hành cập nhật. Bạn sẽ chỉ được thông báo một lần duy nhất khi việc cập nhật hoàn tất.</p>
+	',
+	'UPDATE_INSTRUCTIONS_INCOMPLETE'	=> '
+
+		<h1>Bạn vẫn chưa hoàn tất việc cập nhật</h1>
+
+		<p>Hệ thống phpBB đã phát hiện một gói cập nhật tự động chưa hoàn tất. Hãy chắc chắn rằng bạn đã tiến hành thực hiện từng bước với công cụ cập nhật tự động. Bạn sẽ tìm thấy lại liên kết đến công cụ này bên dưới hoặc bạn có thể chuyển đến thư mục cài đặt hệ thống trực tiếp để chạy nó.</p>
 	',
 	'UPDATE_METHOD'					=> 'Phương pháp cập nhật',
 	'UPDATE_METHOD_EXPLAIN'			=> 'Bạn có thể lựa chọn phương pháp cập nhật mà mình thích. Nếu bạn chọn sử dụng phương pháp tải lên bằng FTP, bạn sẽ được yêu cầu cung cấp thông tin chi tiết về tài khoản FTP của mình. Với phương pháp này, các tập tin sẽ được tự động di chuyển đến thư mục định vị mới và bản sao của các tập tin cũ sẽ được giữ lại bằng cách thêm vào phần mở rộng đuôi tập tin là <samp>.bak</samp> trong phần tên tập tin. Nếu bạn chọn tải về các tập tin đã chỉnh sửa, bạn có thể tự mình giải nén chúng ra rồi tải lên trở lại thư mục định vị chính xác sau này.',

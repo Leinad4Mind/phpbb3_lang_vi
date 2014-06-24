@@ -4,8 +4,8 @@
 * acp_bots [Vietnamese]
 *
 * @package language
-* @version $Id: bots.php,v 1.06 2006/10/31 14:42:00 nedka Exp $
-* @copyright (c) 2006 phpBBVietNam Group 
+* @version $Id: bots.php,v 1.07 2007/07/06 14:38:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -43,7 +43,7 @@ if (empty($lang) || !is_array($lang))
 // Bot settings
 $lang = array_merge($lang, array(
 	'BOTS'				=> 'Quản lý máy tìm kiếm',
-	'BOTS_EXPLAIN'		=> 'Máy tìm kiếm (Bot/Crawler) là những cỗ máy tự động thường được sử dụng trong các dịch vụ tìm kiếm để cập nhật chỉ mục tìm kiếm trong cơ sở dữ liệu của họ. Hiếm khi những loại này sử dụng session thích hợp vì thế thường làm cho kết quả trong các bộ đếm của hệ thống sai lệch khi đếm số lượt người ghé thăm website, đếm tăng thêm số lượng không chính xác và thỉnh thoảng không thể lập chỉ mục cho website chính xác. Với công cụ này, bạn có thể xác định một loại thành viên đặc biệt gồm những loại máy tìm kiếm này để khắc phục những rắc rối kể trên.',
+	'BOTS_EXPLAIN'		=> '&quot;Bot&quot;, &quot;spider&quot; hay &quot;crawler&quot; là những cỗ máy tự động thường được sử dụng trong các dịch vụ tìm kiếm để cập nhật chỉ mục tìm kiếm trong cơ sở dữ liệu của họ. Hiếm khi những loại này sử dụng session thích hợp vì thế thường làm cho kết quả trong các bộ đếm của hệ thống sai lệch khi đếm số lượt người ghé thăm website, đếm tăng thêm số lượng không chính xác và thỉnh thoảng không thể lập chỉ mục cho website chính xác. Với công cụ này, bạn có thể xác định một loại thành viên đặc biệt gồm những loại máy tìm kiếm này để khắc phục những rắc rối kể trên.',
 	'BOT_ACTIVATE'		=> 'Kích hoạt',
 	'BOT_ACTIVE'		=> 'Máy tìm kiếm được kích hoạt',
 	'BOT_ADD'			=> 'Thêm máy tìm kiếm',
@@ -61,12 +61,11 @@ $lang = array_merge($lang, array(
 	'BOT_IP_EXPLAIN'	=> 'Địa chỉ IP không hoàn chỉnh vẫn được chấp nhận sử dụng, ngăn cách các địa chỉ IP với nhau bằng dấu phẩy.',
 	'BOT_NAME'			=> 'Tên máy tìm kiếm',
 	'BOT_NAME_EXPLAIN'	=> 'Chỉ sử dụng để quản lý thông tin của bạn.',
+	'BOT_NAME_TAKEN'	=> 'Tên này đã được sử dụng trong hệ thống và không thể dùng để đặt tên cho máy tìm kiếm.',
 	'BOT_NEVER'			=> 'Không bao giờ',
 	'BOT_STYLE'			=> 'Giao diện dành cho máy tìm kiếm',
 	'BOT_STYLE_EXPLAIN'	=> 'Chọn giao diện của hệ thống mà bạn muốn sử dụng cho máy tìm kiếm.',
 	'BOT_UPDATED'		=> 'Máy tìm kiếm hiện tại đã được cập nhật thành công.',
-	'BOT_VIS'			=> 'Hiển thị máy tìm kiếm',
-	'BOT_VIS_EXPLAIN'	=> 'Đồng ý hiển thị máy tìm kiếm trong danh sách các thành viên đang trực tuyến.',
 
 	'ERR_BOT_AGENT_MATCHES_UA'	=> 'Máy tìm kiếm mà bạn vừa cung cấp tương tự với một trong những máy tìm kiếm đã được sử dụng. Hãy điều chỉnh lại định danh cho máy tìm kiếm này.',
 	'ERR_BOT_NO_IP'				=> 'Địa chỉ IP mà bạn vừa nhập không hợp lệ hoặc do tên miền này không thể sử dụng được.',

@@ -4,7 +4,7 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version $Id: memberlist.php,v 1.23 2007/05/26 13:29:00 nedka Exp $
+* @version $Id: memberlist.php,v 1.24 2007/07/09 21:13:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -64,6 +64,7 @@ $lang = array_merge($lang, array(
 	'EMAIL_TOPIC_EXPLAIN'	=> 'Email này sẽ được gửi dưới dạng văn bản thuần tuý, vì thế bạn đừng sử dụng bất cứ thẻ lệnh HTML hay BBCode nào trong nội dung Email này. Lưu ý rằng thông tin về chủ đề này sẽ được đính kèm trong nội dung Email. Địa chỉ hồi âm của Email này sẽ được thiết lập là địa chỉ Email của bạn.',
 	'EMPTY_ADDRESS_EMAIL'	=> 'Bạn phải nhập chính xác địa chỉ Email của người nhận.',
 	'EMPTY_MESSAGE_EMAIL'	=> 'Bạn phải nhập nội dung cho Email.',
+	'EMPTY_MESSAGE_IM'		=> 'Bạn phải nhập nội dung cho tin nhắn.',
 	'EMPTY_NAME_EMAIL'		=> 'Bạn phải nhập tên của người nhận.',
 	'EMPTY_SUBJECT_EMAIL'	=> 'Bạn phải nhập tiêu đề cho Email.',
 	'EQUAL_TO'				=> 'Ngang bằng',

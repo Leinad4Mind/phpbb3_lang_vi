@@ -4,7 +4,7 @@
 * search [Vietnamese]
 *
 * @package language
-* @version $Id: search.php,v 1.15 2007/05/26 13:24:00 nedka Exp $
+* @version $Id: search.php,v 1.16 2007/07/06 14:25:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -56,6 +56,8 @@ $lang = array_merge($lang, array(
 	'IGNORED_TERMS_EXPLAIN'	=> 'Những từ khoá tìm kiếm của bạn dưới đây không được phép sử dụng: <strong>%s</strong>.',
 
 	'JUMP_TO_POST'			=> 'Chuyển đến bài viết',
+
+	'LOGIN_EXPLAIN_EGOSEARCH'	=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem những bài viết của chính mình.',
 
 	'NO_KEYWORDS'			=> 'Bạn phải xác định ít nhất một từ khoá để thực hiện tìm kiếm. Mỗi từ khoá phải có ít nhất là <strong>%d</strong> ký tự và không được nhiều quá <strong>%d</strong> ký tự loại trừ dấu đại diện.',
 	'NO_RECENT_SEARCHES'	=> 'Không có tìm kiếm nào được thực hiện gần đây.',

@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php,v 1.82 2007/06/25 22:32:00 nedka Exp $
+* @version $Id: common.php,v 1.84 2007/07/09 21:16:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -425,7 +425,7 @@ $lang = array_merge($lang, array(
 	'PREVIEW'					=> 'Xem trước',
 	'PREVIOUS'					=> 'Trang vừa xem', // Used in pagination
 	'PREVIOUS_STEP'				=> 'Bước vừa hoàn tất',
-	'PRIVACY'					=> 'Chế độ riêng tư cá nhân',
+	'PRIVACY'					=> 'Chính sách bảo mật',
 	'PRIVATE_MESSAGE'			=> 'Tin nhắn',
 	'PRIVATE_MESSAGES'			=> 'Tin nhắn',
 	'PRIVATE_MESSAGING'			=> 'Đang gửi tin nhắn',
@@ -465,22 +465,22 @@ $lang = array_merge($lang, array(
 	'RETURN_PAGE'				=> '%sQuay về trang trước%s',
 	'RETURN_TOPIC'				=> '%sQuay về chủ đề vừa xem%s',
 	'RETURN_TO'					=> 'Quay về',
-	'RULES_ATTACH_CAN'			=> 'Bạn <strong>có thể</strong> gửi tập tin đính kèm trong chuyên mục này',
-	'RULES_ATTACH_CANNOT'		=> 'Bạn <strong>không thể</strong> gửi tập tin đính kèm trong chuyên mục này',
-	'RULES_DELETE_CAN'			=> 'Bạn <strong>có thể</strong> xoá những bài viết của mình trong chuyên mục này',
-	'RULES_DELETE_CANNOT'		=> 'Bạn <strong>không thể</strong> xoá những bài viết của mình trong chuyên mục này',
-	'RULES_DOWNLOAD_CAN'		=> 'Bạn <strong>có thể</strong> tải về tập tin đính kèm trong chuyên mục này',
-	'RULES_DOWNLOAD_CANNOT'		=> 'Bạn <strong>không thể</strong> tải về tập tin đính kèm trong chuyên mục này',
-	'RULES_EDIT_CAN'			=> 'Bạn <strong>có thể</strong> sửa những bài viết của mình trong chuyên mục này',
-	'RULES_EDIT_CANNOT'			=> 'Bạn <strong>không thể</strong> sửa những bài viết của mình trong chuyên mục này',
-	'RULES_LOCK_CAN'			=> 'Bạn <strong>có thể</strong> khoá những chủ đề của mình trong chuyên mục này',
-	'RULES_LOCK_CANNOT'			=> 'Bạn <strong>không thể</strong> khoá những chủ đề của mình trong chuyên mục này',
-	'RULES_POST_CAN'			=> 'Bạn <strong>có thể</strong> tạo chủ đề mới trong chuyên mục này',
-	'RULES_POST_CANNOT'			=> 'Bạn <strong>không thể</strong> tạo chủ đề mới trong chuyên mục này',
-	'RULES_REPLY_CAN'			=> 'Bạn <strong>có thể</strong> trả lời bài viết trong chuyên mục này',
-	'RULES_REPLY_CANNOT'		=> 'Bạn <strong>không thể</strong> trả lời bài viết trong chuyên mục này',
-	'RULES_VOTE_CAN'			=> 'Bạn <strong>có thể</strong> tham gia bình chọn trong chuyên mục này',
-	'RULES_VOTE_CANNOT'			=> 'Bạn <strong>không thể</strong> tham gia bình chọn trong chuyên mục này',
+	'RULES_ATTACH_CAN'			=> 'Bạn <strong>có thể</strong> gửi tập tin đính kèm trong chuyên mục này.',
+	'RULES_ATTACH_CANNOT'		=> 'Bạn <strong>không thể</strong> gửi tập tin đính kèm trong chuyên mục này.',
+	'RULES_DELETE_CAN'			=> 'Bạn <strong>có thể</strong> xoá những bài viết của mình trong chuyên mục này.',
+	'RULES_DELETE_CANNOT'		=> 'Bạn <strong>không thể</strong> xoá những bài viết của mình trong chuyên mục này.',
+	'RULES_DOWNLOAD_CAN'		=> 'Bạn <strong>có thể</strong> tải về tập tin đính kèm trong chuyên mục này.',
+	'RULES_DOWNLOAD_CANNOT'		=> 'Bạn <strong>không thể</strong> tải về tập tin đính kèm trong chuyên mục này.',
+	'RULES_EDIT_CAN'			=> 'Bạn <strong>có thể</strong> sửa những bài viết của mình trong chuyên mục này.',
+	'RULES_EDIT_CANNOT'			=> 'Bạn <strong>không thể</strong> sửa những bài viết của mình trong chuyên mục này.',
+	'RULES_LOCK_CAN'			=> 'Bạn <strong>có thể</strong> khoá những chủ đề của mình trong chuyên mục này.',
+	'RULES_LOCK_CANNOT'			=> 'Bạn <strong>không thể</strong> khoá những chủ đề của mình trong chuyên mục này.',
+	'RULES_POST_CAN'			=> 'Bạn <strong>có thể</strong> tạo chủ đề mới trong chuyên mục này.',
+	'RULES_POST_CANNOT'			=> 'Bạn <strong>không thể</strong> tạo chủ đề mới trong chuyên mục này.',
+	'RULES_REPLY_CAN'			=> 'Bạn <strong>có thể</strong> trả lời bài viết trong chuyên mục này.',
+	'RULES_REPLY_CANNOT'		=> 'Bạn <strong>không thể</strong> trả lời bài viết trong chuyên mục này.',
+	'RULES_VOTE_CAN'			=> 'Bạn <strong>có thể</strong> tham gia bình chọn trong chuyên mục này.',
+	'RULES_VOTE_CANNOT'			=> 'Bạn <strong>không thể</strong> tham gia bình chọn trong chuyên mục này.',
 
 	'SEARCH'					=> 'Tìm kiếm',
 	'SEARCH_MINI'				=> 'Nhập từ khóa tìm kiếm…',
