@@ -4,7 +4,7 @@
 * acp/posting [Vietnamese]
 *
 * @package language
-* @version 1.57
+* @version 1.58
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -90,8 +90,8 @@ $lang = array_merge($lang, array(
 		'URL'			=> 'Địa chỉ URL hợp lệ sử dụng bất kì giao thức nào (http, ftp… không thể sử dụng được vì các vấn đề với mã Javascript). Nếu bạn không nhập vào giao thức, “http://” sẽ được sử dụng làm tiền tố đầu của chuỗi.',
 		'LOCAL_URL'		=> 'Địa chỉ URL trong hệ thống. Địa chỉ URL này phải liên quan đến các trang trong hệ thống và không thể chứa một tên miền khác hay giao thức nào, vì những liên kết này luôn có tiền tố đầu “%s”.',
 		'RELATIVE_URL'	=> 'Địa chỉ URL tương đối. Bạn có thể dùng loại này để tùy biến linh động địa chỉ URL, nhưng phải đảm bảo rằng: địa chỉ URL đầy đủ sau cùng phải là một địa chỉ hợp lệ. Khi bạn muốn dùng những địa chỉ URL tương đối bên trong hệ thống, hãy sử dụng LOCAL_URL để thay thế.',
-		'COLOR'			=> 'Mã màu HTML, có thể sử dụng định dạng mã màu số như <samp>#FF1234</samp> hay một <a href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">từ khóa màu định dạng CSS</a> giống như <samp>fuchsia</samp> hay <samp>InactiveBorder</samp>.'
-	)
+		'COLOR'			=> 'Mã màu HTML, có thể sử dụng định dạng mã màu số như <samp>#FF1234</samp> hay một <a href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">từ khóa màu định dạng CSS</a> giống như <samp>fuchsia</samp> hay <samp>InactiveBorder</samp>.',
+	),
 ));
 
 // Smilies and topic icons

@@ -4,7 +4,7 @@
 * mcp [Vietnamese]
 *
 * @package language
-* @version 1.56
+* @version 1.57
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -432,6 +432,6 @@ $lang = array_merge($lang, array(
 			'SPAM'		=> 'Nội dung chỉ nhằm mục đích quảng cáo cho một website hay các sản phẩm khác.',
 			'OFF_TOPIC'	=> 'Nội dung không phù hợp.',
 			'OTHER'		=> 'Nội dung được báo cáo không phải vì các nguyên nhân đã liệt kê ở trên, bạn hãy tự nhập vào mô tả chi tiết.',
-		)
+		),
 	),
 ));

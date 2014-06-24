@@ -4,7 +4,7 @@
 * acp/board [Vietnamese]
 *
 * @package language
-* @version 1.107
+* @version 1.109
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -94,7 +94,7 @@ $lang = array_merge($lang, array(
 	'ALLOW_SIG_FLASH'			=> 'Cho phép sử dụng thẻ BBCode <code>[FLASH]</code> trong chữ ký cá nhân',
 	'ALLOW_SIG_IMG'				=> 'Cho phép sử dụng thẻ BBCode <code>[IMG]</code> trong chữ ký cá nhân',
 	'ALLOW_SIG_LINKS'			=> 'Cho phép sử dụng liên kết trong chữ ký cá nhân',
-	'ALLOW_SIG_LINKS_EXPLAIN'	=> 'Nếu bạn vô hiệu tùy chọn này, thẻ BBCode <code>[URL]</code> và các địa chỉ URL khác trong chữ ký cá nhân sẽ không được hiển thị như liên kết.',
+	'ALLOW_SIG_LINKS_EXPLAIN'	=> 'Nếu vô hiệu tùy chọn này, thẻ BBCode <code>[URL]</code> và các địa chỉ URL khác trong chữ ký cá nhân sẽ không được hiển thị như liên kết.',
 	'ALLOW_SIG_SMILIES'			=> 'Cho phép sử dụng biểu tượng vui trong chữ ký cá nhân',
 	'ALLOW_SMILIES'				=> 'Cho phép sử dụng biểu tượng vui',
 	'ALLOW_TOPIC_NOTIFY'		=> 'Cho phép theo dõi chủ đề',
@@ -118,7 +118,7 @@ $lang = array_merge($lang, array(
 	'AVATAR_GALLERY_PATH'			=> 'Đường dẫn thư viện hình đại diện',
 	'AVATAR_GALLERY_PATH_EXPLAIN'	=> 'Đường dẫn đến thư mục chứa hình ảnh sử dụng cho thư viện hình đại diện trong hệ thống, ví dụ như <samp>images/avatars/gallery</samp>.',
 	'AVATAR_STORAGE_PATH'			=> 'Đường dẫn thư mục chứa hình đại diện tải lên',
-	'AVATAR_STORAGE_PATH_EXPLAIN'	=> 'Đường dẫn đến thư mục chứa hình đại diện được tải lên trong hệ thống, ví dụ như <samp>images/avatars/upload</samp>.',
+	'AVATAR_STORAGE_PATH_EXPLAIN'	=> 'Đường dẫn đến thư mục chứa hình đại diện được tải lên trong hệ thống, ví dụ như <samp>images/avatars/upload</samp>.<br />Chức năng tải lên hình đại diện <strong>sẽ bị vô hiệu</strong> nếu thư mục này không thể ghi.',
 	'MAX_AVATAR_SIZE'				=> 'Kích thước hình đại diện tối đa cho phép',
 	'MAX_AVATAR_SIZE_EXPLAIN'		=> 'Chiều rộng x chiều cao với đơn vị tính Pixel.',
 	'MAX_FILESIZE'					=> 'Dung lượng tập tin hình đại diện tối đa cho phép',
@@ -160,9 +160,9 @@ $lang = array_merge($lang, array(
 $lang = array_merge($lang, array(
 	'ACP_POST_SETTINGS_EXPLAIN'			=> 'Với công cụ này, bạn có thể thay đổi những thiết lập mặc định đối với chức năng gửi bài viết trong hệ thống.',
 	'ALLOW_POST_LINKS'					=> 'Cho phép sử dụng liên kết trong bài viết/tin nhắn',
-	'ALLOW_POST_LINKS_EXPLAIN'			=> 'Nếu bạn vô hiệu tùy chọn này, thẻ BBCode <code>[URL]</code> và các địa chỉ URL khác trong bài viết/tin nhắn sẽ không được hiển thị như liên kết.',
+	'ALLOW_POST_LINKS_EXPLAIN'			=> 'Nếu vô hiệu tùy chọn này, thẻ BBCode <code>[URL]</code> và các địa chỉ URL khác trong bài viết/tin nhắn sẽ không được hiển thị như liên kết.',
 	'ALLOW_POST_FLASH'					=> 'Cho phép sử dụng thẻ BBCode <code>[FLASH]</code> trong bài viết',
-	'ALLOW_POST_FLASH_EXPLAIN'			=> 'Nếu bạn vô hiệu tùy chọn này, thẻ BBCode <code>[FLASH]</code> sẽ bị vô hiệu trong các bài viết. Mặc khác, những thiết lập cấp phép cũng quyết định việc người dùng có thể sử dụng được thẻ BBCode <code>[FLASH]</code> hay không.',
+	'ALLOW_POST_FLASH_EXPLAIN'			=> 'Nếu vô hiệu tùy chọn này, thẻ BBCode <code>[FLASH]</code> sẽ bị vô hiệu trong các bài viết. Mặc khác, những thiết lập cấp phép cũng quyết định việc người dùng có thể sử dụng được thẻ BBCode <code>[FLASH]</code> hay không.',
 
 	'BUMP_INTERVAL'					=> 'Thời gian giữa hai lần đẩy chủ đề lên',
 	'BUMP_INTERVAL_EXPLAIN'			=> 'Số phút, số giờ hoặc số ngày giữa thời gian bài viết mới nhất được gửi đến chủ đề và thao tác đẩy chủ đề lên. Nhập số 0 để vô hiệu tùy chọn này.',
@@ -253,11 +253,11 @@ $lang = array_merge($lang, array(
 	'REG_LIMIT'			=> 'Số lần xác nhận đăng ký sai',
 	'REG_LIMIT_EXPLAIN'	=> 'Số lần nhập sai mã xác nhận tối đa cho phép trong việc đăng ký tài khoản trước khi bị khóa trong phiên đăng nhập đó.',
 
-	'USERNAME_ALPHA_ONLY'			=> 'Chỉ được dùng vừa chữ cái vừa chữ số',
-	'USERNAME_ALPHA_SPACERS'		=> 'Vừa chữ cái vừa chữ số và có khoảng trắng',
-	'USERNAME_ASCII'				=> 'Chỉ được dùng ký tự ASCII (không có mã Unicode quốc tế)',	
-	'USERNAME_LETTER_NUM'			=> 'Bất kì chữ cố và chữ cái nào',
-	'USERNAME_LETTER_NUM_SPACERS'	=> 'Bất kì chữ số, chữ cái và khoảng trắng nào',
+	'USERNAME_ALPHA_ONLY'			=> 'Vừa chữ cái vừa số',
+	'USERNAME_ALPHA_SPACERS'		=> 'Vừa chữ cái vừa số và có khoảng trắng',
+	'USERNAME_ASCII'				=> 'Chỉ dùng bảng mã ASCII (không có ký tự Unicode quốc tế)',	
+	'USERNAME_LETTER_NUM'			=> 'Bất kì chữ cái và số',
+	'USERNAME_LETTER_NUM_SPACERS'	=> 'Bất kì chữ cái, số và khoảng trắng',
 	'USERNAME_CHARS'				=> 'Giới hạn ký tự trong tên tài khoản',
 	'USERNAME_CHARS_ANY'			=> 'Bất kì ký tự nào',
 	'USERNAME_CHARS_EXPLAIN'		=> 'Giới hạn loại ký tự được sử dụng trong tên tài khoản và khoảng trắng: -, +, _, [ và ].',
@@ -361,7 +361,9 @@ $lang = array_merge($lang, array(
 	'ACP_LOAD_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể bật hay tắt những chức năng nhất định của hệ thống để giảm bớt số lượng xử lí được yêu cầu gửi đến máy chủ. Trên hều hết các máy chủ, bạn không cần thiết phải tắt bất kì chức năng nào của hệ thống tại đây. Tuy nhiên, trên một vài máy chủ nhất định hoặc các hệ thống sử dụng dịch vụ lưu trữ Web dùng chung với nhiều người khác trên cùng một máy chủ, việc tắt một vài chức năng không cần đến là rất hết sức cần thiết để giảm bớt khối lượng công việc xử lí cho máy chủ. Bạn cũng nên xác định giới hạn thời gian nạp hệ thống và số lượng phiên đăng nhập vượt quá để hệ thống tự động chuyển sang chế độ ngưng hoạt động kịp thời.',
 
 	'ALLOW_CDN'								=> 'Cho phép sử dụng các dịch vụ nội dung bên ngoài',
-	'ALLOW_CDN_EXPLAIN'						=> 'Nếu bạn bật tùy chọn này, một vài tập tin sẽ kết nối ra mạng Internet bên ngoài thay vì trong máy chủ của bạn. Tùy chọn này có thể tốn thêm băng thông của hệ thống nhưng giải quyết được vấn đề lưu giữ thông tin riêng tư. Trong bản cài mặc định của phpBB, thiết lập này sẽ nạp “jQuery” và phông chữ “Open Sans” từ hệ thống cung cấp nội dung của Google.',
+	'ALLOW_CDN_EXPLAIN'						=> 'Nếu bật tùy chọn này, một vài tập tin sẽ kết nối ra mạng Internet bên ngoài thay vì trong máy chủ của bạn. Tùy chọn này có thể tốn thêm băng thông của hệ thống nhưng giải quyết được vấn đề lưu giữ thông tin riêng tư. Trong bản cài mặc định của phpBB, thiết lập này sẽ nạp “jQuery” và phông chữ “Open Sans” từ hệ thống cung cấp nội dung của Google.',
+	'ALLOW_LIVE_SEARCHES'					=> 'Cho phép gợi ý tìm kiếm',
+	'ALLOW_LIVE_SEARCHES_EXPLAIN'			=> 'Nếu bật tùy chọn này, hệ thống sẽ gợi ý các từ khóa theo ngữ cảnh cho người dùng khi họ nhập liệu trong một vài mục nhất định.',
 	'CUSTOM_PROFILE_FIELDS'					=> 'Mục thông tin cá nhân tùy biến',
 	'LIMIT_LOAD'							=> 'Giới hạn thời gian nạp hệ thống',
 	'LIMIT_LOAD_EXPLAIN'					=> 'Nếu trong vòng một phút hệ thống nạp trung bình vượt quá giá trị được thiết lập này thì hệ thống sẽ tự động chuyển sang chế độ ngưng hoạt động. Giá trị 1.0 gần bằng ~100% tài nguyên được sử dụng của một bộ xử lí máy chủ. Chức năng này chỉ có tác dụng trên các máy chủ UNIX và chỉ trên những máy chủ này, thời gian giới hạn được thiết lập mới có thể sử dụng được. Giá trị này sẽ xác lập lại chính nó thành <strong>0</strong> nếu hệ thống phpBB không thể nhận được giới hạn nạp.',
@@ -378,9 +380,9 @@ $lang = array_merge($lang, array(
 	'RECOMPILE_STYLES'						=> 'Biên dịch lại các thành phần giao diện cũ',
 	'RECOMPILE_STYLES_EXPLAIN'				=> 'Kiểm tra những thành phần giao diện đã được cập nhật trong hệ thống tập tin giao diện và biên dịch lại.',
 	'YES_ANON_READ_MARKING'					=> 'Bật đánh dấu chủ đề cho khách',
-	'YES_ANON_READ_MARKING_EXPLAIN'			=> 'Tùy chọn sắp xếp thông tin trạng thái các chủ đề đã xem/chưa xem cho khách. Nếu bạn vô hiệu tùy chọn này, các bài viết sẽ luôn luôn được đánh dấu đã xem đối với khách.',
+	'YES_ANON_READ_MARKING_EXPLAIN'			=> 'Tùy chọn sắp xếp thông tin trạng thái các chủ đề đã xem/chưa xem cho khách. Nếu vô hiệu tùy chọn này, các bài viết sẽ luôn luôn được đánh dấu đã xem đối với khách.',
 	'YES_BIRTHDAYS'							=> 'Hiển thị danh sách thành viên có sinh nhật',
-	'YES_BIRTHDAYS_EXPLAIN'					=> 'Nếu bạn vô hiệu tùy chọn này, danh sách các thành viên có ngày sinh nhật sẽ không được hiển thị nữa. Ngoài ra, để thiết lập này có tác dụng, thiết lập cho phép thông tin sinh nhật của thành viên cũng phải được bật.',
+	'YES_BIRTHDAYS_EXPLAIN'					=> 'Nếu vô hiệu tùy chọn này, danh sách các thành viên có ngày sinh nhật sẽ không được hiển thị nữa. Ngoài ra, để thiết lập này có tác dụng, thiết lập cho phép thông tin sinh nhật của thành viên cũng phải được bật.',
 	'YES_JUMPBOX'							=> 'Hiển thị danh sách chuyên mục',
 	'YES_MODERATORS'						=> 'Hiển thị danh sách điều hành viên',
 	'YES_ONLINE'							=> 'Hiển thị danh sách thành viên trực tuyến',
@@ -440,7 +442,7 @@ $lang = array_merge($lang, array(
 	'ICONS_PATH'							=> 'Thư mục biểu tượng bài viết',
 	'ICONS_PATH_EXPLAIN'					=> 'Đường dẫn đến thư mục chứa biểu tượng bài viết trong hệ thống, ví dụ như <samp>images/icons</samp>.',
 	'MOD_REWRITE_ENABLE'					=> 'Bật chế độ rút gọn địa chỉ URL',
-	'MOD_REWRITE_ENABLE_EXPLAIN'			=> 'Thiết lập cho phép những địa chỉ URL có chứa “app.php” sẽ được tùy biến để bỏ đi phần tên tập tin này (ví dụ <strong>app.php/foo</strong> sẽ rút gọn còn <strong>/foo</strong>). <strong>Gói mở rộng mod_rewrite của Apache được yêu cầu để sử dụng chức năng này. Nếu bạn bật tùy chọn này mà không có gói mở rộng mod_rewrite, các địa chỉ URL trên hệ thống sẽ bị hỏng.</strong>',
+	'MOD_REWRITE_ENABLE_EXPLAIN'			=> 'Thiết lập cho phép những địa chỉ URL có chứa “app.php” sẽ được tùy biến để bỏ đi phần tên tập tin này (ví dụ <strong>app.php/foo</strong> sẽ rút gọn còn <strong>/foo</strong>). <strong>Gói mở rộng mod_rewrite của Apache được yêu cầu để sử dụng chức năng này. Nếu bật tùy chọn này mà không có gói mở rộng mod_rewrite, các địa chỉ URL trên hệ thống sẽ bị hỏng.</strong>',
 	'MOD_REWRITE_DISABLED'					=> 'Gói mở rộng <strong>mod_rewrite</strong> cho Apache trên máy chủ của bạn đã bị vô hiệu. Hãy bật gói mở rộng này hoặc liên hệ với nhà cung cấp dịch vụ web để được giúp đỡ.',
 	'MOD_REWRITE_INFORMATION_UNAVAILABLE'	=> 'Hệ thống không thể phát hiện gói mở rộng <strong>mod_rewrite</strong> trên máy chủ này. Bạn vẫn có thể bật tùy chọn này nhưng nếu gói mở rộng trên không được cài đặt trên máy chủ, địa chỉ URL tạo ra từ hệ thống sẽ bị hỏng. Liên hệ với nhà cung cấp dịch vụ web nếu bạn không chắc chắn về điều này.',
 	'PATH_SETTINGS'							=> 'Thiết lập đường dẫn đến thư mục',
@@ -487,7 +489,7 @@ $lang = array_merge($lang, array(
 	'FORM_TIME_MAX'					=> 'Thời gian tối đa để gửi các mẫu dữ liệu',
 	'FORM_TIME_MAX_EXPLAIN'			=> 'Thời gian tối đa cho phép mà người dùng có thể gửi các mẫu dữ liệu vào hệ thống. Nhập số <strong>-1</strong> để vô hiệu thiết lập này. Lưu ý rằng một mẫu dữ liệu cũng có thể trở nên không hợp lệ nếu phiên đăng nhập đó đã hết hiệu lực, không phải do thiết lập này.',
 	'FORM_SID_GUESTS'				=> 'Kết nối mẫu dữ liệu đến phiên đăng nhập của khách',
-	'FORM_SID_GUESTS_EXPLAIN'		=> 'Nếu bạn bật tùy chọn này, mẫu dữ liệu sẵn có dành cho khách sẽ được loại trừ không sử dụng đến phiên đăng nhập. Điều này có thể tạo ra những rắc rối với một vài nhà cung cấp dịch vụ truy cập Internet.',
+	'FORM_SID_GUESTS_EXPLAIN'		=> 'Nếu bật tùy chọn này, mẫu dữ liệu sẵn có dành cho khách sẽ được loại trừ không sử dụng đến phiên đăng nhập. Điều này có thể tạo ra những rắc rối với một vài nhà cung cấp dịch vụ truy cập Internet.',
 	'FORWARDED_FOR_VALID'			=> 'Kiểm tra khai báo <var>X_FORWARDED_FOR</var> hợp lệ',
 	'FORWARDED_FOR_VALID_EXPLAIN'	=> 'Những phiên đăng nhập này sẽ chỉ được tiếp tục nếu khai báo <var>X_FORWARDED_FOR</var> gửi đi bằng với một phiên đăng nhập đã gửi trong yêu cầu trước đó. Những thiết lập cấm cũng sẽ được kiểm tra lại các địa chỉ IP trong <var>X_FORWARDED_FOR</var>.',
 	'IP_VALID'						=> 'Kiểm tra địa chỉ IP ',
@@ -528,6 +530,8 @@ $lang = array_merge($lang, array(
 	'BOARD_HIDE_EMAILS_EXPLAIN'		=> 'Tùy chọn ẩn toàn bộ địa chỉ email cá nhân trong hệ thống.',
 	'CONTACT_EMAIL'					=> 'Địa chỉ email liên hệ',
 	'CONTACT_EMAIL_EXPLAIN'			=> 'Địa chỉ email này được sử dụng khi có việc cần liên hệ, ví dụ như vấn đề thư rác, có lỗi xảy ra… Nó sẽ luôn luôn được sử dụng trong phần thông tin <samp>Gửi từ</samp> và <samp>Trả lời đến địa chỉ</samp> của các email.',
+	'CONTACT_EMAIL_NAME'			=> 'Tên liên hệ',
+	'CONTACT_EMAIL_NAME_EXPLAIN'	=> 'Tên của người gửi mà những người nhận email sẽ nhìn thấy. Nếu bạn không muốn đề tên người gửi, hãy để trống phần này.',
 	'EMAIL_FUNCTION_NAME'			=> 'Tên hàm dùng để gửi email',
 	'EMAIL_FUNCTION_NAME_EXPLAIN'	=> 'Hàm chức năng PHP bạn muốn sử dụng để gửi email.',
 	'EMAIL_PACKAGE_SIZE'			=> 'Số lượng email trong mỗi gói email',
@@ -572,7 +576,7 @@ $lang = array_merge($lang, array(
 	'JAB_SERVER_EXPLAIN'		=> 'Ghé thăm %sjabber.org%s để xem danh sách các máy chủ hiện có.',
 	'JAB_SETTINGS_CHANGED'		=> 'Thiết lập Jabber đã được thay đổi thành công.',
 	'JAB_USE_SSL'				=> 'Sử dụng SSL để kết nối',
-	'JAB_USE_SSL_EXPLAIN'		=> 'Nếu bạn bật tùy chọn này, một kết nối an toàn sẽ được cố gắng thiết lập. Cổng máy chủ Jabber sẽ được chỉnh sửa thành <strong>5223</strong> nếu cổng <strong>5222</strong> được chỉ định.',
+	'JAB_USE_SSL_EXPLAIN'		=> 'Nếu bật tùy chọn này, một kết nối an toàn sẽ được cố gắng thiết lập. Cổng máy chủ Jabber sẽ được chỉnh sửa thành <strong>5223</strong> nếu cổng <strong>5222</strong> được chỉ định.',
 	'JAB_USERNAME'				=> 'Tên người dùng Jabber hoặc JID',
 	'JAB_USERNAME_EXPLAIN'		=> 'Xác định một tên người dùng đã đăng ký hoặc một JID hợp lệ. Tên người dùng sẽ không được kiểm tra hợp lệ. Nếu bạn chỉ xác định một tên người dùng thì JID của bạn sẽ trở thành tên người dùng và máy chủ Jabber sẽ xác thực bạn như trên. Nếu không muốn, bạn có thể xác định một JID, ví dụ như <samp>user@jabber.org</samp>.',
 ));

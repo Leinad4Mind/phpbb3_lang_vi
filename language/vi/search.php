@@ -4,7 +4,7 @@
 * search [Vietnamese]
 *
 * @package language
-* @version 1.33
+* @version 1.34
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -75,7 +75,10 @@ $lang = array_merge($lang, array(
 	'NO_RECENT_SEARCHES'	=> 'Không có yêu cầu tìm kiếm nào gần đây.',
 	'NO_SEARCH'				=> 'Xin lỗi, bạn không được phép sử dụng công cụ tìm kiếm trong hệ thống.',
 	'NO_SEARCH_RESULTS'		=> 'Không tìm thấy kết quả nào.',
-	'NO_SEARCH_TIME'		=> 'Xin lỗi, bạn không thể tiếp tục sử dụng công cụ tìm kiếm ngay lúc này. Hãy thử lại sau vài phút nữa.',
+	'NO_SEARCH_TIME'		=> array(
+		1	=> 'Xin lỗi, bạn không thể tiếp tục tìm kiếm ngay lúc này. Hãy thử lại sau %d giây.',
+		2	=> 'Xin lỗi, bạn không thể tiếp tục tìm kiếm ngay lúc này. Hãy thử lại sau %d giây.',
+	),
 	'NO_SEARCH_UNREADS'		=> 'Xin lỗi, chức năng tìm những bài viết chưa xem đã bị vô hiệu trên diễn đàn.',
 	'WORD_IN_NO_POST'		=> 'Không tìm thấy kết quả bởi vì từ khóa <strong>%s</strong> không có trong bất cứ bài viết nào.',
 	'WORDS_IN_NO_POST'		=> 'Không tìm thấy kết quả bởi vì những từ khóa <strong>%s</strong> không có trong bất cứ bài viết nào.',

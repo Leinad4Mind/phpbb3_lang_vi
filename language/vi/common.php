@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version 1.154
+* @version 1.156
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -169,6 +169,7 @@ $lang = array_merge($lang, array(
 	'CONGRATULATIONS'		=> 'Chúc mừng sinh nhật',
 	'CONNECTION_FAILED'		=> 'Kết nối thất bại!',
 	'CONNECTION_SUCCESS'	=> 'Kết nối thành công!',
+	'CONTACT_USER'			=> 'Liên hệ',
 	'COOKIES_DELETED'		=> 'Tất cả cookie đã được xóa thành công.',
 	'CURRENT_TIME'			=> 'Hôm nay, %s',
 
@@ -219,8 +220,6 @@ $lang = array_merge($lang, array(
 	'ERROR'								=> 'Lỗi',
 	'EXPAND_VIEW'						=> 'Xem toàn bộ',
 	'EXTENSION'							=> 'Loại tập tin',
-	'EXTENSION_CONTROLLER_MISSING'		=> 'Phần mở rộng <strong>%s</strong> không có lớp điều khiển và không thể truy xuất từ giao diện người dùng.',
-	'EXTENSION_CLASS_WRONG_TYPE'		=> 'Lớp điều khiển của phần mở rộng <strong>%s</strong> không thuộc về <samp>phpbb_extension_controller_interface</samp>.',
 	'EXTENSION_DISABLED'				=> 'Phần mở rộng <strong>%s</strong> đã bị vô hiệu.',
 	'EXTENSION_DISABLED_AFTER_POSTING'	=> 'Loại tập tin <strong>%s</strong> không còn được phép sử dụng và vì thế sẽ không hiển thị.',
 	'EXTENSION_DOES_NOT_EXIST'			=> 'Phần mở rộng <strong>%s</strong> không tồn tại.',
@@ -354,6 +353,7 @@ $lang = array_merge($lang, array(
 	'LDAP_NO_SERVER_CONNECTION'					=> 'Không thể kết nối đến máy chủ LDAP.',
 	'LDAP_SEARCH_FAILED'						=> 'Có lỗi xuất hiện trong khi tìm kiếm danh sách LDAP.',
 	'LEGEND'									=> 'Chú thích',
+	'LIVE_SEARCHES_NOT_ALLOWED'					=> 'Chức năng gợi ý tìm kiếm không được phép sử dụng.',
 	'LOADING'									=> 'Đang tải…',
 	'LOCATION'									=> 'Đến từ',
 	'LOCK_POST'									=> 'Khóa bài viết',
@@ -428,27 +428,29 @@ $lang = array_merge($lang, array(
 	'NOT_WATCHING_FORUM'					=> 'Bạn không còn nhận thông báo bài viết mới trong chuyên mục này nữa.',
 	'NOT_WATCHING_TOPIC'					=> 'Bạn không còn nhận thông báo bài viết mới trong chủ đề này nữa.',
 	'NOTIFICATION_ADMIN_ACTIVATE_USER'		=> 'Người dùng “%1$s” mới đăng ký và cần được kích hoạt tài khoản.',
-	// This applies for NOTIFICATION_BOOKMARK, NOTIFICATION_POST, and NOTIFICATION_QUOTE.
+	// This applies for NOTIFICATION_BOOKMARK and NOTIFICATION_POST.
 	// %1$s will return a list of users that's concatenated using "," and "and" - see STRING_LIST
 	// Once the user count reaches 5 users or more, the list is trimmed using NOTIFICATION_X_OTHERS
+	// Once the user count reaches 20 users or more, the list is trimmed using NOTIFICATION_MANY_OTHERS
 	// Examples:
 	// A replied...
 	// A and B replied...
 	// A, B and C replied...
 	// A, B, C and 2 others replied...
-	'NOTIFICATION_BOOKMARK'				=> array(
+	// A, B, C and others replied...
+	'NOTIFICATION_BOOKMARK'					=> array(
 		1	=> '%1$s trả lời chủ đề “%2$s” mà bạn đã đánh dấu.',
 	),
 	'NOTIFICATION_GROUP_REQUEST'			=> '%1$s yêu cầu tham gia vào nhóm %2$s.',
 	'NOTIFICATION_GROUP_REQUEST_APPROVED'	=> 'Yêu cầu tham gia vào nhóm %1$s đã được chấp thuận.',
 	'NOTIFICATION_PM'						=> '%1$s gửi cho bạn tin nhắn “%2$s”.',
-	'NOTIFICATION_POST'					=> array(
+	'NOTIFICATION_POST'						=> array(
 		1	=> '%1$s trả lời chủ đề “%2$s”.',
 	),
 	'NOTIFICATION_POST_APPROVED'			=> 'Bài viết “%2$s” của bạn đã được duyệt đăng.',
 	'NOTIFICATION_POST_DISAPPROVED'			=> 'Bài viết “%1$s” của bạn đã bị từ chối đăng vì lý do: “%2$s”.',
 	'NOTIFICATION_POST_IN_QUEUE'			=> 'Bài viết mới “%2$s” gửi bởi %1$s đang chờ duyệt.',
-	'NOTIFICATION_QUOTE'				=> array(
+	'NOTIFICATION_QUOTE'					=> array(
 		1	=> '%1$s nhắc đến bạn trong bài viết “%2$s”.',
 	),
 	'NOTIFICATION_REPORT_PM'				=> '%1$s báo cáo tin nhắn “%2$s” vì lý do: “%3$s”.',
@@ -459,8 +461,9 @@ $lang = array_merge($lang, array(
 	'NOTIFICATION_TOPIC_DISAPPROVED'		=> 'Chủ đề “%1$s” đã bị từ chối đăng vì lý do: “%2$s”.',
 	'NOTIFICATION_TOPIC_IN_QUEUE'			=> 'Chù đề mới “%2$s” gửi bởi %1$s đang chờ duyệt.',
 	'NOTIFICATION_TYPE_NOT_EXIST'			=> 'Loại thông báo “%s” đã khai báo thiếu trong hệ thống tập tin.',
-	// Used in conjuction with NOTIFICATION_BOOKMARK, NOTIFICATION_POST, and NOTIFICATION_QUOTE.
-	'NOTIFICATION_X_OTHERS'				=> array(
+	// Used in conjuction with NOTIFICATION_BOOKMARK and NOTIFICATION_POST.
+	'NOTIFICATION_MANY_OTHERS'				=> 'người khác',
+	'NOTIFICATION_X_OTHERS'					=> array(
 		2	=> '%d người khác',
 	),
 	'NOTIFICATIONS'							=> 'Thông báo',
@@ -758,7 +761,7 @@ $lang = array_merge($lang, array(
 	),
 	'TRACKED_PHP_ERROR'		=> 'Các lỗi PHP đã phát hiện: %s',
 
-	'UNABLE_GET_IMAGE_SIZE'		=> 'Không thể xác định kích thước của tập tin hình ảnh.',
+	'UNABLE_GET_IMAGE_SIZE'		=> 'Không thể xác định kích thước hình. Vui lòng kiểm tra lại địa chỉ URL bạn đã nhập.',
 	'UNABLE_TO_DELIVER_FILE'	=> 'Không thể thực thi tập tin.',
 	'UNKNOWN_BROWSER'			=> 'Trình duyệt không xác định',
 	'UNMARK_ALL'				=> 'Bỏ chọn hết',
@@ -1369,7 +1372,7 @@ $lang = array_merge($lang, array(
 		'D M d, Y g:i a'	=> 'Thứ 2 Tháng 1 01, 2007 1:37 pm',
 		'F d, Y, g:i a'		=> 'Tháng một 01, 2007, 1:37 pm', // Replaced 'jS' by 'd' for Vietnamese
 		'|d M Y|, H:i'		=> 'Hôm nay, 13:37 / 01 Tháng 1 2007, 13:37',
-		'|F d, Y|, g:i a'	=> 'Hôm nay, 1:37 pm / Tháng một 01, 2007, 1:37 pm' // Replaced 'jS' by 'd' for Vietnamese
+		'|F d, Y|, g:i a'	=> 'Hôm nay, 1:37 pm / Tháng một 01, 2007, 1:37 pm', // Replaced 'jS' by 'd' for Vietnamese
 	),
 
 	// The default dateformat which will be used on new installs in this language

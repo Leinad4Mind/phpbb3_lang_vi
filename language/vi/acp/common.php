@@ -4,7 +4,7 @@
 * acp/common [Vietnamese]
 *
 * @package language
-* @version 1.111
+* @version 1.113
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -244,9 +244,6 @@ $lang = array_merge($lang, array(
 	'EXPORT_DOWNLOAD'	=> 'Tải về',
 	'EXPORT_STORE'		=> 'Lưu trữ',
 
-	'FILES_GONE'		=> 'Một vài tập tin đính kèm bạn chọn xóa không tồn tại trên máy chủ. Có thể tập tin vật lí đã bị xóa và những tập tin đính kèm không tồn tại sẽ bị xóa khỏi hệ thống.',
-	'FILES_STATS_WRONG'	=> 'Thông tin thống kê tập tin đính kèm có sai số. Giá trị thực sự: tổng số tập tin đính kèm = %1$d, tổng dung lượng = %2$s.',
-
 	'GENERAL_OPTIONS'	=> 'Tùy chọn tổng quát',
 	'GENERAL_SETTINGS'	=> 'Thiết lập tổng quát',
 	'GLOBAL_MASK'		=> 'Danh sách cấp phép chung',
@@ -287,10 +284,8 @@ $lang = array_merge($lang, array(
 	'PERMISSIONS_TRANSFERRED_EXPLAIN'	=> 'Bạn hiện đang có những thiết lập cấp phép từ “%1$s”. Bạn có thể truy cập vào hệ thống với thiết lập cấp phép người dùng này nhưng không thể truy cập được vào bảng điều khiển dành cho quản trị viên bởi vì những thiết lập cấp phép dành cho người quản trị không được chuyển đến bạn. Bạn cũng có thể <a href="%2$s"><strong>phục hồi lại thiết lập cấp phép của mình</strong></a> bất cứ lúc nào bạn muốn.',
 	'PROCEED_TO_ACP'					=> '%sChuyển đến bảng quản trị viên%s',
 
-	'REMIND'						=> 'Nhắc nhở',
-	'RESYNC'						=> 'Đồng bộ hóa',
-	'RESYNC_FILES_STATS'			=> 'Đồng bộ hóa thống kê tập tin đính kèm',
-	'RESYNC_FILES_STATS_EXPLAIN'	=> 'Đếm lại tổng số tập tin đính kèm và tổng dung lượng lưu trữ chúng từ các bài viết và tin nhắn.',
+	'REMIND'	=> 'Nhắc nhở',
+	'RESYNC'	=> 'Đồng bộ hóa',
 
 	'SELECT_ANONYMOUS'	=> 'Chọn tài khoản khách',
 	'SELECT_OPTION'		=> 'Chọn các mục tùy chọn',
@@ -391,7 +386,6 @@ $lang = array_merge($lang, array(
 	'RESET_ONLINE'					=> 'Tạo lại số lượng người dùng trực tuyến đông nhất',
 	'RESET_ONLINE_CONFIRM'			=> 'Bạn có chắc chắn muốn tạo lại thông tin số lượng người dùng trực tuyến đông nhất?',
 	'RESET_ONLINE_SUCCESS'			=> 'Thông tin người dùng trực tuyến đã được tạo mới',
-	'RESYNC_FILES_STATS_CONFIRM'	=> 'Bạn có chắc chắn muốn đồng bộ hóa thống kê tập tin đính kèm?',
 	'RESYNC_POSTCOUNTS'				=> 'Đồng bộ hóa bộ đếm số bài viết',
 	'RESYNC_POSTCOUNTS_EXPLAIN'		=> 'Chỉ những bài viết còn hiệu hữu trong diễn đàn mới được tính vào bộ đếm. Những bài viết đã được dọn dẹp sẽ không được tính.',
 	'RESYNC_POSTCOUNTS_CONFIRM'		=> 'Bạn có chắc chắn muốn đồng bộ hóa lại bộ đếm số bài viết?',
@@ -413,7 +407,7 @@ $lang = array_merge($lang, array(
 	'TIMEZONE_SELECTED'	=> '(đang chọn)',
 	'TOPICS_PER_DAY'	=> 'Số chủ đề/ngày',
 
-	'UPLOAD_DIR_SIZE'	=> 'Dung lượng thư mục tập tin đính kèm',
+	'UPLOAD_DIR_SIZE'	=> 'Tổng dung lượng tập tin đính kèm',
 	'USERS_PER_DAY'		=> 'Số người dùng/ngày',
 
 	'VALUE'						=> 'Giá trị',
@@ -560,8 +554,8 @@ $lang = array_merge($lang, array(
 	'LOG_PM_REPORT_CLOSED'		=> '<strong>Đã kết thúc báo cáo tin nhắn</strong><br />» %s',
 	'LOG_PM_REPORT_DELETED'		=> '<strong>Đã xóa báo cáo tin nhắn</strong><br />» %s',
 	'LOG_POST_APPROVED'			=> '<strong>Đã duyệt bài viết</strong><br />» %s',
-	'LOG_POST_DISAPPROVED'		=> '<strong>Đã từ chối bài viết “%1$s” với nguyên nhân sau</strong><br />» %2$s',
-	'LOG_POST_EDITED'			=> '<strong>Đã sửa bài viết “%1$s” được gửi bởi</strong><br />» %2$s',
+	'LOG_POST_DISAPPROVED'		=> '<strong>Đã từ chối bài viết “%1$s” gửi bởi “%3$s” với nguyên nhân sau</strong><br />» %2$s',
+	'LOG_POST_EDITED'			=> '<strong>Đã sửa bài viết “%1$s” gửi bởi</strong><br />» %2$s',
 	'LOG_POST_RESTORED'			=> '<strong>Đã phục hồi bài viết</strong><br />» %s',
 	'LOG_REPORT_CLOSED'			=> '<strong>Đã kết thúc báo cáo</strong><br />» %s',
 	'LOG_REPORT_DELETED'		=> '<strong>Đã xóa báo cáo</strong><br />» %s',
@@ -573,7 +567,7 @@ $lang = array_merge($lang, array(
 
 	'LOG_TOPIC_APPROVED'		=> '<strong>Đã duyệt chủ đề</strong><br />» %s',
 	'LOG_TOPIC_RESTORED'		=> '<strong>Đã phục hồi chủ đề</strong><br />» %s',
-	'LOG_TOPIC_DISAPPROVED'		=> '<strong>Đã từ chối chủ đề “%1$s” với nguyên nhân sau</strong><br />%2$s',
+	'LOG_TOPIC_DISAPPROVED'		=> '<strong>Đã từ chối chủ đề “%1$s” gửi bởi “%3$s” với nguyên nhân sau</strong><br />» %2$s',
 	'LOG_TOPIC_RESYNC'			=> '<strong>Đã đồng bộ lại bộ đếm số chủ đề</strong><br />» %s',
 	'LOG_TOPIC_TYPE_CHANGED'	=> '<strong>Đã thay đổi loại chủ đề</strong><br />» %s',
 	'LOG_UNLOCK'				=> '<strong>Đã mở khóa chủ đề</strong><br />» %s',
@@ -679,6 +673,7 @@ $lang = array_merge($lang, array(
 
 	'LOG_PRUNE'					=> '<strong>Đã dọn dẹp chuyên mục</strong><br />» %s',
 	'LOG_AUTO_PRUNE'			=> '<strong>Đã dọn dẹp tự động chuyên mục</strong><br />» %s',
+	'LOG_PRUNE_SHADOW'			=> '<strong>Đã dọn dẹp tự động các liên kết đến chủ đề cũ</strong><br />» %s',
 	'LOG_PRUNE_USER_DEAC'		=> '<strong>Tài khoản đã được ngưng kích hoạt</strong><br />» %s',
 	'LOG_PRUNE_USER_DEL_DEL'	=> '<strong>Tài khoản đã được dọn dẹp và toàn bộ bài viết đã bị xóa</strong><br />» %s',
 	'LOG_PRUNE_USER_DEL_ANON'	=> '<strong>Tài khoản đã được dọn dẹp và toàn bộ bài viết được giữ lại</strong><br />» %s',
@@ -775,11 +770,14 @@ $lang = array_merge($lang, array(
 	'LOG_USER_GROUP_JOIN_PENDING'	=> '<strong>Thành viên đã tham gia vào nhóm và đang chờ quyết định chấp thuận</strong><br />» %s',
 	'LOG_USER_GROUP_RESIGN'			=> '<strong>Người dùng đã từ bỏ tư cách thành viên trong nhóm</strong><br />» %s',
 
-	'LOG_WARNING_DELETED'		=> '<strong>Đã xóa cảnh cáo cho người dùng</strong><br />» %s',
-	'LOG_WARNINGS_DELETED'		=> '<strong>Đã xóa %2$s cảnh cáo cho người dùng</strong><br />» %1$s', // Example: '<strong>Deleted 2 user warnings</strong><br />» username'
-	'LOG_WARNINGS_DELETED_ALL'	=> '<strong>Đã xóa hết cảnh cáo cho người dùng</strong><br />» %s',
+	'LOG_WARNING_DELETED'		=> '<strong>Đã xóa cảnh cáo người dùng</strong><br />» %s',
+	'LOG_WARNINGS_DELETED'		=> array(
+		1 => '<strong>Đã xóa cảnh cáo người dùng</strong><br />» %1$s',
+		2 => '<strong>Đã xóa %2$d cảnh cáo người dùng</strong><br />» %1$s', // Example: '<strong>Deleted 2 user warnings</strong><br />» username'
+	),
+	'LOG_WARNINGS_DELETED_ALL'	=> '<strong>Đã xóa hết cảnh cáo người dùng</strong><br />» %s',
 
-	'LOG_WORD_ADD'			=> '<strong>Đã thêm từ kiểm duyệt</strong><br />» %s',
-	'LOG_WORD_DELETE'		=> '<strong>Đã xóa từ kiểm duyệt</strong><br />» %s',
-	'LOG_WORD_EDIT'			=> '<strong>Đã sửa từ kiểm duyệt</strong><br />» %s',
+	'LOG_WORD_ADD'		=> '<strong>Đã thêm từ kiểm duyệt</strong><br />» %s',
+	'LOG_WORD_DELETE'	=> '<strong>Đã xóa từ kiểm duyệt</strong><br />» %s',
+	'LOG_WORD_EDIT'		=> '<strong>Đã sửa từ kiểm duyệt</strong><br />» %s',
 ));

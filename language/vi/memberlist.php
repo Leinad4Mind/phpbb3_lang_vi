@@ -4,7 +4,7 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version 1.46
+* @version 1.47
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -51,8 +51,7 @@ $lang = array_merge($lang, array(
 
 	'BEFORE'	=> 'Trước',
 
-	'CC_EMAIL'		=> 'Gửi bản sao của email này cho tôi.',
-	'CONTACT_USER'	=> 'Liên hệ',
+	'CC_EMAIL'	=> 'Gửi bản sao của email này cho tôi.',
 
 	'DEST_LANG'			=> 'Ngôn ngữ',
 	'DEST_LANG_EXPLAIN'	=> 'Chọn một ngôn ngữ thích hợp cho người nhận tin nhắn này.',

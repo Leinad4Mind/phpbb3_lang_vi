@@ -4,7 +4,7 @@
 * acp/forums [Vietnamese]
 *
 * @package language
-* @version 1.47
+* @version 1.49
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -106,7 +106,9 @@ $lang = array_merge($lang, array(
 	'FORUM_PASSWORD_UNSET_EXPLAIN'		=> 'Đánh dấu vào tùy chọn này nếu bạn muốn gỡ bỏ mật khẩu chuyên mục.',
 	'FORUM_PASSWORD_MISMATCH'			=> 'Mật khẩu chuyên mục bạn nhập không phù hợp.',
 	'FORUM_PASSWORD_OLD'				=> 'Mật khẩu chuyên mục này được mã hóa theo phương pháp cũ và bạn nên thay đổi lại nó.',
-	'FORUM_PRUNE_SETTINGS'				=> 'Thiết lập dọn dẹp chuyên mục',	
+	'FORUM_PRUNE_SETTINGS'				=> 'Thiết lập dọn dẹp chuyên mục',
+	'FORUM_PRUNE_SHADOW'				=> 'Dọn dẹp liên kết đến chủ đề cũ',
+	'FORUM_PRUNE_SHADOW_EXPLAIN'		=> 'Thiết lập hệ thống tự động dọn dẹp các liên kết để lại khi một chủ đề bị di chuyển đi nơi khác, bằng cách điều chỉnh tham số chu kỳ thời gian bên dưới.',
 	'FORUM_RESYNCED'					=> 'Chuyên mục <strong>%s</strong> đã được đồng bộ thành công.',
 	'FORUM_RULES_EXPLAIN'				=> 'Nội qui chuyên mục được hiển thị trong bất cứ trang nào của chuyên mục đó.',
 	'FORUM_RULES_LINK'					=> 'Liên kết đến nội qui chuyên mục',

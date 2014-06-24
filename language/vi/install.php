@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version 1.115
+* @version 1.116
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -157,7 +157,8 @@ $lang = array_merge($lang, array(
 	'DLL_MYSQLI'				=> 'MySQL với phần mở rộng MySQLi',
 	'DLL_ORACLE'				=> 'Oracle',
 	'DLL_POSTGRES'				=> 'PostgreSQL',
-	'DLL_SQLITE'				=> 'SQLite',
+	'DLL_SQLITE'				=> 'SQLite 2',
+	'DLL_SQLITE3'				=> 'SQLite 3',
 	'DLL_XML'					=> 'Hỗ trợ XML [ Jabber ]',
 	'DLL_ZLIB'					=> 'Hỗ trợ chế độ nén zlib [ gz, .tar.gz, .zip ]',
 	'DL_CONFIG'					=> 'Tải về tập tin cấu hình',
@@ -216,6 +217,7 @@ $lang = array_merge($lang, array(
 		<li>MySQL 3.23 trở lên (hỗ trợ MySQLi)</li>
 		<li>PostgreSQL 8.3+</li>
 		<li>SQLite 2.8.2+</li>
+		<li>SQLite 3.6.15+</li>
 		<li>Firebird 2.1+</li>
 		<li>MS SQL Server 2000 trở lên (trực tiếp hoặc thông qua ODBC)</li>
 		<li>MS SQL Server 2005 trở lên (tự nhiên)</li>
@@ -238,7 +240,8 @@ $lang = array_merge($lang, array(
 	'INST_ERR_DB_INVALID_PREFIX'	=> 'Tiền tố bạn nhập không hợp lệ. Nó phải bắt đầu bằng một chữ cái và chỉ chứa chữ cái, số và dấu gạch dưới.',
 	'INST_ERR_DB_NO_ERROR'			=> 'Không có thông báo lỗi nào được đưa ra.',
 	'INST_ERR_DB_NO_MYSQLI'			=> 'Phiên bản MySQL được cài đặt trên máy chủ không tương thích với tùy chọn “MySQL với phần mở rộng MySQLi” mà bạn vừa chọn. Hãy thử thay thế bằng tùy chọn “MySQL” để tiếp tục.',
-	'INST_ERR_DB_NO_SQLITE'			=> 'Phiên bản phần mở rộng SQLite được cài đặt trên máy chủ đã quá cũ. Nó phải được nâng cấp ít nhất đến phiên bản 2.8.2 để sử dụng với hệ thống này.',
+	'INST_ERR_DB_NO_SQLITE'			=> 'Phiên bản phần mở rộng SQLite được cài đặt trên máy chủ đã quá cũ. Vui lòng nâng cấp ít nhất đến phiên bản 2.8.2.',
+	'INST_ERR_DB_NO_SQLITE3'		=> 'Phiên bản phần mở rộng SQLite được cài đặt trên máy chủ đã quá cũ. Vui lòng nâng cấp ít nhất đến phiên bản 3.6.15.',
 	'INST_ERR_DB_NO_ORACLE'			=> 'Phiên bản Oracle được cài đặt trên máy chủ yêu cầu bạn phải thiết lập thông số <var>NLS_CHARACTERSET</var> thành <var>UTF-8</var>. Bạn hãy vui lòng nâng cấp hệ thống lên phiên bản 9.2+ hoặc chỉ cần thay đổi lại thông số trên.',
 	'INST_ERR_DB_NO_FIREBIRD'		=> 'Phiên bản Firebird được cài đặt trên máy chủ cũ hơn phiên bản 2.1, bạn hãy vui lòng nâng cấp hệ thống lên phiên bản mới hơn.',
 	'INST_ERR_DB_NO_FIREBIRD_PS'	=> 'Cơ sở dữ liệu vừa chọn để sử dụng cho Firebird có một trang kích thước nhỏ hơn <strong>8192</strong>, hệ thống yêu cầu ít nhất phải là <strong>8192</strong>.',
