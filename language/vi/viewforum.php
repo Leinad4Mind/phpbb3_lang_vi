@@ -4,8 +4,8 @@
 * viewforum [Vietnamese]
 *
 * @package language
-* @version $Id: viewforum.php,v 1.010 2007/10/06 08:50:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: viewforum.php 14 2008-11-01 22:55:00Z nedka $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -45,7 +45,7 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ACTIVE_TOPICS'			=> 'Những chủ đề không bị khoá',
+	'ACTIVE_TOPICS'			=> 'Những chủ đề không bị khóa',
 	'ANNOUNCEMENTS'			=> 'Thông báo',
 
 	'FORUM_PERMISSIONS'		=> 'Cấp phép chuyên mục',
@@ -55,15 +55,15 @@ $lang = array_merge($lang, array(
 
 	'LOGIN_NOTIFY_FORUM'	=> 'Hãy vui lòng đăng nhập để xem chuyên mục này.',
 
-	'MARK_TOPICS_READ'		=> 'Đánh dấu tất cả chủ đề như là đã xem',
+	'MARK_TOPICS_READ'		=> 'Đánh dấu đã xem tất cả chủ đề',
 
 	'NEW_POSTS_HOT'			=> 'Có bài viết mới [ Nhiều người xem ]',
-	'NEW_POSTS_LOCKED'		=> 'Có bài viết mới [ Đã khoá ]',
+	'NEW_POSTS_LOCKED'		=> 'Có bài viết mới [ Đã khóa ]',
 	'NO_NEW_POSTS_HOT'		=> 'Không có bài viết mới [ Nhiều người xem ]',
-	'NO_NEW_POSTS_LOCKED'	=> 'Không có bài viết mới [ Đã khoá ]',
+	'NO_NEW_POSTS_LOCKED'	=> 'Không có bài viết mới [ Đã khóa ]',
 	'NO_READ_ACCESS'		=> 'Bạn không được cấp phép để xem các chủ đề trong chuyên mục này.',
 
-	'POST_FORUM_LOCKED'		=> 'Chuyên mục đã bị khoá',
+	'POST_FORUM_LOCKED'		=> 'Chuyên mục đã bị khóa',
 
 	'TOPICS_MARKED'			=> 'Những chủ đề trong chuyên mục này đã được đánh dấu xem rồi.',
 

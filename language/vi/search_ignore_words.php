@@ -4,8 +4,8 @@
 * search_ignore_words [Vietnamese]
 *
 * @package language
-* @version $Id: search_ignore_words.php,v 1.005 2007/10/06 08:49:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: search_ignore_words.php 6 2008-08-13 16:21:00Z nedka $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

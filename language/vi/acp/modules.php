@@ -4,8 +4,8 @@
 * acp_modules [Vietnamese]
 *
 * @package language
-* @version $Id: modules.php,v 1.010 2007/10/06 09:00:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: modules.php 15 2008-11-01 22:58:00Z nedka $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -45,7 +45,7 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ACP_MODULE_MANAGEMENT_EXPLAIN'	=> 'Công cụ này cho phép bạn quản lý tất cả các nhóm và gói chức năng trong hệ thống. Cần lưu ý rằng bảng điều khiển của quản trị viên có cấu trúc menu đến ba cấp (Nhóm chức năng -> Nhóm chức năng -> Gói chức năng) nhờ đó mà các gói chức năng khác có cấu trúc menu hai cấp (Nhóm chức năng -> Gói chức năng) mới được giữ lại bên trong. Hãy cẩn thận vì bạn có thể làm hư hỏng toàn bộ các menu trong bảng điều khiển của quản trị viên và mất chức năng điều khiển nếu bạn vô hiệu hay xóa các gói chức năng có nhiệm vụ quản lý cho các gói chức năng khác và cả chính nó.',
+	'ACP_MODULE_MANAGEMENT_EXPLAIN'	=> 'Công cụ này cho phép bạn quản lí tất cả các loại nhóm và gói chức năng trong hệ thống. Cần lưu ý rằng bảng quản trị viên có cấu trúc trình đơn đến ba cấp (Nhóm chức năng -> Nhóm chức năng -> Gói chức năng) nhờ đó mà các gói chức năng khác có cấu trúc trình đơn hai cấp (Nhóm chức năng -> Gói chức năng) mới được giữ lại bên trong. Hãy cẩn thận vì bạn có thể làm hư hỏng toàn bộ các trình đơn trong bảng quản trị viên và mất chức năng điều khiển nếu bạn vô hiệu hay xóa các gói chức năng có nhiệm vụ quản lí cho các gói chức năng khác và cả chính nó.',
 	'ADD_MODULE'					=> 'Thêm gói chức năng',
 	'ADD_MODULE_CONFIRM'			=> 'Bạn có chắc chắn muốn thêm vào gói chức năng với chế độ đã chọn?',
 	'ADD_MODULE_TITLE'				=> 'Thêm vào gói chức năng',
@@ -59,7 +59,7 @@ $lang = array_merge($lang, array(
 	'CREATE_MODULE'			=> 'Tạo gói chức năng mới',
 
 	'DEACTIVATED_MODULE'	=> 'Gói chức năng đã ngưng kích hoạt',
-	'DELETE_MODULE'			=> 'Xoá gói chức năng',
+	'DELETE_MODULE'			=> 'Xóa gói chức năng',
 	'DELETE_MODULE_CONFIRM'	=> 'Bạn có chắc chắn muốn gỡ bỏ gói chức năng này?',
 
 	'EDIT_MODULE'			=> 'Sửa gói chức năng',

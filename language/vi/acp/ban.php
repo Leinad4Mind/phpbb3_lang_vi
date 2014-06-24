@@ -4,8 +4,8 @@
 * acp_ban [Vietnamese]
 *
 * @package language
-* @version $Id: ban.php,v 1.014 2007/10/06 08:53:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: ban.php 19 2008-11-01 22:55:00Z nedka $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -50,7 +50,7 @@ $lang = array_merge($lang, array(
 	'30_MINS'		=> '30 phút',
 	'6_HOURS'		=> '6 giờ',
 
-	'ACP_BAN_EXPLAIN'	=> 'Sử dụng công cụ này, bạn có thể điều khiển việc cấm các thành viên theo tên thành viên, địa chỉ IP hay địa chỉ Email. Những phương pháp này sẽ ngăn cản thành viên bị cấm truy cập vào bất kỳ thành phần nào trong hệ thống. Bạn có thể đưa ra một nguyên nhân ngắn giới hạn với tối đa là <strong>3000</strong> ký tự về việc vì sao thành viên đó bị cấm. Các thao tác cấm này sẽ được ghi nhận trong bảng ghi nhận của quản trị viên. Bạn cũng có thể xác định thời gian thực hiện lệnh cấm. Nếu bạn muốn xác định chính xác ngày kết thúc lệnh cấm, tốt hơn cách thiết lập một khoảng thời gian cấm trong bao lâu, bạn có thể chọn <span style="text-decoration: underline;">Cho đến ngày -&gt;</span> và nhập vào ngày tháng theo định dạng <kbd>YYYY-MM-DD</kbd>.',
+	'ACP_BAN_EXPLAIN'	=> 'Sử dụng công cụ này, bạn có thể điều khiển việc cấm các thành viên theo tên thành viên, địa chỉ IP hay địa chỉ email. Những phương pháp này sẽ ngăn cản thành viên bị cấm truy cập vào bất kỳ thành phần nào trong hệ thống. Bạn có thể đưa ra một nguyên nhân ngắn giới hạn với tối đa là <strong>3000</strong> ký tự về việc vì sao thành viên đó bị cấm. Các thao tác cấm này sẽ được ghi nhận trong bảng ghi nhận của quản trị viên. Bạn cũng có thể xác định thời gian thực hiện lệnh cấm. Nếu bạn muốn xác định chính xác ngày kết thúc lệnh cấm, tốt hơn cách thiết lập một khoảng thời gian cấm trong bao lâu, bạn có thể chọn <span style="text-decoration: underline;">Cho đến ngày -&gt;</span> và nhập vào ngày tháng theo định dạng <kbd>YYYY-MM-DD</kbd>.',
 
 	'BAN_EXCLUDE'			=> 'Loại ra từ lệnh cấm',
 	'BAN_LENGTH'			=> 'Thời gian thực hiện lệnh cấm',
@@ -58,16 +58,16 @@ $lang = array_merge($lang, array(
 	'BAN_GIVE_REASON'		=> 'Nguyên nhân giải thích cho thành viên khi bị cấm',
 	'BAN_UPDATE_SUCCESSFUL'	=> 'Danh sách cấm đã được cập nhật thành công.',
 
-	'EMAIL_BAN'					=> 'Cấm một hay nhiều địa chỉ Email',
-	'EMAIL_BAN_EXCLUDE_EXPLAIN'	=> 'Bật tuỳ chọn này để loại trừ các địa chỉ Email đã nhập vào khỏi các lệnh cấm hiện tại.',
-	'EMAIL_BAN_EXPLAIN'			=> 'Để xác định nhiều địa chỉ Email cùng lúc, bạn hãy nhập mỗi địa chỉ Email trong một dòng. Bạn cũng có thể sử dụng dấu đại diện * để xác định các địa chỉ Email cùng loại, ví dụ như <samp>*@hotmail.com</samp>, <samp>*@*.domain.tld</samp>…',
-	'EMAIL_NO_BANNED'			=> 'Không có địa chỉ Email nào bị cấm',
-	'EMAIL_UNBAN'				=> 'Ngưng cấm hoặc ngưng loại trừ địa chỉ Email',
-	'EMAIL_UNBAN_EXPLAIN'		=> 'Bạn có thể ngưng cấm hoặc ngưng loại trừ nhiều địa chỉ Email cùng lúc trong một thao tác bằng cách kết hợp hiệu quả chuột và bàn phím từ máy tính và trình duyệt. Những địa chỉ Email bị loại trừ được đánh dấu nổi bật.',
+	'EMAIL_BAN'					=> 'Cấm một hay nhiều địa chỉ email',
+	'EMAIL_BAN_EXCLUDE_EXPLAIN'	=> 'Bật tùy chọn này để loại trừ các địa chỉ email đã nhập vào khỏi các lệnh cấm hiện tại.',
+	'EMAIL_BAN_EXPLAIN'			=> 'Để xác định nhiều địa chỉ email cùng lúc, bạn hãy nhập mỗi địa chỉ email trong một dòng. Bạn cũng có thể sử dụng dấu * để xác định các địa chỉ email cùng tên miền, ví dụ như <samp>*@hotmail.com</samp>, <samp>*@*.domain.tld</samp>…',
+	'EMAIL_NO_BANNED'			=> 'Không có địa chỉ email nào bị cấm',
+	'EMAIL_UNBAN'				=> 'Ngưng cấm hoặc ngưng loại trừ địa chỉ email',
+	'EMAIL_UNBAN_EXPLAIN'		=> 'Bạn có thể ngưng cấm hoặc ngưng loại trừ nhiều địa chỉ email cùng lúc trong một thao tác bằng cách kết hợp hiệu quả chuột và bàn phím từ máy tính và trình duyệt. Những địa chỉ email bị loại trừ được đánh dấu nổi bật.',
 
 	'IP_BAN'					=> 'Cấm một hay nhiều địa chỉ IP',
-	'IP_BAN_EXCLUDE_EXPLAIN'	=> 'Bật tuỳ chọn này để loại trừ các địa chỉ IP đã nhập vào khỏi các lệnh cấm hiện tại.',
-	'IP_BAN_EXPLAIN'			=> 'Để xác định nhiều địa chỉ IP hay tên miền cùng lúc, bạn hãy nhập mỗi địa chỉ IP hay tên miền trong một dòng. Để cấm một dãy địa chỉ IP xác định, bắt đầu và kết thúc bằng dấu gạch nối (-), xác định các địa chỉ IP cùng loại bằng dấu đại diện “*”',
+	'IP_BAN_EXCLUDE_EXPLAIN'	=> 'Bật tùy chọn này để loại trừ các địa chỉ IP đã nhập vào khỏi các lệnh cấm hiện tại.',
+	'IP_BAN_EXPLAIN'			=> 'Để xác định nhiều địa chỉ IP hay tên miền cùng lúc, bạn hãy nhập mỗi địa chỉ IP hay tên miền trong một dòng. Để cấm một dãy địa chỉ IP xác định, bắt đầu và kết thúc bằng dấu gạch nối (-), xác định các địa chỉ IP cùng dãy bằng dấu sao (*).',
 	'IP_HOSTNAME'				=> 'Địa chỉ IP hoặc tên miền',
 	'IP_NO_BANNED'				=> 'Không có địa chỉ IP nào bị cấm',
 	'IP_UNBAN'					=> 'Ngưng cấm hoặc ngưng loại trừ địa chỉ IP',
@@ -79,7 +79,7 @@ $lang = array_merge($lang, array(
 	
 	'UNTIL'						=> 'Cho đến ngày',
 	'USER_BAN'					=> 'Cấm một hay nhiều tên thành viên',
-	'USER_BAN_EXCLUDE_EXPLAIN'	=> 'Bật tuỳ chọn này để loại trừ các thành viên đã nhập vào khỏi các lệnh cấm hiện tại.',
+	'USER_BAN_EXCLUDE_EXPLAIN'	=> 'Bật tùy chọn này để loại trừ các thành viên đã nhập vào khỏi các lệnh cấm hiện tại.',
 	'USER_BAN_EXPLAIN'			=> 'Để xác định nhiều thành viên cùng lúc, bạn hãy nhập mỗi tên thành viên trong một dòng. Sử dụng chức năng <span style="text-decoration: underline;">Tìm một thành viên</span> để tra cứu và thêm vào một hay nhiều thành viên tự động.',
 	'USER_NO_BANNED'			=> 'Không có thành viên nào bị cấm',
 	'USER_UNBAN'				=> 'Ngưng cấm hoặc ngưng loại trừ thành viên',

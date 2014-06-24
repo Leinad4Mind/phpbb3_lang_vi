@@ -4,8 +4,8 @@
 * acp_language [Vietnamese]
 *
 * @package language
-* @version $Id: language.php,v 1.012 2007/10/06 08:58:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: language.php 18 2008-11-01 22:57:00Z nedka $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -45,10 +45,10 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ACP_FILES'						=> 'Tập tin ngôn ngữ dùng trong bảng điều khiển của quản trị viên',
+	'ACP_FILES'						=> 'Tập tin ngôn ngữ dùng trong bảng quản trị viên',
 	'ACP_LANGUAGE_PACKS_EXPLAIN'	=> 'Bảng điều khiển này sẽ giúp bạn cài đặt hoặc gỡ bỏ các gói ngôn ngữ trong hệ thống.',
 
-	'EMAIL_FILES'			=> 'Tập tin ngôn ngữ dùng trong Email',
+	'EMAIL_FILES'			=> 'Tập tin ngôn ngữ dùng trong email',
 
 	'FILE_CONTENTS'				=> 'Nội dung tập tin',
 	'FILE_FROM_STORAGE'			=> 'Tập tin từ thư mục lưu trữ',
@@ -56,8 +56,8 @@ $lang = array_merge($lang, array(
 	'HELP_FILES'				=> 'Tập tin ngôn ngữ dùng trong trợ giúp',
 
 	'INSTALLED_LANGUAGE_PACKS'	=> 'Những gói ngôn ngữ đã cài đặt',
-	'INVALID_LANGUAGE_PACK'		=> 'Gói ngôn ngữ bạn vừa chọn dường như không hợp lệ. Hãy kiểm tra lại gói ngôn ngữ này và tải lên lại lần nữa nếu cần thiết.',
-	'INVALID_UPLOAD_METHOD'		=> 'Phương pháp tải lên bạn vừa chọn không hợp lệ. Hãy vui lòng chọn phương pháp tải lên khác.',
+	'INVALID_LANGUAGE_PACK'		=> 'Gói ngôn ngữ vừa chọn dường như không hợp lệ. Hãy kiểm tra lại gói ngôn ngữ này và tải lên lại lần nữa nếu cần thiết.',
+	'INVALID_UPLOAD_METHOD'		=> 'Phương pháp tải lên vừa chọn không hợp lệ. Hãy vui lòng chọn phương pháp tải lên khác.',
 
 	'LANGUAGE_DETAILS_UPDATED'			=> 'Thông tin chi tiết về gói ngôn ngữ đã được cập nhật thành công.',
 	'LANGUAGE_ENTRIES'					=> 'Mục từ ngôn ngữ',
@@ -71,12 +71,12 @@ $lang = array_merge($lang, array(
 	'LANGUAGE_PACK_ISO'					=> 'Mã ISO của gói ngôn ngữ',
 	'LANGUAGE_PACK_LOCALNAME'			=> 'Tên hệ thống',
 	'LANGUAGE_PACK_NAME'				=> 'Tên',
-	'LANGUAGE_PACK_NOT_EXIST'			=> 'Gói ngôn ngữ bạn vừa chọn không tồn tại.',
+	'LANGUAGE_PACK_NOT_EXIST'			=> 'Gói ngôn ngữ vừa chọn không tồn tại.',
 	'LANGUAGE_PACK_USED_BY'				=> 'Số người sử dụng (Bao gồm máy tìm kiếm)',
 	'LANGUAGE_VARIABLE'					=> 'Biến ngôn ngữ',
 	'LANG_AUTHOR'						=> 'Tác giả gói ngôn ngữ',
 	'LANG_ENGLISH_NAME'					=> 'Tên tiếng Anh',
-	'LANG_ISO_CODE'						=> 'Mã ISO',
+	'LANG_ISO_CODE'						=> 'Chuẩn ISO',
 	'LANG_LOCAL_NAME'					=> 'Tên hệ thống',
 
 	'MISSING_LANGUAGE_FILE'		=> 'Tập tin ngôn ngữ bị thiếu: <strong style="color:red">%s</strong>',
@@ -97,7 +97,7 @@ $lang = array_merge($lang, array(
 	'THOSE_MISSING_LANG_FILES'			=> 'Những tập tin ngôn ngữ dưới đây bị thiếu trong gói ngôn ngữ <strong>%s</strong>',
 	'THOSE_MISSING_LANG_VARIABLES'		=> 'Những biến ngôn ngữ dưới đây bị thiếu trong gói ngôn ngữ <strong>%s</strong>',
 
-	'UNINSTALLED_LANGUAGE_PACKS'	=> 'Những gói ngôn ngữ đã gỡ bỏ',
+	'UNINSTALLED_LANGUAGE_PACKS'	=> 'Những gói ngôn ngữ chưa sử dụng',
 
 	'UNABLE_TO_WRITE_FILE'		=> 'Tập tin không thể ghi đến %s.',
 	'UPLOAD_COMPLETED'			=> 'Quá trình tải lên đã hoàn tất.',
@@ -105,7 +105,7 @@ $lang = array_merge($lang, array(
 	'UPLOAD_METHOD'				=> 'Phương pháp tải lên',
 	'UPLOAD_SETTINGS'			=> 'Thiết lập tải lên',
 
-	'WRONG_LANGUAGE_FILE'		=> 'Tập tin ngôn ngữ bạn vừa chọn không hợp lệ.',
+	'WRONG_LANGUAGE_FILE'		=> 'Tập tin ngôn ngữ vừa chọn không hợp lệ.',
 ));
 
 ?>

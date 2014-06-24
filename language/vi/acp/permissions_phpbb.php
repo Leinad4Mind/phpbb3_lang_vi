@@ -4,7 +4,7 @@
 * acp_permissions_phpbb (phpBB Permission Set) [Vietnamese]
 *
 * @package language
-* @version $Id: permissions_phpbb.php,v 1.026 2008/03/27 09:39:00 nedka Exp $
+* @version $Id: permissions_phpbb.php 32 2008-11-01 22:58:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -108,10 +108,10 @@ $lang = array_merge($lang, array(
 
 // User Permissions
 $lang = array_merge($lang, array(
-	'acl_u_viewprofile'	=> array('lang' => 'Có thể xem thông tin cá nhân, danh sách thành viên và những người đang trực tuyến', 'cat' => 'profile'),
+	'acl_u_viewprofile'	=> array('lang' => 'Có thể xem thông tin cá nhân, danh sách thành viên và những người trực tuyến', 'cat' => 'profile'),
 	'acl_u_chgname'		=> array('lang' => 'Có thể thay đổi tên thành viên', 'cat' => 'profile'),
 	'acl_u_chgpasswd'	=> array('lang' => 'Có thể thay đổi mật khẩu', 'cat' => 'profile'),
-	'acl_u_chgemail'	=> array('lang' => 'Có thể thay đổi địa chỉ Email', 'cat' => 'profile'),
+	'acl_u_chgemail'	=> array('lang' => 'Có thể thay đổi địa chỉ email', 'cat' => 'profile'),
 	'acl_u_chgavatar'	=> array('lang' => 'Có thể thay đổi hình đại diện', 'cat' => 'profile'),
 	'acl_u_chggrp'		=> array('lang' => 'Có thể thay đổi nhóm mặc định', 'cat' => 'profile'),
 
@@ -127,7 +127,7 @@ $lang = array_merge($lang, array(
 	'acl_u_pm_edit'		=> array('lang' => 'Có thể sửa tin nhắn của mình', 'cat' => 'pm'),
 	'acl_u_pm_delete'	=> array('lang' => 'Có thể gỡ bỏ tin nhắn từ thư mục của mình', 'cat' => 'pm'),
 	'acl_u_pm_forward'	=> array('lang' => 'Có thể chuyển tiếp tin nhắn', 'cat' => 'pm'),
-	'acl_u_pm_emailpm'	=> array('lang' => 'Có thể gửi Email tin nhắn', 'cat' => 'pm'),
+	'acl_u_pm_emailpm'	=> array('lang' => 'Có thể gửi email tin nhắn', 'cat' => 'pm'),
 	'acl_u_pm_printpm'	=> array('lang' => 'Có thể in tin nhắn', 'cat' => 'pm'),
 	'acl_u_pm_attach'	=> array('lang' => 'Có thể đính kèm tập tin trong tin nhắn', 'cat' => 'pm'),
 	'acl_u_pm_download'	=> array('lang' => 'Có thể tải về tập tin trong tin nhắn', 'cat' => 'pm'),
@@ -136,11 +136,11 @@ $lang = array_merge($lang, array(
 	'acl_u_pm_img'		=> array('lang' => 'Có thể sử dụng hình ảnh trong tin nhắn', 'cat' => 'pm'),
 	'acl_u_pm_flash'	=> array('lang' => 'Có thể sử dụng tập tin Flash trong tin nhắn', 'cat' => 'pm'),
 
-	'acl_u_sendemail'	=> array('lang' => 'Có thể gửi Email', 'cat' => 'misc'),
+	'acl_u_sendemail'	=> array('lang' => 'Có thể gửi email', 'cat' => 'misc'),
 	'acl_u_sendim'		=> array('lang' => 'Có thể gửi tin nhắn nhanh', 'cat' => 'misc'),
-	'acl_u_ignoreflood'	=> array('lang' => 'Không bị giới hạn thời gian gửi bài giữa hai bài viết', 'cat' => 'misc'),
+	'acl_u_ignoreflood'	=> array('lang' => 'Không bị giới hạn thời gian chờ giữa hai lần gửi bài', 'cat' => 'misc'),
 	'acl_u_hideonline'	=> array('lang' => 'Có thể ẩn trạng thái trực tuyến', 'cat' => 'misc'),
-	'acl_u_viewonline'	=> array('lang' => 'Có thể xem các thành viên ẩn đang trực tuyến', 'cat' => 'misc'),
+	'acl_u_viewonline'	=> array('lang' => 'Có thể xem các thành viên ẩn trực tuyến', 'cat' => 'misc'),
 	'acl_u_search'		=> array('lang' => 'Có thể tìm kiếm', 'cat' => 'misc'),
 ));
 
@@ -167,36 +167,36 @@ $lang = array_merge($lang, array(
 	'acl_f_flash'		=> array('lang' => 'Có thể sử dụng tập tin Flash trong bài viết', 'cat' => 'content'),
 
 	'acl_f_edit'		=> array('lang' => 'Có thể sửa bài viết của mình', 'cat' => 'actions'),
-	'acl_f_delete'		=> array('lang' => 'Có thể xoá bài viết của mình', 'cat' => 'actions'),
-	'acl_f_user_lock'	=> array('lang' => 'Có thể khoá chủ đề của mình', 'cat' => 'actions'),
+	'acl_f_delete'		=> array('lang' => 'Có thể xóa bài viết của mình', 'cat' => 'actions'),
+	'acl_f_user_lock'	=> array('lang' => 'Có thể khóa chủ đề của mình', 'cat' => 'actions'),
 	'acl_f_bump'		=> array('lang' => 'Có thể đẩy chủ đề lên', 'cat' => 'actions'),
 	'acl_f_report'		=> array('lang' => 'Có thể báo cáo bài viết', 'cat' => 'actions'),
 	'acl_f_subscribe'	=> array('lang' => 'Có thể theo dõi chuyên mục', 'cat' => 'actions'),
 	'acl_f_print'		=> array('lang' => 'Có thể in chủ đề', 'cat' => 'actions'),
-	'acl_f_email'		=> array('lang' => 'Có thể gửi Email chủ đề', 'cat' => 'actions'),
+	'acl_f_email'		=> array('lang' => 'Có thể gửi email chủ đề', 'cat' => 'actions'),
 
 	'acl_f_search'		=> array('lang' => 'Có thể tìm kiếm chuyên mục', 'cat' => 'misc'),
 	'acl_f_ignoreflood' => array('lang' => 'Không bị giới hạn thời gian gửi bài giữa hai bài viết', 'cat' => 'misc'),
-	'acl_f_postcount'	=> array('lang' => 'Đếm số bài viết<br /><em>Lưu ý rằng thiết lập này chỉ có tác dụng đối với những bài viết mới.</em>', 'cat' => 'misc'),
-	'acl_f_noapprove'	=> array('lang' => 'Có thể gửi bài mà không cần chờ được chấp nhận', 'cat' => 'misc'),
+	'acl_f_postcount'	=> array('lang' => 'Tính vào số bài viết<br /><em>Lưu ý rằng thiết lập này chỉ có tác dụng đối với những bài viết mới.</em>', 'cat' => 'misc'),
+	'acl_f_noapprove'	=> array('lang' => 'Có thể gửi bài mà không cần chờ được duyệt', 'cat' => 'misc'),
 ));
 
 // Moderator Permissions
 $lang = array_merge($lang, array(
 	'acl_m_edit'		=> array('lang' => 'Có thể sửa bài viết', 'cat' => 'post_actions'),
-	'acl_m_delete'		=> array('lang' => 'Có thể xoá bài viết', 'cat' => 'post_actions'),
-	'acl_m_approve'		=> array('lang' => 'Có thể chấp nhận bài viết', 'cat' => 'post_actions'),
-	'acl_m_report'		=> array('lang' => 'Có thể kết thúc và xoá báo cáo', 'cat' => 'post_actions'),
+	'acl_m_delete'		=> array('lang' => 'Có thể xóa bài viết', 'cat' => 'post_actions'),
+	'acl_m_approve'		=> array('lang' => 'Có thể duyệt bài viết', 'cat' => 'post_actions'),
+	'acl_m_report'		=> array('lang' => 'Có thể kết thúc và xóa báo cáo', 'cat' => 'post_actions'),
 	'acl_m_chgposter'	=> array('lang' => 'Có thể thay đổi tác giả bài viết', 'cat' => 'post_actions'),
 
 	'acl_m_move'	=> array('lang' => 'Có thể di chuyển chủ đề', 'cat' => 'topic_actions'),
-	'acl_m_lock'	=> array('lang' => 'Có thể khoá chủ đề', 'cat' => 'topic_actions'),
+	'acl_m_lock'	=> array('lang' => 'Có thể khóa chủ đề', 'cat' => 'topic_actions'),
 	'acl_m_split'	=> array('lang' => 'Có thể chia nhỏ chủ đề', 'cat' => 'topic_actions'),
 	'acl_m_merge'	=> array('lang' => 'Có thể nhập chung chủ đề', 'cat' => 'topic_actions'),
 
 	'acl_m_info'	=> array('lang' => 'Có thể xem thông tin về bài viết', 'cat' => 'misc'),
 	'acl_m_warn'	=> array('lang' => 'Có thể cảnh cáo thành viên<br /><em>Thiết lập này chỉ được chọn toàn bộ và nó không phụ thuộc vào chuyên mục.</em>', 'cat' => 'misc'), // This moderator setting is only global (and not local)
-	'acl_m_ban'		=> array('lang' => 'Có thể quản lý danh sách cấm<br /><em>Thiết lập này chỉ được chọn toàn bộ và nó không phụ thuộc vào chuyên mục.</em>', 'cat' => 'misc'), // This moderator setting is only global (and not local)
+	'acl_m_ban'		=> array('lang' => 'Có thể quản lí danh sách cấm<br /><em>Thiết lập này chỉ được chọn toàn bộ và nó không phụ thuộc vào chuyên mục.</em>', 'cat' => 'misc'), // This moderator setting is only global (and not local)
 ));
 
 // Admin Permissions
@@ -206,9 +206,9 @@ $lang = array_merge($lang, array(
 	'acl_a_jabber'		=> array('lang' => 'Có thể thay đổi thiết lập Jabber', 'cat' => 'settings'),
 	'acl_a_phpinfo'		=> array('lang' => 'Có thể xem thông tin PHP', 'cat' => 'settings'),
 
-	'acl_a_forum'		=> array('lang' => 'Có thể quản lý chuyên mục', 'cat' => 'forums'),
+	'acl_a_forum'		=> array('lang' => 'Có thể quản lí chuyên mục', 'cat' => 'forums'),
 	'acl_a_forumadd'	=> array('lang' => 'Có thể tạo chuyên mục mới', 'cat' => 'forums'),
-	'acl_a_forumdel'	=> array('lang' => 'Có thể xoá chuyên mục', 'cat' => 'forums'),
+	'acl_a_forumdel'	=> array('lang' => 'Có thể xóa chuyên mục', 'cat' => 'forums'),
 	'acl_a_prune'		=> array('lang' => 'Có thể dọn dẹp chuyên mục', 'cat' => 'forums'),
 
 	'acl_a_icons'		=> array('lang' => 'Có thể thay đổi biểu tượng của chủ đề/bài viết và biểu tượng vui', 'cat' => 'posting'),
@@ -216,15 +216,15 @@ $lang = array_merge($lang, array(
 	'acl_a_bbcode'		=> array('lang' => 'Có thể xác định thẻ BBCode', 'cat' => 'posting'),
 	'acl_a_attach'		=> array('lang' => 'Có thể thay đổi thiết lập tập tin đính kèm', 'cat' => 'posting'),
 
-	'acl_a_user'		=> array('lang' => 'Có thể quản lý thành viên<br /><em>Thiết lập này cũng bao gồm việc cho phép xem chữ ký trình duyệt của thành viên trong danh sách những ai đang trực tuyến.</em>', 'cat' => 'user_group'),
-	'acl_a_userdel'		=> array('lang' => 'Có thể xoá/dọn dẹp thành viên', 'cat' => 'user_group'),
-	'acl_a_group'		=> array('lang' => 'Có thể quản lý nhóm', 'cat' => 'user_group'),
+	'acl_a_user'		=> array('lang' => 'Có thể quản lí thành viên<br /><em>Thiết lập này cũng bao gồm việc cho phép xem định danh trình duyệt của thành viên trong danh sách những ai trực tuyến.</em>', 'cat' => 'user_group'),
+	'acl_a_userdel'		=> array('lang' => 'Có thể xóa/dọn dẹp thành viên', 'cat' => 'user_group'),
+	'acl_a_group'		=> array('lang' => 'Có thể quản lí nhóm', 'cat' => 'user_group'),
 	'acl_a_groupadd'	=> array('lang' => 'Có thể tạo nhóm mới', 'cat' => 'user_group'),
-	'acl_a_groupdel'	=> array('lang' => 'Có thể xoá nhóm', 'cat' => 'user_group'),
-	'acl_a_ranks'		=> array('lang' => 'Có thể quản lý xếp hạng', 'cat' => 'user_group'),
-	'acl_a_profile'		=> array('lang' => 'Có thể quản lý mục thông tin cá nhân tuỳ biến', 'cat' => 'user_group'),
-	'acl_a_names'		=> array('lang' => 'Có thể quản lý tên thành viên cấm', 'cat' => 'user_group'),
-	'acl_a_ban'			=> array('lang' => 'Có thể quản lý danh sách cấm', 'cat' => 'user_group'),
+	'acl_a_groupdel'	=> array('lang' => 'Có thể xóa nhóm', 'cat' => 'user_group'),
+	'acl_a_ranks'		=> array('lang' => 'Có thể quản lí xếp hạng', 'cat' => 'user_group'),
+	'acl_a_profile'		=> array('lang' => 'Có thể quản lí mục thông tin cá nhân tùy biến', 'cat' => 'user_group'),
+	'acl_a_names'		=> array('lang' => 'Có thể quản lí tên thành viên cấm', 'cat' => 'user_group'),
+	'acl_a_ban'			=> array('lang' => 'Có thể quản lí danh sách cấm', 'cat' => 'user_group'),
 
 	'acl_a_viewauth'	=> array('lang' => 'Có thể xem thiết lập cấp phép', 'cat' => 'permissions'),
 	'acl_a_authgroups'	=> array('lang' => 'Có thể thay đổi thiết lập cấp phép cho những nhóm riêng lẻ', 'cat' => 'permissions'),
@@ -233,19 +233,19 @@ $lang = array_merge($lang, array(
 	'acl_a_mauth'		=> array('lang' => 'Có thể thay đổi thiết lập cấp phép của điều hành viên', 'cat' => 'permissions'),
 	'acl_a_aauth'		=> array('lang' => 'Có thể thay đổi thiết lập cấp phép của quản trị viên', 'cat' => 'permissions'),
 	'acl_a_uauth'		=> array('lang' => 'Có thể thay đổi thiết lập cấp phép của thành viên', 'cat' => 'permissions'),
-	'acl_a_roles'		=> array('lang' => 'Có thể quản lý nhiệm vụ', 'cat' => 'permissions'),
+	'acl_a_roles'		=> array('lang' => 'Có thể quản lí nhiệm vụ', 'cat' => 'permissions'),
 	'acl_a_switchperm'	=> array('lang' => 'Có thể chuyển đổi thiết lập cấp phép khác', 'cat' => 'permissions'),
 
-	'acl_a_styles'		=> array('lang' => 'Có thể quản lý giao diện', 'cat' => 'misc'),
+	'acl_a_styles'		=> array('lang' => 'Có thể quản lí giao diện', 'cat' => 'misc'),
 	'acl_a_viewlogs'	=> array('lang' => 'Có thể xem ghi nhận', 'cat' => 'misc'),
-	'acl_a_clearlogs'	=> array('lang' => 'Có thể xoá ghi nhận', 'cat' => 'misc'),
-	'acl_a_modules'		=> array('lang' => 'Có thể quản lý gói chức năng', 'cat' => 'misc'),
-	'acl_a_language'	=> array('lang' => 'Có thể quản lý gói ngôn ngữ', 'cat' => 'misc'),
-	'acl_a_email'		=> array('lang' => 'Có thể gửi Email thành viên', 'cat' => 'misc'),
-	'acl_a_bots'		=> array('lang' => 'Có thể quản lý máy tìm kiếm', 'cat' => 'misc'),
-	'acl_a_reasons'		=> array('lang' => 'Có thể quản lý báo cáo/nguyên nhân từ chối', 'cat' => 'misc'),
+	'acl_a_clearlogs'	=> array('lang' => 'Có thể xóa ghi nhận', 'cat' => 'misc'),
+	'acl_a_modules'		=> array('lang' => 'Có thể quản lí gói chức năng', 'cat' => 'misc'),
+	'acl_a_language'	=> array('lang' => 'Có thể quản lí gói ngôn ngữ', 'cat' => 'misc'),
+	'acl_a_email'		=> array('lang' => 'Có thể gửi email thành viên', 'cat' => 'misc'),
+	'acl_a_bots'		=> array('lang' => 'Có thể quản lí máy tìm kiếm', 'cat' => 'misc'),
+	'acl_a_reasons'		=> array('lang' => 'Có thể quản lí báo cáo/nguyên nhân từ chối', 'cat' => 'misc'),
 	'acl_a_backup'		=> array('lang' => 'Có thể sao lưu/phục hồi cơ sở dữ liệu', 'cat' => 'misc'),
-	'acl_a_search'		=> array('lang' => 'Có thể quản lý thiết lập tìm kiếm', 'cat' => 'misc'),
+	'acl_a_search'		=> array('lang' => 'Có thể quản lí thiết lập tìm kiếm', 'cat' => 'misc'),
 ));
 
 ?>

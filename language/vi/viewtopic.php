@@ -4,8 +4,8 @@
 * viewtopic [Vietnamese]
 *
 * @package language
-* @version $Id: viewtopic.php,v 1.023 2007/11/28 09:15:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: viewtopic.php 29 2008-11-01 22:55:00Z nedka $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -57,13 +57,13 @@ $lang = array_merge($lang, array(
 
 	'CODE'					=> 'Mã',
 
-	'DELETE_TOPIC'			=> 'Xoá chủ đề',
+	'DELETE_TOPIC'			=> 'Xóa chủ đề',
 	'DOWNLOAD_NOTICE'		=> 'Bạn không được cấp phép để xem tập tin đính kèm trong bài viết này.',
 
-	'EDITED_TIMES_TOTAL'	=> 'Sửa lần cuối bởi <strong>%1$s</strong> vào ngày %2$s với %3$d lần sửa trong tổng số.',
-	'EDITED_TIME_TOTAL'		=> 'Sửa lần cuối bởi <strong>%1$s</strong> vào ngày %2$s với %3$d lần sửa trong tổng số.',
-	'EMAIL_TOPIC'			=> 'Gửi Email giới thiệu',
-	'ERROR_NO_ATTACHMENT'	=> 'Tập tin đính kèm bạn vừa chọn không tồn tại.',
+	'EDITED_TIMES_TOTAL'	=> 'Sửa lần cuối bởi <strong>%1$s</strong> vào ngày %2$s với %3$d lần sửa.',
+	'EDITED_TIME_TOTAL'		=> 'Sửa lần cuối bởi <strong>%1$s</strong> vào ngày %2$s với %3$d lần sửa.',
+	'EMAIL_TOPIC'			=> 'Gửi email giới thiệu',
+	'ERROR_NO_ATTACHMENT'	=> 'Tập tin đính kèm vừa chọn không tồn tại.',
 
 	'FILE_NOT_FOUND_404'	=> 'Tập tin <strong>%s</strong> không tồn tại.',
 	'FORK_TOPIC'			=> 'Sao chép chủ đề',
@@ -103,7 +103,7 @@ $lang = array_merge($lang, array(
 
 	'TOTAL_VOTES'			=> 'Tổng số bình chọn',
 
-	'UNLOCK_TOPIC'			=> 'Mở khoá chủ đề',
+	'UNLOCK_TOPIC'			=> 'Mở khóa chủ đề',
 
 	'VIEW_INFO'				=> 'Thông tin chi tiết về bài viết',
 	'VIEW_NEXT_TOPIC'		=> 'Chủ đề kế tiếp',

@@ -4,7 +4,7 @@
 * acp_posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php,v 1.041 2008/03/27 09:45:00 nedka Exp $
+* @version $Id: posting.php 46 2008-11-01 22:58:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -47,16 +47,16 @@ if (empty($lang) || !is_array($lang))
 // BBCodes
 // Note to translators: you can translate everything but what's between { and }
 $lang = array_merge($lang, array(
-	'ACP_BBCODES_EXPLAIN'		=> 'BBCode là một dạng thức bổ sung đặc biệt của mã HTML, bản thân tương tự gần giống như HTML, cho phép bạn tuỳ biến sử dụng và điều khiển dễ dàng hơn mã HTML. Với công cụ này, bạn có thể thêm vào, gỡ bỏ hay chỉnh sửa những thẻ BBCode tuỳ chọn.',
+	'ACP_BBCODES_EXPLAIN'		=> 'BBCode là một dạng thức bổ sung đặc biệt của mã HTML, bản thân tương tự gần giống như HTML, cho phép bạn tùy biến sử dụng và điều khiển dễ dàng hơn mã HTML. Với công cụ này, bạn có thể thêm vào, gỡ bỏ hay chỉnh sửa những thẻ BBCode tùy chọn.',
 	'ADD_BBCODE'				=> 'Tạo thẻ BBCode mới',
  
 	'BBCODE_ADDED'				=> 'Thẻ BBCode đã được tạo thành công.',
 	'BBCODE_EDITED'				=> 'Thẻ BBCode đã được chỉnh sửa thành công.',
-	'BBCODE_NOT_EXIST'			=> 'Thẻ BBCode bạn vừa chọn không tồn tại.',
+	'BBCODE_NOT_EXIST'			=> 'Thẻ BBCode vừa chọn không tồn tại.',
 	'BBCODE_HELPLINE'			=> 'Hướng dẫn sử dụng thẻ BBCode',
 	'BBCODE_HELPLINE_EXPLAIN'	=> 'Mục thông tin hướng dẫn sử dụng này sẽ được hiển thị khi rê chuột lên thẻ BBCode tương ứng trong phần soạn bài viết.',
 	'BBCODE_HELPLINE_TEXT'		=> 'Nội dung hướng dẫn',
-	'BBCODE_INVALID_TAG_NAME'	=> 'Tên thẻ BBCode bạn vừa chọn đã được sử dụng.',
+	'BBCODE_INVALID_TAG_NAME'	=> 'Tên thẻ BBCode vừa chọn đã được sử dụng.',
 	'BBCODE_INVALID'			=> 'Thẻ BBCode của bạn được tạo từ một biểu mẫu không hợp lệ.',
 	'BBCODE_OPEN_ENDED_TAG'		=> 'Thẻ BBCode tùy chọn của bạn phải có thẻ mở đầu và thẻ kết thúc.',
 	'BBCODE_TAG'				=> 'Thẻ BBCode',
@@ -85,7 +85,7 @@ $lang = array_merge($lang, array(
 		'SIMPLETEXT'	=> 'Những ký tự từ bảng chữ cái Latinh (A-Z), chữ số, khoảng trắng, dấu phẩy, dấu chấm, dấu trừ, dấu cộng, dấu gạch nối và dấu gạch dưới.',
 		'IDENTIFIER'	=> 'Những ký tự từ bảng chữ cái Latinh (A-Z), chữ số, dấu gạch nối và dấu gạch dưới.',
 		'NUMBER'		=> 'Bất kỳ giá trị số nào.',
-		'EMAIL'			=> 'Địa chỉ Email hợp lệ.',
+		'EMAIL'			=> 'Địa chỉ email hợp lệ.',
 		'URL'			=> 'Địa chỉ URL hợp lệ sử dụng bất kỳ giao thức nào (http, ftp… không thể sử dụng được vì các vấn đề với mã Javascript). Nếu bạn không nhập vào giao thức, &quot;http://&quot; sẽ được sử dụng làm tiền tố đầu của chuỗi.',
 		'LOCAL_URL'		=> 'Địa chỉ URL trong hệ thống. Địa chỉ URL này phải liên quan đến các trang trong hệ thống và không thể chứa một tên miền khác hay giao thức nào.',
 		'COLOR'			=> 'Mã màu HTML, có thể sử dụng định dạng mã màu số như <samp>#FF1234</samp> hay một <a href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">từ khóa màu định dạng CSS</a> giống như <samp>fuchsia</samp> hay <samp>InactiveBorder</samp>.'
@@ -108,9 +108,9 @@ $lang = array_merge($lang, array(
 	'CURRENT_SMILIES'			=> 'Biểu tượng vui hiện tại',
 	'CURRENT_SMILIES_EXPLAIN'	=> 'Chọn yêu cầu bạn muốn thực hiện với những biểu tượng vui đã cài đặt hiện tại của mình.',
 
-	'DISPLAY_ON_POSTING'	=> 'Hiển thị trong trang gửi bài',
-	'DISPLAY_POSTING'		=> 'Hiển thị trong trang gửi bài',
-	'DISPLAY_POSTING_NO'	=> 'Không hiển thị trong trang gửi bài',
+	'DISPLAY_ON_POSTING'	=> 'Hiện trên trang gửi bài',
+	'DISPLAY_POSTING'		=> 'Hiện trên trang gửi bài',
+	'DISPLAY_POSTING_NO'	=> 'Không hiện trên trang gửi bài',
 
 	'EDIT_ICONS'				=> 'Sửa biểu tượng bài viết',
 	'EDIT_SMILIES'				=> 'Sửa biểu tượng vui',
@@ -126,7 +126,7 @@ $lang = array_merge($lang, array(
 	'ICONS_NONE_ADDED'		=> 'Không có biểu tượng bài viết nào được thêm vào.',
 	'ICONS_ONE_ADDED'		=> 'Biểu tượng bài viết đã được thêm vào thành công.',
 	'ICONS_ADDED'			=> 'Những biểu tượng bài viết đã được thêm vào thành công.',
-	'ICONS_CONFIG'			=> 'Cấu hình biểu tượng bài viết',
+	'ICONS_CONFIG'			=> 'Thiết lập biểu tượng bài viết',
 	'ICONS_DELETED'			=> 'Biểu tượng bài viết đã được gỡ bỏ thành công.',
 	'ICONS_EDIT'			=> 'Sửa biểu tượng bài viết',
 	'ICONS_ONE_EDITED'		=> 'Biểu tượng bài viết đã được cập nhật thành công.',
@@ -139,7 +139,7 @@ $lang = array_merge($lang, array(
 	'ICONS_LOCATION'		=> 'Tên tập tin hình',
 	'ICONS_NOT_DISPLAYED'	=> 'Những biểu tượng bài viết dưới đây không được hiển thị trong phần gửi bài viết',
 	'ICONS_ORDER'			=> 'Sắp xếp',
-	'ICONS_URL'				=> 'Hình biểu tượng bài viết',
+	'ICONS_URL'				=> 'Hình biểu tượng',
 	'ICONS_WIDTH'			=> 'Chiều rộng',
 	'IMPORT_ICONS'			=> 'Cài đặt gói biểu tượng bài viết',
 	'IMPORT_SMILIES'		=> 'Cài đặt gói biểu tượng vui',
@@ -167,7 +167,7 @@ $lang = array_merge($lang, array(
 	'SMILIES_ONE_ADDED'			=> 'Biểu tượng vui đã được thêm vào thành công.',
 	'SMILIES_ADDED'				=> 'Những biểu tượng vui đã được thêm vào thành công.',
 	'SMILIES_CODE'				=> 'Mã nhập',
-	'SMILIES_CONFIG'			=> 'Cấu hình biểu tượng vui',
+	'SMILIES_CONFIG'			=> 'Thiết lập biểu tượng vui',
 	'SMILIES_DELETED'			=> 'Biểu tượng vui đã được gỡ bỏ thành công.',
 	'SMILIES_EDIT'				=> 'Sửa biểu tượng vui',
 	'SMILIE_NO_CODE'			=> 'Biểu tượng vui “%s” đã bị cấm dùng, vì thế mã bạn vừa nhập vô hiệu.',
@@ -183,15 +183,15 @@ $lang = array_merge($lang, array(
 	'SMILIES_LOCATION'			=> 'Tên tập tin hình',
 	'SMILIES_NOT_DISPLAYED'		=> 'Những biểu tượng vui dưới đây không được hiển thị trong phần gửi bài viết',
 	'SMILIES_ORDER'				=> 'Sắp xếp',
-	'SMILIES_URL'				=> 'Hình biểu tượng vui',
+	'SMILIES_URL'				=> 'Hình biểu tượng',
 	'SMILIES_WIDTH'				=> 'Chiều rộng',
 
-	'WRONG_PAK_TYPE'	=> 'Gói biểu tượng bạn vừa chọn không chứa dữ liệu thích hợp.',
+	'WRONG_PAK_TYPE'	=> 'Gói biểu tượng vừa chọn không chứa dữ liệu thích hợp.',
 ));
 
 // Word censors
 $lang = array_merge($lang, array(
-	'ACP_WORDS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thêm vào, chỉnh sửa và gỡ bỏ những từ kiểm duyệt tự động trong hệ thống. Ngoài ra, mọi người sẽ không được phép sử dụng tên thành viên có chứa những từ kiểm duyệt này để đăng ký thành viên. Bạn có thể sử dụng dấu đại diện * trong từ kiểm duyệt, Ví dụ như <strong>*test*</strong> cũng sẽ kiểm duyệt luôn từ <strong>detestable</strong>, <strong>test*</strong> cũng sẽ kiểm duyệt luôn từ <strong>testing</strong>, <strong>*test</strong> cũng sẽ kiểm duyệt luôn từ <strong>detest</strong>.',
+	'ACP_WORDS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thêm vào, chỉnh sửa và gỡ bỏ những từ kiểm duyệt tự động trong hệ thống. Ngoài ra, mọi người sẽ không được phép sử dụng tên thành viên có chứa những từ kiểm duyệt này để đăng ký thành viên. Bạn có thể sử dụng dấu * trong từ kiểm duyệt, ví dụ như <strong>*test*</strong> cũng sẽ kiểm duyệt luôn từ <strong>detestable</strong>, <strong>test*</strong> cũng sẽ kiểm duyệt luôn từ <strong>testing</strong>, <strong>*test</strong> cũng sẽ kiểm duyệt luôn từ <strong>detest</strong>.',
 	'ADD_WORD'				=> 'Thêm từ kiểm duyệt mới',
 
 	'EDIT_WORD'		=> 'Sửa từ kiểm duyệt',
@@ -205,20 +205,20 @@ $lang = array_merge($lang, array(
 
 	'WORD'				=> 'Từ kiểm duyệt',
 	'WORD_ADDED'		=> 'Từ kiểm duyệt đã được thêm vào thành công.',
-	'WORD_REMOVED'		=> 'Từ kiểm duyệt bạn vừa chọn đã được gỡ bỏ thành công.',
-	'WORD_UPDATED'		=> 'Từ kiểm duyệt bạn vừa chọn đã được cập nhật thành công.',
+	'WORD_REMOVED'		=> 'Từ kiểm duyệt vừa chọn đã được gỡ bỏ thành công.',
+	'WORD_UPDATED'		=> 'Từ kiểm duyệt vừa chọn đã được cập nhật thành công.',
 ));
 
 // Ranks
 $lang = array_merge($lang, array(
-	'ACP_RANKS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thêm vào, chỉnh sửa, xem và xoá các xếp hạng. Bạn cũng có thể chỉ định những xếp hạng đặc biệt áp dụng cho thành viên thông qua phần quản lý thành viên.',
+	'ACP_RANKS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thêm vào, chỉnh sửa, xem và xóa các xếp hạng. Bạn cũng có thể chỉ định những xếp hạng đặc biệt áp dụng cho thành viên thông qua phần quản lí thành viên.',
 	'ADD_RANK'				=> 'Thêm xếp hạng mới',
 
 	'MUST_SELECT_RANK'		=> 'Bạn phải chọn một xếp hạng.',
 
 	'NO_ASSIGNED_RANK'		=> 'Không có xếp hạng đặc biệt nào được chỉ định.',
 	'NO_RANK_TITLE'			=> 'Bạn chưa nhập vào tên xếp hạng.',
-	'NO_UPDATE_RANKS'		=> 'Xếp hạng đã được xoá thành công. Tuy nhiên, những tài khoản thành viên đang sử dụng xếp hạng này chưa được cập nhật. Bạn sẽ phải tự mình thay đổi lại xếp hạng cho những tài khoản thành viên này.',
+	'NO_UPDATE_RANKS'		=> 'Xếp hạng đã được xóa thành công. Tuy nhiên, những tài khoản thành viên đang sử dụng xếp hạng này chưa được cập nhật. Bạn sẽ phải tự mình thay đổi lại xếp hạng cho những tài khoản thành viên này.',
 
 	'RANK_ADDED'			=> 'Xếp hạng đã được thêm vào thành công.',
 	'RANK_IMAGE'			=> 'Hình ảnh xếp hạng',
@@ -232,8 +232,8 @@ $lang = array_merge($lang, array(
 
 // Disallow Usernames
 $lang = array_merge($lang, array(
-	'ACP_DISALLOW_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lý các tên thành viên cấm sử dụng. Với những tên thành viên bị cấm sử dụng, bạn có thể dùng dấu đại diện * để cấm thành viên sử dụng nhiều tên thành viên cùng loại. Lưu ý rằng bạn không thể cấm sử dụng những tên thành viên đã được thành viên sử dụng để đăng ký mà trước hết bạn cần xoá tên này rồi hãy cấm sử dụng nó tại đây.',
-	'ADD_DISALLOW_EXPLAIN'	=> 'Bạn có thể cấm sử dụng một tên thành viên bằng cách dùng dấu đại diện * để cấm nhiều ký tự đi cùng.',
+	'ACP_DISALLOW_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí các tên thành viên cấm sử dụng. Với những tên thành viên bị cấm sử dụng, bạn có thể dùng dấu * để cấm thành viên sử dụng nhiều tên giống nhau. Lưu ý rằng bạn không thể cấm sử dụng những tên thành viên đã được thành viên sử dụng để đăng ký mà trước hết bạn cần xóa tên này rồi hãy cấm sử dụng nó tại đây.',
+	'ADD_DISALLOW_EXPLAIN'	=> 'Bạn có thể cấm sử dụng một tên thành viên bằng cách dùng dấu * để cấm nhiều ký tự đi cùng.',
 	'ADD_DISALLOW_TITLE'	=> 'Thêm tên thành viên cấm sử dụng',
 
 	'DELETE_DISALLOW_EXPLAIN'	=> 'Bạn có thể gỡ bỏ một tên thành viên đã bị cấm sử dụng bằng cách chọn tên thành viên đó từ danh sách này và bấm vào nút chấp nhận.',
@@ -248,7 +248,7 @@ $lang = array_merge($lang, array(
 
 // Reasons
 $lang = array_merge($lang, array(
-	'ACP_REASONS_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lý những nguyên nhân được sử dụng trong các báo cáo và nội dung từ chối khi từ chối những bài viết. Có một nguyên nhân mặc định trong đây được đánh dấu * mà bạn không thể gỡ bỏ được, nguyên nhân này được sử dụng cho tất cả các báo cáo khi từ chối mà không chọn nguyên nhân.',
+	'ACP_REASONS_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí những nguyên nhân được sử dụng trong các báo cáo và nội dung từ chối khi từ chối những bài viết. Có một nguyên nhân mặc định trong đây được đánh dấu * mà bạn không thể gỡ bỏ được, nguyên nhân này được sử dụng cho tất cả các báo cáo khi từ chối mà không chọn nguyên nhân.',
 	'ADD_NEW_REASON'		=> 'Thêm nguyên nhân mới',
 	'AVAILABLE_TITLES'		=> 'Các nguyên nhân đã được phiên dịch có sẵn',
 

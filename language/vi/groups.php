@@ -4,7 +4,7 @@
 * groups [Vietnamese]
 *
 * @package language
-* @version $Id: groups.php,v 1.019 2008/03/27 09:04:00 nedka Exp $
+* @version $Id: groups.php 23 2008-11-02 08:10:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -45,7 +45,7 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ALREADY_DEFAULT_GROUP'		=> 'Nhóm bạn vừa chọn đã được thiết lập là nhóm mặc định.',
+	'ALREADY_DEFAULT_GROUP'		=> 'Nhóm vừa chọn đã được thiết lập là nhóm mặc định.',
 	'ALREADY_IN_GROUP'			=> 'Bạn đã là thành viên trong nhóm vừa chọn.',
 	'ALREADY_IN_GROUP_PENDING'	=> 'Bạn đã gửi yêu cầu tham gia vào nhóm này rồi.',
 
@@ -59,18 +59,18 @@ $lang = array_merge($lang, array(
 	'GROUP_DESC'						=> 'Giới thiệu về nhóm',
 	'GROUP_HIDDEN'						=> 'Nhóm ẩn',
 	'GROUP_INFORMATION'					=> 'Thông tin về nhóm',
-	'GROUP_IS_CLOSED'					=> 'Đây là một nhóm đã cố định, những thành viên mới chỉ có thể tham gia vào nhóm bởi sự cho phép của người lãnh đạo nhóm này.',
+	'GROUP_IS_CLOSED'					=> 'Đây là một nhóm đã cố định, những thành viên mới chỉ có thể tham gia vào nhóm bởi sự cho phép của trưởng nhóm.',
 	'GROUP_IS_FREE'						=> 'Đây là một nhóm hoàn toàn tự do, tất cả thành viên mới đều được chào đón.',
 	'GROUP_IS_HIDDEN'					=> 'Đây là một nhóm ẩn, chỉ có những thành viên của nhóm này mới xem được tư cách thành viên của mình trong nhóm.',
 	'GROUP_IS_OPEN'						=> 'Đây là một nhóm tự do, những thành viên mới có thể thoải mái tham gia vào nhóm.',
-	'GROUP_IS_SPECIAL'					=> 'Đây là một nhóm đặc biệt, những nhóm đặc biệt như thế này được điều hành bởi chính người quản trị.',
+	'GROUP_IS_SPECIAL'					=> 'Đây là một nhóm đặc biệt, những nhóm đặc biệt này được điều hành bởi chính người quản trị.',
 	'GROUP_JOIN'						=> 'Tham gia vào nhóm này',
 	'GROUP_JOIN_CONFIRM'				=> 'Bạn có chắc chắn muốn tham gia vào nhóm vừa chọn?',
 	'GROUP_JOIN_PENDING'				=> 'Gửi yêu cầu tham gia vào nhóm này',
 	'GROUP_JOIN_PENDING_CONFIRM'		=> 'Bạn có chắc chắn muốn gửi yêu cầu tham gia vào nhóm vừa chọn?',
 	'GROUP_JOINED'						=> 'Bạn đã tham gia thành công vào nhóm vừa chọn.',
-	'GROUP_JOINED_PENDING'				=> 'Bạn đã gửi yêu cầu tham gia vào nhóm thành công. Hãy vui lòng chờ đợi cho đến khi người lãnh đạo nhóm này chấp nhận tư cách thành viên của bạn.',
-	'GROUP_LIST'						=> 'Quản lý thành viên',	
+	'GROUP_JOINED_PENDING'				=> 'Bạn đã gửi yêu cầu tham gia vào nhóm thành công. Hãy vui lòng chờ đợi cho đến khi trưởng nhóm chấp thuận tư cách thành viên của bạn.',
+	'GROUP_LIST'						=> 'Quản lí thành viên',	
 	'GROUP_MEMBERS'						=> 'Các thành viên trong nhóm',
 	'GROUP_NAME'						=> 'Tên nhóm',
 	'GROUP_OPEN'						=> 'Nhóm tự do',
@@ -97,9 +97,9 @@ $lang = array_merge($lang, array(
 	'REMOVE_SELECTED'	=> 'Gỡ bỏ đánh dấu',
 
 	'USER_GROUP_CHANGE'			=> 'Từ nhóm “%1$s” trở thành nhóm “%2$s”',
-	'USER_GROUP_DEMOTE'			=> 'Giáng chức người lãnh đạo nhóm',
-	'USER_GROUP_DEMOTE_CONFIRM'	=> 'Bạn có chắc chắn muốn giáng chức người lãnh đạo nhóm từ nhóm vừa chọn?',
-	'USER_GROUP_DEMOTED'		=> 'Đã giáng chức điều hành nhóm của bạn thành công.',
+	'USER_GROUP_DEMOTE'			=> 'Giáng chức trưởng nhóm',
+	'USER_GROUP_DEMOTE_CONFIRM'	=> 'Bạn có chắc chắn muốn giáng chức trưởng nhóm vừa chọn?',
+	'USER_GROUP_DEMOTED'		=> 'Đã giáng chức trưởng nhóm thành công.',
 ));
 
 ?>

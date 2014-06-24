@@ -4,8 +4,8 @@
 * acp_attachments [Vietnamese]
 *
 * @package language
-* @version $Id: attachments.php,v 1.020 2007/10/06 08:52:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: attachments.php 25 2008-11-01 22:56:00Z nedka $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -46,9 +46,9 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ACP_ATTACHMENT_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thay đổi những thiết lập chính về chức năng đính kèm tập tin và những nhóm tập tin kết hợp trong hệ thống.',
-	'ACP_EXTENSION_GROUPS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thêm vào, xoá, chỉnh sửa hoặc vô hiệu những nhóm tập tin được phép đính kèm. Bạn cũng có thể sử dụng những tùy chọn khác như chỉ định một loại nhóm tập tin đặc biệt, thay đổi cơ chế tải về của các tập tin và xác định biểu tượng tập tin cho từng loại nhóm tập tin hiển thị trong phần tải về tập tin đính kèm.',
-	'ACP_MANAGE_EXTENSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể quản lý những loại tập tin đã được cho phép sử dụng khi đính kèm tập tin trong hệ thống. Để kích hoạt những loại tập tin này, hãy tham khảo bảng quản lý các loại nhóm tập tin. Chúng tôi khuyên bạn không nên thêm vào những loại tập tin mã nguồn như <code>php</code>, <code>php3</code>, <code>php4</code>, <code>phtml</code>, <code>pl</code>, <code>cgi</code>, <code>py</code>, <code>rb</code>, <code>asp</code>, <code>aspx</code> và những loại khác giống như thế…',
-	'ACP_ORPHAN_ATTACHMENTS_EXPLAIN'	=> 'Với công cụ này, bạn có thể phát hiện những tập tin đính kèm không được sử dụng trong bất kỳ bài viết nào. Hầu hết điều này xảy ra khi các thành viên tải lên xong tập tin nhưng lại không gửi kèm vào bài viết nữa. Bạn có thể xoá những tập tin này hoặc đính kèm chúng vào những bài viết hiện có. Việc đính kèm tập tin vào bài viết yêu cầu bạn phải xác định chính xác số ID của bài viết và bạn phải tự mình xác định số ID này. Thao tác này sẽ thêm tập tin đính kèm đã được tải lên vào bài viết hiện có mà bạn chọn.',
+	'ACP_EXTENSION_GROUPS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thêm vào, xóa, chỉnh sửa hoặc vô hiệu những nhóm tập tin được phép đính kèm. Bạn cũng có thể sử dụng những tùy chọn khác như chỉ định một loại nhóm tập tin đặc biệt, thay đổi cơ chế tải về của các tập tin và xác định biểu tượng tập tin cho từng loại nhóm tập tin hiển thị trong phần tải về tập tin đính kèm.',
+	'ACP_MANAGE_EXTENSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể quản lí những loại tập tin đã được cho phép sử dụng khi đính kèm tập tin trong hệ thống. Để kích hoạt những loại tập tin này, hãy tham khảo bảng quản lí các loại nhóm tập tin. Chúng tôi khuyên bạn không nên thêm vào những loại tập tin mã nguồn như <code>php</code>, <code>php3</code>, <code>php4</code>, <code>phtml</code>, <code>pl</code>, <code>cgi</code>, <code>py</code>, <code>rb</code>, <code>asp</code>, <code>aspx</code> và những loại khác giống như thế…',
+	'ACP_ORPHAN_ATTACHMENTS_EXPLAIN'	=> 'Với công cụ này, bạn có thể phát hiện những tập tin đính kèm không được sử dụng trong bất kỳ bài viết nào. Hầu hết điều này xảy ra khi các thành viên tải lên xong tập tin nhưng lại không gửi kèm vào bài viết nữa. Bạn có thể xóa những tập tin này hoặc đính kèm chúng vào những bài viết hiện có. Việc đính kèm tập tin vào bài viết yêu cầu bạn phải xác định chính xác số ID của bài viết và bạn phải tự mình xác định số ID này. Thao tác này sẽ thêm tập tin đính kèm đã được tải lên vào bài viết hiện có mà bạn chọn.',
 	'ADD_EXTENSION'						=> 'Thêm loại tập tin',
 	'ADD_EXTENSION_GROUP'				=> 'Thêm nhóm tập tin',
 	'ADMIN_UPLOAD_ERROR'				=> 'Có lỗi xảy ra trong khi đính kèm tập tin: “%s”.',
@@ -66,13 +66,13 @@ $lang = array_merge($lang, array(
 	'ATTACH_EXT_GROUPS_URL'				=> 'Nhóm tập tin',
 	'ATTACH_ID'							=> 'Số ID tập tin',
 	'ATTACH_MAX_FILESIZE'				=> 'Dung lượng tập tin tối đa',
-	'ATTACH_MAX_FILESIZE_EXPLAIN'		=> 'Dung lượng đính kèm tập tin tối đa cho phép của mỗi tập tin. Nhập vào số <strong>0</strong> để không hạn chế dung lượng tập tin.',
+	'ATTACH_MAX_FILESIZE_EXPLAIN'		=> 'Dung lượng đính kèm tập tin tối đa cho phép của mỗi tập tin. Nhập số <strong>0</strong> để không hạn chế dung lượng tập tin.',
 	'ATTACH_MAX_PM_FILESIZE'			=> 'Dung lượng tập tin tối đa trong tin nhắn',
-	'ATTACH_MAX_PM_FILESIZE_EXPLAIN'	=> 'Dung lượng đính kèm tập tin tối đa cho phép sử dụng cấp cho mỗi thành viên trong tin nhắn. Nhập vào số <strong>0</strong> để không hạn chế dung lượng tập tin.',
+	'ATTACH_MAX_PM_FILESIZE_EXPLAIN'	=> 'Dung lượng đính kèm tập tin tối đa cho phép sử dụng cấp cho mỗi thành viên trong tin nhắn. Nhập số <strong>0</strong> để không hạn chế dung lượng tập tin.',
 	'ATTACH_ORPHAN_URL'					=> 'Tập tin đính kèm không được sử dụng',
 	'ATTACH_POST_ID'					=> 'Số ID bài viết',
 	'ATTACH_QUOTA'						=> 'Tổng dung lượng đính kèm tập tin',
-	'ATTACH_QUOTA_EXPLAIN'				=> 'Tổng dung lượng tối đa cho phép của tất cả các tập tin đính kèm trong diễn đàn. Nhập vào số <strong>0</strong> để không hạn chế dung lượng tập tin.',
+	'ATTACH_QUOTA_EXPLAIN'				=> 'Tổng dung lượng tối đa cho phép của tất cả các tập tin đính kèm trong diễn đàn. Nhập số <strong>0</strong> để không hạn chế dung lượng tập tin.',
 	'ATTACH_TO_POST'					=> 'Đính kèm tập tin vào bài viết',
 
 	'CAT_FLASH_FILES'			=> 'Nhóm tập tin Flash',
@@ -80,31 +80,33 @@ $lang = array_merge($lang, array(
 	'CAT_QUICKTIME_FILES'		=> 'Nhóm tập tin Quick Time Media',
 	'CAT_RM_FILES'				=> 'Nhóm tập tin Real Media',
 	'CAT_WM_FILES'				=> 'Nhóm tập tin Windows Media',
+	'CHECK_CONTENT'				=> 'Kiểm tra các tập tin đính kèm',
+	'CHECK_CONTENT_EXPLAIN'		=> 'Một vài trình duyệt có thể bị đánh lừa bằng những loại tập tin nguy hiểm với phần mở rộng không bình thường từ việc tải lên các tập tin. Tùy chọn này sẽ giúp bạn yên tâm rằng những tập tin như thế sẽ bị chặn ngay từ đầu.',
 	'CREATE_GROUP'				=> 'Tạo nhóm tập tin mới',
 	'CREATE_THUMBNAIL'			=> 'Tạo hình thu nhỏ',
 	'CREATE_THUMBNAIL_EXPLAIN'	=> 'Tạo hình thu nhỏ cho tất cả các loại tập tin hình ảnh.',
 
 	'DEFINE_ALLOWED_IPS'			=> 'Xác định địa chỉ IP/tên miền cho phép đính kèm tập tin',
 	'DEFINE_DISALLOWED_IPS'			=> 'Xác định địa chỉ IP/tên miền cấm đính kèm tập tin',
-	'DOWNLOAD_ADD_IPS_EXPLAIN'		=> 'Để xác định nhiều địa chỉ IP hay tên miền khác nhau, bạn hãy nhập mỗi địa chỉ IP hay tên miền trong một dòng. Để xác định một dãy địa chỉ IP, bắt đầu và kết thúc bằng dấu gạch nối (-), xác định những địa chỉ IP cùng loại bằng dấu đại diện “*”',
+	'DOWNLOAD_ADD_IPS_EXPLAIN'		=> 'Để xác định nhiều địa chỉ IP hay tên miền khác nhau, bạn hãy nhập mỗi địa chỉ IP hay tên miền trong một dòng. Để xác định một dãy địa chỉ IP, bắt đầu và kết thúc bằng dấu gạch nối (-), xác định những địa chỉ IP cùng dãy bằng dấu sao (*).',
 	'DOWNLOAD_REMOVE_IPS_EXPLAIN'	=> 'Bạn có thể gỡ bỏ hoặc ngưng loại trừ nhiều địa chỉ IP hay tên miền cùng lúc trong một thao tác bằng cách kết hợp hiệu quả chuột và bàn phím từ máy tính và trình duyệt. Những địa chỉ IP hay tên miền bị loại trừ được đánh dấu bằng màu nền xám.',
 	'DISPLAY_INLINED'				=> 'Hiển thị hình ảnh trong bài viết',
-	'DISPLAY_INLINED_EXPLAIN'		=> 'Nếu bạn tắt tuỳ chọn này, những hình ảnh được đính kèm sẽ hiển thị như liên kết.',
+	'DISPLAY_INLINED_EXPLAIN'		=> 'Nếu bạn tắt tùy chọn này, những hình ảnh được đính kèm sẽ hiển thị như liên kết.',
 	'DISPLAY_ORDER'					=> 'Hiển thị tập tin đính kèm theo thứ tự',
 	'DISPLAY_ORDER_EXPLAIN'			=> 'Hiển thị những tập tin đính kèm theo thứ tự thời gian.',
 	
 	'EDIT_EXTENSION_GROUP'			=> 'Sửa nhóm tập tin',
-	'EXCLUDE_ENTERED_IP'			=> 'Bật tuỳ chọn này để loại trừ những địa chỉ IP/tên miền được nhập vào.',
+	'EXCLUDE_ENTERED_IP'			=> 'Bật tùy chọn này để loại trừ những địa chỉ IP/tên miền được nhập vào.',
 	'EXCLUDE_FROM_ALLOWED_IP'		=> 'Loại trừ từ những địa chỉ IP/tên miền cho phép',
 	'EXCLUDE_FROM_DISALLOWED_IP'	=> 'Loại trừ từ những địa chỉ IP/tên miền đã cấm',
 	'EXTENSIONS_UPDATED'			=> 'Loại tập tin đã được cập nhật thành công.',
 	'EXTENSION_EXIST'				=> 'Loại tập tin “%s” đã được sử dụng.',
 	'EXTENSION_GROUP'				=> 'Nhóm tập tin',
 	'EXTENSION_GROUPS'				=> 'Nhóm tập tin',
-	'EXTENSION_GROUP_DELETED'		=> 'Nhóm tập tin đã được xoá thành công.',
+	'EXTENSION_GROUP_DELETED'		=> 'Nhóm tập tin đã được xóa thành công.',
 	'EXTENSION_GROUP_EXIST'			=> 'Nhóm tập tin “%s” đã được sử dụng.',
 
-	'GO_TO_EXTENSIONS'		=> 'Chuyển đến phần quản lý loại tập tin',
+	'GO_TO_EXTENSIONS'		=> 'Chuyển đến phần quản lí loại tập tin',
 	'GROUP_NAME'			=> 'Tên nhóm tập tin',
 
 	'IMAGE_LINK_SIZE'			=> 'Kích thước hình ảnh sẽ hiển thị như liên kết',
@@ -133,8 +135,8 @@ $lang = array_merge($lang, array(
 	'NO_FILE_CAT'				=> 'Không có loại tập tin nào',	
 	'NO_IMAGE'					=> 'Không có hình ảnh',
 	'NO_THUMBNAIL_SUPPORT'		=> 'Chức năng hỗ trợ tạo hình thu nhỏ đã bị vô hiệu. Nếu bạn muốn sử dụng chức năng này, thư viện GD hoặc chương trình Imagemagick phải được cài đặt trên máy chủ của bạn. Tất cả chúng đều không thể tìm thấy.',
-	'NO_UPLOAD_DIR'				=> 'Thư mục tải lên bạn vừa chọn không tồn tại.',
-	'NO_WRITE_UPLOAD'			=> 'Thư mục tải lên bạn vừa chọn không được cấp phép có thể ghi trên máy chủ. Bạn hãy vui lòng thay đổi thiết lập cấp phép có thể ghi cho thư mục này trên máy chủ.',
+	'NO_UPLOAD_DIR'				=> 'Thư mục tải lên vừa chọn không tồn tại.',
+	'NO_WRITE_UPLOAD'			=> 'Thư mục tải lên vừa chọn không được cấp phép có thể ghi trên máy chủ. Bạn hãy vui lòng thay đổi thiết lập cấp phép có thể ghi cho thư mục này trên máy chủ.',
 
 	'ONLY_ALLOWED_IN_PM'	=> 'Chỉ đồng ý trong tin nhắn',
 	'ORDER_ALLOW_DENY'		=> 'Đồng ý',
@@ -145,9 +147,9 @@ $lang = array_merge($lang, array(
 
 	'SEARCH_IMAGICK'				=> 'Tìm kiếm ứng dụng Imagemagick',
 	'SECURE_ALLOW_DENY'				=> 'Danh sách đồng ý/từ chối',
-	'SECURE_ALLOW_DENY_EXPLAIN'		=> 'Thay đổi cách xử lý mặc định khi chế độ tải về an toàn được bật của danh sách đồng ý/từ chối với một <strong>danh sách trắng</strong> (Đồng ý) hoặc một <strong>danh sách đen</strong> (Từ chối).',
+	'SECURE_ALLOW_DENY_EXPLAIN'		=> 'Thay đổi cách xử lí mặc định khi chế độ tải về an toàn được bật của danh sách đồng ý/từ chối với một <strong>danh sách trắng</strong> (Đồng ý) hoặc một <strong>danh sách đen</strong> (Từ chối).',
 	'SECURE_DOWNLOADS'				=> 'Bật chế độ tải về an toàn',
-	'SECURE_DOWNLOADS_EXPLAIN'		=> 'Nếu bật tuỳ chọn này, việc cho phép tải về tập tin sẽ giới hạn trong những địa chỉ IP/tên miền mà bạn chỉ định.',
+	'SECURE_DOWNLOADS_EXPLAIN'		=> 'Nếu bật tùy chọn này, việc cho phép tải về tập tin sẽ giới hạn trong những địa chỉ IP/tên miền mà bạn chỉ định.',
 	'SECURE_DOWNLOAD_NOTICE'		=> 'Chế độ tải về an toàn không được bật. Những thiết lập bên dưới chỉ có tác dụng nếu như bạn bật chế độ tải về an toàn.',
 	'SECURE_DOWNLOAD_UPDATE_SUCCESS'=> 'Danh sách địa chỉ IP/tên miền đã được cập nhật thành công.',
 	'SECURE_EMPTY_REFERRER'			=> 'Cho phép sử dụng tham chiếu địa chỉ trống',
@@ -165,7 +167,7 @@ $lang = array_merge($lang, array(
 	'UPLOAD_DIR'					=> 'Thư mục tập tin đính kèm',
 	'UPLOAD_DIR_EXPLAIN'			=> 'Thư mục chứa những tập tin đính kèm được tải lên trong hệ thống. Lưu ý rằng nếu bạn thay đổi thư mục này trong khi trong thư mục đã có những tập tin đính kèm được tải lên, bạn cần phải tự mình sao chép những tập tin này đến vị trí thư mục mới đã chọn.',
 	'UPLOAD_ICON'					=> 'Biểu tượng tập tin',
-	'UPLOAD_NOT_DIR'				=> 'Thư mục tải lên bạn vừa chọn không phải là địa chỉ của một thư mục.',
+	'UPLOAD_NOT_DIR'				=> 'Thư mục tải lên vừa chọn không phải là địa chỉ của một thư mục.',
 ));
 
 ?>

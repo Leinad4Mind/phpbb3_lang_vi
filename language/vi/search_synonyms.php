@@ -4,8 +4,8 @@
 * search_synonyms [Vietnamese]
 *
 * @package language
-* @version $Id: search_synonyms.php,v 1.003 2007/10/06 08:48:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: search_synonyms.php 4 2008-08-13 16:22:00Z nedka $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
