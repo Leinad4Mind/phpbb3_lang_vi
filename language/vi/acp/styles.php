@@ -4,7 +4,7 @@
 * acp/styles [Vietnamese]
 *
 * @package language
-* @version 1.62
+* @version 1.63
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -186,14 +186,9 @@ $lang = array_merge($lang, array(
 
 	'IMG_ICON_BACK_TOP'		=> 'Đầu trang',
 
-	'IMG_ICON_CONTACT_AIM'		=> 'Tài khoản AIM',
 	'IMG_ICON_CONTACT_EMAIL'	=> 'Gửi email',
-	'IMG_ICON_CONTACT_ICQ'		=> 'Tài khoản ICQ',
 	'IMG_ICON_CONTACT_JABBER'	=> 'Tài khoản Jabber',
-	'IMG_ICON_CONTACT_MSNM'		=> 'Tài khoản Windows Live',
 	'IMG_ICON_CONTACT_PM'		=> 'Gửi tin nhắn',
-	'IMG_ICON_CONTACT_YAHOO'	=> 'Tài khoản Yahoo',
-	'IMG_ICON_CONTACT_WWW'		=> 'Website',
 
 	'IMG_ICON_POST_DELETE'			=> 'Xóa bài viết',
 	'IMG_ICON_POST_EDIT'			=> 'Sửa bài viết',

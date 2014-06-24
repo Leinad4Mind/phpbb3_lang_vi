@@ -4,7 +4,7 @@
 * acp/board [Vietnamese]
 *
 * @package language
-* @version 1.105
+* @version 1.106
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -52,7 +52,7 @@ $lang = array_merge($lang, array(
 	'DEFAULT_LANGUAGE'				=> 'Ngôn ngữ mặc định',
 	'DEFAULT_STYLE'					=> 'Giao diện mặc định',
 	'DISABLE_BOARD'					=> 'Ngưng hoạt động hệ thống',
-	'DISABLE_BOARD_EXPLAIN'			=> 'Tùy chọn này sẽ ngưng hoạt động của hệ thống đối với người dùng. Bạn cũng có nhập vào một tin nhắn giới hạn trong <strong>255</strong> ký tự hiển thị như thông báo ngưng hoạt động của hệ thống nếu muốn.',
+	'DISABLE_BOARD_EXPLAIN'			=> 'Tùy chọn này sẽ ngưng hoạt động của hệ thống đối với những người dùng không phải quản trị viên hay điều hành viên. Bạn cũng có nhập vào một tin nhắn giới hạn trong <strong>255</strong> ký tự hiển thị như thông báo ngưng hoạt động của hệ thống nếu muốn.',
 	'DISPLAY_LAST_SUBJECT'			=> 'Hiện bài viết sau cùng trên các chuyên mục',
 	'DISPLAY_LAST_SUBJECT_EXPLAIN'	=> 'Hiện tiêu đề của bài viết được gửi sau cùng tại mỗi chuyên mục với liên kết dẫn đến bài viết đó. Tiêu đề bài viết từ chuyên mục có mật khẩu bảo vệ hay chuyên mục người dùng không được phép xem nội dung sẽ không hiện ra.',
 	'OVERRIDE_STYLE'				=> 'Thay thế cho giao diện lựa chọn của người dùng',

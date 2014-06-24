@@ -4,7 +4,7 @@
 * acp/users [Vietnamese]
 *
 * @package language
-* @version 1.36
+* @version 1.37
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -57,6 +57,7 @@ $lang = array_merge($lang, array(
 	'CANNOT_FORCE_REACT_FOUNDER'	=> 'Bạn không thể yêu cầu kích hoạt lại tài khoản của người sáng lập.',
 	'CANNOT_FORCE_REACT_YOURSELF'	=> 'Bạn không thể yêu cầu kích hoạt lại tài khoản của chính mình.',
 	'CANNOT_REMOVE_ANONYMOUS'		=> 'Bạn không thể gỡ bỏ tài khoản của khách.',
+	'CANNOT_REMOVE_FOUNDER'			=> 'Bạn không thể gỡ bỏ tài khoản người sáng lập.',
 	'CANNOT_REMOVE_YOURSELF'		=> 'Bạn không thể gỡ bỏ tài khoản người dùng của chính mình.',
 	'CANNOT_SET_FOUNDER_IGNORED'	=> 'Bạn không thể tăng cấp những người dùng bị cấm trở thành người sáng lập.',
 	'CANNOT_SET_FOUNDER_INACTIVE'	=> 'Bạn cần phải kích hoạt tài khoản của người dùng trước khi bạn tăng cấp cho người dùng này trở thành người sáng lập và chỉ có những người dùng đã kích hoạt mới có thể tăng cấp được.',

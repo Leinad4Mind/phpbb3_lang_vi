@@ -4,7 +4,7 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version 1.44
+* @version 1.45
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -76,25 +76,19 @@ $lang = array_merge($lang, array(
 
 	'HIDE_MEMBER_SEARCH'	=> 'Ẩn tìm kiếm thành viên',
 
-	'IM_ADD_CONTACT'		=> 'Thêm thành viên',
-	'IM_AIM'				=> 'Lưu ý bạn cần phải cài đặt chương trình <strong>AOL Instant Messenger</strong> trên máy tính của mình để có thể sử dụng được chức năng này.',
-	'IM_AIM_EXPRESS'		=> 'Chương trình <strong>AIM Express</strong>',
-	'IM_DOWNLOAD_APP'		=> 'Tải về ứng dụng',
-	'IM_ICQ'				=> 'Lưu ý rằng các thành viên có thể chọn không nhận những tin nhắn nhanh mà họ không mong muốn.',
-	'IM_JABBER'				=> 'Lưu ý rằng các thành viên có thể chọn không nhận những tin nhắn nhanh mà họ không mong muốn.',
-	'IM_JABBER_SUBJECT'		=> 'Đây là tin nhắn thông báo tự động, xin đừng trả lời! Tin nhắn từ thành viên <strong>%1$s</strong> trong %2$s.',
-	'IM_MESSAGE'			=> 'Nội dung tin nhắn nhanh',
-	'IM_MSNM'				=> 'Lưu ý bạn cần phải cài đặt chương trình <strong>Windows Live Messenger</strong> trên máy tính của mình để có thể sử dụng được chức năng này.',
-	'IM_MSNM_BROWSER'		=> 'Trình duyệt của bạn không hỗ trợ chương trình này.',
-	'IM_MSNM_CONNECT'		=> 'Tài khoản Windows Live của bạn chưa được kết nối.\nBạn phải kết nối đến dịch vụ của Windows Live để tiếp tục gửi tin nhắn.',
-	'IM_NAME'				=> 'Tên của bạn',
-	'IM_NO_DATA'			=> 'Không có thông tin liên hệ phù hợp nào về thành viên này.',
-	'IM_NO_JABBER'			=> 'Xin lỗi, chức năng gửi tin nhắn trực tiếp đến các thành viên sử dụng Jabber không được hỗ trợ trên diễn đàn này. Bạn sẽ cần phải cài đặt ứng dụng <strong>Jabber</strong> trên máy tính của mình để liên hệ với người nhận trên.',
-	'IM_RECIPIENT'			=> 'Người nhận',
-	'IM_SEND'				=> 'Gửi tin nhắn',
-	'IM_SEND_MESSAGE'		=> 'Gửi tin nhắn',
-	'IM_SENT_JABBER'		=> 'Tin nhắn của bạn đến <strong>%1$s</strong> đã được gửi thành công.',
-	'IM_USER'				=> 'Gửi tin nhắn nhanh',
+	'IM_ADD_CONTACT'	=> 'Thêm thành viên',
+	'IM_DOWNLOAD_APP'	=> 'Tải về ứng dụng',
+	'IM_JABBER'			=> 'Lưu ý rằng các thành viên có thể chọn không nhận những tin nhắn nhanh mà họ không mong muốn.',
+	'IM_JABBER_SUBJECT'	=> 'Đây là tin nhắn thông báo tự động, xin đừng trả lời! Tin nhắn từ thành viên <strong>%1$s</strong> trong %2$s.',
+	'IM_MESSAGE'		=> 'Nội dung tin nhắn nhanh',
+	'IM_NAME'			=> 'Tên của bạn',
+	'IM_NO_DATA'		=> 'Không có thông tin liên hệ phù hợp nào về thành viên này.',
+	'IM_NO_JABBER'		=> 'Xin lỗi, chức năng gửi tin nhắn trực tiếp đến các thành viên sử dụng Jabber không được hỗ trợ trên diễn đàn này. Bạn sẽ cần phải cài đặt ứng dụng <strong>Jabber</strong> trên máy tính của mình để liên hệ với người nhận trên.',
+	'IM_RECIPIENT'		=> 'Người nhận',
+	'IM_SEND'			=> 'Gửi tin nhắn',
+	'IM_SEND_MESSAGE'	=> 'Gửi tin nhắn',
+	'IM_SENT_JABBER'	=> 'Tin nhắn của bạn đến <strong>%1$s</strong> đã được gửi thành công.',
+	'IM_USER'			=> 'Gửi tin nhắn nhanh',
 
 	'LAST_ACTIVE'				=> 'Lần hoạt động trước',
 	'LESS_THAN'					=> 'Ít hơn',
@@ -107,15 +101,15 @@ $lang = array_merge($lang, array(
 	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'Bạn phải đăng nhập vào hệ thống mới có thể tìm kiếm thành viên.',	
 	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'Bạn phải đăng nhập vào hệ thống mới có thể xem thông tin cá nhân của thành viên.',
 
-	'MORE_THAN'				=> 'Nhiều hơn',
+	'MORE_THAN'	=> 'Nhiều hơn',
 
-	'NO_EMAIL'				=> 'Bạn không được phép gửi email đến thành viên này.',
-	'NO_VIEW_USERS'			=> 'Bạn không được phép xem danh sách thành viên hay thông tin cá nhân của thành viên.',
+	'NO_EMAIL'		=> 'Bạn không được phép gửi email đến thành viên này.',
+	'NO_VIEW_USERS'	=> 'Bạn không được phép xem danh sách thành viên hay thông tin cá nhân của thành viên.',
 
-	'ORDER'					=> 'Thứ tự',
-	'OTHER'					=> 'Thông tin khác',
+	'ORDER'	=> 'Thứ tự',
+	'OTHER'	=> 'Thông tin khác',
 
-	'POST_IP'				=> 'Gửi bài từ địa chỉ IP/Tên miền',
+	'POST_IP'	=> 'Gửi bài từ địa chỉ IP/Tên miền',
 
 	'REAL_NAME'				=> 'Tên người nhận',
 	'RECIPIENT'				=> 'Người nhận',
@@ -124,12 +118,10 @@ $lang = array_merge($lang, array(
 
 	'SELECT_MARKED'			=> 'Chọn đánh dấu',
 	'SELECT_SORT_METHOD'	=> 'Chọn cách sắp xếp',
-	'SEND_AIM_MESSAGE'		=> 'Gửi tin nhắn AIM',
 	'SEND_ICQ_MESSAGE'		=> 'Gửi tin nhắn ICQ',
 	'SEND_IM'				=> 'Nhắn tin nhanh',
 	'SEND_JABBER_MESSAGE'	=> 'Gửi tin nhắn Jabber',
 	'SEND_MESSAGE'			=> 'Tin nhắn',
-	'SEND_MSNM_MESSAGE'		=> 'Gửi tin nhắn Windows Live',
 	'SEND_YIM_MESSAGE'		=> 'Gửi tin nhắn YIM',
 	'SORT_EMAIL'			=> 'Địa chỉ email',
 	'SORT_LAST_ACTIVE'		=> 'Lần hoạt động trước',
@@ -150,8 +142,6 @@ $lang = array_merge($lang, array(
 
 	'VIEWING_PROFILE'	=> 'Đang xem thông tin cá nhân về %s',
 	'VISITED'			=> 'Lần ghé thăm trước',
-
-	'WWW'	=> 'Website',
 ));
 
 ?>

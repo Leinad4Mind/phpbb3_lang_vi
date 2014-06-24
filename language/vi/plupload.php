@@ -4,7 +4,7 @@
 * plupload [Vietnamese]
 *
 * @package language
-* @version 1.01
+* @version 1.02
 * @copyright (c) 2013 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -49,7 +49,7 @@ $lang = array_merge($lang, array(
 	'PLUPLOAD_DRAG_TEXTAREA'		=> 'Bạn có thể đính kèm nhanh tập tin bằng cách kéo thả vào khung soạn thảo.',
 	'PLUPLOAD_DUPLICATE_ERROR'		=> 'Lỗi trùng tập tin.',
 	'PLUPLOAD_ERR_FILE_COUNT'		=> 'Lỗi đếm tập tin.',
-	'PLUPLOAD_ERR_FILE_INVALID_EXT'	=> 'Phẩn mở rộng tập tin không hợp lệ:',
+	'PLUPLOAD_ERR_FILE_INVALID_EXT'	=> 'Phần mở rộng tập tin không hợp lệ:',
 	'PLUPLOAD_ERR_FILE_TOO_LARGE'	=> 'Dung lượng tập tin quá lớn:',
 	'PLUPLOAD_ERR_INPUT'			=> 'Có lỗi khi mở dữ liệu nhập.',
 	'PLUPLOAD_ERR_MOVE_UPLOADED'	=> 'Có lỗi khi di chuyển tập tin đã tải lên.',

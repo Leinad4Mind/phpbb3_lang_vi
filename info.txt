@@ -19,18 +19,22 @@ _ _ _ _ _    |  |_ _ _   _ _ _ _ _     |  |__|  /  |  |__|  /                   
 @ VinaBB Team
 ---[ Information ]--------------------------------------------------------------
 Language Pack Name: Vietnamese Language Pack for phpBB3
-Language Pack Version: 3.1.0.A3-a
+Language Pack Version: 3.1.0.B1-a
 Encoding: Unicode (UTF-8)
-Release Date: 2014/02/20
+Release Date: 2014/03/29
 ---[ Description ]--------------------------------------------------------------
 Vietnamese Language Pack for phpBB 3.1.x with following parts:
 + Main translation
 + ACP translation
 + Email translation
-+ Vietnamese buttons for default styles (proSilver & subSilver2)
++ Vietnamese buttons for default style: proSilver
 ---[ Translator ]----------------------------------------
 # nedka (Khoa Nguyen) <nedka@nedka.vn> http://www.nedka.vn/
 ---[ History ]------------------------------------------------------------------
+# 2014/03/29: Version 3.1.0.B1-a
+Updated code changes in language files from Alpha 3 to Beta 1
+Removed subSilver2 buttons, miss you!!!
+
 # 2014/02/20: Version 3.1.0.A3-a
 Updated code changes in language files from Alpha 2 to Alpha 3
 
@@ -43,7 +47,7 @@ Updated code changes in language files from phpBB 3.0.12 to phpBB 3.1.0-Alpha1
 # 2013/10/23: Version 3.0.12b
 Some of translation vars are better
 Removed English synonyms/ignored words never used, as this is Vietnamese
-Removed fixed-fonts CSS files, good bye IE6, IE7 :)
+Removed fixed-fonts CSS files, goodbye IE6, IE7 :)
 
 # 2013/10/01: Version 3.0.12a
 Updated code changes in language files from phpBB 3.0.11 to phpBB 3.0.12

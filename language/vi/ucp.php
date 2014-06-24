@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version 1.115
+* @version 1.117
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -210,21 +210,24 @@ $lang = array_merge($lang, array(
 		1	=> 'Mục thông tin “%2$s” quá dài, tối đa chỉ có <strong>%1$d</strong> ký tự được phép sử dụng.',
 		2	=> 'Mục thông tin “%2$s” quá dài, tối đa chỉ có <strong>%1$d</strong> ký tự được phép sử dụng.',
 	),
-	'FIELD_TOO_SMALL'					=> 'Giá trị của mục “%2$s” quá nhỏ, giá trị tối thiểu bắt buộc sử dụng là <strong>%1$d</strong>.',
-	'FIELD_TOO_LARGE'					=> 'Giá trị của mục “%2$s” quá lớn, giá trị tối đa được phép sử dụng là <strong>%1$d</strong>.',
-	'FIELD_INVALID_CHARS_NUMBERS_ONLY'	=> 'Mục thông tin “%s” chứa những ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ số.',
-	'FIELD_INVALID_CHARS_ALPHA_ONLY'	=> 'Mục thông tin “%s” chứa những ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ cái và chữ số.',
-	'FIELD_INVALID_CHARS_SPACERS_ONLY'	=> 'Mục thông tin “%s” chứa những ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ cái và chữ số, khoảng trắng hay những ký tự <strong>-+_[]</strong>.',
-	'FIELD_INVALID_DATE'				=> 'Mục thông tin “%s” chứa ngày tháng không hợp lệ.',
-	'FIELD_INVALID_VALUE'				=> 'Mục thông tin “%s” chứa giá trị không hợp lệ.',
+	'FIELD_TOO_SMALL'						=> 'Giá trị của mục “%2$s” quá nhỏ, giá trị tối thiểu bắt buộc sử dụng là <strong>%1$d</strong>.',
+	'FIELD_TOO_LARGE'						=> 'Giá trị của mục “%2$s” quá lớn, giá trị tối đa được phép sử dụng là <strong>%1$d</strong>.',
+	'FIELD_INVALID_CHARS_INVALID'			=> 'Mục thông tin “%s” chứa ký tự không hợp lệ.',
+	'FIELD_INVALID_CHARS_NUMBERS_ONLY'		=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào số.',
+	'FIELD_INVALID_CHARS_ALPHA_ONLY'		=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ và số.',
+	'FIELD_INVALID_CHARS_ALPHA_SPACERS'		=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số, khoảng trắng và các ký tự <strong>-+_[]</strong>.',
+	'FIELD_INVALID_CHARS_ALPHA_UNDERSCORE'	=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số và dấu gạch dưới <strong>_</strong>.',
+	'FIELD_INVALID_DATE'					=> 'Mục thông tin “%s” chứa ngày tháng không hợp lệ.',
+	'FIELD_INVALID_URL'						=> 'Mục thông tin “%s” chứa địa chỉ URL không hợp lệ.',
+	'FIELD_INVALID_VALUE'					=> 'Mục thông tin “%s” chứa giá trị không hợp lệ.',
 
 	'FOE_MESSAGE'					=> 'Tin nhắn từ người bị chặn',
 	'FOES_EXPLAIN'					=> 'Người bị chặn là những người dùng đã được bạn thiết lập mặc định không quan hệ. Các bài viết được gửi bởi những người dùng này sẽ không được hiển thị khi bạn xem. Các tin nhắn từ họ vẫn được phép gửi đến bạn. Lưu ý rằng bạn không thể thêm vào danh sách chặn của mình các điều hành viên hay quản trị viên trong website.',
 	'FOES_UPDATED'					=> 'Danh sách chặn của bạn đã được cập nhật thành công.',
 	'FOLDER_ADDED'					=> 'Thư mục đã được tạo thành công.',
 	'FOLDER_MESSAGE_STATUS'			=> array(
-		1	=> '%2$d trên %1$d tin nhắn',
-		2	=> '%2$d trên %1$d tin nhắn',
+		1	=> '%2$d / %1$s',
+		2	=> '%2$d / %1$s',
 	),
 	'FOLDER_NAME_EMPTY'				=> 'Bạn phải nhập tên cho thư mục này.',
 	'FOLDER_NAME_EXIST'				=> 'Thư mục mang tên “%s” đã có rồi.',
@@ -232,8 +235,8 @@ $lang = array_merge($lang, array(
 	'FOLDER_RENAMED'				=> 'Thư mục đã được đổi tên thành công.',
 	'FOLDER_REMOVED'				=> 'Thư mục đã được gỡ bỏ thành công.',
 	'FOLDER_STATUS_MSG'			=> array(
-		1	=> 'Dung lượng đầy: <strong>%3$d%%</strong> (%2$d trên %1$d tin nhắn)',
-		2	=> 'Dung lượng đầy: <strong>%3$d%%</strong> (%2$d trên %1$d tin nhắn)',
+		1	=> 'Dung lượng đầy: <strong>%3$d%%</strong> (%2$d / %1$s)',
+		2	=> 'Dung lượng đầy: <strong>%3$d%%</strong> (%2$d / %1$s)',
 	),
 	'FORWARD_PM'					=> 'Chuyển tiếp tin nhắn',
 	'FORCE_PASSWORD_EXPLAIN'		=> 'Trước khi bạn có thể tiếp tục truy cập website, bạn được yêu cầu phải thay đổi mật khẩu hiện tại của mình.',
@@ -301,13 +304,14 @@ $lang = array_merge($lang, array(
 	'MESSAGE_TO'					=> 'Người nhận',
 	'MESSAGES_DELETED'				=> 'Tin nhắn đã được xóa thành công.',
 	'MOVE_DELETED_MESSAGES_TO'		=> 'Di chuyển những tin nhắn từ thư mục đã gỡ bỏ đến',
-	'MOVE_DOWN'						=> 'Di chuyển xuống',
+	'MOVE_DOWN'						=> 'Đẩy xuống',
 	'MOVE_MARKED_TO_FOLDER'			=> 'Di chuyển tin nhắn đã đánh dấu đến “%s”',
 	'MOVE_PM_ERROR'					=> array(
-		2	=> 'Có lỗi xảy ra trong khi di chuyển tin nhắn đến thư mục mới, chỉ có <strong>%2d</strong> trên <strong>%1d</strong> tin nhắn đã được di chuyển thành công.',
+		1	=> 'Có lỗi khi chuyển tin nhắn đến thư mục mới, chỉ có <strong>%2d</strong> trong tổng số <strong>%1s</strong> được chuyển đi thành công.',
+		2	=> 'Có lỗi khi chuyển tin nhắn đến thư mục mới, chỉ có <strong>%2d</strong> trong tổng số <strong>%1s</strong> được chuyển đi thành công.',
 	),
 	'MOVE_TO_FOLDER'				=> 'Di chuyển đến thư mục',
-	'MOVE_UP'						=> 'Di chuyển lên',
+	'MOVE_UP'						=> 'Đẩy lên',
 
 	'NEW_FOLDER_NAME'						=> 'Tên thư mục mới',
 	'NEW_PASSWORD'							=> 'Mật khẩu mới',
@@ -478,13 +482,16 @@ $lang = array_merge($lang, array(
 	'TIMEZONE_DATE_SUGGESTION'	=> 'Đề nghị: %s',
 	'TIMEZONE_INVALID'			=> 'Múi giờ bạn chọn không hợp lệ.',
 	'TO'						=> 'Người nhận',
+	'TO_MASS'					=> 'Nhiều người nhận',
+	'TO_ADD'					=> 'Thêm người nhận',
+	'TO_ADD_MASS'				=> 'Thêm nhiều người nhận',
+	'TO_ADD_GROUPS'				=> 'Thêm nhóm',
 	'TOO_MANY_RECIPIENTS'		=> 'Bạn đã gửi tin nhắn đến quá nhiều người nhận được phép gửi.',
 	'TOO_MANY_REGISTERS'		=> 'Bạn đã vượt quá số lượng đăng ký cho phép trong phiên kết nối này. Hãy thử lại vào lúc khác!',
 
 	'UCP'							=> 'Bảng thiết lập cá nhân',
 	'UCP_ACTIVATE'					=> 'Kích hoạt tài khoản',
 	'UCP_ADMIN_ACTIVATE'			=> 'Lưu ý rằng bạn cần phải nhập vào một địa chỉ email hợp lệ trước khi tài khoản của bạn được kích hoạt. Người quản trị sẽ xem qua tài khoản của bạn và nếu được chấp nhận bạn sẽ nhận được một email thông báo đến địa chỉ email mà bạn đã nhập.',
-	'UCP_AIM'						=> 'Tài khoản AIM',
 	'UCP_ATTACHMENTS'				=> 'Tập tin đính kèm của bạn',
 	'UCP_AUTH_LINK'					=> 'Tài khoản dịch vụ bên ngoài',
 	'UCP_AUTH_LINK_ASK'				=> 'Bạn chưa liên kết tài khoản hệ thống với dịch vụ này. Bấm vào nút bên dưới để kết nối đến dịch vụ.',
@@ -497,7 +504,6 @@ $lang = array_merge($lang, array(
 	'UCP_COPPA_BEFORE'				=> 'Trước %s',
 	'UCP_COPPA_ON_AFTER'			=> 'Hoặc sau %s',
 	'UCP_EMAIL_ACTIVATE'			=> 'Lưu ý rằng bạn cần phải nhập vào một địa chỉ email hợp lệ trước khi tài khoản của bạn được kích hoạt. Bạn sẽ nhận được một email thông báo đến địa chỉ email mà bạn đã nhập với khóa kích hoạt được đính kèm bên trong email.',
-	'UCP_ICQ'						=> 'Số tài khoản ICQ',
 	'UCP_JABBER'					=> 'Tài khoản Jabber',
 	'UCP_LOGIN_LINK'				=> 'Kết nối tài khoản dịch vụ bên ngoài',
 
@@ -508,7 +514,6 @@ $lang = array_merge($lang, array(
 	'UCP_MAIN_FRONT'		=> 'Trang trước',
 	'UCP_MAIN_SUBSCRIBED'	=> 'Bảng theo dõi',
 
-	'UCP_MSNM'				=> 'Tài khoản Windows Live',
 	'UCP_NO_ATTACHMENTS'	=> 'Bạn chưa tải lên bất kì tập tin nào.',
 
 	'UCP_NOTIFICATION_LIST'				=> 'Quản lí thông báo',
@@ -544,7 +549,6 @@ $lang = array_merge($lang, array(
 	'UCP_REMIND'							=> 'Gửi mật khẩu',
 	'UCP_RESEND'							=> 'Gửi email kích hoạt tài khoản',
 	'UCP_WELCOME'							=> 'Chào mừng bạn đến với bảng thiết lập cá nhân của mình. Với bảng điều khiển này, bạn có thể quản lí, xem và cập nhật thông tin cá nhân, thiết lập những sở thích cá nhân, theo dõi các chuyên mục và chủ đề mà mình quan tâm. Nếu được cấp phép, bạn cũng có thể gửi tin nhắn đến các người dùng khác. Hãy chắc chắn rằng bạn đã đọc qua các thông báo quan trọng nếu có trước khi tiếp tục.',
-	'UCP_YIM'								=> 'Tài khoản Yahoo',
 	'UCP_ZEBRA'								=> 'Mối quan hệ',
 	'UCP_ZEBRA_FOES'						=> 'Danh sách chặn',
 	'UCP_ZEBRA_FRIENDS'						=> 'Danh sách bạn bè',

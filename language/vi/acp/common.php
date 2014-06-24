@@ -4,7 +4,7 @@
 * acp/common [Vietnamese]
 *
 * @package language
-* @version 1.109
+* @version 1.110
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -67,7 +67,7 @@ $lang = array_merge($lang, array(
 
 	'ACP_CAT_CUSTOMISE'			=> 'Tùy biến',
 	'ACP_CAT_DATABASE'			=> 'Cơ sở dữ liệu',
-	'ACP_CAT_DOT_MODS'			=> 'MOD',
+	'ACP_CAT_DOT_MODS'			=> 'Phần mở rộng',
 	'ACP_CAT_FORUMS'			=> 'Chuyên mục',
 	'ACP_CAT_GENERAL'			=> 'Tổng quát',
 	'ACP_CAT_MAINTENANCE'		=> 'Bảo trì',
@@ -88,8 +88,8 @@ $lang = array_merge($lang, array(
 
 	'ACP_EMAIL_SETTINGS'		=> 'Thiết lập email',
 	'ACP_EXTENSION_GROUPS'		=> 'Quản lí nhóm tập tin đính kèm',
-	'ACP_EXTENSION_MANAGEMENT'	=> 'Quản lí phần mở rộng',
-	'ACP_EXTENSIONS'			=> 'Phần mở rộng',
+	'ACP_EXTENSION_MANAGEMENT'	=> 'Quản lí phần mở rộng tập tin',
+	'ACP_EXTENSIONS'			=> 'Quản lí phần mở rộng',
 
 	'ACP_FORUM_BASED_PERMISSIONS'	=> 'Cấp phép cho chuyên mục',
 	'ACP_FORUM_LOGS'				=> 'Ghi nhận chuyên mục',
@@ -291,7 +291,6 @@ $lang = array_merge($lang, array(
 	'RESYNC'						=> 'Đồng bộ hóa',
 	'RESYNC_FILES_STATS'			=> 'Đồng bộ hóa thống kê tập tin đính kèm',
 	'RESYNC_FILES_STATS_EXPLAIN'	=> 'Đếm lại tổng số tập tin đính kèm và tổng dung lượng lưu trữ chúng từ các bài viết và tin nhắn.',
-	'RETURN_TO'						=> 'Quay về…',
 
 	'SELECT_ANONYMOUS'	=> 'Chọn tài khoản khách',
 	'SELECT_OPTION'		=> 'Chọn các mục tùy chọn',

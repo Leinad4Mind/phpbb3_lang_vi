@@ -4,7 +4,7 @@
 * viewtopic [Vietnamese]
 *
 * @package language
-* @version 1.35
+* @version 1.36
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -124,7 +124,6 @@ $lang = array_merge($lang, array(
 		2	=> '%d bài viết',
 	),
 	'VIEW_UNREAD_POST'		=> 'Bài viết chưa xem đầu tiên',
-	'VISIT_WEBSITE'			=> 'Ghé thăm website của người gửi',
 	'VOTE_CONVERTED'		=> 'Việc thay đổi bình chọn không được hỗ trợ cho các bình chọn được chuyển đổi từ hệ thống cũ hoặc các hệ thống khác.',
 	'VOTE_SUBMITTED'		=> 'Bạn đã tham gia bình chọn xong.',
 ));

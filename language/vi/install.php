@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version 1.114
+* @version 1.115
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -495,6 +495,7 @@ $lang = array_merge($lang, array(
 	'PREVIOUS_VERSION'					=> 'Phiên bản trước',
 	'PROGRESS'							=> 'Tiến hành',
 
+	'RELEASE_ANNOUNCEMENT'		=> 'Thông báo phát hành',
 	'RESULT'					=> 'Kết quả',
 	'RUN_DATABASE_SCRIPT'		=> 'Cập nhật ngay cơ sở dữ liệu',
 
@@ -537,7 +538,7 @@ $lang = array_merge($lang, array(
 
 		<h1>Thông báo phát hành</h1>
 
-		<p>Bạn hãy vui lòng xem qua <a href="%1$s" title="%1$s"><strong>thông báo phát hành của phiên bản phpBB mới nhất</strong></a> trước khi bạn tiếp tục tiến hành việc cập nhật của mình bởi vì nó có nhiều thông tin hữu ích dành cho bạn. Thông báo này cũng đính kèm liên kết tải về phiên bản phpBB mới nhất cũng như những thay đổi kể từ phiên bản trước.</p>
+		<p>Bạn hãy vui lòng xem qua thông báo phát hành của phiên bản phpBB mới nhất trước khi bạn tiếp tục tiến hành việc cập nhật của mình bởi vì nó có nhiều thông tin hữu ích dành cho bạn. Thông báo này cũng đính kèm liên kết tải về phiên bản phpBB mới nhất cũng như những thay đổi kể từ phiên bản trước.</p>
 
 		<br />
 
@@ -552,16 +553,11 @@ $lang = array_merge($lang, array(
 		</ul>
 
 		<p>Sau khi đã tải lên xong, hệ thống của bạn sẽ tạm ngưng hoạt động đối với các người dùng bình thường trong suốt thời gian thư mục cài đặt hệ thống mà bạn đã tải lên còn hiện diện.<br /><br />
-		<strong><a href="%2$s" title="%2$s">Bây giờ, bạn hãy bắt đầu tiến hành cập nhật bằng cách duyệt thư mục cài đặt hệ thống từ trình duyệt của mình</a>.</strong><br />
+		<strong><a href="%1$s" title="%1$s">Bây giờ, bạn hãy bắt đầu tiến hành cập nhật bằng cách duyệt thư mục cài đặt hệ thống từ trình duyệt của mình</a>.</strong><br />
 		<br />
 		Sau đó, bạn sẽ được hướng dẫn từng bước để tiến hành cập nhật. Bạn sẽ chỉ được thông báo một lần duy nhất khi việc cập nhật hoàn tất.</p>
 	',
-	'UPDATE_INSTRUCTIONS_INCOMPLETE'	=> '
 
-		<h1>Bạn vẫn chưa hoàn tất việc cập nhật</h1>
-
-		<p>Hệ thống phpBB đã phát hiện một gói cập nhật tự động chưa hoàn tất. Hãy chắc chắn rằng bạn đã tiến hành thực hiện từng bước với công cụ cập nhật tự động. Bạn sẽ tìm thấy lại liên kết đến công cụ này bên dưới hoặc bạn có thể chuyển đến thư mục cài đặt hệ thống trực tiếp để chạy nó.</p>
-	',
 	'UPDATE_METHOD'					=> 'Phương pháp cập nhật',
 	'UPDATE_METHOD_EXPLAIN'			=> 'Bạn có thể lựa chọn phương pháp cập nhật mà mình thích. Nếu bạn chọn sử dụng phương pháp tải lên bằng FTP, bạn sẽ được yêu cầu cung cấp thông tin chi tiết về tài khoản FTP của mình. Với phương pháp này, các tập tin sẽ được tự động di chuyển đến thư mục định vị mới và bản sao của các tập tin cũ sẽ được giữ lại bằng cách thêm vào phần mở rộng đuôi tập tin là <samp>.bak</samp> trong phần tên tập tin. Nếu bạn chọn tải về các tập tin đã chỉnh sửa, bạn có thể tự mình giải nén chúng ra rồi tải lên trở lại thư mục định vị chính xác sau này.',
 	'UPDATE_REQUIRES_FILE'			=> 'Công cụ cập nhật yêu cầu tập tin sau đây phải tồn tại: %s',
@@ -571,7 +567,6 @@ $lang = array_merge($lang, array(
 	'UPDATING_DATA'					=> 'Đang cập nhật dữ liệu',
 	'UPDATING_TO_LATEST_STABLE'		=> 'Đang cập nhật cơ sở dữ liệu đến bản phát hành tiêu chuẩn mới nhất',
 	'UPDATED_VERSION'				=> 'Phiên bản đã cập nhật',
-	'UPGRADE_INSTRUCTIONS'			=> 'Bản nâng cấp <strong>%1$s</strong> đã được phát hành. Hãy vui lòng xem qua <a href="%2$s" title="%2$s"><strong>thông báo phát hành</strong></a> để tìm hiểu thông tin về các chức năng mới và cách thức nâng cấp.',
 	'UPLOAD_METHOD'					=> 'Phương pháp tải lên',
 
 	'UPDATE_DB_SUCCESS'		=> 'Cơ sở dữ liệu đã được cập nhật thành công.',
