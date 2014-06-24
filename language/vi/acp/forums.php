@@ -4,8 +4,8 @@
 * acp_forums [Vietnamese]
 *
 * @package language
-* @version $Id: forums.php 38 2008-12-13 11:17:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: forums.php 39 2009-05-07 18:05:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -90,6 +90,7 @@ $lang = array_merge($lang, array(
 	'FORUM_EDIT_EXPLAIN'				=> 'Bảng điều khiển bên dưới sẽ giúp bạn tùy chỉnh chuyên mục này. Lưu ý rằng việc thiết lập điều hành viên cho chuyên mục này cũng như bảng điều khiển bộ đếm số bài viết được thiết lập từ mục cấp phép chuyên mục trong công cụ cấp phép cho các thành viên và nhóm thành viên.',
 	'FORUM_IMAGE'						=> 'Hình chuyên mục',
 	'FORUM_IMAGE_EXPLAIN'				=> 'Đường dẫn đến hình ảnh thêm vào sử dụng cho chuyên mục này, nằm trong thư mục chính cài đặt hệ thống.',
+	'FORUM_IMAGE_NO_EXIST'				=> 'Đường dẫn đến hình chuyên mục vừa nhập không tồn tại.',
 	'FORUM_LINK_EXPLAIN'				=> 'Địa chỉ URL đầy đủ đính kèm cả giao thức, ví dụ như <samp>http://</samp> để xác định liên kết điểm đến khi thành viên bấm vào chuyên mục liên kết này, ví dụ như <samp>http://www.phpbb.com/</samp>',
 	'FORUM_LINK_TRACK'					=> 'Đếm số lượt người ghé thăm',
 	'FORUM_LINK_TRACK_EXPLAIN'			=> 'Ghi nhận số lượt người đã bấm vào xem chuyên mục liên kết.',

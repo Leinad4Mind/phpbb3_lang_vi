@@ -4,8 +4,8 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version $Id: ucp.php 102 2008-12-13 11:18:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: ucp.php 103 2009-05-07 18:00:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -131,9 +131,12 @@ $lang = array_merge($lang, array(
 	'CONFIRM_EMAIL'					=> 'Xác nhận địa chỉ email',
 	'CONFIRM_EMAIL_EXPLAIN'			=> 'Bạn chỉ cần xác nhận lại địa chỉ email nếu như bạn muốn thay đổi địa chỉ email hiện tại của mình ở trên.',
 	'CONFIRM_EXPLAIN'				=> 'Để ngăn chặn việc lợi dụng đăng ký tự động hàng loạt, hệ thống yêu cầu bạn phải nhập vào một đoạn mã xác nhận khi đăng ký. Mã xác nhận được hiển thị trong hình ảnh mà bạn nhìn thấy bên dưới. Nếu thị lực của bạn kém hoặc bạn không thể nhìn thấy đoạn mã này vì một lý do nào đó, hãy vui lòng liên hệ với %sngười quản trị%s.',
-	'CONFIRM_PASSWORD'				=> 'Xác nhận mật khẩu',
-	'CONFIRM_PASSWORD_EXPLAIN'		=> 'Bạn chỉ cần xác nhận lại mật khẩu nếu như bạn muốn thay đổi mật khẩu hiện tại của mình ở trên.',
-	'COPPA_BIRTHDAY'				=> 'Để tiếp tục thủ tục đăng ký thành viên, bạn hãy vui lòng cho chúng tôi biết năm sinh của mình.',
+	'VC_REFRESH'					=> 'Nạp lại mã xác nhận',
+	'VC_REFRESH_EXPLAIN'			=> 'Nếu không nhìn rõ mã xác nhận hiện tại, bạn có thể yêu cầu một mã xác nhận mới.',
+
+	'CONFIRM_PASSWORD'			=> 'Xác nhận mật khẩu',
+	'CONFIRM_PASSWORD_EXPLAIN'	=> 'Bạn chỉ cần xác nhận lại mật khẩu nếu như bạn muốn thay đổi mật khẩu hiện tại của mình ở trên.',
+	'COPPA_BIRTHDAY'			=> 'Để tiếp tục thủ tục đăng ký thành viên, bạn hãy vui lòng cho chúng tôi biết năm sinh của mình.',
 	'COPPA_COMPLIANCE'			=> 'Thoả thuận COPPA',
 	'COPPA_EXPLAIN'				=> 'Lưu ý rằng bằng việc chấp nhận thoả thuận COPPA, tài khoản của bạn sẽ được tạo. Tuy nhiên, tài khoản này sẽ không được kích hoạt cho đến khi cha mẹ hay người bảo hộ của bạn đồng ý cho bạn tham gia vào website. Bạn sẽ nhận được email thông báo về điều này với nhiều thông tin chi tiết và hướng dẫn thủ tục đăng ký COPPA.',
 	'CREATE_FOLDER'				=> 'Thêm thư mục…',
@@ -334,7 +337,7 @@ $lang = array_merge($lang, array(
 	'PASS_TYPE_SYMBOL_EXPLAIN'	=> 'Mật khẩu của bạn phải nhiều hơn <strong>%1$d</strong> ký tự, không được vượt quá <strong>%2$d</strong> ký tự, không có trường hợp nhạy cảm giữa chữ với số, phải có các số và phải có các ký hiệu.',
 	'PASSWORD'					=> 'Mật khẩu',
 	'PASSWORD_ACTIVATED'		=> 'Mật khẩu mới của bạn đã được kích hoạt.',
-	'PASSWORD_UPDATED'			=> 'Mật khẩu mới của bạn đã được gửi đến địa chỉ email hiện tại của bạn.',
+	'PASSWORD_UPDATED'			=> 'Mật khẩu mới đã được gửi đến địa chỉ email mà bạn đã dùng để đăng ký.',
 	'PERMISSIONS_RESTORED'		=> 'Đã phục hồi lại thành công cấp phép ban đầu.',
 	'PERMISSIONS_TRANSFERRED'	=> 'Đã chuyển thành công cấp phép từ <strong>%s</strong>, bây giờ bạn có thể truy cập chuyên mục này với cấp phép thành viên đã chuyển đến.<br />Lưu ý rằng những cấp phép dành cho quản trị viên sẽ không được chuyển đến. Bạn có thể trả lại những thiết lập cấp phép của mình bất cứ lúc nào.',
 	'PM_DISABLED'				=> 'Chức năng gửi tin nhắn đã bị vô hiệu trong hệ thống.',

@@ -4,8 +4,8 @@
 * acp_posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php 48 2008-12-13 11:16:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: posting.php 49 2009-05-07 18:08:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -192,7 +192,7 @@ $lang = array_merge($lang, array(
 
 // Word censors
 $lang = array_merge($lang, array(
-	'ACP_WORDS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thêm vào, chỉnh sửa và gỡ bỏ những từ kiểm duyệt tự động trong hệ thống. Ngoài ra, mọi người sẽ không được phép sử dụng tên thành viên có chứa những từ kiểm duyệt này để đăng ký thành viên. Bạn có thể sử dụng dấu * trong từ kiểm duyệt, ví dụ như <strong>*test*</strong> cũng sẽ kiểm duyệt luôn từ <strong>detestable</strong>, <strong>test*</strong> cũng sẽ kiểm duyệt luôn từ <strong>testing</strong>, <strong>*test</strong> cũng sẽ kiểm duyệt luôn từ <strong>detest</strong>.',
+	'ACP_WORDS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thêm vào, chỉnh sửa và gỡ bỏ những từ kiểm duyệt tự động trong hệ thống. Mọi người vẫn được phép dùng những từ kiểm duyệt này để đăng ký làm tên thành viên. Bạn có thể sử dụng dấu * trong từ kiểm duyệt, ví dụ như <strong>*test*</strong> cũng sẽ kiểm duyệt luôn từ <strong>detestable</strong>, <strong>test*</strong> cũng sẽ kiểm duyệt luôn từ <strong>testing</strong>, <strong>*test</strong> cũng sẽ kiểm duyệt luôn từ <strong>detest</strong>.',
 	'ADD_WORD'				=> 'Thêm từ kiểm duyệt mới',
 
 	'EDIT_WORD'		=> 'Sửa từ kiểm duyệt',

@@ -4,8 +4,8 @@
 * acp_board [Vietnamese]
 *
 * @package language
-* @version $Id: board.php 88 2008-12-13 11:17:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: board.php 89 2009-05-07 18:04:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -243,21 +243,32 @@ $lang = array_merge($lang, array(
 $lang = array_merge($lang, array(
 	'ACP_VC_SETTINGS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thay đổi những thiết lập mặc định đối với mã xác nhận và cơ chế đồ họa của mã xác nhận CAPTCHA này trong hệ thống.',
 
-	'CAPTCHA_GD'							=> 'Mã xác nhận GD CAPTCHA',
-	'CAPTCHA_GD_EXPLAIN'					=> 'Sử dụng thư viện GD để tạo nhiều mã xác nhận CAPTCHA nâng cao hơn.',
-	'CAPTCHA_GD_FOREGROUND_NOISE'			=> 'Mã xác nhận GD CAPTCHA với cận cảnh tạp nhiễu',
-	'CAPTCHA_GD_FOREGROUND_NOISE_EXPLAIN'	=> 'Sử dụng hiệu ứng cận cảnh tạp nhiễu để tạo ra mã xác nhận GD CAPTCHA phức tạp hơn.',
-	'CAPTCHA_GD_X_GRID'						=> 'Mã xác nhận GD CAPTCHA với hình nền tạp nhiễu theo trục ngang',
-	'CAPTCHA_GD_X_GRID_EXPLAIN'				=> 'Sử dụng những thiết lập càng thấp của tùy chọn này càng làm cho mã xác nhận GD CAPTCHA khó hơn. Nhập số <strong>0</strong> để vô hiệu việc tạo hình nền tạp nhiễu theo trục ngang.',
-	'CAPTCHA_GD_Y_GRID'						=> 'Mã xác nhận GD CAPTCHA với hình nền tạp nhiễu theo trục đứng',
-	'CAPTCHA_GD_Y_GRID_EXPLAIN'				=> 'Sử dụng những thiết lập càng thấp của tùy chọn này càng làm cho mã xác nhận GD CAPTCHA khó hơn. Nhập số <strong>0</strong> để vô hiệu việc tạo hình nền tạp nhiễu theo trục đứng.',
+	'CAPTCHA_GD'							=> 'CAPTCHA dùng GD',
+	'CAPTCHA_GD_EXPLAIN'					=> 'Sử dụng thư viện GD để tạo ra nhiều mã CAPTCHA nâng cao hơn.',
+	'CAPTCHA_GD_FOREGROUND_NOISE'			=> 'CAPTCHA dùng GD với cận cảnh tạp nhiễu',
+	'CAPTCHA_GD_FOREGROUND_NOISE_EXPLAIN'	=> 'Tạo hiệu ứng cận cảnh tạp nhiễu làm cho mã CAPTCHA thêm phức tạp.',
+	'CAPTCHA_GD_X_GRID'						=> 'CAPTCHA dùng GD với hình nền tạp nhiễu theo trục ngang',
+	'CAPTCHA_GD_X_GRID_EXPLAIN'				=> 'Thiết lập càng thấp càng làm cho mã CAPTCHA thêm phức tạp. Nhập số <strong>0</strong> để vô hiệu việc gây nhiễu trục ngang.',
+	'CAPTCHA_GD_Y_GRID'						=> 'CAPTCHA dùng GD với hình nền tạp nhiễu theo trục dọc',
+	'CAPTCHA_GD_Y_GRID_EXPLAIN'				=> 'Thiết lập càng thấp càng làm cho mã CAPTCHA thêm phức tạp. Nhập số <strong>0</strong> để vô hiệu việc gây nhiễu trục dọc.',
+	'CAPTCHA_GD_WAVE'						=> 'CAPTCHA dùng GD với hình dạng méo mó',
+	'CAPTCHA_GD_WAVE_EXPLAIN'				=> 'Tạo hiệu ứng hình dạng méo mó cho mã CAPTCHA.',
+ 	'CAPTCHA_GD_3D_NOISE'					=> 'Tạo vật thể 3D gây nhiễu',
+	'CAPTCHA_GD_3D_NOISE_EXPLAIN'			=> 'Tạo các vật thể 3D vào mã CAPTCHA, nằm đè lên chữ.',
+  	'CAPTCHA_GD_FONTS'						=> 'Sử dụng phông chữ riêng biệt',
+	'CAPTCHA_GD_FONTS_EXPLAIN'				=> 'Thiết lập này quyết định số lượng hình dạng phông chữ được sử dụng. Bạn có thể chỉ cần dùng vừa đủ số hình dạng mặc định hoặc đưa ra những kiểu chữ được thay đổi. Những chữ in thường cũng có thể thêm vào đây.',
+	'CAPTCHA_FONT_DEFAULT'					=> 'Mặc định',
+	'CAPTCHA_FONT_NEW'						=> 'Hình dạng mới',
+	'CAPTCHA_FONT_LOWER'					=> 'Dùng cả chữ in thường',
 
-	'CAPTCHA_PREVIEW_MSG'			=> 'Những thay đổi của bạn về thiết lập mã xác nhận không được lưu lại. Bởi vì đây chỉ là công cụ xem trước kết quả của mã xác nhận.',
-	'CAPTCHA_PREVIEW_EXPLAIN'		=> 'Mã xác nhận CAPTCHA sẽ được hiển thị giống với những thiết lập hiện tại. Bạn hãy bấm vào nút xem trước để nạp lại hình. Lưu ý bạn rằng những mã xác nhận CAPTCHA này được tạo ra ngẫu nhiên và sẽ khác biệt sau mỗi lần nạp lại.',
-	'VISUAL_CONFIRM_POST'			=> 'Bật mã xác nhận khi khách gửi bài',
-	'VISUAL_CONFIRM_POST_EXPLAIN'	=> 'Tùy chọn yêu cầu khách khi gửi bài phải nhập vào một đoạn mã xác nhận trong hình ảnh được tạo ra ngẫu nhiên để ngăn chặn việc gửi bài viết tự động hàng loạt vào hệ thống.',
-	'VISUAL_CONFIRM_REG'			=> 'Bật mã xác nhận khi đăng ký thành viên',
-	'VISUAL_CONFIRM_REG_EXPLAIN'	=> 'Tùy chọn yêu cầu các thành viên mới khi đăng ký phải nhập vào một đoạn mã xác nhận trong hình ảnh được tạo ra ngẫu nhiên để ngăn chặn việc đăng ký thành viên tự động hàng loạt vào hệ thống.',
+	'CAPTCHA_PREVIEW_MSG'				=> 'Những thay đổi của bạn về thiết lập mã xác nhận không được lưu lại. Bởi vì đây chỉ là công cụ xem trước kết quả của mã xác nhận.',
+	'CAPTCHA_PREVIEW_EXPLAIN'			=> 'Mã xác nhận CAPTCHA sẽ được hiển thị giống với những thiết lập hiện tại. Bạn hãy bấm vào nút xem trước để nạp lại hình. Lưu ý bạn rằng những mã xác nhận CAPTCHA này được tạo ra ngẫu nhiên và sẽ khác biệt sau mỗi lần nạp lại.',
+	'VISUAL_CONFIRM_POST'				=> 'Bật mã xác nhận khi khách gửi bài',
+	'VISUAL_CONFIRM_POST_EXPLAIN'		=> 'Tùy chọn yêu cầu khách khi gửi bài phải nhập vào một đoạn mã xác nhận trong hình ảnh được tạo ra ngẫu nhiên để ngăn chặn việc gửi bài viết tự động hàng loạt vào hệ thống.',
+	'VISUAL_CONFIRM_REFRESH'			=> 'Cho phép thành viên có thể nạp lại hình mã xác nhận',
+	'VISUAL_CONFIRM_REFRESH_EXPLAIN'	=> 'Tùy chọn cho phép thành viên có thể yêu cầu nạp lại mã xác nhận mới nếu họ gặp rắc rối với mã xác nhận tạo ra ban đầu.',
+	'VISUAL_CONFIRM_REG'				=> 'Bật mã xác nhận khi đăng ký thành viên',
+	'VISUAL_CONFIRM_REG_EXPLAIN'		=> 'Tùy chọn yêu cầu các thành viên mới khi đăng ký phải nhập vào một đoạn mã xác nhận trong hình ảnh được tạo ra ngẫu nhiên để ngăn chặn việc đăng ký thành viên tự động hàng loạt vào hệ thống.',
 ));
 
 // Cookie Settings

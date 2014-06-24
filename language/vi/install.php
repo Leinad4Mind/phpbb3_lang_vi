@@ -4,8 +4,8 @@
 * install [Vietnamese]
 *
 * @package language
-* @version $Id: install.php 99 2008-12-13 11:14:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: install.php 100 2009-05-07 17:55:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -277,6 +277,8 @@ $lang = array_merge($lang, array(
 	'MAKE_FOLDER_WRITABLE'		=> 'Hãy chắc chắn rằng thư mục này đã có sẵn trong hệ thống và có thể ghi được trên máy chủ rồi thử lại:<br />»<strong>%s</strong>.',
 	'MAKE_FOLDERS_WRITABLE'		=> 'Hãy chắc chắn rằng những thư mục này đã có sẵn trong hệ thống và có thể ghi được trên máy chủ rồi thử lại:<br />»<strong>%s</strong>.',
 
+	'MYSQL_SCHEMA_UPDATE_REQUIRED'	=> 'Cấu trúc cơ sở dữ liệu MySQL dùng cho hệ thống phpBB đã quá hạn. Hệ thống nhận diện kiểu cấu trúc dùng cho MySQL 3.x/4.x, nhưng máy chủ lại đang chạy trên MySQL %2s.<br /><strong>Trước khi tiến hành cập nhật, bạn cần phải nâng cấp phần cấu trúc.</strong><br /><br />Hãy vui lòng tham khảo tài liệu <a href="http://www.phpbb.com/kb/article/doesnt-have-a-default-value-errors/">Cách thức tiến hành nâng cấp cấu trúc cho MySQL</a>. Nếu bạn vẫn không khắc phục được điều này, hãy tìm đến <a href="http://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ</a> của chúng tôi.',
+
 	'NAMING_CONFLICT'		=> 'Xung đột trong việc đặt tên: “%s” và “%s” đều là tên không được phép sử dụng<br /><br />%s',
 	'NEXT_STEP'				=> 'Tiến hành bước kế tiếp',
 	'NOT_FOUND'				=> 'Không thể tìm',
@@ -392,7 +394,7 @@ $lang = array_merge($lang, array(
 	'COMPLETE_LOGIN_TO_BOARD'		=> 'Ngay bây giờ, bạn nên <a href="../ucp.php?mode=login">đăng nhập vào hệ thống của mình</a> và kiểm tra mọi thứ xem đã hoạt động tốt chưa. Bạn cũng đừng quên xóa, đổi tên thay di chuyển thư mục cài đặt của hệ thống!',
 	'CONTINUE_UPDATE_NOW'			=> 'Tiếp tục quá trình cập nhật',// Shown within the database update script at the end if called from the updater
 	'CONTINUE_UPDATE'				=> 'Tiếp tục cập nhật',// Shown after file upload to indicate the update process is not yet finished
-	'CURRENT_FILE'					=> 'Phần mở đầu của tập tin gốc hiện tại',
+	'CURRENT_FILE'					=> 'Phần bắt đầu xung đột - Mã nguồn tập tin gốc trước khi cập nhật',
 	'CURRENT_VERSION'				=> 'Phiên bản hiện tại',
 
 	'DATABASE_TYPE'						=> 'Loại cơ sở dữ liệu',
@@ -402,13 +404,15 @@ $lang = array_merge($lang, array(
 	'DESTINATION'						=> 'Tập tin đến',
 	'DIFF_INLINE'						=> 'INLINE-DIFF',
 	'DIFF_RAW'							=> 'RAW-UNIFIED-DIFF',
-	'DIFF_SEP_EXPLAIN'					=> 'Phần kết thúc của tập tin gốc hiện tại / Phần mở đầu của tập tin đã cập nhật mới',
+	'DIFF_SEP_EXPLAIN'					=> 'Phần mã nguồn đã được sử dụng trong tập tin cập nhật/tập tin mới',
 	'DIFF_SIDE_BY_SIDE'					=> 'SIDE-BY-SIDE',
 	'DIFF_UNIFIED'						=> 'UNIFIED-DIFF',
 	'DO_NOT_UPDATE'						=> 'Đừng cập nhật tập tin này',
 	'DONE'								=> 'Hoàn tất',
 	'DOWNLOAD'							=> 'Tải về',
 	'DOWNLOAD_AS'						=> 'Tải về dưới dạng',
+	'DOWNLOAD_CONFLICTS'				=> 'Tải về xung đột trong tập tin này',
+	'DOWNLOAD_CONFLICTS_EXPLAIN'		=> 'Dò tìm ra &lt;&lt;&lt; những xung đột được phát hiện',
 	'DOWNLOAD_UPDATE_METHOD_BUTTON'		=> 'Tải về các tập tin đã chỉnh sửa (Khuyến cáo)',
 	'DOWNLOAD_UPDATE_METHOD'			=> 'Tải về các tập tin đã chỉnh sửa được lưu trữ',
 	'DOWNLOAD_UPDATE_METHOD_EXPLAIN'	=> 'Sau khi đã tải về, bạn nên giải nén tập tin được lưu trữ ra. Bạn sẽ tìm thấy những tập tin đã được chỉnh sửa và đây là những tập tin bạn cần phải tự mình tải lên. Hãy tải chúng lên thư mục định vị tương ứng trong thư mục cài đặt hệ thống phpBB. Sau khi hoàn tất quá trình tải các tập tin lên, hãy sử dụng các nút bấm bên dưới để tiến hành kiểm tra sự hợp lệ của các tập tin mà bạn vừa tải.',
@@ -452,13 +456,13 @@ $lang = array_merge($lang, array(
 	'MERGE_MODIFICATIONS_OPTION'	=> 'Nhập chung những thay đổi',
 	'MERGE_NO_MERGE_NEW_OPTION'		=> 'Đừng nhập chung - Sử dụng tập tin mới',
 	'MERGE_NO_MERGE_MOD_OPTION'		=> 'Đừng nhập chung - Sử dụng tập tin đã cài đặt hiện tại',
-	'MERGE_MOD_FILE_OPTION'			=> 'Nhập chung những chỗ khác nhau và sử dụng mã đã chỉnh sửa cho phần xung đột',
-	'MERGE_NEW_FILE_OPTION'			=> 'Nhập chung những chỗ khác nhau và sử dụng mã của tập tin mới cho phần xung đột',
+	'MERGE_MOD_FILE_OPTION'			=> 'Nhập chung những chỉnh sửa (Mất mã nguồn phpBB mới trong phần xung đột)',
+	'MERGE_NEW_FILE_OPTION'			=> 'Nhập chung những chỉnh sửa (Mất mã nguồn đã chỉnh sửa trong phần xung đột)',
 	'MERGE_SELECT_ERROR'			=> 'Chế độ nhập chung tập tin xung đột không chính xác như đã chọn.',
 	'MERGING_FILES'					=> 'Đang nhập chung những điểm khác nhau',
 	'MERGING_FILES_EXPLAIN'			=> 'Hệ thống hiện tại đang dò tìm những thay đổi cuối cùng từ tập tin.<br /><br />Bạn hãy vui lòng chờ đợi cho đến khi hệ thống hoàn tất các thao tác trên những tập tin đã bị thay đổi.',
 
-	'NEW_FILE'						=> 'Phần kết thúc của tập tin đã cập nhật mới',
+	'NEW_FILE'						=> 'Phần kết thúc xung đột',
 	'NEW_USERNAME'					=> 'Tên thành viên mới',
 	'NO_AUTH_UPDATE'				=> 'Bạn không xác thực hợp lệ với hệ thống để tiến hành cập nhật',
 	'NO_ERRORS'						=> 'Không có lỗi',

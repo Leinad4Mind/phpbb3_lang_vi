@@ -4,8 +4,8 @@
 * acp_permissions [Vietnamese]
 *
 * @package language
-* @version $Id: permissions.php 48 2008-12-13 11:16:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: permissions.php 49 2009-05-07 18:07:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -59,7 +59,7 @@ $lang = array_merge($lang, array(
 
 		<h2>Danh sách cấp phép</h2>
 		<p>Sử dụng danh sách cấp phép, bạn có thể xem toàn bộ những thiết lập cấp phép đã chỉ định cho các quản trị viên, thành viên, điều hành viên chính, điều hành viên hay chuyên mục.</p>
-	
+
 		<br />
 
 		<p>Để biết thêm nhiều thông tin về những thiết lập này và quản lí thiết lập cấp phép trong hệ thống phpBB, bạn có thể tham khảo chương 1.5 trong <a href="http://www.phpbb.com/support/documentation/3.0/quickstart/quick_permissions.html">Tài liệu cho người mới bắt đầu</a> của chúng tôi.</p>
@@ -81,7 +81,7 @@ $lang = array_merge($lang, array(
 	'ACL_TYPE_LOCAL_M_'		=> 'Cấp phép điều hành viên',
 	'ACL_TYPE_LOCAL_F_'		=> 'Cấp phép chuyên mục',
 
-	'ACL_NO'				=> 'Không',	
+	'ACL_NO'				=> 'Không',
 	'ACL_VIEW'				=> 'Xem thiết lập cấp phép',
 	'ACL_VIEW_EXPLAIN'		=> 'Với công cụ này, bạn có thể toàn bộ thiết lập cấp phép đã chỉ định cho thành viên/nhóm. Ô màu đỏ cho biết thành viên/nhóm đó chưa được thiết lập cấp phép và ngược lại, ô màu xanh lá tức là thành viên/nhóm đó đã được thiết lập cấp phép.',
 	'ACL_YES'				=> 'Có',
@@ -205,7 +205,7 @@ $lang = array_merge($lang, array(
 	'ROLE_DESCRIPTION_USER_NOAVATAR'		=> 'Hạn chế chức năng thiết lập và không được phép sử dụng hình đại diện.',
 	'ROLE_DESCRIPTION_USER_NOPM'			=> 'Hạn chế chức năng thiết lập và không được phép sử dụng tin nhắn.',
 	'ROLE_DESCRIPTION_USER_STANDARD'		=> 'Có thể sử dụng hầu hết chức năng của thành viên nhưng không thể thay đổi tên thành viên hay bị giới hạn thời gian gửi bài giữa hai bài viết.',
-	
+
 	'ROLE_DESCRIPTION_EXPLAIN'		=> 'Bạn có thể nhập vào một giới thiệu ngắn về nhiệm vụ này có vai trò như thế nào trong hệ thống. Nội dung bạn nhập vào đây cũng sẽ được hiển thị trong trang thiết lập cấp phép.',
 	'ROLE_DESCRIPTION_LONG'			=> 'Giới thiệu về nhiệm vụ mà bạn nhập quá dài. Hãy giới hạn nội dung giới thiệu này trong <strong>4000</strong> ký tự.',
 	'ROLE_DETAILS'					=> 'Thông tin nhiệm vụ',

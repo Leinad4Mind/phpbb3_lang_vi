@@ -4,8 +4,8 @@
 * search [Vietnamese]
 *
 * @package language
-* @version $Id: search.php 24 2008-12-13 11:18:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: search.php 25 2009-05-07 17:57:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -62,6 +62,8 @@ $lang = array_merge($lang, array(
 	'JUMP_TO_POST'			=> 'Chuyển đến bài viết',
 
 	'LOGIN_EXPLAIN_EGOSEARCH'	=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem những bài viết của chính mình.',
+
+	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> 'Bạn đã dùng quá nhiều từ khóa để tìm kiếm. Xin đừng nhập vào nhiều hơn <strong>%1$d</strong> từ.',
 
 	'NO_KEYWORDS'			=> 'Bạn phải xác định ít nhất một từ khóa để thực hiện tìm kiếm. Mỗi từ khóa phải có ít nhất là <strong>%d</strong> ký tự và không được nhiều quá <strong>%d</strong> ký tự, không tính dấu *.',
 	'NO_RECENT_SEARCHES'	=> 'Không có tìm kiếm nào được thực hiện gần đây.',

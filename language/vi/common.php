@@ -4,8 +4,8 @@
 * common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php 134 2008-12-13 10:44:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: common.php 135 2009-05-07 17:49:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -96,7 +96,7 @@ $lang = array_merge($lang, array(
 	'AVATAR_NO_SIZE'				=> 'Chiều rộng hoặc chiều cao của hình đại diện liên kết không thể xác định được. Bạn hãy vui lòng tự nhập kích thước của hình.',
 	'AVATAR_PARTIAL_UPLOAD'			=> 'Hình đại diện đã chọn chỉ được tải lên một phần và chưa hoàn chỉnh.',
 	'AVATAR_PHP_SIZE_NA'			=> 'Dung lượng tập tin của hình đại diện quá lớn.<br />Dung lượng tối đa cho phép xác lập bởi tập tin <samp>php.ini</samp> không thể xác định được.',
-	'AVATAR_PHP_SIZE_OVERRUN'		=> 'Dung lượng tập tin của hình đại diện quá lớn. Dung lượng tập tin tối đa được phép tải lên là <strong>%d</strong> MB.<br />Bạn cần lưu ý rằng dung lượng tối đa này được xác lập bởi tập tin <samp>php.ini</samp> và không thể thay thế.',
+	'AVATAR_PHP_SIZE_OVERRUN'		=> 'Dung lượng tập tin của hình đại diện quá lớn. Dung lượng tập tin tối đa được phép tải lên là %1$d %2$s.<br />Bạn cần lưu ý rằng dung lượng tối đa này được xác lập bởi tập tin <samp>php.ini</samp> và không thể thay thế.',
 	'AVATAR_URL_INVALID'			=> 'Địa chỉ URL bạn vừa nhập không hợp lệ.',
 	'AVATAR_URL_NOT_FOUND'			=> 'Tập tin bạn vừa nhập không thể tìm thấy.',
 	'AVATAR_WRONG_FILESIZE'			=> 'Dung lượng tập tin hình đại diện phải từ <strong>0</strong> đến <strong>%1d</strong> %2s.',
@@ -167,7 +167,7 @@ $lang = array_merge($lang, array(
 	'VIEWED_COUNT_NONE'		=> 'Chưa xem lần nào.',
 
 	'EDIT_POST'							=> 'Sửa bài viết',
-	'EMAIL'								=> 'Gửi email',
+	'EMAIL'								=> 'Gửi email', // Short form for EMAIL_ADDRESS
 	'EMAIL_ADDRESS'						=> 'Địa chỉ email',
 	'EMAIL_SMTP_ERROR_RESPONSE'			=> 'Có rắc rối xảy ra trong quá trình gửi email tại <strong>dòng %1$s</strong>. Nguyên nhân: %2$s.',
 	'EMPTY_SUBJECT'						=> 'Bạn phải nhập tiêu đề cho chủ đề mới.',
@@ -237,6 +237,8 @@ $lang = array_merge($lang, array(
 	'FTP_USERNAME_EXPLAIN'		=> 'Tên đăng nhập vào tài khoản FTP trên máy chủ của bạn.',
 
 	'GENERAL_ERROR'				=> 'Lỗi tổng quát',
+	'GB'						=> 'GB',
+	'GIB'						=> 'GiB',
 	'GO'						=> 'Chuyển',
 	'GOTO_PAGE'					=> 'Chuyển đến trang',
 	'GROUP'						=> 'Nhóm',
@@ -529,7 +531,7 @@ $lang = array_merge($lang, array(
 	'SELECT_ALL_CODE'			=> 'Chọn tất cả',
 	'SELECT_DESTINATION_FORUM'	=> 'Hãy chọn một chuyên mục để tiếp tục',
 	'SELECT_FORUM'				=> 'Chọn một chuyên mục',
-	'SEND_EMAIL'				=> 'Gửi email',
+	'SEND_EMAIL'				=> 'Gửi email', // Used for submit buttons
 	'SEND_EMAIL_USER'			=> 'Gửi email cho', // Used as: {L_SEND_EMAIL_USER} {USERNAME} -> E-mail UserX
 	'SEND_PRIVATE_MESSAGE'		=> 'Gửi tin nhắn',
 	'SETTINGS'					=> 'Thiết lập',
