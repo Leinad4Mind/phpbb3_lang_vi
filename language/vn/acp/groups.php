@@ -4,7 +4,7 @@
 * acp_groups [Vietnamese]
 *
 * @package language
-* @version $Id: groups.php,v 1.10 2006/10/31 17:13:00 nedka Exp $
+* @version $Id: groups.php,v 1.12 2006/11/26 10:52:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -69,6 +69,8 @@ $lang = array_merge($lang, array(
 	'GROUP_DST'						=> 'Bật chế độ giờ màu hè DST (Daylight Saving Time) cho nhóm',
 	'GROUP_EDIT_EXPLAIN'			=> 'Với công cụ này, bạn có thể chỉnh sửa các nhóm thành viên hiện có. Bạn có thể thay đổi tên nhóm, giới thiệu về nhóm và loại nhóm như tự do, cố định… bạn cũng có thể thiết lập những tuỳ chọn cho nhóm như màu sắc phân biệt, xếp hạng… Những thay đổi thiết lập trong đây sẽ thay thế cho thiết lập hiện tại của thành viên. Lưu ý rằng những thành viên trong nhóm có thể thay đổi hình đại diện của họ nếu như bạn không thiết lập cấp phép phù hợp.',
 	'GROUP_ERR_USERS_EXIST'			=> 'Thành viên bạn vừa chọn đã là thành viên trong nhóm',
+	'GROUP_FOUNDER_MANAGE'			=> 'Chỉ người sáng lập quản lý',
+	'GROUP_FOUNDER_MANAGE_EXPLAIN'	=> 'Giới hạn quyền quản lý nhóm thành viên này chỉ dành cho những người sáng lập từ bảng điều khiển dành cho quản trị viên.',
 	'GROUP_HIDDEN'					=> 'Nhóm ẩn',
 	'GROUP_LANG'					=> 'Ngôn ngữ của nhóm',
 	'GROUP_LEAD'					=> 'Người điều hành nhóm',
@@ -105,6 +107,7 @@ $lang = array_merge($lang, array(
 	'MEMBERS'				=> 'Thành viên',
 
 	'NO_GROUP'					=> 'Không có nhóm nào được xác định.',
+	'NO_GROUPS_CREATED'			=> 'Chưa có nhóm thành viên nào được tạo.',
 	'NO_PERMISSIONS'			=> 'Đừng sao chép thiết lập cấp phép',
 	'NO_USERS'					=> 'Bạn chưa nhập vào bất kỳ thành viên nào.',
 

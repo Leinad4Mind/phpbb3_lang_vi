@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php,v 1.16 2006/10/31 18:59:00 nedka Exp $
+* @version $Id: posting.php,v 1.18 2006/11/21 23:08:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -48,11 +48,12 @@ $lang = array_merge($lang, array(
  
 	'BBCODE_ADDED'				=> 'Thẻ BBCode đã được tạo thành công.',
 	'BBCODE_EDITED'				=> 'Thẻ BBCode đã được chỉnh sửa thành công.',
-	'BBCODE_INVALID_TAG_NAME'	=> 'Tên thẻ BBCode bạn vừa chọn đã được sử dụng.',
 	'BBCODE_NOT_EXIST'			=> 'Thẻ BBCode bạn vừa chọn không tồn tại.',
 	'BBCODE_HELPLINE'			=> 'Hướng dẫn sử dụng thẻ BBCode',
 	'BBCODE_HELPLINE_EXPLAIN'	=> 'Mục thông tin hướng dẫn sử dụng này sẽ được hiển thị khi rê chuột lên thẻ BBCode tương ứng trong phần soạn bài viết',
 	'BBCODE_HELPLINE_TEXT'		=> 'Nội dung hướng dẫn',
+	'BBCODE_INVALID_TAG_NAME'	=> 'Tên thẻ BBCode bạn vừa chọn đã được sử dụng.',
+	'BBCODE_OPEN_ENDED_TAG'		=> 'Thẻ BBCode tùy chọn của bạn phải có thẻ mở đầu và thẻ kết thúc.',
 	'BBCODE_TAG'				=> 'Thẻ BBCode',
 	'BBCODE_TAG_TOO_LONG'		=> 'Thẻ BBCode xác định bạn vừa nhập quá dài, hãy vui lòng chọn tên thẻ ngắn hơn.',
 	'BBCODE_USAGE'				=> 'Cách sử dụng thẻ BBCode',
@@ -136,7 +137,7 @@ $lang = array_merge($lang, array(
 	'NO_SMILIES_EXPORT'	=> 'Bạn không có biểu tượng vui nào để tạo gói biểu tượng.',
 	'NO_SMILIES_PAK'	=> 'Không tìm thấy gói biểu tượng vui nào.',
 
-	'PAK_FILE_NOT_READABLE'		=> 'Không thể đọc được tập tin .pak của gói biểu tượng.',
+	'PAK_FILE_NOT_READABLE'		=> 'Không thể đọc được tập tin <samp>.pak</samp> của gói biểu tượng.',
 
 	'REPLACE_MATCHES'	=> 'Kết quả thay thế',
 
@@ -225,8 +226,8 @@ $lang = array_merge($lang, array(
 	'ADD_NEW_REASON'		=> 'Thêm nguyên nhân mới',
 	'AVAILABLE_TITLES'		=> 'Các nguyên nhân đã được phiên dịch có sẵn',
 
-	'IS_NOT_TRANSLATED'			=> 'Nguyên nhân chưa được phiên dịch',
-	'IS_NOT_TRANSLATED_EXPLAIN'	=> 'Đây là những nguyên nhân chưa được phiên dịch. Nếu bạn muốn cung cấp nội dung trong phần phiên dịch, hãy xác định một khóa chính xác từ các tập tin trong gói ngôn ngữ để báo cáo về nguyên nhân trên.',
+	'IS_NOT_TRANSLATED'			=> 'Nguyên nhân <strong>chưa được</strong> phiên dịch',
+	'IS_NOT_TRANSLATED_EXPLAIN'	=> 'Đây là những nguyên nhân <strong>chưa được</strong> phiên dịch. Nếu bạn muốn cung cấp nội dung trong phần phiên dịch, hãy xác định một khóa chính xác từ các tập tin trong gói ngôn ngữ để báo cáo về nguyên nhân trên.',
 	'IS_TRANSLATED'				=> 'Nguyên nhân đã được phiên dịch',
 	'IS_TRANSLATED_EXPLAIN'		=> 'Đây là những nguyên nhân đã được phiên dịch. Nếu tên nguyên nhân bạn nhập vào ở đây đã được xác định từ các tập tin trong gói ngôn ngữ để báo cáo về nguyên nhân trên, phần nội dung phiên dịch của tên và nội dung nguyên nhân sẽ được sử dụng.',
 	

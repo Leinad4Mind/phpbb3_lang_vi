@@ -4,7 +4,7 @@
 * acp common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php,v 1.38 2006/10/31 14:42:00 nedka Exp $
+* @version $Id: common.php,v 1.40 2006/11/29 00:39:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -262,6 +262,7 @@ $lang = array_merge($lang, array(
 	'PARSE_URLS'						=> 'Phân tách liên kết',
 	'PERMISSIONS_TRANSFERED'			=> 'Thiết lập cấp phép đã được chuyển',
 	'PERMISSIONS_TRANSFERED_EXPLAIN'	=> 'Bạn hiện đang có những thiết lập cấp phép từ “%1$s”. Bạn có thể truy cập vào hệ thống với thiết lập cấp phép thành viên này nhưng không thể truy cập được vào bảng điều khiển dành cho quản trị viên bởi vì những thiết lập cấp phép dành cho người quản trị không được chuyển đến bạn. Bạn cũng có thể <a href="%2$s"><strong>sử dụng lại thiết lập cấp phép của mình</strong></a> bất cứ lúc nào bạn muốn.',
+	'PIXEL'								=> 'PX',	
 	'PROCEED_TO_ACP'					=> '%sChuyển đến bảng điều khiển của quản trị viên%s',
 
 	'REMIND'				=> 'Nhắc nhở',
@@ -366,6 +367,8 @@ $lang = array_merge($lang, array(
 	'SORT_LAST_VISIT'	=> 'Lần ghé thăm trước',
 	'SORT_REASON'		=> 'Nguyên nhân',
 	'SORT_REG_DATE'		=> 'Ngày đăng ký',
+
+	'USER_IS_INACTIVE'	=> 'Thành viên chưa kích hoạt',
 ));
 
 // Log Entries

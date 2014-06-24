@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version $Id: ucp.php,v 1.45 2006/10/31 18:36:00 nedka Exp $
+* @version $Id: ucp.php,v 1.47 2006/11/26 10:45:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -134,10 +134,11 @@ $lang = array_merge($lang, array(
 	'CHANGE_PASSWORD'			=> 'Thay đổi mật khẩu',
 	'CLICK_RETURN_FOLDER'		=> '%1$sQuay về thư mục “%3$s” của bạn%2$s',
 	'CONFIRMATION'				=> 'Xác nhận đăng ký',
+	'CONFIRM_CHANGES'			=> 'Xác nhận thay đổi',	
 	'CONFIRM_EMAIL'				=> 'Xác nhận địa chỉ Email',
 	'CONFIRM_EMAIL_EXPLAIN'		=> 'Bạn chỉ cần xác nhận lại địa chỉ Email nếu như bạn muốn thay đổi địa chỉ Email hiện tại của mình ở trên.',
 	'CONFIRM_EXPLAIN'			=> 'Để ngăn chặn việc lợi dụng đăng ký tự động hàng loạt vào website, quản trị viên yêu cầu bạn phải nhập vào một đoạn mã xác nhận khi đăng ký. Mã xác nhận được hiển thị trong hình ảnh mà bạn nhìn thấy bên dưới. Nếu thị lực của bạn kém hoặc bạn không thể nhìn thấy đoạn mã này vì một lý do nào đó, hãy vui lòng liên hệ với %sngười quản trị%s.',
-	'CONFIRM_PASSWORD'			=> 'Xác nhận mật khẩu',
+	'CONFIRM_PASSWORD'			=> 'Xác nhận mật khẩu mới',
 	'CONFIRM_PASSWORD_EXPLAIN'	=> 'Bạn chỉ cần xác nhận lại mật khẩu nếu như bạn muốn thay đổi mật khẩu hiện tại của mình ở trên',
 	'COPPA_BIRTHDAY'			=> 'Để tiếp tục thủ tục đăng ký thành viên, bạn hãy vui lòng cho chúng tôi biết năm sinh của mình.',
 	'COPPA_COMPLIANCE'			=> 'Thoả thuận COPPA',
@@ -273,7 +274,7 @@ $lang = array_merge($lang, array(
 
 	'NEW_EMAIL_ERROR'				=> 'Địa chỉ Email bạn vừa nhập không phù hợp.',
 	'NEW_FOLDER_NAME'				=> 'Tên thư mục mới',
-	'NEW_PASSWORD'					=> 'Mật khẩu',
+	'NEW_PASSWORD'					=> 'Mật khẩu mới',
 	'NEW_PASSWORD_ERROR'			=> 'Mật khẩu bạn vừa nhập không phù hợp.',
 	'NOTIFY_METHOD'					=> 'Phương pháp thông báo',
 	'NOTIFY_METHOD_BOTH'			=> 'Cả hai',
@@ -377,6 +378,8 @@ $lang = array_merge($lang, array(
 	'RULE_ALREADY_DEFINED'				=> 'Quy định cá nhân này đã được xác định rồi.',
 	'RULE_DELETED'						=> 'Quy định cá nhân đã được gỡ bỏ thành công.',
 	'RULE_NOT_DEFINED'					=> 'Quy định cá nhân không được xác định chính xác.',
+	'RULE_REMOVED_MESSAGE'				=> 'Một tin nhắn cá nhân đã bị gỡ bỏ căn cứ theo bộ lọc tin nhắn.',
+	'RULE_REMOVED_MESSAGES'				=> '%d tin nhắn cá nhân đã bị gỡ bỏ căn cứ theo bộ lọc tin nhắn.',
 
 	'SAME_PASSWORD_ERROR'		=> 'Mật khẩu mới bạn vừa nhập trùng với mật khẩu hiện tại của bạn',
 	'SEARCH_YOUR_POSTS'			=> 'Xem những bài viết của bạn',

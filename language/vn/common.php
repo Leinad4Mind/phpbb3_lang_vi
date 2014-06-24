@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php,v 1.50 2006/11/03 16:35:00 nedka Exp $
+* @version $Id: common.php,v 1.52 2006/11/26 10:29:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -85,8 +85,8 @@ $lang = array_merge($lang, array(
 	'AVATAR_NOT_UPLOADED'			=> 'Không thể tải lên hình đại diện.',
 	'AVATAR_NO_SIZE'				=> 'Không thể xác định chiều rộng hoặc chiều cao của hình đại diện liên kết. Bạn hãy vui lòng tự nhập kích thước của hình.',
 	'AVATAR_PARTIAL_UPLOAD'			=> 'Hình đại diện bạn vừa chọn chỉ được tải lên một phần và chưa hoàn chỉnh',
-	'AVATAR_PHP_SIZE_NA'			=> 'Hình đại diện có dung lượng tập tin quá lớn.<br />Không thể xác định dung lượng tập tin tối đa được xác lập bởi PHP trong tập tin <strong>php.ini</strong>.',
-	'AVATAR_PHP_SIZE_OVERRUN'		=> 'Hình đại diện có dung lượng tập tin quá lớn, dung lượng tập tin được phép tải lên tối đa là <strong>%d</strong> MB.<br />Cần lưu ý rằng dung lượng tối đa này được xác lập trong tập tin <strong>php.ini</strong> và không thể tự thay đổi được.',
+	'AVATAR_PHP_SIZE_NA'			=> 'Hình đại diện có dung lượng tập tin quá lớn.<br />Không thể xác định dung lượng tập tin tối đa được xác lập bởi PHP trong tập tin <samp>php.ini</samp>.',
+	'AVATAR_PHP_SIZE_OVERRUN'		=> 'Hình đại diện có dung lượng tập tin quá lớn, dung lượng tập tin được phép tải lên tối đa là <strong>%d</strong> MB.<br />Cần lưu ý rằng dung lượng tối đa này được xác lập trong tập tin <samp>php.ini</samp> và không thể tự thay đổi được.',
 	'AVATAR_URL_INVALID'			=> 'Đường dẫn URL bạn vừa nhập không hợp lệ.',
 	'AVATAR_URL_NOT_FOUND'			=> 'Tập tin bạn vừa nhập không thể tìm thấy.',
 	'AVATAR_WRONG_FILESIZE'			=> 'Dung lượng tập tin hình đại diện phải từ <strong>0</strong> đến <strong>%1d</strong> %2s.',
@@ -321,6 +321,7 @@ $lang = array_merge($lang, array(
 	'NEXT'						=> 'Trang kế',
 	'NEVER'						=> 'Không bao giờ',	
 	'NO'						=> 'Không đồng ý',
+	'NOT_ALLOWED_MANAGE_GROUP'	=> 'Bạn không được phép quản lý nhóm thành viên này từ bảng điều khiển của quản trị viên.',
 	'NOT_AUTHORIZED'			=> 'Bạn không được phép truy cập khu vực này.',
 	'NOT_WATCHING_FORUM'		=> 'Bạn đã chọn không theo dõi những thông tin cập nhật trong chuyên mục này nữa.',
 	'NOT_WATCHING_TOPIC'		=> 'Bạn đã chọn không theo dõi những thông tin cập nhật trong chủ đề này nữa.',

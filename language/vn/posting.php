@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php,v 1.17 2006/10/31 14:40:00 nedka Exp $
+* @version $Id: posting.php,v 1.20 2006/11/26 10:40:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -50,7 +50,6 @@ $lang = array_merge($lang, array(
 	'ATTACH_QUOTA_REACHED'		=> 'Xin lỗi, dung lượng cấp phép tải lên cho diễn đàn đã hết.',
 	'ATTACH_SIG'				=> 'Đính kèm chữ ký cá nhân (Chữ ký có thể thay đổi từ bảng điều khiển dành cho thành viên của bạn)',
 
-	'BBCODE_A_HELP'				=> 'Đóng tất cả thẻ lệnh BBCode còn đang mở',
 	'BBCODE_B_HELP'				=> 'Văn bản in đậm: [b]văn bản muốn in đậm[/b] (Phím tắt: Alt + B)',
 	'BBCODE_C_HELP'				=> 'Hiển thị mã: [code]mã muốn hiển thị[/code] (Phím tắt: Alt + C)',
 	'BBCODE_E_HELP'				=> 'Danh sách: Tạo danh sách liệt kê các mục',
@@ -117,8 +116,11 @@ $lang = array_merge($lang, array(
 	'LOAD'						=> 'Nạp',
 	'LOAD_DRAFT'				=> 'Nạp bản nháp',
 	'LOAD_DRAFT_EXPLAIN'		=> 'Với công cụ này, bạn có thể chọn cho mình bản nháp để tiếp tục soạn bài viết. Bài viết hiện tại của bạn sẽ được huỷ bỏ và tất cả nội dung trong bài viết sẽ được xoá. Xem, sửa và xoá những bản nháp trong bảng điều khiển thành viên của bạn.',
-	'LOGIN_EXPLAIN_POST'		=> 'Bạn cần đăng nhập để gửi bài trong chuyên mục này',
-	'LOGIN_EXPLAIN_REPLY'		=> 'Bạn cần đăng nhập để trả lời bài viết trong chuyên mục này',
+	'LOGIN_EXPLAIN_BUMP'		=> 'Bạn cần phải đăng nhập để đẩy các chủ đề trong chuyên mục này.',
+	'LOGIN_EXPLAIN_DELETE'		=> 'Bạn cần phải đăng nhập để xóa các bài viết trong chuyên mục này.',
+	'LOGIN_EXPLAIN_POST'		=> 'Bạn cần phải đăng nhập để gửi bài trong chuyên mục này.',
+	'LOGIN_EXPLAIN_QUOTE'		=> 'Bạn cần phải đăng nhập để trích dẫn các bài viết trong chuyên mục này.',
+	'LOGIN_EXPLAIN_REPLY'		=> 'Bạn cần phải đăng nhập để trả lời các chủ đề trong chuyên mục này.',
 
 	'MAX_FONT_SIZE_EXCEEDED'	=> 'Bạn chỉ có thể chọn kích thước văn bản tối đa là <strong>%1$d</strong>.',
 	'MAX_FLASH_HEIGHT_EXCEEDED'	=> 'Chiều cao của những tập tin Flash mà bạn sử dụng chỉ có thể tối đa là <strong>%1$d</strong> Pixel.',
@@ -152,7 +154,7 @@ $lang = array_merge($lang, array(
 	'POLL_QUESTION'				=> 'Câu hỏi bình chọn',
 	'POLL_VOTE_CHANGE'			=> 'Cho phép bình chọn lại',
 	'POLL_VOTE_CHANGE_EXPLAIN'	=> 'Nếu lựa chọn này được bật, những thành viên có thể thay đổi lựa chọn mà họ đã tham gia bình chọn.',
-	'POSTED_ATTACHMENTS'		=> 'Tập tin được kính kèm',
+	'POSTED_ATTACHMENTS'		=> 'Tập tin đã được đính kèm',
 	'POST_CONFIRMATION'			=> 'Xác nhận bài viết',
 	'POST_CONFIRM_EXPLAIN'		=> 'Để ngăn chặn những bài viết được tự động gửi vào hệ thống, quản trị viên yêu cầu bạn phải nhập vào một đoạn mã xác nhận. Mã xác nhận được hiển thị trong hình bên dưới mà bạn nhìn thấy. Nếu bạn gặp vấn đề về thị lực hoặc không thể nhìn thấy đoạn mã này vì một lý do nào đó, hãy liên hệ với %sngười quản trị%s.',
 	'POST_DELETED'				=> 'Bài viết của bạn đã được xoá thành công.',

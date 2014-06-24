@@ -4,7 +4,7 @@
 * acp_users [Vietnamese]
 *
 * @package language
-* @version $Id: users.php,v 1.08 2006/11/03 16:54:00 nedka Exp $
+* @version $Id: users.php,v 1.09 2006/11/26 10:54:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -119,7 +119,6 @@ $lang = array_merge($lang, array(
 	'USER_GROUP_NORMAL'				=> 'Loại nhóm bình thường, là thành viên của nhóm',
 	'USER_GROUP_PENDING'			=> 'Loại nhóm đang trong chế độ chờ quyết định',
 	'USER_GROUP_SPECIAL'			=> 'Loại nhóm đặc biệt, là thành viên của nhóm',
-	'USER_IS_INACTIVE'				=> 'Thành viên chưa kích hoạt',
 	'USER_OVERVIEW_UPDATED'			=> 'Thông tin chi tiết về thành viên đã được cập nhật thành công.',
 	'USER_POSTS_DELETED'			=> 'Đã gỡ bỏ thành công tất cả bài viết của thành viên này',
 	'USER_POSTS_MOVED'				=> 'Đã di chuyển thành công tất cả bài viết của thành viên này đến chuyên mục đã chọn',

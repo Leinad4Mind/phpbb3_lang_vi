@@ -4,7 +4,7 @@
 * viewforum [Vietnamese]
 *
 * @package language
-* @version $Id: viewforum.php,v 1.05 2006/10/22 07:00:00 nedka Exp $
+* @version $Id: viewforum.php,v 1.06 2006/11/21 22:59:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -43,7 +43,9 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'ACTIVE_TOPICS'			=> 'Những chủ đề không bị khoá',
 	'ANNOUNCEMENTS'			=> 'Thông báo',
-	
+
+	'FORUM_PERMISSIONS'		=> 'Cấp phép chuyên mục',
+
 	'ICON_ANNOUNCEMENT'		=> 'Thông báo',
 	'ICON_STICKY'			=> 'Chú ý',
 
@@ -56,6 +58,7 @@ $lang = array_merge($lang, array(
 	'NEW_POSTS_LOCKED'		=> 'Có bài viết mới [ Đã khoá ]',
 	'NO_NEW_POSTS_HOT'		=> 'Không có bài viết mới [ Nhiều người xem ]',
 	'NO_NEW_POSTS_LOCKED'	=> 'Không có bài viết mới [ Đã khoá ]',
+	'NO_READ_ACCESS'		=> 'Bạn không được cấp phép để xem các chủ đề trong chuyên mục này.',
 
 	'POST_FORUM_LOCKED'		=> 'Chuyên mục đã bị khoá',
 

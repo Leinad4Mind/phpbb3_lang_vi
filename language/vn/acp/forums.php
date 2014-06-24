@@ -4,7 +4,7 @@
 * acp_forums [Vietnamese]
 *
 * @package language
-* @version $Id: forums.php,v 1.14 2006/10/31 14:43:00 nedka Exp $
+* @version $Id: forums.php,v 1.16 2006/11/21 23:03:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -55,6 +55,7 @@ $lang = array_merge($lang, array(
 	'CREATE_FORUM'					=> 'Tạo chuyên mục mới',
 
 	'DECIDE_MOVE_DELETE_CONTENT'		=> 'Xoá toàn bộ nội dung hoặc di chuyển đến chuyên mục',
+	'DECIDE_MOVE_DELETE_SUBFORUMS'		=> 'Xóa toàn bộ các chuyên mục con hoặc di chuyển đến chuyên mục',
 	'DEFAULT_STYLE'						=> 'Giao diện mặc định',
 	'DELETE_ALL_POSTS'					=> 'Xoá bài viết',
 	'DELETE_SUBFORUMS'					=> 'Xoá chuyên mục con và bài viết',
@@ -77,7 +78,7 @@ $lang = array_merge($lang, array(
 	'FORUM_CREATED'						=> 'Chuyên mục mới đã được tạo thành công.',
 	'FORUM_DATA_NEGATIVE'				=> 'Dọn dẹp các thông số không thể vô hiệu.',
 	'FORUM_DELETE'						=> 'Xoá chuyên mục',
-	'FORUM_DELETE_EXPLAIN'				=> 'Bạn có thể xoá chuyên mục trong phần bên dưới và chọn chuyên mục khác mà bạn muốn chuyển toàn bộ chuyên mục con hay chủ đề sang.',
+	'FORUM_DELETE_EXPLAIN'				=> 'Bạn có thể xoá chuyên mục trong phần bên dưới. Nếu chuyên mục chuyển được, bạn có thể chọn chuyên mục khác mà bạn muốn chuyển toàn bộ chuyên mục con hay chủ đề sang.',
 	'FORUM_DELETED'						=> 'Chuyên mục đã được xoá thành công.',
 	'FORUM_DESC'						=> 'Giới thiệu về chuyên mục',
 	'FORUM_DESC_EXPLAIN'				=> 'Bất kỳ thẻ đánh dấu nào được nhập trong đây đều được hiển thị.',
@@ -116,8 +117,8 @@ $lang = array_merge($lang, array(
 	'LIST_INDEX_EXPLAIN'	=> 'Hiển thị liên kết đến chuyên mục này trong chuyên mục chính với danh sách các chuyên mục con bên trong nếu có.',
 	'LOCKED'				=> 'Đã khoá',
 
-	'MOVE_POSTS_TO'			=> 'Di chuyển bài viết',
-	'MOVE_SUBFORUMS_TO'		=> 'Di chuyển chuyên mục con',
+	'MOVE_POSTS_TO'			=> 'Di chuyển bài viết đến',
+	'MOVE_SUBFORUMS_TO'		=> 'Di chuyển chuyên mục con đến',
 
 	'NO_DESTINATION_FORUM'			=> 'Bạn chưa xác định một chuyên mục để di chuyển nội dung đến',
 	'NO_FORUM_ACTION'				=> 'Không có yêu cầu nào được xác định với nội dung chuyên mục',
