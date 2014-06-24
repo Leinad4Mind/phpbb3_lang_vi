@@ -4,8 +4,8 @@
 * install [Vietnamese]
 *
 * @package language
-* @version $Id: install.php,v 1.083 2007/11/28 10:06:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: install.php,v 1.084 2008/01/21 10:15:00 nedka Exp $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -194,7 +194,7 @@ $lang = array_merge($lang, array(
 	'INSTALL_CONGRATS'				=> 'Xin chúc mừng!',
 	'INSTALL_CONGRATS_EXPLAIN'		=> '
 		<p>Bạn đã cài đặt thành công hệ thống phpBB %1$s. Ngay bây giờ, bạn có hai tùy chọn để quyết định sử dụng bản cài đặt phpBB3 mà mình mới vừa hoàn tất như thế nào:</p>
-		<h2>Chuyển đổi dữ liệu hiện có từ một hệ thống sang bàn cài đặt phpBB3 mới cài này</h2>
+		<h2>Chuyển đổi dữ liệu hiện có từ một hệ thống sang bản cài đặt phpBB3 mới cài này</h2>
 		<p>Công cụ phpBB Unified Convertor Framework hỗ trợ việc chuyển đổi dữ liệu từ bản cài đặt phpBB 2.0.x hoặc các loại hệ thống khác không phải phpBB sang phiên bản phpBB3. Nếu bạn muốn chuyển đổi dữ liệu từ một hệ thống hiện có, hãy vui lòng <a href="%2$s">tiến hành việc chuyển đổi</a>.</p>
 		<h2>Trực tiếp sử dụng bản cài đặt phpBB3 mới này!</h2>
 		<p>Bấm vào nút bên dưới, bạn sẽ được chuyển đến bảng điều khiển dành cho quản trị viên của mình. Đa số mỗi tùy chọn trong bảng điều khiển này đều có hướng dẫn giải thích cho bạn công dụng của chúng. Hãy nhớ rằng bạn luôn được giúp đỡ từ <a href="http://www.phpbb.com/support/documentation/3.0/">tài liệu hướng dẫn sử dụng</a> và <a href="http://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ</a>. Bạn hãy xem tập tin <a href="%3$s">README</a> để biết thêm thông tin.</p><p><strong>Ngay bây giờ, bạn hãy vui lòng xoá, di chuyển hoặc đổi tên thư mục <samp>install</samp> trước khi bạn bắt đầu sử dụng hệ thống. Nếu thư mục này vẫn còn hiện hữu, bạn sẽ chỉ có thể truy cập được vào bảng điều khiển dành cho quản trị viên.</strong></p>',

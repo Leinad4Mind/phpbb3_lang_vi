@@ -4,8 +4,8 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php,v 1.039 2007/12/02 06:46:00 nedka Exp $
-* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
+* @version $Id: posting.php,v 1.040 2008/01/25 04:00:00 nedka Exp $
+* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -102,7 +102,7 @@ $lang = array_merge($lang, array(
 	'AFTER_ICONS'			=> 'Sau biểu tượng bài viết %s',
 	'AFTER_SMILIES'			=> 'Sau biểu tượng vui %s',
 
-	'CODE'						=> 'Mã xác định biểu tượng vui',
+	'CODE'						=> 'Mã nhập',
 	'CURRENT_ICONS'				=> 'Biểu tượng bài viết hiện tại',
 	'CURRENT_ICONS_EXPLAIN'		=> 'Chọn yêu cầu bạn muốn thực hiện với những biểu tượng bài viết đã cài đặt hiện tại của mình.',
 	'CURRENT_SMILIES'			=> 'Biểu tượng vui hiện tại',
