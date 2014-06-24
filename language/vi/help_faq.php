@@ -4,7 +4,7 @@
 * help_faq [Vietnamese]
 *
 * @package language
-* @version 1.70
+* @version 1.71
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -70,7 +70,7 @@ $help = array(
 	),
 	array(
 		0 => 'Điều khoản COPPA là gì?',
-		1 => 'COPPA là tên viết tắt từ <strong>Child Online Privacy and Protection Act</strong>. Đây là một luật lệ ban hành vào năm 1998 trong hệ thống pháp luật của Mỹ. Luật lệ này yêu cầu các website có những hoạt động thu thập thông tin từ trẻ vị thành niên dưới 13 tuổi phải được sự đồng ý của cha mẹ hay người bảo hộ của chúng hoặc sử dụng một vài biện pháp khác từ hệ thống kiến thức bảo hộ pháp luật trong việc cho phép thu thập những thông tin cá nhân có thể nhận biết từ một trẻ vị thành niên dưới 13 tuổi. Nếu bạn chắc chắn rằng mình hay một vài người khác thuộc diện qui định trong điều khoản này hoặc website mà bạn đang đăng ký thành viên có áp dụng điều khoản này, bạn hãy liên hệ với các luật sư tư vấn pháp lý để tìm kiếm sự giúp đỡ. Lưu ý rằng tổ chức phpBB không thể đưa ra cho bạn bất kì một lời khuyên nào về pháp luật và cũng đừng liên hệ với chúng tôi về những vấn đề này ngoại trừ một vài nguyên tắc chung bên dưới.',
+		1 => 'COPPA là tên viết tắt từ <strong>Child Online Privacy and Protection Act</strong>. Đây là một luật lệ ban hành vào năm 1998 trong hệ thống pháp luật của Mỹ. Luật lệ này yêu cầu các website có những hoạt động thu thập thông tin từ trẻ vị thành niên dưới 13 tuổi phải được sự đồng ý của cha mẹ hay người bảo hộ của chúng hoặc sử dụng một vài biện pháp khác từ hệ thống kiến thức bảo hộ pháp luật trong việc cho phép thu thập những thông tin cá nhân có thể nhận biết từ một trẻ vị thành niên dưới 13 tuổi. Nếu bạn chắc chắn rằng mình hay một vài người khác thuộc diện qui định trong điều khoản này hoặc website mà bạn đang đăng ký thành viên có áp dụng điều khoản này, bạn hãy liên hệ với các luật sư tư vấn pháp lý để tìm kiếm sự giúp đỡ. Lưu ý rằng công ty phpBB không thể đưa ra cho bạn bất kì một lời khuyên nào về pháp luật và cũng đừng liên hệ với chúng tôi về những vấn đề này ngoại trừ một vài nguyên tắc chung bên dưới.',
 	),
 	array(
 		0 => 'Tại sao tôi không thể đăng ký tài khoản?',
@@ -98,7 +98,7 @@ $help = array(
 	),
 	array(
 		0 => 'Ngôn ngữ của tôi không có trong danh sách hỗ trợ!',
-		1 => 'Có thể quản trị viên chưa cài đặt ngôn ngữ mà bạn dùng vào hệ thống hay đơn giản là chưa từng có ai phiên dịch hệ thống này sang ngôn ngữ của bạn. Hãy cố gắng yêu cầu người quản trị cài đặt ngôn ngữ của bạn vào hệ thống nếu nó có sẵn. Nếu chưa có, bạn có thể đề nghị cùng tham gia phiên dịch hệ thống sang ngôn ngữ của bạn. Bạn có thể tìm hiểu nhiều thông tin về các ngôn ngữ cho hệ thống này tại website của tổ chức phpBB có ở cuối trang.'
+		1 => 'Có thể quản trị viên chưa cài đặt ngôn ngữ mà bạn dùng vào hệ thống hay đơn giản là chưa từng có ai phiên dịch hệ thống này sang ngôn ngữ của bạn. Hãy cố gắng yêu cầu người quản trị cài đặt ngôn ngữ của bạn vào hệ thống nếu nó có sẵn. Nếu chưa có, bạn có thể đề nghị cùng tham gia phiên dịch hệ thống sang ngôn ngữ của bạn. Bạn có thể tìm hiểu nhiều thông tin về các ngôn ngữ cho hệ thống này tại website của công ty phpBB có ở cuối trang.'
 	),
 	array(
 		0 => 'Làm sao để hiển thị hình ảnh đi kèm tên tài khoản của tôi?',
@@ -150,7 +150,7 @@ $help = array(
 	),
 	array(
 		0 => 'Tại sao tôi lại nhận được một cảnh cáo?',
-		1 => 'Mỗi quản trị viên có những qui định riêng dành cho website của mình. Nếu bạn vi phạm một trong những nội qui của họ, bạn có thể sẽ nhận được một cảnh cáo. Bạn cần lưu ý rằng đây là quyết định của chính người quản trị tại diễn đàn mà bạn tham gia và tổ chức phpBB không có liên quan gì trong việc đưa ra những cảnh cáo này. Hãy liên hệ với người quản trị nếu bạn không chắc chắn lý do tại sao mình lại nhận được một cảnh cáo.'
+		1 => 'Mỗi quản trị viên có những qui định riêng dành cho website của mình. Nếu bạn vi phạm một trong những nội qui của họ, bạn có thể sẽ nhận được một cảnh cáo. Bạn cần lưu ý rằng đây là quyết định của chính người quản trị tại diễn đàn mà bạn tham gia và công ty phpBB không có liên quan gì trong việc đưa ra những cảnh cáo này. Hãy liên hệ với người quản trị nếu bạn không chắc chắn lý do tại sao mình lại nhận được một cảnh cáo.'
 	),
 	array(
 		0 => 'Làm sao tôi có thể báo cáo bài viết đến người điều hành?',
@@ -335,14 +335,14 @@ $help = array(
 	),
 	array(
 		0 => 'Ai đã viết và phát triển hệ thống này?',
-		1 => 'Chương trình này với những chức năng ban đầu của nó đã được phát triển, phát hành và thuộc bản quyền của <a href="https://www.phpbb.com/">tổ chức phpBB</a>. Nó được phát hành dưới bản quyền của <em>GNU General Public License</em> và phân phối hoàn toàn miễn phí. Bạn hãy ghé thăm website chính của chúng tôi để tìm hiểu thêm thông tin về phpBB.'
+		1 => 'Chương trình này với những chức năng ban đầu của nó đã được phát triển, phát hành và thuộc bản quyền của <a href="https://www.phpbb.com/">công ty phpBB</a>. Nó được phát hành dưới bản quyền của <em>GNU General Public License</em> và phân phối hoàn toàn miễn phí. Bạn hãy ghé thăm website chính của chúng tôi để tìm hiểu thêm thông tin về phpBB.'
 	),
 	array(
 		0 => 'Tại sao hệ thống không có những chức năng khác?',
-		1 => 'Chương trình này được phát triển và thuộc bản quyền của <em>tổ chức phpBB</em>. Nếu bạn cảm thấy một chức năng mới cần được thêm vào, hãy vui lòng ghé thăm <a href="https://www.phpbb.com/ideas/">trang ý tưởng</a> của phpBB, nơi mà bạn có thể bình chọn cho những ý tưởng đang được đề xuất hoặc đề nghị thêm chức năng mới.'
+		1 => 'Chương trình này được phát triển và thuộc bản quyền của <em>công ty phpBB</em>. Nếu bạn cảm thấy một chức năng mới cần được thêm vào, hãy vui lòng ghé thăm <a href="https://www.phpbb.com/ideas/">trang ý tưởng</a> của phpBB, nơi mà bạn có thể bình chọn cho những ý tưởng đang được đề xuất hoặc đề nghị thêm chức năng mới.'
 	),
 	array(
 		0 => 'Tôi phải liên hệ với ai về việc lạm dụng và vi phạm pháp luật liên quan đến website này?',
-		1 => 'Bất kì người quản trị nào được liệt kê trong trang “Ban điều hành” đều là người thích hợp cho bạn cần liên hệ hay gửi các thắc mắc của mình. Nếu như việc liên hệ này không có phản hồi nào, bạn nên liên hệ với người quản lí tên miền này bằng cách thực hiện <a href="http://www.google.com/search?q=whois">tra cứu trên miền</a> hoặc nếu website này đang chạy trên một dịch vụ lưu trữ Web miễn phí như Yahoo!, free.fr, f2s.com… thì bạn hãy thử liên hệ với người quản lí hay bộ phận giải quyết các vi phạm của dịch vụ đó. Bạn cần lưu ý rằng <em>tổ chức phpBB</em> hoàn toàn <strong>không liên quan và không chịu trách nhiệm</strong> đến bất kì vấn đề nào xảy ra trong website này ở bất kì đâu và với bất kì ai sử dụng chương trình này. Sẽ hoàn toàn vô nghĩa nếu bạn tìm cách liên hệ với <em>tổ chức phpBB</em> về các vấn đề liên quan đến pháp luật, các trách nhiệm pháp lý, những bài viết nói xấu lẫn nhau… nếu nó <strong>không liên quan trực tiếp</strong> đến website phpBB.com hoặc những chương trình riêng biệt của chính phpBB. Nếu bạn gửi email cho <em>tổ chức phpBB</em> về <strong>bất kì vấn đề nào phát sinh từ bên thứ ba</strong> trong việc sử dụng chương trình này của người dùng cuối thì có thể bạn sẽ nhận được một hồi âm ngắn gọn hoặc không có sự phản hồi nào.'
+		1 => 'Bất kì người quản trị nào được liệt kê trong trang “Ban điều hành” đều là người thích hợp cho bạn cần liên hệ hay gửi các thắc mắc của mình. Nếu như việc liên hệ này không có phản hồi nào, bạn nên liên hệ với người quản lí tên miền này bằng cách thực hiện <a href="http://www.google.com/search?q=whois">tra cứu trên miền</a> hoặc nếu website này đang chạy trên một dịch vụ lưu trữ Web miễn phí như Yahoo!, free.fr, f2s.com… thì bạn hãy thử liên hệ với người quản lí hay bộ phận giải quyết các vi phạm của dịch vụ đó. Bạn cần lưu ý rằng <em>công ty phpBB</em> hoàn toàn <strong>không liên quan và không chịu trách nhiệm</strong> đến bất kì vấn đề nào xảy ra trong website này ở bất kì đâu và với bất kì ai sử dụng chương trình này. Sẽ hoàn toàn vô nghĩa nếu bạn tìm cách liên hệ với <em>công ty phpBB</em> về các vấn đề liên quan đến pháp luật, các trách nhiệm pháp lý, những bài viết nói xấu lẫn nhau… nếu nó <strong>không liên quan trực tiếp</strong> đến website phpBB.com hoặc những chương trình riêng biệt của chính phpBB. Nếu bạn gửi email cho <em>công ty phpBB</em> về <strong>bất kì vấn đề nào phát sinh từ bên thứ ba</strong> trong việc sử dụng chương trình này của người dùng cuối thì có thể bạn sẽ nhận được một hồi âm ngắn gọn hoặc không có sự phản hồi nào.'
 	),
 );

@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version 1.55
+* @version 1.56
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -68,7 +68,7 @@ $lang = array_merge($lang, array(
 	'BBCODE_U_HELP'			=> 'Văn bản gạch chân: [u]văn bản muốn gạch chân[/u]',
 	'BBCODE_W_HELP'			=> 'Chèn địa chỉ URL: [url]http://địa_chỉ_URL[/url] hoặc [url=http://địa_chỉ_URL]Tên liên kết URL[/url] (Phím tắt: Alt + W)',
 	'BBCODE_Y_HELP'			=> 'Danh sách: Tạo danh sách liệt kê các mục',
-	'BUMP_ERROR'			=> 'Bạn không thể đẩy chủ đề này liên tục cùng lúc được.',
+	'BUMP_ERROR'			=> 'Bạn không thể đẩy chủ đề này lên ngay sau bài viết mình vừa gửi.',
 
 	'CANNOT_DELETE_REPLIED'		=> 'Xin lỗi, bạn chỉ có thể xóa những bài viết chưa được trả lời.',
 	'CANNOT_EDIT_POST_LOCKED'	=> 'Bài viết này đã bị khóa. Bạn không thể sửa bài viết này.',
@@ -76,6 +76,14 @@ $lang = array_merge($lang, array(
 	'CANNOT_POST_ANNOUNCE'		=> 'Xin lỗi, bạn không thể tạo thông báo.',
 	'CANNOT_POST_STICKY'		=> 'Xin lỗi, bạn không thể tạo chú ý.',
 	'CHANGE_TOPIC_TO'			=> 'Thay đổi loại chủ đề thành',
+	'CHARS_POST_CONTAINS'		=> array(
+		1	=> 'Bài viết của bạn dài %1$d ký tự.',
+		2	=> 'Bài viết của bạn dài %1$d ký tự.',
+	),
+	'CHARS_SIG_CONTAINS'		=> array(
+		1	=> 'Chữ ký của bạn dài %1$d ký tự.',
+		2	=> 'Chữ ký của bạn dài %1$d ký tự.',
+	),
 	'CLOSE_TAGS'				=> 'Đóng đuôi lệnh trong các thẻ BBCode',
 	'CURRENT_TOPIC'				=> 'Chủ đề hiện tại',
 
@@ -218,6 +226,7 @@ $lang = array_merge($lang, array(
 		1	=> 'Bạn chỉ có thể trích dẫn lại <strong>%d</strong> bài trong một bài viết.',
 		2	=> 'Bạn chỉ có thể trích dẫn lại <strong>%d</strong> bài trong một bài viết.',
 	),
+	'QUOTE_NO_NESTING'		=> 'Bạn chỉ được phép trích dẫn mỗi lần một bài viết.',
 
 	'SAVE'							=> 'Lưu',
 	'SAVE_DATE'						=> 'Đã lưu vào ngày',
@@ -233,17 +242,14 @@ $lang = array_merge($lang, array(
 
 	'TOO_FEW_CHARS'				=> 'Nội dung bài viết của bạn quá ngắn.',
 	'TOO_FEW_CHARS_LIMIT'		=> array(
-		1	=> 'Nội dung bài viết của bạn chỉ có <strong>%1$d</strong> ký tự. Số ký tự tối thiểu yêu cầu trong một bài viết là <strong>%2$d</strong>.',
-		2	=> 'Nội dung bài viết của bạn chỉ có <strong>%1$d</strong> ký tự. Số ký tự tối thiểu yêu cầu trong một bài viết là <strong>%2$d</strong>.',
+		1	=> 'Bạn cần nhập vào ít nhất %1$d ký tự.',
+		2	=> 'Bạn cần nhập vào ít nhất %1$d ký tự.',
 	),
 	'TOO_FEW_POLL_OPTIONS'		=> 'Bạn phải tạo ít nhất hai đối tượng bình chọn.',
 	'TOO_MANY_ATTACHMENTS'		=> 'Không thể gửi thêm tập tin đính kèm nào khác, số lượng tập tin tối đa cho phép đính kèm là <strong>%d</strong>.',
 	'TOO_MANY_CHARS'			=> 'Nội dung bài viết của bạn quá dài.',
-	'TOO_MANY_CHARS_POST'		=> array(
-		2	=> 'Nội dung bài viết của bạn có đến <strong>%1$d</strong> ký tự. Số ký tự tối đa bạn được phép sử dụng là <strong>%2$d</strong>.',
-	),
-	'TOO_MANY_CHARS_SIG'		=> array(
-		2	=> 'Chữ ký của bạn có đến <strong>%1$d</strong> ký tự. Số ký tự tối đa bạn được phép sử dụng là <strong>%2$d</strong>.',
+	'TOO_MANY_CHARS_LIMIT'		=> array(
+		2	=> 'Nội dung không được dài quá %1$d ký tự.',
 	),
 	'TOO_MANY_POLL_OPTIONS'		=> 'Bạn đã tạo quá nhiều đối tượng bình chọn.',
 	'TOO_MANY_SMILIES'			=> 'Bài viết của bạn sử dụng quá nhiều biểu tượng vui. Số lượng biểu tượng vui tối đa cho phép sử dụng trong mỗi bài viết là <strong>%d</strong>.',
@@ -264,9 +270,9 @@ $lang = array_merge($lang, array(
 	'USER_CANNOT_REPLY'			=> 'Bạn không thể trả lời bài viết trong chuyên mục này.',
 	'USER_CANNOT_FORUM_POST'	=> 'Bạn không thể thực hiện các thao tác gửi bài trong chuyên mục này vì loại chủ đề này không hỗ trợ.',	
 
-	'VIEW_MESSAGE'			=> '%sXem bài viết vừa gửi của bạn%s',
-	'VIEW_PRIVATE_MESSAGE'	=> '%sXem tin nhắn vừa gửi của bạn%s',
+	'VIEW_MESSAGE'			=> '%sXem bài viết bạn vừa gửi%s',
+	'VIEW_PRIVATE_MESSAGE'	=> '%sXem tin nhắn bạn vừa gửi%s',
 
-	'WRONG_FILESIZE'	=> 'Dung lượng tập tin đính kèm quá lớn, dung lượng tối đa cho phép là <strong>%1d %2s</strong>.',
-	'WRONG_SIZE'		=> 'Kích thước hình ảnh vừa chọn rộng <strong>%5$d</strong> và cao <strong>%6$d</strong>. Kích thước hình ảnh phải rộng ít nhất <strong>%1$d</strong> và cao ít nhất <strong>%2$d</strong> cũng như không được phép rộng hơn <strong>%3$d</strong> và cao hơn <strong>%4$d</strong>.',
+	'WRONG_FILESIZE'	=> 'Dung lượng tập tin đính kèm quá lớn, dung lượng tối đa cho phép là %1$d %2$s.',
+	'WRONG_SIZE'		=> 'Kích thước hình ảnh vừa chọn rộng %5$d và cao %6$d. Kích thước hình ảnh phải rộng ít nhất %1$d và cao ít nhất %2$d cũng như không được phép rộng quá %3$d và cao quá %4$d.',
 ));

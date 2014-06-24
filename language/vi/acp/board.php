@@ -4,7 +4,7 @@
 * acp/board [Vietnamese]
 *
 * @package language
-* @version 1.109
+* @version 1.110
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -410,6 +410,7 @@ $lang = array_merge($lang, array(
 	'AUTH_PROVIDER_OAUTH_SECRET'				=> 'Khóa bảo mật',
 	'APACHE_SETUP_BEFORE_USE'					=> 'Bạn phải cài đặt bộ xác thực cho Apache trước khi bạn chuyển đổi hệ thống đến phương pháp xác thực này. Cần lưu ý rằng tên tài khoản bạn sử dụng cho phương pháp xác thực này của Apache phải giống với tài khoản thành viên của bạn trong hệ thống. Việc xác thực bằng Apache chỉ có thể sử dụng được nếu <samp>mod_php</samp> (không phải phiên bản CGI) và <samp>safe_mode</samp> đã được vô hiệu trên máy chủ.',
 
+	'LDAP'							=> 'LDAP',
 	'LDAP_DN'						=> 'Tên LDAP <var>dn</var>',
 	'LDAP_DN_EXPLAIN'				=> 'Đây là tên định danh LDAP, xác định thông tin về người dùng, ví dụ như <samp>o=My Company,c=US</samp>.',
 	'LDAP_EMAIL'					=> 'Thuộc tính địa chỉ email LDAP',

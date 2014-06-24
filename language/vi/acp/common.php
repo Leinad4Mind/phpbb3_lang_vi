@@ -4,7 +4,7 @@
 * acp/common [Vietnamese]
 *
 * @package language
-* @version 1.113
+* @version 1.114
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -584,8 +584,11 @@ $lang = array_merge($lang, array(
 	'LOG_DOWNLOAD_IP'			=> '<strong>Đã thêm vào địa chỉ IP/Tên miền từ danh sách cho phép tải về</strong><br />» %s',
 	'LOG_DOWNLOAD_REMOVE_IP'	=> '<strong>Đã gỡ bỏ địa chỉ IP/Tên miền từ danh sách cho phép tải về</strong><br />» %s',
 
-	'LOG_ERROR_JABBER'		=> '<strong>Lỗi Jabber</strong><br />» %s',
-	'LOG_ERROR_EMAIL'		=> '<strong>Lỗi email</strong><br />» %s',
+	'LOG_ERROR_JABBER'	=> '<strong>Lỗi Jabber</strong><br />» %s',
+	'LOG_ERROR_EMAIL'	=> '<strong>Lỗi email</strong><br />» %s',
+	'LOG_EXT_DISABLE'	=> '<strong>Phần mở rộng bị vô hiệu</strong><br />» %s',
+	'LOG_EXT_ENABLE'	=> '<strong>Phần mở rộng được bật</strong><br />» %s',
+	'LOG_EXT_PURGE'		=> '<strong>Đã xóa dữ liệu của phần mở rộng</strong><br />» %s',
 
 	'LOG_FORUM_ADD'							=> '<strong>Đã tạo chuyên mục mới</strong><br />» %s',
 	'LOG_FORUM_COPIED_PERMISSIONS'			=> '<strong>Đã sao chép cấp phép chuyên mục</strong> từ %1$s<br />» %2$s',

@@ -3,7 +3,7 @@
 * acp/permissions_phpbb (phpBB Permission Set) [Vietnamese]
 *
 * @package language
-* @version 2.02
+* @version 2.03
 * @copyright (c) 2013 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 */
@@ -148,7 +148,7 @@ $lang = array_merge($lang, array(
 	'ACL_M_EDIT'		=> 'Sửa bài viết',
 	'ACL_M_DELETE'		=> 'Xóa vĩnh viễn bài viết',
 	'ACL_M_SOFTDELETE'	=> 'Xóa nháp bài viết<br /><em>Điều hành viên được cấp phép có thể phục hồi lại bài viết đã bị xóa nháp.</em>',
-	'ACL_M_APPROVE'		=> 'Kiểm duyệt bài biết',
+	'ACL_M_APPROVE'		=> 'Kiểm duyệt và phục hồi bài biết',
 	'ACL_M_REPORT'		=> 'Đóng và xóa báo cáo',
 	'ACL_M_CHGPOSTER'	=> 'Đổi người gửi bài',
 

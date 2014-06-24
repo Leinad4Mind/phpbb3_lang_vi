@@ -4,7 +4,7 @@
 * acp/language [Vietnamese]
 *
 * @package language
-* @version 1.23
+* @version 1.24
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -44,27 +44,16 @@ $lang = array_merge($lang, array(
 	'ACP_FILES'						=> 'Tập tin ngôn ngữ dùng trong bảng quản trị viên',
 	'ACP_LANGUAGE_PACKS_EXPLAIN'	=> 'Bảng điều khiển này sẽ giúp bạn cài đặt hoặc gỡ bỏ các ngôn ngữ trong hệ thống. Ngôn ngữ mặc định được đánh dấu bằng một dấu sao (*).',
 
-	'EMAIL_FILES'			=> 'Tập tin ngôn ngữ dùng trong email',
-
-	'FILE_CONTENTS'				=> 'Nội dung tập tin',
-	'FILE_FROM_STORAGE'			=> 'Tập tin từ thư mục lưu trữ',
-
-	'HELP_FILES'				=> 'Tập tin ngôn ngữ dùng trong trợ giúp',
+	'DELETE_LANGUAGE_CONFIRM'	=> 'Bạn có chắc chắn muốn xóa “%s”?',
 
 	'INSTALLED_LANGUAGE_PACKS'	=> 'Những ngôn ngữ đã cài đặt',
-	'INVALID_LANGUAGE_PACK'		=> 'Ngôn ngữ vừa chọn dường như không hợp lệ. Hãy kiểm tra lại ngôn ngữ này và tải lên lại lần nữa nếu cần thiết.',
-	'INVALID_UPLOAD_METHOD'		=> 'Phương pháp tải lên vừa chọn không hợp lệ. Hãy vui lòng chọn phương pháp tải lên khác.',
 
 	'LANGUAGE_DETAILS_UPDATED'			=> 'Thông tin chi tiết về ngôn ngữ đã được cập nhật thành công.',
-	'LANGUAGE_ENTRIES'					=> 'Mục từ ngôn ngữ',
-	'LANGUAGE_ENTRIES_EXPLAIN'			=> 'Công cụ này sẽ giúp bạn thay đổi nội dung các mục từ hiện có trong ngôn ngữ hoặc những mục từ chưa được phiên dịch hoàn chỉnh.<br /><strong>Lưu ý:</strong> Khi bạn thay đổi các tập tin ngôn ngữ, những thay đổi sẽ được lưu trữ trong một thư mục xác định của hệ thống để bạn tải về. Những người dùng khác trong hệ thống sẽ không nhận ra những thay đổi trong ngôn ngữ cho đến khi bạn thay thế những tập tin ngôn ngữ gốc bằng các tập tin này trên máy chủ bằng cách tự tải chúng lên.',
-	'LANGUAGE_FILES'					=> 'Tập tin ngôn ngữ',
-	'LANGUAGE_KEY'						=> 'Khóa ngôn ngữ',
 	'LANGUAGE_PACK_ALREADY_INSTALLED'	=> 'Ngôn ngữ này đã được cài đặt.',
 	'LANGUAGE_PACK_CPF_UPDATE'			=> 'Biến ngôn ngữ của các mục thông tin cá nhân tùy biến đã được sao chép từ ngôn ngữ mặc định. Hãy thay đổi chúng nếu cần thiết.',
-	'LANGUAGE_PACK_DELETED'				=> 'Ngôn ngữ <strong>%s</strong> đã được gỡ bỏ thành công. Tất cả người dùng đang sử dụng ngôn ngữ này sẽ được tự động thay bằng ngôn ngữ mặc định của hệ thống.',
+	'LANGUAGE_PACK_DELETED'				=> 'Ngôn ngữ “%s” đã được gỡ bỏ thành công. Tất cả người dùng đang sử dụng ngôn ngữ này sẽ được tự động thay bằng ngôn ngữ mặc định của hệ thống.',
 	'LANGUAGE_PACK_DETAILS'				=> 'Thông tin chi tiết về ngôn ngữ',
-	'LANGUAGE_PACK_INSTALLED'			=> 'Ngôn ngữ <strong>%s</strong> đã được cài đặt thành công.',
+	'LANGUAGE_PACK_INSTALLED'			=> 'Ngôn ngữ “%s” đã được cài đặt thành công.',
 	'LANGUAGE_PACK_ISO'					=> 'Mã ISO ngôn ngữ',
 	'LANGUAGE_PACK_LOCALNAME'			=> 'Tên hệ thống',
 	'LANGUAGE_PACK_NAME'				=> 'Tên',
@@ -73,34 +62,19 @@ $lang = array_merge($lang, array(
 	'LANGUAGE_VARIABLE'					=> 'Biến ngôn ngữ',
 	'LANG_AUTHOR'						=> 'Người dịch',
 	'LANG_ENGLISH_NAME'					=> 'Tên tiếng Anh',
-	'LANG_ISO_CODE'						=> 'Chuẩn ISO',
+	'LANG_ISO_CODE'						=> 'Mã ISO',
 	'LANG_LOCAL_NAME'					=> 'Tên hệ thống',
 
-	'MISSING_LANGUAGE_FILE'		=> 'Tập tin ngôn ngữ bị thiếu: <strong style="color:red">%s</strong>',
-	'MISSING_LANG_VARIABLES'	=> 'Những biến ngôn ngữ bị thiếu',
-	'MODS_FILES'				=> 'Tập tin ngôn ngữ dùng trong các gói MOD',
+	'MISSING_LANG_FILES'		=> 'Tập tin ngôn ngữ bị thiếu',
+	'MISSING_LANG_VARIABLES'	=> 'Biến ngôn ngữ bị thiếu',
 
 	'NO_FILE_SELECTED'				=> 'Bạn chưa xác định một tập tin ngôn ngữ.',
 	'NO_LANG_ID'					=> 'Bạn chưa xác định ngôn ngữ.',
 	'NO_REMOVE_DEFAULT_LANG'		=> 'Bạn không thể gõ bỏ ngôn ngữ mặc định.<br />Nếu bạn muốn gõ bỏ ngôn ngữ này, trước hết hãy thay đổi ngôn ngữ mặc định của hệ thống.',
 	'NO_UNINSTALLED_LANGUAGE_PACKS'	=> 'Không có ngôn ngữ nào được gỡ bỏ',
 
-	'REMOVE_FROM_STORAGE_FOLDER'		=> 'Gỡ bỏ từ thư mục lưu trữ',
-
-	'SELECT_DOWNLOAD_FORMAT'	=> 'Chọn định dạng tải về',
-	'SUBMIT_AND_DOWNLOAD'		=> 'Chấp nhận và tải về tập tin',
-	'SUBMIT_AND_UPLOAD'			=> 'Chấp nhận và tải lên tập tin',
-
-	'THOSE_MISSING_LANG_FILES'			=> 'Những tập tin ngôn ngữ dưới đây bị thiếu trong ngôn ngữ <strong>%s</strong>',
-	'THOSE_MISSING_LANG_VARIABLES'		=> 'Những biến ngôn ngữ dưới đây bị thiếu trong ngôn ngữ <strong>%s</strong>',
+	'THOSE_MISSING_LANG_FILES'		=> 'Những tập tin ngôn ngữ dưới đây bị thiếu trong thư mục “%s”',
+	'THOSE_MISSING_LANG_VARIABLES'	=> 'Những biến ngôn ngữ dưới đây bị thiếu trong gói ngôn ngữ “%s”',
 
 	'UNINSTALLED_LANGUAGE_PACKS'	=> 'Những ngôn ngữ chưa sử dụng',
-
-	'UNABLE_TO_WRITE_FILE'		=> 'Tập tin không thể ghi đến %s.',
-	'UPLOAD_COMPLETED'			=> 'Quá trình tải lên đã hoàn tất.',
-	'UPLOAD_FAILED'				=> 'Quá trình tải lên đã thất bại mà không rõ nguyên nhân. Bạn có thể cần phải tự mình thay thế tập tin ngôn ngữ có liên quan.',
-	'UPLOAD_METHOD'				=> 'Phương pháp tải lên',
-	'UPLOAD_SETTINGS'			=> 'Thiết lập tải lên',
-
-	'WRONG_LANGUAGE_FILE'		=> 'Tập tin ngôn ngữ vừa chọn không hợp lệ.',
 ));

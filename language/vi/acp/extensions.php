@@ -4,22 +4,20 @@
 * acp/extensions [Vietnamese]
 *
 * @package language
-* @version 2.02
+* @version 2.03
 * @copyright (c) 2013 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
 /**
+* DO NOT CHANGE
 */
 if (!defined('IN_PHPBB'))
 {
 	exit;
 }
 
-/**
-* DO NOT CHANGE
-*/
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -36,6 +34,7 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
+	'ANNOUNCEMENT_TOPIC'	=> 'Thông báo phát hành',
 	'AUTHOR_EMAIL'			=> 'Email',
 	'AUTHOR_HOMEPAGE'		=> 'Website',
 	'AUTHOR_INFORMATION'	=> 'Thông tin tác giả',
@@ -47,6 +46,7 @@ $lang = array_merge($lang, array(
 	'DESCRIPTION'	=> 'Giới thiệu',
 	'DETAILS'		=> 'Thông tin chi tiết',
 	'DISPLAY_NAME'	=> 'Tên hiển thị',
+	'DOWNLOAD_LATEST'		=> 'Tải về phiên bản mới',
 
 	'EXT_DETAILS'						=> 'Thông tin gói cài đặt',
 	'EXTENSION'							=> 'Phần mở rộng',
@@ -67,6 +67,7 @@ $lang = array_merge($lang, array(
 	'EXTENSION_ENABLE_EXPLAIN'			=> 'Bạn phải cài đặt một phần mở rộng trước khi có thể sử dụng chức năng của nó trên hệ thống.',
 	'EXTENSION_ENABLE_IN_PROGRESS'		=> 'Phần mở rộng đang được cài đặt. Vui lòng đừng đóng hay nạp lại trang này cho đến khi hoàn tất.',
 	'EXTENSION_ENABLE_SUCCESS'			=> 'Phần mở rộng đã được bật thành công.',
+	'EXTENSION_FORCE_UNSTABLE_CONFIRM'	=> 'Bạn có chắc chắn muốn sử dụng phiên bản đang thử nghiệm?',
 	'EXTENSION_INVALID_LIST'			=> 'Phần mở rộng “%s” không hợp lệ.<br />%s<br /><br />',
 	'EXTENSION_NAME'					=> 'Tên phần mở rộng',
 	'EXTENSION_NOT_AVAILABLE'			=> 'Phần mở rộng đã chọn không thể sử dụng trên hệ thống này. Bạn hãy vui lòng kiểm tra lại phiên bản phpBB cũng như PHP được hỗ trợ bên dưới.',
@@ -89,10 +90,16 @@ $lang = array_merge($lang, array(
 	'EXTENSIONS_DISABLED'				=> 'Phần mở rộng đã vô hiệu',
 	'EXTENSIONS_ENABLED'				=> 'Phần mở rộng đang dùng',
 	'EXTENSIONS_EXPLAIN'				=> 'Công cụ quản lí phần mở rộng giúp bạn dễ dàng cài đặt, xem thông tin yêu cầu cũng như vô hiệu các chức năng mới bổ sung cho hệ thống phpBB của mình.',
+	'EXTENSIONS_VERSION_CHECK_SETTINGS'	=> 'Thiết lập kiểm tra phiên bản',
+
+	'FORCE_UNSTABLE'	=> 'Kiểm tra cả những phiên bản mới đang thử nghiệm',
 
 	'HOMEPAGE'	=> 'Trang chủ',
 
 	'LICENSE'	=> 'Bản quyền',
+
+	'NO_VERSIONCHECK'	=> 'Không hỗ trợ kiểm tra phiên bản mới.',
+	'NOT_UP_TO_DATE'	=> '%s có bản cập nhật mới',
 
 	'PATH'			=> 'Đường dẫn tập tin',
 	'PHP_VERSION'	=> 'Phiên bản PHP',
@@ -104,5 +111,8 @@ $lang = array_merge($lang, array(
 	'TIME'	=> 'Ngày phát hành',
 	'TYPE'	=> 'Loại',
 
-	'VERSION'	=> 'Phiên bản',
+	'UP_TO_DATE'	=> '%s là bản mới nhất',
+
+	'VERSION'						=> 'Phiên bản',
+	'VERSIONCHECK_FORCE_UPDATE_ALL'	=> 'Kiểm tra lại phiên bản mới toàn bộ',
 ));
