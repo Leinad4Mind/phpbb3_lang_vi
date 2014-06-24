@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version $Id: ucp.php 107 2011-06-16 08:37:00Z nedka $
+* @version $Id: ucp.php 108 2011-12-03 14:55:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -147,6 +147,7 @@ $lang = array_merge($lang, array(
 	'CURRENT_IMAGE'				=> 'Hình đại diện hiện tại',
 	'CURRENT_PASSWORD'			=> 'Mật khẩu hiện tại',
 	'CURRENT_PASSWORD_EXPLAIN'	=> 'Bạn phải xác nhận mật khẩu hiện tại nếu bạn muốn thay đổi mật khẩu này, địa chỉ email hiện tại hay tên thành viên của mình.',
+	'CUR_PASSWORD_EMPTY'		=> 'Bạn chưa nhập mật khẩu hiện tại của mình.',
 	'CUR_PASSWORD_ERROR'		=> 'Mật khẩu hiện tại bạn vừa nhập không chính xác.',
 	'CUSTOM_DATEFORMAT'			=> 'Tùy chọn…',
 
@@ -277,9 +278,11 @@ $lang = array_merge($lang, array(
 	'MOVE_TO_FOLDER'				=> 'Di chuyển đến thư mục',
 	'MOVE_UP'						=> 'Di chuyển lên',
 
+	'NEW_EMAIL_CONFIRM_EMPTY'		=> 'Bạn chưa nhập địa chỉ email xác nhận.',
 	'NEW_EMAIL_ERROR'				=> 'Địa chỉ email bạn vừa nhập không phù hợp.',
 	'NEW_FOLDER_NAME'				=> 'Tên thư mục mới',
 	'NEW_PASSWORD'					=> 'Mật khẩu mới',
+	'NEW_PASSWORD_CONFIRM_EMPTY'	=> 'Bạn chưa nhập mật khẩu xác nhận.',
 	'NEW_PASSWORD_ERROR'			=> 'Mật khẩu bạn vừa nhập không phù hợp.',
 	'NOTIFY_METHOD'					=> 'Phương pháp thông báo',
 	'NOTIFY_METHOD_BOTH'			=> 'Cả hai',

@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version $Id: install.php 105 2011-04-29 09:55:00Z nedka $
+* @version $Id: install.php 106 2011-12-03 14:43:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -58,7 +58,7 @@ $lang = array_merge($lang, array(
 	'AVAILABLE_CONVERTORS'		=> 'Những chuyển đổi có sẵn',
 
 	'BEGIN_CONVERT'					=> 'Bắt đầu chuyển đổi',
-	'BLANK_PREFIX_FOUND'			=> 'Bạn chưa xác định tiền tố đầu cho mỗi tên bảng dữ liệu.',
+	'BLANK_PREFIX_FOUND'			=> 'Bạn chưa xác định tiền tố cho mỗi tên bảng dữ liệu.',
 	'BOARD_NOT_INSTALLED'			=> 'Không tìm thấy bản cài đặt',
 	'BOARD_NOT_INSTALLED_EXPLAIN'	=> 'Công cụ phpBB Unified Convertor Framework yêu cầu một bản cài đặt mặc định của phpBB3 để có thể sử dụng các chức năng chuyển đổi. Bạn hãy vui lòng <a href="%s">tiến hành cài đặt phpBB3</a> trước.',
 
@@ -70,7 +70,7 @@ $lang = array_merge($lang, array(
 	'CAT_OVERVIEW'				=> 'Tổng quan',
 	'CAT_UPDATE'				=> 'Cập nhật',
 	'CHANGE'					=> 'Thay đổi',	
-	'CHECK_TABLE_PREFIX'		=> 'Hãy kiểm tra tiền tố đầu của mỗi tên bảng dữ liệu rồi thử lại.',
+	'CHECK_TABLE_PREFIX'		=> 'Hãy kiểm tra tiền tố của mỗi tên bảng dữ liệu rồi thử lại.',
 	'CLEAN_VERIFY'				=> 'Đang dọn dẹp và kiểm tra cấu trúc cơ sở dữ liệu lần cuối',
 	'CLEANING_USERNAMES'		=> 'Đang dọn dẹp tên thành viên',
 	'COLLIDING_CLEAN_USERNAME'	=> '<strong>%s</strong> là tên thành viên đã được dọn dẹp sạch các ký tự cho:',
@@ -146,7 +146,7 @@ $lang = array_merge($lang, array(
 	'DB_USERNAME'				=> 'Tên đăng nhập cơ sở dữ liệu',
 	'DB_TEST'					=> 'Kiểm tra kết nối',
 	'DEFAULT_LANG'				=> 'Ngôn ngữ mặc định',
-	'DEFAULT_PREFIX_IS'			=> 'Công cụ chuyển đổi không thể tìm thấy những bảng dữ liệu với tên tiền tố đầu mà bạn đã xác định. Hãy chắc chắn rằng bạn đã nhập thông tin chính xác về hệ thống mà bạn đang muốn chuyển đổi. Tiền tố đầu mỗi tên bảng dữ liệu mặc định cho <strong>%1$s</strong> là <strong>%2$s</strong>.',
+	'DEFAULT_PREFIX_IS'			=> 'Công cụ chuyển đổi không thể tìm thấy những bảng dữ liệu với tên tiền tố mà bạn đã xác định. Hãy chắc chắn rằng bạn đã nhập thông tin chính xác về hệ thống mà bạn đang muốn chuyển đổi. Tiền tố mỗi tên bảng dữ liệu mặc định cho <strong>%1$s</strong> là <strong>%2$s</strong>.',
 	'DEV_NO_TEST_FILE'			=> 'Không có giá trị nào được xác định cho biến <var>test_file</var> của gói chức năng chuyển đổi. Nếu bạn là người sử dụng gói chức năng chuyển đổi này, bạn không nên xem lỗi này mà hãy báo cáo cho tác giả của gói chức năng chuyển đổi. Còn nếu bạn là tác giả của gói chức năng chuyển đổi này, bạn phải xác định tên của một tập tin tồn tại trong thư mục nguồn của hệ thống để kiểm tra chính xác đường dẫn.',
 	'DIRECTORIES_AND_FILES'		=> 'Thư mục và tập tin cài đặt',
 	'DISABLE_KEYS'				=> 'Loại vô hiệu',
@@ -160,7 +160,7 @@ $lang = array_merge($lang, array(
 	'DLL_MYSQL'					=> 'MySQL',
 	'DLL_MYSQLI'				=> 'MySQL với phần mở rộng MySQLi',
 	'DLL_ORACLE'				=> 'Oracle',
-	'DLL_POSTGRES'				=> 'PostgreSQL 7.x/8.x',
+	'DLL_POSTGRES'				=> 'PostgreSQL',
 	'DLL_SQLITE'				=> 'SQLite',
 	'DLL_XML'					=> 'Hỗ trợ XML [ Jabber ]',
 	'DLL_ZLIB'					=> 'Hỗ trợ chế độ nén zlib [ gz, .tar.gz, .zip ]',
@@ -239,6 +239,7 @@ $lang = array_merge($lang, array(
 	'INST_ERR'						=> 'Lỗi cài đặt',
 	'INST_ERR_DB_CONNECT'			=> 'Không thể kết nối đến cơ sở dữ liệu, bạn hãy xem thông báo lỗi bên dưới để biết nguyên nhân.',
 	'INST_ERR_DB_FORUM_PATH'		=> 'Tập tin cơ sở dữ liệu vừa chọn đang nằm trong thư mục cài đặt của hệ thống. Bạn không nên để tập tin này trong các thư mục của máy chủ.',
+	'INST_ERR_DB_INVALID_PREFIX'	=> 'Tiền tố bạn nhập không hợp lệ. Nó phải bắt đầu bằng một chữ cái và chỉ chứa chữ cái, số và dấu gạch dưới.',
 	'INST_ERR_DB_NO_ERROR'			=> 'Không có thông báo lỗi nào được đưa ra.',
 	'INST_ERR_DB_NO_MYSQLI'			=> 'Phiên bản MySQL được cài đặt trên máy chủ không tương thích với tùy chọn “MySQL với phần mở rộng MySQLi” mà bạn vừa chọn. Hãy thử thay thế bằng tùy chọn “MySQL” để tiếp tục.',
 	'INST_ERR_DB_NO_SQLITE'			=> 'Phiên bản phần mở rộng SQLite được cài đặt trên máy chủ đã quá cũ. Nó phải được nâng cấp ít nhất đến phiên bản 2.8.2 để sử dụng với hệ thống này.',
@@ -258,9 +259,9 @@ $lang = array_merge($lang, array(
 	'INST_ERR_PASSWORD_MISMATCH'	=> 'Mật khẩu bạn vừa nhập không phù hợp.',
 	'INST_ERR_PASSWORD_TOO_LONG'	=> 'Mật khẩu bạn vừa nhập quá dài. Mật khẩu không được phép vượt quá <strong>30</strong> ký tự.',
 	'INST_ERR_PASSWORD_TOO_SHORT'	=> 'Mật khẩu bạn vừa nhập quá ngắn. Mật khẩu không được phép ít hơn <strong>6</strong> ký tự.',
-	'INST_ERR_PREFIX'				=> 'Tiền tố đầu của mỗi tên bảng dữ liệu bạn vừa xác định đã được sử dụng, hãy vui lòng chọn một tên khác.',
-	'INST_ERR_PREFIX_INVALID'		=> 'Tiền tố đầu của mỗi tên bảng dữ liệu bạn vừa xác định không hợp lệ đối với cơ sở dữ liệu của bạn. Hãy vui lòng chọn một tên khác hoặc gỡ bỏ một vài ký tự không được phép sử dụng như là dấu nối (-).',
-	'INST_ERR_PREFIX_TOO_LONG'		=> 'Tiền tố đầu của mỗi tên bảng dữ liệu bạn vừa xác định quá dài. Số ký tự tối đa được phép sử dụng là <strong>%d</strong>.',
+	'INST_ERR_PREFIX'				=> 'Tiền tố của mỗi tên bảng dữ liệu bạn vừa xác định đã được sử dụng, hãy vui lòng chọn một tên khác.',
+	'INST_ERR_PREFIX_INVALID'		=> 'Tiền tố của mỗi tên bảng dữ liệu bạn vừa xác định không hợp lệ đối với cơ sở dữ liệu của bạn. Hãy vui lòng chọn một tên khác hoặc gỡ bỏ một vài ký tự không được phép sử dụng như là dấu nối (-).',
+	'INST_ERR_PREFIX_TOO_LONG'		=> 'Tiền tố của mỗi tên bảng dữ liệu bạn vừa xác định quá dài. Số ký tự tối đa được phép sử dụng là <strong>%d</strong>.',
 	'INST_ERR_USER_TOO_LONG'		=> 'Tên thành viên bạn vừa nhập quá dài. Số ký tự tối đa được phép sử dụng là <strong>20</strong>.',
 	'INST_ERR_USER_TOO_SHORT'		=> 'Tên thành viên bạn vừa nhập quá ngắn. Số kú tự tối thiểu phải sử dụng là <strong>3</strong>.',
 	'INVALID_PRIMARY_KEY'			=> 'Khóa chính không hợp lệ: %s',
@@ -312,7 +313,7 @@ $lang = array_merge($lang, array(
 	'PHP_URL_FOPEN_SUPPORT_EXPLAIN'		=> '<strong>Tùy chọn</strong> - Thiết lập PHP này là tùy chọn, tuy nhiên chắc chắn rằng các chức năng trong hệ thống phpBB như liên kết hình đại diện từ website khác sẽ không thể hoạt động được nếu thiết lập này bị vô hiệu.',
 	'PHP_VERSION_REQD'					=> 'Phiên bản PHP >= 4.3.3',
 	'POST_ID'							=> 'Số ID bài viết',
-	'PREFIX_FOUND'						=> 'Tiền tố đầu mỗi tên bảng dữ liệu <strong>%s</strong> mà bạn vừa chọn đã được sử dụng trong gói cơ sở dữ liệu này.',
+	'PREFIX_FOUND'						=> 'Tiền tố mỗi tên bảng dữ liệu <strong>%s</strong> mà bạn vừa chọn đã được sử dụng trong gói cơ sở dữ liệu này.',
 	'PREPROCESS_STEP'					=> 'Đang thực thi quá trình kiểm tra trước các <var>function/query</var>',
 	'PRE_CONVERT_COMPLETE'				=> 'Tất cả các bước kiểm tra trước việc chuyển đổi đã hoàn tất. Bây giờ bạn thực sự bắt đầu việc chuyển đổi hệ thống. Lưu ý rằng bạn có thể phải tự mình điều chỉnh lại một vài thiết lập. Sau khi chuyển đổi, bạn hãy kiểm tra lại cẩn thận những thiết lập cấp phép đã được chỉ định, tạo lại chỉ mục tìm kiếm mới cho hệ thống của bạn nếu cần thiết và bạn cũng phải chắc chắn rằng những tập tin đã được sao chép chính xác, ví dụ như những tập tin hình đại diện và biểu tượng vui.',
 	'PROCESS_LAST'						=> 'Tiến hành lệnh thực thi trước',
@@ -360,7 +361,8 @@ $lang = array_merge($lang, array(
 	'SYNC_TOPIC_ID'			=> 'Đang đồng bộ những chủ đề có <var>topic_id</var> từ <strong>%1$s</strong> đến <strong>%2$s</strong>.',
 
 	'TABLES_MISSING'		=> 'Không thể tìm thấy những bảng dữ liệu sau<br />» <strong>%s</strong>.',
-	'TABLE_PREFIX'			=> 'Tiền tố trước tên mỗi bảng dữ liệu',
+	'TABLE_PREFIX'			=> 'Tiền tố cho mỗi bảng dữ liệu',
+	'TABLE_PREFIX_EXPLAIN'	=> 'Tiền tố là phần ký tự xuất hiện đầu trước mỗi tên bảng dữ liệu. Nó phải bắt đầu bằng một chữ cái và chỉ chứa chữ cái, số và dấu gạch dưới.',
 	'TABLE_PREFIX_SAME'		=> 'Tiền tố trước tên mỗi bảng dữ liệu đã được sử dụng bởi hệ thống mà bạn đang muốn chuyển đổi sang phpBB.<br />» Tiền tố đã được xác định là “%s”.',
 	'TESTS_PASSED'			=> 'Kiểm tra hợp lệ',
 	'TESTS_FAILED'			=> 'Kiểm tra thất bại',

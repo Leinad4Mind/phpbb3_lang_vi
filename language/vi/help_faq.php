@@ -4,7 +4,7 @@
 * help_faq [Vietnamese]
 *
 * @package language
-* @version $Id: help_faq.php 62 2010-03-02 06:43:00Z nedka $
+* @version $Id: help_faq.php 63 2011-12-03 14:25:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -70,7 +70,7 @@ $help = array(
 	),
 	array(
 		0 => 'Tôi đã từng đăng ký trước đây nhưng bây giờ không thể đăng nhập được nữa!',
-		1 => 'Cố gắng tìm lại email mà chúng tôi đã gửi cho bạn khi lần đầu tiên bạn đăng ký làm thành viên, kiểm tra tên thành viên và mật khẩu của bạn rồi thử lại. Cũng có thể người quản trị đã ngưng kích hoạt hoặc xóa tài khoản của bạn ra khỏi hệ thống vì một vài lý do nào đó. Thông thường, một vài diễn đàn sẽ xóa định kỳ các tài khoản thành viên không hoạt động trong một thời gian dài để giảm bớt dung lượng của cơ sở dữ liệu trong hệ thống. Nếu đúng như thế, bạn hãy cố gắng đăng ký trở lại và tham gia thảo luận nhiệt tình hơn với mọi người.'
+		1 => 'Có thể người quản trị đã ngưng kích hoạt hoặc xóa tài khoản của bạn ra khỏi hệ thống vì một vài lý do nào đó. Thông thường, một vài diễn đàn sẽ xóa định kỳ các tài khoản thành viên không hoạt động trong một thời gian dài để giảm bớt dung lượng của cơ sở dữ liệu trong hệ thống. Nếu đúng như thế, bạn hãy cố gắng đăng ký trở lại và tham gia thảo luận nhiệt tình hơn với mọi người.'
 	),
 	array(
 		0 => 'Điều khoản COPPA là gì?',

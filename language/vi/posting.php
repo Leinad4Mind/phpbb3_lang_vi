@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php 48 2009-07-25 19:29:00Z nedka $
+* @version $Id: posting.php 49 2011-12-03 14:51:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -54,24 +54,24 @@ $lang = array_merge($lang, array(
 	'ATTACH_QUOTA_REACHED'		=> 'Xin lỗi, dung lượng cấp phép tải lên cho diễn đàn đã hết.',
 	'ATTACH_SIG'				=> 'Đính kèm chữ ký cá nhân (Chữ ký có thể thay đổi trong phần thiết lập cá nhân)',
 
-	'BBCODE_A_HELP'				=> 'Đính kèm tập tin trong dòng: [attachment=]tên_tập_tin.loại_tập_tin[/attachment]',
-	'BBCODE_B_HELP'				=> 'Văn bản in đậm: [b]văn bản muốn in đậm[/b]',
-	'BBCODE_C_HELP'				=> 'Hiển thị mã: [code]mã muốn hiển thị[/code]',
-	'BBCODE_E_HELP'				=> 'Danh sách: Tạo danh sách liệt kê các mục',
-	'BBCODE_F_HELP'				=> 'Kích thước văn bản: [size=85]văn bản muốn thay đổi kích thước[/size]',
-	'BBCODE_IS_OFF'				=> '%sBBCode%s đang <em>TẮT</em>',
-	'BBCODE_IS_ON'				=> '%sBBCode%s đang <em>BẬT</em>',
-	'BBCODE_I_HELP'				=> 'Văn bản in nghiêng: [i]văn bản muốn in nghiêng[/i]',
-	'BBCODE_L_HELP'				=> 'Tạo danh sách: [list]văn bản muốn tạo danh sách[/list]',
-	'BBCODE_LISTITEM_HELP'		=> 'Mục liệt kê: [*]văn bản trong dòng liệt kê[/*]',
-	'BBCODE_O_HELP'				=> 'Tạo danh sách theo thứ tự: [list=]văn bản muốn tạo danh sách theo thứ tự[/list]',
-	'BBCODE_P_HELP'				=> 'Chèn hình: [img]http://địa chỉ URL tập tin hình ảnh[/img]',
-	'BBCODE_Q_HELP'				=> 'Trích dẫn văn bản: [quote]văn bản muốn trích dẫn[/quote]',
-	'BBCODE_S_HELP'				=> 'Màu chữ: [color=red]văn bản muốn tô màu[/color] Lưu ý: Bạn cũng có thể sử dụng dạng color=#FF0000',
-	'BBCODE_U_HELP'				=> 'Văn bản gạch chân: [u]văn bản muốn gạch chân[/u]',
-	'BBCODE_W_HELP'				=> 'Chèn địa chỉ URL: [url]http://địa_chỉ_URL[/url] hoặc [url=http://địa_chỉ_URL]Tên liên kết URL[/url] (Phím tắt: Alt + W)',
-	'BBCODE_D_HELP'				=> 'Chèn Flash: [flash=chiều rộng,chiều cao]http://địa_chỉ_URL_tập_tin_Flash[/flash]',
-	'BUMP_ERROR'				=> 'Bạn không thể đẩy chủ đề này liên tục cùng lúc được.',
+	'BBCODE_A_HELP'			=> 'Đính kèm tập tin trong dòng: [attachment=]tên_tập_tin.loại_tập_tin[/attachment]',
+	'BBCODE_B_HELP'			=> 'Văn bản in đậm: [b]văn bản muốn in đậm[/b]',
+	'BBCODE_C_HELP'			=> 'Hiển thị mã: [code]mã muốn hiển thị[/code]',
+	'BBCODE_D_HELP'			=> 'Chèn Flash: [flash=chiều rộng,chiều cao]http://địa_chỉ_URL_tập_tin_Flash[/flash]',
+	'BBCODE_F_HELP'			=> 'Kích thước văn bản: [size=85]văn bản muốn thay đổi kích thước[/size]',
+	'BBCODE_IS_OFF'			=> '%sBBCode%s đang <em>TẮT</em>',
+	'BBCODE_IS_ON'			=> '%sBBCode%s đang <em>BẬT</em>',
+	'BBCODE_I_HELP'			=> 'Văn bản in nghiêng: [i]văn bản muốn in nghiêng[/i]',
+	'BBCODE_L_HELP'			=> 'Tạo danh sách: [list]văn bản muốn tạo danh sách[/list]',
+	'BBCODE_LISTITEM_HELP'	=> 'Mục liệt kê: [*]văn bản trong dòng liệt kê[/*]',
+	'BBCODE_O_HELP'			=> 'Tạo danh sách theo thứ tự: [list=]văn bản muốn tạo danh sách theo thứ tự[/list]',
+	'BBCODE_P_HELP'			=> 'Chèn hình: [img]http://địa chỉ URL tập tin hình ảnh[/img]',
+	'BBCODE_Q_HELP'			=> 'Trích dẫn văn bản: [quote]văn bản muốn trích dẫn[/quote]',
+	'BBCODE_S_HELP'			=> 'Màu chữ: [color=red]văn bản muốn tô màu[/color] Lưu ý: Bạn cũng có thể sử dụng dạng color=#FF0000',
+	'BBCODE_U_HELP'			=> 'Văn bản gạch chân: [u]văn bản muốn gạch chân[/u]',
+	'BBCODE_W_HELP'			=> 'Chèn địa chỉ URL: [url]http://địa_chỉ_URL[/url] hoặc [url=http://địa_chỉ_URL]Tên liên kết URL[/url] (Phím tắt: Alt + W)',
+	'BBCODE_Y_HELP'			=> 'Danh sách: Tạo danh sách liệt kê các mục',
+	'BUMP_ERROR'			=> 'Bạn không thể đẩy chủ đề này liên tục cùng lúc được.',
 
 	'CANNOT_DELETE_REPLIED'		=> 'Xin lỗi, bạn chỉ có thể xóa những bài viết chưa được trả lời.',
 	'CANNOT_EDIT_POST_LOCKED'	=> 'Bài viết này đã bị khóa. Bạn không thể sửa bài viết này.',

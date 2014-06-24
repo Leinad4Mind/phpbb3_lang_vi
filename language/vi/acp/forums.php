@@ -4,7 +4,7 @@
 * acp_forums [Vietnamese]
 *
 * @package language
-* @version $Id: forums.php 42 2010-03-02 07:54:00Z nedka $
+* @version $Id: forums.php 43 2011-12-03 17:53:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -81,7 +81,7 @@ $lang = array_merge($lang, array(
 	'ENABLE_TOPIC_ICONS'			=> 'Sử dụng biểu tượng cho chủ đề',
 
 	'FORUM_ADMIN'						=> 'Quản lí chuyên mục',
-	'FORUM_ADMIN_EXPLAIN'				=> 'Trong hệ thống phpBB mới không có khái niệm nhóm chuyên mục như trước, mọi thứ bây giờ đều chứa trong chuyên mục với nhau. Mỗi chuyên mục có thể có số chuyên mục con không hạn chế về số lượng và cấp độ. Bạn cũng có thể chọn chuyên mục nào thành viên được phép và không được phép gửi bài. Với công cụ này, bạn có thể thêm vào, chỉnh sửa, xóa, khóa, mở khóa từng chuyên mục riêng lẻ với các công cụ điều khiển. Nếu những chủ đề và bài viết của bạn không được đồng bộ, bạn cũng có thể đồng bộ hoá lại chuyên mục. <strong>Bạn cần phải sao chép hoặc tạo thiết lập cấp phép thích hợp cho những chuyên mục mới tạo thì chúng mới được hiển thị ngoài hệ thống.</strong>',
+	'FORUM_ADMIN_EXPLAIN'				=> 'Trong hệ thống phpBB mới mọi thứ đều chứa trong chuyên mục lẫn nhau. Nhóm chuyên mục thực chất chỉ là một loại chuyên mục đặc biệt. Mỗi chuyên mục có thể có số chuyên mục con không hạn chế về số lượng và cấp độ. Bạn cũng có thể chọn chuyên mục nào thành viên được phép và không được phép gửi bài. Với công cụ này, bạn có thể thêm vào, chỉnh sửa, xóa, khóa, mở khóa từng chuyên mục riêng lẻ với các công cụ điều khiển. Nếu những chủ đề và bài viết của bạn không được đồng bộ, bạn cũng có thể đồng bộ hoá lại chuyên mục. <strong>Bạn cần phải sao chép hoặc tạo thiết lập cấp phép thích hợp cho những chuyên mục mới tạo thì chúng mới được hiển thị ngoài hệ thống.</strong>',
 	'FORUM_AUTO_PRUNE'					=> 'Bật chế độ tự động dọn dẹp',
 	'FORUM_AUTO_PRUNE_EXPLAIN'			=> 'Tùy chọn dọn dẹp các chủ đề trong chuyên mục, thiết lập các thông số thời gian bên dưới.',
 	'FORUM_CREATED'						=> 'Chuyên mục mới đã được tạo thành công.',

@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php 141 2011-06-16 08:24:00Z nedka $
+* @version $Id: common.php 142 2011-12-03 14:21:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -174,6 +174,7 @@ $lang = array_merge($lang, array(
 	'EMPTY_MESSAGE_SUBJECT'				=> 'Bạn phải nhập tiêu đề cho tin nhắn mà mình muốn gửi.',
 	'ENABLED'							=> 'Bật',
 	'ENCLOSURE'							=> 'Đính kèm',
+	'ENTER_USERNAME'					=> 'Nhập tên thành viên',
 	'ERR_CHANGING_DIRECTORY'			=> 'Không thể thay đổi thư mục.',
 	'ERR_CONNECTING_SERVER'				=> 'Có lỗi xảy ra trong khi kết nối đến máy chủ.',
 	'ERR_JAB_AUTH'						=> 'Không thể xác thực trên máy chủ Jabber.',
@@ -213,6 +214,7 @@ $lang = array_merge($lang, array(
 	'FORUM_RULES_LINK'		=> 'Bấm vào đây để xem những nội qui của chuyên mục này',
 	'FROM'					=> 'từ',
 	'FSOCK_DISABLED'		=> 'Yêu cầu này không thể được hoàn tất vì hàm <var>fsockopen</var> đã bị vô hiệu hoặc địa chỉ của máy chủ được truy xuất trong yêu cầu không thể tìm thấy.',
+	'FSOCK_TIMEOUT'			=> 'Kết nối phản hồi quá lâu trong khi truy xuất.',
 
 	'FTP_FSOCK_HOST'				=> 'Địa chỉ FTP',
 	'FTP_FSOCK_HOST_EXPLAIN'		=> 'Địa chỉ máy chủ FTP được sử dụng để kết nối đến hệ thống của bạn.',
@@ -661,6 +663,10 @@ $lang = array_merge($lang, array(
 	'UNREAD_PMS'				=> '<strong>%d</strong> tin nhắn chưa xem',
 	'UNREAD_POST'				=> 'Bài viết chưa xem',
 	'UNREAD_POSTS'				=> 'Những bài viết chưa xem',
+	'UNWATCH_FORUM_CONFIRM'		=> 'Bạn có chắc chắn muốn ngừng theo dõi chuyên mục này?',
+	'UNWATCH_FORUM_DETAILED'	=> 'Bạn có chắc chắn muốn ngừng theo dõi chuyên mục “%s”?',
+	'UNWATCH_TOPIC_CONFIRM'		=> 'Bạn có chắc chắn muốn ngừng theo dõi chủ đề này?',
+	'UNWATCH_TOPIC_DETAILED'	=> 'Bạn có chắc chắn muốn ngừng theo dõi chủ đề “%s”?',
 	'UNWATCHED_FORUMS'			=> 'Bạn không còn theo dõi những chuyên mục đã chọn.',
 	'UNWATCHED_TOPICS'			=> 'Bạn không còn theo dõi những chủ đề đã chọn.',
 	'UNWATCHED_FORUMS_TOPICS'	=> 'Bạn không còn theo dõi những mục đã chọn.',
@@ -707,13 +713,17 @@ $lang = array_merge($lang, array(
 	'VIEW_TOPIC_STICKY'			=> 'Chú ý: ',
 	'VISIT_WEBSITE'				=> 'Ghé thăm website',
 
-	'WARNINGS'			=> 'Cảnh cáo',
-	'WARN_USER'			=> 'Cảnh cáo thành viên',
-	'WELCOME_SUBJECT'	=> 'Chào mừng bạn đã đến với %s!',
-	'WEBSITE'			=> 'Website',
-	'WHOIS'				=> 'Tra cứu địa chỉ IP',
-	'WHO_IS_ONLINE'		=> 'Đang trực tuyến',
-	'WRONG_PASSWORD'	=> 'Bạn vừa nhập mật khẩu không chính xác.',
+	'WARNINGS'				=> 'Cảnh cáo',
+	'WARN_USER'				=> 'Cảnh cáo thành viên',
+	'WATCH_FORUM_CONFIRM'	=> 'Bạn có chắc chắn muốn theo dõi chuyên mục này?',
+	'WATCH_FORUM_DETAILED'	=> 'Bạn có chắc chắn muốn theo dõi chuyên mục “%s”?',
+	'WATCH_TOPIC_CONFIRM'	=> 'Bạn có chắc chắn muốn theo dõi chủ đề này?',
+	'WATCH_TOPIC_DETAILED'	=> 'Bạn có chắc chắn muốn theo dõi chủ đề “%s”?',
+	'WELCOME_SUBJECT'		=> 'Chào mừng bạn đã đến với %s!',
+	'WEBSITE'				=> 'Website',
+	'WHOIS'					=> 'Tra cứu địa chỉ IP',
+	'WHO_IS_ONLINE'			=> 'Đang trực tuyến',
+	'WRONG_PASSWORD'		=> 'Bạn vừa nhập mật khẩu không chính xác.',
 
 	'WRONG_DATA_ICQ'			=> 'Số tài khoản ICQ bạn vừa nhập không hợp lệ.',
 	'WRONG_DATA_JABBER'			=> 'Tên tài khoản Jabber bạn vừa nhập không hợp lệ.',

@@ -4,7 +4,7 @@
 * acp_database [Vietnamese]
 *
 * @package language
-* @version $Id: database.php 21 2009-07-25 22:28:00Z nedka $
+* @version $Id: database.php 22 2011-12-03 17:48:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -66,9 +66,10 @@ $lang = array_merge($lang, array(
 	'FILE_WRITE_FAIL'	=> 'Thư mục lưu trữ không thể ghi tập tin.',
 	'FULL_BACKUP'		=> 'Toàn bộ',
 
-	'RESTORE_FAILURE'		=> 'Tập tin sao lưu có thể đã bị hỏng.',
-	'RESTORE_OPTIONS'		=> 'Tùy chọn phục hồi',
-	'RESTORE_SUCCESS'		=> 'Cơ sở dữ liệu của hệ thống đã được phục hồi thành công.<br /><br />Toàn bộ dữ liệu trong hệ thống sẽ quay trở về thời điểm thực hiện bản sao lưu này.',
+	'RESTORE_FAILURE'			=> 'Tập tin sao lưu có thể đã bị hỏng.',
+	'RESTORE_OPTIONS'			=> 'Tùy chọn phục hồi',
+	'RESTORE_SELECTED_BACKUP'	=> 'Bạn có chắc chắn muốn phục hồi bản sao lưu đã chọn?',
+	'RESTORE_SUCCESS'			=> 'Cơ sở dữ liệu của hệ thống đã được phục hồi thành công.<br /><br />Toàn bộ dữ liệu trong hệ thống sẽ quay trở về thời điểm thực hiện bản sao lưu này.',
 
 	'SELECT_ALL'			=> 'Chọn tất cả',
 	'SELECT_FILE'			=> 'Chọn một tập tin',

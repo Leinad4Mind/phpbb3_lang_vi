@@ -4,7 +4,7 @@
 * acp_common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php 100 2011-03-30 11:04:00Z nedka $
+* @version $Id: common.php 101 2011-12-04 23:48:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -335,6 +335,16 @@ $lang = array_merge($lang, array(
 
 	'DATABASE_SERVER_INFO'	=> 'Máy chủ cơ sở dữ liệu',
 	'DATABASE_SIZE'			=> 'Dung lượng cơ sở dữ liệu',
+
+	// Enviroment configuration checks, mbstring related
+	'ERROR_MBSTRING_FUNC_OVERLOAD'					=> 'Hàm chức năng quá tải đã được cấu hình sai',
+	'ERROR_MBSTRING_FUNC_OVERLOAD_EXPLAIN'			=> 'Biến <var>mbstring.func_overload</var> phải được thiết lập là 0 hoặc 4. Bạn có thể kiểm tra giá trị hiện tại từ trang <samp>cấu hình PHP</samp>.',
+	'ERROR_MBSTRING_ENCODING_TRANSLATION'			=> 'Mã hóa ký tự rõ ràng đã được cấu hình sai',
+	'ERROR_MBSTRING_ENCODING_TRANSLATION_EXPLAIN'	=> 'Biến <var>mbstring.encoding_translation</var> phải được thiết lập là 0. Bạn có thể kiểm tra giá trị hiện tại từ trang <samp>cấu hình PHP</samp>.',
+	'ERROR_MBSTRING_HTTP_INPUT'						=> 'Chuyển đổi ký tự nhập vào bằng HTTP đã được cấu hình sai',
+	'ERROR_MBSTRING_HTTP_INPUT_EXPLAIN'				=> 'Biến <var>mbstring.http_input</var> phải được thiết lập là <samp>pass</samp>. Bạn có thể kiểm tra giá trị hiện tại từ trang <samp>cấu hình PHP</samp>.',
+	'ERROR_MBSTRING_HTTP_OUTPUT'					=> 'Chuyển đổi ký tự xuất ra bằng HTTP đã được cấu hình sai',
+	'ERROR_MBSTRING_HTTP_OUTPUT_EXPLAIN'			=> 'Biến <var>mbstring.http_output</var> phải được thiết lập là <samp>pass</samp>. Bạn có thể kiểm tra giá trị hiện tại từ trang <samp>cấu hình PHP</samp>.',
 
 	'FILES_PER_DAY'		=> 'Số tập tin đính kèm/ngày',
 	'FORUM_STATS'		=> 'Thống kê hệ thống',

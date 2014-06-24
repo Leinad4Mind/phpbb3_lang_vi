@@ -20,9 +20,9 @@ _ _ _ _ _    |  |_ _ _   _ _ _ _ _     |  |__|  /  |  |__|  /                   
 @ phpBBVietNam Group
 ---[ Information ]--------------------------------------------------------------
 Language Pack Name: Vietnamese Language Pack for phpBB3
-Language Pack Version: 3.0.9.RC2a
+Language Pack Version: 3.0.10a
 Encoding: Unicode (UTF-8)
-Release Date: 2011/06/22
+Release Date: 2013/06/26
 ---[ Description ]--------------------------------------------------------------
 Vietnamese Language Pack for phpBB3 with following parts:
 + Main translation
@@ -34,8 +34,14 @@ Vietnamese Language Pack for phpBB3 with following parts:
 + Fixed CSS file with Unicode fonts for subSilver2 style
 + GNU-GPL translation
 ---[ Translator ]----------------------------------------
-# nedka (Nguyen Dang Khoa) <admin@vinabb.com> http://www.vinabb.com
+# nedka (Nguyen Dang Khoa) <nedka1989@facebook.com> http://www.facebook.com/nedka1989
 ---[ History ]------------------------------------------------------------------
+# 2013/06/26: Version 3.0.10a
+Updated code changes in language files from phpBB 3.0.10-RC2 to phpBB 3.0.10
+
+# 2011/12/04: Version 3.0.10.RC2a
+Updated code changes in language files from phpBB 3.0.9-RC2 to phpBB 3.0.10-RC2
+
 # 2011/06/22: Version 3.0.9.RC2a
 Updated code changes in language files from phpBB 3.0.9-RC1 to phpBB 3.0.9-RC2
 
@@ -169,6 +175,5 @@ Thanks you for using this language pack
 ---[ License ]------------------------------------------------------------------
 http://opensource.org/licenses/gpl-license.php GNU General Public License v2
 ---[ About ]--------------------------------------------------------------------
-Homepage: http://www.vinabb.com
-Email: admin@vinabb.com
-Facebook: http://www.facebook.com/vinabb
+Homepage: http://www.facebook.com/vinabb
+Email: vinabb@facebook.com

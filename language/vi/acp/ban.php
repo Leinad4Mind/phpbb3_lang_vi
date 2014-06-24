@@ -4,7 +4,7 @@
 * acp_ban [Vietnamese]
 *
 * @package language
-* @version $Id: ban.php 21 2009-07-25 19:45:00Z nedka $
+* @version $Id: ban.php 22 2011-12-03 15:30:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -76,6 +76,9 @@ $lang = array_merge($lang, array(
 	'IP_UNBAN_EXPLAIN'			=> 'Bạn có thể ngưng cấm hoặc ngưng loại trừ nhiều địa chỉ IP cùng lúc trong một thao tác bằng cách kết hợp hiệu quả chuột và bàn phím từ máy tính và trình duyệt. Những địa chỉ IP bị loại trừ được đánh dấu nổi bật.',
 
 	'LENGTH_BAN_INVALID'	=> 'Ngày tháng thi hành lệnh cấm phải sử dụng định dạng <kbd>YYYY-MM-DD</kbd>.',
+
+	'OPTIONS_BANNED'	=> 'Đã cấm',
+	'OPTIONS_EXCLUDED'	=> 'Đã loại trừ',
 
 	'PERMANENT'	=> 'Vĩnh viễn',
 

@@ -4,7 +4,7 @@
 * acp_language [Vietnamese]
 *
 * @package language
-* @version $Id: language.php 19 2009-07-25 22:40:00Z nedka $
+* @version $Id: language.php 20 2011-12-04 23:37:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -65,6 +65,7 @@ $lang = array_merge($lang, array(
 	'LANGUAGE_FILES'					=> 'Tập tin ngôn ngữ',
 	'LANGUAGE_KEY'						=> 'Khóa ngôn ngữ',
 	'LANGUAGE_PACK_ALREADY_INSTALLED'	=> 'Gói ngôn ngữ này đã được cài đặt.',
+	'LANGUAGE_PACK_CPF_UPDATE'			=> 'Biến ngôn ngữ của các mục thông tin cá nhân tùy biến đã được sao chép từ ngôn ngữ mặc định. Hãy thay đổi chúng nếu cần thiết.',
 	'LANGUAGE_PACK_DELETED'				=> 'Gói ngôn ngữ <strong>%s</strong> đã được gỡ bỏ thành công. Tất cả thành viên đang sử dụng gói ngôn ngữ này sẽ được tự động thay bằng gói ngôn ngữ mặc định của hệ thống.',
 	'LANGUAGE_PACK_DETAILS'				=> 'Thông tin chi tiết về gói ngôn ngữ',
 	'LANGUAGE_PACK_INSTALLED'			=> 'Gói ngôn ngữ <strong>%s</strong> đã được cài đặt thành công.',
