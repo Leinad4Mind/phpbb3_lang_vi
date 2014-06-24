@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version $Id: install.php 95 2008-11-02 08:02:00Z nedka $
+* @version $Id: install.php 96 2008-11-13 07:22:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -286,7 +286,7 @@ $lang = array_merge($lang, array(
 	'NO_LOCATION'			=> 'Không thể chọn thư mục định vị. Nếu bạn chắc chắn Imagemagick đã được cài đặt trên máy chủ, bạn có thể xác định lại đường dẫn sau trong bảng quản trị viên.',
 	'NO_TABLES_FOUND'		=> 'Không tìm thấy bảng dữ liệu nào.',
 
-	'OVERVIEW_BODY'		=> 'Chào mừng bạn bước vào thế giới phpBB3!<br /><br />phpBB™ là phần mềm diễn đàn mã nguồn mở được sử dụng rộng rãi trên thế giới. phpBB3 là dòng phiên bản mới nhất trong suốt 7 năm qua từ khi phần mềm này được phát hành lần đầu. Giống như những phiên bản trước, phpBB3 có rất nhiều chức năng hữu ích, giao diện người dùng thân thiện và được hỗ trợ tận tình bởi các thành viên trong ban điều hành phpBB. phpBB3 cải thiện những gì phpBB2 đã có và bổ sung thêm những chức năng thông dụng được yêu cầu từ người dùng mà chưa hề có trong các phiên bản trước. Chúng tôi hi vọng nó sẽ đáp ứng được sự mong chờ của bạn.<br /><br />Hệ thống cài đặt này sẽ hướng dẫn bạn từng bước cài đặt phpBB3, cập nhật đến phiên bản phpBB3 mới nhất từ các bản phát hành cũ và tuyệt vời hơn là chuyển đổi đến phpBB3 từ các hệ thống diễn đàn khác (bao gồm cả phpBB2). Để khám phá nhiều hơn về phpBB3, chúng tôi khuyên bạn nên đọc qua <a href="../docs/INSTALL.html">tài liệu cài đặt</a>.<br /><br />Để xem bản quyền của phpBB3 hay muốn tìm hiểu về việc hỗ trợ và quan điểm phát triển của chúng tôi về sản phẩm này, bạn có thể chọn xem các mục tương ứng từ trình đơn. Để tiếp tục, hãy vui lòng chọn thao tác bạn muốn thực hiện.',
+	'OVERVIEW_BODY'		=> 'Chào mừng bạn bước vào thế giới phpBB3!<br /><br />phpBB™ là phần mềm diễn đàn mã nguồn mở được sử dụng rộng rãi trên thế giới. phpBB3 là dòng phiên bản mới nhất từ khi phần mềm này được phát hành lần đầu vào năm 2000. Giống như những phiên bản trước, phpBB3 có rất nhiều chức năng hữu ích, giao diện người dùng thân thiện và được hỗ trợ tận tình bởi các thành viên trong ban điều hành phpBB. phpBB3 cải thiện những gì phpBB2 đã có và bổ sung thêm những chức năng thông dụng được yêu cầu từ người dùng mà chưa hề có trong các phiên bản trước. Chúng tôi hi vọng nó sẽ đáp ứng được sự mong chờ của bạn.<br /><br />Hệ thống cài đặt này sẽ hướng dẫn bạn từng bước cài đặt phpBB3, cập nhật đến phiên bản phpBB3 mới nhất từ các bản phát hành cũ và tuyệt vời hơn là chuyển đổi đến phpBB3 từ các hệ thống diễn đàn khác (bao gồm cả phpBB2). Để khám phá nhiều hơn về phpBB3, chúng tôi khuyên bạn nên đọc qua <a href="../docs/INSTALL.html">tài liệu cài đặt</a>.<br /><br />Để xem bản quyền của phpBB3 hay muốn tìm hiểu về việc hỗ trợ và quan điểm phát triển của chúng tôi về sản phẩm này, bạn có thể chọn xem các mục tương ứng từ trình đơn. Để tiếp tục, hãy vui lòng chọn thao tác bạn muốn thực hiện.',
 
 	'PCRE_UTF_SUPPORT'					=> 'Hỗ trợ UTF-8 trong PCRE',
 	'PCRE_UTF_SUPPORT_EXPLAIN'			=> 'Hệ thống phpBB sẽ <strong>không hoạt động</strong> được nếu bản cài đặt PHP trên máy chủ của bạn không được biên dịch với phần mở rộng PCRE có hỗ trợ UTF-8.',
@@ -408,6 +408,7 @@ $lang = array_merge($lang, array(
 	'DONE'								=> 'Hoàn tất',
 	'DOWNLOAD'							=> 'Tải về',
 	'DOWNLOAD_AS'						=> 'Tải về dưới dạng',
+	'DOWNLOAD_UPDATE_METHOD_BUTTON'		=> 'Tải về các tập tin đã chỉnh sửa (Khuyến cáo)',
 	'DOWNLOAD_UPDATE_METHOD'			=> 'Tải về các tập tin đã chỉnh sửa được lưu trữ',
 	'DOWNLOAD_UPDATE_METHOD_EXPLAIN'	=> 'Sau khi đã tải về, bạn nên giải nén tập tin được lưu trữ ra. Bạn sẽ tìm thấy những tập tin đã được chỉnh sửa và đây là những tập tin bạn cần phải tự mình tải lên. Hãy tải chúng lên thư mục định vị tương ứng trong thư mục cài đặt hệ thống phpBB. Sau khi hoàn tất quá trình tải các tập tin lên, hãy sử dụng các nút bấm bên dưới để tiến hành kiểm tra sự hợp lệ của các tập tin mà bạn vừa tải.',
 
@@ -505,7 +506,9 @@ $lang = array_merge($lang, array(
 	'STATUS_NOT_MODIFIED'		=> 'Tập tin không chỉnh sửa',
 	'STATUS_UP_TO_DATE'			=> 'Tập tin đã được cập nhật',
 
-	'TOGGLE_DISPLAY'	=> 'Hiện/Ẩn danh sách tập tin',
+	'TOGGLE_DISPLAY'				=> 'Hiện/Ẩn danh sách tập tin',
+	'TRY_DOWNLOAD_METHOD'			=> 'Bạn có thể sử dụng phương pháp tải về những tập tin đã chỉnh sửa.<br />Phương pháp này luôn hoạt động ổn định và được khuyến cáo sử dụng để cập nhật hệ thống.',
+	'TRY_DOWNLOAD_METHOD_BUTTON'	=> 'Dùng thử phương pháp này',
 
 	'UPDATE_COMPLETED'				=> 'Cập nhật đã hoàn tất',
 	'UPDATE_DATABASE'				=> 'Cập nhật cơ sở dữ liệu',

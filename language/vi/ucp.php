@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version $Id: ucp.php 99 2008-11-02 08:10:00Z nedka $
+* @version $Id: ucp.php 100 2008-11-13 07:41:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -59,7 +59,7 @@ $lang = array_merge($lang, array(
 	<br />
 	Chúng tôi cũng có thể tạo ra các cookie khác không phải từ hệ thống phpBB khi bạn truy cập vào website “%1$s”, mặc dù chúng đã vượt qua phạm vi của văn bản này khi đây không phải vấn đề thuộc về hệ thống phpBB. Bước thứ hai trong quá trình chúng tôi thu thập thông tin của bạn là những thông tin cá nhân bạn đã cung cấp cho chúng tôi. Những thông tin này không bị giới hạn như gửi bài viết từ tài khoản khách (Hiểu ở đây là “bài viết của khách”), đăng ký thành viên trong website “%1$s” (Hiểu ở đây là “tài khoản thành viên của bạn”) cũng như những bài viết được bạn gửi sau khi đã đăng ký thành viên của chúng tôi và đăng nhập vào hệ thống (Hiểu ở đây là “bài viết của bạn”).<br />
 	<br />
-	Tài khoản thành viên của bạn chỉ bao gồm tối thiểu một tên thành viên để định danh (Hiểu ở đây là “tên thành viên của bạn”), một mật khẩu cá nhân dùng để đăng nhập vào tài khoản thành viên của bạn (Hiểu ở đây là “mật khẩu của bạn”) và một địa chỉ email cá nhân hợp lệ (Hiểu ở đây là “địa chỉ email của bạn”). Thông tin của bạn chứa trong tài khoản thành viên tại website “%1$s” được bảo hộ bởi luật bảo vệ thông tin áp dụng tại quốc gia nơi đặt máy chủ cho website của chúng tôi. Bất kỳ thông tin nào khác ngoài tên thành viên của bạn, mật khẩu của bạn và địa chỉ email của bạn được yêu cầu phải cung cấp bởi website “%1$s” trong suốt quá trình đăng ký làm thành viên tại đây là những thông tin tùy chọn có tính bắt buộc chỉ của riêng website này, không phải yêu cầu của hệ thống phpBB. Trong tất cả trường hợp, bạn đều có tùy chọn hiển thị hay không hiển thị những thông tin này cho mọi người biết trong phần thiết lập cá nhân của mình. Hơn nữa, trong tài khoản thành viên của bạn, bạn cũng có tùy chọn hiển thị hay ẩn đi địa chỉ email của mình từ hệ thống phpBB để thoát khỏi sự tò mò của người khác hay các cỗ máy dò tìm địa chỉ email.<br />
+	Tài khoản thành viên của bạn chỉ bao gồm tối thiểu một tên thành viên để định danh (Hiểu ở đây là “tên thành viên của bạn”), một mật khẩu cá nhân dùng để đăng nhập vào tài khoản thành viên của bạn (Hiểu ở đây là “mật khẩu của bạn”) và một địa chỉ email cá nhân hợp lệ (Hiểu ở đây là “địa chỉ email của bạn”). Thông tin của bạn chứa trong tài khoản thành viên tại website “%1$s” được bảo hộ bởi luật bảo vệ thông tin áp dụng tại quốc gia nơi đặt máy chủ cho website của chúng tôi. Bất kỳ thông tin nào khác ngoài tên thành viên của bạn, mật khẩu của bạn và địa chỉ email của bạn được yêu cầu phải cung cấp bởi website “%1$s” trong suốt quá trình đăng ký làm thành viên tại đây là những thông tin có tính bắt buộc hay tùy chọn tùy vào sự thiết lập của website “%1$s”. Trong tất cả trường hợp, bạn đều có quyền hiển thị hay không hiển thị những thông tin này cho mọi người biết trong phần thiết lập cá nhân của mình. Hơn nữa, trong tài khoản thành viên của mình, bạn cũng có quyền nhận hay không nhận những email được gửi đi tự động từ hệ thống phpBB.<br />
 	<br />
 	Mật khẩu của bạn được bảo vệ bằng phương pháp mã hoá trong cơ sở dữ liệu của hệ thống, vì thế nó rất an toàn. Tuy nhiên, chúng tôi khuyên bạn không nên dùng lại mật khẩu này trên các website khác. Mật khẩu của bạn là cách duy nhất để bạn đăng nhập vào tài khoản thành viên của mình trong website “%1$s”, vì thế hãy cất giữ nó cẩn thận và trong trường hợp nào cũng không cung cấp cho bất kỳ ai có quan hệ với website “%1$s”, phpBB hay bất kỳ người thứ ba nào khác ngoại trừ yêu cầu mật khẩu của bạn là hợp pháp. Bạn cũng đừng nên quên mật khẩu tài khoản thành viên của mình, nếu quên, bạn có thể sử dụng chức năng “Quên mật khẩu” từ hệ thống phpBB. Để thực hiện việc này, bạn cần phải cung cấp cho hệ thống biết tên thành viên và địa chỉ email đang sử dụng của mình trong tài khoản, sau đó hệ thống phpBB sẽ tạo ra cho bạn mật khẩu mới và gửi đến cho bạn để bạn vẫn có thể sử dụng được tài khoản thành viên của mình.<br />
 	',
@@ -297,6 +297,8 @@ $lang = array_merge($lang, array(
 	'NO_AUTH_EDIT_MESSAGE'			=> 'Bạn không được phép sửa tin nhắn.',
 	'NO_AUTH_FORWARD_MESSAGE'		=> 'Bạn không được phép chuyển tiếp tin nhắn.',
 	'NO_AUTH_GROUP_MESSAGE'			=> 'Bạn không được phép gửi tin nhắn đến nhóm thành viên.',
+	'NO_AUTH_PASSWORD_REMINDER'		=> 'Bạn không được phép yêu cầu mật khẩu mới.',
+	'NO_AUTH_READ_HOLD_MESSAGE'		=> 'Bạn không được phép xem những tin nhắn đang treo.',
 	'NO_AUTH_READ_MESSAGE'			=> 'Bạn không được phép xem tin nhắn.',
 	'NO_AUTH_READ_REMOVED_MESSAGE'	=> 'Bạn không thể xem được tin nhắn này bởi vì nó đã được gỡ bỏ bởi chính thành viên đã gửi.',
 	'NO_AUTH_SEND_MESSAGE'			=> 'Bạn không được phép gửi tin nhắn.',
@@ -323,6 +325,7 @@ $lang = array_merge($lang, array(
 	'NO_SAVED_DRAFTS'			=> 'Không có bản nháp nào được lưu.',
 	'NO_TO_RECIPIENT'			=> 'Không có',	
 	'NO_WATCHED_FORUMS'			=> 'Bạn không chọn theo dõi bất cứ chuyên mục nào.',
+	'NO_WATCHED_SELECTED'		=> 'Bạn chưa chọn bất kì chuyên mục hay chủ đề nào đang theo dõi.',
 	'NO_WATCHED_TOPICS'			=> 'Bạn không chọn theo dõi bất cứ chủ đề nào.',
 
 	'PASS_TYPE_ALPHA_EXPLAIN'	=> 'Mật khẩu của bạn phải nhiều hơn <strong>%1$d</strong> ký tự, không được vượt quá <strong>%2$d</strong> ký tự, không có trường hợp nhạy cảm giữa chữ với số và phải có các số.',
@@ -399,7 +402,7 @@ $lang = array_merge($lang, array(
 
 	'TIMEZONE'					=> 'Múi giờ',
 	'TO'						=> 'Người nhận',
-	'TOO_MANY_RECIPIENTS'		=> 'Có quá nhiều người nhận.',
+	'TOO_MANY_RECIPIENTS'		=> 'Bạn đã gửi tin nhắn đến quá nhiều người nhận được phép gửi.',
 	'TOO_MANY_REGISTERS'		=> 'Bạn đã vượt quá số lượng đăng ký thành viên cho phép trong phiên kết nối này. Hãy thử lại vào lúc khác!',
 
 	'UCP'						=> 'Bảng thiết lập cá nhân',

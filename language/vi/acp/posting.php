@@ -4,7 +4,7 @@
 * acp_posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php 46 2008-11-01 22:58:00Z nedka $
+* @version $Id: posting.php 47 2008-11-13 05:14:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -56,6 +56,7 @@ $lang = array_merge($lang, array(
 	'BBCODE_HELPLINE'			=> 'Hướng dẫn sử dụng thẻ BBCode',
 	'BBCODE_HELPLINE_EXPLAIN'	=> 'Mục thông tin hướng dẫn sử dụng này sẽ được hiển thị khi rê chuột lên thẻ BBCode tương ứng trong phần soạn bài viết.',
 	'BBCODE_HELPLINE_TEXT'		=> 'Nội dung hướng dẫn',
+	'BBCODE_HELPLINE_TOO_LONG'	=> 'Nội dung hướng dẫn bạn vừa nhập quá dài.',
 	'BBCODE_INVALID_TAG_NAME'	=> 'Tên thẻ BBCode vừa chọn đã được sử dụng.',
 	'BBCODE_INVALID'			=> 'Thẻ BBCode của bạn được tạo từ một biểu mẫu không hợp lệ.',
 	'BBCODE_OPEN_ENDED_TAG'		=> 'Thẻ BBCode tùy chọn của bạn phải có thẻ mở đầu và thẻ kết thúc.',

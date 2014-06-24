@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php 131 2008-11-02 08:10:00Z nedka $
+* @version $Id: common.php 132 2008-11-13 05:31:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -179,6 +179,8 @@ $lang = array_merge($lang, array(
 	'ERR_JAB_AUTH'						=> 'Không thể xác thực trên máy chủ Jabber.',
 	'ERR_JAB_CONNECT'					=> 'Không thể kết nối đến máy chủ Jabber.',
 	'ERR_UNABLE_TO_LOGIN'				=> 'Tên thành viên hoặc mật khẩu đã nhập không chính xác.',	
+	'ERR_UNWATCHING'					=> 'Có một lỗi xảy ra trong quá trình chọn ngừng theo dõi.',
+	'ERR_WATCHING'						=> 'Có một lỗi xảy ra trong quá trình chọn theo dõi.',
 	'ERR_WRONG_PATH_TO_PHPBB'			=> 'Đường dẫn đến hệ thống phpBB vừa nhập dường như không hợp lệ.',
 	'EXPAND_VIEW'						=> 'Xem toàn bộ',
 	'EXTENSION'							=> 'Loại tập tin',
@@ -342,7 +344,7 @@ $lang = array_merge($lang, array(
 	'MODERATORS'			=> 'Điều hành viên',
 	'MONTH'					=> 'Tháng',
 	'MOVE'					=> 'Di chuyển',
-	'MSNM'					=> 'Tài khoản MSNM/WLM',	
+	'MSNM'					=> 'Tài khoản MSNM/WLM',
 
 	'NA'						=> 'Không thể',
 	'NEWEST_USER'				=> 'Thành viên mới nhất: <strong>%s</strong>',
@@ -364,7 +366,7 @@ $lang = array_merge($lang, array(
 	'NOTIFY_ADMIN_EMAIL'		=> 'Bạn hãy vui lòng thông báo cho quản trị viên hoặc người chủ của website này: <a href="mailto:%1$s">%1$s</a>',
 	'NO_ACCESS_ATTACHMENT'		=> 'Bạn không được phép truy cập tập tin này.',
 	'NO_ACTION'					=> 'Yêu cầu không xác định!',
-	'NO_ADMINISTRATORS'			=> 'Không có quản trị viên nào được chỉ định trong hệ thống.',
+	'NO_ADMINISTRATORS'			=> 'Không có quản trị viên nào.',
 	'NO_AUTH_ADMIN'				=> 'Bạn không được phép truy cập vào bảng quản trị viên bởi vì bạn không có quyền hạn của người quản trị.',
 	'NO_AUTH_ADMIN_USER_DIFFER'	=> 'Bạn không thể xác nhận lại như là một thành viên khác.',
 	'NO_AUTH_OPERATION'			=> 'Bạn không được cấp phép đầy đủ để hoàn tất yêu cầu này.',
@@ -381,7 +383,7 @@ $lang = array_merge($lang, array(
 	'NO_MEMBERS'				=> 'Không tìm thấy thành viên nào thỏa điều kiện tìm kiếm này.',
 	'NO_MESSAGES'				=> 'Không có tin nhắn nào',
 	'NO_MODE'					=> 'Chế độ không xác định!',
-	'NO_MODERATORS'				=> 'Không có điều hành viên nào được chỉ định trong hệ thống.',	
+	'NO_MODERATORS'				=> 'Không có điều hành viên nào.',	
 	'NO_NEW_MESSAGES'			=> 'Không có tin nhắn mới',
 	'NO_NEW_PM'					=> '<strong>0</strong> tin nhắn mới',
 	'NO_NEW_POSTS'				=> 'Không có bài viết mới',
@@ -400,6 +402,13 @@ $lang = array_merge($lang, array(
 	'NO_USER'					=> 'Thành viên bạn vừa yêu cầu không tồn tại.',
 	'NO_USERS'					=> 'Những thành viên bạn vừa yêu cầu không tồn tại.',
 	'NO_USER_SPECIFIED'			=> 'Không có tên thành viên nào được xác định.',
+
+	// Nullar/Singular/Plural language entry. The key numbers define the number range in which a certain grammatical expression is valid.
+	'NUM_POSTS_IN_QUEUE'		=> array(
+		0	=> 'Không có bài viết nào chờ kiểm duyệt', // 0
+		1	=> '<strong>1</strong> bài viết chờ kiểm duyệt', // 1
+		2	=> '<strong>%d</strong> bài viết chờ kiểm duyệt', // 2+
+	),
 
 	'OCCUPATION'				=> 'Nghề nghiệp',
 	'OFFLINE'					=> 'Ngoại tuyến',
@@ -509,7 +518,7 @@ $lang = array_merge($lang, array(
 	'SEARCHING_FORUMS'			=> 'Đang tìm kiếm các chuyên mục',
 	'SEARCH_ACTIVE_TOPICS'		=> 'Chủ đề gần đây',
 	'SEARCH_FOR'				=> 'Tìm với từ khóa',
-	'SEARCH_FORUM'				=> 'Tìm trong chuyên mục này…',	
+	'SEARCH_FORUM'				=> 'Tìm trong chuyên mục này…',
 	'SEARCH_NEW'				=> 'Bài viết mới',
 	'SEARCH_POSTS_BY'			=> 'Tìm kiếm bài viết được gửi bởi',
 	'SEARCH_SELF'				=> 'Bài viết của bạn',
@@ -552,6 +561,8 @@ $lang = array_merge($lang, array(
 	'THE_TEAM'			=> 'Ban điều hành',
 	'TIME'				=> 'Thời gian',
 
+	'TOO_LONG'	=> 'Giá trị bạn vừa nhập quá dài.',
+
 	'TOO_LONG_AIM'					=> 'Tên tài khoản AIM bạn vừa nhập quá dài.',
 	'TOO_LONG_CONFIRM_CODE'			=> 'Mã xác nhận bạn vừa nhập quá dài.',
 	'TOO_LONG_DATEFORMAT'			=> 'Định dạng ngày tháng bạn vừa nhập quá dài.',
@@ -571,6 +582,8 @@ $lang = array_merge($lang, array(
 	'TOO_LONG_YIM'					=> 'Tên tài khoản Yahoo bạn vừa nhập quá dài.',
 
 	'TOO_MANY_VOTE_OPTIONS'			=> 'Bạn không thể bình chọn cho nhiều đối tượng.',
+
+	'TOO_SHORT'	=> 'Giá trị bạn vừa nhập quá ngắn.',
 
 	'TOO_SHORT_AIM'					=> 'Tên tài khoản AIM bạn vừa nhập quá ngắn.',
 	'TOO_SHORT_CONFIRM_CODE'		=> 'Mã xác nhận bạn vừa nhập quá ngắn.',
@@ -683,7 +696,7 @@ $lang = array_merge($lang, array(
 	'YEAR'				=> 'Năm',
 	'YEAR_MONTH_DAY'	=> '(YYYY-MM-DD)',
 	'YES'				=> 'Có',
-	'YIM'				=> 'Tài khoản Yahoo',	
+	'YIM'				=> 'Tài khoản Yahoo',
 	'YOU_LAST_VISIT'	=> 'Lần ghé thăm trước: %s',
 	'YOU_NEW_PM'		=> 'Bạn có một tin nhắn mới trong hộp tin nhận của mình.',
 	'YOU_NEW_PMS'		=> 'Bạn có nhiều tin nhắn mới trong hộp tin nhận của mình.',
@@ -747,6 +760,7 @@ $lang = array_merge($lang, array(
 		'-7'	=> 'UTC - 7 Giờ',
 		'-6'	=> 'UTC - 6 Giờ',
 		'-5'	=> 'UTC - 5 Giờ',
+		'-4.5'	=> 'UTC - 4:30 Giờ',
 		'-4'	=> 'UTC - 4 Giờ',
 		'-3.5'	=> 'UTC - 3:30 Giờ',
 		'-3'	=> 'UTC - 3 Giờ',
@@ -790,6 +804,7 @@ $lang = array_merge($lang, array(
 		'-7'	=> '[UTC - 7] Giờ chuẩn của Mountain',
 		'-6'	=> '[UTC - 6] Giờ chuẩn của trung tâm thế giới',
 		'-5'	=> '[UTC - 5] Giờ chuẩn của phía Đông thế giới',
+		'-4.5'	=> '[UTC - 4:30] Giờ chuẩn của Venezuelan',
 		'-4'	=> '[UTC - 4] Giờ chuẩn của Đại Tây Dương',
 		'-3.5'	=> '[UTC - 3:30] Giờ chuẩn của Newfoundland',
 		'-3'	=> '[UTC - 3] Giờ chuẩn của Amazon, trung tâm Greenland',

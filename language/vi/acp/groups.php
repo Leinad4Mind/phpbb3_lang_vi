@@ -4,7 +4,7 @@
 * acp_groups [Vietnamese]
 *
 * @package language
-* @version $Id: groups.php 36 2008-11-01 22:55:00Z nedka $
+* @version $Id: groups.php 37 2008-11-13 05:11:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -95,6 +95,8 @@ $lang = array_merge($lang, array(
 	'GROUP_NAME_TAKEN'				=> 'Tên của nhóm bạn vừa nhập đã được sử dụng rồi. Bạn hãy vui lòng chọn một tên khác.',
 	'GROUP_OPEN'					=> 'Nhóm tham gia tự do',
 	'GROUP_PENDING'					=> 'Thành viên chờ quyết định',
+	'GROUP_MAX_RECIPIENTS'			=> 'Số người nhận tối đa cho phép trong mỗi tin nhắn',
+	'GROUP_MAX_RECIPIENTS_EXPLAIN'	=> 'Số lượng người nhận tối đa cho phép đối với một tin nhắn gửi đến nhóm. Nhập số <strong>0</strong> để sử dụng thiết lập chung từ hệ thống.',
 	'GROUP_PROMOTE'					=> 'Thăng chức thành trưởng nhóm',
 	'GROUP_RANK'					=> 'Xếp hạng của nhóm',
 	'GROUP_RECEIVE_PM'				=> 'Cho phép nhóm nhận tin nhắn',

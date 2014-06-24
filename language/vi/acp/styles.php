@@ -4,7 +4,7 @@
 * acp_styles [Vietnamese]
 *
 * @package language
-* @version $Id: styles.php 50 2008-11-02 07:53:00Z nedka $
+* @version $Id: styles.php 51 2008-11-13 07:26:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -112,6 +112,7 @@ $lang = array_merge($lang, array(
 	'EDIT_THEME_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉnh sửa kiểu dáng đã chọn, thay đổi màu sắc, hình ảnh…',
 	'EDIT_THEME_STORED_DB'				=> 'Tập tin kiểu dáng không được cấp phép có thể ghi trên máy chủ. Vì thế kiểu dáng này đang được lưu trữ trong cơ sở dữ liệu với tất cả những chỉnh sửa của bạn.',
 	'EDIT_THEME_STORE_PARSED'			=> 'Kiểu dáng yêu cầu nội dung của nó phải được phân tích. Điều này chỉ có thể thực hiện nếu nó được lưu trữ trong cơ sở dữ liệu.',
+	'EDITOR_DISABLED'					=> 'Công cụ chỉnh sửa khuôn mẫu đã bị vô hiệu.',
 	'EXPORT'							=> 'Xuất',
 
 	'FOREGROUND'			=> 'Tiền cảnh',
@@ -178,7 +179,7 @@ $lang = array_merge($lang, array(
 	'IMG_SUBFORUM_READ'			=> 'Danh sách chuyên mục con',
 	'IMG_SUBFORUM_UNREAD'		=> 'Dánh sách chuyên mục con có bài viết mới',
 
-	'IMG_TOPIC_MOVED'			=> 'Chủ đề đã di chuyển',
+	'IMG_TOPIC_MOVED'	=> 'Chủ đề đã di chuyển',
 
 	'IMG_TOPIC_READ'				=> 'Chủ đề',
 	'IMG_TOPIC_READ_MINE'			=> 'Chủ đề do thành viên gửi',
@@ -278,6 +279,7 @@ $lang = array_merge($lang, array(
 	'INCLUDE_IMAGESET'			=> 'Đính kèm gói ngôn ngữ hình ảnh',
 	'INCLUDE_TEMPLATE'			=> 'Đính kèm khuôn mẫu',
 	'INCLUDE_THEME'				=> 'Đính kèm kiểu dáng',
+	'INHERITING_FROM'			=> 'Kế thừa từ',
 	'INSTALL_IMAGESET'			=> 'Cài đặt gói hình giao diện',
 	'INSTALL_IMAGESET_EXPLAIN'	=> 'Bạn có thể cài đặt những gói hình giao diện đã chọn tại đây. Bạn có thể chỉnh sửa thông tin về các gói hình giao diện này nếu muốn hoặc sử dụng thiết lập cài đặt mặc định.',
 	'INSTALL_STYLE'				=> 'Cài đặt giao diện',
@@ -293,6 +295,7 @@ $lang = array_merge($lang, array(
 
 	'LINE_SPACING'				=> 'Dòng cách khoảng',
 	'LOCALISED_IMAGES'			=> 'Hình ảnh tùy thuộc vào gói ngôn ngữ',
+	'LOCATION_DISABLED_EXPLAIN'	=> 'Thiết lập này được kế thừa và không thể thay đổi.',
 
 	'NO_CLASS'					=> 'Không thể tìm thấy lớp CSS trong kiểu dáng.',
 	'NO_IMAGESET'				=> 'Không thể tìm thấy gói hình giao diện trong hệ thống tập tin giao diện.',
@@ -366,34 +369,37 @@ $lang = array_merge($lang, array(
 	'STYLE_THEME'				=> 'Kiểu dáng',
 	'STYLE_USED_BY'				=> 'Số người sử dụng (Bao gồm máy tìm kiếm)',
 
-	'TEMPLATE_ADDED'			=> 'Khuôn mẫu đã được thêm vào thành công và được lưu trữ trong hệ thống tập tin giao diện.',
-	'TEMPLATE_ADDED_DB'			=> 'Khuôn mẫu đã được thêm vào thành công và được lưu trữ trong cơ sở dữ liệu.',
-	'TEMPLATE_CACHE'			=> 'Khuôn mẫu đã tạo bộ nhớ đệm',
-	'TEMPLATE_CACHE_EXPLAIN'	=> 'Theo thiết lập mặc định, hệ thống giao diện của phpBB sẽ biên dịch bộ nhớ đệm cho toàn bộ các tập tin khuôn mẫu. Việc này sẽ rút ngắn thời gian nạp trang cho bạn khi một trang trong hệ thống đã được xem lần đầu và theo cách này có thể giảm bớt thời gian tạo trang cho máy chủ. Với công cụ này, bạn có thể xem trạng thái bộ nhớ đệm của mỗi tập tin và xóa riêng lẻ từng tập tin hay chỉ mục bộ nhớ đệm.',
-	'TEMPLATE_CACHE_CLEARED'	=> 'Bộ nhớ đệm của khuôn mẫu đã được xóa thành công.',
-	'TEMPLATE_CACHE_EMPTY'		=> 'Không có khuôn mẫu nào được tạo bộ nhớ đệm.',
-	'TEMPLATE_DELETED'			=> 'Khuôn mẫu đã được xóa thành công.',
-	'TEMPLATE_DELETED_FS'		=> 'Khuôn mẫu đã được gỡ bỏ khỏi cơ sở dữ liệu nhưng một vài tập tin vẫn còn trong hệ thống tập tin giao diện.',
-	'TEMPLATE_DETAILS_UPDATED'	=> 'Thông tin khuôn mẫu đã được cập nhật thành công.',
-	'TEMPLATE_EDITOR'			=> 'Công cụ chỉnh sửa mã HTML của khuôn mẫu',
-	'TEMPLATE_EDITOR_HEIGHT'	=> 'Chiều cao công cụ chỉnh sửa khuôn mẫu',
-	'TEMPLATE_ERR_ARCHIVE'		=> 'Bạn hãy chọn một phương pháp lưu trữ khuôn mẫu.',
-	'TEMPLATE_ERR_CACHE_READ'	=> 'Không thể đọc được thư mục dùng để lưu trữ bộ nhớ đệm cho các tập tin khuôn mẫu.',
-	'TEMPLATE_ERR_COPY_LONG'	=> 'Nội dung bản quyền khuôn mẫu không được phép vượt quá <strong>60</strong> ký tự.',
-	'TEMPLATE_ERR_NAME_CHARS'	=> 'Tên khuôn mẫu chỉ được phép sử dụng chữ số, chữ cái, các ký tự -, +, _ và khoảng trắng.',
-	'TEMPLATE_ERR_NAME_EXIST'	=> 'Tên khuôn mẫu này đã được sử dụng.',
-	'TEMPLATE_ERR_NAME_LONG'	=> 'Tên khuôn mẫu không được phép vượt quá <strong>30</strong> ký tự.',
-	'TEMPLATE_ERR_NOT_TEMPLATE'	=> 'Khuôn mẫu bạn vừa nhập hay tải lên không hợp lệ.',
-	'TEMPLATE_ERR_STYLE_NAME'	=> 'Bạn phải nhập tên cho khuôn mẫu này.',
-	'TEMPLATE_EXPORT'			=> 'Xuất khuôn mẫu',
-	'TEMPLATE_EXPORT_EXPLAIN'	=> 'Với công cụ này, bạn có thể xuất một khuôn mẫu để lưu trữ. Khuôn mẫu được xuất ra sẽ được đính kèm toàn bộ dữ liệu cần thiết cho việc cài đặt sau này trên một hệ thống khác. Bạn có thể chọn tải về tập tin này trực tiếp hoặc giữ lại trong thư mục lưu trữ của hệ thống để tải về sau.',
-	'TEMPLATE_EXPORTED'			=> 'Khuôn mẫu đã được xuất thành công và được lưu trữ trong %s.',
-	'TEMPLATE_FILE'				=> 'Tập tin khuôn mẫu',
-	'TEMPLATE_FILE_UPDATED'		=> 'Tập tin khuôn mẫu đã được tải lên thành công.',
-	'TEMPLATE_LOCATION'			=> 'Lưu trữ khuôn mẫu trong',
-	'TEMPLATE_LOCATION_EXPLAIN'	=> 'Những hình ảnh luôn được lưu trữ trong hệ thống tập tin giao diện.',
-	'TEMPLATE_NAME'				=> 'Tên khuôn mẫu',
-	'TEMPLATE_REFRESHED'		=> 'Khuôn mẫu đã được nạp lại thành công.',
+	'TEMPLATE_ADDED'						=> 'Khuôn mẫu đã được thêm vào thành công và được lưu trữ trong hệ thống tập tin giao diện.',
+	'TEMPLATE_ADDED_DB'						=> 'Khuôn mẫu đã được thêm vào thành công và được lưu trữ trong cơ sở dữ liệu.',
+	'TEMPLATE_CACHE'						=> 'Khuôn mẫu đã tạo bộ nhớ đệm',
+	'TEMPLATE_CACHE_EXPLAIN'				=> 'Theo thiết lập mặc định, hệ thống giao diện của phpBB sẽ biên dịch bộ nhớ đệm cho toàn bộ các tập tin khuôn mẫu. Việc này sẽ rút ngắn thời gian nạp trang cho bạn khi một trang trong hệ thống đã được xem lần đầu và theo cách này có thể giảm bớt thời gian tạo trang cho máy chủ. Với công cụ này, bạn có thể xem trạng thái bộ nhớ đệm của mỗi tập tin và xóa riêng lẻ từng tập tin hay chỉ mục bộ nhớ đệm.',
+	'TEMPLATE_CACHE_CLEARED'				=> 'Bộ nhớ đệm của khuôn mẫu đã được xóa thành công.',
+	'TEMPLATE_CACHE_EMPTY'					=> 'Không có khuôn mẫu nào được tạo bộ nhớ đệm.',
+	'TEMPLATE_DELETED'						=> 'Khuôn mẫu đã được xóa thành công.',
+	'TEMPLATE_DELETE_DEPENDENT'				=> 'Khuôn mẫu được thiết lập không thể xóa vì thế chúng sẽ được kế thừa từ:',
+	'TEMPLATE_DELETED_FS'					=> 'Khuôn mẫu đã được gỡ bỏ khỏi cơ sở dữ liệu nhưng một vài tập tin vẫn còn trong hệ thống tập tin giao diện.',
+	'TEMPLATE_DETAILS_UPDATED'				=> 'Thông tin khuôn mẫu đã được cập nhật thành công.',
+	'TEMPLATE_EDITOR'						=> 'Công cụ chỉnh sửa mã HTML của khuôn mẫu',
+	'TEMPLATE_EDITOR_HEIGHT'				=> 'Chiều cao công cụ chỉnh sửa khuôn mẫu',
+	'TEMPLATE_ERR_ARCHIVE'					=> 'Bạn hãy chọn một phương pháp lưu trữ khuôn mẫu.',
+	'TEMPLATE_ERR_CACHE_READ'				=> 'Không thể đọc được thư mục dùng để lưu trữ bộ nhớ đệm cho các tập tin khuôn mẫu.',
+	'TEMPLATE_ERR_COPY_LONG'				=> 'Nội dung bản quyền khuôn mẫu không được phép vượt quá <strong>60</strong> ký tự.',
+	'TEMPLATE_ERR_NAME_CHARS'				=> 'Tên khuôn mẫu chỉ được phép sử dụng chữ số, chữ cái, các ký tự -, +, _ và khoảng trắng.',
+	'TEMPLATE_ERR_NAME_EXIST'				=> 'Tên khuôn mẫu này đã được sử dụng.',
+	'TEMPLATE_ERR_NAME_LONG'				=> 'Tên khuôn mẫu không được phép vượt quá <strong>30</strong> ký tự.',
+	'TEMPLATE_ERR_NOT_TEMPLATE'				=> 'Khuôn mẫu bạn vừa nhập hay tải lên không hợp lệ.',
+	'TEMPLATE_ERR_REQUIRED_OR_INCOMPLETE'	=> 'Khuôn mẫu mới yêu cầu khuôn mẫu %s phải được cài đặt và không thể kế thừa từ chính nó.',
+	'TEMPLATE_ERR_STYLE_NAME'				=> 'Bạn phải nhập tên cho khuôn mẫu này.',
+	'TEMPLATE_EXPORT'						=> 'Xuất khuôn mẫu',
+	'TEMPLATE_EXPORT_EXPLAIN'				=> 'Với công cụ này, bạn có thể xuất một khuôn mẫu để lưu trữ. Khuôn mẫu được xuất ra sẽ được đính kèm toàn bộ dữ liệu cần thiết cho việc cài đặt sau này trên một hệ thống khác. Bạn có thể chọn tải về tập tin này trực tiếp hoặc giữ lại trong thư mục lưu trữ của hệ thống để tải về sau.',
+	'TEMPLATE_EXPORTED'						=> 'Khuôn mẫu đã được xuất thành công và được lưu trữ trong %s.',
+	'TEMPLATE_FILE'							=> 'Tập tin khuôn mẫu',
+	'TEMPLATE_FILE_UPDATED'					=> 'Tập tin khuôn mẫu đã được tải lên thành công.',
+	'TEMPLATE_INHERITS'						=> 'Khuôn mẫu này được kế thừa từ %s, vì thế không thể chọn thiết lập lưu trữ khác thay cho bộ khuôn mẫu đã được chọn của nó.',
+	'TEMPLATE_LOCATION'						=> 'Lưu trữ khuôn mẫu trong',
+	'TEMPLATE_LOCATION_EXPLAIN'				=> 'Những hình ảnh luôn được lưu trữ trong hệ thống tập tin giao diện.',
+	'TEMPLATE_NAME'							=> 'Tên khuôn mẫu',
+	'TEMPLATE_REFRESHED'					=> 'Khuôn mẫu đã được nạp lại thành công.',
 
 	'THEME_ADDED'				=> 'Kiểu dáng mới đã được thêm vào hệ thống tập tin giao diện.',
 	'THEME_ADDED_DB'			=> 'Kiểu dáng mới đã được thêm vào cơ sở dữ liệu.',

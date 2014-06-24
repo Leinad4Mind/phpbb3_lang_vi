@@ -4,7 +4,7 @@
 * mcp [Vietnamese]
 *
 * @package language
-* @version $Id: mcp.php 49 2008-11-02 08:10:00Z nedka $
+* @version $Id: mcp.php 50 2008-11-13 07:19:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -301,7 +301,7 @@ $lang = array_merge($lang, array(
 	'SORT_DATE'							=> 'Ngày tháng',
 	'SORT_IP'							=> 'Địa chỉ IP',
 	'SORT_WARNINGS'						=> 'Cảnh cáo',
-	'SPLIT_AFTER'						=> 'Chia nhỏ từ bài viết đã chọn',
+	'SPLIT_AFTER'						=> 'Chia nhỏ chủ đề từ những bài viết đã chọn',
 	'SPLIT_FORUM'						=> 'Chuyên mục đặt chủ đề mới',
 	'SPLIT_POSTS'						=> 'Chia nhỏ những bài viết đã chọn',
 	'SPLIT_SUBJECT'						=> 'Tên chủ đề mới',
@@ -354,7 +354,8 @@ $lang = array_merge($lang, array(
 	'USER_FEEDBACK_ADDED'			=> 'Đã thêm phản hồi của thành viên thành công.',
 	'USER_WARNING_ADDED'			=> 'Đã cảnh cáo thành viên thành công.',
 
-	'VIEW_DETAILS'			=> 'Xem chi tiết',
+	'VIEW_DETAILS'	=> 'Xem chi tiết',
+	'VIEW_POST'		=> 'Xem bài viết',
 
 	'WARNED_USERS'			=> 'Những thành viên đã cảnh cáo',
 	'WARNED_USERS_EXPLAIN'	=> 'Đây là danh sách tất cả các thành viên vẫn chưa hết thời gian bị cảnh cáo.',	

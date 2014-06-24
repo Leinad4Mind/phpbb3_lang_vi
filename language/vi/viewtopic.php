@@ -4,7 +4,7 @@
 * viewtopic [Vietnamese]
 *
 * @package language
-* @version $Id: viewtopic.php 29 2008-11-01 22:55:00Z nedka $
+* @version $Id: viewtopic.php 30 2008-11-13 07:21:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -49,6 +49,7 @@ $lang = array_merge($lang, array(
 	'ATTACHMENT_FUNCTIONALITY_DISABLED'	=> 'Chức năng gửi tập tin đính kèm đã bị vô hiệu.',
 
 	'BOOKMARK_ADDED'		=> 'Đã đánh dấu chủ đề thành công.',
+	'BOOKMARK_ERR'			=> 'Việc đánh dấu chủ đề đã thất bại. Hãy vui lòng thử lại.',
 	'BOOKMARK_REMOVED'		=> 'Đã gỡ bỏ đánh dấu chủ đề thành công.',
 	'BOOKMARK_TOPIC'		=> 'Đánh dấu chủ đề',
 	'BOOKMARK_TOPIC_REMOVE'	=> 'Gỡ bỏ đánh dấu',

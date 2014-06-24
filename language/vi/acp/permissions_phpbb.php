@@ -4,7 +4,7 @@
 * acp_permissions_phpbb (phpBB Permission Set) [Vietnamese]
 *
 * @package language
-* @version $Id: permissions_phpbb.php 32 2008-11-01 22:58:00Z nedka $
+* @version $Id: permissions_phpbb.php 33 2008-11-13 05:13:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -121,20 +121,21 @@ $lang = array_merge($lang, array(
 	'acl_u_chgcensors'	=> array('lang' => 'Có thể tắt chế độ kiểm duyệt từ', 'cat' => 'post'),
 	'acl_u_sig'			=> array('lang' => 'Có thể sử dụng chữ ký cá nhân', 'cat' => 'post'),
 
-	'acl_u_sendpm'		=> array('lang' => 'Có thể gửi tin nhắn', 'cat' => 'pm'),
-	'acl_u_masspm'		=> array('lang' => 'Có thể gửi tin nhắn đến nhiều thành viên và nhóm', 'cat' => 'pm'),	
-	'acl_u_readpm'		=> array('lang' => 'Có thể xem tin nhắn', 'cat' => 'pm'),
-	'acl_u_pm_edit'		=> array('lang' => 'Có thể sửa tin nhắn của mình', 'cat' => 'pm'),
-	'acl_u_pm_delete'	=> array('lang' => 'Có thể gỡ bỏ tin nhắn từ thư mục của mình', 'cat' => 'pm'),
-	'acl_u_pm_forward'	=> array('lang' => 'Có thể chuyển tiếp tin nhắn', 'cat' => 'pm'),
-	'acl_u_pm_emailpm'	=> array('lang' => 'Có thể gửi email tin nhắn', 'cat' => 'pm'),
-	'acl_u_pm_printpm'	=> array('lang' => 'Có thể in tin nhắn', 'cat' => 'pm'),
-	'acl_u_pm_attach'	=> array('lang' => 'Có thể đính kèm tập tin trong tin nhắn', 'cat' => 'pm'),
-	'acl_u_pm_download'	=> array('lang' => 'Có thể tải về tập tin trong tin nhắn', 'cat' => 'pm'),
-	'acl_u_pm_bbcode'	=> array('lang' => 'Có thể sử dụng BBCode trong tin nhắn', 'cat' => 'pm'),
-	'acl_u_pm_smilies'	=> array('lang' => 'Có thể sử dụng biểu tượng vui trong tin nhắn', 'cat' => 'pm'),
-	'acl_u_pm_img'		=> array('lang' => 'Có thể sử dụng hình ảnh trong tin nhắn', 'cat' => 'pm'),
-	'acl_u_pm_flash'	=> array('lang' => 'Có thể sử dụng tập tin Flash trong tin nhắn', 'cat' => 'pm'),
+	'acl_u_sendpm'			=> array('lang' => 'Có thể gửi tin nhắn', 'cat' => 'pm'),
+	'acl_u_masspm'			=> array('lang' => 'Có thể gửi tin nhắn đến nhiều thành viên', 'cat' => 'pm'),	
+	'acl_u_masspm_group'	=> array('lang' => 'Có thể gửi tin nhắn đến nhóm', 'cat' => 'pm'),
+	'acl_u_readpm'			=> array('lang' => 'Có thể xem tin nhắn', 'cat' => 'pm'),
+	'acl_u_pm_edit'			=> array('lang' => 'Có thể sửa tin nhắn của mình', 'cat' => 'pm'),
+	'acl_u_pm_delete'		=> array('lang' => 'Có thể gỡ bỏ tin nhắn từ thư mục của mình', 'cat' => 'pm'),
+	'acl_u_pm_forward'		=> array('lang' => 'Có thể chuyển tiếp tin nhắn', 'cat' => 'pm'),
+	'acl_u_pm_emailpm'		=> array('lang' => 'Có thể gửi email tin nhắn', 'cat' => 'pm'),
+	'acl_u_pm_printpm'		=> array('lang' => 'Có thể in tin nhắn', 'cat' => 'pm'),
+	'acl_u_pm_attach'		=> array('lang' => 'Có thể đính kèm tập tin trong tin nhắn', 'cat' => 'pm'),
+	'acl_u_pm_download'		=> array('lang' => 'Có thể tải về tập tin trong tin nhắn', 'cat' => 'pm'),
+	'acl_u_pm_bbcode'		=> array('lang' => 'Có thể sử dụng BBCode trong tin nhắn', 'cat' => 'pm'),
+	'acl_u_pm_smilies'		=> array('lang' => 'Có thể sử dụng biểu tượng vui trong tin nhắn', 'cat' => 'pm'),
+	'acl_u_pm_img'			=> array('lang' => 'Có thể sử dụng hình ảnh trong tin nhắn', 'cat' => 'pm'),
+	'acl_u_pm_flash'		=> array('lang' => 'Có thể sử dụng tập tin Flash trong tin nhắn', 'cat' => 'pm'),
 
 	'acl_u_sendemail'	=> array('lang' => 'Có thể gửi email', 'cat' => 'misc'),
 	'acl_u_sendim'		=> array('lang' => 'Có thể gửi tin nhắn nhanh', 'cat' => 'misc'),

@@ -4,7 +4,7 @@
 * acp_board [Vietnamese]
 *
 * @package language
-* @version $Id: board.php 83 2008-11-01 22:56:00Z nedka $
+* @version $Id: board.php 85 2008-11-13 05:02:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -123,6 +123,7 @@ $lang = array_merge($lang, array(
 	'ALLOW_FORWARD_PM'			=> 'Cho phép chuyển tiếp tin nhắn',
 	'ALLOW_IMG_PM'				=> 'Cho phép sử dụng thẻ BBCode <code>[IMG]</code> trong tin nhắn',
 	'ALLOW_MASS_PM'				=> 'Cho phép gửi tin nhắn đến nhiều thành viên và nhóm',
+	'ALLOW_MASS_PM_EXPLAIN'		=> 'Việc gửi tin nhắn cho nhóm có thể được điều chỉnh lại với mỗi nhóm trong trang thiết lập nhóm.',
 	'ALLOW_PRINT_PM'			=> 'Cho phép in tin nhắn',
 	'ALLOW_QUOTE_PM'			=> 'Cho phép trích dẫn trong tin nhắn',
 	'ALLOW_SIG_PM'				=> 'Cho phép sử dụng chữ ký cá nhân trong tin nhắn',
@@ -137,6 +138,8 @@ $lang = array_merge($lang, array(
 	'HOLD_NEW_MESSAGES'			=> 'Giữ lại những tin nhắn mới',
 	'PM_EDIT_TIME'				=> 'Thời gian giới hạn sửa tin nhắn',
 	'PM_EDIT_TIME_EXPLAIN'		=> 'Thời gian giới hạn cho thành viên để sửa một tin nhắn chưa được gửi. Nhập số <strong>0</strong> để vô hiệu tùy chọn này',
+	'PM_MAX_RECIPIENTS'			=> 'Số người nhận tin nhắn tối đa',
+	'PM_MAX_RECIPIENTS_EXPLAIN'	=> 'Số lượng người nhận tối đa cho phép đối với một tin nhắn. Nhập số <strong>0</strong> để không giới hạn lượng người nhận tin nhắn. Thiết lập này có thể điều chỉnh lại cho mỗi nhóm trong phần thiết lập nhóm.',
 ));
 
 // Post Settings
@@ -146,7 +149,6 @@ $lang = array_merge($lang, array(
 	'ALLOW_POST_LINKS_EXPLAIN'			=> 'Nếu bạn vô hiệu tùy chọn này, thẻ BBCode <code>[URL]</code> và các địa chỉ URL khác trong bài viết/tin nhắn sẽ không được hiển thị như liên kết.',
 	'ALLOW_POST_FLASH'					=> 'Cho phép sử dụng thẻ BBCode <code>[FLASH]</code> trong bài viết',
 	'ALLOW_POST_FLASH_EXPLAIN'			=> 'Nếu bạn vô hiệu tùy chọn này, thẻ BBCode <code>[FLASH]</code> sẽ bị vô hiệu trong các bài viết. Mặc khác, những thiết lập cấp phép cũng quyết định việc thành viên có thể sử dụng được thẻ BBCode <code>[FLASH]</code> hay không.',
-
 	'BUMP_INTERVAL'					=> 'Thời gian giữa hai lần đẩy chủ đề lên',
 	'BUMP_INTERVAL_EXPLAIN'			=> 'Số phút, số giờ hoặc số ngày giữa thời gian bài viết mới nhất được gửi đến chủ đề và việc sử dụng chức năng đẩy chủ đề lên này.',
 	'CHAR_LIMIT'					=> 'Ký tự tối đa cho phép trong mỗi bài viết',
@@ -155,9 +157,11 @@ $lang = array_merge($lang, array(
 	'DISPLAY_LAST_EDITED_EXPLAIN'	=> 'Bật tùy chọn này nếu bạn muốn hiển thị thông tin về lần chỉnh sửa bài viết mới nhất cuối mỗi bài viết.',
 	'EDIT_TIME'						=> 'Thời gian giới hạn sửa bài viết',
 	'EDIT_TIME_EXPLAIN'				=> 'Thời gian giới hạn cho thành viên để sửa một bài viết mới. Nhập số <strong>0</strong> để vô hiệu tùy chọn này.',
+	'ENABLE_QUEUE_TRIGGER'			=> 'Yêu cầu số bài viết cần có để bỏ qua kiểm duyệt',
+	'ENABLE_QUEUE_TRIGGER_EXPLAIN'	=> 'Tùy chọn cho phép bạn chuyển những bài viết gửi bởi các thành viên đã đăng ký sang chế độ chờ kiểm duyệt nếu số bài viết của họ ít hơn số lượng được thiết lập tại đây. Thiết lập này không có tác dụng đối với thiết lập cấp phép gửi bài không cần kiểm duyệt.',
 	'FLOOD_INTERVAL'				=> 'Thời gian chờ giữa hai lần gửi bài',
 	'FLOOD_INTERVAL_EXPLAIN'		=> 'Số giây mà thành viên phải chờ đợi giữa hai lần gửi bài viết. Nếu bạn không muốn giới hạn thời gian này cho thành viên nào, hãy thay đổi trong cấp phép của thành viên đó.',
-	'HOT_THRESHOLD'					=> 'Số bài viết xác định chủ đề nhiều người xem.',
+	'HOT_THRESHOLD'					=> 'Số bài viết xác định chủ đề nhiều người xem',
 	'HOT_THRESHOLD_EXPLAIN'			=> 'Số bài viết xác định trong mỗi chủ đề để hiển thị chú thích là chủ đề nhiều người xem. Nhập số <strong>0</strong> để vô hiệu việc xác định chủ đề nhiều người xem.',
 	'MAX_POLL_OPTIONS'				=> 'Số lượng đối tượng bình chọn tối đa cho phép',
 	'MAX_POST_FONT_SIZE'			=> 'Kích thước phông chữ tối đa trong mỗi bài viết',
@@ -170,6 +174,8 @@ $lang = array_merge($lang, array(
 	'MAX_POST_URLS_EXPLAIN'			=> 'Số lượng địa chỉ URL tối đa được phép sử dụng trong nội dung một bài viết. Nhập số <strong>0</strong> để không hạn chế số liên kết.',
 	'POSTING'						=> 'Gửi bài',
 	'POSTS_PER_PAGE'				=> 'Số bài viết trong mỗi chủ đề',
+	'QUEUE_TRIGGER_POSTS'			=> 'Số bài viết tối thiểu để bỏ qua kiểm duyệt',
+	'QUEUE_TRIGGER_POSTS_EXPLAIN'	=> 'Nếu bạn bật tùy chọn tương ứng, hãy nhập vào số lượng bài viết yêu cầu để thành viên gửi bài mà không cần qua kiểm duyệt. Nếu số bài viết của họ ít hơn con số bạn thiết lập, bài viết họ gửi sẽ được chuyển tự động sang chế độ chờ kiểm duyệt.',
 	'QUOTE_DEPTH_LIMIT'				=> 'Độ dài trích dẫn tối đa cho phép trong mỗi bài viết',
 	'QUOTE_DEPTH_LIMIT_EXPLAIN'		=> 'Độ dài tối đa của các trích dẫn đặt lồng vào nhau được phép sử dụng trong nội dung một bài viết. Nhập số <strong>0</strong> để không hạn chế độ dài.',
 	'SMILIES_LIMIT'					=> 'Biểu tượng vui tối đa trong mỗi bài viết',
@@ -372,7 +378,7 @@ $lang = array_merge($lang, array(
 	'BROWSER_VALID'					=> 'Kiểm tra trình duyệt',
 	'BROWSER_VALID_EXPLAIN'			=> 'Bật chế độ kiểm tra trình duyệt cho mỗi phiên đăng nhập để tăng cường khả năng bảo mật.',
 	'CHECK_DNSBL'					=> 'Kiểm tra lại địa chỉ IP với danh sách các địa chỉ DNS đen',
-	'CHECK_DNSBL_EXPLAIN'			=> 'Nếu bạn bật chức năng này, địa chỉ IP sẽ được tiến hành kiểm tra lại với danh sách từ các dịch vụ DNSBL sau đây trong quá trình đăng ký và gửi bài: <a href="http://spamcop.net">spamcop.net</a>, <a href="http://dsbl.org">dsbl.org</a> và <a href="http://www.spamhaus.org">www.spamhaus.org</a>. Việc tra cứu các danh sách này có thể mất nhiều thời gian, tùy thuộc vào cấu hình máy chủ của bạn. Nếu việc kiểm tra làm chậm lại hệ thống hoặc có quá nhiều kết quả sai được báo cáo, chúng tôi khuyên bạn nên vô hiệu chức năng này.',
+	'CHECK_DNSBL_EXPLAIN'			=> 'Nếu bạn bật chức năng này, địa chỉ IP sẽ được tiến hành kiểm tra lại với danh sách từ các dịch vụ DNSBL sau đây trong quá trình đăng ký và gửi bài: <a href="http://spamcop.net">spamcop.net</a> và <a href="http://www.spamhaus.org">www.spamhaus.org</a>. Việc tra cứu các danh sách này có thể mất nhiều thời gian, tùy thuộc vào cấu hình máy chủ của bạn. Nếu việc kiểm tra làm chậm lại hệ thống hoặc có quá nhiều kết quả sai được báo cáo, chúng tôi khuyên bạn nên vô hiệu chức năng này.',
 	'CLASS_B'						=> 'A.B',
 	'CLASS_C'						=> 'A.B.C',
 	'EMAIL_CHECK_MX'				=> 'Kiểm tra tên miền của email theo bản ghi tên miền MX hợp lệ',
@@ -461,8 +467,8 @@ $lang = array_merge($lang, array(
 	'JAB_SETTINGS_CHANGED'		=> 'Thiết lập Jabber đã được thay đổi thành công.',
 	'JAB_USE_SSL'				=> 'Sử dụng SSL để kết nối',
 	'JAB_USE_SSL_EXPLAIN'		=> 'Nếu bạn bật tùy chọn này, một kết nối an toàn sẽ được cố gắng thiết lập. Cổng máy chủ Jabber sẽ được chỉnh sửa thành <strong>5223</strong> nếu cổng <strong>5222</strong> được chỉ định.',
-	'JAB_USERNAME'				=> 'Tên đăng nhập tài khoản Jabber',
-	'JAB_USERNAME_EXPLAIN'		=> 'Xác định một tài khoản đã đăng ký. Tên đăng nhập sẽ không được kiểm tra hợp lệ.',
+	'JAB_USERNAME'				=> 'Tên người dùng Jabber hoặc JID',
+	'JAB_USERNAME_EXPLAIN'		=> 'Xác định một tên người dùng đã đăng ký hoặc một JID hợp lệ. Tên người dùng sẽ không được kiểm tra hợp lệ. Nếu bạn chỉ xác định một tên người dùng thì JID của bạn sẽ trở thành tên người dùng và máy chủ Jabber sẽ xác thực bạn như trên. Nếu không muốn, bạn có thể xác định một JID, ví dụ như <samp>user@jabber.org</samp>.',
 ));
 
 ?>

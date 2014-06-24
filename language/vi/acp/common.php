@@ -4,7 +4,7 @@
 * acp_common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php 93 2008-11-02 08:11:00Z nedka $
+* @version $Id: common.php 94 2008-11-13 05:09:00Z nedka $
 * @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -277,7 +277,7 @@ $lang = array_merge($lang, array(
 	'SELECT_OPTION'			=> 'Chọn các mục tùy chọn',
 
 	'SETTING_TOO_LOW'		=> 'Giá trị bạn vừa nhập cho thiết lập “%1$s” quá thấp. Giá trị tối thiểu cho phép là <strong>%2$d</strong>.',
-	'SETTING_TOO_BIG'		=> 'Giá trị bạn vừa nhập cho thiết lập “%1$s” quá lớn. Giá trị tối đa cho phép là <strong>%2$d</strong>.',	
+	'SETTING_TOO_BIG'		=> 'Giá trị bạn vừa nhập cho thiết lập “%1$s” quá lớn. Giá trị tối đa cho phép là <strong>%2$d</strong>.',
 	'SETTING_TOO_LONG'		=> 'Giá trị bạn vừa nhập cho thiết lập “%1$s” quá dài. Độ dài tối đa cho phép là <strong>%2$d</strong>.',
 	'SETTING_TOO_SHORT'		=> 'Giá trị bạn vừa nhập cho thiết lập “%1$s” quá ngắn. Độ dài tối thiểu cho phép là <strong>%2$d</strong>.',
 
@@ -371,6 +371,7 @@ $lang = array_merge($lang, array(
 	'VIEW_INACTIVE_USERS'	=> 'Xem các thành viên chưa kích hoạt',
 
 	'WELCOME_PHPBB'			=> 'Chào mừng bạn bước vào thế giới phpBB',
+	'WRITABLE_CONFIG'		=> 'Tập tin cấu hình của bạn (config.php) hiện tại đang được cấp phép có thể ghi với mọi loại người dùng. Chúng tôi khuyến cáo bạn phải thay đổi ngay cấp phép cho tập tin này thành <strong>640</strong> hoặc ít nhất là <strong>644</strong> (Ví dụ: <a href="http://en.wikipedia.org/wiki/Chmod" rel="external">CHMOD</a> 640 cho tập tin config.php).',
 ));
 
 // Inactive Users
@@ -482,12 +483,13 @@ $lang = array_merge($lang, array(
 	'LOG_APPROVE_TOPIC'			=> '<strong>Đã duyệt chủ đề</strong><br />» %s',
 	'LOG_BUMP_TOPIC'			=> '<strong>Thành viên đã đẩy chủ đề lên</strong><br />» %s',
 	'LOG_DELETE_POST'			=> '<strong>Đã xóa bài viết</strong><br />» %s',
+	'LOG_DELETE_SHADOW_TOPIC'	=> '<strong>Đã xóa liên kết đến chủ đề cũ</strong><br />» %s',
 	'LOG_DELETE_TOPIC'			=> '<strong>Đã xóa chủ đề</strong><br />» %s',
 	'LOG_FORK'					=> '<strong>Đã sao chép chủ đề</strong><br />» từ %s',
 	'LOG_LOCK'					=> '<strong>Đã khóa chủ đề</strong><br />» %s',
 	'LOG_LOCK_POST'				=> '<strong>Đã khóa bài viết</strong><br />» %s',
 	'LOG_MERGE'					=> '<strong>Đã nhập chung bài viết</strong> sang chủ đề<br />» %s',
-	'LOG_MOVE'					=> '<strong>Đã di chuyển chủ đề</strong><br />» từ %s',
+	'LOG_MOVE'					=> '<strong>Đã di chuyển chủ đề</strong><br />» từ %1$s sang %2$s',
 	'LOG_POST_APPROVED'			=> '<strong>Đã duyệt bài viết</strong><br />» %s',
 	'LOG_POST_DISAPPROVED'		=> '<strong>Đã từ chối bài viết “%1$s” với nguyên nhân sau</strong><br />» %2$s',
 	'LOG_POST_EDITED'			=> '<strong>Đã sửa bài viết “%1$s” được gửi bởi</strong><br />» %2$s',
@@ -496,7 +498,6 @@ $lang = array_merge($lang, array(
 	'LOG_SPLIT_DESTINATION'		=> '<strong>Đã di chuyển các bài viết được chia nhỏ</strong><br />» đến %s',
 	'LOG_SPLIT_SOURCE'			=> '<strong>Các bài viết được chia nhỏ</strong><br />» từ %s',
 
-	'LOG_TOPIC_DELETED'			=> '<strong>Đã xóa chủ đề</strong><br />» %s',
 	'LOG_TOPIC_APPROVED'		=> '<strong>Đã duyệt chủ đề</strong><br />» %s',
 	'LOG_TOPIC_DISAPPROVED'		=> '<strong>Đã từ chối chủ đề “%1$s” với nguyên nhân sau</strong><br />%2$s',
 	'LOG_TOPIC_RESYNC'			=> '<strong>Đã đồng bộ lại bộ đếm số chủ đề</strong><br />» %s',
