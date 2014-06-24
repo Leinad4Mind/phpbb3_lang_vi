@@ -4,7 +4,7 @@
 * groups [Vietnamese]
 *
 * @package language
-* @version $Id: groups.php,v 1.10 2006/11/03 16:38:00 nedka Exp $
+* @version $Id: groups.php,v 1.12 2006/12/30 12:29:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -52,7 +52,7 @@ $lang = array_merge($lang, array(
 	'GROUP_DESC'						=> 'Giới thiệu về nhóm',
 	'GROUP_HIDDEN'						=> 'Nhóm ẩn',
 	'GROUP_INFORMATION'					=> 'Thông tin về nhóm',	
-	'GROUP_IS_CLOSED'					=> 'Đây là một nhóm đã cố định, những thành viên mới không thể tự động tham gia vào nhóm.',
+	'GROUP_IS_CLOSED'					=> 'Đây là một nhóm đã cố định, những thành viên mới không thể tự động tham gia vào nhóm và chỉ được thêm vào bởi người lãnh đạo nhóm đó.',
 	'GROUP_IS_FREE'						=> 'Đây là một nhóm hoàn toàn tự do, tất cả thành viên mới đều được chào đón.', 
 	'GROUP_IS_HIDDEN'					=> 'Đây là một nhóm ẩn, chỉ có những thành viên của nhóm này mới xem được tư cách thành viên của mình trong nhóm.',
 	'GROUP_IS_OPEN'						=> 'Đây là một nhóm tự do, những thành viên mới có thể thoải mái tham gia vào nhóm.',
@@ -62,7 +62,7 @@ $lang = array_merge($lang, array(
 	'GROUP_JOIN_PENDING'				=> 'Gửi yêu cầu tham gia vào nhóm này',
 	'GROUP_JOIN_PENDING_CONFIRM'		=> 'Bạn có chắc chắn muốn gửi yêu cầu tham gia vào nhóm vừa chọn?',
 	'GROUP_JOINED'						=> 'Bạn đã tham gia thành công vào nhóm vừa chọn',
-	'GROUP_JOINED_PENDING'				=> 'Bạn đã gửi yêu cầu tham gia vào nhóm thành công. Hãy vui lòng chờ đợi cho đến khi người điều hành nhóm này chấp nhận tư cách thành viên của bạn.',
+	'GROUP_JOINED_PENDING'				=> 'Bạn đã gửi yêu cầu tham gia vào nhóm thành công. Hãy vui lòng chờ đợi cho đến khi người lãnh đạo nhóm này chấp nhận tư cách thành viên của bạn.',
 	'GROUP_LIST'						=> 'Quản lý thành viên',	
 	'GROUP_MEMBERS'						=> 'Các thành viên trong nhóm',
 	'GROUP_NAME'						=> 'Tên nhóm',
@@ -90,8 +90,8 @@ $lang = array_merge($lang, array(
 	'REMOVE_SELECTED'		=> 'Gỡ bỏ đánh dấu',
 
 	'USER_GROUP_CHANGE'			=> 'Từ nhóm “%1$s” trở thành nhóm “%2$s”',
-	'USER_GROUP_DEMOTE'			=> 'Giáng chức người điều hành nhóm',
-	'USER_GROUP_DEMOTE_CONFIRM'	=> 'Bạn có chắc chắn muốn giáng chức người điều hành nhóm từ nhóm vừa chọn?',
+	'USER_GROUP_DEMOTE'			=> 'Giáng chức người lãnh đạo nhóm',
+	'USER_GROUP_DEMOTE_CONFIRM'	=> 'Bạn có chắc chắn muốn giáng chức người lãnh đạo nhóm từ nhóm vừa chọn?',
 	'USER_GROUP_DEMOTED'		=> 'Đã giáng chức điều hành nhóm của bạn thành công.',
 ));
 

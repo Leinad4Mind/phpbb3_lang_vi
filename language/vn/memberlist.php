@@ -4,7 +4,7 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version $Id: memberlist.php,v 1.18 2006/10/27 15:51:00 nedka Exp $
+* @version $Id: memberlist.php,v 1.20 2006/12/30 12:28:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -69,7 +69,7 @@ $lang = array_merge($lang, array(
 	'FIND_USERNAME_EXPLAIN'	=> 'Công cụ này sẽ giúp bạn tìm kiếm những thành viên xác định trong hệ thống. Bạn không cần phải điền đầy đủ thông tin trong tất cả các mục bên dưới. Sử dụng dấu đại diện <strong>*</strong> để tìm kiếm những thông tin giống nhau theo một số ký tự. Khi nhập thông tin về ngày tháng bạn cần sử dụng định dạng <kbd>YYYY-MM-DD</kbd>. Ví dụ: <samp>2004-02-29</samp>. Đánh dấu chọn trong phần đánh dấu để chọn một hay nhiều tên thành viên. Những tên thành viên khác nhau có thể được chọn tuỳ thuộc vào bảng được liệt kê. Bấm vào nút <strong>Chọn đánh dấu</strong> để quay về bảng điều khiển trước.',
 	'FLOOD_EMAIL_LIMIT'		=> 'Bạn không thể gửi Email vào thời điểm này. Hãy thử lại sau vài phút nữa!',
 
-	'GROUP_LEADER'			=> 'Người điều hành nhóm',
+	'GROUP_LEADER'			=> 'Người lãnh đạo nhóm',
 
 	'HIDE_MEMBER_SEARCH'	=> 'Ẩn công cụ tìm kiếm thành viên',
 
@@ -102,7 +102,6 @@ $lang = array_merge($lang, array(
 	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'Người quản trị yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem thông tin cá nhân của thành viên.',
 
 	'MORE_THAN'				=> 'Nhiều hơn',
-	'MSNM'					=> 'Tài khoản MSN',
 
 	'NO_EMAIL'				=> 'Bạn không được phép gửi Email đến thành viên này.',
 	'NO_VIEW_USERS'			=> 'Bạn không được phép xem danh sách thành viên hay thông tin cá nhân của thành viên.',

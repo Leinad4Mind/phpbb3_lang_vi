@@ -4,7 +4,7 @@
 * viewtopic [Vietnamese]
 *
 * @package language
-* @version $Id: viewtopic.php,v 1.17 2006/11/07 20:09:00 nedka Exp $
+* @version $Id: viewtopic.php,v 1.18 2006/12/28 02:12:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -68,10 +68,10 @@ $lang = array_merge($lang, array(
 	'LOGIN_NOTIFY_TOPIC'	=> 'Hãy vui lòng đăng nhập để xem chủ đề này.',
 	'LOGIN_VIEWTOPIC'		=> 'Người quản trị yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem chủ đề này.',
 
-	'MAKE_ANNOUNCE'				=> 'Thay đổi thành thông báo',
-	'MAKE_GLOBAL'				=> 'Thay đổi thành thông báo chung',
-	'MAKE_NORMAL'				=> 'Thay đổi thành bài viết bình thường',
-	'MAKE_STICKY'				=> 'Thay đổi thành chú ý',
+	'MAKE_ANNOUNCE'				=> 'Thay đổi thành “Thông báo”',
+	'MAKE_GLOBAL'				=> 'Thay đổi thành “Thông báo chung”',
+	'MAKE_NORMAL'				=> 'Thay đổi thành “Bài viết bình thường”',
+	'MAKE_STICKY'				=> 'Thay đổi thành “Chú ý”',
 	'MAX_OPTIONS_SELECT'		=> 'Bạn có thể chọn đến <strong>%d</strong> đối tượng bình chọn',
 	'MAX_OPTION_SELECT'			=> 'Bạn chỉ có thể chọn <strong>1</strong> đối tượng bình chọn',
 	'MISSING_INLINE_ATTACHMENT'	=> 'Tập tin đính kèm <strong>%s</strong> hiện tại không còn trên máy chủ',

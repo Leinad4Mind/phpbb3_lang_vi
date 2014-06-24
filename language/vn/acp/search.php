@@ -4,8 +4,8 @@
 * acp_search [Vietnamese]
 *
 * @package language
-* @version $Id: search.php,v 1.10 2006/10/31 15:01:00 nedka Exp $
-* @copyright (c) 2006 phpBBVietNam Group 
+* @version $Id: search.php,v 1.13 2007/01/30 21:27:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -44,6 +44,8 @@ $lang = array_merge($lang, array(
 	'ACP_SEARCH_INDEX_EXPLAIN'				=> 'Với công cụ này, bạn có thể quản lý việc tạo chỉ mục tìm kiếm trong hệ thống. Nếu bạn chỉ sử dụng duy nhất một phương pháp tìm kiếm, bạn nên xoá tất cả chỉ mục tìm kiếm mà bạn không sử dụng đến. Sau khi thay đổi một vài thiết lập tìm kiếm ví dụ như số ký tự tối thiểu/tối đa, bạn nên tạo lại chỉ mục tìm kiếm cho những thay đổi này.',
 	'ACP_SEARCH_SETTINGS_EXPLAIN'			=> 'Với công cụ này, bạn có thể xác định phương pháp tìm kiếm nào sẽ được sử dụng cho việc tạo chỉ mục các bài viết và thực thi việc tìm kiếm trong hệ thống. Bạn có thể thiết lập những tuỳ chọn khác nhau có thể ảnh hưởng đến nhiều đến yêu cầu xử lý công việc của hệ thống. Một vài những thiết lập này giống nhau trong tất cả các phương pháp tìm kiếm.',
 
+	'COMMON_WORD_THRESHOLD'					=> 'Giới hạn các từ thông dụng',
+	'COMMON_WORD_THRESHOLD_EXPLAIN'			=> 'Những từ xuất hiện thường xuyên với tỉ lệ phần trăm lớn trong tất cả các bài viết sẽ được xem như là từ thông dụng. Những từ thông dụng này sẽ không được phép sử dụng trong truy vấn tìm kiếm. Nhập vào số <strong>0</strong> để vô hiệu tùy chọn này. Thiết lập này chỉ có tác dụng nếu diễn đàn bạn có nhiều hơn 100 bài viết.',
 	'CONFIRM_SEARCH_BACKEND'				=> 'Bạn có chắc chắn muốn chuyển đổi sang phương pháp tìm kiếm khác? Sau khi thay đổi phương pháp tìm kiếm, bạn sẽ phải tạo chỉ mục cho phương pháp tìm kiếm mới. Trong trường hợp bạn không chuyển đổi phương pháp tìm kiếm đang sử dụng, bạn cũng có thể xoá chỉ mục tìm kiếm cũ để tiết kiệm tài nguyên hệ thống.',
 	'CONTINUE_DELETING_INDEX'				=> 'Tiếp tục tiến hành việc xoá chỉ mục trước',
 	'CONTINUE_DELETING_INDEX_EXPLAIN'		=> 'Quá trình xoá chỉ mục đã được bắt đầu. Ngoài ra, để truy cập lại vào trang tìm kiếm bạn cần phải hoàn tất việc xoá chỉ mục trước.',
@@ -60,6 +62,8 @@ $lang = array_merge($lang, array(
 	'FULLTEXT_MYSQL_SUBJECT_CARDINALITY'	=> 'Tập hợp chỉ mục tìm kiếm FULLTEXT cho <strong>post_subject</strong> (Ước lượng những giá trị đơn)',
 	'FULLTEXT_MYSQL_TEXT_CARDINALITY'		=> 'Tập hợp chỉ mục tìm kiếm FULLTEXT cho <strong>post_text</strong> (Ước lượng những giá trị đơn)',
 	'FULLTEXT_MYSQL_TOTAL_POSTS'			=> 'Tổng số bài viết đã được lập chỉ mục',
+	'FULLTEXT_MYSQL_UNICODE'				=> 'Hỗ trợ những ký tự UTF-8 không thuộc bảng chữ cái Latinh:',
+	'FULLTEXT_MYSQL_UNICODE_EXPLAIN'		=> 'Phương pháp tìm kiếm này yêu cầu thuộc tính ký tự Unicode từ PCRE, chỉ có hiệu lực từ phiên bản PHP 4.4, 5.1 và trở về sau, nếu bạn muốn cho phép tìm kiếm những ký tự không thuộc bảng chữ cái Latinh.',
 
 	'GENERAL_SEARCH_SETTINGS'				=> 'Thiết lập tìm kiếm tổng quát',
 	'GO_TO_SEARCH_INDEX'					=> 'Chuyển đến trang tìm kiếm',

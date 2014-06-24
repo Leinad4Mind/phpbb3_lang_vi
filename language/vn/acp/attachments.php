@@ -4,8 +4,8 @@
 * acp_attachments [Vietnamese]
 *
 * @package language
-* @version $Id: attachments.php,v 1.09 2006/10/31 18:57:00 nedka Exp $
-* @copyright (c) 2006 phpBBVietNam Group 
+* @version $Id: attachments.php,v 1.15 2007/01/04 18:16:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -60,13 +60,13 @@ $lang = array_merge($lang, array(
 	'ATTACH_EXTENSIONS_URL'				=> 'Loại tập tin',
 	'ATTACH_EXT_GROUPS_URL'				=> 'Nhóm tập tin',
 	'ATTACH_MAX_FILESIZE'				=> 'Dung lượng tập tin tối đa',
-	'ATTACH_MAX_FILESIZE_EXPLAIN'		=> 'Dung lượng đính kèm tập tin tối đa cho phép của mỗi tập tin, nhập vào số <strong>0</strong> để không hạn chế dung lượng tập tin.',
+	'ATTACH_MAX_FILESIZE_EXPLAIN'		=> 'Dung lượng đính kèm tập tin tối đa cho phép của mỗi tập tin. Nhập vào số <strong>0</strong> để không hạn chế dung lượng tập tin.',
 	'ATTACH_MAX_PM_FILESIZE'			=> 'Dung lượng tập tin tối đa trong tin nhắn',
-	'ATTACH_MAX_PM_FILESIZE_EXPLAIN'	=> 'Dung lượng đính kèm tập tin tối đa cho phép sử dụng cấp cho mỗi thành viên trong tin nhắn, nhập vào số <strong>0</strong> để không hạn chế dung lượng tập tin.',
+	'ATTACH_MAX_PM_FILESIZE_EXPLAIN'	=> 'Dung lượng đính kèm tập tin tối đa cho phép sử dụng cấp cho mỗi thành viên trong tin nhắn. Nhập vào số <strong>0</strong> để không hạn chế dung lượng tập tin.',
 	'ATTACH_ORPHAN_URL'					=> 'Tập tin đính kèm không được sử dụng',
 	'ATTACH_POST_ID'					=> 'Số ID bài viết',
 	'ATTACH_QUOTA'						=> 'Tổng dung lượng đính kèm tập tin',
-	'ATTACH_QUOTA_EXPLAIN'				=> 'Dung lượng đính kèm tập tin tối đa cho phép của tất cả các tập tin đính kèm, nhập vào số <strong>0</strong> để không hạn chế dung lượng tập tin.',
+	'ATTACH_QUOTA_EXPLAIN'				=> 'Tổng dung lượng tối đa cho phép của tất cả các tập tin đính kèm trong diễn đàn. Nhập vào số <strong>0</strong> để không hạn chế dung lượng tập tin.',
 	'ATTACH_TO_POST'					=> 'Đính kèm tập tin vào bài viết',
 
 	'CAT_FLASH_FILES'			=> 'Nhóm tập tin Flash',
@@ -81,8 +81,6 @@ $lang = array_merge($lang, array(
 	'DEFINE_ALLOWED_IPS'			=> 'Xác định địa chỉ IP/tên miền cho phép đính kèm tập tin',
 	'DEFINE_DISALLOWED_IPS'			=> 'Xác định địa chỉ IP/tên miền cấm đính kèm tập tin',
 	'DOWNLOAD_ADD_IPS_EXPLAIN'		=> 'Để xác định nhiều địa chỉ IP hay tên miền khác nhau, bạn hãy nhập mỗi địa chỉ IP hay tên miền trong một dòng. Để xác định một dãy địa chỉ IP, bắt đầu và kết thúc bằng dấu gạch nối (-), xác định những địa chỉ IP cùng loại bằng dấu đại diện *',
-	'DOWNLOAD_MODE'					=> 'Chế độ tải về',
-	'DOWNLOAD_MODE_EXPLAIN'			=> 'Nếu bạn gặp rắc rối trong việc tải về tập tin, thiết lập chế độ tải về này thành “Vật lý”, các thành viên sẽ tải trực tiếp tập tin về từ địa chỉ thư mục trên máy chủ. Đừng chuyển sang chế độ tải về vật lý nếu không thực sự cần thiết bởi vì nó chỉ rõ cho thành viên vị trí tập tin trên máy chủ.',
 	'DOWNLOAD_REMOVE_IPS_EXPLAIN'	=> 'Bạn có thể gỡ bỏ hoặc ngưng loại trừ nhiều địa chỉ IP hay tên miền cùng lúc trong một thao tác bằng cách kết hợp hiệu quả chuột và bàn phím từ máy tính và trình duyệt. Những địa chỉ IP hay tên miền bị loại trừ được đánh dấu bằng màu nền xám.',
 	'DISPLAY_INLINED'				=> 'Hiển thị hình ảnh trong bài viết',
 	'DISPLAY_INLINED_EXPLAIN'		=> 'Nếu bạn tắt tuỳ chọn này, những hình ảnh được đính kèm sẽ hiển thị như liên kết.',
@@ -104,7 +102,7 @@ $lang = array_merge($lang, array(
 	'GROUP_NAME'			=> 'Tên nhóm tập tin',
 
 	'IMAGE_LINK_SIZE'			=> 'Kích thước hình ảnh sẽ hiển thị như liên kết',
-	'IMAGE_LINK_SIZE_EXPLAIN'	=> 'Hiển thị những hình ảnh được đính kèm như liên kết nếu kích thước hình ảnh lớn hơn kích thước đã chọn, thiết lập <strong>0 Pixel x 0 Pixel</strong> để vô hiệu chức năng này.',
+	'IMAGE_LINK_SIZE_EXPLAIN'	=> 'Hiển thị những hình ảnh được đính kèm như là một liên kết văn bản trong dòng nếu kích thước hình ảnh lớn hơn kích thước đã chọn. Thiết lập <strong>0 Pixel x 0 Pixel</strong> để vô hiệu chức năng này.',
 	'IMAGICK_PATH'				=> 'Đường dẫn đến chương trình Imagemagick',
 	'IMAGICK_PATH_EXPLAIN'		=> 'Đường dẫn chính xác đến ứng dụng chuyển đổi hình ảnh Imagemagick trên máy chủ, ví dụ như <samp>/usr/bin/</samp>',
 
@@ -112,7 +110,7 @@ $lang = array_merge($lang, array(
 	'MAX_ATTACHMENTS_PM'			=> 'Số tập tin đính kèm tối đa trong mỗi tin nhắn',
 	'MAX_EXTGROUP_FILESIZE'			=> 'Dung lượng tập tin tối đa',
 	'MAX_IMAGE_SIZE'				=> 'Kích thước hình ảnh tối đa',
-	'MAX_IMAGE_SIZE_EXPLAIN'		=> 'Kích thước tối đa cho những hình ảnh được đính kèm, thiết lập <strong>0 Pixel x 0 Pixel</strong> để vô hiệu việc đính kèm hình ảnh.',
+	'MAX_IMAGE_SIZE_EXPLAIN'		=> 'Kích thước tối đa cho những hình ảnh được đính kèm. Thiết lập <strong>0 Pixel x 0 Pixel</strong> để vô hiệu việc kiểm tra kích thước hình ảnh đính kèm.',
 	'MAX_THUMB_WIDTH'				=> 'Chiều rộng hình thu nhỏ tối đa',
 	'MAX_THUMB_WIDTH_EXPLAIN'		=> 'Hình thu nhỏ được tạo ra sẽ có chiều rộng không vượt quá giá trị được thiết lập ở đây',
 	'MIN_THUMB_FILESIZE'			=> 'Dung lượng tập tin tạo hình thu nhỏ tối thiểu',
@@ -131,17 +129,18 @@ $lang = array_merge($lang, array(
 	'NO_UPLOAD_DIR'				=> 'Thư mục tải lên bạn vừa chọn không tồn tại.',
 	'NO_WRITE_UPLOAD'			=> 'Thư mục tải lên bạn vừa chọn không được cấp phép có thể ghi trên máy chủ. Bạn hãy vui lòng thay đổi thiết lập cấp phép có thể ghi cho thư mục này trên máy chủ.',
 
+	'ONLY_ALLOWED_IN_PM'	=> 'Chỉ đồng ý trong tin nhắn cá nhân',
 	'ORDER_ALLOW_DENY'		=> 'Đồng ý',
 	'ORDER_DENY_ALLOW'		=> 'Từ chối',
 
-	'REMOVE_ALLOWED_IPS'		=> 'Gỡ bỏ hoặc ngưng loại trừ những địa chỉ IP/tên miền cho phép',
-	'REMOVE_DISALLOWED_IPS'		=> 'Gỡ bỏ hoặc ngưng loại trừ những địa chỉ IP/tên miền bị cấm',
+	'REMOVE_ALLOWED_IPS'		=> 'Gỡ bỏ hoặc ngưng loại trừ những địa chỉ IP/tên miền <em>đã cho phép</em>',
+	'REMOVE_DISALLOWED_IPS'		=> 'Gỡ bỏ hoặc ngưng loại trừ những địa chỉ IP/tên miền <em>đã bị cấm</em>',
 
 	'SEARCH_IMAGICK'				=> 'Tìm kiếm ứng dụng Imagemagick',
 	'SECURE_ALLOW_DENY'				=> 'Danh sách đồng ý/từ chối',
-	'SECURE_ALLOW_DENY_EXPLAIN'		=> 'Danh sách đồng ý hay từ chối của các địa chỉ, thiết lập này chỉ áp dụng cho việc tải về tập tin',
+	'SECURE_ALLOW_DENY_EXPLAIN'		=> 'Thay đổi cách xử lý mặc định khi chế độ tải về an toàn được bật của danh sách đồng ý/từ chối với một <strong>danh sách trắng</strong> (Đồng ý) hoặc một <strong>danh sách đen</strong> (Từ chối)',
 	'SECURE_DOWNLOADS'				=> 'Bật chế độ tải về an toàn',
-	'SECURE_DOWNLOADS_EXPLAIN'		=> 'Nếu bật tuỳ chọn này, việc cho phép tải về tập tin sẽ giới hạn trong những địa chỉ IP/Tên miền mà bạn đã chỉ định cho phép.',
+	'SECURE_DOWNLOADS_EXPLAIN'		=> 'Nếu bật tuỳ chọn này, việc cho phép tải về tập tin sẽ giới hạn trong những địa chỉ IP/tên miền mà bạn chỉ định.',
 	'SECURE_DOWNLOAD_NOTICE'		=> 'Chế độ tải về an toàn không được bật. Những thiết lập bên dưới chỉ có tác dụng nếu như bạn bật chế độ tải về an toàn.',
 	'SECURE_DOWNLOAD_UPDATE_SUCCESS'=> 'Danh sách địa chỉ IP/tên miền đã được cập nhật thành công.',
 	'SECURE_EMPTY_REFERRER'			=> 'Cho phép sử dụng tham chiếu địa chỉ trống',
@@ -156,8 +155,8 @@ $lang = array_merge($lang, array(
 	'UPLOADING_FILES'				=> 'Đang tải lên tập tin',
 	'UPLOADING_FILE_TO'				=> 'Đang tải lên tập tin “%1$s” đến bài viết có số ID <strong>%2$d</strong>…',
 	'UPLOAD_DENIED_FORUM'			=> 'Bạn không được cấp phép để tải lên tập tin đến chuyên mục “%s”',
-	'UPLOAD_DIR'					=> 'Thư mục tải lên',
-	'UPLOAD_DIR_EXPLAIN'			=> 'Thư mục chưa những tập tin đính kèm trong hệ thống.',
+	'UPLOAD_DIR'					=> 'Thư mục tập tin đính kèm',
+	'UPLOAD_DIR_EXPLAIN'			=> 'Thư mục chứa những tập tin đính kèm được tải lên trong hệ thống.',
 	'UPLOAD_ICON'					=> 'Biểu tượng tập tin',
 	'UPLOAD_NOT_DIR'				=> 'Thư mục tải lên bạn vừa chọn không phải là địa chỉ của một thư mục.',
 ));

@@ -4,8 +4,8 @@
 * acp_language [Vietnamese]
 *
 * @package language
-* @version $Id: language.php,v 1.08 2006/10/22 08:18:00 nedka Exp $
-* @copyright (c) 2006 phpBBVietNam Group 
+* @version $Id: language.php,v 1.10 2007/01/27 16:40:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -68,7 +68,7 @@ $lang = array_merge($lang, array(
 	'LANGUAGE_PACK_LOCALNAME'			=> 'Tên hệ thống',
 	'LANGUAGE_PACK_NAME'				=> 'Tên',
 	'LANGUAGE_PACK_NOT_EXIST'			=> 'Gói ngôn ngữ bạn vừa chọn không tồn tại.',
-	'LANGUAGE_PACK_USED_BY'				=> 'Sử dụng bởi',
+	'LANGUAGE_PACK_USED_BY'				=> 'Số người sử dụng (Bao gồm máy tìm kiếm)',
 	'LANGUAGE_VARIABLE'					=> 'Biến ngôn ngữ',
 	'LANG_AUTHOR'						=> 'Tác giả gói ngôn ngữ',
 	'LANG_ENGLISH_NAME'					=> 'Tên tiếng Anh',
@@ -97,6 +97,7 @@ $lang = array_merge($lang, array(
 
 	'UNABLE_TO_WRITE_FILE'		=> 'Tập tin không thể ghi đến %s.',
 	'UPLOAD_COMPLETED'			=> 'Quá trình tải lên đã hoàn tất.',
+	'UPLOAD_FAILED'				=> 'Quá trình tải lên đã thất bại mà không rõ nguyên nhân. Bạn có thể cần phải tự mình thay thế tập tin ngôn ngữ có liên quan.',
 	'UPLOAD_METHOD'				=> 'Phương pháp tải lên',
 	'UPLOAD_SETTINGS'			=> 'Thiết lập tải lên',
 

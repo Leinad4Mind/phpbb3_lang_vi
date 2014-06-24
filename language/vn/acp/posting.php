@@ -4,8 +4,8 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php,v 1.18 2006/11/21 23:08:00 nedka Exp $
-* @copyright (c) 2006 phpBBVietNam Group 
+* @version $Id: posting.php,v 1.23 2007/01/30 21:13:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -43,7 +43,7 @@ if (empty($lang) || !is_array($lang))
 // BBCodes 
 // Note to translators: you can translate everything but what's between { and }
 $lang = array_merge($lang, array(
-	'ACP_BBCODES_EXPLAIN'		=> 'BBCode là một dạng thức bổ sung đặc biệt của mã HTML, bản thân tương tự gần giống như HTML, cho phép bạn tuỳ biến sử dụng và điều khiển dễ dàng hơn mã HTML. Với công cụ này, bạn có thể thêm vào, gỡ bỏ hay chỉnh sửa những thẻ BBCode tuỳ chọn',
+	'ACP_BBCODES_EXPLAIN'		=> 'BBCode là một dạng thức bổ sung đặc biệt của mã HTML, bản thân tương tự gần giống như HTML, cho phép bạn tuỳ biến sử dụng và điều khiển dễ dàng hơn mã HTML. Với công cụ này, bạn có thể thêm vào, gỡ bỏ hay chỉnh sửa những thẻ BBCode tuỳ chọn.',
 	'ADD_BBCODE'				=> 'Tạo thẻ BBCode mới',
  
 	'BBCODE_ADDED'				=> 'Thẻ BBCode đã được tạo thành công.',
@@ -55,16 +55,18 @@ $lang = array_merge($lang, array(
 	'BBCODE_INVALID_TAG_NAME'	=> 'Tên thẻ BBCode bạn vừa chọn đã được sử dụng.',
 	'BBCODE_OPEN_ENDED_TAG'		=> 'Thẻ BBCode tùy chọn của bạn phải có thẻ mở đầu và thẻ kết thúc.',
 	'BBCODE_TAG'				=> 'Thẻ BBCode',
+	'BBCODE_TAG_TOO_LONG'		=> 'Tên của thẻ BBCode bạn vừa nhập quá dài.',
+	'BBCODE_TAG_DEF_TOO_LONG'	=> 'Tên định danh của thẻ BBCode bạn vừa nhập quá dài. Hãy vui lòng sử dụng tên định danh cho thẻ ngắn hơn.',
 	'BBCODE_TAG_TOO_LONG'		=> 'Thẻ BBCode xác định bạn vừa nhập quá dài, hãy vui lòng chọn tên thẻ ngắn hơn.',
 	'BBCODE_USAGE'				=> 'Cách sử dụng thẻ BBCode',
-	'BBCODE_USAGE_EXAMPLE'		=> '[colour={COLOR}]{TEXT}[/colour]<br /><br />[font={TEXT1}]{TEXT2}[/font]',
+	'BBCODE_USAGE_EXAMPLE'		=> '[hilight={COLOR}]{TEXT}[/hilight]<br /><br />[font={TEXT1}]{TEXT2}[/font]',
 	'BBCODE_USAGE_EXPLAIN'		=> 'Bạn có thể xác định cách sử dụng thẻ BBCode tại đây. Thay thế bất kỳ biến nào nhập vào bằng mã tương ứng (%sXem bên dưới%s)',
 
 	'EXAMPLE'						=> 'Ví dụ:',
 	'EXAMPLES'						=> 'Các ví dụ:',
 
 	'HTML_REPLACEMENT'				=> 'Mã HTML thay thế',
-	'HTML_REPLACEMENT_EXAMPLE'		=> '&lt;font color="{COLOR}"&gt;{TEXT}&lt;/font&gt;<br /><br />&lt;font face="{TEXT1}"&gt;{TEXT2}&lt;/font&gt;',
+	'HTML_REPLACEMENT_EXAMPLE'		=> '&lt;span style="background-color:{COLOR};"&gt;{TEXT}&lt;/span&gt;<br /><br />&lt;span style="font-family:{TEXT1};"&gt;{TEXT2}&lt;/span&gt;',
 	'HTML_REPLACEMENT_EXPLAIN'		=> 'Bạn có thể xác định mã HTML thay thế cho thẻ BBCode tại đây. Mỗi giao diện có thể có mã HTML thay thế của riêng mình. Đừng đặt lại những mã thay thế mà bạn đã sử dụng ở bên trên!',
 
 	'TOKEN'					=> 'Mã thay thế',
@@ -92,17 +94,17 @@ $lang = array_merge($lang, array(
 	'AFTER_ICONS'			=> 'Sau biểu tượng bài viết %s',
 	'AFTER_SMILIES'			=> 'Sau biểu tượng vui %s',
 
-	'CODE'						=> 'Mã',
+	'CODE'						=> 'Mã xác định biểu tượng vui',
 	'CURRENT_ICONS'				=> 'Biểu tượng bài viết hiện tại',
 	'CURRENT_ICONS_EXPLAIN'		=> 'Chọn yêu cầu bạn muốn thực hiện với những biểu tượng bài viết đã cài đặt hiện tại của mình',
 	'CURRENT_SMILIES'			=> 'Biểu tượng vui hiện tại',
 	'CURRENT_SMILIES_EXPLAIN'	=> 'Chọn yêu cầu bạn muốn thực hiện với những biểu tượng vui đã cài đặt hiện tại của mình',
 
-	'DISPLAY_ON_POSTING'	=> 'Hiển thị trong phần gửi bài viết',
+	'DISPLAY_ON_POSTING'	=> 'Hiển thị trong phần gửi bài',
 
 	'EDIT_ICONS'				=> 'Sửa biểu tượng bài viết',
 	'EDIT_SMILIES'				=> 'Sửa biểu tượng vui',
-	'EMOTION'					=> 'Ký tự xác định biểu tượng vui',
+	'EMOTION'					=> 'Cảm xúc',
 	'EXPORT_ICONS'				=> 'Xuất và tải về <samp>icons.pak</samp>',
 	'EXPORT_ICONS_EXPLAIN'		=> '%sBằng cách bấm vào liên kết này, các giá trị cấu hình cho những biểu tượng bài viết đã cài đặt của bạn sẽ được đóng gói lại thành tập tin <samp>icons.pak</samp> để bạn sau khi tải về có thể sử dụng để tạo ra tập tin nén <samp>.zip</samp> hay <samp>.tgz</samp> chứa tất cả các biểu tượng bài viết của bạn có trong tập tin cấu hình <samp>icons.pak</samp>%s.',
 	'EXPORT_SMILIES'			=> 'Xuất và tải về <samp>smilies.pak</samp>',
@@ -150,15 +152,15 @@ $lang = array_merge($lang, array(
 	'SMILIES_EDIT'				=> 'Sửa biểu tượng vui',
 	'SMILIES_EDITED'			=> 'Biểu tượng vui đã được cập nhật thành công.',
 	'SMILIES_EMOTION'			=> 'Biểu tượng vui',
-	'SMILIES_HEIGHT'			=> 'Chiều cao biểu tượng vui',
+	'SMILIES_HEIGHT'			=> 'Chiều cao',
 	'SMILIES_IMAGE'				=> 'Hình dùng làm biểu tượng vui',
 	'SMILIES_IMPORTED'			=> 'Gói biểu tượng vui đã được cài đặt thành công.',
 	'SMILIES_IMPORT_SUCCESS'	=> 'Gói biểu tượng vui đã được nhập thành công.',
-	'SMILIES_LOCATION'			=> 'Vị trí biểu tượng vui',
+	'SMILIES_LOCATION'			=> 'Tên tập tin hình',
 	'SMILIES_NOT_DISPLAYED'		=> 'Những biểu tượng vui dưới đây không được hiển thị trong phần gửi bài viết',
 	'SMILIES_ORDER'				=> 'Sắp xếp biểu tượng vui',
-	'SMILIES_URL'				=> 'Tập tin hình ảnh dùng làm biểu tượng vui',
-	'SMILIES_WIDTH'				=> 'Chiều rộng biểu tượng vui',
+	'SMILIES_URL'				=> 'Hình biểu tượng vui',
+	'SMILIES_WIDTH'				=> 'Chiều rộng',
 
 	'WRONG_PAK_TYPE'	=> 'Gói biểu tượng bạn vừa chọn không chứa dữ liệu thích hợp.',
 ));
@@ -168,7 +170,7 @@ $lang = array_merge($lang, array(
 	'ACP_WORDS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thêm vào, chỉnh sửa và gỡ bỏ những từ kiểm duyệt tự động trong hệ thống. Ngoài ra, mọi người sẽ không được phép sử dụng tên thành viên có chứa những từ kiểm duyệt này để đăng ký thành viên. Bạn có thể sử dụng dấu đại diện * trong từ kiểm duyệt, Ví dụ như <strong>*test*</strong> cũng sẽ kiểm duyệt luôn từ <strong>detestable</strong>, <strong>test*</strong> cũng sẽ kiểm duyệt luôn từ <strong>testing</strong>, <strong>*test</strong> cũng sẽ kiểm duyệt luôn từ <strong>detest</strong>.',
 	'ADD_WORD'				=> 'Thêm từ kiểm duyệt mới',
 
-	'EDIT_WORD'		=> 'Sửs từ kiểm duyệt',
+	'EDIT_WORD'		=> 'Sửa từ kiểm duyệt',
 	'ENTER_WORD'	=> 'Bạn phải nhập vào từ kiểm duyệt và từ thay thế.',
 
 	'NO_WORD'	=> 'Không có từ kiểm duyệt nào được chọn để chỉnh sửa.',

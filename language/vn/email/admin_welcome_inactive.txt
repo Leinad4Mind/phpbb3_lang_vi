@@ -1,13 +1,13 @@
-Subject: Chào mừng bạn đã đến với “{SITENAME}” — {U_BOARD}
+Subject: Chào mừng bạn đã đến với "{SITENAME}" - {U_BOARD}
 
 {WELCOME_MSG}
 
 Hãy giữ lại Email này cẩn thận. Thông tin về tài khoản thành viên của bạn như sau:
 
-----------------------------------
+----------------------------
 Tên thành viên: {USERNAME}
 Mật khẩu: {PASSWORD}
-----------------------------------
+----------------------------
 
 Tài khoản của bạn chưa được kích hoạt, hãy vui lòng chờ cho đến khi người quản trị kích hoạt tài khoản này thì bạn mới có thể đăng nhập được vào hệ thống. Bạn sẽ nhận được một Email thông báo khác khi việc kích hoạt hoàn tất.
 

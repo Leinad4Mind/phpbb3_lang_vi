@@ -4,8 +4,8 @@
 * acp_forums [Vietnamese]
 *
 * @package language
-* @version $Id: forums.php,v 1.16 2006/11/21 23:03:00 nedka Exp $
-* @copyright (c) 2006 phpBBVietNam Group 
+* @version $Id: forums.php,v 1.18 2007/01/26 17:07:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -77,6 +77,7 @@ $lang = array_merge($lang, array(
 	'FORUM_AUTO_PRUNE_EXPLAIN'			=> 'Tuỳ chọn dọn dẹp các chủ đề trong chuyên mục, thiết lập các thông số thời gian bên dưới.',
 	'FORUM_CREATED'						=> 'Chuyên mục mới đã được tạo thành công.',
 	'FORUM_DATA_NEGATIVE'				=> 'Dọn dẹp các thông số không thể vô hiệu.',
+	'FORUM_DESC_TOO_LONG'				=> 'Giới thiệu về chuyên mục mà bạn nhập quá dài. Nội dung giới thiệu không được vượt quá <strong>4000</strong> ký tự.',
 	'FORUM_DELETE'						=> 'Xoá chuyên mục',
 	'FORUM_DELETE_EXPLAIN'				=> 'Bạn có thể xoá chuyên mục trong phần bên dưới. Nếu chuyên mục chuyển được, bạn có thể chọn chuyên mục khác mà bạn muốn chuyển toàn bộ chuyên mục con hay chủ đề sang.',
 	'FORUM_DELETED'						=> 'Chuyên mục đã được xoá thành công.',
@@ -102,6 +103,7 @@ $lang = array_merge($lang, array(
 	'FORUM_RULES_LINK'					=> 'Liên kết đến nội quy chuyên mục',
 	'FORUM_RULES_LINK_EXPLAIN'			=> 'Bạn có thể nhập vào địa chỉ URL của trang/bài viết mà bạn muốn dùng làm nội quy cho chuyên mục tại đây. Thiết lập này sẽ thay thế cho nội dung của nội quy chuyên mục mà bạn đã nhập.',
 	'FORUM_RULES_PREVIEW'				=> 'Xem trước nội quy chuyên mục',
+	'FORUM_RULES_TOO_LONG'				=> 'Nội quy chuyên mục không được vượt quá <strong>4000</strong> ký tự.',
 	'FORUM_SETTINGS'					=> 'Thiết lập chuyên mục',
 	'FORUM_STATUS'						=> 'Trạng thái chuyên mục',
 	'FORUM_STYLE'						=> 'Giao diện chuyên mục',

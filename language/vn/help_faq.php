@@ -4,8 +4,8 @@
 * help_faq [Vietnamese]
 *
 * @package language
-* @version $Id: help_faq.php,v 1.27 2006/11/10 19:01:00 nedka Exp $
-* @copyright (c) 2006 phpBBVietNam Group 
+* @version $Id: help_faq.php,v 1.32 2007/01/30 21:33:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -54,7 +54,7 @@ $help = array(
 	),
 	array(
 		0 => 'Làm sao để tên thành viên của tôi không xuất hiện trong danh sách các thành viên đang trực tuyến?',
-		1 => 'Trong phần thiết lập cá nhân của mình, bạn hãy tìm đến lựa chọn <em>Ẩn trạng thái trực tuyến của tôi</em>. Nếu bạn chọn <em>Đồng ý</em>, bạn sẽ chỉ xuất hiện trực tuyến đối với quản trị viên, điều hành viên hoặc với chính mình. Bạn sẽ được tính như là một thành viên ẩn.'
+		1 => 'Trong bảng điều khiển dành cho thành viên của mình, tại phần “Thiết lập hệ thống”, bạn hãy tìm đến lựa chọn <em>Luôn ẩn trạng thái trực tuyến của tôi</em>. Nếu bạn chọn <samp>Đồng ý</samp>, bạn sẽ chỉ xuất hiện trực tuyến đối với các quản trị viên, các điều hành viên hoặc với chính mình. Bạn sẽ được tính như là một thành viên ẩn.'
 	),
 	array(
 		0 => 'Tôi đã quên mật khẩu của mình!',
@@ -94,7 +94,7 @@ $help = array(
 	),
 	array(
 		0 => 'Tôi đã thay đổi múi giờ nhưng thời gian vẫn chạy sai!',
-		1 => 'Nếu bạn đã chắc chắn thay đổi thiết lập múi giờ chính xác với nơi mình đang ở mà thời gian thì vẫn cứ chạy sai, câu trả lời là có thể bạn đã rơi vào giờ mùa hè (<em>Daylight Savings Time</em> hay <em>Summer Time</em> như được gọi ở Mỹ và một số nơi khác). Hệ thống này không được thiết kế để có thể tự động thay đổi giữa giờ tiêu chuẩn và giờ mùa hè. Vì thế, trong những tháng màu hè, có thể bạn sẽ thấy thời gian trên hệ thống chạy sai lệch trong giới hạn một giờ so với thời gian thực.'
+		1 => 'Nếu bạn đã chắc chắn thay đổi thiết lập múi giờ chính xác với nơi mình đang ở mà thời gian thì vẫn cứ chạy sai, câu trả lời là có thể bạn đã rơi vào giờ mùa hè (<em>Daylight Savings Time</em> hay <em>Summer Time</em> như được gọi ở Mỹ và một số nơi khác). Hệ thống này không được thiết kế để có thể tự động thay đổi giữa giờ tiêu chuẩn và giờ mùa hè. Vì thế, trong những tháng mùa hè, có thể bạn sẽ thấy thời gian trên hệ thống chạy sai lệch trong giới hạn một giờ so với thời gian thực.'
 	),
 	array(
 		0 => 'Ngôn ngữ của tôi không có trong danh sách hỗ trợ!',
@@ -122,11 +122,11 @@ $help = array(
 	),
 	array(
 		0 => 'Làm sao để tôi sửa hay xoá một bài viết?',
-		1 => 'Nếu bạn không phải là người quản trị của diễn đàn hay người điều hành trong chuyên mục đó thì bạn chỉ có thể sửa hay xoá những bài viết của chính mình. Bạn có thể sửa một bài viết vì lý do chưa hoàn chỉnh, sai chính tả… bằng cách bấm vào nút <em>Sửa</em> trong bài viết tương ứng. Nếu có một ai đó đã trả lời bài viết này, bạn sẽ thấy một dòng thông báo hiển thị thời gian và tổng số lần mà bạn đã sửa ngay bên dưới bài viết đó. Thông báo này sẽ không xuất hiện nếu chưa có ai trả lời bài viết ngay sau đó hoặc nếu các quản trị viên hay điều hành viên sửa bài viết này. Họ có thể sẽ để lại một dòng thông báo trong bài viết về lý do sửa bài của bạn. Những thành viên bình thường sẽ không được phép xoá một bài viết đã được trả lời dù rằng đó là bài viết của họ.'
+		1 => 'Nếu bạn không phải là người quản trị của diễn đàn hay người điều hành trong chuyên mục đó thì bạn chỉ có thể sửa hay xoá những bài viết của chính mình. Bạn có thể sửa một bài viết vì lý do chưa hoàn chỉnh, sai chính tả… bằng cách bấm vào nút <em>Sửa</em> trong bài viết tương ứng. Nếu có một ai đó đã trả lời bài viết này, bạn sẽ thấy một danh sách hiển thị thời gian và tổng số lần mà bạn đã sửa ngay bên dưới bài viết đó cùng với thời điểm sửa bài. Danh sách này sẽ không xuất hiện nếu chưa có ai trả lời bài viết ngay sau đó hoặc nếu các quản trị viên hay điều hành viên sửa bài viết này. Có thể họ sẽ để lại một ghi chú nêu rõ lý do vì sao bài viết của bạn bị sửa với quan điểm của họ. Lưu ý rằng những thành viên bình thường sẽ không được phép xoá một bài viết đã được trả lời dù rằng đó là bài viết của họ.'
 	),
 	array(
 		0 => 'Làm sao để tôi đính kèm chữ ký cá nhân sau mỗi bài viết của mình?',
-		1 => 'Để đính kèm chữ ký cá nhân sau mỗi bài viết của mình, trước tiên, bạn cần phải tạo chữ ký cá nhân trong phần thiết lập cá nhân của mình. Sau khi tạo, bạn hãy đánh dấu vào ô lựa chọn <em>Đính kèm chữ ký cá nhân (Có thể thay đổi trong phần thiết lập cá nhân)</em> dưới phần soạn nội dung bài viết mỗi khi gửi bài để thêm vào chữ ký cá nhân của mình. Bạn cũng có thể thiết lập mặc định tự động chèn chữ ký cá nhân này đến tất cả bài viết của mình bằng cách chọn <em>Đồng ý</em> trong lựa chọn <em>Luôn đính kèm chữ ký cá nhân của tôi</em> tại bảng điều khiển dành cho thành viên của mình. Bạn vẫn có thể quyết định không đính kèm chữ ký này trong một số bài viết riêng lẻ bằng việc bỏ dấu chọn trong lựa chọn <em>Đính kèm chữ ký cá nhân (Chữ ký có thể thay đổi từ bảng điều khiển dành cho thành viên của bạn)</em> dưới phần soạn nội dung bài viết mỗi khi gửi bài sau này.'
+		1 => 'Để đính kèm chữ ký cá nhân sau mỗi bài viết của mình, trước tiên, bạn cần phải tạo chữ ký cá nhân trong phần thiết lập cá nhân của mình. Sau khi tạo, bạn hãy đánh dấu vào ô lựa chọn <em>Đính kèm chữ ký cá nhân (Có thể thay đổi trong phần thiết lập cá nhân)</em> dưới phần soạn nội dung bài viết mỗi khi gửi bài để thêm vào chữ ký cá nhân của mình. Bạn cũng có thể thiết lập mặc định tự động chèn chữ ký cá nhân này đến tất cả bài viết của mình bằng cách chọn <samp>Đồng ý</samp> trong lựa chọn <em>Luôn đính kèm chữ ký cá nhân của tôi</em> tại bảng điều khiển dành cho thành viên của mình. Bạn vẫn có thể quyết định không đính kèm chữ ký này trong một số bài viết riêng lẻ bằng việc bỏ dấu chọn trong lựa chọn <em>Đính kèm chữ ký cá nhân (Chữ ký có thể thay đổi từ bảng điều khiển dành cho thành viên của bạn)</em> dưới phần soạn nội dung bài viết mỗi khi gửi bài sau này.'
 	),
 	array(
 		0 => 'Làm sao để tôi tạo một bình chọn?',
@@ -149,8 +149,8 @@ $help = array(
 		1 => 'Chức năng đính kèm tập tin được sử dụng trong mỗi chuyên mục bởi mỗi nhóm hay mỗi cá nhân thành viên. Người quản trị diễn đàn có thể không cho phép sử dụng tập tin đính kèm trong từng chuyên mục xác định và một trong số những chuyên mục đó là chuyên mục mà bạn đang gửi bài. Đối với những chuyên mục như thế thì chỉ có những quản trị viên mới có thể sử dụng được chức năng đính kèm tập tin mà thôi. Bạn có thể liên hệ với người quản trị nếu bạn không chắc chắn lý do tại sao mình không thể đính kèm tập tin.'
 	),
 	array(
-		0 => 'Tại sao tôi không nhận được cảnh cáo nào?',
-		1 => 'Mỗi quản trị viên có những quy định dành cho website của họ. Nếu họ thấy bạn vi phạm một trong những nội quy của mình, họ có thể gửi đến bạn một cảnh cáo. Bạn cần lưu ý rằng đây là quyết định của chính người quản trị và phpBB Group không có liên quan gì trong việc đưa ra những cảnh cáo này.'
+		0 => 'Tại sao tôi lại nhận được một cảnh cáo?',
+		1 => 'Mỗi quản trị viên có những quy định riêng dành cho website của họ. Nếu họ thấy bạn vi phạm một trong những nội quy của mình, họ có thể gửi đến bạn một cảnh cáo. Bạn cần lưu ý rằng đây là quyết định của chính người quản trị và phpBB Group không có liên quan gì trong việc đưa ra những cảnh cáo này.'
 	),
 	array(
 		0 => 'Làm sao tôi có thể báo cáo bài viết đến người điều hành?',
@@ -182,7 +182,7 @@ $help = array(
 	),
 	array(
 		0 => 'Biểu tượng vui là gì?',
-		1 => 'Biểu tượng vui là những hình ảnh nhỏ dùng để biểu thị cảm xúc hiện tại của bạn với một vài mã tượng trưng riêng biệt, ví dụ như :) nghĩa là vui, :( nghĩa là buồn. Bạn có thể xem toàn bộ biểu tượng vui được phép sử dụng bằng cách bấm vào liên kết <em>Xem tất cả biểu tượng vui</em> tại phần soạn bài viết. Việc bạn lạm dụng chèn quá nhiều biểu tượng vui trong bài viết sẽ làm cho bài viết đó ít người đọc đi và người điều hành của chuyên mục đó có thể sẽ phải sửa lại chúng hay nghiêm khắc hơn là xoá bài viết đó đi.'
+		1 => 'Biểu tượng vui là những hình ảnh nhỏ dùng để biểu thị cảm xúc hiện tại của bạn với một vài mã tượng trưng riêng biệt, ví dụ như :) nghĩa là vui, :( nghĩa là buồn. Bạn có thể xem toàn bộ biểu tượng vui được phép sử dụng bằng cách bấm vào liên kết <em>Xem tất cả biểu tượng vui</em> tại phần soạn bài viết. Việc bạn lạm dụng chèn quá nhiều biểu tượng vui trong bài viết sẽ làm cho bài viết đó ít người đọc đi và người điều hành của chuyên mục đó có thể sẽ phải sửa lại chúng hay nghiêm khắc hơn là xoá bài viết đó đi. Người quản trị diễn đàn cũng có thể giới hạn số lượng hình biểu tượng vui mà bạn có thể sử dụng trong mỗi bài viết.'
 	),
 	array(
 		0 => 'Tôi có thể gửi hình trong bài viết?',
@@ -226,7 +226,7 @@ $help = array(
 	),
 	array(
 		0 => 'Làm sao để tôi tham gia vào một nhóm thành viên?',
-		1 => 'Để tham gia vào một nhóm thành viên, bạn hãy bấm vào liên kết của nhóm đó trong bảng điều khiển dành cho thành viên của mình. Bạn có thể xem tất cả các nhóm thành viên tại đây. Không phải bao giờ tất cả các nhóm thành viên đều là <em>nhóm tự do</em> có thể tham gia tùy thích, một vài nhóm đòi hỏi yêu cầu tham gia của bạn cần phải được chấp nhận, một vài nhóm khác đã cố định và thậm chí có cả một vài nhóm ẩn. Nếu là nhóm tự do, bạn có thể tham gia bằng cách bấm vào nút lựa chọn tham gia thích hợp. Nếu là một nhóm đòi hỏi yêu cầu tham gia phải được chấp nhận, để tham gia vào nhóm này, trước hết bạn phải gửi một yêu cầu tham gia vào nhóm bằng cách bấm vào nút lựa chọn thích hợp. Người điều hành của nhóm sẽ xem xét yêu cầu này của bạn và có thể sẽ hỏi bạn lý do vì sao muốn tham gia vào nhóm đó. Xin đừng làm phiền những người điều hành nhóm nếu họ không chấp thuận yêu cầu của bạn bởi vì họ có lý do của mình và có thể sẽ giải thích cho bạn hiểu.'
+		1 => 'Để tham gia vào một nhóm thành viên, bạn hãy bấm vào liên kết của nhóm đó trong bảng điều khiển dành cho thành viên của mình. Bạn có thể xem tất cả các nhóm thành viên tại đây. Không phải bao giờ tất cả các nhóm thành viên đều là <em>nhóm tự do</em> có thể tham gia tùy thích, một vài nhóm đòi hỏi yêu cầu tham gia của bạn cần phải được chấp nhận, một vài nhóm khác đã cố định và thậm chí có cả một vài nhóm ẩn. Nếu là nhóm tự do, bạn có thể tham gia bằng cách bấm vào nút lựa chọn tham gia thích hợp. Nếu là một nhóm đòi hỏi yêu cầu tham gia phải được chấp nhận, để tham gia vào nhóm này, trước hết bạn phải gửi một yêu cầu tham gia vào nhóm bằng cách bấm vào nút lựa chọn thích hợp. Người điều hành của nhóm sẽ xem xét yêu cầu này của bạn và có thể sẽ hỏi bạn lý do vì sao muốn tham gia vào nhóm đó. Xin đừng làm phiền những người lãnh đạo nhóm nếu họ không chấp thuận yêu cầu của bạn bởi vì họ có lý do của mình và có thể sẽ giải thích cho bạn hiểu.'
 	),
 	array(
 		0 => 'Làm sao để tôi trở thành một người điều hành của nhóm?',
@@ -330,7 +330,7 @@ $help = array(
 	),
 	array(
 		0 => 'Ai đã viết và phát triển hệ thống này?',
-		1 => 'Chương trình này với những chức năng ban đầu của nó đã được phát triển, phát hành và thuộc bản quyền của <a href="http://www.phpbb.com/" target="_blank">phpBB Group</a>. Nó được phát hành dưới bản quyền của <em>GNU General Public License</em> và phân phối hoàn toàn miễn phí. Bạn hãy ghé thăm website chính của chúng tôi để tìm hiểu thêm thông tin về phpBB.'
+		1 => 'Chương trình này với những chức năng ban đầu của nó đã được phát triển, phát hành và thuộc bản quyền của <a href="http://www.phpbb.com/">phpBB Group</a>. Nó được phát hành dưới bản quyền của <em>GNU General Public License</em> và phân phối hoàn toàn miễn phí. Bạn hãy ghé thăm website chính của chúng tôi để tìm hiểu thêm thông tin về phpBB.'
 	),
 	array(
 		0 => 'Tại sao hệ thống không có những chức năng khác?',

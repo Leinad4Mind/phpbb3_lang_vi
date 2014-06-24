@@ -4,8 +4,8 @@
 * acp_permissions [Vietnamese]
 *
 * @package language
-* @version $Id: permissions.php,v 1.24 2006/11/12 21:14:00 nedka Exp $
-* @copyright (c) 2006 phpBBVietNam Group 
+* @version $Id: permissions.php,v 1.30 2007/01/27 16:56:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -87,13 +87,13 @@ $lang = array_merge($lang, array(
 	'ACP_FORUM_PERMISSIONS_EXPLAIN'				=> 'Với công cụ này, bạn có thể thay đổi những thành viên và nhóm nào có thể truy cập vào chuyên mục. Để chỉ định điều hành viên hay quản trị viên, hãy sử dụng trang cấp phép tương ứng.',
 	'ACP_GLOBAL_MODERATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉ định quyền hạn điều hành viên chính cho các thành viên hay nhóm. Những điều hành viên chính đều giống với các điều hành viên bình thường ngoại trừ việc họ có thể truy cập bất cứ chuyên mục nào.',
 	'ACP_GROUPS_FORUM_PERMISSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể chỉ định những cấp phép chuyên mục dành cho nhóm.',
-	'ACP_GROUPS_PERMISSIONS_EXPLAIN'			=> 'Với công cụ này, bạn có thể chỉ định những thiết lập cấp phép chung cho cấp phép thành viên - nhóm, cấp phép điều hành viên chính và quản trị viên. Thiết lập cấp phép thành viên ví dụ như sử dụng hình đại diện, gửi tin nhắn… Thiết lập cấp phép điều hành viên chính và quản trị viên là bí mật. Những thiết lập cấp phép thành viên riêng lẻ ít khi cần thay đổi, phương pháp chúng tôi khuyên bạn nên dùng là đặt những thành viên vào chung trong nhóm và thiết lập cấp phép cho nhóm sẽ dễ dàng hơn.',
+	'ACP_GROUPS_PERMISSIONS_EXPLAIN'			=> 'Với công cụ này, bạn có thể chỉ định những thiết lập cấp phép chung cho cấp phép thành viên - nhóm, cấp phép điều hành viên chính và quản trị viên. Thiết lập cấp phép thành viên như sử dụng hình đại diện, gửi tin nhắn… ; thiết lập cấp phép điều hành viên chính như chấp nhận bài viết, quản lý chủ đề, quản lý bảng cấm… và cuối cùng thiết lập cấp phép quản trị viên như thay đổi thiết lập cấp phép, tạo các thẻ BBCode tùy biến, quản lý chuyên mục… Những thiết lập cấp phép thành viên riêng lẻ ít khi cần thay đổi, phương pháp chúng tôi khuyên bạn nên dùng là đặt những thành viên vào chung trong nhóm và thiết lập cấp phép cho nhóm sẽ dễ dàng hơn.',
 	'ACP_ADMIN_ROLES_EXPLAIN'					=> 'Với công cụ này, bạn có thể quản lý những nhiệm vụ cho thiết lập cấp phép quản trị viên. Những nhiệm vụ là các thiết lập cấp phép có ảnh hưởng, nếu bạn thay đổi một loại nhiệm vụ đã được chỉ định thì cũng đồng nghĩa với việc bạn thay đổi thiết lập cấp phép.',
 	'ACP_FORUM_ROLES_EXPLAIN'					=> 'Với công cụ này, bạn có thể quản lý những nhiệm vụ cho thiết lập cấp phép chuyên mục. Những nhiệm vụ là các thiết lập cấp phép có ảnh hưởng, nếu bạn thay đổi một loại nhiệm vụ đã được chỉ định thì cũng đồng nghĩa với việc bạn thay đổi thiết lập cấp phép.',
 	'ACP_MOD_ROLES_EXPLAIN'						=> 'Với công cụ này, bạn có thể quản lý những nhiệm vụ cho thiết lập cấp phép điều hành viên. Những nhiệm vụ là các thiết lập cấp phép có ảnh hưởng, nếu bạn thay đổi một loại nhiệm vụ đã được chỉ định thì cũng đồng nghĩa với việc bạn thay đổi thiết lập cấp phép.',
 	'ACP_USER_ROLES_EXPLAIN'					=> 'Với công cụ này, bạn có thể quản lý những nhiệm vụ cho thiết lập cấp phép thành viên. Những nhiệm vụ là các thiết lập cấp phép có ảnh hưởng, nếu bạn thay đổi một loại nhiệm vụ đã được chỉ định thì cũng đồng nghĩa với việc bạn thay đổi thiết lập cấp phép.',
 	'ACP_USERS_FORUM_PERMISSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể chỉ định cấp phép chuyên mục dành cho thành viên.',
-	'ACP_USERS_PERMISSIONS_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉ định những thiết lập cấp phép chung cho thành viên - cấp phép thành viên, cấp phép điều hành viên chính và quản trị viên. Thiết lập cấp phép thành viên ví dụ như sử dụng hình đại diện, gửi tin nhắn… Thiết lập cấp phép điều hành viên chính và quản trị viên là bí mật. Để thay đổi những thiết lập này cho số lượng nhiều thành viên, bạn hãy sử dụng trang thiết lập cấp phép nhóm. Những thiết lập cấp phép thành viên riêng lẻ ít khi cần thay đổi, phương pháp chúng tôi khuyên bạn nên dùng là đặt những thành viên vào chung trong nhóm và thiết lập cấp phép cho nhóm sẽ dễ dàng hơn.',
+	'ACP_USERS_PERMISSIONS_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉ định những thiết lập cấp phép chung cho thành viên - cấp phép thành viên, cấp phép điều hành viên chính và quản trị viên. Thiết lập cấp phép thành viên ví dụ như sử dụng hình đại diện, gửi tin nhắn… ; thiết lập cấp phép điều hành viên chính như chấp nhận bài viết, quản lý chủ đề, quản lý bảng cấm… và cuối cùng thiết lập cấp phép quản trị viên như thay đổi thiết lập cấp phép, tạo các thẻ BBCode tùy biến, quản lý chuyên mục… Để thay đổi những thiết lập này cho số lượng nhiều thành viên, bạn hãy sử dụng trang thiết lập cấp phép nhóm. Những thiết lập cấp phép thành viên riêng lẻ ít khi cần thay đổi, phương pháp chúng tôi khuyên bạn nên dùng là đặt những thành viên vào chung trong nhóm và thiết lập cấp phép cho nhóm sẽ dễ dàng hơn.',
 	'ACP_VIEW_ADMIN_PERMISSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể xem những thiết lập cấp phép quản trị viên đã được chỉ định cho thành viên/nhóm vừa chọn',
 	'ACP_VIEW_GLOBAL_MOD_PERMISSIONS_EXPLAIN'	=> 'Với công cụ này, bạn có thể xem những thiết lập cấp phép điều hành viên chính đã được chỉ định cho thành viên/nhóm vừa chọn',
 	'ACP_VIEW_FORUM_PERMISSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể xem những thiết lập cấp phép chuyên mục đã được chỉ định cho thành viên/nhóm và chuyên mục vừa chọn',
@@ -103,6 +103,7 @@ $lang = array_merge($lang, array(
 	'ADD_GROUPS'				=> 'Thêm nhóm',
 	'ADD_PERMISSIONS'			=> 'Thêm thiết lập cấp phép',
 	'ADD_USERS'					=> 'Thêm thành viên',
+	'ADVANCED_PERMISSIONS'		=> 'Thiết lập cấp phép nâng cao',
 	'ALL_GROUPS'				=> 'Chọn tất cả nhóm',
 	'ALL_NEVER'					=> 'Chọn tất cả không bao giờ',	
 	'ALL_NO'					=> 'Chọn tất cả không',
@@ -136,7 +137,7 @@ $lang = array_merge($lang, array(
 
 	'NO_AUTH_SETTING_FOUND'		=> 'Thiết lập cấp phép không xác định.',
 	'NO_ROLE_ASSIGNED'			=> 'Không có nhiệm vụ nào được chỉ định…',
-	'NO_ROLE_ASSIGNED_EXPLAIN'	=> 'Thiết lập nhiệm vụ này sẽ không thay đổi những thiết lập cấp phép. Nếu bạn muốn không thiết lập/gỡ bỏ tất cả thiết lập cấp phép, bạn nên bấm vào liên kết <strong>Chọn tất cả không</strong>.',
+	'NO_ROLE_ASSIGNED_EXPLAIN'	=> 'Thiết lập nhiệm vụ này sẽ không thay đổi những thiết lập cấp phép. Nếu bạn muốn không thiết lập/gỡ bỏ tất cả thiết lập cấp phép, bạn nên bấm vào liên kết <samp>Chọn tất cả không</samp>.',
 	'NO_ROLE_AVAILABLE'			=> 'Không có nhiệm vụ nào hiện tại',
 	'NO_ROLE_NAME_SPECIFIED'	=> 'Bạn chưa nhập tên của nhiệm vụ.',
 	'NO_ROLE_SELECTED'			=> 'Không thể tìm thấy nhiệm vụ.',
@@ -155,6 +156,29 @@ $lang = array_merge($lang, array(
 	'ROLE_DELETED'					=> 'Nhiệm vụ đã được gỡ bỏ thành công.',
 	'ROLE_DESCRIPTION'				=> 'Giới thiệu về nhiệm vụ',
 
+	'ROLE_ADMIN_FORUM'			=> 'Quản trị chuyên mục',
+	'ROLE_ADMIN_FULL'			=> 'Quản trị toàn quyền',
+	'ROLE_ADMIN_STANDARD'		=> 'Quản trị bình thường',
+	'ROLE_ADMIN_USERGROUP'		=> 'Quản trị thành viên và nhóm',
+	'ROLE_FORUM_BOT'			=> 'Máy tìm kiếm truy cập',
+	'ROLE_FORUM_FULL'			=> 'Truy cập toàn quyền',
+	'ROLE_FORUM_LIMITED'		=> 'Truy cập giới hạn',
+	'ROLE_FORUM_LIMITED_POLLS'	=> 'Truy cập giới hạn + Bình chọn',
+	'ROLE_FORUM_NOACCESS'		=> 'Không cho truy cập',
+	'ROLE_FORUM_ONQUEUE'		=> 'Truy cập kiểm duyệt nội dung',
+	'ROLE_FORUM_POLLS'			=> 'Truy cập bình thường + Bình chọn',
+	'ROLE_FORUM_READONLY'		=> 'Truy cập chỉ được phép xem',
+	'ROLE_FORUM_STANDARD'		=> 'Truy cập bình thường',
+	'ROLE_MOD_FULL'				=> 'Điều hành toàn quyền',
+	'ROLE_MOD_QUEUE'			=> 'Điều hành kiểm duyệt nội dung',
+	'ROLE_MOD_SIMPLE'			=> 'Điều hành đơn giản',
+	'ROLE_MOD_STANDARD'			=> 'Điều hành bình thường',
+	'ROLE_USER_FULL'			=> 'Tất cả chức năng',
+	'ROLE_USER_LIMITED'			=> 'Chức năng giới hạn',
+	'ROLE_USER_NOAVATAR'		=> 'Không sử dụng hình đại diện',
+	'ROLE_USER_NOPM'			=> 'Không sử dụng tin nhắn',
+	'ROLE_USER_STANDARD'		=> 'Chức năng bình thường',
+
 	'ROLE_DESCRIPTION_ADMIN_FORUM'			=> 'Có thể truy cập quản lý chuyên mục và thiết lập cấp phép chuyên mục.',
 	'ROLE_DESCRIPTION_ADMIN_FULL'			=> 'Có thể sử dụng tất cả chức năng của quản trị viên trong chuyên mục này.<br />Không khuyến cáo sử dụng.',
 	'ROLE_DESCRIPTION_ADMIN_STANDARD'		=> 'Có thể sử dụng hầu hết chức năng của quản trị viên nhưng không được phép sử dụng các công cụ thiết lập máy chủ hay hệ thống.',
@@ -162,10 +186,10 @@ $lang = array_merge($lang, array(
 	'ROLE_DESCRIPTION_FORUM_BOT'			=> 'Nhiệm vụ này được khuyến cáo nên sử dụng cho các máy tìm kiếm.',
 	'ROLE_DESCRIPTION_FORUM_FULL'			=> 'Có thể sử dụng tất cả chức năng trong chuyên mục, bao gồm cả tạo thông báo và chú ý và không bị giới hạn thời gian gửi bài giữa hai bài viết.<br />Không khuyến cáo sử dụng cho thành viên bình thường.',
 	'ROLE_DESCRIPTION_FORUM_LIMITED'		=> 'Có thể sử dụng một vài chức năng trong chuyên mục nhưng không thể đính kèm tập tin hay sử dụng biểu tượng bài viết.',
-	'ROLE_DESCRIPTION_FORUM_LIMITED_POLLS'	=> 'Giống như truy cập hạn chế nhưng có thể tạo bình chọn được.',
+	'ROLE_DESCRIPTION_FORUM_LIMITED_POLLS'	=> 'Giống như truy cập giới hạn nhưng có thể tạo bình chọn được.',
 	'ROLE_DESCRIPTION_FORUM_NOACCESS'		=> 'Không thể nhìn thấy hay truy cập vào chuyên mục.',
 	'ROLE_DESCRIPTION_FORUM_ONQUEUE'		=> 'Có thể sử dụng hầu hết chức năng trong chuyên mục như đính kèm tập tin nhưng chủ đề và bài viết gửi đến phải được chấp nhận bởi người điều hành.',
-	'ROLE_DESCRIPTION_FORUM_POLLS'			=> 'Giống như truy cập tiêu chuẩn nhưng có thể tạo bình chọn.',
+	'ROLE_DESCRIPTION_FORUM_POLLS'			=> 'Giống như truy cập bình thường nhưng có thể tạo bình chọn.',
 	'ROLE_DESCRIPTION_FORUM_READONLY'		=> 'Có thể xem chuyên mục nhưng không thể tạo chủ đề mới hay trả lời bài viết.',
 	'ROLE_DESCRIPTION_FORUM_STANDARD'		=> 'Có thể sử dụng hầu hết chức năng trong chuyên mục như đính kèm tập tin nhưng không thể khoá hay xoá những chủ đề của mình và không thể tạo bình chọn.',
 	'ROLE_DESCRIPTION_MOD_FULL'				=> 'Có thể sử dụng tất cả chức năng của điều hành viên bao gồm cả bảng cấm.',
@@ -179,6 +203,7 @@ $lang = array_merge($lang, array(
 	'ROLE_DESCRIPTION_USER_STANDARD'		=> 'Có thể sử dụng hầu hết chức năng của thành viên nhưng không thể thay đổi tên thành viên hay bị giới hạn thời gian gửi bài giữa hai bài viết.',
 	
 	'ROLE_DESCRIPTION_EXPLAIN'		=> 'Bạn có thể nhập vào một giới thiệu ngắn về nhiệm vụ này có vai trò như thế nào trong hệ thống. Nội dung bạn nhập vào đây cũng sẽ được hiển thị trong trang thiết lập cấp phép.',
+	'ROLE_DESCRIPTION_LONG'			=> 'Giới thiệu về nhiệm vụ mà bạn nhập quá dài. Hãy giới hạn nội dung giới thiệu này trong <strong>4000</strong> ký tự.',
 	'ROLE_DETAILS'					=> 'Thông tin nhiệm vụ',
 	'ROLE_EDIT_SUCCESS'				=> 'Nhiệm vụ đã được chỉnh sửa thành công.',
 	'ROLE_NAME'						=> 'Tên nhiệm vụ',
@@ -196,16 +221,16 @@ $lang = array_merge($lang, array(
 	'SET_USERS_PERMISSIONS'			=> 'Thiết lập cấp phép thành viên',
 	'SET_USERS_FORUM_PERMISSIONS'	=> 'Thiết lập cấp phép chuyên mục cho thành viên',
 
-	'TRACE_DEFAULT'					=> 'Mặc định, mọi thiết lập cấp phép đều được chọn là <samp>Không</samp>. Những thiết lập cấp phép sẽ thay thế cho những thiết lập khác.',
+	'TRACE_DEFAULT'					=> 'Mặc định, mọi thiết lập cấp phép đều được chọn là <samp>Không</samp> (chưa thiết lập). Vì thế những thiết lập cấp phép có thể được thay thế bằng những thiết lập khác.',
 	'TRACE_FOR'						=> 'Theo dõi',
-	'TRACE_GLOBAL_SETTING'			=> '%s (Chung)',
-	'TRACE_GROUP_NO_TOTAL_NO'		=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>Không bao giờ</samp> giống như tổng số giá trị cũ vì thế giá trị cũ được giữ lại.',
-	'TRACE_GROUP_NO_TOTAL_UNSET'	=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>Không bao giờ</samp> cho tổng số giá trị mới bởi vì nó chưa được thiết lập.',
-	'TRACE_GROUP_NO_TOTAL_YES'		=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>Không bao giờ</samp> sẽ thay thế cho tổng số giá trị <samp>Có</samp> trở thành giá trị <samp>Không bao giờ</samp> cho thành viên này.',
-	'TRACE_GROUP_UNSET'				=> 'Thiết lập cấp phép <samp>Không</samp> cho nhóm này vì thế tổng số giá trị cũ được giữ lại.',
-	'TRACE_GROUP_YES_TOTAL_NO'		=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>Có</samp> nhưng tổng số giá trị <samp>Không bao giờ</samp> không thể được thay thế.',
-	'TRACE_GROUP_YES_TOTAL_UNSET'	=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>Có</samp> cho tổng số giá trị mới bởi vì nó chưa được thiết lập.',
-	'TRACE_GROUP_YES_TOTAL_YES'		=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>Có</samp> và tổng số thiết lập cấp phép đã được chọn là <samp>Có</samp>, vì thế tổng số giá trị được giữ lại.',
+	'TRACE_GLOBAL_SETTING'			=> '%s (chung)',
+	'TRACE_GROUP_NEVER_TOTAL_NEVER'	=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>Không bao giờ</samp> giống như tổng số kết quả vì thế kết quả cũ được giữ lại.',
+	'TRACE_GROUP_NEVER_TOTAL_NO'	=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>Không bao giờ</samp> sẽ trở thành tổng giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <samp>Không</samp>).',
+	'TRACE_GROUP_NEVER_TOTAL_YES'	=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>Không bao giờ</samp> sẽ thay thế cho tổng giá trị <samp>Có</samp> trở thành <samp>Không bao giờ</samp> cho thành viên này.',
+	'TRACE_GROUP_NO'				=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>Không</samp> vì thế tổng giá trị cũ được giữ lại.',
+	'TRACE_GROUP_YES_TOTAL_NEVER'	=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>Có</samp> nhưng tổng giá trị <samp>Không bao giờ</samp> không thể được thay thế.',
+	'TRACE_GROUP_YES_TOTAL_NO'		=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>Có</samp> sẽ trở thành tổng giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <samp>Không</samp>).',
+	'TRACE_GROUP_YES_TOTAL_YES'		=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>Có</samp> và tổng thiết lập cấp phép vừa được chọn là <samp>Có</samp>, vì thế tổng giá trị được giữ lại.',
 	'TRACE_PERMISSION'				=> 'Theo dõi cấp phép - %s',
 	'TRACE_SETTING'					=> 'Thiết lập theo dõi',
 
@@ -229,6 +254,8 @@ $lang = array_merge($lang, array(
 	'USER_IS_MEMBER_OF_CUSTOM'		=> 'là một thành viên của những nhóm tuỳ chọn dưới đây',
 
 	'VIEW_ASSIGNED_ITEMS'	=> 'Xem những mục đã chỉ định',
+	'VIEW_LOCAL_PERMS'		=> 'Xem thiết lập cấp phép riêng',
+	'VIEW_GLOBAL_PERMS'		=> 'Xem thiết lập cấp phép chung',
 	'VIEW_PERMISSIONS'		=> 'Xem thiết lập cấp phép',
 
 	'WRONG_PERMISSION_TYPE'	=> 'Loại thiết lập cấp phép sai đã được chọn',

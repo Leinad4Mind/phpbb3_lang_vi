@@ -4,8 +4,8 @@
 * acp_users [Vietnamese]
 *
 * @package language
-* @version $Id: users.php,v 1.09 2006/11/26 10:54:00 nedka Exp $
-* @copyright (c) 2006 phpBBVietNam Group 
+* @version $Id: users.php,v 1.11 2007/01/27 17:15:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -68,10 +68,11 @@ $lang = array_merge($lang, array(
 	'FOUNDER'						=> 'Người sáng lập',
 	'FOUNDER_EXPLAIN'				=> 'Người sáng lập có tất cả quyền hạn của quản trị viên và không bao giờ bị cấm, xoá hay thay đổi bởi bất kỳ thành viên nào',
 
-	'GROUP_DEFAULT'					=> 'Mặc định',
-	'GROUP_DELETE'					=> 'Xoá',
-	'GROUP_DEMOTE'					=> 'Giáng chức',
-	'GROUP_PROMOTE'					=> 'Tăng cấp',
+	'GROUP_APPROVE'		=> 'Chấp nhận thành viên',
+	'GROUP_DEFAULT'		=> 'Chọn làm nhóm mặc định của thành viên',
+	'GROUP_DELETE'		=> 'Gỡ bỏ thành viên khỏi nhóm',
+	'GROUP_DEMOTE'		=> 'Giáng chức người lãnh đạo nhóm',
+	'GROUP_PROMOTE'		=> 'Thăng chức thành người lãnh đạo nhóm',
 
 	'IP_WHOIS_FOR'			=> 'Tra cứu địa chỉ IP cho %s',
 
@@ -129,8 +130,6 @@ $lang = array_merge($lang, array(
 	'USER_RANK_UPDATED'				=> 'Xếp hạng của thành viên đã được cập nhật thành công.',
 	'USER_SIG_UPDATED'				=> 'Chữ ký cá nhân của thành viên đã được cập nhật thành công.',
 	'USER_TOOLS'					=> 'Công cụ đơn giản',
-
-	'WARNINGS_EXPLAIN'		=> 'Bạn có thể thay đổi trực tiếp những cảnh cáo mà thành viên này đã nhận.',
 ));
 
 ?>

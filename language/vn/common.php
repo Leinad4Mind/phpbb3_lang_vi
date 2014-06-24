@@ -4,8 +4,8 @@
 * common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php,v 1.52 2006/11/26 10:29:00 nedka Exp $
-* @copyright (c) 2006 phpBBVietNam Group 
+* @version $Id: common.php,v 1.65 2007/01/30 21:09:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -41,11 +41,9 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'TRANSLATION_INFO'	=> 'Vietnamese translation by <a href="http://www.wonasti.com" title="phpBB iVN (phpBB in Vietnamese) Project" target="_blank">nedka (Nguyen Dang Khoa)</a>',
+	'TRANSLATION_INFO'	=> 'Vietnamese translation by <a href="http://www.wonasti.com" title="phpBB iVN (phpBB in Vietnamese) Project">nedka (Nguyen Dang Khoa)</a>',
 	'DIRECTION'			=> 'ltr',
-	'LEFT'				=> 'left',
-	'RIGHT'				=> 'right',
-	'DATE_FORMAT'		=> '|d M Y|',
+	'DATE_FORMAT'		=> '|d M Y|',	// 01 Jan 2007 (with Relative days enabled)
 	'USER_LANG'			=> 'vn',
 
 	'1_DAY'			=> '1 ngày',
@@ -112,14 +110,18 @@ $lang = array_merge($lang, array(
 
 	'CANCEL'				=> 'Huỷ bỏ',
 	'CHANGE'				=> 'Thay đổi',
-	'CHANGE_FONT_SIZE'		=> 'Thya đổi kích thước phông chữ',
+	'CHANGE_FONT_SIZE'		=> 'Thay đổi kích thước phông chữ',
+	'CHANGING_PREFERENCES'	=> 'Đang thay đổi thiết lập hệ thống',
+	'CHANGING_PROFILE'		=> 'Đang thay đổi thông tin cá nhân',
 	'CLICK_VIEW_PRIVMSG'	=> '%sChuyển đến hộp tin nhận của bạn%s',	
 	'CLOSE_WINDOW'			=> 'Đóng cửa sổ',
 	'COLOUR_SWATCH'			=> 'Bảng mã màu',
+	'COMMA_SEPARATOR'		=> ', ',	// Used in pagination and secret yet-to-be-release style, use localised comma if appropiate, eg: Ideographic or Arabic
 	'CONFIRM'				=> 'Xác nhận',
 	'CONFIRM_CODE'			=> 'Mã xác nhận',
-	'CONFIRM_CODE_EXPLAIN'	=> 'Nhập vào đoạn mã xác nhận mà bạn nhìn thấy trong hình. Mã xác nhận này không có trường hợp nhạy cảm nào giữa chữ cái và chữ số. Không có trường hợp số <strong>0</strong> để phân biệt với chữ <strong>O</strong>',
+	'CONFIRM_CODE_EXPLAIN'	=> 'Nhập vào đoạn mã xác nhận mà bạn nhìn thấy trong hình. Mã xác nhận này không có trường hợp nhạy cảm nào giữa chữ cái và chữ số. Không có trường hợp số <strong>0</strong> để phân biệt với chữ <strong>O</strong>.',
 	'CONFIRM_CODE_WRONG'	=> 'Mã xác nhận bạn vừa nhập không chính xác.',
+	'CONFIRM_OPERATION'		=> 'Bạn có chắc chắn muốn thoát khỏi thao tác này?',
 	'CONGRATULATIONS'		=> 'Chúc mừng bạn, ',
 	'CONNECTION_FAILED'		=> 'Kết nối thất bại',
 	'CONNECTION_SUCCESS'	=> 'Kết nối thành công!',
@@ -183,6 +185,7 @@ $lang = array_merge($lang, array(
 	'FORUM_RULES'			=> 'Nội quy chuyên mục',
 	'FORUM_RULES_LINK'		=> 'Bấm vào đây để xem những nội quy của chuyên mục này',
 	'FROM'					=> 'từ',
+	'FSOCK_DISABLED'		=> 'Yêu cầu này không thể được hoàn tất bởi vì những chức năng <strong>fsock</strong> đã bị vô hiệu hoặc địa chỉ của máy chủ được truy xuất trong yêu cầu không thể tìm thấy.',
 
 	'FTP_FSOCK_HOST'				=> 'Địa chỉ FTP',
 	'FTP_FSOCK_HOST_EXPLAIN'		=> 'Địa chỉ máy chủ FTP được sử dụng để kết nối đến website của bạn',
@@ -309,6 +312,7 @@ $lang = array_merge($lang, array(
 	'MODERATORS'			=> 'Các điều hành viên',
 	'MONTH'					=> 'Tháng',
 	'MOVE'					=> 'Di chuyển',
+	'MSNM'					=> 'Tài khoản MSNM/WLM',	
 
 	'NA'						=> 'N/A',
 	'NEWEST_USER'				=> 'Chào mừng thành viên mới nhất của chúng ta: <strong>%s%s%s</strong>',
@@ -321,7 +325,7 @@ $lang = array_merge($lang, array(
 	'NEXT'						=> 'Trang kế',
 	'NEVER'						=> 'Không bao giờ',	
 	'NO'						=> 'Không đồng ý',
-	'NOT_ALLOWED_MANAGE_GROUP'	=> 'Bạn không được phép quản lý nhóm thành viên này từ bảng điều khiển của quản trị viên.',
+	'NOT_ALLOWED_MANAGE_GROUP'	=> 'Bạn không được phép quản lý nhóm thành viên này từ “Bảng điều khiển của quản trị viên”.',
 	'NOT_AUTHORIZED'			=> 'Bạn không được phép truy cập khu vực này.',
 	'NOT_WATCHING_FORUM'		=> 'Bạn đã chọn không theo dõi những thông tin cập nhật trong chuyên mục này nữa.',
 	'NOT_WATCHING_TOPIC'		=> 'Bạn đã chọn không theo dõi những thông tin cập nhật trong chủ đề này nữa.',
@@ -371,44 +375,48 @@ $lang = array_merge($lang, array(
 	'ONLINE_USER_TOTAL'			=> 'Trong tổng số <strong>%d</strong> người đang trực tuyến: ',
 	'OPTIONS'					=> 'Tuỳ chọn',
 
-	'PAGE_OF'				=> 'Bạn đang xem trang <strong>%1$d</strong> trong tổng số <strong>%2$d</strong> trang',
-	'PASSWORD'				=> 'Mật khẩu',
-	'PLAY_QUICKTIME_FILE'	=> 'Chạy tập tin Quick Time',
-	'PM'					=> 'Tin nhắn',
-	'POSTING_MESSAGE'		=> 'Đang gửi bài viết trong %s',
-	'POST'					=> 'Gửi bài',
-	'POST_ANNOUNCEMENT'		=> 'Thông báo',
-	'POST_STICKY'			=> 'Chú ý',
-	'POSTED'				=> 'Đã gửi',
-	'POSTED_IN_FORUM'		=> 'trong chuyên mục',
-	'POSTED_ON_DATE'		=> 'vào ngày',
-	'POSTS'					=> 'Bài viết',
-	'POSTS_UNAPPROVED'		=> 'Có ít nhất một bài viết trong chủ đề này không được chấp nhận',	
-	'POST_BY_AUTHOR'		=> 'gửi bởi',
-	'POST_BY_FOE'			=> 'Bài viết này được gửi bởi <strong>%1$s</strong> người hiện tại đang có tên trong danh sách cấm của bạn. %2$sHiển thị bài viết này%3$s.',
-	'POST_DAY'				=> '%.2f bài viết/ngày',
-	'POST_DETAILS'			=> 'Thông tin chi tiết về bài viết',
-	'POST_NEW_TOPIC'		=> 'Tạo chủ đề mới',
-	'POST_PCT'				=> '%.2f%% trong tổng số bài viết',
-	'POST_PCT_ACTIVE'		=> '%.2f%% trong tổng số bài viết của bạn',	
-	'POST_REPORTED'			=> 'Bấm vào đây để xem báo cáo',
-	'POST_SUBJECT'			=> 'Tiêu đề bài viết',
-	'POST_TIME'				=> 'Ngày gửi',
-	'POST_UNAPPROVED'		=> 'Bài viết này đang chờ đợi được chấp nhận',
-	'PREVIEW'				=> 'Xem trước',
-	'PREVIOUS'				=> 'Trang trước',
-	'PRIVACY'				=> 'Chế độ riêng tư cá nhân',
-	'PRIVATE_MESSAGE'		=> 'Tin nhắn',
-	'PRIVATE_MESSAGES'		=> 'Tin nhắn',
-	'PRIVATE_MESSAGING'		=> 'Đang gửi tin nhắn',
-	'PROFILE'				=> 'Thiết lập cá nhân',
+	'PAGE_OF'					=> 'Bạn đang xem trang <strong>%1$d</strong> trong tổng số <strong>%2$d</strong> trang',
+	'PASSWORD'					=> 'Mật khẩu',
+	'PLAY_QUICKTIME_FILE'		=> 'Chạy tập tin Quicktime',
+	'PM'						=> 'Tin nhắn',
+	'POSTING_MESSAGE'			=> 'Đang gửi bài viết trong chuyên mục %s',
+	'POSTING_PRIVATE_MESSAGE'	=> 'Đang soạn tin nhắn cá nhân',
+	'POST'						=> 'Gửi bài',
+	'POST_ANNOUNCEMENT'			=> 'Thông báo',
+	'POST_STICKY'				=> 'Chú ý',
+	'POSTED'					=> 'Đã gửi',
+	'POSTED_IN_FORUM'			=> 'trong chuyên mục',
+	'POSTED_ON_DATE'			=> 'vào ngày',
+	'POSTS'						=> 'Bài viết',
+	'POSTS_UNAPPROVED'			=> 'Có ít nhất một bài viết trong chủ đề này không được chấp nhận',	
+	'POST_BY_AUTHOR'			=> 'gửi bởi',
+	'POST_BY_FOE'				=> 'Bài viết này được gửi bởi <strong>%1$s</strong> người hiện tại đang có tên trong danh sách cấm của bạn. %2$sHiển thị bài viết này%3$s.',
+	'POST_DAY'					=> '%.2f bài viết/ngày',
+	'POST_DETAILS'				=> 'Thông tin chi tiết về bài viết',
+	'POST_NEW_TOPIC'			=> 'Tạo chủ đề mới',
+	'POST_PCT'					=> '%.2f%% trong tổng số bài viết',
+	'POST_PCT_ACTIVE'			=> '%.2f%% trong tổng số bài viết của thành viên này',	
+	'POST_PCT_ACTIVE_OWN'		=> '%.2f%% trong tổng số bài viết của bạn',
+	'POST_REPORTED'				=> 'Bấm vào đây để xem báo cáo',
+	'POST_SUBJECT'				=> 'Tiêu đề bài viết',
+	'POST_TIME'					=> 'Ngày gửi',
+	'POST_UNAPPROVED'			=> 'Bài viết này đang chờ đợi được chấp nhận',
+	'PREVIEW'					=> 'Xem trước',
+	'PREVIOUS'					=> 'Trang trước',
+	'PRIVACY'					=> 'Chế độ riêng tư cá nhân',
+	'PRIVATE_MESSAGE'			=> 'Tin nhắn',
+	'PRIVATE_MESSAGES'			=> 'Tin nhắn',
+	'PRIVATE_MESSAGING'			=> 'Đang gửi tin nhắn',
+	'PROFILE'					=> 'Thiết lập cá nhân',
 
 	'READING_FORUM'				=> 'Đang xem các chủ đề trong chuyên mục %s',
 	'READING_GLOBAL_ANNOUNCE'	=> 'Đang xem thông báo chung',
+	'READING_LINK'				=> 'Đang ghé thăm chuyên mục liên kết %s',
 	'READING_TOPIC'				=> 'Đang xem các bài viết trong chủ đề %s',
 	'READ_PROFILE'				=> 'Xem thông tin cá nhân',
 	'REASON'					=> 'Nguyên nhân',
 	'RECORD_ONLINE_USERS'		=> 'Số lượt người ghé thăm website đông nhất là <strong>%1$s</strong> vào ngày %2$s',
+	'REDIRECT'					=> 'Chuyển trang',
 	'REDIRECTS'					=> 'Tổng số lượt ghé thăm',
 	'REGISTER'					=> 'Đăng ký',
 	'REGISTERED_USERS'			=> 'Các thành viên đang trực tuyến:',
@@ -453,17 +461,18 @@ $lang = array_merge($lang, array(
 	'RULES_VOTE_CANNOT'			=> 'Bạn <strong>không thể</strong> tham gia bình chọn trong chuyên mục này',
 
 	'SEARCH'					=> 'Tìm kiếm',
+	'SEARCH_MINI'				=> 'Nhập từ khóa tìm kiếm…',
 	'SEARCH_ADV'				=> 'Tìm kiếm nâng cao',
 	'SEARCH_ADV_EXPLAIN'		=> 'Xem những lựa chọn tìm kiếm nâng cao',
 	'SEARCH_KEYWORDS'			=> 'Tìm kiếm với từ khoá',
 	'SEARCHING_FORUMS'			=> 'Đang tìm kiếm những chuyên mục',
 	'SEARCH_ACTIVE_TOPICS'		=> 'Xem những chủ đề không bị khoá',
 	'SEARCH_FOR'				=> 'Tìm kiếm với từ khoá',
-	'SEARCH_FORUM'				=> 'Tìm kiếm trong chuyên mục này',	
+	'SEARCH_FORUM'				=> 'Tìm kiếm trong chuyên mục này…',	
 	'SEARCH_NEW'				=> 'Xem những bài viết mới',
 	'SEARCH_POSTS_BY'			=> 'Tìm kiếm những bài viết được gửi bởi',
 	'SEARCH_SELF'				=> 'Xem những bài viết của bạn',
-	'SEARCH_TOPIC'				=> 'Tìm kiếm trong chủ đề này',
+	'SEARCH_TOPIC'				=> 'Tìm kiếm trong chủ đề này…',
 	'SEARCH_UNANSWERED'			=> 'Xem những bài viết chưa trả lời',
 	'SECONDS'					=> 'Giây',
 	'SELECT'					=> 'Chọn',
@@ -506,7 +515,7 @@ $lang = array_merge($lang, array(
 	'TOO_LONG_INTERESTS'			=> 'Nội dung trong phần sở thích bạn vừa nhập quá dài.',
 	'TOO_LONG_JABBER'				=> 'Tên tài khoản Jabber bạn vừa nhập quá dài.',
 	'TOO_LONG_LOCATION'				=> 'Nội dung trong phần nơi đến bạn vừa nhập quá dài.',
-	'TOO_LONG_MSN'					=> 'Tên tài khoản MSN bạn vừa nhập quá dài.',
+	'TOO_LONG_MSN'					=> 'Tên tài khoản MSNM/WLM bạn vừa nhập quá dài.',
 	'TOO_LONG_NEW_PASSWORD'			=> 'Mật khẩu mới bạn vừa nhập quá dài.',
 	'TOO_LONG_OCCUPATION'			=> 'Nội dung trong phần nghề nghiệp bạn vừa nhập quá dài.',	
 	'TOO_LONG_PASSWORD_CONFIRM'		=> 'Mật khẩu xác nhận bạn vừa nhập quá dài.',
@@ -525,7 +534,7 @@ $lang = array_merge($lang, array(
 	'TOO_SHORT_INTERESTS'			=> 'Nội dung trong phần sở thích bạn vừa nhập quá ngắn.',
 	'TOO_SHORT_JABBER'				=> 'Tên tài khoản Jabber bạn vừa nhập quá ngắn.',
 	'TOO_SHORT_LOCATION'			=> 'Nội dung trong phần nơi đến bạn vừa nhập quá ngắn.',
-	'TOO_SHORT_MSN'					=> 'Tên tài khoản MSN bạn vừa nhập quá ngắn.',	
+	'TOO_SHORT_MSN'					=> 'Tên tài khoản MSNM/WLM bạn vừa nhập quá ngắn.',	
 	'TOO_SHORT_NEW_PASSWORD'		=> 'Mật khẩu mới bạn vừa nhập quá ngắn.',
 	'TOO_SHORT_OCCUPATION'			=> 'Nội dung trong phần nghề nghiệp bạn vừa nhập quá ngắn.',	
 	'TOO_SHORT_PASSWORD_CONFIRM'	=> 'Mật khẩu bạn vừa nhập quá ngắn.',
@@ -580,14 +589,17 @@ $lang = array_merge($lang, array(
 	'USER_POST'				=> '%d bài viết',
 	'USER_POSTS'			=> '%d bài viết',
 	'USERS'					=> 'Người',
-	'USE_PERMISSIONS'		=> 'Kiểm tra cấp phép thành viên',
+	'USE_PERMISSIONS'		=> 'Kiểm tra thiết lập cấp phép của thành viên',
 
 	'VIEWED'					=> 'Đã xem',
 	'VIEWING_FAQ'				=> 'Đang xem trợ giúp',
 	'VIEWING_MEMBERS'			=> 'Đang xem thông tin cá nhân của thành viên',
 	'VIEWING_ONLINE'			=> 'Đang xem các thành viên trực tuyến',
+	'VIEWING_MCP'				=> 'Đang xem bảng điều khiển dành cho điều hành viên',
 	'VIEWING_MEMBER_PROFILE'	=> 'Đang xem thông tin cá nhân của thành viên',
-	'VIEWING_UCP'				=> 'Đang xem bảng điều khiển thành viên',
+	'VIEWING_PRIVATE_MESSAGES'	=> 'Đang xem tin nhắn cá nhân',
+	'VIEWING_REGISTER'			=> 'Đang đăng ký tài khoản thành viên mới',
+	'VIEWING_UCP'				=> 'Đang xem bảng điều khiển của thành viên',
 	'VIEWS'						=> 'Xem',
 	'VIEW_BOOKMARKS'			=> 'Xem trang yêu thích',
 	'VIEW_FORUM_LOGS'			=> 'Xem ghi nhận chuyên mục',
@@ -762,17 +774,17 @@ $lang = array_merge($lang, array(
 
 	// The value is only an example and will get replaced by the current time on view
 	'dateformats'	=> array(
-		'|d M Y| H:i'			=> '10 Tháng 1 2005 17:54 [Định dạng ngày tháng tương đối]',
-		'd M Y, H:i'			=> '10 Tháng 1 2005, 17:57',
-		'd M Y H:i'				=> '10 Tháng 1 2005 17:57',
-		'D M d, Y g:i a'		=> 'Thứ 2 Tháng 1 10, 2005 5:57 pm',
-		'M j, y, H:i'			=> 'Tháng 1 10, 05, 5:57 pm',
-		'F j, Y, g:i a'			=> 'Tháng một 10, 2005, 5:57 pm'
+		'|d M Y| H:i'			=> '01 Tháng 1 2007 13:37 [Định dạng ngày tháng tương đối]',
+		'd M Y, H:i'			=> '01 Tháng 1 2007, 13:37',
+		'd M Y H:i'				=> '01 Tháng 1 2007 13:37',
+		'D M d, Y g:i a'		=> 'Thứ 2 Tháng 1 01, 2007 1:37 pm',
+		'M j, y, H:i'			=> 'Tháng 1 01, 07, 1:37 pm', // removed 'S' for vietnamese
+		'F j, Y, g:i a'			=> 'Tháng một 01, 2007, 1:37 pm' // removed 'S' for vietnamese
 	),
 
 	// The default dateformat which will be used on new installs in this language
 	// Translators should change this if a the usual date format is different
-	'default_dateformat'	=> 'D M d, Y g:i a', // Mon Jan 10, 2005 5:57 pm
+	'default_dateformat'	=> 'D d M, Y g:i a', // Mon 01 Jan, 2007 1:37 pm
 
 ));
 

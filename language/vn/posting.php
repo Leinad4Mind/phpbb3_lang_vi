@@ -4,8 +4,8 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php,v 1.20 2006/11/26 10:40:00 nedka Exp $
-* @copyright (c) 2006 phpBBVietNam Group 
+* @version $Id: posting.php,v 1.22 2007/01/19 22:43:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -59,19 +59,18 @@ $lang = array_merge($lang, array(
 	'BBCODE_I_HELP'				=> 'Văn bản in nghiêng: [i]văn bản muốn in nghiêng[/i] (Phím tắt: Alt + I)',
 	'BBCODE_L_HELP'				=> 'Tạo danh sách: [list]văn bản muốn tạo danh sách[/list] (Phím tắt: Alt + L)',
 	'BBCODE_O_HELP'				=> 'Tạo danh sách theo thứ tự: [list=]văn bản muốn tạo danh sách theo thứ tự[/list] (Phím tắt: Alt + O)',
-	'BBCODE_P_HELP'				=> 'Chèn hình: [img]http://địa chỉ URL của tập tin hình[/img] (Phím tắt: Alt + P)',
+	'BBCODE_P_HELP'				=> 'Chèn hình: [img]http://địa chỉ URL tập tin hình ảnh[/img] (Phím tắt: Alt + P)',
 	'BBCODE_Q_HELP'				=> 'Trích dẫn văn bản: [quote]văn bản muốn trích dẫn[/quote] (Phím tắt: Alt + Q)',
 	'BBCODE_S_HELP'				=> 'Màu chữ: [color=red]văn bản muốn tô màu[/color] Lưu ý: Bạn cũng có thể sử dụng dạng color=#FF0000',
 	'BBCODE_U_HELP'				=> 'Văn bản gạch chân: [u]văn bản muốn gạch chân[/u] (Phím tắt: Alt + U)',
 	'BBCODE_W_HELP'				=> 'Chèn địa chỉ URL: [url]http://địa chỉ URL[/url] hoặc [url=http://địa chỉ URL]Tên liên kết URL[/url] (Phím tắt: Alt + W)',
-	'BBCODE_D_HELP'				=> 'Chèn tập tin Flash: [flash=chiều rộng,chiều cao]http://địa chỉ URL của tập tin Flash[/flash] (Phím tắt: Alt + D)',
+	'BBCODE_D_HELP'				=> 'Chèn Flash: [flash=chiều rộng,chiều cao]http://địa chỉ URL tập tin Flash[/flash] (Phím tắt: Alt + D)',
 	'BUMP_ERROR'				=> 'Bạn không thể đẩy chủ đề này liên tục cùng lúc được.',
 
 	'CANNOT_DELETE_REPLIED'		=> 'Xin lỗi, bạn chỉ có thể xoá những bài viết chưa được trả lời.',
 	'CANNOT_EDIT_POST_LOCKED'	=> 'Bài viết này đã bị khoá. Bạn không thể sửa bài viết này.',
 	'CANNOT_EDIT_TIME'			=> 'Bạn không còn có thể sửa hay xoá bài viết này',
 	'CANNOT_POST_ANNOUNCE'		=> 'Xin lỗi, bạn không thể tạo thông báo.',
-	'CANNOT_POST_NEWS'			=> 'Xin lỗi, bạn không thể tạo chủ đề mới.',
 	'CANNOT_POST_STICKY'		=> 'Xin lỗi, bạn không thể tạo chú ý.',
 	'CHANGE_TOPIC_TO'			=> 'Thay đổi loại chủ đề thành',
 	'CLOSE_TAGS'				=> 'Đóng đuôi lệnh trong các thẻ BBCode',
@@ -129,16 +128,16 @@ $lang = array_merge($lang, array(
 	'MAX_IMG_WIDTH_EXCEEDED'	=> 'Chiều rộng của những hình ảnh mà bạn sử dụng chỉ có thể tối đa là <strong>%1$d</strong> Pixel.',
 
 	'MESSAGE_BODY_EXPLAIN'		=> 'Nhập nội dung bài viết của bạn tại đây nhưng không được quá <strong>%d</strong> ký tự.',
-	'MESSAGE_DELETED'			=> 'Bài viết của bạn đã được xoá thành công.',
+	'MESSAGE_DELETED'			=> 'Bài viết này đã được xoá thành công.',
 	'MORE_SMILIES'				=> 'Xem tất cả biểu tượng vui',
 
 	'NOTIFY_REPLY'				=> 'Thông báo cho tôi bằng Email khi có bài viết trả lời',
 	'NOT_UPLOADED'				=> 'Không thể tải lên được tập tin.',
 	'NO_DELETE_POLL_OPTIONS'	=> 'Bạn không thể xoá những đối tượng bình chọn đang có',
+	'NO_PM_ICON'				=> 'Không dùng biểu tượng tin nhắn',
 	'NO_POLL_TITLE'				=> 'Bạn chưa nhập câu hỏi bình chọn',
 	'NO_POST'					=> 'Bài viết bạn vừa yêu cầu không tồn tại.',
 	'NO_POST_MODE'				=> 'Không xác định chế độ bài viết',
-	'NO_TOPIC_ICON'				=> 'Không dùng biểu tượng',
 
 	'PARTIAL_UPLOAD'			=> 'Tập tin đính kèm bạn vừa chọn chỉ được tải lên một phần và chưa hoàn chỉnh',
 	'PHP_SIZE_NA'				=> 'Dung lượng tập tin đính kèm quá lớn.<br />Không thể xác định dung lượng tập tin tối đa được xác lập bởi PHP trong tập tin <code>php.ini</code>.',
@@ -157,17 +156,17 @@ $lang = array_merge($lang, array(
 	'POSTED_ATTACHMENTS'		=> 'Tập tin đã được đính kèm',
 	'POST_CONFIRMATION'			=> 'Xác nhận bài viết',
 	'POST_CONFIRM_EXPLAIN'		=> 'Để ngăn chặn những bài viết được tự động gửi vào hệ thống, quản trị viên yêu cầu bạn phải nhập vào một đoạn mã xác nhận. Mã xác nhận được hiển thị trong hình bên dưới mà bạn nhìn thấy. Nếu bạn gặp vấn đề về thị lực hoặc không thể nhìn thấy đoạn mã này vì một lý do nào đó, hãy liên hệ với %sngười quản trị%s.',
-	'POST_DELETED'				=> 'Bài viết của bạn đã được xoá thành công.',
-	'POST_EDITED'				=> 'Bài viết của bạn đã được sửa thành công.',
-	'POST_EDITED_MOD'			=> 'Bài viết của bạn đã được sửa những vẫn phải chờ được chấp thuận.',
+	'POST_DELETED'				=> 'Bài viết này đã được xoá thành công.',
+	'POST_EDITED'				=> 'Bài viết này đã được sửa thành công.',
+	'POST_EDITED_MOD'			=> 'Bài viết này đã được sửa những vẫn phải chờ được chấp thuận.',
 	'POST_GLOBAL'				=> 'Thông báo chung',
 	'POST_ICON'					=> 'Biểu tượng bài viết',
 	'POST_NORMAL'				=> 'Bài viết bình thường',
 	'POST_REPLY'				=> 'Gửi bài trả lời',
 	'POST_REVIEW'				=> 'Xem lại bài viết',
 	'POST_REVIEW_EXPLAIN'		=> 'Có ít nhất một bài viết mới được gửi trong chủ đề này. Có thể bạn muốn xem lại nội dung của nó trước khi tiếp tục gửi bài trả lời.',
-	'POST_STORED'				=> 'Bài viết của bạn đã được gửi thành công.',
-	'POST_STORED_MOD'			=> 'Bài viết của bạn đã được lưu nhưng vẫn phải chờ được chấp thuận.',
+	'POST_STORED'				=> 'Bài viết này đã được gửi thành công.',
+	'POST_STORED_MOD'			=> 'Bài viết này đã được lưu nhưng vẫn phải chờ được chấp thuận.',
 	'POST_TOPIC'				=> 'Tạo chủ đề mới',
 	'POST_TOPIC_AS'				=> 'Tạo chủ đề dưới dạng',
 	'PROGRESS_BAR'				=> 'Thanh tiến trình',
@@ -184,7 +183,7 @@ $lang = array_merge($lang, array(
 	'STICKY_ANNOUNCE_TIME_LIMIT'=> 'Thời gian hiển thị chủ đề dưới dạng chú ý/thông báo',
 	'STICK_TOPIC_FOR'			=> 'Đánh dấu quan trọng cho chủ đề trong',
 	'STICK_TOPIC_FOR_EXPLAIN'	=> 'Nhập vào số <strong>0</strong> hay để trống cho chú ý/thông báo không giới hạn thời gian',
-	'STYLES_TIP'				=> 'Chú ý: Có thể áp dụng kiểu dáng nhanh chóng cho những văn bản đã chọn',
+	'STYLES_TIP'				=> 'Chú ý: Bạn có thể chọn nhanh vùng văn bản rồi bấm vào những nút bên trên',
 
 	'TOO_FEW_CHARS'				=> 'Nội dung bài viết của bạn quá ngắn.',
 	'TOO_FEW_POLL_OPTIONS'		=> 'Bạn phải tạo ít nhất hai đối tượng bình chọn',

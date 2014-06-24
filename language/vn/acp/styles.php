@@ -4,8 +4,8 @@
 * acp_styles [Vietnamese]
 *
 * @package language
-* @version $Id: styles.php,v 1.29 2006/10/31 19:00:00 nedka Exp $
-* @copyright (c) 2006 phpBBVietNam Group
+* @version $Id: styles.php,v 1.33 2007/01/27 17:12:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -70,7 +70,7 @@ $lang = array_merge($lang, array(
 	'CONFIRM_TEMPLATE_CLEAR_CACHE'	=> 'Bạn có chắc chắn muốn xoá tất cả các tập tin khuôn mẫu đã cache?',
 	'CONFIRM_TEMPLATE_REFRESH'		=> 'Bạn có chắc chắn muốn nạp lại tất cả dữ liệu khuôn mẫu trong cơ sở dữ liệu với nội dung của những tập tin khuôn mẫu này sang hệ thống tập tin giao diện? Thiết lập này sẽ thay thế toàn bộ chỉnh sửa đã thực hiện với khuôn mẫu kể từ khi được lưu trữ trong cơ sở dữ liệu.',
 	'CONFIRM_THEME_REFRESH'			=> 'Bạn có chắc chắn muốn nạp lại tất cả dữ liệu kiểu dáng trong cơ sở dữ liệu với nội dung của toàn bộ kiểu dáng này sang hệ thống tập tin giao diện? Thiết lập này sẽ thay thế toàn bộ chỉnh sửa đã thực hiện với kiểu dáng kể từ khi được lưu trữ trong cơ sở dữ liệu.',
-	'2RIGHT'						=> 'Bản quyền',
+	'COPYRIGHT'						=> 'Bản quyền',
 	'CREATE_IMAGESET'				=> 'Tạo gói hình ảnh giao diện mới',
 	'CREATE_STYLE'					=> 'Tạo giao diện mới',
 	'CREATE_TEMPLATE'				=> 'Tạo khuôn mẫu mới',
@@ -79,7 +79,7 @@ $lang = array_merge($lang, array(
 	'CSS_COLOUR_EXPLAIN'			=> 'Bạn có thể nhập vào mã màu theo định dạng hệ thập lục phân hoặc chọn từ bảng màu an toàn.',
 	'CURRENT_IMAGE'					=> 'Hình ảnh hiện tại',
 	'CUSTOM_CLASS'					=> 'Lớp CSS tuỳ chọn',
-	'CUSTOM_CLASS_EXPLAIN'			=> 'Bạn có thể thêm vào các lớp định dạng CSS trong kiểu dáng này nếu muốn. Bạn phải nhập vào tên lớp CSS bên dưới và tên lớp CSS này phải giống với tên lớp CSS mà bạn định sử dụng trong các tập tin khuôn mẫu của mình. Hãy nhớ rằng tên lớp CSS chỉ có thể được phép sử dụng chữ số, chữ cái, dấu chấm (.), dấu hai chấm (:), dấu gạch ngang (-) và dấu thăng (#). Lớp CSS mới sẽ được thêm vào phần chọn lớp CSS bên trên.',
+	'CUSTOM_CLASS_EXPLAIN'			=> 'Bạn có thể thêm vào các lớp định dạng CSS trong kiểu dáng này nếu muốn. Bạn phải nhập vào tên lớp CSS bên dưới và tên lớp CSS này phải giống với tên lớp CSS mà bạn định sử dụng trong các tập tin khuôn mẫu của mình. Hãy nhớ rằng tên lớp CSS chỉ có thể được phép sử dụng chữ số, chữ cái, dấu chấm (.), dấu hai chấm (:), dấu gạch ngang (-), dấu gạch dưới (_) và dấu thăng (#). Lớp CSS mới sẽ được thêm vào phần chọn lớp CSS bên trên.',
 
 	'DEACTIVATE_DEFAULT'		=> 'Bạn không thể ngưng kích hoạt giao diện mặc định.',
 	'DELETE_FROM_FS'			=> 'Xoá từ hệ thống tập tin giao diện',
@@ -136,7 +136,7 @@ $lang = array_merge($lang, array(
 	'IMAGESET_DELETED_FS'		=> 'Gói hình ảnh giao diện đã được gỡ bỏ khỏi cơ sở dữ liệu nhưng một vài tập tin vẫn còn trong hệ thống tập tin giao diện.',
 	'IMAGESET_DETAILS_UPDATED'	=> 'Thông tin gói hình ảnh giao diện đã được cập nhật thành công.',
 	'IMAGESET_ERR_ARCHIVE'		=> 'Chọn phương pháp lưu trữ gói hình ảnh giao diện.',
-	'IMAGESET_ERR_2_LONG'	=> 'Nội dung bản quyền gói hình ảnh giao diện không được phép vượt quá <strong>60</strong> ký tự.',
+	'IMAGESET_ERR_COPY_LONG'	=> 'Nội dung bản quyền gói hình ảnh giao diện không được phép vượt quá <strong>60</strong> ký tự.',
 	'IMAGESET_ERR_NAME_CHARS'	=> 'Tên gói hình ảnh giao diện chỉ được phép sử dụng chữ số, chữ cái, các ký tự -, +, _ và khoảng trắng.',
 	'IMAGESET_ERR_NAME_EXIST'	=> 'Tên gói hình ảnh giao diện này đã được sử dụng.',
 	'IMAGESET_ERR_NAME_LONG'	=> 'Tên gói hình ảnh giao diện không được phép vượt quá <strong>30</strong> ký tự.',
@@ -349,7 +349,7 @@ $lang = array_merge($lang, array(
 	'STYLE_DELETED'				=> 'Giao diện đã được xoá thành công.',
 	'STYLE_DETAILS_UPDATED'		=> 'Giao diện đã được chỉnh sửa thành công.',
 	'STYLE_ERR_ARCHIVE'			=> 'Bạn hãy chọn một phương pháp lưu trữ giao diện.',
-	'STYLE_ERR_2_LONG'		=> 'Nội dung bản quyền giao diện không được phép vượt quá <strong>60</strong> ký tự.',
+	'STYLE_ERR_COPY_LONG'		=> 'Nội dung bản quyền giao diện không được phép vượt quá <strong>60</strong> ký tự.',
 	'STYLE_ERR_MORE_ELEMENTS'	=> 'Bạn phải chọn ít nhất một thành phần giao diện.',
 	'STYLE_ERR_NAME_CHARS'		=> 'Tên giao diện chỉ được phép sử dụng chữ số, chữ cái, các ký tự -, +, _ và khoảng trắng.',
 	'STYLE_ERR_NAME_EXIST'		=> 'Tên giao diện này đã được sử dụng.',
@@ -364,7 +364,7 @@ $lang = array_merge($lang, array(
 	'STYLE_NAME'				=> 'Tên giao diện',
 	'STYLE_TEMPLATE'			=> 'Khuôn mẫu',
 	'STYLE_THEME'				=> 'Kiểu dáng',
-	'STYLE_USED_BY'				=> 'Được sử dụng bởi',
+	'STYLE_USED_BY'				=> 'Số người sử dụng (Bao gồm máy tìm kiếm)',
 
 	'TEMPLATE_ADDED'			=> 'Khuôn mẫu đã được thêm vào thành công và được lưu trữ trong hệ thống tập tin giao diện.',
 	'TEMPLATE_ADDED_DB'			=> 'Khuôn mẫu đã được thêm vào thành công và được lưu trữ trong cơ sở dữ liệu.',
@@ -379,7 +379,7 @@ $lang = array_merge($lang, array(
 	'TEMPLATE_EDITOR_HEIGHT'	=> 'Chiều cao công cụ chỉnh sửa khuôn mẫu',
 	'TEMPLATE_ERR_ARCHIVE'		=> 'Bạn hãy chọn một phương pháp lưu trữ khuôn mẫu.',
 	'TEMPLATE_ERR_CACHE_READ'	=> 'Không thể đọc được thư mục dùng để lưu trữ cache cho các tập tin khuôn mẫu.',
-	'TEMPLATE_ERR_2_LONG'	=> 'Nội dung bản quyền khuôn mẫu không được phép vượt quá <strong>60</strong> ký tự.',
+	'TEMPLATE_ERR_COPY_LONG'	=> 'Nội dung bản quyền khuôn mẫu không được phép vượt quá <strong>60</strong> ký tự.',
 	'TEMPLATE_ERR_NAME_CHARS'	=> 'Tên khuôn mẫu chỉ được phép sử dụng chữ số, chữ cái, các ký tự -, +, _ và khoảng trắng.',
 	'TEMPLATE_ERR_NAME_EXIST'	=> 'Tên khuôn mẫu này đã được sử dụng.',
 	'TEMPLATE_ERR_NAME_LONG'	=> 'Tên khuôn mẫu không được phép vượt quá <strong>30</strong> ký tự.',
@@ -405,7 +405,7 @@ $lang = array_merge($lang, array(
 	'THEME_EDITOR_HEIGHT'		=> 'Chiều cao công cụ chỉnh sửa kiểu dáng',
 	'THEME_ERR_ARCHIVE'			=> 'Bạn hãy chọn một phương pháp lưu trữ kiểu dáng',
 	'THEME_ERR_CLASS_CHARS'		=> 'Chỉ sử dụng chữ số, chữ cái cùng với dấu chấm (.), dấu hai chấm (:), dấu gạch ngang (-) và dấu thăng (#) trong tên lớp CSS hợp lệ.',
-	'THEME_ERR_2_LONG'		=> 'Nội dung bản quyền kiểu dáng không được phép vượt quá <strong>60</strong> ký tự.',
+	'THEME_ERR_COPY_LONG'		=> 'Nội dung bản quyền kiểu dáng không được phép vượt quá <strong>60</strong> ký tự.',
 	'THEME_ERR_NAME_CHARS'		=> 'Tên kiểu dáng chỉ được phép sử dụng chữ số, chữ cái, các ký tự -, +, _ và khoảng trắng.',
 	'THEME_ERR_NAME_EXIST'		=> 'Tên kiểu dáng này đã được sử dụng.',
 	'THEME_ERR_NAME_LONG'		=> 'Tên kiểu dáng không được phép vượt quá <strong>30</strong> ký tự.',

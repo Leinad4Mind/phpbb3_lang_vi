@@ -4,8 +4,8 @@
 * acp_groups [Vietnamese]
 *
 * @package language
-* @version $Id: groups.php,v 1.12 2006/11/26 10:52:00 nedka Exp $
-* @copyright (c) 2006 phpBBVietNam Group 
+* @version $Id: groups.php,v 1.14 2007/01/27 16:37:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -51,7 +51,7 @@ $lang = array_merge($lang, array(
 
 	'GROUPS_NO_MEMBERS'				=> 'Nhóm này chưa có thành viên',
 	'GROUPS_NO_MODS'				=> 'Bạn chưa xác định người điều hành cho nhóm',
-	'GROUP_APPROVE'					=> 'Chấp nhận',
+	'GROUP_APPROVE'					=> 'Chấp nhận thành viên',
 	'GROUP_APPROVED'				=> 'Thành viên được chấp nhận',
 	'GROUP_AVATAR'					=> 'Hình đại diện của nhóm',
 	'GROUP_AVATAR_EXPLAIN'			=> 'Hình ảnh được hiển thị trong bảng điều hành của nhóm.',
@@ -59,11 +59,11 @@ $lang = array_merge($lang, array(
 	'GROUP_COLOR'					=> 'Màu nhóm',
 	'GROUP_COLOR_EXPLAIN'			=> 'Xác định màu phân biệt cho tên thành viên của các thành viên trong nhóm, để trống để sử dụng màu mặc định dành cho thành viên.',
 	'GROUP_CREATED'					=> 'Nhóm đã được tạo thành công.',
-	'GROUP_DEFAULT'					=> 'Nhóm mặc định',
+	'GROUP_DEFAULT'					=> 'Chọn làm nhóm mặc định của thành viên',
 	'GROUP_DEFS_UPDATED'			=> 'Nhóm mặc định thiết lập cho tất cả thành viên đã chọn.',
-	'GROUP_DELETE'					=> 'Xoá nhóm',
+	'GROUP_DELETE'					=> 'Gỡ bỏ thành viên khỏi nhóm',
 	'GROUP_DELETED'					=> 'Nhóm đã được xoá và nhóm mặc định của thành viên đã được thiết lập thành công.',
-	'GROUP_DEMOTE'					=> 'Giáng chức',
+	'GROUP_DEMOTE'					=> 'Giáng chức người lãnh đạo nhóm',
 	'GROUP_DESC'					=> 'Giới thiệu về nhóm',
 	'GROUP_DETAILS'					=> 'Thông tin về nhóm',
 	'GROUP_DST'						=> 'Bật chế độ giờ màu hè DST (Daylight Saving Time) cho nhóm',
@@ -73,13 +73,13 @@ $lang = array_merge($lang, array(
 	'GROUP_FOUNDER_MANAGE_EXPLAIN'	=> 'Giới hạn quyền quản lý nhóm thành viên này chỉ dành cho những người sáng lập từ bảng điều khiển dành cho quản trị viên.',
 	'GROUP_HIDDEN'					=> 'Nhóm ẩn',
 	'GROUP_LANG'					=> 'Ngôn ngữ của nhóm',
-	'GROUP_LEAD'					=> 'Người điều hành nhóm',
+	'GROUP_LEAD'					=> 'Người lãnh đạo nhóm',
 	'GROUP_LEADERS_ADDED'			=> 'Người điều hành đã được thêm vào nhóm thành công.',
 	'GROUP_LEGEND'					=> 'Hiển thị nhóm trong chú thích',
 	'GROUP_LIST'					=> 'Danh sách thành viên hiện tại trong nhóm',
 	'GROUP_LIST_EXPLAIN'			=> 'Danh sách tất cả các thành viên hiện tại có trong nhóm với tư cách thành viên của họ. Bạn có thể xoá thành viên ngoại trừ trường hợp những nhóm đặc biệt hay thêm vào một số thành viên mới mà bạn muốn.',
 	'GROUP_MEMBERS'					=> 'Thành viên của nhóm',
-	'GROUP_MEMBERS_EXPLAIN'			=> 'Đây là danh sách toàn bộ các thành viên của nhóm. Danh sách liệt kê này xác định rõ những loại thành viên trong nhóm như những người điều hành nhóm, các thành viên đang chờ quyết định cho phép tham gia và những thành viên hiện tại của nhóm. Với công cụ này, bạn có thể quản lý tư cách thành viên của tất cả thành viên cũng như vai trò của họ trong nhóm. Để bỏ chọn người điều hành của nhóm nhưng không gỡ bỏ họ khỏi nhóm, hãy giáng chức họ, việc này tốt hơn là xoá họ khỏi nhóm. Tương tự, việc chọn thăng chức sẽ thiết lập một thành viên trong nhóm trở thành người điều hành của nhóm.',
+	'GROUP_MEMBERS_EXPLAIN'			=> 'Đây là danh sách toàn bộ các thành viên của nhóm. Danh sách liệt kê này xác định rõ những loại thành viên trong nhóm như những người lãnh đạo nhóm, các thành viên đang chờ quyết định cho phép tham gia và những thành viên hiện tại của nhóm. Với công cụ này, bạn có thể quản lý tư cách thành viên của tất cả thành viên cũng như vai trò của họ trong nhóm. Để bỏ chọn người điều hành của nhóm nhưng không gỡ bỏ họ khỏi nhóm, hãy giáng chức họ, việc này tốt hơn là xoá họ khỏi nhóm. Tương tự, việc chọn thăng chức sẽ thiết lập một thành viên trong nhóm trở thành người điều hành của nhóm.',
 	'GROUP_MESSAGE_LIMIT'			=> 'Số tin nhắn giới hạn trong mỗi thư mục của các thành viên trong nhóm',
 	'GROUP_MESSAGE_LIMIT_EXPLAIN'	=> 'Thiết lập này sẽ thay thế cho số tin nhắn giới hạn trong mỗi thư mục của các thành viên khác ngoài nhóm. Nhập vào số <strong>0</strong> để sử dụng giới hạn mặc định giống như các thành viên khác ngoài nhóm.',
 	'GROUP_MODS_ADDED'				=> 'Người điều hành mới của nhóm đã được thêm vào thành công.',
@@ -88,7 +88,7 @@ $lang = array_merge($lang, array(
 	'GROUP_NAME'					=> 'Tên nhóm',
 	'GROUP_OPEN'					=> 'Nhóm tham gia tự do',
 	'GROUP_PENDING'					=> 'Thành viên chờ quyết định',
-	'GROUP_PROMOTE'					=> 'Thăng chức',
+	'GROUP_PROMOTE'					=> 'Thăng chức thành người lãnh đạo nhóm',
 	'GROUP_RANK'					=> 'Xếp hạng của nhóm',
 	'GROUP_RECEIVE_PM'				=> 'Cho phép nhóm nhận tin nhắn',
 	'GROUP_REQUEST'					=> 'Nhóm tham gia phải gửi yêu cầu',
@@ -122,7 +122,7 @@ $lang = array_merge($lang, array(
 	'USER_DEF_GROUPS_EXPLAIN'		=> 'Đây là những nhóm được tạo ra bởi chính bạn hoặc các quản trị viên trong website. Bạn có thể quản lý tư cách thành viên trong nhóm như sửa thiết lập của nhóm hoặc thậm chí là gỡ bỏ nhóm. Bằng cách bấm vào nút “Mặc định”, bạn có thể chọn cho các nhóm này những giá trị thiết lập mặc định đến các thành viên có trong nhóm.',
 	'USER_GROUP_DEFAULT'			=> 'Chọn làm nhóm mặc định',
 	'USER_GROUP_DEFAULT_EXPLAIN'	=> 'Bật tuỳ chọn này để thiết lập nhóm này làm nhóm mặc định cho các thành viên đã thêm vào',
-	'USER_GROUP_LEADER'				=> 'Chọn làm người điều hành nhóm',
+	'USER_GROUP_LEADER'				=> 'Chọn làm người lãnh đạo nhóm',
 ));
 
 ?>

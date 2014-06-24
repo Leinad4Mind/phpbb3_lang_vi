@@ -4,8 +4,8 @@
 * acp common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php,v 1.40 2006/11/29 00:39:00 nedka Exp $
-* @copyright (c) 2006 phpBBVietNam Group 
+* @version $Id: common.php,v 1.52 2007/01/27 16:31:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -57,7 +57,7 @@ $lang = array_merge($lang, array(
 	'ACP_BAN_IPS'				=> 'Cấm địa chỉ IP',
 	'ACP_BAN_USERNAMES'			=> 'Cấm tên thành viên',
 	'ACP_BASIC_PERMISSIONS'		=> 'Cấp phép đơn giản',
-	'ACP_BBCODES'				=> 'Thẻ BBCode',
+	'ACP_BBCODES'				=> 'Tùy biến thẻ BBCode',
 	'ACP_BOARD_CONFIGURATION'	=> 'Cấu hình hệ thống',
 	'ACP_BOARD_DEFAULTS'		=> 'Thiết lập mặc định của hệ thống',
 	'ACP_BOARD_FEATURES'		=> 'Thiết lập chức năng hệ thống',
@@ -129,7 +129,7 @@ $lang = array_merge($lang, array(
 	'ACP_MASS_EMAIL'			=> 'Gửi Email thành viên',
 	'ACP_MESSAGES'				=> 'Bài viết',
 	'ACP_MESSAGE_SETTINGS'		=> 'Thiết lập tin nhắn',
-	'ACP_MODULE_MANAGEMENT'		=> 'Quản lý module',
+	'ACP_MODULE_MANAGEMENT'		=> 'Quản lý gói thành phần chức năng',
 	'ACP_MOD_LOGS'				=> 'Ghi nhận điều hành viên',
 	'ACP_MOD_ROLES'				=> 'Nhiệm vụ điều hành viên',
 	
@@ -212,7 +212,6 @@ $lang = array_merge($lang, array(
 
 	'COLOUR_SWATCH'			=> 'Bảng mã màu an toàn',
 	'CONFIG_UPDATED'		=> 'Cấu hình hệ thống đã được cập nhật thành công.',
-	'CONFIRM_OPERATION'		=> 'Bạn có chắc chắn muốn thực hiện yêu cầu này?',
 
 	'DEACTIVATE'				=> 'Ngưng kích hoạt',
 	'DIMENSIONS'				=> 'Kích thước',
@@ -229,8 +228,6 @@ $lang = array_merge($lang, array(
 	'ENABLE'				=> 'Bật',
 	'EXPORT_DOWNLOAD'		=> 'Tải về',
 	'EXPORT_STORE'			=> 'Lưu trữ',
-
-	'FORUM_INDEX'			=> 'Trang chủ hệ thống',
 
 	'GENERAL_OPTIONS'		=> 'Tuỳ chọn tổng quát',
 	'GENERAL_SETTINGS'		=> 'Thiết lập tổng quát',
@@ -260,8 +257,8 @@ $lang = array_merge($lang, array(
 	'PARSE_BBCODE'						=> 'Phân tách BBCode',
 	'PARSE_SMILIES'						=> 'Phân tách biểu tượng vui',
 	'PARSE_URLS'						=> 'Phân tách liên kết',
-	'PERMISSIONS_TRANSFERED'			=> 'Thiết lập cấp phép đã được chuyển',
-	'PERMISSIONS_TRANSFERED_EXPLAIN'	=> 'Bạn hiện đang có những thiết lập cấp phép từ “%1$s”. Bạn có thể truy cập vào hệ thống với thiết lập cấp phép thành viên này nhưng không thể truy cập được vào bảng điều khiển dành cho quản trị viên bởi vì những thiết lập cấp phép dành cho người quản trị không được chuyển đến bạn. Bạn cũng có thể <a href="%2$s"><strong>sử dụng lại thiết lập cấp phép của mình</strong></a> bất cứ lúc nào bạn muốn.',
+	'PERMISSIONS_TRANSFERRED'			=> 'Thiết lập cấp phép đã được chuyển',
+	'PERMISSIONS_TRANSFERRED_EXPLAIN'	=> 'Bạn hiện đang có những thiết lập cấp phép từ “%1$s”. Bạn có thể truy cập vào hệ thống với thiết lập cấp phép thành viên này nhưng không thể truy cập được vào bảng điều khiển dành cho quản trị viên bởi vì những thiết lập cấp phép dành cho người quản trị không được chuyển đến bạn. Bạn cũng có thể <a href="%2$s"><strong>sử dụng lại thiết lập cấp phép của mình</strong></a> bất cứ lúc nào bạn muốn.',
 	'PIXEL'								=> 'PX',	
 	'PROCEED_TO_ACP'					=> '%sChuyển đến bảng điều khiển của quản trị viên%s',
 
@@ -282,7 +279,9 @@ $lang = array_merge($lang, array(
 
 // PHP info
 $lang = array_merge($lang, array(
-	'ACP_PHP_INFO_EXPLAIN'	=> 'Trang này liệt kê các thông tin về phiên bản PHP hiện tại được cài đặt trên máy chủ của bạn. Trang này cũng đính kèm thông tin chi tiết về các module đã được cài đặt và nạp cùng với PHP, những biến PHP sẵn có và những thiết lập PHP mặc định. Thông tin này có thể hữu ích cho bạn nếu bạn đang giải quyết những rắc rối mà mình gặp phải với hệ thống. Cần lưu ý rằng có một vài công ty hosting sẽ hạn chế những thông tin về PHP được hiển thị trong đây vì nguyên nhân bảo mật. Một lời khuyên dành cho bạn là đừng bao giờ cung cấp cho người khác biết những thông tin trên trang này ngoại trừ khi bạn đang cần hỗ trợ hoặc với các thành viên trong ban điều hành hệ thống.',
+	'ACP_PHP_INFO_EXPLAIN'	=> 'Trang này liệt kê các thông tin về phiên bản PHP hiện tại được cài đặt trên máy chủ của bạn. Trang này cũng đính kèm thông tin chi tiết về các gói thành phần chức năng đã được cài đặt và nạp cùng với PHP, những biến PHP sẵn có và những thiết lập PHP mặc định. Thông tin này có thể hữu ích cho bạn nếu bạn đang giải quyết những rắc rối mà mình gặp phải với hệ thống. Cần lưu ý rằng có một vài công ty cung cấp dịch vụ lưu trữ Web sẽ hạn chế những thông tin về PHP được hiển thị trong đây vì nguyên nhân bảo mật. Một lời khuyên dành cho bạn là đừng bao giờ cung cấp cho người khác biết những thông tin trên trang này ngoại trừ khi bạn đang yêu cầu hỗ trợ từ <a href="http://www.phpbb.com/about/" target="_blank">các thành viên trong nhóm chính thức</a> của diễn đàn hỗ trợ phpBB.',
+
+	'NO_PHPINFO_AVAILABLE'	=> 'Thông tin về PHP không thể thu thập được. Hàm <code>phpinfo()</code> đã bị vô hiệu trên máy chủ của bạn vì nguyên nhân bảo mật.',
 ));
 
 // Logs
@@ -359,7 +358,7 @@ $lang = array_merge($lang, array(
 	'INACTIVE_REASON_UNKNOWN'		=> 'Không biết',
 	'INACTIVE_USERS'				=> 'Thành viên chưa kích hoạt',
 	'INACTIVE_USERS_EXPLAIN'		=> 'Dưới đây là danh sách các thành viên đã đăng ký nhưng tài khoản của họ vẫn chưa được kích hoạt. Bạn có thể kích hoạt, xóa tài khoản của họ hay nhắc nhở bằng Email những thành viên này nếu bạn muốn.',
-	'INACTIVE_USERS_EXPLAIN_INDEX'	=> 'Dưới đây là danh sách 10 thành viên vừa mới đăng ký nhưng chưa kích hoạt tài khoản của mình. Bạn có thể xem toàn bộ danh sách này từ menu thích hợp bên trái hoặc bấm vào liên kết bên dưới để chuyển đến bảng điều khiển cho phép bạn có thể kích hoạt kích hoạt, xóa tài khoản của họ hay nhắc nhở bằng Email những thành viên này nếu bạn muốn.',
+	'INACTIVE_USERS_EXPLAIN_INDEX'	=> 'Dưới đây là danh sách 10 thành viên vừa mới đăng ký nhưng chưa kích hoạt tài khoản của mình. Bạn có thể xem toàn bộ danh sách này từ menu thích hợp bên trái hoặc bấm vào liên kết bên dưới để chuyển đến bảng điều khiển cho phép bạn có thể kích hoạt, xóa tài khoản hay nhắc nhở bằng Email những thành viên này nếu bạn muốn.',
 
 	'NO_INACTIVE_USERS'	=> 'Không có thành viên nào chưa kích hoạt',
 
@@ -459,8 +458,11 @@ $lang = array_merge($lang, array(
 	'LOG_FORK'					=> '<strong>Đã sao chép chủ đề</strong><br />» từ %s',
 	'LOG_LOCK'					=> '<strong>Đã khoá chủ đề</strong><br />» %s',
 	'LOG_LOCK_POST'				=> '<strong>Đã khoá bài viết</strong><br />» %s',
-	'LOG_MERGE'					=> '<strong>Đã nhập chung bài viết</strong> sang chủ đề<br />»%s',
+	'LOG_MERGE'					=> '<strong>Đã nhập chung bài viết</strong> sang chủ đề<br />» %s',
 	'LOG_MOVE'					=> '<strong>Đã di chuyển chủ đề</strong><br />» từ %s',
+	'LOG_SPLIT_DESTINATION'		=> '<strong>Đã di chuyển các bài viết được chia nhỏ</strong><br />» đến %s',
+	'LOG_SPLIT_SOURCE'			=> '<strong>Đã chia nhỏ các bài viết</strong><br />» từ %s',
+
 	'LOG_TOPIC_DELETED'			=> '<strong>Đã xoá chủ đề</strong><br />» %s',
 	'LOG_TOPIC_RESYNC'			=> '<strong>Đã đồng bộ lại bộ đếm số chủ đề</strong><br />» %s',
 	'LOG_TOPIC_TYPE_CHANGED'	=> '<strong>Đã thay đổi loại chủ đề</strong><br />» %s',
@@ -514,13 +516,13 @@ $lang = array_merge($lang, array(
 	'LOG_IMAGESET_EXPORT'		=> '<strong>Đã xuất gói hình ảnh giao diện</strong><br />» %s',
 	'LOG_IMAGESET_REFRESHED'	=> '<strong>Đã nạp lại gói hình ảnh giao diện</strong><br />» %s',
 
-	'LOG_INDEX_ACTIVATE'	=> '<strong>Đã kích hoạt những thành viên chưa kích hoạt</strong><br />» %s',
-	'LOG_INDEX_DELETE'		=> '<strong>Đã xoá những thành viên chưa kích hoạt</strong><br />» %s',
-	'LOG_INDEX_REMIND'		=> '<strong>Đã gửi Email nhắc nhở đến những thành viên chưa kích hoạt</strong><br />» %s',
+	'LOG_INACTIVE_ACTIVATE'	=> '<strong>Đã kích hoạt những thành viên chưa kích hoạt</strong><br />» %s',
+	'LOG_INACTIVE_DELETE'	=> '<strong>Đã xoá những thành viên chưa kích hoạt</strong><br />» %s',
+	'LOG_INACTIVE_REMIND'	=> '<strong>Đã gửi Email nhắc nhở đến những thành viên chưa kích hoạt</strong><br />» %s',
 	'LOG_INSTALL_CONVERTED'	=> '<strong>Đã chuyển đổi từ hệ thống %1$s sang hệ thống phpBB %2$s</strong>',
-	'LOG_INSTALL_INSTALLED'	=> '<strong>Đã cài đặt thành công hệ thống phpBB %s</strong>',
+	'LOG_INSTALL_INSTALLED'	=> '<strong>Đã cài đặt hệ thống phpBB %s</strong>',
 
-	'LOG_IP_BROWSER_CHECK'	=> '<strong>Không thể kiểm tra địa chỉ IP/trình duyệt trong phiên session này</strong><br />»Địa chỉ IP của thành viên “<em>%1$s</em>” đã được kiểm tra lại trong phiên session này với địa chỉ IP là “<em>%2$s</em>” và chuỗi kết quả về trình duyệt mà thành viên “<em>%3$s</em>” đang sử dụng được kiểm tra lại trong phiên session này với chuỗi kết quả trình duyệt là “<em>%4$s</em>”.',
+	'LOG_IP_BROWSER_FORWARDED_CHECK'	=> '<strong>Không thể kiểm tra địa chỉ IP/trình duyệt/X_FORWARDED_FOR trong phiên session này</strong><br />» Địa chỉ IP của thành viên “<em>%1$s</em>” đã được kiểm tra lại trong phiên session này với kết quả là “<em>%2$s</em>”, chuỗi trình duyệt thành viên “<em>%3$s</em>” đã được kiểm tra lại trong phiên session này với kết quả là “<em>%4$s</em>” và chuỗi X_FORWARDED_FOR thành viên “<em>%5$s</em>” đã được kiểm tra lại trong phiên session này với kết quả là “<em>%6$s</em>”.',
 
 	'LOG_JAB_CHANGED'			=> '<strong>Tài khoản Jabber đã được thay đổi</strong>',
 	'LOG_JAB_PASSCHG'			=> '<strong>Mật khẩu tài khoản Jabber đã được thay đổi</strong>',
@@ -536,13 +538,13 @@ $lang = array_merge($lang, array(
 
 	'LOG_MCP_CHANGE_POSTER'	=> '<strong>Đã thay đổi người gửi trong chủ đề “%1$s”</strong><br />» từ %2$s thành %3$s',
 
-	'LOG_MODULE_DISABLE'	=> '<strong>Module đã được vô hiệu</strong>',
-	'LOG_MODULE_ENABLE'		=> '<strong>Module đã được kích hoạt</strong>',
-	'LOG_MODULE_MOVE_DOWN'	=> '<strong>Module đã được di chuyển xuống</strong><br />» %s',
-	'LOG_MODULE_MOVE_UP'	=> '<strong>Module đã được di chuyển lên</strong><br />» %s',
-	'LOG_MODULE_REMOVED'	=> '<strong>Module đã được gỡ bỏ</strong><br />» %s',
-	'LOG_MODULE_ADD'		=> '<strong>Module đã được thêm vào</strong><br />» %s',
-	'LOG_MODULE_EDIT'		=> '<strong>Module đã được chỉnh sửa</strong><br />» %s',
+	'LOG_MODULE_DISABLE'	=> '<strong>Gói thành phần chức năng đã được vô hiệu</strong>',
+	'LOG_MODULE_ENABLE'		=> '<strong>Gói thành phần chức năng đã được kích hoạt</strong>',
+	'LOG_MODULE_MOVE_DOWN'	=> '<strong>Gói thành phần chức năng đã được di chuyển xuống</strong><br />» %s',
+	'LOG_MODULE_MOVE_UP'	=> '<strong>Gói thành phần chức năng đã được di chuyển lên</strong><br />» %s',
+	'LOG_MODULE_REMOVED'	=> '<strong>Gói thành phần chức năng đã được gỡ bỏ</strong><br />» %s',
+	'LOG_MODULE_ADD'		=> '<strong>Gói thành phần chức năng đã được thêm vào</strong><br />» %s',
+	'LOG_MODULE_EDIT'		=> '<strong>Gói thành phần chức năng đã được chỉnh sửa</strong><br />» %s',
 
 	'LOG_A_ROLE_ADD'		=> '<strong>Nhiệm vụ quản trị viên đã được thêm vào</strong><br />» %s',
 	'LOG_A_ROLE_EDIT'		=> '<strong>Nhiệm vụ quản trị viên đã được chỉnh sửa</strong><br />» %s',
@@ -568,6 +570,10 @@ $lang = array_merge($lang, array(
 	'LOG_PRUNE_USER_DEAC'		=> '<strong>Thành viên đã được ngưng kích hoạt</strong><br />» %s',
 	'LOG_PRUNE_USER_DEL_DEL'	=> '<strong>Thành viên đã được dọn dẹp và toàn bộ bài viết đã được xoá</strong><br />» %s',
 	'LOG_PRUNE_USER_DEL_ANON'	=> '<strong>Thành viên đã được dọn dẹp và toàn bộ bài viết đã được giữ lại</strong><br />» %s',
+
+	'LOG_RANK_ADDED'		=> '<strong>Đã thêm vào xếp hạng mới</strong><br />» %s',
+	'LOG_RANK_REMOVED'		=> '<strong>Đã gỡ bỏ xếp hạng</strong><br />» %s',
+	'LOG_RANK_UPDATED'		=> '<strong>Đã cập nhật xếp hạng</strong><br />» %s',
 
 	'LOG_REASON_ADDED'		=> '<strong>Đã thêm vào báo cáo/nguyên nhân từ chối</strong><br />» %s',
 	'LOG_REASON_REMOVED'	=> '<strong>Đã gỡ bỏ báo cáo/nguyên nhân từ chối</strong><br />» %s',
@@ -602,6 +608,9 @@ $lang = array_merge($lang, array(
 	'LOG_THEME_EXPORT'			=> '<strong>Đã xuất kiểu dáng</strong><br />» %s',
 	'LOG_THEME_REFRESHED'		=> '<strong>Đã nạp lại kiểu dáng</strong><br />» %s',
 
+	'LOG_UPDATE_DATABASE'	=> '<strong>Đã cập nhật cơ sở dữ liệu từ phiên bản %1$s lên phiên bản %2$s</strong>',
+	'LOG_UPDATE_PHPBB'		=> '<strong>Đã cập nhật hệ thống phpBB từ phiên bản %1$s lên phiên bản %2$s</strong>',
+
 	'LOG_USER_ACTIVE'		=> '<strong>Thành viên đã được kích hoạt</strong><br />» %s',
 	'LOG_USER_BAN_USER'		=> '<strong>Đã cấm thành viên thông qua phần quản lý thành viên</strong> vì nguyên nhân “<em>%1$s</em>”<br />» %2$s',
 	'LOG_USER_BAN_IP'		=> '<strong>Đã cấm địa chỉ IP thông qua phần quản lý thành viên</strong> vì nguyên nhân “<em>%1$s</em>”<br />» %2$s',
@@ -629,8 +638,8 @@ $lang = array_merge($lang, array(
 	'LOG_USER_MOVE_POSTS_USER'	=> '<strong>Đã di chuyển tất cả bài viết đến chuyên mục “%s”</strong>',
 	'LOG_USER_REACTIVATE_USER'	=> '<strong>Đã yêu cầu kích hoạt lại tài khoản thành viên</strong>',
 	'LOG_USER_UNLOCK'			=> '<strong>Thành viên đã mở khoá chủ đề của mình</strong><br />» %s',
-	'LOG_USER_WARNING'			=> '<strong>Đã thêm cảnh cáo thành viên</strong><br />»%s',
-	'LOG_USER_WARNING_BODY'		=> '<strong>Những cảnh cáo dành cho thành viên này</strong><br />»%s',
+	'LOG_USER_WARNING'			=> '<strong>Đã thêm cảnh cáo thành viên</strong><br />» %s',
+	'LOG_USER_WARNING_BODY'		=> '<strong>Những cảnh cáo dành cho thành viên này</strong><br />» %s',
 
 	'LOG_USER_GROUP_CHANGE'			=> '<strong>Thành viên đã thay đổi nhóm mặc định</strong><br />» %s',
 	'LOG_USER_GROUP_DEMOTE'			=> '<strong>Thành viên đã bị giáng chức người điều hành từ nhóm</strong><br />» %s',

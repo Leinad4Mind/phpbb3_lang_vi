@@ -1,8 +1,8 @@
-Subject: Bài viết của bạn đã được chấp nhận — “{POST_SUBJECT}”
+Subject: Bài viết của bạn đã được chấp nhận - "{POST_SUBJECT}"
 
-Chào bạn, “{USERNAME}”
+Chào bạn, "{USERNAME}"
 
-Bạn nhận được thông báo này bởi vì bài viết của bạn “{POST_SUBJECT}” trong website “{SITENAME}” đã được chấp nhận bởi một điều hành viên hoặc quản trị viên của website.
+Bạn nhận được thông báo này bởi vì bài viết của bạn "{POST_SUBJECT}" trong website "{SITENAME}" đã được chấp nhận bởi một điều hành viên hoặc quản trị viên của website.
 
 Nếu bạn muốn xem bài viết, hãy bấm vào liên kết dưới đây:
 

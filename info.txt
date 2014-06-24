@@ -20,14 +20,18 @@ _ _ _ _ _    |  |_ _ _   _ _ _ _ _     |  |__|  /  |  |__|  /                   
 @ phpBBVietNam Group [ The Vietnamize Team ]
 ---[ Information ]--------------------------------------------------------------
 Language Pack Name: Vietnamese Language Pack for phpBB3
-Language Pack Version: 3.0.0 Beta4-b
+Language Pack Version: 3.0.0 Beta5-a
 Encoding: Unicode (UTF-8)
-Release Date: 2007/01/19
+Release Date: 2007/01/30
 ---[ Description ]--------------------------------------------------------------
-Vietnamese Language Pack for phpBB 3.0.0 Beta4 Olympus
+Vietnamese Language Pack for phpBB 3.0.0 Beta5 Olympus
 ---[ Translators in this language pack ]----------------------------------------
 # nedka (Nguyen Dang Khoa) <admin@wonasti.com> http://www.wonasti.com
 ---[ History ]------------------------------------------------------------------
+# 2007/01/30: Version 3.0.0 Beta5-a
+Updated code changes in language from phpBB 3.0 Beta4 to phpBB 3.0 Beta5
+Supported for phpBB 3.0.0 Beta5
+
 # 2007/01/19: Version 3.0.0 Beta4-b
 Fixed: missing "/" in <strong> end tag (</strong>) -> don't display "next step" button when install step 4 :p
 
@@ -62,7 +66,7 @@ Supported for phpBB 3.0.0 Beta1
 Translated completely English Language Pack into Vietnamese [ Main + ACP + Email ]
 First release ...
 ---[ Notes ]--------------------------------------------------------------------
-Only use for phpBB3 Olympus version 3.0 Beta4
+Only use for phpBB3 Olympus version 3.0 Beta5
 Thanks you to use this language pack of mine ( ^ _ ^ )
 ---[ License ]------------------------------------------------------------------
 http://opensource.org/licenses/gpl-license.php GNU General Public License v2

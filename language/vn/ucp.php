@@ -4,8 +4,8 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version $Id: ucp.php,v 1.47 2006/11/26 10:45:00 nedka Exp $
-* @copyright (c) 2006 phpBBVietNam Group 
+* @version $Id: ucp.php,v 1.55 2007/01/30 21:10:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -59,23 +59,6 @@ $lang = array_merge($lang, array(
 	<br />
 	Mật khẩu của bạn được bảo vệ bằng phương pháp mã hoá trong cơ sở dữ liệu của hệ thống, vì thế nó rất an toàn. Tuy nhiên, chúng tôi khuyên bạn không nên dùng lại mật khẩu này trên các website khác. Mật khẩu của bạn là cách duy nhất để bạn đăng nhập vào tài khoản thành viên của mình trong website “%1$s”, vì thế hãy cất giữ nó cẩn thận và trong trường hợp nào cũng không cung cấp cho bất kỳ ai có quan hệ với website “%1$s”, phpBB hay bất kỳ người thứ ba nào khác ngoại trừ yêu cầu mật khẩu của bạn là hợp pháp. Bạn cũng đừng nên quên mật khẩu tài khoản thành viên của mình, nếu quên, bạn có thể sử dụng chức năng “Quên mật khẩu” từ hệ thống phpBB. Để thực hiện việc này, bạn cần phải cung cấp cho hệ thống biết tên thành viên và địa chỉ Email đang sử dụng của mình trong tài khoản, sau đó hệ thống phpBB sẽ tạo ra cho bạn mật khẩu mới và gửi đến cho bạn để bạn vẫn có thể sử dụng được tài khoản thành viên của mình.<br />
 	',
-));
-
-$lang = array_merge($lang, array(
-	'CAPTCHA' =>array(
-		'cells'		=> array(
-			'        Nhap vao doan ma xac nhan        ',
-			'   voi nhung ky tu trong phan ben phai   ',
-			' tao thanh hinh ma ban nhin thay o giua  ',
-			'theo thu tu tao thanh trong phan ben trai',
-		),
-		'shape'		=> array(
-			'   Nhap vao doan ma xac nhan    ',
-			'di kem voi moi hinh anh ben phai',
-			'     tuong ung voi hinh anh     ',
-			'    ma ban nhin thay ben trai   ',
-		)
-	)
 ));
 
 // Common language entries
@@ -138,7 +121,7 @@ $lang = array_merge($lang, array(
 	'CONFIRM_EMAIL'				=> 'Xác nhận địa chỉ Email',
 	'CONFIRM_EMAIL_EXPLAIN'		=> 'Bạn chỉ cần xác nhận lại địa chỉ Email nếu như bạn muốn thay đổi địa chỉ Email hiện tại của mình ở trên.',
 	'CONFIRM_EXPLAIN'			=> 'Để ngăn chặn việc lợi dụng đăng ký tự động hàng loạt vào website, quản trị viên yêu cầu bạn phải nhập vào một đoạn mã xác nhận khi đăng ký. Mã xác nhận được hiển thị trong hình ảnh mà bạn nhìn thấy bên dưới. Nếu thị lực của bạn kém hoặc bạn không thể nhìn thấy đoạn mã này vì một lý do nào đó, hãy vui lòng liên hệ với %sngười quản trị%s.',
-	'CONFIRM_PASSWORD'			=> 'Xác nhận mật khẩu mới',
+	'CONFIRM_PASSWORD'			=> 'Xác nhận mật khẩu',
 	'CONFIRM_PASSWORD_EXPLAIN'	=> 'Bạn chỉ cần xác nhận lại mật khẩu nếu như bạn muốn thay đổi mật khẩu hiện tại của mình ở trên',
 	'COPPA_BIRTHDAY'			=> 'Để tiếp tục thủ tục đăng ký thành viên, bạn hãy vui lòng cho chúng tôi biết năm sinh của mình.',
 	'COPPA_COMPLIANCE'			=> 'Thoả thuận COPPA',
@@ -223,7 +206,7 @@ $lang = array_merge($lang, array(
 	'FRIENDS_OFFLINE'			=> 'Bạn thân ngoại tuyến',
 	'FRIENDS_ONLINE'			=> 'Bạn thân trực tuyến',
 	'FRIENDS_UPDATED'			=> 'Danh sách bạn thân của bạn đã được cập nhật thành công.',
-	'FULL_FOLDER_OPTION_CHANGED'=> 'Thiết lập thư mục đã được cập nhật thành công.',
+	'FULL_FOLDER_OPTION_CHANGED'=> 'Thiết lập thao tác xử lý mặc định khi thư mục đầy đã được cập nhật thành công.',
 	'FWD_ORIGINAL_MESSAGE'		=> '-------- Nội dung gốc --------',
 	'FWD_SUBJECT'				=> 'Tiêu đề: %s',
 	'FWD_DATE'					=> 'Ngày gửi: %s',
@@ -249,7 +232,7 @@ $lang = array_merge($lang, array(
 	'LINK_REMOTE_AVATAR_EXPLAIN'=> 'Nhập vào địa chỉ URL của hình đại diện mà bạn muốn liên kết đến.',
 	'LINK_REMOTE_SIZE'			=> 'Kích thước hình đại diện',
 	'LINK_REMOTE_SIZE_EXPLAIN'	=> 'Xác định chiều rộng và chiều cao của hình đại diện mà bạn muốn hiển thị, để trống nếu bạn muốn hiển thị hình đại diện của mình theo đúng kích thước thực hiện tại.',
-	'LOGIN_EXPLAIN_UCP'			=> 'Vui lòng đăng nhập nếu bạn muốn truy cập vào bảng điều khiển thành viên',
+	'LOGIN_EXPLAIN_UCP'			=> 'Vui lòng đăng nhập nếu bạn muốn truy cập vào bảng điều khiển của thành viên',
 	'LOGIN_REDIRECT'			=> 'Bạn đã đăng nhập thành công vào hệ thống.',
 	'LOGOUT_REDIRECT'			=> 'Bạn đã đăng xuất thành công khỏi hệ thống.',
 
@@ -262,7 +245,7 @@ $lang = array_merge($lang, array(
 	'MESSAGE_HISTORY'				=> 'Quá trình nhắn tin',
 	'MESSAGE_REMOVED_FROM_OUTBOX'	=> 'Tin nhắn này đã được gỡ bỏ bởi chính người gửi của nó trước khi chuyển đến người nhận',
 	'MESSAGE_SENT_ON'				=> 'vào lúc',
-	'MESSAGE_STORED'				=> 'Tin nhắn đã được gửi thành công.',
+	'MESSAGE_STORED'				=> 'Tin nhắn này đã được gửi thành công.',
 	'MESSAGE_TO'					=> 'Người nhận',
 	'MESSAGES_DELETED'				=> 'Tin nhắn đã được xoá thành công.',
 	'MOVE_DELETED_MESSAGES_TO'		=> 'Di chuyển những tin nhắn từ thư mục đã gỡ bỏ đến',
@@ -331,10 +314,11 @@ $lang = array_merge($lang, array(
 	'PASS_TYPE_ANY_EXPLAIN'		=> 'Mật khẩu của bạn phải nhiều hơn <strong>%1$d</strong> ký tự và không được vượt quá <strong>%2$d ký tự.',
 	'PASS_TYPE_CASE_EXPLAIN'	=> 'Mật khẩu của bạn phải nhiều hơn <strong>%1$d</strong> ký tự và không được vượt quá <strong>%2$d ký tự và phải sử dụng hỗn hợp các ký tự',
 	'PASS_TYPE_SYMBOL_EXPLAIN'	=> 'Mật khẩu của bạn phải nhiều hơn <strong>%1$d</strong> ký tự và không được vượt quá <strong>%2$d ký tự và phải có các ký hiệu',
+	'PASSWORD'					=> 'Mật khẩu',
 	'PASSWORD_ACTIVATED'		=> 'Mật khẩu mới của bạn đã được kích hoạt',
 	'PASSWORD_UPDATED'			=> 'Mật khẩu mới của bạn đã được gửi đến địa chỉ Email hiện tại của bạn.',
 	'PERMISSIONS_RESTORED'		=> 'Đã phục hồi lại thành công cấp phép ban đầu.',
-	'PERMISSIONS_TRANSFERED'	=> 'Đã chuyển thành công cấp phép từ <strong>%s</strong>, bây giờ bạn có thể truy cập chuyên mục này với cấp phép thành viên đã chuyển đến.<br />Lưu ý rằng những cấp phép dành cho quản trị viên sẽ không được chuyển đến. Bạn có thể trả lại những thiết lập cấp phép của mình bất cứ lúc nào.',
+	'PERMISSIONS_TRANSFERRED'	=> 'Đã chuyển thành công cấp phép từ <strong>%s</strong>, bây giờ bạn có thể truy cập chuyên mục này với cấp phép thành viên đã chuyển đến.<br />Lưu ý rằng những cấp phép dành cho quản trị viên sẽ không được chuyển đến. Bạn có thể trả lại những thiết lập cấp phép của mình bất cứ lúc nào.',
 	'PM_DISABLED'				=> 'Chức năng gửi tin nhắn đã bị vô hiệu trong website',
 	'PM_FROM'					=> 'Người gửi',
 	'PM_FROM_REMOVED_AUTHOR'	=> 'Tin nhắn này được gửi bởi một thành viên đã bị xóa khỏi hệ thống.',
@@ -373,7 +357,7 @@ $lang = array_merge($lang, array(
 	'REPLIED_MESSAGE'					=> 'Tin nhắn đã trả lời',
 	'RESIGN_SELECTED'					=> 'Giáng chức thành viên đã chọn',
 	'RETURN_FOLDER'						=> '%1$sQuay về thư mục trước%2$s',
-	'RETURN_UCP'						=> '%sQuay về bảng điều khiển thành viên%s',
+	'RETURN_UCP'						=> '%sQuay về bảng điều khiển của thành viên%s',
 	'RULE_ADDED'						=> 'Quy định cá nhân đã được thêm vào thành công.',
 	'RULE_ALREADY_DEFINED'				=> 'Quy định cá nhân này đã được xác định rồi.',
 	'RULE_DELETED'						=> 'Quy định cá nhân đã được gỡ bỏ thành công.',
@@ -393,8 +377,8 @@ $lang = array_merge($lang, array(
 	'SORT_COMMENT'				=> 'Chú thích tập tin',
 	'SORT_DOWNLOADS'			=> 'Số lần tải về',
 	'SORT_EXTENSION'			=> 'Loại tập tin',
-	'SORT_FILENAME'				=> 'Tên tâp tin',
-	'SORT_POST_TIME'			=> 'Thôi gian gửi bài',
+	'SORT_FILENAME'				=> 'Tên tập tin',
+	'SORT_POST_TIME'			=> 'Thời gian gửi bài',
 	'SORT_SIZE'					=> 'Dung lượng tập tin',
 
 	'TIMEZONE'					=> 'Múi giờ',
@@ -402,7 +386,7 @@ $lang = array_merge($lang, array(
 	'TOO_MANY_RECIPIENTS'		=> 'Có quá nhiều người nhận',
 	'TOO_MANY_REGISTERS'		=> 'Bạn đã vượt quá số lượng đăng ký thành viên cho phép trong phiên session này. Hãy thử lại vào lúc khác!',
 
-	'UCP'						=> 'Bảng điều khiển thành viên',
+	'UCP'						=> 'Bảng điều khiển của thành viên',
 	'UCP_ACTIVATE'				=> 'Kích hoạt tài khoản',
 	'UCP_ADMIN_ACTIVATE'		=> 'Lưu ý rằng bạn cần phải nhập vào một địa chỉ Email hợp lệ trước khi tài khoản của bạn được kích hoạt. Người quản trị sẽ xem qua tài khoản của bạn và nếu được chấp nhận bạn sẽ nhận được một Email thông báo đến địa chỉ Email mà bạn đã nhập.',
 	'UCP_AIM'					=> 'Tài khoản AIM',
@@ -447,28 +431,31 @@ $lang = array_merge($lang, array(
 	'UCP_USERGROUPS_MEMBER'		=> 'Sửa tư cách thành viên',
 	'UCP_USERGROUPS_MANAGE'		=> 'Quản lý nhóm',
 
-	'UCP_REGISTER_DISABLE'			=> 'Hiện tại website không cho đăng ký thành viên mới.',
-	'UCP_REMIND'					=> 'Gửi mật khẩu',
-	'UCP_RESEND'					=> 'Gửi Email kích hoạt tài khoản',
-	'UCP_WELCOME'					=> 'Chào mừng bạn đã đến với bảng điều khiển của thành viên. Với bảng điều khiển này, bạn có thể quản lý, xem và cập nhật thông tin cá nhân của mình, thiết lập những sở thích cá nhân của riêng mình, theo dõi các chuyên mục và chủ đề mà mình quan tâm. Nếu được cấp phép, bạn cũng có thể gửi tin nhắn đến các thành viên khác. Hãy chắc chắn rằng bạn đã đọc qua các thông báo quan trọng nếu có trước khi tiếp tục.',
-	'UCP_YIM'						=> 'Tài khoản Yahoo',
-	'UCP_ZEBRA'						=> 'Bạn thân &amp; kẻ thù',
-	'UCP_ZEBRA_FOES'				=> 'Quản lý kẻ thù',
-	'UCP_ZEBRA_FRIENDS'				=> 'Quản lý bạn thân',
-	'UNKNOWN_FOLDER'				=> 'Thư mục không biết',
-	'UNWATCH_MARKED'				=> 'Ngừng theo dõi những mục đã đánh dấu',
-	'UPLOAD_AVATAR_FILE'			=> 'Tải hình đại diện từ máy tính của bạn',
-	'UPLOAD_AVATAR_URL'				=> 'Tải hình đại diện từ địa chỉ URL',
-	'UPLOAD_AVATAR_URL_EXPLAIN'		=> 'Nhập vào địa chỉ URL của hình đại diện và nó sẽ được sao chép đến website này.',
-	'USERNAME_ALPHA_ONLY_EXPLAIN'	=> 'Tên thành viên không được phép ít hơn <strong>%1$d</strong> và vượt quá <strong>%2$d</strong> ký tự. Bạn cũng chỉ được phép sử dụng chữ số và chữ cái',
-	'USERNAME_ALPHA_SPACERS_EXPLAIN'=> 'Tên thành viên không được phép ít hơn <strong>%1$d</strong> và vượt quá <strong>%2$d</strong> ký tự. Bạn cũng chỉ được phép sử dụng chữ số và chữ cái, khoảng trắng hoặc các ký tự <strong>-+_[]</strong>.',
-	'USERNAME_CHARS_ANY_EXPLAIN'	=> 'Tên thành viên không được phép ít hơn <strong>%1$d</strong> và vượt quá <strong>%2$d  </strong> ký tự.',
-	'USERNAME_TAKEN_USERNAME'		=> 'Tên thành viên bạn vừa nhập đã được người khác sử dụng, hãy chọn một tên khác.',
-	'USERNAME_DISALLOWED_USERNAME'	=> 'Tên thành viên bạn vừa nhập không được phép sử dụng.',
-	'USER_NOT_FOUND_OR_INACTIVE'	=> 'Những tên thành viên bạn vừa xác định không thể tìm thấy hoặc là những tên thành viên chưa được kích hoạt.',
+	'UCP_REGISTER_DISABLE'					=> 'Hiện tại website không cho đăng ký thành viên mới.',
+	'UCP_REMIND'							=> 'Gửi mật khẩu',
+	'UCP_RESEND'							=> 'Gửi Email kích hoạt tài khoản',
+	'UCP_WELCOME'							=> 'Chào mừng bạn đã đến với bảng điều khiển của thành viên. Với bảng điều khiển này, bạn có thể quản lý, xem và cập nhật thông tin cá nhân của mình, thiết lập những sở thích cá nhân của riêng mình, theo dõi các chuyên mục và chủ đề mà mình quan tâm. Nếu được cấp phép, bạn cũng có thể gửi tin nhắn đến các thành viên khác. Hãy chắc chắn rằng bạn đã đọc qua các thông báo quan trọng nếu có trước khi tiếp tục.',
+	'UCP_YIM'								=> 'Tài khoản Yahoo',
+	'UCP_ZEBRA'								=> 'Bạn thân &amp; kẻ thù',
+	'UCP_ZEBRA_FOES'						=> 'Quản lý kẻ thù',
+	'UCP_ZEBRA_FRIENDS'						=> 'Quản lý bạn thân',
+	'UNKNOWN_FOLDER'						=> 'Thư mục không biết',
+	'UNWATCH_MARKED'						=> 'Ngừng theo dõi những mục đã đánh dấu',
+	'UPLOAD_AVATAR_FILE'					=> 'Tải hình đại diện từ máy tính của bạn',
+	'UPLOAD_AVATAR_URL'						=> 'Tải hình đại diện từ địa chỉ URL',
+	'UPLOAD_AVATAR_URL_EXPLAIN'				=> 'Nhập vào địa chỉ URL của hình đại diện và nó sẽ được sao chép đến website này.',
+	'USERNAME_ALPHA_ONLY_EXPLAIN'			=> 'Tên thành viên không được phép ít hơn <strong>%1$d</strong> và vượt quá <strong>%2$d</strong> ký tự. Bạn cũng chỉ được phép sử dụng vừa chữ số vừa chữ cái.',
+	'USERNAME_ALPHA_SPACERS_EXPLAIN'		=> 'Tên thành viên không được phép ít hơn <strong>%1$d</strong> và vượt quá <strong>%2$d</strong> ký tự. Bạn cũng chỉ được phép sử dụng vừa chữ số vừa chữ cái, khoảng trắng hoặc các ký tự <strong>-+_[]</strong>.',
+	'USERNAME_ASCII_EXPLAIN'				=> 'Tên thành viên không được phép ít hơn <strong>%1$d</strong> và vượt quá <strong>%2$d</strong> ký tự. Bạn cũng chỉ được phép sử dụng những ký tự ASCII và không có các ký tự đặc biệt.',
+	'USERNAME_LETTER_NUM_EXPLAIN'			=> 'Tên thành viên không được phép ít hơn <strong>%1$d</strong> và vượt quá <strong>%2$d</strong> ký tự. Bạn cũng chỉ được phép sử dụng chữ số hoặc chữ cái.',
+	'USERNAME_LETTER_NUM_SPACERS_EXPLAIN'	=> 'Tên thành viên không được phép ít hơn <strong>%1$d</strong> và vượt quá <strong>%2$d</strong> ký tự. Bạn cũng chỉ được phép sử dụng chữ số, chữ cái, khoảng trắng hoặc các ký tự <strong>-+_[]</strong>.',
+	'USERNAME_CHARS_ANY_EXPLAIN'			=> 'Tên thành viên không được phép ít hơn <strong>%1$d</strong> và vượt quá <strong>%2$d</strong> ký tự.',
+	'USERNAME_TAKEN_USERNAME'				=> 'Tên thành viên bạn vừa nhập đã được người khác sử dụng, hãy chọn một tên khác.',
+	'USERNAME_DISALLOWED_USERNAME'			=> 'Tên thành viên bạn vừa nhập không được phép sử dụng.',
+	'USER_NOT_FOUND_OR_INACTIVE'			=> 'Những tên thành viên bạn vừa xác định không thể tìm thấy hoặc là những tên thành viên chưa được kích hoạt.',
 
 	'VIEW_AVATARS'				=> 'Hiển thị hình đại diện',
-	'VIEW_EDIT'					=> 'Xem/Sửa',
+	'VIEW_EDIT'					=> 'Xem/sửa',
 	'VIEW_FLASH'				=> 'Hiển thị những tập tin Flash',
 	'VIEW_IMAGES'				=> 'Hiển thị hình ảnh trong các bài viết',
 	'VIEW_NEXT_HISTORY'			=> 'Tin nhắn kế tiếp trong quá trình gửi tin',
