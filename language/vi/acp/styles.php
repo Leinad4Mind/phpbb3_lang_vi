@@ -4,7 +4,7 @@
 * acp_styles [Vietnamese]
 *
 * @package language
-* @version $Id: styles.php 56 2011-04-29 10:16:00Z nedka $
+* @version $Id: styles.php 57 2013-06-26 19:42:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -275,6 +275,7 @@ $lang = array_merge($lang, array(
 	'IMG_USER_ICON9'		=> 'Hình xác định thành viên 9',
 	'IMG_USER_ICON10'		=> 'Hình xác định thành viên 10',
 
+	'INACTIVE_STYLES'			=> 'Giao diện không sử dụng',
 	'INCLUDE_DIMENSIONS'		=> 'Đính kèm kích thước',
 	'INCLUDE_IMAGESET'			=> 'Đính kèm gói ngôn ngữ hình ảnh',
 	'INCLUDE_TEMPLATE'			=> 'Đính kèm khuôn mẫu',

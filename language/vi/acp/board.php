@@ -4,7 +4,7 @@
 * acp_board [Vietnamese]
 *
 * @package language
-* @version $Id: board.php 100 2011-12-03 15:58:00Z nedka $
+* @version $Id: board.php 101 2013-06-26 19:14:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -118,7 +118,7 @@ $lang = array_merge($lang, array(
 	'MAX_AVATAR_SIZE'				=> 'Kích thước hình đại diện tối đa cho phép',
 	'MAX_AVATAR_SIZE_EXPLAIN'		=> 'Chiều rộng x chiều cao với đơn vị tính Pixel.',
 	'MAX_FILESIZE'					=> 'Dung lượng tập tin hình đại diện tối đa cho phép',
-	'MAX_FILESIZE_EXPLAIN'			=> 'Áp dụng cho những hình đại diện được tải lên bởi thành viên.',
+	'MAX_FILESIZE_EXPLAIN'			=> 'Áp dụng cho hình đại diện được tải lên. Nhập số <strong>0</strong> để hạn chế dung lượng tập tin thông qua cấu hình PHP.',
 	'MIN_AVATAR_SIZE'				=> 'Kích thước hình đại diện tối thiểu cho phép',
 	'MIN_AVATAR_SIZE_EXPLAIN'		=> 'Chiều rộng x chiều cao với đơn vị tính Pixel.',
 ));

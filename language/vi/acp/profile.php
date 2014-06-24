@@ -4,7 +4,7 @@
 * acp_profile [Vietnamese]
 *
 * @package language
-* @version $Id: profile.php 29 2009-11-18 23:03:00Z nedka $
+* @version $Id: profile.php 30 2013-06-26 19:40:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -140,6 +140,8 @@ $lang = array_merge($lang, array(
 
 	'SAVE'							=> 'Lưu',
 	'SECOND_OPTION'					=> 'Tùy chọn thứ hai',
+	'SHOW_NOVALUE_FIELD'			=> 'Hiển thị nếu không có giá trị được chọn',
+	'SHOW_NOVALUE_FIELD_EXPLAIN'	=> 'Tùy chọn vẫn hiển thị mục thông tin cá nhân này nếu bạn vẫn chưa xác định giá trị cho các mục tùy chọn hoặc giá trị cho các mục bắt buộc thành viên phải chọn.',
 	'STEP_1_EXPLAIN_CREATE'			=> 'Với công cụ này, bạn có thể nhập vào những thông số cơ bản đầu tiên cho mục thông tin cá nhân mới. Thông số này rất cần thiết trong bước thứ hai: bạn có thể thiết lập những tùy chọn còn lại cũng như có thể xem trước và kiểm tra mục thông tin cá nhân nhiều hơn.',
 	'STEP_1_EXPLAIN_EDIT'			=> 'Với công cụ này, bạn có thể thay đổi những thông số cớ bản của các mục thông tin cá nhân. Những tùy chọn có liên quan được tính toán lại trong bước thứ hai.',
 	'STEP_1_TITLE_CREATE'			=> 'Thêm vào mục thông tin cá nhân',

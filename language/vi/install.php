@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version $Id: install.php 106 2011-12-03 14:43:00Z nedka $
+* @version $Id: install.php 107 2013-06-26 18:58:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -61,6 +61,7 @@ $lang = array_merge($lang, array(
 	'BLANK_PREFIX_FOUND'			=> 'Bạn chưa xác định tiền tố cho mỗi tên bảng dữ liệu.',
 	'BOARD_NOT_INSTALLED'			=> 'Không tìm thấy bản cài đặt',
 	'BOARD_NOT_INSTALLED_EXPLAIN'	=> 'Công cụ phpBB Unified Convertor Framework yêu cầu một bản cài đặt mặc định của phpBB3 để có thể sử dụng các chức năng chuyển đổi. Bạn hãy vui lòng <a href="%s">tiến hành cài đặt phpBB3</a> trước.',
+	'BACKUP_NOTICE'					=> 'Luôn sao lưu hệ thống của bạn trước khi cập nhật để đề phòng mọi sự cố xảy ra trong quá trình cập nhật.',
 
 	'CATEGORY'					=> 'Nhóm thông tin',
 	'CACHE_STORE'				=> 'Lưu trữ bộ nhớ đệm',

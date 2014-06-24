@@ -20,7 +20,7 @@ _ _ _ _ _    |  |_ _ _   _ _ _ _ _     |  |__|  /  |  |__|  /                   
 @ phpBBVietNam Group
 ---[ Information ]--------------------------------------------------------------
 Language Pack Name: Vietnamese Language Pack for phpBB3
-Language Pack Version: 3.0.10a
+Language Pack Version: 3.0.11a
 Encoding: Unicode (UTF-8)
 Release Date: 2013/06/26
 ---[ Description ]--------------------------------------------------------------
@@ -36,6 +36,9 @@ Vietnamese Language Pack for phpBB3 with following parts:
 ---[ Translator ]----------------------------------------
 # nedka (Nguyen Dang Khoa) <nedka1989@facebook.com> http://www.facebook.com/nedka1989
 ---[ History ]------------------------------------------------------------------
+# 2013/06/26: Version 3.0.11a
+Updated code changes in language files from phpBB 3.0.10 to phpBB 3.0.11
+
 # 2013/06/26: Version 3.0.10a
 Updated code changes in language files from phpBB 3.0.10-RC2 to phpBB 3.0.10
 

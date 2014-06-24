@@ -4,7 +4,7 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version $Id: memberlist.php 38 2011-06-16 08:33:00Z nedka $
+* @version $Id: memberlist.php 39 2013-06-26 18:59:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -119,7 +119,6 @@ $lang = array_merge($lang, array(
 
 	'POST_IP'				=> 'Gửi bài từ địa chỉ IP/Tên miền',
 
-	'RANK'					=> 'Xếp hạng',
 	'REAL_NAME'				=> 'Tên người nhận',
 	'RECIPIENT'				=> 'Người nhận',
 	'REMOVE_FOE'			=> 'Gỡ bỏ kẻ thù',

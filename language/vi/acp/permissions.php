@@ -4,7 +4,7 @@
 * acp_permissions [Vietnamese]
 *
 * @package language
-* @version $Id: permissions.php 52 2009-11-18 22:58:00Z nedka $
+* @version $Id: permissions.php 53 2013-06-26 19:32:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -46,7 +46,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ACP_PERMISSIONS_EXPLAIN'	=> '
-		<p>Những thiết lập cấp phép chỉ định quyền hạn được phép thực hiện trong hệ thống và được chia thành bốn phần chủ yếu, bao gồm:</p>
+		<p>Những thiết lập cấp phép là những quyền hạn được phép thực hiện trong hệ thống và được chia thành bốn phần chủ yếu, bao gồm:</p>
 
 		<h2>Cấp phép chung</h2>
 		<p>Những thiết lập cấp phép này được sử dụng để điều khiển việc truy cập trong một cấp độ chung và áp dụng cho các mục trong hệ thống. Các loại cấp phép bao gồm: cấp phép thành viên, cấp phép nhóm, cấp phép quản trị viên và cấp phép điều hành viên chính.</p>
@@ -55,10 +55,10 @@ $lang = array_merge($lang, array(
 		<p>Những thiết lập cấp phép này được sử dụng để điều khiển việc truy cập trong mỗi chuyên mục. Các loại cấp phép bao gồm: cấp phép chuyên mục, cấp phép điều hành viên cho chuyên mục, cấp phép chuyên mục cho thành viên và cấp phép chuyên mục cho nhóm.</p>
 
 		<h2>Cấp phép nhiệm vụ</h2>
-		<p>Những nhiệm vụ này được sử dụng để tạo ra nhiều loại cấp phép khác nhau làm nền tảng để chỉ định quyền hạn được cấp phép. Những nhiệm vụ mặc định được dành cho công việc quản lí thường gặp trong các hệ thống lớn và nhỏ, được chia làm bốn loại riêng là: nhiệm vụ quản trị viên, nhiệm vụ thành viên, nhiệm vụ điều hành viên và nhiệm vụ chuyên mục. Bạn có thể xem/thêm/chỉnh sửa/xóa những nhiệm vụ này.</p>
+		<p>Những nhiệm vụ này được sử dụng để tạo ra nhiều loại cấp phép khác nhau làm nền tảng để gán quyền hạn được cấp phép. Những nhiệm vụ mặc định được dành cho công việc quản lí thường gặp trong các hệ thống lớn và nhỏ, được chia làm bốn loại riêng là: nhiệm vụ quản trị viên, nhiệm vụ thành viên, nhiệm vụ điều hành viên và nhiệm vụ chuyên mục. Bạn có thể xem/thêm/chỉnh sửa/xóa những nhiệm vụ này.</p>
 
 		<h2>Danh sách cấp phép</h2>
-		<p>Sử dụng danh sách cấp phép, bạn có thể xem toàn bộ những thiết lập cấp phép đã chỉ định cho các quản trị viên, thành viên, điều hành viên chính, điều hành viên hay chuyên mục.</p>
+		<p>Sử dụng danh sách cấp phép, bạn có thể xem toàn bộ những thiết lập cấp phép đã gán cho các quản trị viên, thành viên, điều hành viên chính, điều hành viên hay chuyên mục.</p>
 
 		<br />
 
@@ -67,7 +67,7 @@ $lang = array_merge($lang, array(
 
 	'ACL_NEVER'				=> 'Chưa bao giờ',	
 	'ACL_SET'				=> 'Thiết lập cấp phép',
-	'ACL_SET_EXPLAIN'		=> 'Những thiết lập cấp phép được thiết lập đơn giản bằng cách chọn <samp>CÓ</samp>/<samp>KHÔNG</samp> trong từng mục tương ứng. Thiết lập một tùy chọn là <samp>CHƯA BAO GIỜ</samp> cho một thành viên hay nhóm sẽ thay thế cho bất kì giá trị nào được chỉ định đến. Nếu bạn không muốn chỉ định cấp phép trong một tùy chọn nào dành cho thành viên hay nhóm, hãy chọn <samp>KHÔNG</samp>. Nếu các giá trị được chỉ định trong tùy chọn đã có trong thiết lập cá nhân của thành viên, hãy chọn <samp>CHƯA BAO GIỜ</samp> để sử dụng thiết lập của thành viên. Tất cả các đối tượng được đánh dấu chọn trong ô kiểm phía trước sẽ được sao chép thiết lập cấp phép giống như thiết lập cấp phép bạn đã chỉ định.',
+	'ACL_SET_EXPLAIN'		=> 'Những thiết lập cấp phép được thiết lập đơn giản bằng cách chọn <samp>CÓ</samp>/<samp>KHÔNG</samp> trong từng mục tương ứng. Thiết lập một tùy chọn là <samp>CHƯA BAO GIỜ</samp> cho một thành viên hay nhóm sẽ thay thế cho bất kì giá trị nào được gán. Nếu bạn không muốn gán cấp phép trong một tùy chọn nào dành cho thành viên hay nhóm, hãy chọn <samp>KHÔNG</samp>. Nếu các giá trị được gán trong tùy chọn đã có trong thiết lập cá nhân của thành viên, hãy chọn <samp>CHƯA BAO GIỜ</samp> để sử dụng thiết lập của thành viên. Tất cả các đối tượng được đánh dấu chọn trong ô kiểm phía trước sẽ được sao chép thiết lập cấp phép giống như thiết lập cấp phép bạn đã gán.',
 	'ACL_SETTING'			=> 'Thiết lập',
 
 	'ACL_TYPE_A_'			=> 'Cấp phép quản trị viên',
@@ -83,27 +83,27 @@ $lang = array_merge($lang, array(
 
 	'ACL_NO'				=> 'Không',
 	'ACL_VIEW'				=> 'Xem thiết lập cấp phép',
-	'ACL_VIEW_EXPLAIN'		=> 'Với công cụ này, bạn có thể toàn bộ thiết lập cấp phép đã chỉ định cho thành viên/nhóm. Ô màu đỏ cho biết thành viên/nhóm đó chưa được thiết lập cấp phép và ngược lại, ô màu xanh lá tức là thành viên/nhóm đó đã được thiết lập cấp phép.',
+	'ACL_VIEW_EXPLAIN'		=> 'Với công cụ này, bạn có thể xem toàn bộ thiết lập cấp phép đã gán cho thành viên/nhóm. Ô màu đỏ cho biết thành viên/nhóm đó chưa được thiết lập cấp phép và ngược lại, ô màu xanh lá tức là thành viên/nhóm đó đã được thiết lập cấp phép.',
 	'ACL_YES'				=> 'Có',
 
-	'ACP_ADMINISTRATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉ định những thiết lập cấp phép của người quản trị đối với thành viên và nhóm. Tất cả thành viên được cấp phép quản trị viên đều có thể truy cập vào bảng quản trị viên.',
-	'ACP_FORUM_MODERATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉ định thành viên hay nhóm sẽ trở thành điều hành viên của chuyên mục. Để chỉ định thành viên được phép truy cập chuyên mục, chỉ định thiết lập cấp phép của điều hành viên chính hay quản trị viên, hãy sử dụng trang cấp phép tương ứng.',
-	'ACP_FORUM_PERMISSIONS_EXPLAIN'				=> 'Với công cụ này, bạn có thể thay đổi những thành viên và nhóm nào có thể truy cập vào chuyên mục. Để chỉ định điều hành viên hay quản trị viên, hãy sử dụng trang cấp phép tương ứng.',
+	'ACP_ADMINISTRATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể gán những thiết lập cấp phép của người quản trị đối với thành viên và nhóm. Tất cả thành viên được cấp phép quản trị viên đều có thể truy cập vào bảng quản trị viên.',
+	'ACP_FORUM_MODERATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể chọn thành viên hay nhóm sẽ trở thành điều hành viên của chuyên mục. Để xác định thành viên được phép truy cập chuyên mục, gán thiết lập cấp phép của điều hành viên chính hay quản trị viên, hãy sử dụng trang cấp phép tương ứng.',
+	'ACP_FORUM_PERMISSIONS_EXPLAIN'				=> 'Với công cụ này, bạn có thể thay đổi những thành viên và nhóm nào có thể truy cập vào chuyên mục. Để xác định điều hành viên hay quản trị viên, hãy sử dụng trang cấp phép tương ứng.',
 	'ACP_FORUM_PERMISSIONS_COPY_EXPLAIN'		=> 'Với công cụ này, bạn có thể sao chép cấp phép chuyên mục từ một chuyên mục ban đầu sang một hay nhiều chuyên mục khác.',
-	'ACP_GLOBAL_MODERATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉ định thiết lập cấp phép của điều hành viên chính cho các thành viên hay nhóm. Những điều hành viên chính đều giống với các điều hành viên bình thường ngoại trừ việc họ có thể truy cập bất cứ chuyên mục nào.',
-	'ACP_GROUPS_FORUM_PERMISSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể chỉ định những cấp phép chuyên mục dành cho nhóm.',
-	'ACP_GROUPS_PERMISSIONS_EXPLAIN'			=> 'Với công cụ này, bạn có thể chỉ định những thiết lập cấp phép chung cho cấp phép thành viên - nhóm, cấp phép điều hành viên chính và quản trị viên. Thiết lập cấp phép thành viên như sử dụng hình đại diện, gửi tin nhắn… ; thiết lập cấp phép điều hành viên chính như duyệt bài viết, quản lí chủ đề, quản lí bảng cấm… và cuối cùng thiết lập cấp phép quản trị viên như thay đổi thiết lập cấp phép, tạo các thẻ BBCode tùy biến, quản lí chuyên mục… Những thiết lập cấp phép thành viên riêng lẻ ít khi cần thay đổi, phương pháp chúng tôi khuyên bạn nên dùng là đặt những thành viên vào chung trong nhóm và thiết lập cấp phép cho nhóm sẽ dễ dàng hơn.',
-	'ACP_ADMIN_ROLES_EXPLAIN'					=> 'Với công cụ này, bạn có thể quản lí những nhiệm vụ cho thiết lập cấp phép quản trị viên. Những nhiệm vụ là các thiết lập cấp phép có ảnh hưởng, nếu bạn thay đổi một loại nhiệm vụ đã được chỉ định thì cũng đồng nghĩa với việc bạn thay đổi thiết lập cấp phép.',
-	'ACP_FORUM_ROLES_EXPLAIN'					=> 'Với công cụ này, bạn có thể quản lí những nhiệm vụ cho thiết lập cấp phép chuyên mục. Những nhiệm vụ là các thiết lập cấp phép có ảnh hưởng, nếu bạn thay đổi một loại nhiệm vụ đã được chỉ định thì cũng đồng nghĩa với việc bạn thay đổi thiết lập cấp phép.',
-	'ACP_MOD_ROLES_EXPLAIN'						=> 'Với công cụ này, bạn có thể quản lí những nhiệm vụ cho thiết lập cấp phép điều hành viên. Những nhiệm vụ là các thiết lập cấp phép có ảnh hưởng, nếu bạn thay đổi một loại nhiệm vụ đã được chỉ định thì cũng đồng nghĩa với việc bạn thay đổi thiết lập cấp phép.',
-	'ACP_USER_ROLES_EXPLAIN'					=> 'Với công cụ này, bạn có thể quản lí những nhiệm vụ cho thiết lập cấp phép thành viên. Những nhiệm vụ là các thiết lập cấp phép có ảnh hưởng, nếu bạn thay đổi một loại nhiệm vụ đã được chỉ định thì cũng đồng nghĩa với việc bạn thay đổi thiết lập cấp phép.',
-	'ACP_USERS_FORUM_PERMISSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể chỉ định cấp phép chuyên mục dành cho thành viên.',
-	'ACP_USERS_PERMISSIONS_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉ định những thiết lập cấp phép chung cho thành viên - cấp phép thành viên, cấp phép điều hành viên chính và quản trị viên. Thiết lập cấp phép thành viên ví dụ như sử dụng hình đại diện, gửi tin nhắn… ; thiết lập cấp phép điều hành viên chính như duyệt bài viết, quản lí chủ đề, quản lí bảng cấm… và cuối cùng thiết lập cấp phép quản trị viên như thay đổi thiết lập cấp phép, tạo các thẻ BBCode tùy biến, quản lí chuyên mục… Để thay đổi những thiết lập này cho số lượng nhiều thành viên, bạn hãy sử dụng trang thiết lập cấp phép nhóm. Những thiết lập cấp phép thành viên riêng lẻ ít khi cần thay đổi, phương pháp chúng tôi khuyên bạn nên dùng là đặt những thành viên vào chung trong nhóm và thiết lập cấp phép cho nhóm sẽ dễ dàng hơn.',
-	'ACP_VIEW_ADMIN_PERMISSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể xem những thiết lập cấp phép quản trị viên đã được chỉ định cho thành viên/nhóm vừa chọn.',
-	'ACP_VIEW_GLOBAL_MOD_PERMISSIONS_EXPLAIN'	=> 'Với công cụ này, bạn có thể xem những thiết lập cấp phép điều hành viên chính đã được chỉ định cho thành viên/nhóm vừa chọn.',
-	'ACP_VIEW_FORUM_PERMISSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể xem những thiết lập cấp phép chuyên mục đã được chỉ định cho thành viên/nhóm và chuyên mục vừa chọn.',
-	'ACP_VIEW_FORUM_MOD_PERMISSIONS_EXPLAIN'	=> 'Với công cụ này, bạn có thể xem những thiết lập cấp phép điều hành viên đã được chỉ định cho thành viên/nhóm và chuyên mục vừa chọn.',
-	'ACP_VIEW_USER_PERMISSIONS_EXPLAIN'			=> 'Với công cụ này, bạn có thể xem những thiết lập cấp phép thành viên đã được chỉ định cho thành viên/nhóm vừa chọn.',
+	'ACP_GLOBAL_MODERATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể gán thiết lập cấp phép của điều hành viên chính cho các thành viên hay nhóm. Những điều hành viên chính đều giống với các điều hành viên bình thường ngoại trừ việc họ có thể truy cập bất cứ chuyên mục nào.',
+	'ACP_GROUPS_FORUM_PERMISSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể gán những cấp phép chuyên mục dành cho nhóm.',
+	'ACP_GROUPS_PERMISSIONS_EXPLAIN'			=> 'Với công cụ này, bạn có thể gán những thiết lập cấp phép chung cho cấp phép thành viên - nhóm, cấp phép điều hành viên chính và quản trị viên. Thiết lập cấp phép thành viên như sử dụng hình đại diện, gửi tin nhắn… ; thiết lập cấp phép điều hành viên chính như duyệt bài viết, quản lí chủ đề, quản lí bảng cấm… và cuối cùng thiết lập cấp phép quản trị viên như thay đổi thiết lập cấp phép, tạo các thẻ BBCode tùy biến, quản lí chuyên mục… Những thiết lập cấp phép thành viên riêng lẻ ít khi cần thay đổi, phương pháp chúng tôi khuyên bạn nên dùng là đặt những thành viên vào chung trong nhóm và thiết lập cấp phép cho nhóm sẽ dễ dàng hơn.',
+	'ACP_ADMIN_ROLES_EXPLAIN'					=> 'Với công cụ này, bạn có thể quản lí những nhiệm vụ cho thiết lập cấp phép quản trị viên. Những nhiệm vụ là các thiết lập cấp phép có ảnh hưởng, nếu bạn thay đổi một loại nhiệm vụ đã được gán thì cũng đồng nghĩa với việc bạn thay đổi thiết lập cấp phép.',
+	'ACP_FORUM_ROLES_EXPLAIN'					=> 'Với công cụ này, bạn có thể quản lí những nhiệm vụ cho thiết lập cấp phép chuyên mục. Những nhiệm vụ là các thiết lập cấp phép có ảnh hưởng, nếu bạn thay đổi một loại nhiệm vụ đã được gán thì cũng đồng nghĩa với việc bạn thay đổi thiết lập cấp phép.',
+	'ACP_MOD_ROLES_EXPLAIN'						=> 'Với công cụ này, bạn có thể quản lí những nhiệm vụ cho thiết lập cấp phép điều hành viên. Những nhiệm vụ là các thiết lập cấp phép có ảnh hưởng, nếu bạn thay đổi một loại nhiệm vụ đã được gán thì cũng đồng nghĩa với việc bạn thay đổi thiết lập cấp phép.',
+	'ACP_USER_ROLES_EXPLAIN'					=> 'Với công cụ này, bạn có thể quản lí những nhiệm vụ cho thiết lập cấp phép thành viên. Những nhiệm vụ là các thiết lập cấp phép có ảnh hưởng, nếu bạn thay đổi một loại nhiệm vụ đã được gán thì cũng đồng nghĩa với việc bạn thay đổi thiết lập cấp phép.',
+	'ACP_USERS_FORUM_PERMISSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể gán cấp phép chuyên mục dành cho thành viên.',
+	'ACP_USERS_PERMISSIONS_EXPLAIN'				=> 'Với công cụ này, bạn có thể gán những thiết lập cấp phép chung cho thành viên - cấp phép thành viên, cấp phép điều hành viên chính và quản trị viên. Thiết lập cấp phép thành viên ví dụ như sử dụng hình đại diện, gửi tin nhắn… ; thiết lập cấp phép điều hành viên chính như duyệt bài viết, quản lí chủ đề, quản lí bảng cấm… và cuối cùng thiết lập cấp phép quản trị viên như thay đổi thiết lập cấp phép, tạo các thẻ BBCode tùy biến, quản lí chuyên mục… Để thay đổi những thiết lập này cho số lượng nhiều thành viên, bạn hãy sử dụng trang thiết lập cấp phép nhóm. Những thiết lập cấp phép thành viên riêng lẻ ít khi cần thay đổi, phương pháp chúng tôi khuyên bạn nên dùng là đặt những thành viên vào chung trong nhóm và thiết lập cấp phép cho nhóm sẽ dễ dàng hơn.',
+	'ACP_VIEW_ADMIN_PERMISSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể xem những thiết lập cấp phép quản trị viên đã được gán cho thành viên/nhóm vừa chọn.',
+	'ACP_VIEW_GLOBAL_MOD_PERMISSIONS_EXPLAIN'	=> 'Với công cụ này, bạn có thể xem những thiết lập cấp phép điều hành viên chính đã được gán cho thành viên/nhóm vừa chọn.',
+	'ACP_VIEW_FORUM_PERMISSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể xem những thiết lập cấp phép chuyên mục đã được gán cho thành viên/nhóm và chuyên mục vừa chọn.',
+	'ACP_VIEW_FORUM_MOD_PERMISSIONS_EXPLAIN'	=> 'Với công cụ này, bạn có thể xem những thiết lập cấp phép điều hành viên đã được gán cho thành viên/nhóm và chuyên mục vừa chọn.',
+	'ACP_VIEW_USER_PERMISSIONS_EXPLAIN'			=> 'Với công cụ này, bạn có thể xem những thiết lập cấp phép thành viên đã được gán cho thành viên/nhóm vừa chọn.',
 
 	'ADD_GROUPS'				=> 'Thêm nhóm',
 	'ADD_PERMISSIONS'			=> 'Thêm thiết lập cấp phép',
@@ -131,13 +131,13 @@ $lang = array_merge($lang, array(
 
 	'DEFAULT'					=> 'Mặc định',
 	'DELETE_ROLE'				=> 'Xóa vài trò',
-	'DELETE_ROLE_CONFIRM'		=> 'Bạn có chắc chắn muốn gỡ bỏ nhiệm vụ này? Những mục đã được chỉ định nhiệm vụ này sẽ không bị mất những thiết lập cấp phép.',
+	'DELETE_ROLE_CONFIRM'		=> 'Bạn có chắc chắn muốn gỡ bỏ nhiệm vụ này? Những mục đã được gán nhiệm vụ này sẽ không bị mất những thiết lập cấp phép.',
 	'DISPLAY_ROLE_ITEMS'		=> 'Xem những mục sử dụng nhiệm vụ này',
 
 	'EDIT_PERMISSIONS'			=> 'Sửa thiết lập cấp phép',
 	'EDIT_ROLE'					=> 'Sửa nhiệm vụ',
 
-	'GROUPS_NOT_ASSIGNED'		=> 'Không có nhóm nào được chỉ định nhiệm vụ này',
+	'GROUPS_NOT_ASSIGNED'		=> 'Không có nhóm nào được gán nhiệm vụ này',
 
 	'LOOK_UP_GROUP'				=> 'Tra cứu nhóm',
 	'LOOK_UP_USER'				=> 'Tra cứu thành viên',
@@ -146,14 +146,14 @@ $lang = array_merge($lang, array(
 	'MANAGE_USERS'		=> 'Quản lí thành viên',
 
 	'NO_AUTH_SETTING_FOUND'		=> 'Thiết lập cấp phép không xác định.',
-	'NO_ROLE_ASSIGNED'			=> 'Không có nhiệm vụ nào được chỉ định…',
+	'NO_ROLE_ASSIGNED'			=> 'Không có nhiệm vụ nào được gán…',
 	'NO_ROLE_ASSIGNED_EXPLAIN'	=> 'Thiết lập nhiệm vụ này sẽ không thay đổi những thiết lập cấp phép. Nếu bạn muốn không thiết lập/gỡ bỏ tất cả thiết lập cấp phép, bạn nên bấm vào liên kết <samp>Chọn tất cả không</samp>.',
 	'NO_ROLE_AVAILABLE'			=> 'Không có nhiệm vụ nào hiện tại',
 	'NO_ROLE_NAME_SPECIFIED'	=> 'Bạn chưa nhập tên của nhiệm vụ.',
 	'NO_ROLE_SELECTED'			=> 'Không thể tìm thấy nhiệm vụ.',
 	'NO_USER_GROUP_SELECTED'	=> 'Bạn chưa chọn bất kì thành viên hay nhóm nào.',
 
-	'ONLY_FORUM_DEFINED'	=> 'Bạn chỉ có thể chỉ định những chuyên mục trong danh sách chọn. Bạn cũng phải chọn ít nhất là một thành viên hay một nhóm.',
+	'ONLY_FORUM_DEFINED'	=> 'Bạn chỉ có thể chọn những chuyên mục nằm trong danh sách. Bạn cũng phải chọn ít nhất là một thành viên hay một nhóm.',
 
 	'PERMISSION_APPLIED_TO_ALL'		=> 'Những thiết lập cấp phép và nhiệm vụ sẽ được áp dụng đến tất cả đối tượng mà bạn đã chọn',
 	'PLUS_SUBFORUMS'				=> '+ Chuyên mục con',
@@ -163,7 +163,7 @@ $lang = array_merge($lang, array(
 	'RESULTING_PERMISSION'			=> 'Kết quả cấp phép',
 	'ROLE'							=> 'Nhiệm vụ',
 	'ROLE_ADD_SUCCESS'				=> 'Nhiệm vụ mới đã được thêm vào thành công.',
-	'ROLE_ASSIGNED_TO'				=> 'Thành viên/nhóm đã được chỉ định thành %s',
+	'ROLE_ASSIGNED_TO'				=> 'Thành viên/nhóm đã được gán nhiệm vụ %s',
 	'ROLE_DELETED'					=> 'Nhiệm vụ đã được gỡ bỏ thành công.',
 	'ROLE_DESCRIPTION'				=> 'Giới thiệu về nhiệm vụ',
 
@@ -180,7 +180,7 @@ $lang = array_merge($lang, array(
 	'ROLE_FORUM_POLLS'			=> 'Truy cập bình thường + Bình chọn',
 	'ROLE_FORUM_READONLY'		=> 'Truy cập chỉ được phép xem',
 	'ROLE_FORUM_STANDARD'		=> 'Truy cập bình thường',
-	'ROLE_FORUM_NEW_MEMBER'		=> 'Thành viên mới đăng ký',
+	'ROLE_FORUM_NEW_MEMBER'		=> 'Truy cập dành cho thành viên mới',
 	'ROLE_MOD_FULL'				=> 'Điều hành toàn quyền',
 	'ROLE_MOD_QUEUE'			=> 'Điều hành kiểm duyệt nội dung',
 	'ROLE_MOD_SIMPLE'			=> 'Điều hành đơn giản',
@@ -190,7 +190,7 @@ $lang = array_merge($lang, array(
 	'ROLE_USER_NOAVATAR'		=> 'Không sử dụng hình đại diện',
 	'ROLE_USER_NOPM'			=> 'Không sử dụng tin nhắn',
 	'ROLE_USER_STANDARD'		=> 'Chức năng bình thường',
-	'ROLE_USER_NEW_MEMBER'		=> 'Thành viên mới đăng ký',
+	'ROLE_USER_NEW_MEMBER'		=> 'Chức năng dành cho thành viên mới',
 
 	'ROLE_DESCRIPTION_ADMIN_FORUM'			=> 'Có thể truy cập quản lí chuyên mục và thiết lập cấp phép chuyên mục.',
 	'ROLE_DESCRIPTION_ADMIN_FULL'			=> 'Có thể sử dụng tất cả chức năng của quản trị viên trong hệ thống.<br />Không khuyến cáo sử dụng.',
@@ -223,7 +223,7 @@ $lang = array_merge($lang, array(
 	'ROLE_EDIT_SUCCESS'				=> 'Nhiệm vụ đã được chỉnh sửa thành công.',
 	'ROLE_NAME'						=> 'Tên nhiệm vụ',
 	'ROLE_NAME_ALREADY_EXIST'		=> 'Nhiệm vụ được đặt tên là <strong>%s</strong> đã được sử dụng cho loại cấp phép xác định.',
-	'ROLE_NOT_ASSIGNED'				=> 'Nhiệm vụ chưa được chỉ định cho bất cứ thành viên nào.',
+	'ROLE_NOT_ASSIGNED'				=> 'Nhiệm vụ chưa được gán cho bất cứ thành viên nào.',
 
 	'SELECTED_FORUM_NOT_EXIST'		=> 'Chuyên mục vừa chọn không tồn tại.',
 	'SELECTED_GROUP_NOT_EXIST'		=> 'Nhóm vừa chọn không tồn tại.',
@@ -281,11 +281,11 @@ $lang = array_merge($lang, array(
 	'TRACE_WHO'								=> 'Ai?',
 	'TRACE_TOTAL'							=> 'Toàn bộ',
 
-	'USERS_NOT_ASSIGNED'			=> 'Không có thành viên nào được chỉ định nhiệm vụ này',
-	'USER_IS_MEMBER_OF_DEFAULT'		=> 'là một thành viên của những nhóm đã chỉ định trước dưới đây',
-	'USER_IS_MEMBER_OF_CUSTOM'		=> 'là một thành viên của những nhóm thành viên đã chỉ định dưới đây',
+	'USERS_NOT_ASSIGNED'			=> 'Không có thành viên nào được gán nhiệm vụ này',
+	'USER_IS_MEMBER_OF_DEFAULT'		=> 'là một thành viên của những nhóm đã gán trước dưới đây',
+	'USER_IS_MEMBER_OF_CUSTOM'		=> 'là một thành viên của những nhóm thành viên đã gán dưới đây',
 
-	'VIEW_ASSIGNED_ITEMS'	=> 'Xem những mục đã chỉ định',
+	'VIEW_ASSIGNED_ITEMS'	=> 'Xem những mục đã gán',
 	'VIEW_LOCAL_PERMS'		=> 'Xem thiết lập cấp phép riêng',
 	'VIEW_GLOBAL_PERMS'		=> 'Xem thiết lập cấp phép chung',
 	'VIEW_PERMISSIONS'		=> 'Xem thiết lập cấp phép',

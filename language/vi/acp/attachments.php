@@ -4,7 +4,7 @@
 * acp_attachments [Vietnamese]
 *
 * @package language
-* @version $Id: attachments.php 28 2011-03-30 10:14:00Z nedka $
+* @version $Id: attachments.php 29 2013-06-26 19:12:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -66,7 +66,7 @@ $lang = array_merge($lang, array(
 	'ATTACH_EXT_GROUPS_URL'				=> 'Nhóm tập tin',
 	'ATTACH_ID'							=> 'Số ID tập tin',
 	'ATTACH_MAX_FILESIZE'				=> 'Dung lượng tập tin tối đa',
-	'ATTACH_MAX_FILESIZE_EXPLAIN'		=> 'Dung lượng đính kèm tập tin tối đa cho phép của mỗi tập tin. Nhập số <strong>0</strong> để không hạn chế dung lượng tập tin.',
+	'ATTACH_MAX_FILESIZE_EXPLAIN'		=> 'Dung lượng đính kèm tập tin tối đa cho phép của mỗi tập tin. Nhập số <strong>0</strong> để hạn chế dung lượng tập tin thông qua cấu hình PHP.',
 	'ATTACH_MAX_PM_FILESIZE'			=> 'Dung lượng tập tin tối đa trong tin nhắn',
 	'ATTACH_MAX_PM_FILESIZE_EXPLAIN'	=> 'Dung lượng tối đa được phép sử dụng cho mỗi tập tin được đính kèm trong tin nhắn. Nhập số <strong>0</strong> để không hạn chế dung lượng này.',
 	'ATTACH_ORPHAN_URL'					=> 'Tập tin đính kèm không được sử dụng',

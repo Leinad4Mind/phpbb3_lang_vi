@@ -4,7 +4,7 @@
 * acp_common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php 101 2011-12-04 23:48:00Z nedka $
+* @version $Id: common.php 102 2013-06-26 19:21:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -414,7 +414,7 @@ $lang = array_merge($lang, array(
 	'INACTIVE_REASON_UNKNOWN'		=> 'Không biết',
 	'INACTIVE_USERS'				=> 'Thành viên chưa kích hoạt',
 	'INACTIVE_USERS_EXPLAIN'		=> 'Dưới đây là danh sách các thành viên đã đăng ký nhưng tài khoản của họ vẫn chưa được kích hoạt. Bạn có thể kích hoạt, xóa tài khoản của họ hay nhắc nhở bằng email những thành viên này nếu bạn muốn.',
-	'INACTIVE_USERS_EXPLAIN_INDEX'	=> 'Dưới đây là danh sách 10 thành viên vừa mới đăng ký nhưng chưa kích hoạt tài khoản của mình. Bạn có thể xem toàn bộ danh sách này từ trình đơn thích hợp bên trái hoặc bấm vào liên kết bên dưới để chuyển đến bảng điều khiển cho phép bạn có thể kích hoạt, xóa tài khoản hay nhắc nhở bằng email những thành viên này nếu bạn muốn.',
+	'INACTIVE_USERS_EXPLAIN_INDEX'	=> 'Dưới đây là danh sách 10 thành viên vừa mới đăng ký nhưng chưa kích hoạt tài khoản của mình. Tài khoản chưa kích hoạt vì việc kích hoạt được yêu cầu khi đăng ký nhưng những thành viên này chưa tiến hành kích hoạt, hoặc họ bị ngưng kích hoạt bởi một quản trị viên. Liên kết bên dưới sẽ cho bạn xem danh sách tất cả các tài khoản này và bạn có thể kích hoạt, xóa hay nhắc nhở kích hoạt (qua email) những thành viên này.',
 
 	'NO_INACTIVE_USERS'	=> 'Không có thành viên nào chưa kích hoạt',
 

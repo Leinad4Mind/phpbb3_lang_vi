@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version $Id: ucp.php 108 2011-12-03 14:55:00Z nedka $
+* @version $Id: ucp.php 109 2013-06-26 19:10:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -138,18 +138,19 @@ $lang = array_merge($lang, array(
 	'VC_REFRESH'					=> 'Nạp lại mã xác nhận',
 	'VC_REFRESH_EXPLAIN'			=> 'Nếu không nhìn rõ mã xác nhận hiện tại, bạn có thể yêu cầu một mã xác nhận mới.',
 
-	'CONFIRM_PASSWORD'			=> 'Xác nhận mật khẩu',
-	'CONFIRM_PASSWORD_EXPLAIN'	=> 'Bạn chỉ cần xác nhận lại mật khẩu nếu như bạn muốn thay đổi mật khẩu hiện tại của mình ở trên.',
-	'COPPA_BIRTHDAY'			=> 'Để tiếp tục thủ tục đăng ký thành viên, bạn hãy vui lòng cho chúng tôi biết năm sinh của mình.',
-	'COPPA_COMPLIANCE'			=> 'Thoả thuận COPPA',
-	'COPPA_EXPLAIN'				=> 'Lưu ý rằng bằng việc chấp nhận thoả thuận COPPA, tài khoản của bạn sẽ được tạo. Tuy nhiên, tài khoản này sẽ không được kích hoạt cho đến khi cha mẹ hay người bảo hộ của bạn đồng ý cho bạn tham gia vào website. Bạn sẽ nhận được email thông báo về điều này với nhiều thông tin chi tiết và hướng dẫn thủ tục đăng ký COPPA.',
-	'CREATE_FOLDER'				=> 'Thêm thư mục…',
-	'CURRENT_IMAGE'				=> 'Hình đại diện hiện tại',
-	'CURRENT_PASSWORD'			=> 'Mật khẩu hiện tại',
-	'CURRENT_PASSWORD_EXPLAIN'	=> 'Bạn phải xác nhận mật khẩu hiện tại nếu bạn muốn thay đổi mật khẩu này, địa chỉ email hiện tại hay tên thành viên của mình.',
-	'CUR_PASSWORD_EMPTY'		=> 'Bạn chưa nhập mật khẩu hiện tại của mình.',
-	'CUR_PASSWORD_ERROR'		=> 'Mật khẩu hiện tại bạn vừa nhập không chính xác.',
-	'CUSTOM_DATEFORMAT'			=> 'Tùy chọn…',
+	'CONFIRM_PASSWORD'					=> 'Xác nhận mật khẩu',
+	'CONFIRM_PASSWORD_EXPLAIN'			=> 'Bạn chỉ cần xác nhận lại mật khẩu nếu như bạn muốn thay đổi mật khẩu hiện tại của mình ở trên.',
+	'COPPA_BIRTHDAY'					=> 'Để tiếp tục thủ tục đăng ký thành viên, bạn hãy vui lòng cho chúng tôi biết năm sinh của mình.',
+	'COPPA_COMPLIANCE'					=> 'Thoả thuận COPPA',
+	'COPPA_EXPLAIN'						=> 'Lưu ý rằng bằng việc chấp nhận thoả thuận COPPA, tài khoản của bạn sẽ được tạo. Tuy nhiên, tài khoản này sẽ không được kích hoạt cho đến khi cha mẹ hay người bảo hộ của bạn đồng ý cho bạn tham gia vào website. Bạn sẽ nhận được email thông báo về điều này với nhiều thông tin chi tiết và hướng dẫn thủ tục đăng ký COPPA.',
+	'CREATE_FOLDER'						=> 'Thêm thư mục…',
+	'CURRENT_IMAGE'						=> 'Hình đại diện hiện tại',
+	'CURRENT_PASSWORD'					=> 'Mật khẩu hiện tại',
+	'CURRENT_PASSWORD_EXPLAIN'			=> 'Bạn phải nhập vào mật khẩu nếu bạn muốn thay đổi địa chỉ email hay tên thành viên của mình.',
+	'CURRENT_CHANGE_PASSWORD_EXPLAIN'	=> 'Để thay đổi mật khẩu, địa chỉ email hay tên thành viên, bạn phải xác nhận mật khẩu hiện tại của mình.',
+	'CUR_PASSWORD_EMPTY'				=> 'Bạn chưa nhập mật khẩu hiện tại của mình.',
+	'CUR_PASSWORD_ERROR'				=> 'Mật khẩu hiện tại bạn vừa nhập không chính xác.',
+	'CUSTOM_DATEFORMAT'					=> 'Tùy chọn…',
 
 	'DEFAULT_ACTION'			=> 'Thiết lập mặc định',
 	'DEFAULT_ACTION_EXPLAIN'	=> 'Những thiết lập này sẽ được tạo nhanh nếu như không có mục nào ở trên có thể dùng được.',
@@ -393,10 +394,11 @@ $lang = array_merge($lang, array(
 	'RESIGN_SELECTED'					=> 'Không tham gia nữa vào nhóm đã chọn',
 	'RETURN_FOLDER'						=> '%1$sQuay về thư mục trước%2$s',
 	'RETURN_UCP'						=> '%sQuay về bảng thiết lập cá nhân%s',
-	'RULE_ADDED'						=> 'Qui định cá nhân đã được thêm vào thành công.',
-	'RULE_ALREADY_DEFINED'				=> 'Qui định cá nhân này đã được xác định rồi.',
-	'RULE_DELETED'						=> 'Qui định cá nhân đã được gỡ bỏ thành công.',
-	'RULE_NOT_DEFINED'					=> 'Qui định cá nhân không được xác định chính xác.',
+	'RULE_ADDED'						=> 'Bộ lọc cá nhân đã được thêm vào thành công.',
+	'RULE_ALREADY_DEFINED'				=> 'Bộ lọc cá nhân này đã được xác định rồi.',
+	'RULE_DELETED'						=> 'Bộ lọc cá nhân đã được gỡ bỏ thành công.',
+	'RULE_LIMIT_REACHED'				=> 'Bạn không thể thêm bộ lọc tin nhắn nữa. Bạn đã tạo quá số lượng cho phép.',
+	'RULE_NOT_DEFINED'					=> 'Bộ lọc cá nhân không được xác định chính xác.',
 	'RULE_REMOVED_MESSAGE'				=> 'Một tin nhắn đã bị gỡ bỏ căn cứ theo bộ lọc tin nhắn.',
 	'RULE_REMOVED_MESSAGES'				=> '%d tin nhắn đã bị gỡ bỏ căn cứ theo bộ lọc tin nhắn.',
 

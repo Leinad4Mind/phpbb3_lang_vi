@@ -4,7 +4,7 @@
 * acp_users [Vietnamese]
 *
 * @package language
-* @version $Id: users.php 32 2011-03-30 11:14:00Z nedka $
+* @version $Id: users.php 33 2013-06-26 19:46:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -68,7 +68,7 @@ $lang = array_merge($lang, array(
 
 	'DELETE_POSTS'			=> 'Xóa bài viết',
 	'DELETE_USER'			=> 'Xóa thành viên',
-	'DELETE_USER_EXPLAIN'	=> 'Lưu ý rằng việc xóa thành viên này sẽ xóa vĩnh viễn và không thể phục hồi lại được.',
+	'DELETE_USER_EXPLAIN'	=> 'Lưu ý rằng việc xóa thành viên này là xóa vĩnh viễn và không thể phục hồi lại. Những tin nhắn cá nhân mà thành viên này đã gửi nhưng người nhận chưa xem cũng sẽ được xóa khỏi hộp thư nhận của họ.',
 
 	'FORCE_REACTIVATION_SUCCESS'	=> 'Việc yêu cầu thành viên kích hoạt lại tài khoản của mình đã được thực hiện thành công.',
 	'FOUNDER'						=> 'Người sáng lập',
@@ -133,6 +133,7 @@ $lang = array_merge($lang, array(
 	'USER_GROUP_SPECIAL'			=> 'Nhóm đã được chỉ định trước, là thành viên của nhóm',
 	'USER_LIFTED_NR'				=> 'Đã gỡ bỏ thành công trạng thái mới đăng ký cho thành viên này.',
 	'USER_NO_ATTACHMENTS'			=> 'Chưa đính kèm bất kì tập tin nào.',
+	'USER_NO_POSTS_TO_DELETE'		=> 'Thành viên không có bài viết nào để giữ lại hay xóa.',
 	'USER_OUTBOX_EMPTIED'			=> 'Đã dọn sạch thành công hộp thư chuyển đi của thành viên này.',
 	'USER_OUTBOX_EMPTY'				=> 'Không có tin nhắn nào trong hộp thư chuyển đi của thành viên này.',
 	'USER_OVERVIEW_UPDATED'			=> 'Thông tin chi tiết về thành viên đã được cập nhật thành công.',

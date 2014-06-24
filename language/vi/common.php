@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php 142 2011-12-03 14:21:00Z nedka $
+* @version $Id: common.php 143 2013-06-26 18:51:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -49,7 +49,7 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'TRANSLATION_INFO'	=> 'Vietnamese translation by <a href="http://www.vinabb.com/">nedka</a>', // Please do not edit or remove my copyright
+	'TRANSLATION_INFO'	=> 'Việt hóa bởi <a href="http://www.facebook.com/vinabb">nedka</a>', // Please do not edit or remove my copyright
 	'DIRECTION'			=> 'ltr',
 	'DATE_FORMAT'		=> '|d M Y|', // 01 Jan 2007 (with Relative days enabled)
 	'USER_LANG'			=> 'vi',
@@ -204,7 +204,7 @@ $lang = array_merge($lang, array(
 	'FORM_INVALID'			=> 'Mẫu dữ liệu bạn vừa gửi không hợp lệ. Hãy vui lòng thử lại.',
 	'FORUM'					=> 'Chuyên mục',
 	'FORUMS'				=> 'Chuyên mục',
-	'FORUMS_MARKED'			=> 'Các chuyên mục bạn chọn đã được đánh dấu xem rồi.',
+	'FORUMS_MARKED'			=> 'Các chuyên mục đã được đánh dấu xem rồi.',
 	'FORUM_CAT'				=> 'Diễn đàn',
 	'FORUM_INDEX'			=> 'Trang chủ',
 	'FORUM_LINK'			=> 'Chuyên mục liên kết',
@@ -463,6 +463,7 @@ $lang = array_merge($lang, array(
 	'POST_TIME'					=> 'Ngày gửi',
 	'POST_TOPIC'				=> 'Tạo chủ đề mới',
 	'POST_UNAPPROVED'			=> 'Bài viết này đang chờ được duyệt',
+	'POWERED_BY'				=> 'Sử dụng phần mềm %s',
 	'PREVIEW'					=> 'Xem trước',
 	'PREVIOUS'					=> 'Trang vừa xem', // Used in pagination
 	'PREVIOUS_STEP'				=> 'Bước vừa hoàn tất',
@@ -472,6 +473,7 @@ $lang = array_merge($lang, array(
 	'PRIVATE_MESSAGING'			=> 'Đang gửi tin nhắn',
 	'PROFILE'					=> 'Thiết lập cá nhân',
 
+	'RANK'						=> 'Xếp hạng',
 	'READING_FORUM'				=> 'Đang xem các chủ đề trong chuyên mục %s',
 	'READING_GLOBAL_ANNOUNCE'	=> 'Đang xem thông báo chung',
 	'READING_LINK'				=> 'Đang ghé thăm chuyên mục liên kết %s',

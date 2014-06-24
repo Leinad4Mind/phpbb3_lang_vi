@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php 49 2011-12-03 14:51:00Z nedka $
+* @version $Id: posting.php 50 2013-06-26 19:01:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -51,6 +51,7 @@ $lang = array_merge($lang, array(
 	'ADD_POLL'					=> 'Tạo bình chọn',
 	'ADD_POLL_EXPLAIN'			=> 'Nếu bạn không muốn thêm vào một bình chọn trong chủ đề của mình, hãy để trống phần này.',
 	'ALREADY_DELETED'			=> 'Xin lỗi, bài viết này vừa bị xóa.',
+	'ATTACH_DISK_FULL'			=> 'Dung lượng lưu trữ của hệ thống không còn đủ để gửi tập tin đính kèm.',
 	'ATTACH_QUOTA_REACHED'		=> 'Xin lỗi, dung lượng cấp phép tải lên cho diễn đàn đã hết.',
 	'ATTACH_SIG'				=> 'Đính kèm chữ ký cá nhân (Chữ ký có thể thay đổi trong phần thiết lập cá nhân)',
 

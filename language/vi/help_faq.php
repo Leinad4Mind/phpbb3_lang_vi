@@ -4,7 +4,7 @@
 * help_faq [Vietnamese]
 *
 * @package language
-* @version $Id: help_faq.php 63 2011-12-03 14:25:00Z nedka $
+* @version $Id: help_faq.php 64 2013-06-26 18:56:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -343,7 +343,7 @@ $help = array(
 	),
 	array(
 		0 => 'Tại sao hệ thống không có những chức năng khác?',
-		1 => 'Chương trình này được phát triển và thuộc bản quyền của <em>tổ chức phpBB</em>. Nếu bạn cảm thấy một chức năng mới cần được thêm vào chương trình này, hãy ghé thăm website phpBB.com của chúng tôi và xem ý kiến đánh giá của <em>tổ chức phpBB</em>. Xin đừng gửi bài yêu cầu những chức năng mới trong diễn đàn của phpBB.com bởi vì chỉ có những thành viên của phpBB trong <em>SourceForge</em> mới có nhiệm vụ phát triển những chức năng mới. Hãy đọc qua các chuyên mục trong diễn đàn để xem ý kiến của họ, dù cho thế nào chăng nữa chúng tôi cũng cần phải quyết định thật kỹ càng về những chức năng cần thiết phải làm cho chương trình này.'
+		1 => 'Chương trình này được phát triển và thuộc bản quyền của <em>tổ chức phpBB</em>. Nếu bạn cảm thấy một chức năng mới cần được thêm vào, hoặc muốn báo lỗi phần mềm, hãy vui lòng ghé thăm <a href="http://area51.phpbb.com/">khu vực Area51</a> của phpBB, nơi mà tổ chức này ghi nhận mọi sự đóng góp của bạn.'
 	),
 	array(
 		0 => 'Tôi phải liên hệ với ai về việc lạm dụng và vi phạm pháp luật liên quan đến website này?',
