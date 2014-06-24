@@ -4,8 +4,8 @@
 * viewforum [Vietnamese]
 *
 * @package language
-* @version $Id: viewforum.php 15 2008-12-13 10:45:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: viewforum.php 16 2011-03-30 10:12:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -57,15 +57,20 @@ $lang = array_merge($lang, array(
 
 	'MARK_TOPICS_READ'		=> 'Đánh dấu đã xem tất cả chủ đề',
 
-	'NEW_POSTS_HOT'			=> 'Có bài viết mới [ Nhiều người xem ]',
-	'NEW_POSTS_LOCKED'		=> 'Có bài viết mới [ Đã khóa ]',
-	'NO_NEW_POSTS_HOT'		=> 'Không có bài viết mới [ Nhiều người xem ]',
-	'NO_NEW_POSTS_LOCKED'	=> 'Không có bài viết mới [ Đã khóa ]',
-	'NO_READ_ACCESS'		=> 'Bạn không được cấp phép để xem các chủ đề trong chuyên mục này.',
+	'NEW_POSTS_HOT'				=> 'Có bài viết mới [ Nhiều người xem ]', // Not used anymore
+	'NEW_POSTS_LOCKED'			=> 'Có bài viết mới [ Đã khóa ]', // Not used anymore
+	'NO_NEW_POSTS_HOT'			=> 'Không có bài viết mới [ Nhiều người xem ]', // Not used anymore
+	'NO_NEW_POSTS_LOCKED'		=> 'Không có bài viết mới [ Đã khóa ]', // Not used anymore
+	'NO_READ_ACCESS'			=> 'Bạn không được cấp phép để xem các chủ đề trong chuyên mục này.',
+	'NO_UNREAD_POSTS_HOT'		=> 'Không có bài viết chưa xem [ Nhiều người xem ]',
+	'NO_UNREAD_POSTS_LOCKED'	=> 'Không có bài viết chưa xem [ Đã khóa ]',
 
 	'POST_FORUM_LOCKED'		=> 'Chuyên mục đã bị khóa',
 
 	'TOPICS_MARKED'			=> 'Những chủ đề trong chuyên mục này đã được đánh dấu xem rồi.',
+
+	'UNREAD_POSTS_HOT'		=> 'Bài viết chưa xem [ Nhiều người xem ]',
+	'UNREAD_POSTS_LOCKED'	=> 'Bài viết chưa xem [ Đã khóa ]',
 
 	'VIEW_FORUM'			=> 'Xem chuyên mục',
 	'VIEW_FORUM_TOPIC'		=> '1 chủ đề',

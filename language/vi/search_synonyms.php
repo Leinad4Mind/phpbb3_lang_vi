@@ -4,7 +4,7 @@
 * search_synonyms [Vietnamese]
 *
 * @package language
-* @version $Id: search_synonyms.php 5 2009-11-29 12:30:00Z nedka $
+* @version $Id: search_synonyms.php 6 2011-03-30 10:08:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -89,7 +89,7 @@ $synonyms = array(
 	'foriegn'		=> 'foreign',
 	'fourty'		=> 'forty',
 
-	'gage'			=> 'guage',
+	'gage'			=> 'gauge',
 	'geneology'		=> 'genealogy',
 	'grammer'		=> 'grammar',
 	'gray'			=> 'grey',
@@ -110,7 +110,7 @@ $synonyms = array(
 	'irrevelant'	=> 'irrelevant',
 
 	'jeweler'	=> 'jeweller',
-	'judgement'	=> 'judgment',
+	'judgment'	=> 'judgement',
 
 	'labeled'	=> 'labelled',
 	'labor'		=> 'labour',

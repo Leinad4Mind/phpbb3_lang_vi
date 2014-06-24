@@ -4,7 +4,7 @@
 * acp_users [Vietnamese]
 *
 * @package language
-* @version $Id: users.php 31 2009-07-25 23:04:00Z nedka $
+* @version $Id: users.php 32 2011-03-30 11:14:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -51,6 +51,7 @@ $lang = array_merge($lang, array(
 	'BAN_ALREADY_ENTERED'	=> 'Lệnh cấm đã được nhập vào thành công trước đây. Danh sách cấm sẽ không cần cập nhật.',
 	'BAN_SUCCESSFUL'		=> 'Lệnh cấm đã được thực hiện thành công.',
 
+	'CANNOT_BAN_ANONYMOUS'			=> 'Bạn không thể cấm tài khoản khách. Thiết lập cấp phép dành cho khách nằm trong phần <strong>Cấp phép</strong>.',
 	'CANNOT_BAN_FOUNDER'			=> 'Bạn không thể cấm tài khoản của người sáng lập.',
 	'CANNOT_BAN_YOURSELF'			=> 'Bạn không thể cấm tài khoản của chính mình.',
 	'CANNOT_DEACTIVATE_BOT'			=> 'Bạn không thể ngưng kích hoạt tài khoản của máy tìm kiếm. Hãy vui lòng ngưng kích hoạt từng máy tìm kiếm trong trang quản lí chúng.',

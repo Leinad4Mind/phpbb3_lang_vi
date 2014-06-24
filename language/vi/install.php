@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version $Id: install.php 103 2009-11-18 22:09:00Z nedka $
+* @version $Id: install.php 104 2011-03-30 10:03:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -137,7 +137,7 @@ $lang = array_merge($lang, array(
 	'DB_ERR_QUERY_FIRST_TABLE'	=> 'Có lỗi trong khi thực thi <var>query_first</var>, %s (“%s”).',
 	'DB_ERR_SELECT'				=> 'Có lỗi trong khi tiến hành truy vấn <code>SELECT</code>.',
 	'DB_HOST'					=> 'Tên miền hoặc địa chỉ DSN của máy chủ cơ sở dữ liệu',
-	'DB_HOST_EXPLAIN'			=> 'DSN là tên viết tắt của <strong>Data Source Name</strong> và chỉ được sử dụng khi bạn chọn cài đặt với ODBC.',
+	'DB_HOST_EXPLAIN'			=> 'DSN là tên viết tắt của <strong>Data Source Name</strong> và chỉ được sử dụng khi bạn chọn cài đặt với ODBC. Trên PostgreSQL, sử dụng <samp>localhost</samp> để kết nối đến máy chủ thông qua giao thức tên miền UNIX và <samp>127.0.0.1</samp> để kết nối thông qua TCP.',
 	'DB_NAME'					=> 'Tên cơ sở dữ liệu',
 	'DB_PASSWORD'				=> 'Mật khẩu kết nối cơ sở dữ liệu',
 	'DB_PORT'					=> 'Cổng máy chủ cơ sở dữ liệu',
@@ -156,6 +156,7 @@ $lang = array_merge($lang, array(
 	'DLL_MBSTRING'				=> 'Hỗ trợ loại ký tự Multi-byte',
 	'DLL_MSSQL'					=> 'MSSQL Server 2000+',
 	'DLL_MSSQL_ODBC'			=> 'MSSQL Server 2000+ qua ODBC',
+	'DLL_MSSQLNATIVE'			=> 'MSSQL Server 2005+ [ Native ]',
 	'DLL_MYSQL'					=> 'MySQL',
 	'DLL_MYSQLI'				=> 'MySQL với phần mở rộng MySQLi',
 	'DLL_ORACLE'				=> 'Oracle',
@@ -220,7 +221,8 @@ $lang = array_merge($lang, array(
 		<li>PostgreSQL 7.3+</li>
 		<li>SQLite 2.8.2+</li>
 		<li>Firebird 2.1+</li>
-		<li>MSSQL Server 2000 trở lên (trực tiếp hoặc thông qua ODBC)</li>
+		<li>MS SQL Server 2000 trở lên (trực tiếp hoặc thông qua ODBC)</li>
+		<li>MS SQL Server 2005 trở lên (tự nhiên)</li>
 		<li>Oracle</li>
 	</ul>
 
@@ -564,6 +566,7 @@ $lang = array_merge($lang, array(
 	'UPDATING_DATA'					=> 'Đang cập nhật dữ liệu',
 	'UPDATING_TO_LATEST_STABLE'		=> 'Đang cập nhật cơ sở dữ liệu đến bản phát hành tiêu chuẩn mới nhất',
 	'UPDATED_VERSION'				=> 'Phiên bản đã cập nhật',
+	'UPGRADE_INSTRUCTIONS'			=> 'Bản nâng cấp <strong>%1$s</strong> đã được phát hành. Hãy vui lòng xem qua <a href="%2$s" title="%2$s"><strong>thông báo phát hành</strong></a> để tìm hiểu thông tin về các chức năng mới và cách thức nâng cấp.',
 	'UPLOAD_METHOD'					=> 'Phương pháp tải lên',
 
 	'UPDATE_DB_SUCCESS'	=> 'Cơ sở dữ liệu của hệ thống đã được cập nhật thành công.',
@@ -590,16 +593,6 @@ $lang = array_merge($lang, array(
 	'CONFIG_SITENAME'			=> 'yourdomain.com',
 
 	'DEFAULT_INSTALL_POST'		=> 'Đây là bài viết mẫu được tạo ra trong quá trình cài đặt hệ thống của bạn. Mọi thứ dường như đang hoạt động tốt. Bạn có thể xóa bài viết này nếu thích và tiếp tục công việc thiết lập hệ thống. Trong suốt quá trình thực thi cài đặt, nhóm chuyên mục và chuyên mục mẫu này đã được cấp phép hợp lệ sẵn cho các nhóm thành viên như: quản trị viên, điều hành viên, máy tìm kiếm, khách, thành viên và các thành viên theo điều khoản COPPA. Bạn cũng có thể xóa nhóm chuyên mục nháp và chuyên mục nháp này nhưng đừng quên cấp phép lại chuyên mục mỗi khi tạo mới sau này cho những nhóm thành viên bên trên. Chúng tôi khuyên bạn nên đổi tên nhóm chuyên mục nháp và chuyên mục nháp này. Sau đó, mỗi khi tạo mới chuyên mục, bạn hãy chọn sao chép thiết lập cấp phép từ chúng. Chúc vui vẻ!',
-
-	'EXT_GROUP_ARCHIVES'			=> 'Tập tin lưu trữ',
-	'EXT_GROUP_DOCUMENTS'			=> 'Tập tin văn bản',
-	'EXT_GROUP_DOWNLOADABLE_FILES'	=> 'Tập tin cho tải về',
-	'EXT_GROUP_FLASH_FILES'			=> 'Tập tin Flash',
-	'EXT_GROUP_IMAGES'				=> 'Tập tin hình ảnh',
-	'EXT_GROUP_PLAIN_TEXT'			=> 'Tập tin văn bản thuần túy',
-	'EXT_GROUP_QUICKTIME_MEDIA'		=> 'Tập tin QuickTime Media',
-	'EXT_GROUP_REAL_MEDIA'			=> 'Tập tin Real Media',
-	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Tập tin Windows Media',
 
 	'FORUMS_FIRST_CATEGORY'		=> 'Nhóm chuyên mục nháp',
 	'FORUMS_TEST_FORUM_DESC'	=> 'Nội dung giới thiệu của chuyên mục nháp.',

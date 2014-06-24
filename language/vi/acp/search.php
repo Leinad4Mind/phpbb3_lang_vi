@@ -4,7 +4,7 @@
 * acp_search [Vietnamese]
 *
 * @package language
-* @version $Id: search.php 31 2009-05-07 18:11:00Z nedka $
+* @version $Id: search.php 32 2011-03-30 11:11:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -61,13 +61,15 @@ $lang = array_merge($lang, array(
 	'DELETING_INDEX_IN_PROGRESS'			=> 'Đang tiến hành xóa chỉ mục',
 	'DELETING_INDEX_IN_PROGRESS_EXPLAIN'	=> 'Phương pháp tìm kiếm hiện tại đang dọn dẹp chỉ mục tìm kiếm của nó. Quá trình này có thế mất một vài phút.',
 
-	'FULLTEXT_MYSQL_INCOMPATIBLE_VERSION'	=> 'Phương pháp tìm kiếm FULLTEXT với MySQL chỉ có thể sử dụng được với phiên bản MySQL4 trở lên.',
-	'FULLTEXT_MYSQL_MBSTRING'				=> 'Hỗ trợ những ký tự UTF-8 không thuộc bảng chữ cái Latinh sử dụng <samp>mbstring</samp>:',
-	'FULLTEXT_MYSQL_MBSTRING_EXPLAIN'		=> 'Nếu <samp>PCRE</samp> không có thuộc tính hỗ trợ các ký tự Unicode, phương pháp tìm kiếm sẽ cố gắng sử dụng công cụ biểu thức bình thường của <samp>mbstring</samp>.',
-	'FULLTEXT_MYSQL_NOT_MYISAM'				=> 'Những chỉ mục FULLTEXT của MySQL chỉ có thể được sử dụng với các table MyISAM.',
-	'FULLTEXT_MYSQL_PCRE'					=> 'Hỗ trợ những ký tự UTF-8 không thuộc bảng chữ cái Latinh sử dụng <samp>PCRE</samp>:',
-	'FULLTEXT_MYSQL_PCRE_EXPLAIN'			=> 'Phương pháp tìm kiếm nàu yêu cầu thuộc tính hỗ trợ các ký tự Unicode của <samp>PCRE</samp>, chỉ có sẵn trong phiên bản PHP 4.4, 5.1 trở lên, nếu như bạn muốn tìm kiếm những ký tự không thuộc bảng chữ cái Latinh.',
-	'FULLTEXT_MYSQL_TOTAL_POSTS'			=> 'Số bài viết đã được lập chỉ mục',
+	'FULLTEXT_MYSQL_INCOMPATIBLE_VERSION'		=> 'Phương pháp tìm kiếm FULLTEXT với MySQL chỉ có thể sử dụng được với phiên bản MySQL4 trở lên.',
+	'FULLTEXT_MYSQL_MBSTRING'					=> 'Hỗ trợ những ký tự UTF-8 không thuộc bảng chữ cái Latinh sử dụng <samp>mbstring</samp>:',
+	'FULLTEXT_MYSQL_MAX_SEARCH_CHARS_EXPLAIN'	=> 'Những từ khóa ít hơn số ký tự này mới được lập chỉ mục cho việc tìm kiếm. Chỉ có bạn hoặc người quản lí máy chủ mới có thể thay đổi thiết lập này thông qua việc cấu hình MySQL.',
+	'FULLTEXT_MYSQL_MBSTRING_EXPLAIN'			=> 'Nếu <samp>PCRE</samp> không có thuộc tính hỗ trợ các ký tự Unicode, phương pháp tìm kiếm sẽ cố gắng sử dụng công cụ biểu thức bình thường của <samp>mbstring</samp>.',
+	'FULLTEXT_MYSQL_MIN_SEARCH_CHARS_EXPLAIN'	=> 'Những từ khóa nhiều hơn số ký tự này mới được lập chỉ mục cho việc tìm kiếm. Chỉ có bạn hoặc người quản lí máy chủ mới có thể thay đổi thiết lập này thông qua việc cấu hình MySQL.',
+	'FULLTEXT_MYSQL_NOT_MYISAM'					=> 'Những chỉ mục FULLTEXT của MySQL chỉ có thể được sử dụng với các table MyISAM.',
+	'FULLTEXT_MYSQL_PCRE'						=> 'Hỗ trợ những ký tự UTF-8 không thuộc bảng chữ cái Latinh sử dụng <samp>PCRE</samp>:',
+	'FULLTEXT_MYSQL_PCRE_EXPLAIN'				=> 'Phương pháp tìm kiếm nàu yêu cầu thuộc tính hỗ trợ các ký tự Unicode của <samp>PCRE</samp>, chỉ có sẵn trong phiên bản PHP 4.4, 5.1 trở lên, nếu như bạn muốn tìm kiếm những ký tự không thuộc bảng chữ cái Latinh.',
+	'FULLTEXT_MYSQL_TOTAL_POSTS'				=> 'Số bài viết đã được lập chỉ mục',
 
 	'GENERAL_SEARCH_SETTINGS'				=> 'Thiết lập tìm kiếm tổng quát',
 	'GO_TO_SEARCH_INDEX'					=> 'Chuyển đến trang tìm kiếm',

@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php 138 2010-03-02 06:39:00Z nedka $
+* @version $Id: common.php 139 2011-03-30 09:44:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -133,7 +133,7 @@ $lang = array_merge($lang, array(
 	'COMMA_SEPARATOR'		=> ', ', // Used in pagination of ACP & prosilver, use localised comma if appropriate, eg: Ideographic or Arabic
 	'CONFIRM'				=> 'Xác nhận',
 	'CONFIRM_CODE'			=> 'Mã xác nhận',
-	'CONFIRM_CODE_EXPLAIN'	=> 'Nhập vào đoạn mã xác nhận mà bạn thực sự nhìn thấy trong hình. Tất cả chữ cái đều không phân biệt hoa thường và không có số <strong>O</strong>.',
+	'CONFIRM_CODE_EXPLAIN'	=> 'Nhập vào đoạn mã xác nhận mà bạn nhìn thấy trong hình. Tất cả chữ cái đều không phân biệt hoa thường.',
 	'CONFIRM_CODE_WRONG'	=> 'Mã xác nhận bạn vừa nhập không chính xác.',
 	'CONFIRM_OPERATION'		=> 'Bạn có chắc chắn muốn thực hiện yêu cầu này?',
 	'CONGRATULATIONS'		=> 'Chúc mừng sinh nhật đến',
@@ -307,7 +307,8 @@ $lang = array_merge($lang, array(
 	'LAST_UPDATED'						=> 'Cập nhật',
 	'LAST_VISIT'						=> 'Lần ghé thăm trước',
 	'LDAP_NO_LDAP_EXTENSION'			=> 'Ứng dụng mở rộng LDAP không có sẵn.',
-	'LDAP_NO_SERVER_CONNECTION'			=> 'Không thể kết nối đến máy chủ LDAP.',	
+	'LDAP_NO_SERVER_CONNECTION'			=> 'Không thể kết nối đến máy chủ LDAP.',
+	'LDAP_SEARCH_FAILED'				=> 'Có lỗi xuất hiện trong khi tìm kiếm danh sách LDAP.',
 	'LEGEND'							=> 'Chú thích',
 	'LOCATION'							=> 'Đến từ',
 	'LOCK_POST'							=> 'Khóa bài viết',
@@ -316,8 +317,8 @@ $lang = array_merge($lang, array(
 	'LOGIN'								=> 'Đăng nhập',
 	'LOGIN_CHECK_PM'					=> 'Đăng nhập để kiểm tra tin nhắn của bạn.',
 	'LOGIN_CONFIRMATION'				=> 'Xác nhận đăng nhập',
-	'LOGIN_CONFIRM_EXPLAIN'				=> 'Để bảo vệ các tài khoản thành viên trong hệ thống, chúng tôi yêu cầu bạn phải nhập vào một đoạn mã xác nhận nếu bạn đăng nhập thất bại vượt quá số lần cho phép. Đoạn mã được hiển thị trong hình mà bạn nhìn thấy bên dưới. Nếu thị lực của bạn kém hoặc bạn không thể nhìn thấy đoạn mã này vì một lý do nào đó, hãy vui lòng liên hệ với %sngười quản trị%s.',
-	'LOGIN_ERROR_ATTEMPTS'				=> 'Bạn đã đăng nhập thất bại vượt quá số lần cho phép. Nếu muốn tiếp tục đăng nhập, bây giờ, ngoài tên thành viên và mật khẩu của mình, bạn còn phải nhập vào đoạn mã xác nhận trong hình bên dưới mà bạn nhìn thấy.',
+	'LOGIN_CONFIRM_EXPLAIN'				=> 'Để bảo vệ các tài khoản thành viên trong hệ thống, chúng tôi yêu cầu bạn phải nhập vào một đoạn mã xác nhận nếu bạn đăng nhập thất bại vượt quá số lần cho phép. Đoạn mã được hiển thị trong hình mà bạn nhìn thấy bên dưới. Nếu thị lực của bạn kém hoặc bạn không thể nhìn thấy đoạn mã này vì một lý do nào đó, hãy vui lòng liên hệ với %sngười quản trị%s.', // unused
+	'LOGIN_ERROR_ATTEMPTS'				=> 'Bạn đã đăng nhập thất bại vượt quá số lần cho phép. Nếu muốn tiếp tục đăng nhập, bây giờ, ngoài tên thành viên và mật khẩu của mình, bạn còn phải nhập vào mã xác nhận bên dưới.',
 	'LOGIN_ERROR_EXTERNAL_AUTH_APACHE'	=> 'Bạn không được xác thực bởi <strong>Apache</strong>.',
 	'LOGIN_ERROR_PASSWORD'				=> 'Bạn đã nhập mật khẩu không chính xác. Hãy vui lòng kiểm tra lại mật khẩu của mình. Nếu bạn vẫn còn gặp rắc rối này, hãy liên hệ với %sngười quản trị%s.',
 	'LOGIN_ERROR_PASSWORD_CONVERT'		=> 'Hệ thống mới không thể chuyển đổi mật khẩu của bạn trong khi cập nhật từ hệ thống cũ. Bạn hãy vui lòng %syêu cầu một mật khẩu mới%s. Nếu bạn vẫn còn gặp rắc rối này, hãy liên hệ với %sngười quản trị%s.',
@@ -359,8 +360,8 @@ $lang = array_merge($lang, array(
 	'NEW_MESSAGES'				=> 'Tin nhắn mới',
 	'NEW_PM'					=> '<strong>%d</strong> tin nhắn mới',
 	'NEW_PMS'					=> '<strong>%d</strong> tin nhắn mới',
-	'NEW_POST'					=> 'Bài viết mới',
-	'NEW_POSTS'					=> 'Bài viết mới',
+	'NEW_POST'					=> 'Bài viết mới', // Not used anymore
+	'NEW_POSTS'					=> 'Bài viết mới', // Not used anymore
 	'NEXT'						=> 'Trang kế tiếp', // Used in pagination
 	'NEXT_STEP'					=> 'Bước kế tiếp',
 	'NEVER'						=> 'Chu bao giờ',	
@@ -395,7 +396,7 @@ $lang = array_merge($lang, array(
 	'NO_MODERATORS'				=> 'Không có điều hành viên nào.',	
 	'NO_NEW_MESSAGES'			=> 'Không có tin nhắn mới',
 	'NO_NEW_PM'					=> '<strong>0</strong> tin nhắn mới',
-	'NO_NEW_POSTS'				=> 'Không có bài viết mới',
+	'NO_NEW_POSTS'				=> 'Không có bài viết mới', // Not used anymore
 	'NO_ONLINE_USERS'			=> 'Không có thành viên nào trực tuyến.',
 	'NO_POSTS'					=> 'Không có bài viết nào',
 	'NO_POSTS_TIME_FRAME'		=> 'Chủ đề này không có bài viết nào trong khoảng thời gian vừa chọn.',
@@ -407,6 +408,7 @@ $lang = array_merge($lang, array(
 	'NO_TOPICS'					=> 'Không có chủ đề hoặc bài viết nào trong chuyên mục này.',
 	'NO_TOPICS_TIME_FRAME'		=> 'Chuyên mục này không có chủ đề nào trong khoảng thời gian vừa chọn.',
 	'NO_UNREAD_PM'				=> 'Không có tin nhắn nào chưa xem',
+	'NO_UNREAD_POSTS'			=> 'Không có bài viết nào chưa xem',
 	'NO_UPLOAD_FORM_FOUND'		=> 'Quá trình tải lên đã bắt đầu nhưng không có tập tin tải lên nào được tìm thấy.',
 	'NO_USER'					=> 'Thành viên bạn vừa yêu cầu không tồn tại.',
 	'NO_USERS'					=> 'Những thành viên bạn vừa yêu cầu không tồn tại.',
@@ -433,6 +435,7 @@ $lang = array_merge($lang, array(
 	'PIXEL'						=> 'px',
 	'PLAY_QUICKTIME_FILE'		=> 'Chạy tập tin QuickTime',
 	'PM'						=> 'Tin nhắn',
+	'PM_REPORTED'				=> 'Xem báo cáo',
 	'POSTING_MESSAGE'			=> 'Đang gửi bài trong chuyên mục %s',
 	'POSTING_PRIVATE_MESSAGE'	=> 'Đang soạn tin nhắn',
 	'POST'						=> 'Gửi bài',
@@ -573,6 +576,9 @@ $lang = array_merge($lang, array(
 	'THE_TEAM'			=> 'Ban điều hành',
 	'TIME'				=> 'Thời gian',
 
+	'TOO_LARGE'					=> 'Giá trị bạn vừa nhập quá lớn.',
+	'TOO_LARGE_MAX_RECIPIENTS'	=> 'Giá trị của mục thiết lập <samp>Số người nhận tin nhắn tối đa</samp> bạn vừa nhập quá lớn.',
+
 	'TOO_LONG'	=> 'Giá trị bạn vừa nhập quá dài.',
 
 	'TOO_LONG_AIM'					=> 'Tên tài khoản AIM bạn vừa nhập quá dài.',
@@ -615,6 +621,9 @@ $lang = array_merge($lang, array(
 	'TOO_SHORT_WEBSITE'				=> 'Địa chỉ website bạn vừa nhập quá ngắn.',
 	'TOO_SHORT_YIM'					=> 'Tên tài khoản Yahoo bạn vừa nhập quá ngắn.',
 
+	'TOO_SMALL'					=> 'Giá trị bạn vừa nhập quá nhỏ.',
+	'TOO_SMALL_MAX_RECIPIENTS'	=> 'Giá trị của mục thiết lập <samp>Số người nhận tin nhắn tối đa</samp> bạn vừa nhập quá nhỏ.',
+
 	'TOPIC'					=> 'Chủ đề',
 	'TOPIC_ICON'			=> 'Biểu tượng bài viết',
 	'TOPIC_LOCKED'			=> 'Chủ đề này đã bị khóa, bạn không thể sửa những bài viết của mình hay trả lời bài viết thêm nữa.',
@@ -648,6 +657,8 @@ $lang = array_merge($lang, array(
 	'UNREAD_MESSAGES'			=> 'Tin nhắn chưa xem',
 	'UNREAD_PM'					=> '<strong>%d</strong> tin nhắn chưa xem',
 	'UNREAD_PMS'				=> '<strong>%d</strong> tin nhắn chưa xem',
+	'UNREAD_POST'				=> 'Bài viết chưa xem',
+	'UNREAD_POSTS'				=> 'Những bài viết chưa xem',
 	'UNWATCHED_FORUMS'			=> 'Bạn không còn theo dõi những chuyên mục đã chọn.',
 	'UNWATCHED_TOPICS'			=> 'Bạn không còn theo dõi những chủ đề đã chọn.',
 	'UNWATCHED_FORUMS_TOPICS'	=> 'Bạn không còn theo dõi những mục đã chọn.',

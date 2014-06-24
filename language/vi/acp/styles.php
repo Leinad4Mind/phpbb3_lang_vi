@@ -4,7 +4,7 @@
 * acp_styles [Vietnamese]
 *
 * @package language
-* @version $Id: styles.php 54 2009-11-18 23:08:00Z nedka $
+* @version $Id: styles.php 55 2011-03-30 11:21:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -85,13 +85,13 @@ $lang = array_merge($lang, array(
 	'DEACTIVATE_DEFAULT'		=> 'Bạn không thể ngưng kích hoạt giao diện mặc định.',
 	'DELETE_FROM_FS'			=> 'Xóa từ hệ thống tập tin giao diện',
 	'DELETE_IMAGESET'			=> 'Xóa gói hình giao diện',
-	'DELETE_IMAGESET_EXPLAIN'	=> 'Bạn có thể gỡ bỏ gói hình giao diện đã chọn khỏi cơ sở dữ liệu tại đây. Ngoài ra, nếu được cấp phép, bạn có thể chọn gỡ bỏ gói hình giao diện ra khỏi hệ thống tập tin giao diện. Lưu ý rằng việc gỡ bỏ này không thể phục hồi lại được một khi gói hình giao diện đã bị xóa hoàn toàn khỏi hệ thống tập tin giao diện. Chúng tôi khuyên bạn nên xuất gói hình giao diện của mình ra trước khi gỡ bỏ để có thể sử dụng lại được.',
+	'DELETE_IMAGESET_EXPLAIN'	=> 'Bạn có thể gỡ bỏ gói hình giao diện đã chọn khỏi cơ sở dữ liệu tại đây. Lưu ý rằng thao tác này không thể hoàn lại. Chúng tôi khuyên bạn nên xuất gói hình giao diện ra trước để sử dụng sau này.',
 	'DELETE_STYLE'				=> 'Xóa giao diện',
 	'DELETE_STYLE_EXPLAIN'		=> 'Bạn có thể gỡ bỏ giao diện đã chọn tại đây. Bạn không thể gỡ bỏ toàn bộ thành phần giao diện đi kèm tại đây. Những thành phần này phải được gỡ bỏ riêng lẻ trong từng phần quản lí của chúng. hãy cẩn thận vì việc xóa giao diện không thể phục hồi lại được.',
 	'DELETE_TEMPLATE'			=> 'Xóa khuôn mẫu',
-	'DELETE_TEMPLATE_EXPLAIN'	=> 'Bạn có thể gỡ bỏ khuôn mẫu đã chọn khỏi cơ sở dữ liệu tại đây. Ngoài ra, nếu được cấp phép, bạn có thể chọn gỡ bỏ khuôn mẫu ra khỏi hệ thống tập tin giao diện. Lưu ý rằng việc gỡ bỏ này không thể phục hồi lại được một khi khuôn mẫu đã bị xóa hoàn toàn khỏi hệ thống tập tin giao diện. Chúng tôi khuyên bạn nên xuất khuôn mẫu của mình ra trước khi gỡ bỏ để có thể sử dụng lại được.',
+	'DELETE_TEMPLATE_EXPLAIN'	=> 'Bạn có thể gỡ bỏ khuôn mẫu đã chọn khỏi cơ sở dữ liệu tại đây. Lưu ý rằng thao tác này không thể hoàn lại. Chúng tôi khuyên bạn nên xuất khuôn mẫu ra trước để sử dụng sau này.',
 	'DELETE_THEME'				=> 'Xóa kiểu dáng',
-	'DELETE_THEME_EXPLAIN'		=> 'Bạn có thể gỡ bỏ kiểu dáng đã chọn khỏi cơ sở dữ liệu tại đây. Ngoài ra, nếu được cấp phép, bạn có thể chọn gỡ bỏ kiểu dáng ra khỏi hệ thống tập tin giao diện. Lưu ý rằng việc gỡ bỏ này không thể phục hồi lại được một khi kiểu dáng đã bị xóa hoàn toàn khỏi hệ thống tập tin giao diện. Chúng tôi khuyên bạn nên xuất kiểu dáng của mình ra trước khi gỡ bỏ để có thể sử dụng lại được.',
+	'DELETE_THEME_EXPLAIN'		=> 'Bạn có thể gỡ bỏ kiểu dáng đã chọn khỏi cơ sở dữ liệu tại đây. Lưu ý rằng thao tác này không thể hoàn lại. Chúng tôi khuyên bạn nên xuất kiểu dáng ra trước để sử dụng sau này.',
 	'DETAILS'					=> 'Chi tiết',
 	'DIMENSIONS_EXPLAIN'		=> 'Bật thiết lập này để đính kèm thông số chiều rộng/chiều cao.',
 
@@ -173,11 +173,11 @@ $lang = array_merge($lang, array(
 	'IMG_FORUM_READ'			=> 'Chuyên mục',
 	'IMG_FORUM_READ_LOCKED'		=> 'Chuyên mục bị khóa',
 	'IMG_FORUM_READ_SUBFORUM'	=> 'Chuyên mục con',
-	'IMG_FORUM_UNREAD'			=> 'Chuyên mục có bài viết mới',
-	'IMG_FORUM_UNREAD_LOCKED'	=> 'Chuyên mục có bài viết mới bị khóa',
-	'IMG_FORUM_UNREAD_SUBFORUM'	=> 'Chuyên mục con có bài viết mới',
+	'IMG_FORUM_UNREAD'			=> 'Chuyên mục có bài viết chưa xem',
+	'IMG_FORUM_UNREAD_LOCKED'	=> 'Chuyên mục có bài viết chưa xem bị khóa',
+	'IMG_FORUM_UNREAD_SUBFORUM'	=> 'Chuyên mục con có bài viết chưa xem',
 	'IMG_SUBFORUM_READ'			=> 'Danh sách chuyên mục con',
-	'IMG_SUBFORUM_UNREAD'		=> 'Dánh sách chuyên mục con có bài viết mới',
+	'IMG_SUBFORUM_UNREAD'		=> 'Danh sách chuyên mục con có bài viết chưa xem',
 
 	'IMG_TOPIC_MOVED'	=> 'Chủ đề đã di chuyển',
 
@@ -188,39 +188,39 @@ $lang = array_merge($lang, array(
 	'IMG_TOPIC_READ_LOCKED'			=> 'Chủ đề bị khóa',
 	'IMG_TOPIC_READ_LOCKED_MINE'	=> 'Chủ đề bị khóa do thành viên gửi',
 
-	'IMG_TOPIC_UNREAD'				=> 'Chủ đề có bài viết mới',
-	'IMG_TOPIC_UNREAD_MINE'			=> 'Chủ đề có bài viết mới do thành viên gửi',
-	'IMG_TOPIC_UNREAD_HOT'			=> 'Chủ đề có bài viết mới nhiều người xem',
-	'IMG_TOPIC_UNREAD_HOT_MINE'		=> 'Chủ đề có bài viết mới nhiều người xem do thành viên gửi',
-	'IMG_TOPIC_UNREAD_LOCKED'		=> 'Chủ đề có bài viết mới bị khóa',
-	'IMG_TOPIC_UNREAD_LOCKED_MINE'	=> 'Chủ đề có bài viết mới bị khóa do thành viên gửi',
+	'IMG_TOPIC_UNREAD'				=> 'Chủ đề có bài viết chưa xem',
+	'IMG_TOPIC_UNREAD_MINE'			=> 'Chủ đề có bài viết chưa xem do thành viên gửi',
+	'IMG_TOPIC_UNREAD_HOT'			=> 'Chủ đề có bài viết chưa xem nhiều người xem',
+	'IMG_TOPIC_UNREAD_HOT_MINE'		=> 'Chủ đề có bài viết chưa xem nhiều người xem do thành viên gửi',
+	'IMG_TOPIC_UNREAD_LOCKED'		=> 'Chủ đề có bài viết chưa xem bị khóa',
+	'IMG_TOPIC_UNREAD_LOCKED_MINE'	=> 'Chủ đề có bài viết chưa xem bị khóa do thành viên gửi',
 
 	'IMG_STICKY_READ'				=> 'Chú ý',
 	'IMG_STICKY_READ_MINE'			=> 'Chú ý do thành viên gửi',
 	'IMG_STICKY_READ_LOCKED'		=> 'Chú ý bị khóa',
 	'IMG_STICKY_READ_LOCKED_MINE'	=> 'Chú ý bị khóa do thành viên gửi',
-	'IMG_STICKY_UNREAD'				=> 'Chú ý có bài viết mới',
-	'IMG_STICKY_UNREAD_MINE'		=> 'Chú ý có bài viết mới do thành viên gửi',
-	'IMG_STICKY_UNREAD_LOCKED'		=> 'Chú ý có bài viết mới bị khóa',
-	'IMG_STICKY_UNREAD_LOCKED_MINE'	=> 'Chú ý có bài viết mới bị khóa do thành viên gửi',
+	'IMG_STICKY_UNREAD'				=> 'Chú ý có bài viết chưa xem',
+	'IMG_STICKY_UNREAD_MINE'		=> 'Chú ý có bài viết chưa xem do thành viên gửi',
+	'IMG_STICKY_UNREAD_LOCKED'		=> 'Chú ý có bài viết chưa xem bị khóa',
+	'IMG_STICKY_UNREAD_LOCKED_MINE'	=> 'Chú ý có bài viết chưa xem bị khóa do thành viên gửi',
 
 	'IMG_ANNOUNCE_READ'					=> 'Thông báo',
 	'IMG_ANNOUNCE_READ_MINE'			=> 'Thông báo do thành viên gửi',
 	'IMG_ANNOUNCE_READ_LOCKED'			=> 'Thông báo bị khóa',
 	'IMG_ANNOUNCE_READ_LOCKED_MINE'		=> 'Thông báo bị khóa do thành viên gửi',
-	'IMG_ANNOUNCE_UNREAD'				=> 'Thông báo có bài viết mới',
-	'IMG_ANNOUNCE_UNREAD_MINE'			=> 'Thông báo có bài viết mới do thành viên gửi',
-	'IMG_ANNOUNCE_UNREAD_LOCKED'		=> 'Thông báo có bài viết mới bị khóa',
-	'IMG_ANNOUNCE_UNREAD_LOCKED_MINE'	=> 'Thông báo có bài viết mới bị khóa do thành viên gửi',
+	'IMG_ANNOUNCE_UNREAD'				=> 'Thông báo có bài viết chưa xem',
+	'IMG_ANNOUNCE_UNREAD_MINE'			=> 'Thông báo có bài viết chưa xem do thành viên gửi',
+	'IMG_ANNOUNCE_UNREAD_LOCKED'		=> 'Thông báo có bài viết chưa xem bị khóa',
+	'IMG_ANNOUNCE_UNREAD_LOCKED_MINE'	=> 'Thông báo có bài viết chưa xem bị khóa do thành viên gửi',
 
 	'IMG_GLOBAL_READ'					=> 'Thông báo chung',
 	'IMG_GLOBAL_READ_MINE'				=> 'Thông báo chung do thành viên gửi',
 	'IMG_GLOBAL_READ_LOCKED'			=> 'Thông báo chung bị khóa',
 	'IMG_GLOBAL_READ_LOCKED_MINE'		=> 'Thông báo chung bị khóa do thành viên gửi',
-	'IMG_GLOBAL_UNREAD'					=> 'Thông báo chung có bài viết mới',
-	'IMG_GLOBAL_UNREAD_MINE'			=> 'Thông báo chung có bài viết mới do thành viên gửi',
-	'IMG_GLOBAL_UNREAD_LOCKED'			=> 'Thông báo chung có bài viết mới bị khóa',
-	'IMG_GLOBAL_UNREAD_LOCKED_MINE'		=> 'Thông báo chung có bài viết mới bị khóa do thành viên gửi',
+	'IMG_GLOBAL_UNREAD'					=> 'Thông báo chung có bài viết chưa xem',
+	'IMG_GLOBAL_UNREAD_MINE'			=> 'Thông báo chung có bài viết chưa xem do thành viên gửi',
+	'IMG_GLOBAL_UNREAD_LOCKED'			=> 'Thông báo chung có bài viết chưa xem bị khóa',
+	'IMG_GLOBAL_UNREAD_LOCKED_MINE'		=> 'Thông báo chung có bài viết chưa xem bị khóa do thành viên gửi',
 
 	'IMG_PM_READ'		=> 'Tin nhắn đã xem',
 	'IMG_PM_UNREAD'		=> 'Tin nhắn chưa xem',

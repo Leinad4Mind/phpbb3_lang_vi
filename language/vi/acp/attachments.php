@@ -4,8 +4,8 @@
 * acp_attachments [Vietnamese]
 *
 * @package language
-* @version $Id: attachments.php 27 2008-12-13 11:17:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: attachments.php 28 2011-03-30 10:14:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -94,7 +94,7 @@ $lang = array_merge($lang, array(
 	'DISPLAY_INLINED_EXPLAIN'		=> 'Nếu bạn tắt tùy chọn này, những hình ảnh được đính kèm sẽ hiển thị như liên kết.',
 	'DISPLAY_ORDER'					=> 'Hiển thị tập tin đính kèm theo thứ tự',
 	'DISPLAY_ORDER_EXPLAIN'			=> 'Hiển thị những tập tin đính kèm theo thứ tự thời gian.',
-	
+
 	'EDIT_EXTENSION_GROUP'			=> 'Sửa nhóm tập tin',
 	'EXCLUDE_ENTERED_IP'			=> 'Bật tùy chọn này để loại trừ những địa chỉ IP/tên miền được nhập vào.',
 	'EXCLUDE_FROM_ALLOWED_IP'		=> 'Loại trừ từ những địa chỉ IP/tên miền cho phép',
@@ -105,6 +105,16 @@ $lang = array_merge($lang, array(
 	'EXTENSION_GROUPS'				=> 'Nhóm tập tin',
 	'EXTENSION_GROUP_DELETED'		=> 'Nhóm tập tin đã được xóa thành công.',
 	'EXTENSION_GROUP_EXIST'			=> 'Nhóm tập tin “%s” đã được sử dụng.',
+
+	'EXT_GROUP_ARCHIVES'			=> 'Tập tin lưu trữ',
+	'EXT_GROUP_DOCUMENTS'			=> 'Tập tin văn bản',
+	'EXT_GROUP_DOWNLOADABLE_FILES'	=> 'Tập tin cho tải về',
+	'EXT_GROUP_FLASH_FILES'			=> 'Tập tin Flash',
+	'EXT_GROUP_IMAGES'				=> 'Tập tin hình ảnh',
+	'EXT_GROUP_PLAIN_TEXT'			=> 'Tập tin văn bản thuần túy',
+	'EXT_GROUP_QUICKTIME_MEDIA'		=> 'Tập tin QuickTime Media',
+	'EXT_GROUP_REAL_MEDIA'			=> 'Tập tin Real Media',
+	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Tập tin Windows Media',
 
 	'GO_TO_EXTENSIONS'		=> 'Chuyển đến phần quản lí loại tập tin',
 	'GROUP_NAME'			=> 'Tên nhóm tập tin',

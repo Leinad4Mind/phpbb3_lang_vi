@@ -4,7 +4,7 @@
 * acp_board [Vietnamese]
 *
 * @package language
-* @version $Id: board.php 94 2010-03-02 07:45:00Z nedka $
+* @version $Id: board.php 96 2011-03-30 11:02:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -61,6 +61,7 @@ $lang = array_merge($lang, array(
 	'SITE_NAME'						=> 'Tên website',
 	'SYSTEM_DST'					=> 'Bật chế độ giờ mùa hè <abbr title="Daylight Saving Time">DST</abbr>',
 	'SYSTEM_TIMEZONE'				=> 'Múi giờ hệ thống',
+	'SYSTEM_TIMEZONE_EXPLAIN'		=> 'Múi giờ dùng chung cho những người dùng chưa đăng nhập (khách, máy tìm kiếm). Những thành viên đã đăng nhập sử dụng múi giờ riêng của họ đã chọn khi đăng ký hoặc thay đổi sau này trong bảng thiết lập cá nhân.',
 	'WARNINGS_EXPIRE'				=> 'Cảnh cáo trong vòng',
 	'WARNINGS_EXPIRE_EXPLAIN'		=> 'Số ngày trải qua trước khi một cảnh cáo tự động hết hiệu lực từ bản ghi của một thành viên.',
 ));
@@ -95,7 +96,7 @@ $lang = array_merge($lang, array(
 	'ALLOW_SMILIES'				=> 'Cho phép sử dụng biểu tượng vui',
 	'ALLOW_TOPIC_NOTIFY'		=> 'Cho phép theo dõi chủ đề',
 	'BOARD_PM'					=> 'Cho phép gửi tin nhắn',
-	'BOARD_PM_EXPLAIN'			=> 'Tùy chọn kích hoạt hay vô hiệu chức năng gửi tin nhắn trong hệ thống đối với tất cả thành viên.',
+	'BOARD_PM_EXPLAIN'			=> 'Tùy chọn kích hoạt chức năng gửi tin nhắn trong hệ thống đối với tất cả thành viên.',
 ));
 
 // Avatar Settings
@@ -186,8 +187,8 @@ $lang = array_merge($lang, array(
 	'MIN_CHAR_LIMIT_EXPLAIN'		=> 'Số lượng ký tự tối thiểu mà thành viên phải nhập trong nội dung của một bài viết hay tin nhắn.',
 	'POSTING'						=> 'Gửi bài',
 	'POSTS_PER_PAGE'				=> 'Số bài viết mỗi chủ đề',
-	'QUOTE_DEPTH_LIMIT'				=> 'Độ dài trích dẫn tối đa cho phép trong mỗi bài viết',
-	'QUOTE_DEPTH_LIMIT_EXPLAIN'		=> 'Độ dài tối đa của các trích dẫn đặt lồng vào nhau được phép sử dụng trong nội dung một bài viết. Nhập số <strong>0</strong> để không hạn chế độ dài.',
+	'QUOTE_DEPTH_LIMIT'				=> 'Số lượng trích dẫn lại mỗi bài viết',
+	'QUOTE_DEPTH_LIMIT_EXPLAIN'		=> 'Số lượng trích dẫn lại lồng nhau tối đa trong một bài viết. Nhập số <strong>0</strong> để không hạn chế độ dài.',
 	'SMILIES_LIMIT'					=> 'Biểu tượng vui tối đa mỗi bài viết',
 	'SMILIES_LIMIT_EXPLAIN'			=> 'Số lượng biểu tượng vui tối đa được phép sử dụng trong nội dung một bài viết. Nhập số <strong>0</strong> để không hạn chế số lượng biểu tượng vui.',
 	'SMILIES_PER_PAGE'				=> 'Số biểu tượng vui mỗi trang',
@@ -245,8 +246,8 @@ $lang = array_merge($lang, array(
 	'PASSWORD_LENGTH'			=> 'Độ dài mật khẩu',
 	'PASSWORD_LENGTH_EXPLAIN'	=> 'Số ký tự tối thiểu và tối đa bắt buộc đối với mật khẩu.',
 
-	'REG_LIMIT'			=> 'Số lần giới hạn đăng ký',
-	'REG_LIMIT_EXPLAIN'	=> 'Số lần nạp lại tốt đa mã xác nhận trong phần đăng ký thành viên trước khi bị khóa đăng ký trong phiên đăng nhập đó.',
+	'REG_LIMIT'			=> 'Số lần xác nhận đăng ký sai',
+	'REG_LIMIT_EXPLAIN'	=> 'Số lần nhập sai mã xác nhận tối đa cho phép khi đăng ký thành viên trước khi bị khóa trong phiên đăng nhập đó.',
 
 	'USERNAME_ALPHA_ONLY'			=> 'Chỉ được dùng vừa chữ cái vừa chữ số',
 	'USERNAME_ALPHA_SPACERS'		=> 'Vừa chữ cái vừa chữ số và có khoảng trắng',
@@ -296,49 +297,49 @@ $lang = array_merge($lang, array(
 
 // Visual Confirmation Settings
 $lang = array_merge($lang, array(
-	'ACP_VC_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể chọn và cấu hình các phần mở rộng CAPTCHA, giúp đa dạng hóa phương pháp trong việc chặn những đăng ký tự động từ các công cụ “Spam Bot”.',
+	'ACP_VC_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể lựa chọn và cấu hình các phần mở rộng được thiết kế để ngăn chặn các công cụ nhập liệu tự động. Đây là phương pháp kiểm tra người dùng để xác định xem họ có phải là con người thực sự hay không và gây khó cho các máy tính xử lí tự động với mục đích tạo ra dữ liệu rác trong hệ thống.',
 	'AVAILABLE_CAPTCHAS'		=> 'Những phần mở rộng có thể sử dụng',
 
-	'CAPTCHA_CONFIGURE'						=> 'Cấu hình các loại CAPTCHA',
-	'CAPTCHA_CONFIGURE_EXPLAIN'				=> 'Thay đổi các thiết lập cho loại CAPTCHA đã chọn.',
+	'CAPTCHA_CONFIGURE'						=> 'Cấu hình phần mở rộng',
+	'CAPTCHA_CONFIGURE_EXPLAIN'				=> 'Thay đổi thiết lập cho phần mở rộng đã chọn.',
 	'CAPTCHA_FONT_DEFAULT'					=> 'Mặc định',
 	'CAPTCHA_FONT_LOWER'					=> 'Dùng cả chữ in thường',
 	'CAPTCHA_FONT_NEW'						=> 'Hình dạng mới',
-	'CAPTCHA_GD'							=> 'CAPTCHA chuẩn (Dùng GD)',
-	'CAPTCHA_GD_3D'							=> '3D Captcha (Dùng GD)',
+	'CAPTCHA_GD'							=> 'Mã hình (Dùng GD)',
+	'CAPTCHA_GD_3D'							=> 'Mã hình 3D (Dùng GD)',
  	'CAPTCHA_GD_3D_NOISE'					=> 'Tạo vật thể 3D gây nhiễu',
-	'CAPTCHA_GD_3D_NOISE_EXPLAIN'			=> 'Tạo các vật thể 3D vào mã CAPTCHA, nằm đè lên chữ.',
-	'CAPTCHA_GD_EXPLAIN'					=> 'Sử dụng thư viện GD để tạo ra nhiều mã CAPTCHA nâng cao hơn.',
-	'CAPTCHA_GD_FOREGROUND_NOISE'			=> 'CAPTCHA dùng GD với cận cảnh tạp nhiễu',
-	'CAPTCHA_GD_FOREGROUND_NOISE_EXPLAIN'	=> 'Tạo hiệu ứng cận cảnh tạp nhiễu làm cho mã CAPTCHA thêm phức tạp.',
-	'CAPTCHA_GD_WAVE'						=> 'CAPTCHA dùng GD với hình dạng méo mó',
-	'CAPTCHA_GD_WAVE_EXPLAIN'				=> 'Tạo hiệu ứng hình dạng méo mó cho mã CAPTCHA.',
-	'CAPTCHA_GD_X_GRID'						=> 'CAPTCHA dùng GD với hình nền tạp nhiễu theo trục ngang',
-	'CAPTCHA_GD_X_GRID_EXPLAIN'				=> 'Thiết lập càng thấp càng làm cho mã CAPTCHA thêm phức tạp. Nhập số <strong>0</strong> để vô hiệu việc gây nhiễu trục ngang.',
-	'CAPTCHA_GD_Y_GRID'						=> 'CAPTCHA dùng GD với hình nền tạp nhiễu theo trục dọc',
-	'CAPTCHA_GD_Y_GRID_EXPLAIN'				=> 'Thiết lập càng thấp càng làm cho mã CAPTCHA thêm phức tạp. Nhập số <strong>0</strong> để vô hiệu việc gây nhiễu trục dọc.',
+	'CAPTCHA_GD_3D_NOISE_EXPLAIN'			=> 'Tạo các vật thể 3D vào mã hình, nằm đè lên chữ.',
+	'CAPTCHA_GD_EXPLAIN'					=> 'Sử dụng thư viện GD để tạo ra mã hình xác nhận phức tạp hơn.',
+	'CAPTCHA_GD_FOREGROUND_NOISE'			=> 'Mã hình dùng GD với cận cảnh tạp nhiễu',
+	'CAPTCHA_GD_FOREGROUND_NOISE_EXPLAIN'	=> 'Tạo hiệu ứng cận cảnh tạp nhiễu làm cho mã hình thêm phức tạp.',
+	'CAPTCHA_GD_WAVE'						=> 'Mã hình dùng GD với hình dạng méo mó',
+	'CAPTCHA_GD_WAVE_EXPLAIN'				=> 'Tạo hiệu ứng hình dạng méo mó cho mã hình.',
+	'CAPTCHA_GD_X_GRID'						=> 'Mã hình dùng GD với hình nền tạp nhiễu theo trục ngang',
+	'CAPTCHA_GD_X_GRID_EXPLAIN'				=> 'Thiết lập càng thấp càng làm cho mã hình thêm phức tạp. Nhập số <strong>0</strong> để vô hiệu việc gây nhiễu trục ngang.',
+	'CAPTCHA_GD_Y_GRID'						=> 'Mã hình dùng GD với hình nền tạp nhiễu theo trục dọc',
+	'CAPTCHA_GD_Y_GRID_EXPLAIN'				=> 'Thiết lập càng thấp càng làm cho mã hình thêm phức tạp. Nhập số <strong>0</strong> để vô hiệu việc gây nhiễu trục dọc.',
   	'CAPTCHA_GD_FONTS'						=> 'Sử dụng phông chữ riêng biệt',
 	'CAPTCHA_GD_FONTS_EXPLAIN'				=> 'Thiết lập này quyết định số lượng hình dạng phông chữ được sử dụng. Bạn có thể chỉ cần dùng vừa đủ số hình dạng mặc định hoặc đưa ra những kiểu chữ được thay đổi. Những chữ in thường cũng có thể thêm vào đây.',
-	'CAPTCHA_NO_GD'							=> 'CAPTCHA chuẩn (Không dùng GD)',
-	'CAPTCHA_NO_OPTIONS'					=> 'Loại CAPTCHA này không có tùy chọn cấu hình.',
-	'CAPTCHA_PREVIEW_MSG'					=> 'Những thay đổi của bạn về thiết lập mã xác nhận không được lưu lại. Đây chỉ là công cụ xem trước kết quả của mã xác nhận.',
-	'CAPTCHA_PREVIEW_EXPLAIN'				=> 'Mã CAPTCHA sẽ được hiển thị tương ứng với những thiết lập hiện tại.',
-	'CAPTCHA_SELECT'						=> 'Những phần mở rộng CAPTCHA đã cài đặt',
-	'CAPTCHA_SELECT_EXPLAIN'				=> 'Danh sách này liệt kê những phần mở rộng CAPTCHA đã được chọn dùng cho hệ thống. Những mục màu xám nghĩa là chưa thể sử dụng ngay được mà yêu cầu bạn phải cấu hình lại cho phù hợp.',
-	'CAPTCHA_UNAVAILABLE'					=> 'Loại CAPTCHA này không thể chọn sử dụng vì bạn chưa đáp ứng đủ yêu cầu của nó.',
+	'CAPTCHA_NO_GD'							=> 'Mã hình đơn giản',
+	'CAPTCHA_NO_OPTIONS'					=> 'Phần mở rộng này không có tùy chọn cấu hình.',
+	'CAPTCHA_PREVIEW_MSG'					=> 'Những thay đổi của bạn không được lưu lại. Đây chỉ là công cụ xem trước kết quả.',
+	'CAPTCHA_PREVIEW_EXPLAIN'				=> 'Phần mở rộng sẽ hoạt động trong thực tế tương ứng với những thiết lập hiện tại.',
+	'CAPTCHA_SELECT'						=> 'Những phần mở rộng đã cài đặt',
+	'CAPTCHA_SELECT_EXPLAIN'				=> 'Danh sách này liệt kê những phần mở rộng đã được chọn dùng cho hệ thống. Những mục màu xám nghĩa là chưa thể sử dụng ngay được mà yêu cầu bạn phải cấu hình lại cho phù hợp.',
+	'CAPTCHA_UNAVAILABLE'					=> 'Phần mở rộng này không thể chọn sử dụng vì bạn chưa cấu hình đủ yêu cầu của nó.',
 	'CONFIGURE'								=> 'Cấu hình',
 
-	'VISUAL_CONFIRM_POST'				=> 'Bật mã xác nhận khi khách gửi bài',
-	'VISUAL_CONFIRM_POST_EXPLAIN'		=> 'Tùy chọn yêu cầu khách khi gửi bài phải nhập vào một đoạn mã xác nhận trong hình ảnh được tạo ra ngẫu nhiên để ngăn chặn việc gửi bài viết tự động hàng loạt vào hệ thống.',
-	'VISUAL_CONFIRM_REFRESH'			=> 'Cho phép thành viên có thể nạp lại hình mã xác nhận',
-	'VISUAL_CONFIRM_REFRESH_EXPLAIN'	=> 'Tùy chọn cho phép thành viên có thể yêu cầu nạp lại mã xác nhận mới nếu họ gặp rắc rối với mã xác nhận tạo ra ban đầu. Một vài phần mở rộng có thể không hỗ trợ tùy chọn này.',
-	'VISUAL_CONFIRM_REG'				=> 'Bật mã xác nhận khi đăng ký thành viên',
-	'VISUAL_CONFIRM_REG_EXPLAIN'		=> 'Tùy chọn yêu cầu các thành viên mới khi đăng ký phải nhập vào một đoạn mã xác nhận trong hình ảnh được tạo ra ngẫu nhiên để ngăn chặn việc đăng ký thành viên tự động hàng loạt vào hệ thống.',
+	'VISUAL_CONFIRM_POST'				=> 'Kiểm tra nhập liệu tự động khi khách gửi bài',
+	'VISUAL_CONFIRM_POST_EXPLAIN'		=> 'Tùy chọn yêu cầu khách khi gửi bài phải vượt qua thao tác kiểm tra nhập liệu tự động để ngăn chặn việc gửi bài rác hàng loạt vào diễn đàn.',
+	'VISUAL_CONFIRM_REFRESH'			=> 'Cho phép người dùng nạp lại kiểm tra nhập liệu tự động',
+	'VISUAL_CONFIRM_REFRESH_EXPLAIN'	=> 'Tùy chọn cho phép người dùng có thể yêu cầu lại thao tác kiểm tra nhập liệu tự động nếu họ gặp rắc rối với thao tác ban đầu. Một vài phần mở rộng có thể không hỗ trợ tùy chọn này.',
+	'VISUAL_CONFIRM_REG'				=> 'Kiểm tra nhập liệu tự động khi đăng ký',
+	'VISUAL_CONFIRM_REG_EXPLAIN'		=> 'Tùy chọn yêu cầu các thành viên mới khi đăng ký phải vượt qua thao tác kiểm tra nhập liệu tự động để ngăn chặn việc đăng ký tài khoản hàng loạt vào hệ thống.',
 ));
 
 // Cookie Settings
 $lang = array_merge($lang, array(
-	'ACP_COOKIE_SETTINGS_EXPLAIN'		=> 'Những thiết lập bên dưới được sử dụng để gửi cookie đến trình duyệt của khách ghé thăm. Trong hều hết các trường hợp, bạn nên sử dụng giá trị mặc định của cookie và đừng thay đổi chúng nếu không đủ khả năng quản lí hay không thực sự cần thiết. Nếu bạn thực sự cần thay đổi giá trị mặc định, hãy cẩn thận vì những thiết lập không chính xác sẽ ngăn cản thành viên đăng nhập vào hệ thống.',
+	'ACP_COOKIE_SETTINGS_EXPLAIN'	=> 'Những thiết lập bên dưới được sử dụng để gửi cookie đến trình duyệt của khách ghé thăm. Trong hều hết các trường hợp, bạn nên sử dụng giá trị mặc định của cookie và đừng thay đổi chúng nếu không đủ khả năng quản lí hay không thực sự cần thiết. Nếu bạn thực sự cần thay đổi giá trị mặc định, hãy cẩn thận vì những thiết lập không chính xác sẽ ngăn cản thành viên đăng nhập vào hệ thống.',
 
 	'COOKIE_DOMAIN'				=> 'Tên miền cookie',
 	'COOKIE_NAME'				=> 'Tên cookie',
@@ -383,6 +384,7 @@ $lang = array_merge($lang, array(
 	'YES_POST_MARKING_EXPLAIN'		=> 'Đánh dấu cho thành viên biết vừa gửi bài trong chủ đề nào.',
 	'YES_READ_MARKING'				=> 'Đánh dấu chủ đề ngay trên máy chủ',
 	'YES_READ_MARKING_EXPLAIN'		=> 'Lưu trữ thông tin xem/chưa xem bài viết của thành viên trong cơ sở dữ liệu thay vì sử dụng cookie.',
+	'YES_UNREAD_SEARCH'				=> 'Cho phép tìm kiếm những bài viết chưa xem',
 ));
 
 // Auth settings
@@ -470,7 +472,7 @@ $lang = array_merge($lang, array(
 	'IP_VALID'						=> 'Kiểm tra địa chỉ IP ',
 	'IP_VALID_EXPLAIN'				=> 'Tùy chọn xác định số lượng địa chỉ IP được sử dụng để kiểm tra phiên đăng nhập của thành viên. Chọn <samp>Tất cả</samp> sẽ so sánh toàn bộ địa chỉ IP: <samp>A.B.C</samp> thay cho x.x.x, <samp>A.B</samp> thay cho x.x. Chọn <samp>Không có</samp> để tắt chức năng kiểm tra này. Với những địa chỉ IP dùng IPv6, <samp>A.B.C</samp> sẽ so sánh 4 khối đầu tiên và <samp>A.B</samp> là 3 khối đầu tiên.',
 	'MAX_LOGIN_ATTEMPTS'			=> 'Số lần đăng nhập tối đa cho phép',
-	'MAX_LOGIN_ATTEMPTS_EXPLAIN'	=> 'Số lần tối đa cho phép thành viên cố gắng đăng nhập vào hệ thống khi đăng nhập thất bại nhiều lần. Sau khi đăng nhập thất bại vượt quá số lần được thiết lập này, thành viên phải nhập thêm vào mã xác nhận khi đăng nhập.',
+	'MAX_LOGIN_ATTEMPTS_EXPLAIN'	=> 'Số lần tối đa cho phép thành viên đăng nhập vào hệ thống khi đăng nhập thất bại nhiều lần. Nếu vượt quá số lần thiết lập này, thành viên sẽ được kiểm tra chống nhập liệu tự động.',
 	'NO_IP_VALIDATION'				=> 'Không',
 	'NO_REF_VALIDATION'				=> 'Không',
 	'PASSWORD_TYPE'					=> 'Độ phức tạp của mật khẩu',

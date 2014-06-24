@@ -4,7 +4,7 @@
 * acp_common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php 99 2010-03-02 07:47:00Z nedka $
+* @version $Id: common.php 100 2011-03-30 11:04:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -67,7 +67,7 @@ $lang = array_merge($lang, array(
 	'ACP_BOARD_SETTINGS'		=> 'Thiết lập hệ thống',
 	'ACP_BOTS'					=> 'Quản lí máy tìm kiếm',
 
-	'ACP_CAPTCHA'				=> 'Thiết lập cơ chế đồ hoạ mã xác nhận',
+	'ACP_CAPTCHA'				=> 'Kiểm tra nhập liệu tự động',
 
 	'ACP_CAT_DATABASE'			=> 'Cơ sở dữ liệu',
 	'ACP_CAT_DOT_MODS'			=> 'MOD',
@@ -199,7 +199,7 @@ $lang = array_merge($lang, array(
 	'ACP_USER_SIG'					=> 'Chữ ký cá nhân',
 	'ACP_USER_WARNINGS'				=> 'Cảnh cáo',
 
-	'ACP_VC_SETTINGS'					=> 'Thiết lập mã xác nhận CAPTCHA',
+	'ACP_VC_SETTINGS'					=> 'Thiết lập kiểm tra nhập liệu tự động',
 	'ACP_VC_CAPTCHA_DISPLAY'			=> 'Xem trước cơ chế đồ hoạ mã xác nhận',	
 	'ACP_VERSION_CHECK'					=> 'Kiểm tra cập nhật',
 	'ACP_VIEW_ADMIN_PERMISSIONS'		=> 'Xem cấp phép dành cho quản trị viên',
@@ -512,7 +512,7 @@ $lang = array_merge($lang, array(
 	'LOG_CONFIG_SERVER'			=> '<strong>Đã thay đổi thiết lập máy chủ</strong>',
 	'LOG_CONFIG_SETTINGS'		=> '<strong>Đã thay đổi thiết lập hệ thống</strong>',
 	'LOG_CONFIG_SIGNATURE'		=> '<strong>Đã thay đổi thiết lập chữ ký cá nhân</strong>',
-	'LOG_CONFIG_VISUAL'			=> '<strong>Đã thay đổi thiết lập mã xác nhận</strong>',
+	'LOG_CONFIG_VISUAL'			=> '<strong>Đã thay đổi thiết lập kiểm tra nhập liệu tự động</strong>',
 
 	'LOG_APPROVE_TOPIC'			=> '<strong>Đã duyệt chủ đề</strong><br />» %s',
 	'LOG_BUMP_TOPIC'			=> '<strong>Thành viên đã đẩy chủ đề lên</strong><br />» %s',
