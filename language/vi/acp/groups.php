@@ -1,21 +1,12 @@
 <?php
 /** 
 *
-* acp_groups [Vietnamese]
+* acp/groups [Vietnamese]
 *
 * @package language
-* @version $Id: groups.php 39 2009-07-25 22:38:00Z nedka $
-* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.42
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -47,7 +38,7 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'ACP_GROUPS_MANAGE_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí tất cả nhóm trong hệ thống. Bạn có thể xóa, tạo mới hay chỉnh sửa những nhóm hiện có. Ngoài ra, bạn cũng có thể chọn ra trưởng nhóm, thay đổi loại nhóm tự do/ẩn/cố định cũng như cập nhật tên nhóm và giới thiệu về nhóm.',
 	'ADD_USERS'					=> 'Thêm thành viên',
-	'ADD_USERS_EXPLAIN'			=> 'Với công cụ này, bạn có thể thêm những thành viên mới cho nhóm. Bạn cũng có thể thay đổi nhóm mặc định cho các thành viên được chọn. Ngoài ra, bạn cũng có thể xác định thành viên trở thành trưởng nhóm. Hãy nhập mỗi tên thành viên trên một dòng xác định.',
+	'ADD_USERS_EXPLAIN'			=> 'Với công cụ này, bạn có thể thêm những thành viên mới cho nhóm. Bạn cũng có thể thay đổi nhóm mặc định cho các thành viên được chọn. Ngoài ra, bạn cũng có thể xác định thành viên trở thành trưởng nhóm. Hãy nhập mỗi tên tài khoản trên một dòng xác định.',
 
 	'COPY_PERMISSIONS'			=> 'Sao chép thiết lập cấp phép từ',
 	'COPY_PERMISSIONS_EXPLAIN'	=> 'Sau khi sao chép thiết lập cấp phép, nhóm này sẽ có thiết lập cấp phép giống như thiêt lập cấp phép của nhóm mà bạn chọn sao chép đến.',
@@ -62,7 +53,7 @@ $lang = array_merge($lang, array(
 	'GROUP_AVATAR_EXPLAIN'			=> 'Hình ảnh được hiển thị trong bảng quản lí của nhóm.',
 	'GROUP_CLOSED'					=> 'Nhóm cố định',
 	'GROUP_COLOR'					=> 'Màu nhóm',
-	'GROUP_COLOR_EXPLAIN'			=> 'Xác định màu phân biệt cho tên thành viên của các thành viên trong nhóm, để trống để sử dụng màu mặc định dành cho thành viên.',
+	'GROUP_COLOR_EXPLAIN'			=> 'Xác định màu phân biệt cho tên tài khoản của các thành viên trong nhóm, để trống để sử dụng màu mặc định dành cho thành viên.',
 	'GROUP_CONFIRM_ADD_USER'		=> 'Bạn có chắc chắn muốn thêm thành viên “%1$s” vào nhóm này?',
 	'GROUP_CONFIRM_ADD_USERS'		=> 'Bạn có chắc chắn muốn thêm những thành viên “%1$s” vào nhóm này?',
 	'GROUP_CREATED'					=> 'Nhóm đã được tạo thành công.',
@@ -73,7 +64,7 @@ $lang = array_merge($lang, array(
 	'GROUP_DEMOTE'					=> 'Giáng chức trưởng nhóm',
 	'GROUP_DESC'					=> 'Giới thiệu về nhóm',
 	'GROUP_DETAILS'					=> 'Thông tin về nhóm',
-	'GROUP_EDIT_EXPLAIN'			=> 'Với công cụ này, bạn có thể chỉnh sửa các nhóm hiện có. Bạn có thể thay đổi tên nhóm, giới thiệu về nhóm và loại nhóm như tự do, cố định… Bạn cũng có thể thiết lập những tùy chọn cho nhóm như màu sắc phân biệt, xếp hạng… Những thay đổi thiết lập trong đây sẽ thay thế cho thiết lập hiện tại của thành viên. Lưu ý rằng những thành viên trong nhóm có thể thay đổi thiết lập hình đại diện thay thế của nhóm nếu như bạn không thiết lập cấp phép phù hợp.',
+	'GROUP_EDIT_EXPLAIN'			=> 'Với công cụ này, bạn có thể chỉnh sửa các nhóm hiện có. Bạn có thể thay đổi tên nhóm, giới thiệu về nhóm và loại nhóm như tự do, cố định… Bạn cũng có thể thiết lập những tùy chọn cho nhóm như màu sắc phân biệt, danh hiệu… Những thay đổi thiết lập trong đây sẽ thay thế cho thiết lập hiện tại của thành viên. Lưu ý rằng những thành viên trong nhóm có thể thay đổi thiết lập hình đại diện thay thế của nhóm nếu như bạn không thiết lập cấp phép phù hợp.',
 	'GROUP_ERR_USERS_EXIST'			=> 'Thành viên vừa chọn đã là thành viên trong nhóm.',
 	'GROUP_FOUNDER_MANAGE'			=> 'Chỉ người sáng lập quản lí',
 	'GROUP_FOUNDER_MANAGE_EXPLAIN'	=> 'Giới hạn quyền quản lí nhóm này chỉ dành cho những người sáng lập. Những thành viên có thiết lập cấp phép nhóm vẫn có thể nhìn thấy nhóm này giống như các thành viên khác trong nhóm.',
@@ -92,14 +83,14 @@ $lang = array_merge($lang, array(
 	'GROUP_MODS_DEMOTED'			=> 'Trưởng nhóm đã được giáng chức thành công.',
 	'GROUP_MODS_PROMOTED'			=> 'Thành viên của nhóm đã được thăng chức thành công.',
 	'GROUP_NAME'					=> 'Tên nhóm',
-	'GROUP_NAME_TAKEN'				=> 'Tên của nhóm bạn vừa nhập đã được sử dụng rồi. Bạn hãy vui lòng chọn một tên khác.',
+	'GROUP_NAME_TAKEN'				=> 'Tên của nhóm bạn nhập đã được sử dụng rồi. Bạn hãy vui lòng chọn một tên khác.',
 	'GROUP_OPEN'					=> 'Nhóm tham gia tự do',
 	'GROUP_PENDING'					=> 'Thành viên chờ quyết định',
 	'GROUP_MAX_RECIPIENTS'			=> 'Số người nhận tối đa cho phép trong mỗi tin nhắn',
 	'GROUP_MAX_RECIPIENTS_EXPLAIN'	=> 'Số lượng người nhận tối đa cho phép đối với một tin nhắn gửi đến nhóm. Nhập số <strong>0</strong> để sử dụng thiết lập chung từ hệ thống.',
 	'GROUP_OPTIONS_SAVE'			=> 'Thiết lập cho toàn nhóm',
 	'GROUP_PROMOTE'					=> 'Thăng chức thành trưởng nhóm',
-	'GROUP_RANK'					=> 'Xếp hạng của nhóm',
+	'GROUP_RANK'					=> 'Danh hiệu của nhóm',
 	'GROUP_RECEIVE_PM'				=> 'Cho phép nhóm nhận tin nhắn',
 	'GROUP_RECEIVE_PM_EXPLAIN'		=> 'Lưu ý rằng bạn không thể gửi tin nhắn cho những nhóm ẩn và điều đó không phụ thuộc vào thiết lập này.',
 	'GROUP_REQUEST'					=> 'Nhóm tham gia phải gửi yêu cầu',

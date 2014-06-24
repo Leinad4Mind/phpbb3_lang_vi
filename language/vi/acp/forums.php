@@ -1,21 +1,12 @@
 <?php
 /** 
 *
-* acp_forums [Vietnamese]
+* acp/forums [Vietnamese]
 *
 * @package language
-* @version $Id: forums.php 43 2011-12-03 17:53:00Z nedka $
-* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.46
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -73,15 +64,15 @@ $lang = array_merge($lang, array(
 	'ENABLE_INDEXING'				=> 'Bật chỉ mục tìm kiếm',
 	'ENABLE_INDEXING_EXPLAIN'		=> 'Nếu bật tùy chọn này, những bài viết trong chuyên mục này sẽ được tạo chỉ mục để có thể tìm kiếm.',
 	'ENABLE_POST_REVIEW'			=> 'Cho phép xem lại bài viết',
-	'ENABLE_POST_REVIEW_EXPLAIN'	=> 'Nếu bật tùy chọn này, các thành viên có thể xem lại bài viết của họ nếu có những bài viết mới được gửi đến chủ đề trong khi họ đang soạn bài. Bạn nên tắt tùy chọn này nếu sử dụng diễn đàn chỉ để tán gẫu.',
+	'ENABLE_POST_REVIEW_EXPLAIN'	=> 'Nếu bật tùy chọn này, người dùng có thể xem lại bài viết của họ nếu có những bài viết mới được gửi đến chủ đề trong khi họ đang soạn bài. Bạn nên tắt tùy chọn này nếu sử dụng diễn đàn chỉ để tán gẫu.',
 	'ENABLE_QUICK_REPLY'			=> 'Bật trả lời nhanh',
-	'ENABLE_QUICK_REPLY_EXPLAIN'	=> 'Bật trả lời nhanh trong chuyên mục này. Thiết lập này không có tác dụng nếu chức năng trả lời nhanh bị vô hiệu trên toàn bộ diễn đàn. Trả lời nhanh cũng chỉ áp dụng đối với các thành viên được phép gửi bài trong chuyên mục này.',
+	'ENABLE_QUICK_REPLY_EXPLAIN'	=> 'Bật trả lời nhanh trong chuyên mục này. Thiết lập này không có tác dụng nếu chức năng trả lời nhanh bị vô hiệu trên toàn bộ diễn đàn. Trả lời nhanh cũng chỉ áp dụng đối với người dùng được phép gửi bài trong chuyên mục này.',
 	'ENABLE_RECENT'					=> 'Hiển thị những chủ đề sôi nổi',
 	'ENABLE_RECENT_EXPLAIN'			=> 'Nếu bật tùy chọn này, những chủ đề được gửi trong chuyên mục này sẽ được hiển thị trong danh sách chủ đề sôi nổi.',
 	'ENABLE_TOPIC_ICONS'			=> 'Sử dụng biểu tượng cho chủ đề',
 
 	'FORUM_ADMIN'						=> 'Quản lí chuyên mục',
-	'FORUM_ADMIN_EXPLAIN'				=> 'Trong hệ thống phpBB mới mọi thứ đều chứa trong chuyên mục lẫn nhau. Nhóm chuyên mục thực chất chỉ là một loại chuyên mục đặc biệt. Mỗi chuyên mục có thể có số chuyên mục con không hạn chế về số lượng và cấp độ. Bạn cũng có thể chọn chuyên mục nào thành viên được phép và không được phép gửi bài. Với công cụ này, bạn có thể thêm vào, chỉnh sửa, xóa, khóa, mở khóa từng chuyên mục riêng lẻ với các công cụ điều khiển. Nếu những chủ đề và bài viết của bạn không được đồng bộ, bạn cũng có thể đồng bộ hoá lại chuyên mục. <strong>Bạn cần phải sao chép hoặc tạo thiết lập cấp phép thích hợp cho những chuyên mục mới tạo thì chúng mới được hiển thị ngoài hệ thống.</strong>',
+	'FORUM_ADMIN_EXPLAIN'				=> 'Trong hệ thống phpBB mới mọi thứ đều chứa trong chuyên mục lẫn nhau. Nhóm chuyên mục thực chất chỉ là một loại chuyên mục đặc biệt. Mỗi chuyên mục có thể có số chuyên mục con không hạn chế về số lượng và cấp độ. Bạn cũng có thể chọn chuyên mục nào người dùng được phép và không được phép gửi bài. Với công cụ này, bạn có thể thêm vào, chỉnh sửa, xóa, khóa, mở khóa từng chuyên mục riêng lẻ với các công cụ điều khiển. Nếu những chủ đề và bài viết của bạn không được đồng bộ, bạn cũng có thể đồng bộ hoá lại chuyên mục. <strong>Bạn cần phải sao chép hoặc tạo thiết lập cấp phép thích hợp cho những chuyên mục mới tạo thì chúng mới được hiển thị ngoài hệ thống.</strong>',
 	'FORUM_AUTO_PRUNE'					=> 'Bật chế độ tự động dọn dẹp',
 	'FORUM_AUTO_PRUNE_EXPLAIN'			=> 'Tùy chọn dọn dẹp các chủ đề trong chuyên mục, thiết lập các thông số thời gian bên dưới.',
 	'FORUM_CREATED'						=> 'Chuyên mục mới đã được tạo thành công.',
@@ -92,11 +83,11 @@ $lang = array_merge($lang, array(
 	'FORUM_DELETED'						=> 'Chuyên mục đã được xóa thành công.',
 	'FORUM_DESC'						=> 'Giới thiệu chuyên mục',
 	'FORUM_DESC_EXPLAIN'				=> 'Bất kì thẻ đánh dấu HTML nào bạn nhập trong đây đều không có tác dụng.',
-	'FORUM_EDIT_EXPLAIN'				=> 'Bảng điều khiển bên dưới sẽ giúp bạn tùy chỉnh chuyên mục này. Lưu ý rằng việc thiết lập điều hành viên cho chuyên mục này cũng như bảng điều khiển bộ đếm số bài viết được thiết lập từ mục cấp phép chuyên mục trong công cụ cấp phép cho các thành viên và nhóm thành viên.',
+	'FORUM_EDIT_EXPLAIN'				=> 'Bảng điều khiển bên dưới sẽ giúp bạn tùy chỉnh chuyên mục này. Lưu ý rằng việc thiết lập điều hành viên cho chuyên mục này cũng như bảng điều khiển bộ đếm số bài viết được thiết lập từ mục cấp phép chuyên mục trong công cụ cấp phép cho người dùng và nhóm.',
 	'FORUM_IMAGE'						=> 'Hình chuyên mục',
 	'FORUM_IMAGE_EXPLAIN'				=> 'Đường dẫn đến hình ảnh thêm vào sử dụng cho chuyên mục này, nằm trong thư mục chính cài đặt hệ thống.',
 	'FORUM_IMAGE_NO_EXIST'				=> 'Đường dẫn đến hình chuyên mục vừa nhập không tồn tại.',
-	'FORUM_LINK_EXPLAIN'				=> 'Địa chỉ URL đầy đủ đính kèm cả giao thức, ví dụ như <samp>http://</samp> để xác định liên kết điểm đến khi thành viên bấm vào chuyên mục liên kết này, ví dụ như <samp>http://www.phpbb.com/</samp>',
+	'FORUM_LINK_EXPLAIN'				=> 'Địa chỉ URL đầy đủ đính kèm cả giao thức, ví dụ như <samp>http://</samp> để xác định liên kết chuyển đến khi người dùng bấm vào chuyên mục này, ví dụ như <samp>http://www.phpbb.com/</samp>',
 	'FORUM_LINK_TRACK'					=> 'Đếm số lượt người ghé thăm',
 	'FORUM_LINK_TRACK_EXPLAIN'			=> 'Ghi nhận số lượt người đã bấm vào xem chuyên mục liên kết.',
 	'FORUM_NAME'						=> 'Tên chuyên mục',
@@ -108,7 +99,7 @@ $lang = array_merge($lang, array(
 	'FORUM_PASSWORD_EXPLAIN'			=> 'Chọn mật khẩu cho chuyên mục này, sử dụng hệ thống cấp phép trong thiết lập.',
 	'FORUM_PASSWORD_UNSET'				=> 'Gỡ bỏ mật khẩu chuyên mục',
 	'FORUM_PASSWORD_UNSET_EXPLAIN'		=> 'Đánh dấu vào tùy chọn này nếu bạn muốn gỡ bỏ mật khẩu chuyên mục.',
-	'FORUM_PASSWORD_MISMATCH'			=> 'Mật khẩu chuyên mục bạn vừa nhập không phù hợp.',
+	'FORUM_PASSWORD_MISMATCH'			=> 'Mật khẩu chuyên mục bạn nhập không phù hợp.',
 	'FORUM_PASSWORD_OLD'				=> 'Mật khẩu chuyên mục này được mã hóa theo phương pháp cũ và bạn nên thay đổi lại nó.',
 	'FORUM_PRUNE_SETTINGS'				=> 'Thiết lập dọn dẹp chuyên mục',	
 	'FORUM_RESYNCED'					=> 'Chuyên mục <strong>%s</strong> đã được đồng bộ thành công.',

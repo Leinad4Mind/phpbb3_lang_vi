@@ -1,21 +1,12 @@
 <?php
 /** 
 *
-* acp_board [Vietnamese]
+* acp/board [Vietnamese]
 *
 * @package language
-* @version $Id: board.php 101 2013-06-26 19:14:00Z nedka $
-* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.104
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -54,16 +45,16 @@ $lang = array_merge($lang, array(
 	'DEFAULT_LANGUAGE'				=> 'Ngôn ngữ mặc định',
 	'DEFAULT_STYLE'					=> 'Giao diện mặc định',
 	'DISABLE_BOARD'					=> 'Ngưng hoạt động hệ thống',
-	'DISABLE_BOARD_EXPLAIN'			=> 'Tùy chọn này sẽ ngưng hoạt động của hệ thống đối với các thành viên. Bạn cũng có nhập vào một tin nhắn giới hạn trong <strong>255</strong> ký tự hiển thị như thông báo ngưng hoạt động của hệ thống nếu muốn.',
-	'OVERRIDE_STYLE'				=> 'Thay thế cho giao diện lựa chọn của thành viên',
-	'OVERRIDE_STYLE_EXPLAIN'		=> 'Tùy chọn thay thế toàn bộ những giao diện đã được các thành viên lựa chọn bằng giao diện mặc định duy nhất của hệ thống.',
+	'DISABLE_BOARD_EXPLAIN'			=> 'Tùy chọn này sẽ ngưng hoạt động của hệ thống đối với người dùng. Bạn cũng có nhập vào một tin nhắn giới hạn trong <strong>255</strong> ký tự hiển thị như thông báo ngưng hoạt động của hệ thống nếu muốn.',
+	'OVERRIDE_STYLE'				=> 'Thay thế cho giao diện lựa chọn của người dùng',
+	'OVERRIDE_STYLE_EXPLAIN'		=> 'Tùy chọn thay thế toàn bộ những giao diện đã được người dùng lựa chọn bằng giao diện mặc định duy nhất của hệ thống.',
 	'SITE_DESC'						=> 'Giới thiệu về website',
 	'SITE_NAME'						=> 'Tên website',
 	'SYSTEM_DST'					=> 'Bật chế độ giờ mùa hè <abbr title="Daylight Saving Time">DST</abbr>',
 	'SYSTEM_TIMEZONE'				=> 'Múi giờ hệ thống',
-	'SYSTEM_TIMEZONE_EXPLAIN'		=> 'Múi giờ dùng chung cho những người dùng chưa đăng nhập (khách, máy tìm kiếm). Những thành viên đã đăng nhập sử dụng múi giờ riêng của họ đã chọn khi đăng ký hoặc thay đổi sau này trong bảng thiết lập cá nhân.',
+	'SYSTEM_TIMEZONE_EXPLAIN'		=> 'Múi giờ dùng chung cho những người dùng chưa đăng nhập (khách, máy tìm kiếm). Những người dùng đã đăng nhập sử dụng múi giờ riêng của họ đã chọn khi đăng ký hoặc thay đổi sau này trong bảng thiết lập cá nhân.',
 	'WARNINGS_EXPIRE'				=> 'Cảnh cáo trong vòng',
-	'WARNINGS_EXPIRE_EXPLAIN'		=> 'Số ngày trải qua trước khi một cảnh cáo tự động hết hiệu lực từ bản ghi của một thành viên. Nhập số 0 để cảnh cáo không thời hạn.',
+	'WARNINGS_EXPIRE_EXPLAIN'		=> 'Số ngày trải qua trước khi một cảnh cáo tự động hết hiệu lực từ bản ghi của một người dùng. Nhập số 0 để cảnh cáo không thời hạn.',
 ));
 
 // Board Features
@@ -72,17 +63,17 @@ $lang = array_merge($lang, array(
 
 	'ALLOW_ATTACHMENTS'			=> 'Cho phép đính kèm tập tin',
 	'ALLOW_BIRTHDAYS'			=> 'Cho phép thông tin sinh nhật',
-	'ALLOW_BIRTHDAYS_EXPLAIN'	=> 'Tùy chọn cho phép thông tin sinh nhật được thành viên nhập vào và thông tin về tuổi được hiển thị trong thông tin cá nhân về họ. Lưu ý rằng phần danh sách các thành viên có ngày sinh nhật trên trang chủ được điều khiển bởi một thiết lập nạp trang riêng.',
+	'ALLOW_BIRTHDAYS_EXPLAIN'	=> 'Tùy chọn cho phép thông tin sinh nhật được người dùng nhập vào và thông tin về tuổi được hiển thị trong thông tin cá nhân về họ. Lưu ý rằng phần danh sách thành viên có ngày sinh nhật trên trang chủ được điều khiển bởi một thiết lập nạp trang riêng.',
 	'ALLOW_BOOKMARKS'			=> 'Cho phép đánh dấu chủ đề vào trang yêu thích',
-	'ALLOW_BOOKMARKS_EXPLAIN'	=> 'Tùy chọn cho phép thành viên đánh dấu lại những chủ đề mà mình quan tâm vào trang yêu thích.',
+	'ALLOW_BOOKMARKS_EXPLAIN'	=> 'Tùy chọn cho phép người dùng đánh dấu lại những chủ đề mà mình quan tâm vào trang yêu thích.',
 	'ALLOW_BBCODE'				=> 'Cho phép sử dụng BBCode',
 	'ALLOW_FORUM_NOTIFY'		=> 'Cho phép theo dõi chuyên mục',
-	'ALLOW_NAME_CHANGE'			=> 'Cho phép thay đổi tên thành viên',
+	'ALLOW_NAME_CHANGE'			=> 'Cho phép thay đổi tên tài khoản',
 	'ALLOW_NO_CENSORS'			=> 'Cho phép tắt chế độ kiểm duyệt từ',
-	'ALLOW_NO_CENSORS_EXPLAIN'	=> 'Tùy chọn cho phép thành viên có thể tắt chế độ kiểm duyệt từ tự động trong các bài viết và tin nhắn.',
+	'ALLOW_NO_CENSORS_EXPLAIN'	=> 'Tùy chọn cho phép người dùng có thể tắt chế độ kiểm duyệt từ tự động trong các bài viết và tin nhắn.',
 	'ALLOW_PM_ATTACHMENTS'		=> 'Cho phép đính kèm tập tin trong tin nhắn',
 	'ALLOW_PM_REPORT'			=> 'Cho phép báo cáo tin nhắn',
-	'ALLOW_PM_REPORT_EXPLAIN'	=> 'Nếu tùy chọn này được bật, các thành viên sẽ có thêm tùy chọn báo cáo tin nhắn mà họ nhận được hay gửi đến các điều hành viên. Không có điều hành viên nào được phép xem những báo cáo tin nhắn này.',
+	'ALLOW_PM_REPORT_EXPLAIN'	=> 'Nếu tùy chọn này được bật, người dùng sẽ có thêm tùy chọn báo cáo tin nhắn mà họ nhận được hay gửi đến các điều hành viên. Không có điều hành viên nào được phép xem những báo cáo tin nhắn này.',
 	'ALLOW_QUICK_REPLY'			=> 'Cho phép trả lời nhanh bài viết',
 	'ALLOW_QUICK_REPLY_EXPLAIN'	=> 'Tùy chọn này cho phép bạn bật/tắt chức năng trả lời nhanh trên toàn diễn đàn. Nếu tùy chọn này được bật, danh sách các chuyên mục cho phép dùng trả lời nhanh sẽ được sử dụng để thiết lập riêng cho từng chuyên mục đó.',
 	'ALLOW_QUICK_REPLY_BUTTON'	=> 'Chấp nhận và bật trả lời nhanh trên tất cả chuyên mục',
@@ -91,25 +82,25 @@ $lang = array_merge($lang, array(
 	'ALLOW_SIG_FLASH'			=> 'Cho phép sử dụng thẻ BBCode <code>[FLASH]</code> trong chữ ký cá nhân',
 	'ALLOW_SIG_IMG'				=> 'Cho phép sử dụng thẻ BBCode <code>[IMG]</code> trong chữ ký cá nhân',
 	'ALLOW_SIG_LINKS'			=> 'Cho phép sử dụng liên kết trong chữ ký cá nhân',
-	'ALLOW_SIG_LINKS_EXPLAIN'	=> 'Nếu bạn vô hiệu tùy chọn này, thẻ BBCode <code>[URL]</code> và các địa chỉ URL khác trong chữ ký thành viên sẽ không được hiển thị như liên kết.',
+	'ALLOW_SIG_LINKS_EXPLAIN'	=> 'Nếu bạn vô hiệu tùy chọn này, thẻ BBCode <code>[URL]</code> và các địa chỉ URL khác trong chữ ký cá nhân sẽ không được hiển thị như liên kết.',
 	'ALLOW_SIG_SMILIES'			=> 'Cho phép sử dụng biểu tượng vui trong chữ ký cá nhân',
 	'ALLOW_SMILIES'				=> 'Cho phép sử dụng biểu tượng vui',
 	'ALLOW_TOPIC_NOTIFY'		=> 'Cho phép theo dõi chủ đề',
 	'BOARD_PM'					=> 'Cho phép gửi tin nhắn',
-	'BOARD_PM_EXPLAIN'			=> 'Tùy chọn kích hoạt chức năng gửi tin nhắn trong hệ thống đối với tất cả thành viên.',
+	'BOARD_PM_EXPLAIN'			=> 'Tùy chọn kích hoạt chức năng gửi tin nhắn trong hệ thống cho tất cả người dùng.',
 ));
 
 // Avatar Settings
 $lang = array_merge($lang, array(
-	'ACP_AVATAR_SETTINGS_EXPLAIN'	=> 'Hình đại diện thường là những hình ảnh nhỏ, những hình đơn mà thành viên đính kèm trong thông tin cá nhân của mình. Tùy thuộc vào giao diện được sử dụng, hình đại diện thường hiển thị bên dưới tên thành viên trong phần xem chủ đề. Với công cụ này, bạn có thể thay đổi cách sử dụng hình đại diện của thành viên. Lưu ý rằng trong trường hợp bạn kích hoạt tùy chọn cho phép thành viên tải lên hình đại diện, bạn cần phải tạo thư mục mang tên bên dưới trong hệ thống theo đúng đường dẫn đã thiết lập và chắc chắn thiết lập cấp phép có thể ghi cho thư mục này trên máy chủ. Bạn cũng cần lưu ý rằng dung lượng tập tin hạn chế cho hình đại diện chỉ áp dụng cho những hình đại diện được tải lên và không có tác dụng đối với những hình đại diện được liên kết từ các website khác.',
+	'ACP_AVATAR_SETTINGS_EXPLAIN'	=> 'Hình đại diện thường là những hình ảnh nhỏ, những hình đơn mà người dùng đính kèm trong thông tin cá nhân của mình. Tùy thuộc vào giao diện được sử dụng, hình đại diện thường hiển thị bên dưới tên tài khoản trong phần xem chủ đề. Với công cụ này, bạn có thể thay đổi cách sử dụng hình đại diện của người dùng. Lưu ý rằng trong trường hợp bạn kích hoạt tùy chọn cho phép người dùng tải lên hình đại diện, bạn cần phải tạo thư mục mang tên bên dưới trong hệ thống theo đúng đường dẫn đã thiết lập và chắc chắn thiết lập cấp phép có thể ghi cho thư mục này trên máy chủ. Bạn cũng cần lưu ý rằng dung lượng tập tin hạn chế cho hình đại diện chỉ áp dụng cho những hình đại diện được tải lên và không có tác dụng đối với những hình đại diện được liên kết từ các website khác.',
 
 	'ALLOW_AVATARS'					=> 'Cho phép sử dụng hình đại diện',
-	'ALLOW_AVATARS_EXPLAIN'			=> 'Tùy chọn cho phép sử dụng tất cả các loại hình đại diện.<br />Nếu bạn vô hiệu toàn bộ hình đại diện hay chỉ một vài chế độ nhất định, hình ảnh đại diện sẽ không còn hiển thị nhưng các thành viên vẫn có thể tải về hình đại diện của chính họ trong phần thiết lập cá nhân.',
+	'ALLOW_AVATARS_EXPLAIN'			=> 'Tùy chọn cho phép sử dụng tất cả các loại hình đại diện.<br />Nếu bạn vô hiệu toàn bộ hình đại diện hay chỉ một vài chế độ nhất định, hình ảnh đại diện sẽ không còn hiển thị nhưng các người dùng vẫn có thể tải về hình đại diện của chính họ trong phần thiết lập cá nhân.',
 	'ALLOW_LOCAL'					=> 'Cho phép sử dụng thư viện hình đại diện',
 	'ALLOW_REMOTE'					=> 'Cho phép liên kết hình đại diện',
-	'ALLOW_REMOTE_EXPLAIN'			=> 'Tùy chọn cho phép thành viên sử dụng hình đại diện được liên kết từ các website khác.',
+	'ALLOW_REMOTE_EXPLAIN'			=> 'Tùy chọn cho phép người dùng sử dụng hình đại diện được liên kết từ các website khác.',
 	'ALLOW_REMOTE_UPLOAD'			=> 'Cho phép tải lên hình đại diện bên ngoài',
-	'ALLOW_REMOTE_UPLOAD_EXPLAIN'	=> 'Tùy chọn cho phép thành viên tải lên hình đại diện được đặt trên các website khác.',
+	'ALLOW_REMOTE_UPLOAD_EXPLAIN'	=> 'Tùy chọn cho phép người dùng tải lên hình đại diện được đặt trên các website khác.',
 	'ALLOW_UPLOAD'					=> 'Cho phép tải lên hình đại diện',
 	'AVATAR_GALLERY_PATH'			=> 'Đường dẫn thư viện hình đại diện',
 	'AVATAR_GALLERY_PATH_EXPLAIN'	=> 'Đường dẫn đến thư mục chứa hình ảnh sử dụng cho thư viện hình đại diện trong hệ thống, ví dụ như <samp>images/avatars/gallery</samp>.',
@@ -129,25 +120,25 @@ $lang = array_merge($lang, array(
 
 	'ALLOW_BBCODE_PM'			=> 'Cho phép sử dụng BBCode trong tin nhắn',
 	'ALLOW_FLASH_PM'			=> 'Cho phép sử dụng thẻ BBCode <code>[FLASH]</code> trong tin nhắn',
-	'ALLOW_FLASH_PM_EXPLAIN'	=> 'Lưu ý rằng việc cho phép chèn tập tin Flash vào tin nhắn, nếu bạn bật tùy chọn, cũng còn tùy thuộc vào thiết lập cấp phép của thành viên.',
+	'ALLOW_FLASH_PM_EXPLAIN'	=> 'Lưu ý rằng việc cho phép chèn tập tin Flash vào tin nhắn, nếu bạn bật tùy chọn, cũng còn tùy thuộc vào thiết lập cấp phép của người dùng.',
 	'ALLOW_FORWARD_PM'			=> 'Cho phép chuyển tiếp tin nhắn',
 	'ALLOW_IMG_PM'				=> 'Cho phép sử dụng thẻ BBCode <code>[IMG]</code> trong tin nhắn',
-	'ALLOW_MASS_PM'				=> 'Cho phép gửi tin nhắn đến nhiều thành viên và nhóm',
+	'ALLOW_MASS_PM'				=> 'Cho phép gửi tin nhắn đến nhiều người dùng và nhóm',
 	'ALLOW_MASS_PM_EXPLAIN'		=> 'Việc gửi tin nhắn cho nhóm có thể được điều chỉnh lại với mỗi nhóm trong trang thiết lập nhóm.',
 	'ALLOW_PRINT_PM'			=> 'Cho phép in tin nhắn',
 	'ALLOW_QUOTE_PM'			=> 'Cho phép trích dẫn trong tin nhắn',
 	'ALLOW_SIG_PM'				=> 'Cho phép sử dụng chữ ký cá nhân trong tin nhắn',
 	'ALLOW_SMILIES_PM'			=> 'Cho phép sử dụng biểu tượng vui trong tin nhắn',
 	'BOXES_LIMIT'				=> 'Số tin nhắn tối đa trong mỗi thư mục',
-	'BOXES_LIMIT_EXPLAIN'		=> 'Số lượng tin nhắn tối đa mà thành viên nhận được trong mỗi thư mục tin nhắn của mình. Nhập số 0 để không hạn chế tin nhắn.',
+	'BOXES_LIMIT_EXPLAIN'		=> 'Số lượng tin nhắn tối đa mà người dùng nhận được trong mỗi thư mục tin nhắn của mình. Nhập số 0 để không hạn chế tin nhắn.',
 	'BOXES_MAX'					=> 'Số thư mục tin nhắn tối đa',
-	'BOXES_MAX_EXPLAIN'			=> 'Số lượng thư mục tin nhắn tối đa mà thành viên có thể tạo cho mình.',
+	'BOXES_MAX_EXPLAIN'			=> 'Số lượng thư mục tin nhắn tối đa mà người dùng có thể tạo cho mình.',
 	'ENABLE_PM_ICONS'			=> 'Cho phép sử dụng biểu tượng tin nhắn',
 	'FULL_FOLDER_ACTION'		=> 'Thao tác xử lí mặc định khi thư mục vượt quá dung lượng',
-	'FULL_FOLDER_ACTION_EXPLAIN'=> 'Thao tác xử lí mặc định sẽ được áp dụng nếu một thư mục tin nhắn của thành viên vượt quá dung lượng cho phép. Nếu bạn thiết lập tất cả, mọi thứ sẽ không còn phù hợp nữa. Chỉ có ngoại lệ đối với thư mục tin nhắn đặc biệt là “Hộp thư gửi”, thao tác xử lí mặc định luôn luôn là xóa những tin nhắn cũ.',
+	'FULL_FOLDER_ACTION_EXPLAIN'=> 'Thao tác xử lí mặc định sẽ được áp dụng nếu một thư mục tin nhắn của người dùng vượt quá dung lượng cho phép. Nếu bạn thiết lập tất cả, mọi thứ sẽ không còn phù hợp nữa. Chỉ có ngoại lệ đối với thư mục tin nhắn đặc biệt là “Hộp thư gửi”, thao tác xử lí mặc định luôn luôn là xóa những tin nhắn cũ.',
 	'HOLD_NEW_MESSAGES'			=> 'Giữ lại những tin nhắn mới',
 	'PM_EDIT_TIME'				=> 'Thời gian giới hạn sửa tin nhắn',
-	'PM_EDIT_TIME_EXPLAIN'		=> 'Thời gian giới hạn cho thành viên để sửa một tin nhắn chưa được gửi. Nhập số 0 để vô hiệu tùy chọn này',
+	'PM_EDIT_TIME_EXPLAIN'		=> 'Thời gian giới hạn để người dùng sửa một tin nhắn chưa được gửi. Nhập số 0 để vô hiệu tùy chọn này',
 	'PM_MAX_RECIPIENTS'			=> 'Số người nhận tin nhắn tối đa',
 	'PM_MAX_RECIPIENTS_EXPLAIN'	=> 'Số lượng người nhận tối đa cho phép đối với một tin nhắn. Nhập số 0 để không giới hạn lượng người nhận tin nhắn. Thiết lập này có thể điều chỉnh lại cho mỗi nhóm trong phần thiết lập nhóm.',
 ));
@@ -158,7 +149,7 @@ $lang = array_merge($lang, array(
 	'ALLOW_POST_LINKS'					=> 'Cho phép sử dụng liên kết trong bài viết/tin nhắn',
 	'ALLOW_POST_LINKS_EXPLAIN'			=> 'Nếu bạn vô hiệu tùy chọn này, thẻ BBCode <code>[URL]</code> và các địa chỉ URL khác trong bài viết/tin nhắn sẽ không được hiển thị như liên kết.',
 	'ALLOW_POST_FLASH'					=> 'Cho phép sử dụng thẻ BBCode <code>[FLASH]</code> trong bài viết',
-	'ALLOW_POST_FLASH_EXPLAIN'			=> 'Nếu bạn vô hiệu tùy chọn này, thẻ BBCode <code>[FLASH]</code> sẽ bị vô hiệu trong các bài viết. Mặc khác, những thiết lập cấp phép cũng quyết định việc thành viên có thể sử dụng được thẻ BBCode <code>[FLASH]</code> hay không.',
+	'ALLOW_POST_FLASH_EXPLAIN'			=> 'Nếu bạn vô hiệu tùy chọn này, thẻ BBCode <code>[FLASH]</code> sẽ bị vô hiệu trong các bài viết. Mặc khác, những thiết lập cấp phép cũng quyết định việc người dùng có thể sử dụng được thẻ BBCode <code>[FLASH]</code> hay không.',
 
 	'BUMP_INTERVAL'					=> 'Thời gian giữa hai lần đẩy chủ đề lên',
 	'BUMP_INTERVAL_EXPLAIN'			=> 'Số phút, số giờ hoặc số ngày giữa thời gian bài viết mới nhất được gửi đến chủ đề và thao tác đẩy chủ đề lên. Nhập số 0 để vô hiệu tùy chọn này.',
@@ -169,9 +160,9 @@ $lang = array_merge($lang, array(
 	'DISPLAY_LAST_EDITED'			=> 'Hiển thị thông tin về lần chỉnh sửa bài viết mới nhất',
 	'DISPLAY_LAST_EDITED_EXPLAIN'	=> 'Bật tùy chọn này nếu bạn muốn hiển thị thông tin về lần chỉnh sửa bài viết mới nhất cuối mỗi bài viết.',
 	'EDIT_TIME'						=> 'Thời gian giới hạn sửa bài viết',
-	'EDIT_TIME_EXPLAIN'				=> 'Thời gian giới hạn cho thành viên để sửa một bài viết mới. Nhập số 0 để vô hiệu tùy chọn này.',
+	'EDIT_TIME_EXPLAIN'				=> 'Thời gian giới hạn cho người dùng để sửa một bài viết mới. Nhập số 0 để vô hiệu tùy chọn này.',
 	'FLOOD_INTERVAL'				=> 'Thời gian chờ giữa hai lần gửi bài',
-	'FLOOD_INTERVAL_EXPLAIN'		=> 'Số giây mà thành viên phải chờ đợi giữa hai lần gửi bài viết. Nếu bạn không muốn giới hạn thời gian này cho thành viên nào, hãy thay đổi trong cấp phép của thành viên đó.',
+	'FLOOD_INTERVAL_EXPLAIN'		=> 'Số giây mà người dùng phải chờ đợi giữa hai lần gửi bài viết. Nếu bạn không muốn giới hạn thời gian này cho người dùng nào, hãy thay đổi trong cấp phép của người dùng đó.',
 	'HOT_THRESHOLD'					=> 'Số bài viết xác định chủ đề nhiều người xem',
 	'HOT_THRESHOLD_EXPLAIN'			=> 'Số bài viết xác định trong mỗi chủ đề để hiển thị chú thích là chủ đề nhiều người xem. Nhập số 0 để vô hiệu việc xác định chủ đề nhiều người xem.',
 	'MAX_POLL_OPTIONS'				=> 'Số lượng đối tượng bình chọn tối đa cho phép',
@@ -184,7 +175,7 @@ $lang = array_merge($lang, array(
 	'MAX_POST_URLS'					=> 'Liên kết tối đa mỗi bài viết',
 	'MAX_POST_URLS_EXPLAIN'			=> 'Số lượng địa chỉ URL tối đa được phép sử dụng trong nội dung một bài viết. Nhập số 0 để không hạn chế số liên kết.',
 	'MIN_CHAR_LIMIT'				=> 'Ký tự tối thiểu mỗi bài viết/tin nhắn',
-	'MIN_CHAR_LIMIT_EXPLAIN'		=> 'Số lượng ký tự tối thiểu mà thành viên phải nhập trong nội dung của một bài viết hay tin nhắn. Giá trị tối thiểu bắt buộc là 1.',
+	'MIN_CHAR_LIMIT_EXPLAIN'		=> 'Số lượng ký tự tối thiểu mà người dùng phải nhập trong nội dung của một bài viết hay tin nhắn. Giá trị tối thiểu bắt buộc là 1.',
 	'POSTING'						=> 'Gửi bài',
 	'POSTS_PER_PAGE'				=> 'Số bài viết mỗi chủ đề',
 	'QUOTE_DEPTH_LIMIT'				=> 'Số lượng trích dẫn lại mỗi bài viết',
@@ -200,65 +191,65 @@ $lang = array_merge($lang, array(
 	'ACP_SIGNATURE_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể thay đổi những thiết lập mặc định đối với chữ ký cá nhân trong hệ thống.',
 
 	'MAX_SIG_FONT_SIZE'				=> 'Kích thước phông chữ tối đa cho phép',
-	'MAX_SIG_FONT_SIZE_EXPLAIN'		=> 'Kích thước phông chữ tối đa cho phép sử dụng trong chữ ký cá nhân của thành viên. Nhập số 0 để không hạn chế kích thước.',
+	'MAX_SIG_FONT_SIZE_EXPLAIN'		=> 'Kích thước phông chữ tối đa cho phép sử dụng trong chữ ký cá nhân. Nhập số 0 để không hạn chế kích thước.',
 	'MAX_SIG_IMG_HEIGHT'			=> 'Chiều cao hình ảnh tối đa cho phép',
-	'MAX_SIG_IMG_HEIGHT_EXPLAIN'	=> 'Chiều cao tối đa cho phép sử dụng của hình ảnh/tập tin Flash trong chữ ký cá nhân của thành viên. Nhập số 0 để không hạn chế chiều cao.',
+	'MAX_SIG_IMG_HEIGHT_EXPLAIN'	=> 'Chiều cao tối đa cho phép sử dụng của hình ảnh/tập tin Flash trong chữ ký cá nhân. Nhập số 0 để không hạn chế chiều cao.',
 	'MAX_SIG_IMG_WIDTH'				=> 'Chiều rộng hình ảnh tối đa cho phép',
-	'MAX_SIG_IMG_WIDTH_EXPLAIN'		=> 'Chiều rộng tối đa cho phép sử dụng của hình ảnh/tập tin Flash trong chữ ký cá nhân của thành viên. Nhập số 0 để không hạn chế chiều rộng.',
+	'MAX_SIG_IMG_WIDTH_EXPLAIN'		=> 'Chiều rộng tối đa cho phép sử dụng của hình ảnh/tập tin Flash trong chữ ký cá nhân. Nhập số 0 để không hạn chế chiều rộng.',
 	'MAX_SIG_LENGTH'				=> 'Số ký tự tối đa cho phép',
-	'MAX_SIG_LENGTH_EXPLAIN'		=> 'Số ký tự tối đa cho phép sử dụng trong chữ ký cá nhân của thành viên.',
+	'MAX_SIG_LENGTH_EXPLAIN'		=> 'Số ký tự tối đa cho phép sử dụng trong chữ ký cá nhân.',
 	'MAX_SIG_SMILIES'				=> 'Số lượng biểu tượng vui tối đa cho phép',
-	'MAX_SIG_SMILIES_EXPLAIN'		=> 'Số lượng biểu tượng vui tối đa cho phép sử dụng trong chữ ký cá nhân của thành viên. Nhập số 0 để không hạn chế số lượng biểu tượng vui.',
+	'MAX_SIG_SMILIES_EXPLAIN'		=> 'Số lượng biểu tượng vui tối đa cho phép sử dụng trong chữ ký cá nhân. Nhập số 0 để không hạn chế số lượng biểu tượng vui.',
 	'MAX_SIG_URLS'					=> 'Số liên kết tối đa cho phép',
-	'MAX_SIG_URLS_EXPLAIN'			=> 'Số lượng liên kết tối đa cho phép sử dụng trong chữ ký cá nhân của thành viên. Nhập số 0 để không hạn chế số liên kết.',
+	'MAX_SIG_URLS_EXPLAIN'			=> 'Số lượng liên kết tối đa cho phép sử dụng trong chữ ký cá nhân. Nhập số 0 để không hạn chế số liên kết.',
 ));
 
 // Registration Settings
 $lang = array_merge($lang, array(
-	'ACP_REGISTER_SETTINGS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thay đổi những thiết lập đăng ký thành viên và thông tin cá nhân của thành viên trong hệ thống.',
+	'ACP_REGISTER_SETTINGS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thay đổi những thiết lập đăng ký tài khoản và thông tin cá nhân của người dùng trong hệ thống.',
 	'ACC_ACTIVATION'					=> 'Kích hoạt tài khoản',
-	'ACC_ACTIVATION_EXPLAIN'			=> 'Tùy chọn này cho phép bạn quyết định cách thức kích hoạt tài khoản thành viên khi đăng ký mới. Bạn cũng có thể cho ngưng đăng ký thành viên mới với tùy chọn này. Chức năng gửi email trong hệ thống phải được bật để có thể kích hoạt tài khoản bởi thành viên hoặc quản trị viên.',
+	'ACC_ACTIVATION_EXPLAIN'			=> 'Tùy chọn này cho phép bạn quyết định cách thức kích hoạt tài khoản khi đăng ký mới. Bạn cũng có thể cho ngưng đăng ký tài khoản mới với tùy chọn này. Chức năng gửi email trong hệ thống phải được bật để có thể kích hoạt tài khoản bởi người dùng hoặc quản trị viên.',
 	'ACC_ADMIN'							=> 'Bởi quản trị viên',
 	'ACC_DISABLE'						=> 'Ngưng đăng ký mới',
 	'ACC_NONE'							=> 'Không cần (tham gia ngay)',
-	'ACC_USER'							=> 'Bởi thành viên (xác nhận qua email)',
-//	'ACC_USER_ADMIN'					=> 'Thành viên + quản trị viên',
+	'ACC_USER'							=> 'Bởi người dùng (xác nhận qua email)',
+//	'ACC_USER_ADMIN'					=> 'Người dùng + quản trị viên',
 	'ALLOW_EMAIL_REUSE'					=> 'Cho phép sử dụng lại địa chỉ email',
-	'ALLOW_EMAIL_REUSE_EXPLAIN'			=> 'Tùy chọn cho phép những thành viên khác nhau có thể sử dụng cùng một địa chỉ email giống nhau.',
+	'ALLOW_EMAIL_REUSE_EXPLAIN'			=> 'Tùy chọn cho phép những người dùng khác nhau có thể sử dụng cùng một địa chỉ email giống nhau.',
 
 	'COPPA'					=> 'Điều khoản COPPA',
 	'COPPA_FAX'				=> 'Số fax dùng cho điều khoản COPPA',
 	'COPPA_MAIL'			=> 'Địa chỉ email dùng cho điều khoản COPPA',
-	'COPPA_MAIL_EXPLAIN'	=> 'Địa chỉ email dùng để cho cha mẹ hay người bảo hộ của các thành viên theo điều khoản COPPA gửi bản cam kết đến.',
+	'COPPA_MAIL_EXPLAIN'	=> 'Địa chỉ email dùng để cho cha mẹ hay người bảo hộ của người dùng theo điều khoản COPPA gửi bản cam kết đến.',
 
 	'ENABLE_COPPA'			=> 'Bật điều khoản COPPA',
-	'ENABLE_COPPA_EXPLAIN'	=> 'Tùy chọn này yêu cầu các thành viên từ 13 tuổi trở xuống phải cam kết với điều khoản U.S. COPPA. Nếu bạn vô hiệu điều khoản này thì các thành viên trong nhóm COPPA sẽ không còn được hiển thị nữa.',
+	'ENABLE_COPPA_EXPLAIN'	=> 'Tùy chọn này yêu cầu người dùng từ 13 tuổi trở xuống phải cam kết với điều khoản U.S. COPPA. Nếu bạn vô hiệu điều khoản này thì người dùng trong nhóm COPPA sẽ không còn được hiển thị nữa.',
 
 	'MAX_CHARS'	=> 'Tối đa',
 	'MIN_CHARS'	=> 'Tối thiểu',
 
 	'NEW_MEMBER_POST_LIMIT'				=> 'Giới hạn thành viên mới gửi bài',
-	'NEW_MEMBER_POST_LIMIT_EXPLAIN'		=> 'Các thành viên mới sẽ vẫn nằm trong nhóm “Thành viên mới đăng ký” cho đến khi họ có đủ số bài viết trong thiết lập này. Bạn có thể dùng nhóm đặc biệt này để hạn chế việc sử dụng tin nhắn hay xem lại nội dung các bài viết của họ. <strong>Nhập số 0 để vô hiệu chức năng này.</strong>',
-	'NEW_MEMBER_GROUP_DEFAULT'			=> 'Chọn nhóm “Thành viên mới đăng ký” làm mặc định',
-	'NEW_MEMBER_GROUP_DEFAULT_EXPLAIN'	=> 'Nếu tùy chọn này được bật và tùy chọn “Giới hạn thành viên mới gửi bài” được thiết lập, những thành viên mới sẽ không chỉ được gán vào nhóm “Thành viên mới đăng ký” nhưng nhóm này sẽ được chọn làm nhóm mặc định của họ. Điều này thuận tiện cho bạn trong trường hợp muốn gán một xếp hạng hay hình đại diện chung cho nhóm.',
+	'NEW_MEMBER_POST_LIMIT_EXPLAIN'		=> 'Các thành viên mới sẽ vẫn nằm trong nhóm “Người dùng mới đăng ký” cho đến khi họ có đủ số bài viết trong thiết lập này. Bạn có thể dùng nhóm đặc biệt này để hạn chế việc sử dụng tin nhắn hay xem lại nội dung các bài viết của họ. <strong>Nhập số 0 để vô hiệu chức năng này.</strong>',
+	'NEW_MEMBER_GROUP_DEFAULT'			=> 'Chọn nhóm “Người dùng mới đăng ký” làm mặc định',
+	'NEW_MEMBER_GROUP_DEFAULT_EXPLAIN'	=> 'Nếu tùy chọn này được bật và tùy chọn “Giới hạn thành viên mới gửi bài” được thiết lập, những thành viên mới sẽ không chỉ được gán vào nhóm “Người dùng mới đăng ký” nhưng nhóm này sẽ được chọn làm nhóm mặc định của họ. Điều này thuận tiện cho bạn trong trường hợp muốn gán một danh hiệu hay hình đại diện chung cho nhóm.',
 	'NO_AUTH_PLUGIN'					=> 'Không có phương pháp xác thực nào được tìm thấy.',
 
 	'PASSWORD_LENGTH'			=> 'Độ dài mật khẩu',
 	'PASSWORD_LENGTH_EXPLAIN'	=> 'Số ký tự tối thiểu và tối đa bắt buộc đối với mật khẩu.',
 
 	'REG_LIMIT'			=> 'Số lần xác nhận đăng ký sai',
-	'REG_LIMIT_EXPLAIN'	=> 'Số lần nhập sai mã xác nhận tối đa cho phép khi đăng ký thành viên trước khi bị khóa trong phiên đăng nhập đó.',
+	'REG_LIMIT_EXPLAIN'	=> 'Số lần nhập sai mã xác nhận tối đa cho phép trong việc đăng ký tài khoản trước khi bị khóa trong phiên đăng nhập đó.',
 
 	'USERNAME_ALPHA_ONLY'			=> 'Chỉ được dùng vừa chữ cái vừa chữ số',
 	'USERNAME_ALPHA_SPACERS'		=> 'Vừa chữ cái vừa chữ số và có khoảng trắng',
 	'USERNAME_ASCII'				=> 'Chỉ được dùng ký tự ASCII (không có mã Unicode quốc tế)',	
 	'USERNAME_LETTER_NUM'			=> 'Bất kì chữ cố và chữ cái nào',
 	'USERNAME_LETTER_NUM_SPACERS'	=> 'Bất kì chữ số, chữ cái và khoảng trắng nào',
-	'USERNAME_CHARS'				=> 'Giới hạn ký tự trong tên thành viên',
+	'USERNAME_CHARS'				=> 'Giới hạn ký tự trong tên tài khoản',
 	'USERNAME_CHARS_ANY'			=> 'Bất kì ký tự nào',
-	'USERNAME_CHARS_EXPLAIN'		=> 'Giới hạn loại ký tự được sử dụng trong tên thành viên và khoảng trắng: -, +, _, [ và ].',
-	'USERNAME_LENGTH'				=> 'Độ dài tên thành viên',
-	'USERNAME_LENGTH_EXPLAIN'		=> 'Số ký tự tối thiểu và tối đa bắt buộc đối với tên thành viên.',
+	'USERNAME_CHARS_EXPLAIN'		=> 'Giới hạn loại ký tự được sử dụng trong tên tài khoản và khoảng trắng: -, +, _, [ và ].',
+	'USERNAME_LENGTH'				=> 'Độ dài tên tài khoản',
+	'USERNAME_LENGTH_EXPLAIN'		=> 'Số ký tự tối thiểu và tối đa bắt buộc đối với tên tài khoản.',
 ));
 
 // Feeds
@@ -271,7 +262,7 @@ $lang = array_merge($lang, array(
 	'ACP_FEED_FORUM_EXPLAIN'			=> 'Hiện những bài viết mới của từng chuyên mục đơn và chuyên mục con.',
 	'ACP_FEED_GENERAL'					=> 'Thiết lập chung',
 	'ACP_FEED_HTTP_AUTH'				=> 'Cho phép xác thực HTTP',
-	'ACP_FEED_HTTP_AUTH_EXPLAIN'		=> 'Tùy chọn cho phép thành viên có thể đọc được nội dung ẩn không dành cho khách bằng cách thêm vào tham số <samp>auth=http</samp> trong địa chỉ URL. Lưu ý rằng một vài bản cài đặt PHP có thể yêu cầu phải chỉnh sửa lại tập tin <code>.htaccess</code>. Bạn có thể đọc hướng dẫn ghi chú trong tập tin này.',
+	'ACP_FEED_HTTP_AUTH_EXPLAIN'		=> 'Tùy chọn cho phép người dùng có thể đọc được nội dung ẩn không dành cho khách bằng cách thêm vào tham số <samp>auth=http</samp> trong địa chỉ URL. Lưu ý rằng một vài bản cài đặt PHP có thể yêu cầu phải chỉnh sửa lại tập tin <code>.htaccess</code>. Bạn có thể đọc hướng dẫn ghi chú trong tập tin này.',
 	'ACP_FEED_ITEM_STATISTICS'			=> 'Thông tin thống kê',
 	'ACP_FEED_ITEM_STATISTICS_EXPLAIN'	=> 'Tùy chọn hiển thị thông tin thống kê cho từng mục tin.<br />(Ví dụ: người gửi, ngày giờ, lượt trả lời, lượt xem)',
 	'ACP_FEED_LIMIT'					=> 'Số lượng mục tin',
@@ -334,20 +325,20 @@ $lang = array_merge($lang, array(
 	'VISUAL_CONFIRM_REFRESH'			=> 'Cho phép người dùng nạp lại kiểm tra nhập liệu tự động',
 	'VISUAL_CONFIRM_REFRESH_EXPLAIN'	=> 'Tùy chọn cho phép người dùng có thể yêu cầu lại thao tác kiểm tra nhập liệu tự động nếu họ gặp rắc rối với thao tác ban đầu. Một vài phần mở rộng có thể không hỗ trợ tùy chọn này.',
 	'VISUAL_CONFIRM_REG'				=> 'Kiểm tra nhập liệu tự động khi đăng ký',
-	'VISUAL_CONFIRM_REG_EXPLAIN'		=> 'Tùy chọn yêu cầu các thành viên mới khi đăng ký phải vượt qua thao tác kiểm tra nhập liệu tự động để ngăn chặn việc đăng ký tài khoản hàng loạt vào hệ thống.',
+	'VISUAL_CONFIRM_REG_EXPLAIN'		=> 'Tùy chọn yêu cầu người dùng mới khi đăng ký phải vượt qua thao tác kiểm tra nhập liệu tự động để ngăn chặn việc đăng ký tài khoản hàng loạt vào hệ thống.',
 ));
 
 // Cookie Settings
 $lang = array_merge($lang, array(
-	'ACP_COOKIE_SETTINGS_EXPLAIN'	=> 'Những thiết lập bên dưới được sử dụng để gửi cookie đến trình duyệt của khách ghé thăm. Trong hều hết các trường hợp, bạn nên sử dụng giá trị mặc định của cookie và đừng thay đổi chúng nếu không đủ khả năng quản lí hay không thực sự cần thiết. Nếu bạn thực sự cần thay đổi giá trị mặc định, hãy cẩn thận vì những thiết lập không chính xác sẽ ngăn cản thành viên đăng nhập vào hệ thống.',
+	'ACP_COOKIE_SETTINGS_EXPLAIN'	=> 'Những thiết lập bên dưới được sử dụng để gửi cookie đến trình duyệt của khách ghé thăm. Trong hều hết các trường hợp, bạn nên sử dụng giá trị mặc định của cookie và đừng thay đổi chúng nếu không đủ khả năng quản lí hay không thực sự cần thiết. Nếu bạn thực sự cần thay đổi giá trị mặc định, hãy cẩn thận vì những thiết lập không chính xác sẽ ngăn cản người dùng đăng nhập vào hệ thống.',
 
 	'COOKIE_DOMAIN'				=> 'Tên miền cookie',
 	'COOKIE_NAME'				=> 'Tên cookie',
 	'COOKIE_PATH'				=> 'Đường dẫn cookie',
 	'COOKIE_SECURE'				=> 'Cookie bảo mật',
 	'COOKIE_SECURE_EXPLAIN'		=> 'Nếu máy chủ của bạn đang chạy SSL thì hãy bật tùy chọn này, còn nếu không thì hãy vô hiệu đi. Nếu như bạn bật tùy chọn này và máy chủ của bạn không chạy trên SSL thì kết quả là sẽ xảy ra lỗi trong suốt quá trình truy xuất đến máy chủ.',
-	'ONLINE_LENGTH'				=> 'Thời gian tính thành viên trực tuyến',
-	'ONLINE_LENGTH_EXPLAIN'		=> 'Số phút mà những thành viên không còn hoạt động trong hệ thống sẽ không được hiển thị trong danh sách “Ai trực tuyến?”. Giá trị thời gian thiết lập càng lớn thì càng mất nhiều thời gian hơn để tạo ra danh sách.',
+	'ONLINE_LENGTH'				=> 'Thời gian tính số người trực tuyến',
+	'ONLINE_LENGTH_EXPLAIN'		=> 'Số phút mà những người dùng không còn hoạt động trong hệ thống sẽ không được hiển thị trong danh sách “Ai trực tuyến?”. Giá trị thời gian thiết lập càng lớn thì càng mất nhiều thời gian hơn để tạo ra danh sách.',
 	'SESSION_LENGTH'			=> 'Thời gian phiên đăng nhập có hiệu lực',
 	'SESSION_LENGTH_EXPLAIN'	=> 'Số giây mà phiên đăng nhập có hiệu lực kể từ khi được tạo mới.',
 ));
@@ -370,7 +361,7 @@ $lang = array_merge($lang, array(
 	'RECOMPILE_STYLES_EXPLAIN'		=> 'Kiểm tra những thành phần giao diện đã được cập nhật trong hệ thống tập tin giao diện và biên dịch lại.',
 	'YES_ANON_READ_MARKING'			=> 'Bật đánh dấu chủ đề cho khách',
 	'YES_ANON_READ_MARKING_EXPLAIN'	=> 'Tùy chọn sắp xếp thông tin trạng thái các chủ đề đã xem/chưa xem cho khách. Nếu bạn vô hiệu tùy chọn này, các bài viết sẽ luôn luôn được đánh dấu đã xem đối với khách.',
-	'YES_BIRTHDAYS'					=> 'Hiển thị danh sách các thành viên có sinh nhật',
+	'YES_BIRTHDAYS'					=> 'Hiển thị danh sách thành viên có sinh nhật',
 	'YES_BIRTHDAYS_EXPLAIN'			=> 'Nếu bạn vô hiệu tùy chọn này, danh sách các thành viên có ngày sinh nhật sẽ không được hiển thị nữa. Ngoài ra, để thiết lập này có tác dụng, thiết lập cho phép thông tin sinh nhật của thành viên cũng phải được bật.',
 	'YES_JUMPBOX'					=> 'Hiển thị danh sách chuyên mục',
 	'YES_MODERATORS'				=> 'Hiển thị danh sách điều hành viên',
@@ -381,25 +372,25 @@ $lang = array_merge($lang, array(
 	'YES_ONLINE_TRACK'				=> 'Hiển thị thông tin thành viên trực tuyến',
 	'YES_ONLINE_TRACK_EXPLAIN'		=> 'Hiển thị thông tin thành viên trực tuyến trong trang thông tin cá nhân và trang xem chủ đề.',
 	'YES_POST_MARKING'				=> 'Hiển thị những chủ đề được đánh dấu',
-	'YES_POST_MARKING_EXPLAIN'		=> 'Đánh dấu cho thành viên biết vừa gửi bài trong chủ đề nào.',
+	'YES_POST_MARKING_EXPLAIN'		=> 'Đánh dấu cho người dùng biết vừa gửi bài trong chủ đề nào.',
 	'YES_READ_MARKING'				=> 'Đánh dấu chủ đề ngay trên máy chủ',
-	'YES_READ_MARKING_EXPLAIN'		=> 'Lưu trữ thông tin xem/chưa xem bài viết của thành viên trong cơ sở dữ liệu thay vì sử dụng cookie.',
+	'YES_READ_MARKING_EXPLAIN'		=> 'Lưu trữ thông tin xem/chưa xem bài viết của người dùng trong cơ sở dữ liệu thay vì sử dụng cookie.',
 	'YES_UNREAD_SEARCH'				=> 'Cho phép tìm kiếm những bài viết chưa xem',
 ));
 
 // Auth settings
 $lang = array_merge($lang, array(
-	'ACP_AUTH_SETTINGS_EXPLAIN'	=> 'Hệ thống phpBB hỗ trợ sử dụng các gói chức năng xác thực. Điều này giúp bạn lựa chọn phương pháp xác thực các thành viên khi họ đăng nhập vào hệ thống. Mặc định, có ba plugin được cung cấp kèm theo hệ thống phpBB: DB, LDAP và Apache. Không phải tất cả các phương pháp đều yêu cầu bạn phải khai báo thêm thông tin với hệ thống. Bạn chỉ cần cung cấp thêm thông tin cho hệ thống biết liên quan đến phương pháp xác thực mà mình đã chọn.',
+	'ACP_AUTH_SETTINGS_EXPLAIN'	=> 'Hệ thống phpBB hỗ trợ sử dụng các gói chức năng xác thực. Điều này giúp bạn lựa chọn phương pháp xác thực các tài khoản khi họ đăng nhập vào hệ thống. Mặc định, có 3 phương pháp được cung cấp kèm theo hệ thống phpBB: DB, LDAP và Apache. Không phải tất cả các phương pháp đều yêu cầu bạn phải khai báo thêm thông tin với hệ thống. Bạn chỉ cần cung cấp thêm thông tin cho hệ thống biết liên quan đến phương pháp xác thực mà mình đã chọn.',
 
 	'AUTH_METHOD'				=> 'Chọn phương pháp xác thực',
 
 	'APACHE_SETUP_BEFORE_USE'	=> 'Bạn phải cài đặt bộ xác thực cho Apache trước khi bạn chuyển đổi hệ thống đến phương pháp xác thực này. Cần lưu ý rằng tên tài khoản bạn sử dụng cho phương pháp xác thực này của Apache phải giống với tài khoản thành viên của bạn trong hệ thống. Việc xác thực bằng Apache chỉ có thể sử dụng được nếu <samp>mod_php</samp> (không phải phiên bản CGI) và <samp>safe_mode</samp> đã được vô hiệu trên máy chủ.',
 
 	'LDAP_DN'						=> 'Tên LDAP <var>dn</var>',
-	'LDAP_DN_EXPLAIN'				=> 'Đây là tên định danh LDAP, xác định thông tin về thành viên, ví dụ như <samp>o=My Company,c=US</samp>.',
+	'LDAP_DN_EXPLAIN'				=> 'Đây là tên định danh LDAP, xác định thông tin về người dùng, ví dụ như <samp>o=My Company,c=US</samp>.',
 	'LDAP_EMAIL'					=> 'Thuộc tính địa chỉ email LDAP',
-	'LDAP_EMAIL_EXPLAIN'			=> 'Thiết lập tên thuộc tính cho địa chỉ email của các thành viên nếu bạn đã có sẵn để thiết lập tự động địa chỉ email cho các thành viên mới. Để trống phần này cũng sẽ bỏ trống kết quả trong địa chỉ email cho các thành viên đã đăng nhập lần đầu vào hệ thống.',
-	'LDAP_INCORRECT_USER_PASSWORD'	=> 'Việc liên kết đến máy chủ LDAP đã thất bại với tên thành viên/mật khẩu mà bạn đã xác định.',
+	'LDAP_EMAIL_EXPLAIN'			=> 'Thiết lập tên thuộc tính cho địa chỉ email của người dùng nếu bạn đã có sẵn để thiết lập tự động địa chỉ email cho người dùng mới. Để trống phần này cũng sẽ bỏ trống kết quả trong địa chỉ email cho người dùng đã đăng nhập lần đầu vào hệ thống.',
+	'LDAP_INCORRECT_USER_PASSWORD'	=> 'Việc liên kết đến máy chủ LDAP đã thất bại với tên tài khoản/mật khẩu mà bạn đã xác định.',
 	'LDAP_NO_EMAIL'					=> 'Thuộc tính của địa chỉ email bạn vừa xác định không tồn tại.',	
 	'LDAP_NO_IDENTITY'				=> 'Không thể tìm khóa định danh đăng nhập cho <strong>%s</strong>.',
 	'LDAP_PASSWORD'					=> 'Mật khẩu LDAP',
@@ -427,8 +418,8 @@ $lang = array_merge($lang, array(
 	'ICONS_PATH'				=> 'Thư mục biểu tượng bài viết',
 	'ICONS_PATH_EXPLAIN'		=> 'Đường dẫn đến thư mục chứa biểu tượng bài viết trong hệ thống, ví dụ như <samp>images/icons</samp>.',
 	'PATH_SETTINGS'				=> 'Thiết lập đường dẫn đến thư mục',
-	'RANKS_PATH'				=> 'Thư mục hình xếp hạng',
-	'RANKS_PATH_EXPLAIN'		=> 'Đường dẫn đến thư mục chứa hình xếp hạng trong hệ thống, ví dụ như <samp>images/ranks</samp>.',
+	'RANKS_PATH'				=> 'Thư mục hình danh hiệu',
+	'RANKS_PATH_EXPLAIN'		=> 'Đường dẫn đến thư mục chứa hình danh hiệu trong hệ thống, ví dụ như <samp>images/ranks</samp>.',
 	'SCRIPT_PATH'				=> 'Đường dẫn hệ thống',
 	'SCRIPT_PATH_EXPLAIN'		=> 'Đường dẫn đến thư mục mà hệ thống phpBB được định vị đối với tên miền, ví dụ như <samp>/phpBB3</samp>.',
 	'SERVER_NAME'				=> 'Tên miền',
@@ -450,9 +441,9 @@ $lang = array_merge($lang, array(
 
 	'ALL'							=> 'Tất cả',
 	'ALLOW_AUTOLOGIN'				=> 'Cho phép đăng nhập tự động',
-	'ALLOW_AUTOLOGIN_EXPLAIN'		=> 'Tùy chọn cho phép thành viên có thể đăng nhập tự động vào hệ thống khi họ ghé thăm.',
+	'ALLOW_AUTOLOGIN_EXPLAIN'		=> 'Tùy chọn cho phép người dùng có thể đăng nhập tự động vào hệ thống khi họ ghé thăm.',
 	'AUTOLOGIN_LENGTH'				=> 'Số ngày hết hạn khóa đăng nhập tự động',
-	'AUTOLOGIN_LENGTH_EXPLAIN'		=> 'Số ngày kể từ lần ghé thăm trước của thành viên, khóa đăng nhập tự động sẽ hết hạn. Nhập số 0 để vô hiệu chức năng này.',
+	'AUTOLOGIN_LENGTH_EXPLAIN'		=> 'Số ngày kể từ lần ghé thăm trước của người dùng, khóa đăng nhập tự động sẽ hết hạn. Nhập số 0 để vô hiệu chức năng này.',
 	'BROWSER_VALID'					=> 'Kiểm tra trình duyệt',
 	'BROWSER_VALID_EXPLAIN'			=> 'Bật chế độ kiểm tra trình duyệt cho mỗi phiên đăng nhập để tăng cường khả năng bảo mật.',
 	'CHECK_DNSBL'					=> 'Kiểm tra lại địa chỉ IP với danh sách các địa chỉ DNS đen',
@@ -462,17 +453,17 @@ $lang = array_merge($lang, array(
 	'EMAIL_CHECK_MX'				=> 'Kiểm tra tên miền của email theo bản ghi tên miền MX hợp lệ',
 	'EMAIL_CHECK_MX_EXPLAIN'		=> 'Nếu bạn bật chức năng này, tên miền của các địa chỉ email được cung cấp trong quá trình đăng ký và thay đổi thông tin cá nhân sẽ được kiểm tra để đảm bảo đây là bản ghi tên miền MX hợp lệ.',
 	'FORCE_PASS_CHANGE'				=> 'Số ngày yêu cầu thay đổi mật khẩu',
-	'FORCE_PASS_CHANGE_EXPLAIN'		=> 'Yêu cầu thành viên phải thay đổi mật khẩu của họ sau khi hết số ngày được thiết lập. Nhập số 0 để vô hiệu thiết lập này.',
+	'FORCE_PASS_CHANGE_EXPLAIN'		=> 'Yêu cầu người dùng phải thay đổi mật khẩu của họ sau khi hết số ngày được thiết lập. Nhập số 0 để vô hiệu thiết lập này.',
 	'FORM_TIME_MAX'					=> 'Thời gian tối đa để gửi các mẫu dữ liệu',
-	'FORM_TIME_MAX_EXPLAIN'			=> 'Thời gian tối đa cho phép mà thành viên có thể gửi các mẫu dữ liệu vào hệ thống. Nhập số <strong>-1</strong> để vô hiệu thiết lập này. Lưu ý rằng một mẫu dữ liệu cũng có thể trở nên không hợp lệ nếu phiên đăng nhập đó đã hết hiệu lực, không phải do thiết lập này.',
+	'FORM_TIME_MAX_EXPLAIN'			=> 'Thời gian tối đa cho phép mà người dùng có thể gửi các mẫu dữ liệu vào hệ thống. Nhập số <strong>-1</strong> để vô hiệu thiết lập này. Lưu ý rằng một mẫu dữ liệu cũng có thể trở nên không hợp lệ nếu phiên đăng nhập đó đã hết hiệu lực, không phải do thiết lập này.',
 	'FORM_SID_GUESTS'				=> 'Kết nối mẫu dữ liệu đến phiên đăng nhập của khách',
 	'FORM_SID_GUESTS_EXPLAIN'		=> 'Nếu bạn bật tùy chọn này, mẫu dữ liệu sẵn có dành cho khách sẽ được loại trừ không sử dụng đến phiên đăng nhập. Điều này có thể tạo ra những rắc rối với một vài nhà cung cấp dịch vụ truy cập Internet.',
 	'FORWARDED_FOR_VALID'			=> 'Kiểm tra khai báo <var>X_FORWARDED_FOR</var> hợp lệ',
 	'FORWARDED_FOR_VALID_EXPLAIN'	=> 'Những phiên đăng nhập này sẽ chỉ được tiếp tục nếu khai báo <var>X_FORWARDED_FOR</var> gửi đi bằng với một phiên đăng nhập đã gửi trong yêu cầu trước đó. Những thiết lập cấm cũng sẽ được kiểm tra lại các địa chỉ IP trong <var>X_FORWARDED_FOR</var>.',
 	'IP_VALID'						=> 'Kiểm tra địa chỉ IP ',
-	'IP_VALID_EXPLAIN'				=> 'Tùy chọn xác định số lượng địa chỉ IP được sử dụng để kiểm tra phiên đăng nhập của thành viên. Chọn <samp>Tất cả</samp> sẽ so sánh toàn bộ địa chỉ IP: <samp>A.B.C</samp> thay cho x.x.x, <samp>A.B</samp> thay cho x.x. Chọn <samp>Không có</samp> để tắt chức năng kiểm tra này. Với những địa chỉ IP dùng IPv6, <samp>A.B.C</samp> sẽ so sánh 4 khối đầu tiên và <samp>A.B</samp> là 3 khối đầu tiên.',
-	'IP_LOGIN_LIMIT_MAX'			=> 'Maximum number of login attempts per IP address',
-	'IP_LOGIN_LIMIT_MAX_EXPLAIN'	=> 'The threshold of login attempts allowed from a single IP address before an anti-spambot task is triggered. Enter 0 to prevent the anti-spambot task from being triggered by IP addresses.',
+	'IP_VALID_EXPLAIN'				=> 'Tùy chọn xác định số lượng địa chỉ IP được sử dụng để kiểm tra phiên đăng nhập của người dùng. Chọn <samp>Tất cả</samp> sẽ so sánh toàn bộ địa chỉ IP: <samp>A.B.C</samp> thay cho x.x.x, <samp>A.B</samp> thay cho x.x. Chọn <samp>Không có</samp> để tắt chức năng kiểm tra này. Với những địa chỉ IP dùng IPv6, <samp>A.B.C</samp> sẽ so sánh 4 khối đầu tiên và <samp>A.B</samp> là 3 khối đầu tiên.',
+	'IP_LOGIN_LIMIT_MAX'			=> 'Số lần đăng nhập sai tối đa mỗi địa chỉ IP',
+	'IP_LOGIN_LIMIT_MAX_EXPLAIN'	=> 'Số lần cho phép đăng nhập sai từ một địa chỉ IP trước khi hệ thống kiểm tra nhập liệu tự động được kích hoạt. Nhập số 0 để vô hiệu chức năng này.',
 	'IP_LOGIN_LIMIT_TIME'					=> 'Thời gian giới hạn địa chỉ IP đăng nhập',
 	'IP_LOGIN_LIMIT_TIME_EXPLAIN'			=> 'Việc cho phép đăng nhập lại sẽ kết thúc sau khoảng thời gian này.',
 	'IP_LOGIN_LIMIT_USE_FORWARDED'			=> 'Giới hạn số lần đăng nhập bằng khai báo <var>X_FORWARDED_FOR</var>',
@@ -482,7 +473,7 @@ $lang = array_merge($lang, array(
 	'NO_IP_VALIDATION'						=> 'Không',
 	'NO_REF_VALIDATION'						=> 'Không',
 	'PASSWORD_TYPE'							=> 'Độ phức tạp của mật khẩu',
-	'PASSWORD_TYPE_EXPLAIN'					=> 'Tùy chọn xác định mức độ phức tạp yêu cầu đối với mật khẩu của thành viên khi được tạo hay thay đổi, những tùy chọn sau bao gồm cả những tùy chọn trước.',
+	'PASSWORD_TYPE_EXPLAIN'					=> 'Tùy chọn xác định mức độ phức tạp yêu cầu đối với mật khẩu của người dùng khi được tạo hay thay đổi, những tùy chọn sau bao gồm cả những tùy chọn trước.',
 	'PASS_TYPE_ALPHA'						=> 'Phải sử dụng chữ số và chữ cái',
 	'PASS_TYPE_ANY'							=> 'Không yêu cầu',
 	'PASS_TYPE_CASE'						=> 'Phải sử dụng hỗn hợp',
@@ -497,12 +488,12 @@ $lang = array_merge($lang, array(
 
 // Email Settings
 $lang = array_merge($lang, array(
-	'ACP_EMAIL_SETTINGS_EXPLAIN'	=> 'Những thiết lập này được sử dụng khi hệ thống gửi email đến các thành viên khác. Hãy chắc chắn địa chỉ email liên hệ mà bạn nhập vào là hợp lệ, bất kì thư rác hay email không gửi được nào có khả năng sẽ được gửi đến địa chỉ này. Nếu máy chủ của bạn không hỗ trợ gửi email thông qua PHP, bạn có thể thay thế bằng cách gửi email trực tiếp thông qua máy chủ SMTP. Điều này yêu cầu bạn phải cung cấp một địa chỉ máy chủ SMTP chính xác cho hệ thống biết. Bạn có thể hỏi nhà cung cấp dịch vụ lưu trữ Web của bạn nếu cần thiết và đừng xác định những máy chủ đã quá lạc hậu! Nếu máy chủ SMTP yêu cầu phải xác thực và chỉ khi thực sự được yêu cầu, bạn hãy cung cấp cho hệ thống biết tên tài khoản, mật khẩu đăng nhập và phương pháp xác thực của máy chủ SMTP.',
+	'ACP_EMAIL_SETTINGS_EXPLAIN'	=> 'Những thiết lập này được sử dụng khi hệ thống gửi email đến các người dùng khác. Hãy chắc chắn địa chỉ email liên hệ mà bạn nhập vào là hợp lệ, bất kì thư rác hay email không gửi được nào có khả năng sẽ được gửi đến địa chỉ này. Nếu máy chủ của bạn không hỗ trợ gửi email thông qua PHP, bạn có thể thay thế bằng cách gửi email trực tiếp thông qua máy chủ SMTP. Điều này yêu cầu bạn phải cung cấp một địa chỉ máy chủ SMTP chính xác cho hệ thống biết. Bạn có thể hỏi nhà cung cấp dịch vụ lưu trữ Web của bạn nếu cần thiết và đừng xác định những máy chủ đã quá lạc hậu! Nếu máy chủ SMTP yêu cầu phải xác thực và chỉ khi thực sự được yêu cầu, bạn hãy cung cấp cho hệ thống biết tên tài khoản, mật khẩu đăng nhập và phương pháp xác thực của máy chủ SMTP.',
 
 	'ADMIN_EMAIL'					=> 'Địa chỉ email gửi đi',
 	'ADMIN_EMAIL_EXPLAIN'			=> 'Địa chỉ email này được sử dụng làm địa chỉ email của người gửi trên tất cả các email được gửi đi và địa chỉ email hỗ trợ kỹ thuật. Nó sẽ luôn luôn được sử dụng trong phần <samp>Địa chỉ quay về</samp> và <samp>Địa chỉ người gửi</samp> trong các email.',
-	'BOARD_EMAIL_FORM'				=> 'Cho phép thành viên gửi email từ hệ thống',
-	'BOARD_EMAIL_FORM_EXPLAIN'		=> 'Thay cho việc hiển thị địa chỉ email của thành viên, tùy chọn này cho phép các thành viên có thể gửi email cho nhau thông qua hệ thống.',
+	'BOARD_EMAIL_FORM'				=> 'Cho phép người dùng gửi email từ hệ thống',
+	'BOARD_EMAIL_FORM_EXPLAIN'		=> 'Thay cho việc hiển thị địa chỉ email của người dùng, tùy chọn này cho phép người dùng có thể gửi email cho nhau thông qua hệ thống.',
 	'BOARD_HIDE_EMAILS'				=> 'Ẩn địa chỉ email',
 	'BOARD_HIDE_EMAILS_EXPLAIN'		=> 'Tùy chọn ẩn toàn bộ địa chỉ email cá nhân trong hệ thống.',
 	'CONTACT_EMAIL'					=> 'Địa chỉ email liên hệ',
@@ -514,7 +505,7 @@ $lang = array_merge($lang, array(
 	'EMAIL_SIG'						=> 'Chữ ký email',
 	'EMAIL_SIG_EXPLAIN'				=> 'Chữ ký được đính kèm trong tất cả các email được gửi đi từ hệ thống.',
 	'ENABLE_EMAIL'					=> 'Bật chức năng gửi email trong hệ thống',
-	'ENABLE_EMAIL_EXPLAIN'			=> 'Nếu tắt tùy chọn này, sẽ không có email nào được gửi đi từ hệ thống. <em>Lưu ý rằng tùy chọn kích hoạt tài khoản bởi chính thành viên hay quản trị viên qua email phụ thuộc vào tùy chọn này. Nếu bạn đang sử dụng một trong hai loại yêu cầu kích hoạt trên thì khi tắt tùy chọn này cũng đồng nghĩa không yêu cầu kích hoạt tài khoản khi đăng ký.</em>',
+	'ENABLE_EMAIL_EXPLAIN'			=> 'Nếu tắt tùy chọn này, sẽ không có email nào được gửi đi từ hệ thống. <em>Lưu ý rằng tùy chọn kích hoạt tài khoản bởi chính người dùng hay quản trị viên qua email phụ thuộc vào tùy chọn này. Nếu bạn đang sử dụng một trong hai loại yêu cầu kích hoạt trên thì khi tắt tùy chọn này cũng đồng nghĩa không yêu cầu kích hoạt tài khoản khi đăng ký.</em>',
 	'SMTP_AUTH_METHOD'				=> 'Chọn phương pháp xác thực cho SMTP',
 	'SMTP_AUTH_METHOD_EXPLAIN'		=> 'Chỉ sử dụng nếu tên đăng nhập/mật khẩu xác thực đã được thiết lập. Hãy yêu cầu nhà cung cấp dịch vụ lưu trữ Web của bạn nếu bạn không chắc chắn phải chọn phương pháp nào.',
 	'SMTP_CRAM_MD5'					=> 'CRAM-MD5',
@@ -536,7 +527,7 @@ $lang = array_merge($lang, array(
 
 // Jabber settings
 $lang = array_merge($lang, array(
-	'ACP_JABBER_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí thiết lập và bật tùy chọn sử dụng máy chủ Jabber để gửi tin nhắn nhanh và thông báo của hệ thống. Jabber là một giao thức mã nguồn mở và bất kì ai cũng có thể sử dụng miễn phí. Một vài máy chủ Jabber đính kèm cả cổng truy xuất và dịch vụ chuyển tin cho phép bạn liên hệ với các thành viên trên các hệ thống mạng khác. Không phải tất cả các máy chủ đều có dịch vụ chuyển tin và những thay đổi trong giao thức kết nối có thể ngăn cản việc gửi tin nhắn. Hãy chắc chắn rằng bạn nhập thông tin về tài khoản đã được đăng ký. Hệ thống phpBB sẽ sử dụng những thông tin mà bạn cung cấp này tại đây.',
+	'ACP_JABBER_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí thiết lập và bật tùy chọn sử dụng máy chủ Jabber để gửi tin nhắn nhanh và thông báo của hệ thống. Jabber là một giao thức mã nguồn mở và bất kì ai cũng có thể sử dụng miễn phí. Một vài máy chủ Jabber đính kèm cả cổng truy xuất và dịch vụ chuyển tin cho phép bạn liên hệ với các người dùng trên hệ thống mạng khác. Không phải tất cả các máy chủ đều có dịch vụ chuyển tin và những thay đổi trong giao thức kết nối có thể ngăn cản việc gửi tin nhắn. Hãy chắc chắn rằng bạn nhập thông tin về tài khoản đã được đăng ký. Hệ thống phpBB sẽ sử dụng những thông tin mà bạn cung cấp này tại đây.',
 
 	'JAB_ENABLE'				=> 'Sử dụng tài khoản Jabber',
 	'JAB_ENABLE_EXPLAIN'		=> 'Tùy chọn cho phép nhắn tin và thông báo bằng máy chủ Jabber.',

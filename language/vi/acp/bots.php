@@ -1,21 +1,12 @@
 <?php
 /** 
 *
-* acp_bots [Vietnamese]
+* acp/bots [Vietnamese]
 *
 * @package language
-* @version $Id: bots.php 16 2008-12-13 11:17:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.19
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -47,7 +38,7 @@ if (empty($lang) || !is_array($lang))
 // Bot settings
 $lang = array_merge($lang, array(
 	'BOTS'				=> 'Quản lí máy tìm kiếm',
-	'BOTS_EXPLAIN'		=> '“Bot”, “Spider” hay “Crawler” là những cỗ máy tự động thường được sử dụng trong các dịch vụ tìm kiếm để cập nhật chỉ mục tìm kiếm trong cơ sở dữ liệu của họ. Hiếm khi những loại này sử dụng phiên đăng nhập thích hợp vì thế thường làm cho kết quả trong các bộ đếm của hệ thống sai lệch khi đếm số lượt người ghé thăm website, đếm tăng thêm số lượng không chính xác và thỉnh thoảng không thể lập chỉ mục cho website chính xác. Với công cụ này, bạn có thể xác định một loại thành viên đặc biệt gồm những loại máy tìm kiếm này để khắc phục những rắc rối kể trên.',
+	'BOTS_EXPLAIN'		=> '“Bot”, “Spider” hay “Crawler” là những cỗ máy tự động thường được sử dụng trong các dịch vụ tìm kiếm để cập nhật chỉ mục tìm kiếm trong cơ sở dữ liệu của họ. Hiếm khi những loại này sử dụng phiên đăng nhập thích hợp vì thế thường làm cho kết quả trong các bộ đếm của hệ thống sai lệch khi đếm số lượt người ghé thăm website, đếm tăng thêm số lượng không chính xác và thỉnh thoảng không thể lập chỉ mục cho website chính xác. Với công cụ này, bạn có thể xác định một loại người dùng đặc biệt gồm những máy tìm kiếm này để khắc phục những rắc rối kể trên.',
 	'BOT_ACTIVATE'		=> 'Kích hoạt',
 	'BOT_ACTIVE'		=> 'Máy tìm kiếm được kích hoạt',
 	'BOT_ADD'			=> 'Thêm máy tìm kiếm',
@@ -72,7 +63,7 @@ $lang = array_merge($lang, array(
 	'BOT_UPDATED'		=> 'Máy tìm kiếm hiện tại đã được cập nhật thành công.',
 
 	'ERR_BOT_AGENT_MATCHES_UA'	=> 'Máy tìm kiếm mà bạn vừa cung cấp tương tự với một trong những máy tìm kiếm đã được sử dụng. Hãy điều chỉnh lại định danh cho máy tìm kiếm này.',
-	'ERR_BOT_NO_IP'				=> 'Địa chỉ IP mà bạn vừa nhập không hợp lệ hoặc do tên miền này không thể sử dụng được.',
+	'ERR_BOT_NO_IP'				=> 'Địa chỉ IP mà bạn nhập không hợp lệ hoặc do tên miền này không thể sử dụng được.',
 	'ERR_BOT_NO_MATCHES'		=> 'Bạn phải khai báo ít nhất là một kết quả định danh hoặc địa chỉ IP cho kết quả xác định của máy tìm kiếm này.',
 
 	'NO_BOT'		=> 'Không thể tìm thấy bất kì máy tìm kiếm nào với số ID đã xác định',

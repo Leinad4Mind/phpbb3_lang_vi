@@ -20,22 +20,26 @@ _ _ _ _ _    |  |_ _ _   _ _ _ _ _     |  |__|  /  |  |__|  /                   
 @ phpBBVietNam Group
 ---[ Information ]--------------------------------------------------------------
 Language Pack Name: Vietnamese Language Pack for phpBB3
-Language Pack Version: 3.0.11a
+Language Pack Version: 3.0.12b
 Encoding: Unicode (UTF-8)
-Release Date: 2013/06/26
+Release Date: 2013/10/23
 ---[ Description ]--------------------------------------------------------------
 Vietnamese Language Pack for phpBB3 with following parts:
 + Main translation
 + ACP translation
 + Email translation
 + Vietnamese Imagesets for default styles (proSilver & subSilver2)
-+ Fixed CSS file with Unicode fonts for ACP style
-+ Fixed CSS files with Unicode fonts for proSilver style
-+ Fixed CSS file with Unicode fonts for subSilver2 style
-+ GNU-GPL translation
 ---[ Translator ]----------------------------------------
-# nedka (Nguyen Dang Khoa) <nedka1989@facebook.com> http://www.facebook.com/nedka1989
+# nedka (Khoa Nguyen) <nedka@nedka.vn> http://www.nedka.vn/
 ---[ History ]------------------------------------------------------------------
+# 2013/10/23: Version 3.0.12b
+Some of translation vars are better
+Removed English synonyms/ignored words never used, as this is Vietnamese
+Removed fixed-fonts CSS files, good bye IE6, IE7 :)
+
+# 2013/10/01: Version 3.0.12a
+Updated code changes in language files from phpBB 3.0.11 to phpBB 3.0.12
+
 # 2013/06/26: Version 3.0.11a
 Updated code changes in language files from phpBB 3.0.10 to phpBB 3.0.11
 
@@ -176,7 +180,8 @@ First release ...
 ---[ Notes ]--------------------------------------------------------------------
 Thanks you for using this language pack
 ---[ License ]------------------------------------------------------------------
-http://opensource.org/licenses/gpl-license.php GNU General Public License v2
+http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 ---[ About ]--------------------------------------------------------------------
-Homepage: http://www.facebook.com/vinabb
-Email: vinabb@facebook.com
+Homepage: http://phpbb.nedka.vn/
+Facebook: http://www.facebook.com/vinabb
+Email: phpbb@nedka.vn

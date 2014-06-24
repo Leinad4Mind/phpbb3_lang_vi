@@ -4,18 +4,9 @@
 * help_bbcode [Vietnamese]
 *
 * @package language
-* @version $Id: help_bbcode.php 35 2009-07-25 18:57:00Z nedka $
-* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.37
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -58,7 +49,7 @@ $help = array(
 	),
 	array(
 		0 => 'Làm thế nào để thay đổi màu hay kích thước của văn bản?',
-		1 => 'Để thay đổi màu hay kích thước của văn bản, những thẻ BBCode sau đây sẽ được dùng. Hãy nhớ rằng sự hiển thị như thế nào còn tùy thuộc vào trình duyệt của người xem và hệ thống: <ul><li>Để thay đổi màu văn bản, bạn hãy đặt nó trong cặp thẻ <strong>[color=][/color]</strong>. Bạn có thể xác định bằng một tên màu được chấp nhận như: red, blue, yellow… hay sử dụng mã màu hex như: #FFFFFF, #000000… Ví dụ, để tạo một đoạn văn bản có chữ màu đỏ bạn có thể dùng như sau:<br /><br /><strong>[color=red]</strong>Xin chào!<strong>[/color]</strong><br /><br />hoặc<br /><br /><strong>[color=#FF0000]</strong>Xin chào!<strong>[/color]</strong><br /><br />Cả hai cách trên sẽ cho ra cùng kết quả <span style="color: red;">Xin chào!</span></li><br /><li>Thay đổi kích thước của văn bản cũng làm tương tự như trên nhưng dùng với cặp thẻ <strong>[size=][/size]</strong>. Việc sử dụng thẻ này còn tùy thuộc vào giao diện mà thành viên đã chọn sử dụng trong hệ thống nhưng chúng tôi khuyên bạn nên dùng kích thước là một giá trị số đếm tiêu biểu với đơn vị tính là phần trăm, bắt đầu từ 20 (rất nhỏ) cho đến 200 (rất lớn) theo mặc định. Ví dụ:<br /><br /><strong>[size=30]</strong>NHỎ XÍU<strong>[/size]</strong><br /><br />sẽ tạo ra <span style="font-size: 30%;">NHỎ XÍU</span><br /><br />nhưng ngược lại:<br /><br /><strong>[size=200]</strong>LỚN QUÁ<strong>[/size]</strong><br /><br />sẽ cho ra <span style="font-size: 200%;">LỚN QUÁ</span></li></ul>'
+		1 => 'Để thay đổi màu hay kích thước của văn bản, những thẻ BBCode sau đây sẽ được dùng. Hãy nhớ rằng sự hiển thị như thế nào còn tùy thuộc vào trình duyệt của người xem và hệ thống: <ul><li>Để thay đổi màu văn bản, bạn hãy đặt nó trong cặp thẻ <strong>[color=][/color]</strong>. Bạn có thể xác định bằng một tên màu được chấp nhận như: red, blue, yellow… hay sử dụng mã màu hex như: #FFFFFF, #000000… Ví dụ, để tạo một đoạn văn bản có chữ màu đỏ bạn có thể dùng như sau:<br /><br /><strong>[color=red]</strong>Xin chào!<strong>[/color]</strong><br /><br />hoặc<br /><br /><strong>[color=#FF0000]</strong>Xin chào!<strong>[/color]</strong><br /><br />Cả hai cách trên sẽ cho ra cùng kết quả <span style="color: red;">Xin chào!</span></li><br /><li>Thay đổi kích thước của văn bản cũng làm tương tự như trên nhưng dùng với cặp thẻ <strong>[size=][/size]</strong>. Việc sử dụng thẻ này còn tùy thuộc vào giao diện đã chọn sử dụng trong hệ thống nhưng chúng tôi khuyên bạn nên dùng kích thước là một giá trị số đếm tiêu biểu với đơn vị tính là phần trăm, bắt đầu từ 20 (rất nhỏ) cho đến 200 (rất lớn) theo mặc định. Ví dụ:<br /><br /><strong>[size=30]</strong>NHỎ XÍU<strong>[/size]</strong><br /><br />sẽ tạo ra <span style="font-size: 30%;">NHỎ XÍU</span><br /><br />nhưng ngược lại:<br /><br /><strong>[size=200]</strong>LỚN QUÁ<strong>[/size]</strong><br /><br />sẽ cho ra <span style="font-size: 200%;">LỚN QUÁ</span></li></ul>'
 	),
 	array(
 		0 => 'Tôi có thể phối hợp các thẻ định dạng với nhau không?',

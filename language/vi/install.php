@@ -4,18 +4,9 @@
 * install [Vietnamese]
 *
 * @package language
-* @version $Id: install.php 107 2013-06-26 18:58:00Z nedka $
-* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.113
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -50,8 +41,8 @@ $lang = array_merge($lang, array(
 	'ADMIN_PASSWORD_CONFIRM'	=> 'Xác nhận mật khẩu quản trị viên',
 	'ADMIN_PASSWORD_EXPLAIN'	=> 'Mật khẩu không được phép ít hơn <strong>6</strong> ký tự và vượt quá <strong>30</strong> ký tự.',
 	'ADMIN_TEST'				=> 'Kiểm tra thiết lập quản trị viên',
-	'ADMIN_USERNAME'			=> 'Tên thành viên của người quản trị',
-	'ADMIN_USERNAME_EXPLAIN'	=> 'Tên thành viên không được phép ít hơn <strong>3</strong> ký tự và vượt quá <strong>20</strong> ký tự.',	
+	'ADMIN_USERNAME'			=> 'Tên tài khoản của người quản trị',
+	'ADMIN_USERNAME_EXPLAIN'	=> 'Tên tài khoản không được phép ít hơn <strong>3</strong> ký tự và vượt quá <strong>20</strong> ký tự.',	
 	'APP_MAGICK'				=> 'Hỗ trợ Imagemagick [ Đính kèm tập tin ]',
 	'AUTHOR_NOTES'				=> 'Ghi chú của tác giả<br />» %s',
 	'AVAILABLE'					=> 'Có sẵn',
@@ -73,10 +64,10 @@ $lang = array_merge($lang, array(
 	'CHANGE'					=> 'Thay đổi',	
 	'CHECK_TABLE_PREFIX'		=> 'Hãy kiểm tra tiền tố của mỗi tên bảng dữ liệu rồi thử lại.',
 	'CLEAN_VERIFY'				=> 'Đang dọn dẹp và kiểm tra cấu trúc cơ sở dữ liệu lần cuối',
-	'CLEANING_USERNAMES'		=> 'Đang dọn dẹp tên thành viên',
-	'COLLIDING_CLEAN_USERNAME'	=> '<strong>%s</strong> là tên thành viên đã được dọn dẹp sạch các ký tự cho:',
-	'COLLIDING_USERNAMES_FOUND'	=> 'Những tên thành viên xung đột với nhau đã được tìm thấy trong hệ thống cũ của bạn. Để hoàn tất việc chuyển đổi, bạn hãy vui lòng xóa hoặc đổi tên lại cho những thành viên này vì công cụ chuyển đổi yêu cầu chỉ sử dụng một thành viên trong hệ thống cũ của bạn cho mỗi tên thành viên đã được dọn dẹp các ký tự.',
-	'COLLIDING_USER'			=> '» Số ID thành viên: <strong>%d</strong> Tên thành viên: <strong>%s</strong> (%d bài viết)',
+	'CLEANING_USERNAMES'		=> 'Đang dọn dẹp tài khoản',
+	'COLLIDING_CLEAN_USERNAME'	=> '<strong>%s</strong> là tên tài khoản đã được dọn dẹp sạch các ký tự:',
+	'COLLIDING_USERNAMES_FOUND'	=> 'Những tên tài khoản xung đột với nhau đã được tìm thấy trong hệ thống cũ của bạn. Để hoàn tất việc chuyển đổi, bạn hãy vui lòng xóa hoặc đổi tên lại cho những người dùng này vì công cụ chuyển đổi yêu cầu chỉ sử dụng một người dùng trong hệ thống cũ của bạn cho mỗi tên tài khoản đã được dọn dẹp các ký tự.',
+	'COLLIDING_USER'			=> '» Số ID tài khoản: <strong>%d</strong> Tên tài khoản: <strong>%s</strong> (%d bài viết)',
 	'CONFIG_CONVERT'			=> 'Đang chuyển đổi cấu hình hệ thống',
 	'CONFIG_FILE_UNABLE_WRITE'	=> 'Không thể tạo tập tin cấu hình. Những phương pháp khác sử dụng để tạo tập tin này được liệt kê bên dưới.',
 	'CONFIG_FILE_WRITTEN'		=> 'Tập tin cấu hình đã được tạo. Ngay bây giờ bạn có thể tiến hành bước kế tiếp trong quá trình cài đặt.',
@@ -89,7 +80,7 @@ $lang = array_merge($lang, array(
 	'CONTINUE_OLD_CONVERSION'	=> 'Tiếp tục chuyển đổi hệ thống đã tiến hành',
 	'CONVERT'					=> 'Chuyển đổi',
 	'CONVERT_COMPLETE'			=> 'Việc chuyển đổi đã hoàn tất',
-	'CONVERT_COMPLETE_EXPLAIN'	=> 'Bạn đã chuyển đổi thành công hệ thống của mình sang hệ thống phpBB 3.0. Bạn có thể đăng nhập ngay bây giờ và <a href="../">truy cập vào hệ thống</a> của mình. Hãy chắc chắn rằng những thiết lập hệ thống đã được chuyển đổi sang chính xác trước khi bạn cho hệ thống hoạt động bằng cách xóa thư mục cài đặt đi. Bạn luôn được giúp đỡ từ cộng đồng trực tuyến trong việc sử dụng phpBB với <a href="http://www.phpbb.com/support/documentation/3.0/">tài liệu hướng dẫn sử dụng</a> và <a href="http://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ</a>.',	
+	'CONVERT_COMPLETE_EXPLAIN'	=> 'Bạn đã chuyển đổi thành công hệ thống của mình sang hệ thống phpBB 3.0. Bạn có thể đăng nhập ngay bây giờ và <a href="../">truy cập vào hệ thống</a> của mình. Hãy chắc chắn rằng những thiết lập hệ thống đã được chuyển đổi sang chính xác trước khi bạn cho hệ thống hoạt động bằng cách xóa thư mục cài đặt đi. Bạn luôn được giúp đỡ từ cộng đồng trực tuyến trong việc sử dụng phpBB với <a href="https://www.phpbb.com/support/documentation/3.0/">tài liệu hướng dẫn sử dụng</a> và <a href="https://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ</a>.',	
 	'CONVERT_INTRO'				=> 'Chào mừng bạn đã đến với công cụ phpBB Unified Convertor Framework',
 	'CONVERT_INTRO_BODY'		=> 'Với công cụ này, bạn có thể chuyển đổi dữ liệu từ những hệ thống khác phpBB đã cài đặt trước đây sang hệ thống phpBB. Danh sách bên dưới liệt kê tất cả các gói chức năng chuyển đổi có sẵn hiện tại. Nếu như danh sách này không có gói chức năng chuyển đổi cho hệ thống mà bạn đang sử dụng, hãy ghé thăm trang chủ của chúng tôi để tải về và tìm hiểu nhiều thông tin hơn về các gói chức năng chuyển đổi sẵn có tại đây.',
 	'CONVERT_NEW_CONVERSION'	=> 'Chuyển đổi mới',
@@ -108,7 +99,7 @@ $lang = array_merge($lang, array(
 	'CONV_ERROR_INCONSISTENT_GROUPS'	=> 'Mâu thuẫn trong bảng dữ liệu <var>_groups</var> đã được phát hiện trong hàm thực thi <code>add_bots()</code>. Bạn cần phải thêm vào tất cả các nhóm đặc biệt nếu muốn tự mình thực hiện.',
 	'CONV_ERROR_INSERT_BOT'				=> 'Không thể chèn thêm máy tìm kiếm vào bảng dữ liệu <var>_users</var>.',
 	'CONV_ERROR_INSERT_BOTGROUP'		=> 'Không thể chèn thêm máy tìm kiếm vào bảng dữ liệu <var>_bots</var>.',
-	'CONV_ERROR_INSERT_USER_GROUP'		=> 'Không thể chèn thêm thành viên vào bảng dữ liệu <var>_user_group</var>.',
+	'CONV_ERROR_INSERT_USER_GROUP'		=> 'Không thể chèn thêm người dùng vào bảng dữ liệu <var>_user_group</var>.',
 	'CONV_ERROR_MESSAGE_PARSER'			=> 'Lỗi xử lí nội dung bài viết',
 	'CONV_ERROR_NO_AVATAR_PATH'			=> 'Lưu ý dành cho những người phát triển: bạn phải xác định <code>$convertor[\'avatar_path\']</code> để sử dụng %s.',
 	'CONV_ERROR_NO_FORUM_PATH'			=> 'Đường dẫn đến thư mục cài đặt hệ thống chưa được xác định.',
@@ -121,7 +112,7 @@ $lang = array_merge($lang, array(
 	'CONV_ERROR_PM_COUNT'				=> 'Không thể chọn thư mục để đếm số lượng tin nhắn.',
 	'CONV_ERROR_REPLACE_CATEGORY'		=> 'Không thể chèn thêm chuyên mục mới để thay thế cho nhóm chuyên mục cũ.',
 	'CONV_ERROR_REPLACE_FORUM'			=> 'Không thể chèn thêm chuyên mục mới để thay thế cho chuyên mục cũ.',
-	'CONV_ERROR_USER_ACCESS'			=> 'Không thể nhận được thông tin xác thực thành viên.',
+	'CONV_ERROR_USER_ACCESS'			=> 'Không thể nhận được thông tin xác thực người dùng.',
 	'CONV_ERROR_WRONG_GROUP'			=> 'Nhóm không chính xác “%1$s” đã được chỉ định trong %2$s.',
 	'CONV_OPTIONS_BODY'					=> 'Trang này thu thập những thông tin cần cho việc truy cập vào hệ thống nguồn. Bạn hãy nhập vào những thông tin chi tiết về cơ sở dữ liệu của hệ thống cũ mà bạn đã cài đặt. Công cụ chuyển đổi sẽ không thay đổi bất cứ thứ gì trong cơ sở dữ liệu mà bạn cung cấp. Hệ thống nguồn nên được tạm ngưng hoạt động để việc chuyển đổi diễn ra được suôn sẻ.',
 	'CONV_SAVED_MESSAGES'				=> 'Nội dung đã lưu',
@@ -181,7 +172,7 @@ $lang = array_merge($lang, array(
 	'FINAL_STEP'					=> 'Thực thi bước cuối cùng',
 	'FIREBIRD_DBMS_UPDATE_REQUIRED'	=> 'Hệ thống phpBB không còn hỗ trợ hệ quản trị Firebird/Interbase các phiên bản trước 2.1. Hãy vui lòng cập nhật bản cài đặt Firebird trên máy chủ của bạn lên phiên bản tối thiểu là 2.1.0 trước khi tiếp tục quá trình cập nhật.',
 	'FORUM_ADDRESS'					=> 'Địa chỉ hệ thống',
-	'FORUM_ADDRESS_EXPLAIN'			=> 'Đây là địa chỉ URL của hệ thống, ví dụ như <samp>http://www.example.com/phpBB3/</samp>. Nếu bạn nhập vào một địa chỉ trong phần này và không để trống, mọi trường hợp của địa chỉ này sẽ được thay thế bằng địa chỉ hệ thống mới trong các bài biết, tin nhắn và chữ ký đính kèm của thành viên.',
+	'FORUM_ADDRESS_EXPLAIN'			=> 'Đây là địa chỉ URL của hệ thống, ví dụ như <samp>http://www.example.com/phpBB3/</samp>. Nếu bạn nhập vào một địa chỉ trong phần này và không để trống, mọi trường hợp của địa chỉ này sẽ được thay thế bằng địa chỉ hệ thống mới trong các bài biết, tin nhắn và chữ ký đính kèm của người dùng.',
 	'FORUM_PATH'					=> 'Đường dẫn hệ thống',
 	'FORUM_PATH_EXPLAIN'			=> 'Đường dẫn đến thư mục gốc cài đặt hệ thống phpBB trên máy chủ của bạn',
 	'FOUND'							=> 'Đã tìm thấy',
@@ -201,7 +192,7 @@ $lang = array_merge($lang, array(
 		<h2>Chuyển đổi từ một hệ thống hiện có sang phpBB3</h2>
 		<p>Công cụ phpBB Unified Convertor Framework hỗ trợ việc chuyển đổi dữ liệu từ bản cài đặt phpBB 2.0.x hoặc các loại hệ thống khác không phải phpBB sang phiên bản phpBB3. Nếu bạn muốn chuyển đổi dữ liệu từ một hệ thống hiện có, hãy vui lòng <a href="%2$s">tiến hành việc chuyển đổi</a>.</p>
 		<h2>Bắt đầu sử dụng bản phpBB3 của bạn!</h2>
-		<p>Bấm vào nút bên dưới, bạn sẽ được chuyển đến trang gửi dữ liệu thống kê về phpBB trong bảng quản trị viên của mình. Chúng tôi đánh giá cao việc gửi dữ liệu thống kê sử dụng của bạn nhằm giúp hoàn thiện sản phẩm hơn. Đa số mỗi tùy chọn trong bảng điều khiển này đều có hướng dẫn giải thích cho bạn công dụng của chúng. Bạn không bao giờ phải giải quyết rắc rối một mình với <a href="%3$s">tài liệu sử dụng cơ bản</a,> <a href="http://www.phpbb.com/support/documentation/3.0/">tài liệu sử dụng trực tuyến</a> và <a href="http://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ</a> của chúng tôi.</p>
+		<p>Bấm vào nút bên dưới, bạn sẽ được chuyển đến trang gửi dữ liệu thống kê về phpBB trong bảng quản trị viên của mình. Chúng tôi đánh giá cao việc gửi dữ liệu thống kê sử dụng của bạn nhằm giúp hoàn thiện sản phẩm hơn. Đa số mỗi tùy chọn trong bảng điều khiển này đều có hướng dẫn giải thích cho bạn công dụng của chúng. Bạn không bao giờ phải giải quyết rắc rối một mình với <a href="%3$s">tài liệu sử dụng cơ bản</a>, <a href="https://www.phpbb.com/support/documentation/3.0/">tài liệu sử dụng trực tuyến</a> và <a href="https://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ</a> của chúng tôi.</p>
 		<p><strong>Hãy vui lòng xóa, di chuyển hoặc đổi tên ngay thư mục <samp>install</samp> trước khi bạn bắt đầu sử dụng hệ thống. Nếu thư mục này vẫn còn, bạn sẽ chỉ có thể truy cập được vào bảng quản trị viên.</strong>',
 	'INSTALL_INTRO'					=> 'Chuẩn bị trước khi cài đặt',
 	'INSTALL_INTRO_BODY'			=> 'Với công cụ này, bạn sẽ bắt đầu quá trình cài đặt hệ thống phpBB3 trên máy chủ của mình.</p><p>Để bắt đầu cài đặt, bạn phải cung cấp cho công cụ cài đặt những thông tin về cơ sở dữ liệu của mình. Nếu bạn không biết thông tin về cơ sở dữ liệu này, hãy vui lòng liên hệ với nhà cung cấp dịch vụ lưu trữ Web của bạn và yêu cầu họ cung cấp cho bạn. Bạn sẽ không thể tiếp tục cài đặt mà thiếu những thông tin này. Bạn cần biết:</p>
@@ -233,7 +224,7 @@ $lang = array_merge($lang, array(
 	'INSTALL_NEXT'					=> 'Bước kế tiếp',
 	'INSTALL_NEXT_FAIL'				=> 'Có một vài thao tác kiểm tra thất bại và bạn nên giải quyết những rắc rối này trước khi tiến hành bước kế tiếp. Những kiểm tra thất bại này có thể dẫn đến việc cài đặt hệ thống không thể hoàn tất hay không trọn vẹn.',
 	'INSTALL_NEXT_PASS'				=> 'Tất cả những kiểm tra đơn giản đều hợp lệ và bạn có thể tiến hành bước kế tiếp trong quá trình cài đặt. Nếu bạn đã thay đổi bất kì thiết lập cấp phép, gói chức năng… và bạn muốn kiểm tra lại cho chắc chắn thì bạn có thể thực hiện lại việc kiểm tra.',
-	'INSTALL_PANEL'					=> 'Bảng điều khiển cài đặt',
+	'INSTALL_PANEL'					=> 'Bảng cài đặt',
 	'INSTALL_SEND_CONFIG'			=> 'Thật đáng tiếc, hệ thống không thể ghi những thông tin cấu hình cài đặt đến tập tin <samp>config.php</samp>. Điều này xảy ra bởi vì tập tin này chưa có sẵn hoặc không được cấp phép có thể ghi trên máy chủ. Các tùy chọn được liệt kê bên dưới sẽ giúp bạn hoàn tất việc cài đặt của mình với tập tin cấu hình <samp>config.php</samp> này.',
 	'INSTALL_START'					=> 'Bắt đầu cài đặt',
 	'INSTALL_TEST'					=> 'Kiểm tra lại',
@@ -249,22 +240,22 @@ $lang = array_merge($lang, array(
 	'INST_ERR_DB_NO_FIREBIRD_PS'	=> 'Cơ sở dữ liệu vừa chọn để sử dụng cho Firebird có một trang kích thước nhỏ hơn <strong>8192</strong>, hệ thống yêu cầu ít nhất phải là <strong>8192</strong>.',
 	'INST_ERR_DB_NO_POSTGRES'		=> 'Cơ sở dữ liệu vừa chọn không được tạo ra trong chế độ mã hóa <var>UNICODE</var> hoặc <var>UTF-8</var>. Bạn hãy vui lòng cài đặt lại với một cơ sở dữ liệu được mã hóa theo <var>UNICODE</var> hoặc <var>UTF-8</var>.',
 	'INST_ERR_DB_NO_NAME'			=> 'Bạn chưa nhập tên cơ sở dữ liệu.',	
-	'INST_ERR_EMAIL_INVALID'		=> 'Địa chỉ email bạn vừa nhập không hợp lệ.',
-	'INST_ERR_EMAIL_MISMATCH'		=> 'Địa chỉ email bạn vừa nhập không phù hợp.',
+	'INST_ERR_EMAIL_INVALID'		=> 'Địa chỉ email bạn nhập không hợp lệ.',
+	'INST_ERR_EMAIL_MISMATCH'		=> 'Địa chỉ email bạn nhập không phù hợp.',
 	'INST_ERR_FATAL'				=> 'Lỗi cài đặt nghiêm trọng',
 	'INST_ERR_FATAL_DB'				=> 'Một lỗi cơ sở dữ liệu nghiêm trọng và không thể phục hồi đã xảy ra. Lỗi này xuất hiện vì bạn đã xác định tên đăng nhập cơ sở dữ liệu không có quyền hạn để sử dụng các lệnh <code>CREATE TABLES</code> hay <code>INSERT</code> dữ liệu… Nhiều thông tin hơn về lỗi này được cung cấp bên dưới. Hãy liên hệ trước tiên với nhà cung cấp dịch vụ lưu trữ Web của bạn hoặc các diễn đàn hỗ trợ phpBB để nhận được nhiều sự giúp đỡ hơn.',
 	'INST_ERR_FTP_PATH'				=> 'Không thể thay đổi thư mục đã cung cấp, bạn hãy vui lòng kiểm tra lại đường dẫn.',
 	'INST_ERR_FTP_LOGIN'			=> 'Không thể kết nối đến máy chủ FTP, bạn hãy vui lòng kiểm tra lại tên đăng nhập và mật khẩu kết nối.',
 	'INST_ERR_MISSING_DATA'			=> 'Bạn phải điền đầy đủ thông tin trong phần này.',
 	'INST_ERR_NO_DB'				=> 'Không thể nạp gói chức năng PHP cho loại cơ sở dữ liệu đã chọn.',
-	'INST_ERR_PASSWORD_MISMATCH'	=> 'Mật khẩu bạn vừa nhập không phù hợp.',
-	'INST_ERR_PASSWORD_TOO_LONG'	=> 'Mật khẩu bạn vừa nhập quá dài. Mật khẩu không được phép vượt quá <strong>30</strong> ký tự.',
-	'INST_ERR_PASSWORD_TOO_SHORT'	=> 'Mật khẩu bạn vừa nhập quá ngắn. Mật khẩu không được phép ít hơn <strong>6</strong> ký tự.',
+	'INST_ERR_PASSWORD_MISMATCH'	=> 'Mật khẩu bạn nhập không phù hợp.',
+	'INST_ERR_PASSWORD_TOO_LONG'	=> 'Mật khẩu bạn nhập quá dài. Mật khẩu không được phép vượt quá <strong>30</strong> ký tự.',
+	'INST_ERR_PASSWORD_TOO_SHORT'	=> 'Mật khẩu bạn nhập quá ngắn. Mật khẩu không được phép ít hơn <strong>6</strong> ký tự.',
 	'INST_ERR_PREFIX'				=> 'Tiền tố của mỗi tên bảng dữ liệu bạn vừa xác định đã được sử dụng, hãy vui lòng chọn một tên khác.',
 	'INST_ERR_PREFIX_INVALID'		=> 'Tiền tố của mỗi tên bảng dữ liệu bạn vừa xác định không hợp lệ đối với cơ sở dữ liệu của bạn. Hãy vui lòng chọn một tên khác hoặc gỡ bỏ một vài ký tự không được phép sử dụng như là dấu nối (-).',
 	'INST_ERR_PREFIX_TOO_LONG'		=> 'Tiền tố của mỗi tên bảng dữ liệu bạn vừa xác định quá dài. Số ký tự tối đa được phép sử dụng là <strong>%d</strong>.',
-	'INST_ERR_USER_TOO_LONG'		=> 'Tên thành viên bạn vừa nhập quá dài. Số ký tự tối đa được phép sử dụng là <strong>20</strong>.',
-	'INST_ERR_USER_TOO_SHORT'		=> 'Tên thành viên bạn vừa nhập quá ngắn. Số kú tự tối thiểu phải sử dụng là <strong>3</strong>.',
+	'INST_ERR_USER_TOO_LONG'		=> 'Tên tài khoản bạn nhập quá dài. Số ký tự tối đa được phép sử dụng là <strong>20</strong>.',
+	'INST_ERR_USER_TOO_SHORT'		=> 'Tên tài khoản bạn nhập quá ngắn. Số kú tự tối thiểu phải sử dụng là <strong>3</strong>.',
 	'INVALID_PRIMARY_KEY'			=> 'Khóa chính không hợp lệ: %s',
 
 	'LONG_SCRIPT_EXECUTION'		=> 'Lưu ý rằng thời gian để thực thi điều này có thể rất lâu... Xin bạn vui lòng đừng ngừng công cụ này lại.',
@@ -284,7 +275,7 @@ $lang = array_merge($lang, array(
 	'MAKE_FOLDER_WRITABLE'		=> 'Hãy chắc chắn rằng thư mục này đã có sẵn trong hệ thống và có thể ghi được trên máy chủ rồi thử lại:<br />»<strong>%s</strong>.',
 	'MAKE_FOLDERS_WRITABLE'		=> 'Hãy chắc chắn rằng những thư mục này đã có sẵn trong hệ thống và có thể ghi được trên máy chủ rồi thử lại:<br />»<strong>%s</strong>.',
 
-	'MYSQL_SCHEMA_UPDATE_REQUIRED'	=> 'Cấu trúc cơ sở dữ liệu MySQL dùng cho hệ thống phpBB đã quá hạn. Hệ thống nhận diện kiểu cấu trúc dùng cho MySQL 3.x/4.x, nhưng máy chủ lại đang chạy trên MySQL %2s.<br /><strong>Trước khi tiến hành cập nhật, bạn cần phải nâng cấp phần cấu trúc.</strong><br /><br />Hãy vui lòng tham khảo tài liệu <a href="http://www.phpbb.com/kb/article/doesnt-have-a-default-value-errors/">Cách thức tiến hành nâng cấp cấu trúc cho MySQL</a>. Nếu bạn vẫn không khắc phục được điều này, hãy tìm đến <a href="http://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ</a> của chúng tôi.',
+	'MYSQL_SCHEMA_UPDATE_REQUIRED'	=> 'Cấu trúc cơ sở dữ liệu MySQL dùng cho hệ thống phpBB đã quá hạn. Hệ thống nhận diện kiểu cấu trúc dùng cho MySQL 3.x/4.x, nhưng máy chủ lại đang chạy trên MySQL %2s.<br /><strong>Trước khi tiến hành cập nhật, bạn cần phải nâng cấp phần cấu trúc.</strong><br /><br />Hãy vui lòng tham khảo tài liệu <a href="https://www.phpbb.com/kb/article/doesnt-have-a-default-value-errors/">Cách thức tiến hành nâng cấp cấu trúc cho MySQL</a>. Nếu bạn vẫn không khắc phục được điều này, hãy tìm đến <a href="https://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ</a> của chúng tôi.',
 
 	'NAMING_CONFLICT'		=> 'Xung đột trong việc đặt tên: “%s” và “%s” đều là tên không được phép sử dụng<br /><br />%s',
 	'NEXT_STEP'				=> 'Tiến hành bước kế tiếp',
@@ -295,7 +286,7 @@ $lang = array_merge($lang, array(
 	'NO_LOCATION'			=> 'Không thể chọn thư mục định vị. Nếu bạn chắc chắn Imagemagick đã được cài đặt trên máy chủ, bạn có thể xác định lại đường dẫn sau trong bảng quản trị viên.',
 	'NO_TABLES_FOUND'		=> 'Không tìm thấy bảng dữ liệu nào.',
 
-	'OVERVIEW_BODY'		=> 'Chào mừng bạn bước vào thế giới phpBB3!<br /><br />phpBB™ là phần mềm diễn đàn mã nguồn mở được sử dụng rộng rãi trên thế giới. phpBB3 là dòng phiên bản mới nhất từ khi phần mềm này được phát hành lần đầu vào năm 2000. Giống như những phiên bản trước, phpBB3 có rất nhiều chức năng hữu ích, giao diện người dùng thân thiện và được hỗ trợ tận tình bởi các thành viên trong ban điều hành phpBB. phpBB3 cải thiện những gì phpBB2 đã có và bổ sung thêm những chức năng thông dụng được yêu cầu từ người dùng mà chưa hề có trong các phiên bản trước. Chúng tôi hi vọng nó sẽ đáp ứng được sự mong chờ của bạn.<br /><br />Hệ thống cài đặt này sẽ hướng dẫn bạn từng bước cài đặt phpBB3, cập nhật đến phiên bản phpBB3 mới nhất từ các bản phát hành cũ và tuyệt vời hơn là chuyển đổi đến phpBB3 từ các hệ thống diễn đàn khác (bao gồm cả phpBB2). Để khám phá nhiều hơn về phpBB3, chúng tôi khuyên bạn nên đọc qua <a href="../docs/INSTALL.html">tài liệu cài đặt</a>.<br /><br />Để xem bản quyền của phpBB3 hay muốn tìm hiểu về việc hỗ trợ và quan điểm phát triển của chúng tôi về sản phẩm này, bạn có thể chọn xem các mục tương ứng từ trình đơn. Để tiếp tục, hãy vui lòng chọn thao tác bạn muốn thực hiện.',
+	'OVERVIEW_BODY'		=> 'Chào mừng bạn bước vào thế giới phpBB3!<br /><br />phpBB® là phần mềm diễn đàn mã nguồn mở được sử dụng rộng rãi trên thế giới. phpBB3 là dòng phiên bản mới nhất từ khi phần mềm này được phát hành lần đầu vào năm 2000. Giống như những phiên bản trước, phpBB3 có rất nhiều chức năng hữu ích, giao diện người dùng thân thiện và được hỗ trợ tận tình bởi các thành viên trong ban điều hành phpBB. phpBB3 cải thiện những gì phpBB2 đã có và bổ sung thêm những chức năng thông dụng được yêu cầu từ người dùng mà chưa hề có trong các phiên bản trước. Chúng tôi hi vọng nó sẽ đáp ứng được sự mong chờ của bạn.<br /><br />Hệ thống cài đặt này sẽ hướng dẫn bạn từng bước cài đặt phpBB3, cập nhật đến phiên bản phpBB3 mới nhất từ các bản phát hành cũ và tuyệt vời hơn là chuyển đổi đến phpBB3 từ các hệ thống diễn đàn khác (bao gồm cả phpBB2). Để khám phá nhiều hơn về phpBB3, chúng tôi khuyên bạn nên đọc qua <a href="../docs/INSTALL.html">tài liệu cài đặt</a>.<br /><br />Để xem bản quyền của phpBB3 hay muốn tìm hiểu về việc hỗ trợ và quan điểm phát triển của chúng tôi về sản phẩm này, bạn có thể chọn xem các mục tương ứng từ trình đơn. Để tiếp tục, hãy vui lòng chọn thao tác bạn muốn thực hiện.',
 
 	'PCRE_UTF_SUPPORT'					=> 'Hỗ trợ UTF-8 trong PCRE',
 	'PCRE_UTF_SUPPORT_EXPLAIN'			=> 'Hệ thống phpBB sẽ <strong>không hoạt động</strong> được nếu bản cài đặt PHP trên máy chủ của bạn không được biên dịch với phần mở rộng PCRE có hỗ trợ UTF-8.',
@@ -353,7 +344,7 @@ $lang = array_merge($lang, array(
 	'SUB_SUPPORT'						=> 'Hỗ trợ',
 	'SUCCESSFUL_CONNECT'				=> 'Kết nối thành công',
 
-	'SUPPORT_BODY'		=> 'Việc hỗ trợ được cung cấp đầy đủ cho bản phát hành chuẩn hiện tại của phpBB3, hoàn toàn miễn phí và phi lợi nhuận. Việc hỗ trợ này bao gồm:</p><ul><li>Cài đặt.</li><li>Cấu hình.</li><li>Các câu hỏi chuyên môn.</li><li>Các rắc rối liên quan đến những lỗi tiềm tàng trong phần mềm.</li><li>Cập nhật từ các phiên bản RC (Release Candidate) đến bản phát hành chuẩn mới nhất.</li><li>Nâng cấp từ phpBB 2.0.x lên phpBB3.</li><li>Chuyển đổi từ phần mềm diễn đàn khác sang phpBB3 (vui lòng xem qua chuyên mục <a href="http://www.phpbb.com/community/viewforum.php?f=65">Các công cụ chuyển đổi</a>).</li></ul><p>Chúng tôi khuyến cáo các thành viên vẫn còn sử dụng các phiên bản thử nghiệm (Beta) của phpBB3 hãy thay thế ngay những bản cài đặt này bằng một bản chuẩn của phiên bản mới nhất.</p><h2>Các gói MOD/Giao diện</h2><p>Về những câu hỏi liên quan đến các gói MOD, bạn hãy vui lòng gửi trong chuyên mục <a href="http://www.phpbb.com/community/viewforum.php?f=81">Các gói MOD</a> thích hợp.<br />Về những câu hỏi liên quan đến giao diện, khuôn mẫu và các gói hình ảnh giao diện, hãy vui lòng gửi trong chuyên mục <a href="http://www.phpbb.com/community/viewforum.php?f=80">Giao diện</a> thích hợp.<br /><br />Nếu câu hỏi của bạn có liên quan đến một công cụ xác định, hãy vui lòng gửi trực tiếp trong chủ đề đã dành cho công cụ đó.</p><h2>Hỗ trợ sử dụng</h2><p><a href="http://www.phpbb.com/community/viewtopic.php?f=14&amp;t=571070">Giới thiệu chào mừng đến với phpBB</a><br /><a href="http://www.phpbb.com/support/">Khu vực hỗ trợ</a><br /><a href="http://www.phpbb.com/support/documentation/3.0/quickstart/">Tài liệu cho người mới bắt đầu</a><br /><br />Để chắc chắn bạn luôn sử dụng phiên bản mới nhất và nắm bắt các tin tức mới nhất của phần mềm này, tại sao bạn không tham gia vào <a href="http://www.phpbb.com/support/">danh sách thông báo qua email</a> của chúng tôi?<br /><br />',
+	'SUPPORT_BODY'		=> 'Việc hỗ trợ được cung cấp đầy đủ cho bản phát hành chuẩn hiện tại của phpBB3, hoàn toàn miễn phí và phi lợi nhuận. Việc hỗ trợ này bao gồm:</p><ul><li>Cài đặt.</li><li>Cấu hình.</li><li>Các câu hỏi chuyên môn.</li><li>Các rắc rối liên quan đến những lỗi tiềm tàng trong phần mềm.</li><li>Cập nhật từ các phiên bản RC (Release Candidate) đến bản phát hành chuẩn mới nhất.</li><li>Nâng cấp từ phpBB 2.0.x lên phpBB3.</li><li>Chuyển đổi từ phần mềm diễn đàn khác sang phpBB3 (vui lòng xem qua chuyên mục <a href="https://www.phpbb.com/community/viewforum.php?f=65">Các công cụ chuyển đổi</a>).</li></ul><p>Chúng tôi khuyến cáo nếu bạn vẫn còn sử dụng các phiên bản thử nghiệm (Beta) của phpBB3 hãy thay thế ngay những bản cài đặt này bằng một bản chuẩn của phiên bản mới nhất.</p><h2>Các gói MOD/Giao diện</h2><p>Về những câu hỏi liên quan đến các gói MOD, bạn hãy vui lòng gửi trong chuyên mục <a href="https://www.phpbb.com/community/viewforum.php?f=81">Các gói MOD</a> thích hợp.<br />Về những câu hỏi liên quan đến giao diện, khuôn mẫu và các gói hình ảnh giao diện, hãy vui lòng gửi trong chuyên mục <a href="https://www.phpbb.com/community/viewforum.php?f=80">Giao diện</a> thích hợp.<br /><br />Nếu câu hỏi của bạn có liên quan đến một công cụ xác định, hãy vui lòng gửi trực tiếp trong chủ đề đã dành cho công cụ đó.</p><h2>Hỗ trợ sử dụng</h2><p><a href="https://www.phpbb.com/community/viewtopic.php?f=14&amp;t=571070">Giới thiệu chào mừng đến với phpBB</a><br /><a href="https://www.phpbb.com/support/">Khu vực hỗ trợ</a><br /><a href="https://www.phpbb.com/support/documentation/3.0/quickstart/">Tài liệu cho người mới bắt đầu</a><br /><br />Để chắc chắn bạn luôn sử dụng phiên bản mới nhất và nắm bắt các tin tức mới nhất của phần mềm này, tại sao bạn không tham gia vào <a href="https://www.phpbb.com/support/">danh sách thông báo qua email</a> của chúng tôi?<br /><br />',
 
 	'SYNC_FORUMS'			=> 'Bắt đầu đồng bộ hóa các chuyên mục',
 	'SYNC_POST_COUNT'		=> 'Đang đồng bộ <var>post_counts</var>',
@@ -390,7 +381,7 @@ $lang = array_merge($lang, array(
 	'BINARY_FILE'		=> 'Tập tin nhị phân',
 	'BOT'				=> 'Máy tìm kiếm',
 
-	'CHANGE_CLEAN_NAMES'			=> 'Phương pháp sử dụng để chắc chắn rằng một tên thành viên không được sử dụng bởi nhiều người đã được thay đổi lại. Trong hệ thống của bạn có một vài người mà tên thành viên của họ giống nhau khi được so sánh bằng phương pháp mới. Bạn phải xóa hoặc đổi tên thành viên cho những người này để chắc chắn rằng mỗi tên thành viên chỉ được sử dụng bởi một người trước khi bạn tiến hành.',
+	'CHANGE_CLEAN_NAMES'			=> 'Phương pháp sử dụng để chắc chắn rằng một tên tài khoản không được sử dụng bởi nhiều người đã được thay đổi lại. Trong hệ thống của bạn có một vài người mà tên tài khoản của họ giống nhau khi được so sánh bằng phương pháp mới. Bạn phải xóa hoặc đổi tên tài khoản cho những người này để chắc chắn rằng mỗi tên tài khoản chỉ được sử dụng bởi một người trước khi bạn tiến hành.',
 	'CHECK_FILES'					=> 'Kiểm tra tập tin',
 	'CHECK_FILES_AGAIN'				=> 'Kiểm tra lại tập tin',
 	'CHECK_FILES_EXPLAIN'			=> 'Trong bước kế tiếp, tất cả các tập tin sẽ được kiểm tra lại một lần nữa trước khi tiến hành cập nhật. Điều này chỉ mất nhiều thời gian nếu đây là lần đầu tiên tập tin được kiểm tra.',
@@ -407,8 +398,8 @@ $lang = array_merge($lang, array(
 
 	'DATABASE_TYPE'						=> 'Loại cơ sở dữ liệu',
 	'DATABASE_UPDATE_INFO_OLD'			=> 'Tập tin cập nhật cơ sở dữ liệu trong thư mục cài đặt là tập tin của phiên bản cũ. Hãy chắc chắn rằng bạn đã tải lên phiên bản chính xác của tập tin này.',
-	'DELETE_USER_REMOVE'				=> 'Xóa thành viên và gỡ bỏ những bài viết',
-	'DELETE_USER_RETAIN'				=> 'Xóa thành viên nhưng giữ các bài viết lại',
+	'DELETE_USER_REMOVE'				=> 'Xóa người dùng và gỡ bỏ những bài viết',
+	'DELETE_USER_RETAIN'				=> 'Xóa người dùng nhưng giữ các bài viết lại',
 	'DESTINATION'						=> 'Tập tin đến',
 	'DIFF_INLINE'						=> 'INLINE-DIFF',
 	'DIFF_RAW'							=> 'RAW-UNIFIED-DIFF',
@@ -426,7 +417,7 @@ $lang = array_merge($lang, array(
 	'DOWNLOAD_UPDATE_METHOD_EXPLAIN'	=> 'Sau khi đã tải về, bạn nên giải nén tập tin được lưu trữ ra. Bạn sẽ tìm thấy những tập tin đã được chỉnh sửa và đây là những tập tin bạn cần phải tự mình tải lên. Hãy tải chúng lên thư mục định vị tương ứng trong thư mục cài đặt hệ thống phpBB. Sau khi hoàn tất quá trình tải các tập tin lên, hãy sử dụng các nút bấm bên dưới để tiến hành kiểm tra sự hợp lệ của các tập tin mà bạn vừa tải.',
 
 	'ERROR'			=> 'Lỗi',
-	'EDIT_USERNAME'	=> 'Sửa tên thành viên',
+	'EDIT_USERNAME'	=> 'Sửa tên tài khoản',
 
 	'FILE_ALREADY_UP_TO_DATE'		=> 'Tập tin đã được cập nhật mới nhất.',
 	'FILE_DIFF_NOT_ALLOWED'			=> 'Tập tin không được phép so sánh mã nguồn.',
@@ -450,7 +441,7 @@ $lang = array_merge($lang, array(
 	'INCOMPLETE_UPDATE_FILES'		=> 'Những tập tin cập nhật chưa được hoàn tất.',
 	'INLINE_UPDATE_SUCCESSFUL'		=> 'Cơ sở dữ liệu của hệ thống đã được cập nhật thành công. Bây giờ bạn cần tiếp tục quá trình cập nhật.',
 
-	'KEEP_OLD_NAME'		=> 'Giữ lại tên thành viên',
+	'KEEP_OLD_NAME'		=> 'Giữ lại tên tài khoản',
 
 	'LATEST_VERSION'		=> 'Phiên bản mới nhất',
 	'LINE'					=> 'Dòng',
@@ -471,12 +462,12 @@ $lang = array_merge($lang, array(
 	'MERGING_FILES_EXPLAIN'			=> 'Hệ thống hiện tại đang dò tìm những thay đổi cuối cùng từ tập tin.<br /><br />Bạn hãy vui lòng chờ đợi cho đến khi hệ thống hoàn tất các thao tác trên những tập tin đã bị thay đổi.',
 
 	'NEW_FILE'						=> 'Phần kết thúc xung đột',
-	'NEW_USERNAME'					=> 'Tên thành viên mới',
+	'NEW_USERNAME'					=> 'Tên tài khoản mới',
 	'NO_AUTH_UPDATE'				=> 'Bạn không xác thực hợp lệ với hệ thống để tiến hành cập nhật',
 	'NO_ERRORS'						=> 'Không có lỗi',
 	'NO_UPDATE_FILES'				=> 'Những tập tin chưa được cập nhật',
 	'NO_UPDATE_FILES_EXPLAIN'		=> 'Những tập tin dưới đây là tập tin mới hoặc đã được chỉnh sửa nhưng thư mục bình thường chứa chúng không thể tìm thấy trong hệ thống mà bạn đã cài đặt. Nếu danh sách này chứa các tập tin nằm trong những thư mục khác ngoài thư mục <samp>language/</samp> hay <samp>styles/</samp> thì bạn phải tự mình chỉnh sửa theo như cấu trúc thư mục mà bạn đã cài đặt và việc cập nhật vẫn chưa hoàn tất tại đây.',
-	'NO_UPDATE_FILES_OUTDATED'		=> 'Không có thư mục cập nhật hợp lệ nào được tìm thấy, hãy chắc chắn rằng bạn đã tải lên hết những tập tin có liên quan.<br /><br />Phiên bản phpBB bạn đang sử dụng <strong>chưa được</strong> cập nhật đến phiên bản mới nhất. Những cập nhật mới đã có cho phiên bản phpBB <strong>%1$s</strong> của bạn, hãy ghé thăm <a href="http://www.phpbb.com/downloads/" rel="external">http://www.phpbb.com/downloads/</a> và tải về gói cập nhật phù hợp để tiến hành cập nhật phiên bản phpBB đang sử dụng của bạn từ phiên bản <strong>%2$s</strong> lên phiên bản <strong>%3$s</strong>.',
+	'NO_UPDATE_FILES_OUTDATED'		=> 'Không có thư mục cập nhật hợp lệ nào được tìm thấy, hãy chắc chắn rằng bạn đã tải lên hết những tập tin có liên quan.<br /><br />Phiên bản phpBB bạn đang sử dụng <strong>chưa được</strong> cập nhật đến phiên bản mới nhất. Những cập nhật mới đã có cho phiên bản phpBB <strong>%1$s</strong> của bạn, hãy ghé thăm <a href="https://www.phpbb.com/downloads/" rel="external">https://www.phpbb.com/downloads/</a> và tải về gói cập nhật phù hợp để tiến hành cập nhật phiên bản phpBB đang sử dụng của bạn từ phiên bản <strong>%2$s</strong> lên phiên bản <strong>%3$s</strong>.',
 	'NO_UPDATE_FILES_UP_TO_DATE'	=> 'Phiên bản phpBB của bạn là phiên bản mới nhất hiện tại. Bạn không cần sử dụng đến công cụ cập nhật. Nếu bạn muốn thực hiện kiểm tra lại toàn bộ các tập tin của bạn, hãy chắc chắn rằng bạn đã tải lên những tập tin cập nhật chính xác.',
 	'NO_UPDATE_INFO'				=> 'Không thể tìm thấy thông tin về tập tin cập nhật.',
 	'NO_UPDATES_REQUIRED'			=> 'Không có cập nhật nào được yêu cầu',
@@ -544,12 +535,12 @@ $lang = array_merge($lang, array(
 		<p>Khuyến cáo bạn rằng đây là cách cập nhật bản cài đặt phpBB3 chỉ hợp lệ với gói cập nhật tự động. Bạn cũng có thể cập nhật bản cài đặt phpBB3 của mình bằng những phương pháp khác đã được liệt kê trong tài liệu <samp>INSTALL.html</samp>. Những bước tiến hành cập nhật tự động hệ thống như sau:</p>
 
 		<ul style="margin-left: 20px; font-size: 1.1em;">
-			<li>Chuyển đến trang <a href="http://www.phpbb.com/downloads/" title="http://www.phpbb.com/downloads/">http://www.phpbb.com/downloads/</a> và tải về “Gói cập nhật tự động” chính xác.<br /><br /></li>
+			<li>Chuyển đến trang <a href="https://www.phpbb.com/downloads/" title="https://www.phpbb.com/downloads/">tải về phpBB</a> và chọn chính xác “Gói cập nhật tự động”.<br /><br /></li>
 			<li>Giải nén gói tập tin vừa tải về.<br /><br /></li>
 			<li>Tải toàn bộ thư mục chính cài đặt hệ thống phpBB sau khi giải nén lên máy chủ của bạn (chung thư mục với tập tin <samp>config.php</samp>).<br /><br /></li>
 		</ul>
 
-		<p>Sau khi đã tải lên xong, hệ thống của bạn sẽ tạm ngưng hoạt động đối với các thành viên bình thường trong suốt thời gian thư mục cài đặt hệ thống mà bạn đã tải lên còn hiện diện.<br /><br />
+		<p>Sau khi đã tải lên xong, hệ thống của bạn sẽ tạm ngưng hoạt động đối với các người dùng bình thường trong suốt thời gian thư mục cài đặt hệ thống mà bạn đã tải lên còn hiện diện.<br /><br />
 		<strong><a href="%2$s" title="%2$s">Bây giờ, bạn hãy bắt đầu tiến hành cập nhật bằng cách duyệt thư mục cài đặt hệ thống từ trình duyệt của mình</a>.</strong><br />
 		<br />
 		Sau đó, bạn sẽ được hướng dẫn từng bước để tiến hành cập nhật. Bạn sẽ chỉ được thông báo một lần duy nhất khi việc cập nhật hoàn tất.</p>
@@ -573,8 +564,8 @@ $lang = array_merge($lang, array(
 	'UPLOAD_METHOD'					=> 'Phương pháp tải lên',
 
 	'UPDATE_DB_SUCCESS'	=> 'Cơ sở dữ liệu của hệ thống đã được cập nhật thành công.',
-	'USER_ACTIVE'		=> 'Thành viên đang hoạt động',
-	'USER_INACTIVE'		=> 'Thành viên ngưng hoạt động',
+	'USER_ACTIVE'		=> 'Tài khoản đang hoạt động',
+	'USER_INACTIVE'		=> 'Tài khoản ngưng hoạt động',
 
 	'VERSION_CHECK'					=> 'Kiểm tra phiên bản',
 	'VERSION_CHECK_EXPLAIN'			=> 'Tiến hành kiểm tra để chắc chắn rằng hệ thống của bạn đang chạy phiên bản phpBB mới nhất.',
@@ -595,7 +586,7 @@ $lang = array_merge($lang, array(
 	'CONFIG_SITE_DESC'			=> 'Giới thiệu về website của bạn',
 	'CONFIG_SITENAME'			=> 'yourdomain.com',
 
-	'DEFAULT_INSTALL_POST'		=> 'Đây là bài viết mẫu được tạo ra trong quá trình cài đặt hệ thống của bạn. Mọi thứ dường như đang hoạt động tốt. Bạn có thể xóa bài viết này nếu thích và tiếp tục công việc thiết lập hệ thống. Trong suốt quá trình thực thi cài đặt, nhóm chuyên mục và chuyên mục mẫu này đã được cấp phép hợp lệ sẵn cho các nhóm thành viên như: quản trị viên, điều hành viên, máy tìm kiếm, khách, thành viên và các thành viên theo điều khoản COPPA. Bạn cũng có thể xóa nhóm chuyên mục nháp và chuyên mục nháp này nhưng đừng quên cấp phép lại chuyên mục mỗi khi tạo mới sau này cho những nhóm thành viên bên trên. Chúng tôi khuyên bạn nên đổi tên nhóm chuyên mục nháp và chuyên mục nháp này. Sau đó, mỗi khi tạo mới chuyên mục, bạn hãy chọn sao chép thiết lập cấp phép từ chúng. Chúc vui vẻ!',
+	'DEFAULT_INSTALL_POST'		=> 'Đây là bài viết mẫu được tạo ra trong quá trình cài đặt hệ thống của bạn. Mọi thứ dường như đang hoạt động tốt. Bạn có thể xóa bài viết này nếu thích và tiếp tục công việc thiết lập hệ thống. Trong suốt quá trình thực thi cài đặt, nhóm chuyên mục và chuyên mục mẫu này đã được cấp phép hợp lệ sẵn cho các nhóm người dùng như: quản trị viên, điều hành viên, máy tìm kiếm, khách, người dùng đã đăng ký và người dùng theo điều khoản COPPA. Bạn cũng có thể xóa nhóm chuyên mục nháp và chuyên mục nháp này nhưng đừng quên cấp phép lại chuyên mục mỗi khi tạo mới sau này cho những nhóm người dùng bên trên. Chúng tôi khuyên bạn nên đổi tên nhóm chuyên mục nháp và chuyên mục nháp này. Sau đó, mỗi khi tạo mới chuyên mục, bạn hãy chọn sao chép thiết lập cấp phép từ chúng. Chúc vui vẻ!',
 
 	'FORUMS_FIRST_CATEGORY'		=> 'Nhóm chuyên mục nháp',
 	'FORUMS_TEST_FORUM_DESC'	=> 'Nội dung giới thiệu của chuyên mục nháp.',

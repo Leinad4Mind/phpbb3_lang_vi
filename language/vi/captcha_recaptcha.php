@@ -4,18 +4,9 @@
 * captcha_recaptcha [Vietnamese]
 *
 * @package language
-* @version $Id: captcha_recaptcha.php 4 2011-06-16 08:22:00Z nedka $
-* @copyright (c) 2009 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.05
+* @copyright (c) 2009 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 

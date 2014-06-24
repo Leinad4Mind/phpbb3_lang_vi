@@ -1,21 +1,12 @@
 <?php
 /** 
 *
-* acp_search [Vietnamese]
+* acp/search [Vietnamese]
 *
 * @package language
-* @version $Id: search.php 32 2011-03-30 11:11:00Z nedka $
-* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.34
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -66,7 +57,7 @@ $lang = array_merge($lang, array(
 	'FULLTEXT_MYSQL_MAX_SEARCH_CHARS_EXPLAIN'	=> 'Những từ khóa ít hơn số ký tự này mới được lập chỉ mục cho việc tìm kiếm. Chỉ có bạn hoặc người quản lí máy chủ mới có thể thay đổi thiết lập này thông qua việc cấu hình MySQL.',
 	'FULLTEXT_MYSQL_MBSTRING_EXPLAIN'			=> 'Nếu <samp>PCRE</samp> không có thuộc tính hỗ trợ các ký tự Unicode, phương pháp tìm kiếm sẽ cố gắng sử dụng công cụ biểu thức bình thường của <samp>mbstring</samp>.',
 	'FULLTEXT_MYSQL_MIN_SEARCH_CHARS_EXPLAIN'	=> 'Những từ khóa nhiều hơn số ký tự này mới được lập chỉ mục cho việc tìm kiếm. Chỉ có bạn hoặc người quản lí máy chủ mới có thể thay đổi thiết lập này thông qua việc cấu hình MySQL.',
-	'FULLTEXT_MYSQL_NOT_MYISAM'					=> 'Những chỉ mục FULLTEXT của MySQL chỉ có thể được sử dụng với các table MyISAM.',
+	'FULLTEXT_MYSQL_NOT_SUPPORTED'				=> 'Những chỉ mục FULLTEXT của MySQL chỉ có thể được sử dụng với các bảng dữ liệu MyISAM hay InnoDB. Hệ thống yêu cầu MySQL phiên bản 5.6.4 trở lên khi tạo chỉ mục FULLTEXT trên InnoDB.',
 	'FULLTEXT_MYSQL_PCRE'						=> 'Hỗ trợ những ký tự UTF-8 không thuộc bảng chữ cái Latinh sử dụng <samp>PCRE</samp>:',
 	'FULLTEXT_MYSQL_PCRE_EXPLAIN'				=> 'Phương pháp tìm kiếm nàu yêu cầu thuộc tính hỗ trợ các ký tự Unicode của <samp>PCRE</samp>, chỉ có sẵn trong phiên bản PHP 4.4, 5.1 trở lên, nếu như bạn muốn tìm kiếm những ký tự không thuộc bảng chữ cái Latinh.',
 	'FULLTEXT_MYSQL_TOTAL_POSTS'				=> 'Số bài viết đã được lập chỉ mục',
@@ -84,11 +75,11 @@ $lang = array_merge($lang, array(
 	'MAX_SEARCH_CHARS'					=> 'Số ký tự tối đa để tạo chỉ mục tìm kiếm',
 	'MAX_SEARCH_CHARS_EXPLAIN'			=> 'Số ký tự tối đa cho phép trong mỗi từ của bài viết được tạo chỉ mục tìm kiếm.',
 	'MAX_NUM_SEARCH_KEYWORDS'			=> 'Số từ khóa tối đa cho phép',
-	'MAX_NUM_SEARCH_KEYWORDS_EXPLAIN'	=> 'Số từ khóa tối đa mà thành viên có thể nhập cho tác vụ tìm kiếm. Nhập vào số <strong>0</strong> để không hạn chế số từ khóa được phép tìm.',
+	'MAX_NUM_SEARCH_KEYWORDS_EXPLAIN'	=> 'Số từ khóa tối đa mà người dùng có thể nhập cho tác vụ tìm kiếm. Nhập vào số <strong>0</strong> để không hạn chế số từ khóa được phép tìm.',
 	'MIN_SEARCH_CHARS'					=> 'Số ký tự tối thiểu để tạo chỉ mục tìm kiếm',
 	'MIN_SEARCH_CHARS_EXPLAIN'			=> 'Số ký tự tối thiểu cho phép trong mỗi từ của bài viết được tạo chỉ mục tìm kiếm.',
 	'MIN_SEARCH_AUTHOR_CHARS'			=> 'Số ký tự tối thiểu cho tên tác giả',
-	'MIN_SEARCH_AUTHOR_CHARS_EXPLAIN'	=> 'Thành viên phải nhập vào tối thiểu số ký tự được thiết lập này khi tìm kiếm tên tác giả sử dụng dấu *. Nếu tên thành viên của tác giả ít hơn số ký tự được thiết lập này, bạn vẫn có thể thực hiện tìm kiếm những bài viết của tác giả đó bằng cách nhập vào đầy đủ tên thành viên.',
+	'MIN_SEARCH_AUTHOR_CHARS_EXPLAIN'	=> 'Người dùng phải nhập vào tối thiểu số ký tự được thiết lập này khi tìm kiếm tên tác giả sử dụng dấu *. Nếu tên tài khoản của tác giả ít hơn số ký tự được thiết lập này, bạn vẫn có thể thực hiện tìm kiếm những bài viết của tác giả đó bằng cách nhập vào đầy đủ tên tài khoản.',
 
 	'PROGRESS_BAR'	=> 'Thanh tiến trình',
 
@@ -98,8 +89,8 @@ $lang = array_merge($lang, array(
 	'SEARCH_INDEX_CREATED'			=> 'Đã lập chỉ mục thành công cho tất cả bài viết trong cơ sở dữ liệu.',
 	'SEARCH_INDEX_DELETE_REDIRECT'	=> 'Tất cả bài viết có số ID trên <strong>%1$d</strong> đã được gỡ bỏ chỉ mục tìm kiếm xong.<br />Việc gỡ bỏ chỉ mục vẫn đang được tiến hành…',
 	'SEARCH_INDEX_REMOVED'			=> 'Đã xóa thành công chỉ mục tìm kiếm cho phương pháp tìm kiếm này.',
-	'SEARCH_INTERVAL'				=> 'Thời gian chờ giữa hai lần tìm kiếm dành cho thành viên',
-	'SEARCH_INTERVAL_EXPLAIN'		=> 'Số giây mà thành viên phải chờ giữa hai lần thực hiện việc tìm kiếm trong hệ thống. Khoảng thời gian này được kiểm tra độc lập riêng cho mỗi thành viên.',
+	'SEARCH_INTERVAL'				=> 'Thời gian chờ giữa hai lần tìm kiếm dành cho người dùng',
+	'SEARCH_INTERVAL_EXPLAIN'		=> 'Số giây mà người dùng phải chờ giữa hai lần thực hiện việc tìm kiếm trong hệ thống. Khoảng thời gian này được kiểm tra độc lập riêng cho mỗi người dùng.',
 	'SEARCH_STORE_RESULTS'			=> 'Thời gian lưu trữ bộ nhớ đệm cho kết quả tìm kiếm',
 	'SEARCH_STORE_RESULTS_EXPLAIN'	=> 'Số giây mà những kết quả tìm kiếm đã được lưu vào bộ nhớ đệm sẽ hết hạn. Nhập số <strong>0</strong> nếu bạn muốn vô hiệu chức năng lưu trữ bộ nhớ đệm cho kết quả tìm kiếm.',
 	'SEARCH_TYPE'					=> 'Phương pháp tìm kiếm',
@@ -110,7 +101,7 @@ $lang = array_merge($lang, array(
 	'TOTAL_MATCHES'	=> 'Số từ trong bài viết đã được lập chỉ mục',
 
 	'YES_SEARCH'				=> 'Bật công cụ tìm kiếm',
-	'YES_SEARCH_EXPLAIN'		=> 'Cho phép thành viên sử dụng chức năng tìm kiếm trong hệ thống, bao gồm cả tìm kiếm thành viên.',
+	'YES_SEARCH_EXPLAIN'		=> 'Cho phép người dùng sử dụng chức năng tìm kiếm trong hệ thống, bao gồm cả tìm kiếm thành viên.',
 	'YES_SEARCH_UPDATE'			=> 'Bật cập nhật FULLTEXT',
 	'YES_SEARCH_UPDATE_EXPLAIN'	=> 'Cập nhật các chỉ mục FULLTEXT khi gửi bài, được thay thế nếu chức năng tìm kiếm bị vô hiệu.',
 ));

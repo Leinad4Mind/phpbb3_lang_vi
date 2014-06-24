@@ -1,21 +1,12 @@
 <?php
 /** 
 *
-* acp_email [Vietnamese]
+* acp/email [Vietnamese]
 *
 * @package language
-* @version $Id: email.php 16 2011-04-29 10:05:00Z nedka $
-* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.18
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -46,8 +37,8 @@ if (empty($lang) || !is_array($lang))
 
 // Email settings
 $lang = array_merge($lang, array(
-	'ACP_MASS_EMAIL_EXPLAIN'	=> 'Công cụ này sẽ giúp bạn gửi email đến tất cả các thành viên trong hệ thống hoặc tất cả thành viên trong một nhóm xác định <strong>đã bật tùy chọn nhận các email thông báo trong phần thiết lập cá nhân</strong>. Để thực hiện quá trình trên, một email sẽ được gửi đến địa chỉ email của quản trị viên đã được cung cấp với bản sao được gửi đến cho tất cả người nhận đã chọn. Thiết lập mặc định chỉ đính kèm 50 người nhận trong một email như thế, càng nhiều người nhận thì càng có nhiều email được gửi đi. Nếu bạn gửi email cho một nhóm lớn có rất đông thành viên, hãy kiên nhẫn chờ đợi sau khi bấm vào nút gửi và đừng dừng nạp trang này lại. Điều này là bình thường vì thời gian chờ đợi tỉ lệ thuận với số lượng thành viên và bạn sẽ được thông báo khi quá trình gửi email thành viên hoàn tất.',
-	'ALL_USERS'					=> 'Tất cả thành viên',
+	'ACP_MASS_EMAIL_EXPLAIN'	=> 'Công cụ này sẽ giúp bạn gửi email đến tất cả người dùng trong hệ thống hoặc tất cả thành viên trong một nhóm xác định <strong>đã bật tùy chọn nhận các email thông báo trong phần thiết lập cá nhân</strong>. Để thực hiện quá trình trên, một email sẽ được gửi đến địa chỉ email của quản trị viên đã được cung cấp với bản sao được gửi đến cho tất cả người nhận đã chọn. Thiết lập mặc định chỉ đính kèm 50 người nhận trong một email như thế, càng nhiều người nhận thì càng có nhiều email được gửi đi. Nếu bạn gửi email cho một nhóm lớn có rất đông thành viên, hãy kiên nhẫn chờ đợi sau khi bấm vào nút gửi và đừng dừng nạp trang này lại. Điều này là bình thường vì thời gian chờ đợi tỉ lệ thuận với số lượng người nhận và bạn sẽ được thông báo khi quá trình gửi email hoàn tất.',
+	'ALL_USERS'					=> 'Tất cả người dùng',
 
 	'COMPOSE'				=> 'Soạn nội dung',
 
@@ -59,11 +50,11 @@ $lang = array_merge($lang, array(
 
 	'SEND_IMMEDIATELY'		=> 'Gửi trực tiếp',
 	'SEND_TO_GROUP'			=> 'Gửi đến nhóm',
-	'SEND_TO_USERS'			=> 'Gửi đến thành viên',
-	'SEND_TO_USERS_EXPLAIN'	=> 'Việc nhập tên thành viên vào khung dưới đây sẽ thay thế cho bất cứ nhóm nào đã được chọn bên trên. Mỗi dòng bạn chỉ nhập một tên thành viên xác định.',
+	'SEND_TO_USERS'			=> 'Gửi đến người dùng',
+	'SEND_TO_USERS_EXPLAIN'	=> 'Việc nhập tên tài khoản vào khung dưới đây sẽ thay thế cho bất cứ nhóm nào đã được chọn bên trên. Mỗi dòng bạn chỉ nhập một tên tài khoản xác định.',
 	
-	'MAIL_BANNED'			=> 'Gửi cho những thành viên bị cấm',
-	'MAIL_BANNED_EXPLAIN'	=> 'Khi gửi email chung đến cho một nhóm, bạn có thể lựa chọn có nên gửi luôn cho những thành viên đã bị cấm trong nhóm đó hay không.',
+	'MAIL_BANNED'			=> 'Gửi cho những người dùng bị cấm',
+	'MAIL_BANNED_EXPLAIN'	=> 'Khi gửi email chung đến cho một nhóm, bạn có thể lựa chọn có nên gửi luôn cho những người dùng đã bị cấm trong nhóm đó hay không.',
 	'MAIL_HIGH_PRIORITY'	=> 'Cao',
 	'MAIL_LOW_PRIORITY'		=> 'Thấp',
 	'MAIL_NORMAL_PRIORITY'	=> 'Bình thường',

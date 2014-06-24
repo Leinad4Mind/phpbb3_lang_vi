@@ -4,18 +4,9 @@
 * mcp [Vietnamese]
 *
 * @package language
-* @version $Id: mcp.php 54 2011-06-16 08:32:00Z nedka $
-* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.56
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -50,9 +41,9 @@ $lang = array_merge($lang, array(
 	'ADD_FEEDBACK'			=> 'Thêm phản hồi',
 	'ADD_FEEDBACK_EXPLAIN'	=> 'Nếu bạn muốn thêm vào một báo cáo trong trang này thì hãy điền đầy đủ thông tin cho các mục trong bảng bên dưới. Chỉ sử dụng văn bản thuần túy, các thẻ lệnh HTML, BBCode… đều không được phép sử dụng.',
 	'ADD_WARNING'			=> 'Thêm cảnh cáo',
-	'ADD_WARNING_EXPLAIN'	=> 'Để gửi một cảnh cáo đến thành viên này, bạn hãy điền đầy đủ thông tin cho các mục trong bảng bên dưới. Chỉ sử dụng văn bản thuần túy, các thẻ lệnh HTML, BBCode… đều không được phép sử dụng.',
+	'ADD_WARNING_EXPLAIN'	=> 'Để gửi một cảnh cáo đến người dùng này, bạn hãy điền đầy đủ thông tin cho các mục trong bảng bên dưới. Chỉ sử dụng văn bản thuần túy, các thẻ lệnh HTML, BBCode… đều không được phép sử dụng.',
 	'ALL_ENTRIES'			=> 'Tất cả các mục',
-	'ALL_NOTES_DELETED'		=> 'Đã gỡ bỏ thành công tất cả ghi chú của thành viên/',	
+	'ALL_NOTES_DELETED'		=> 'Đã gỡ bỏ thành công tất cả ghi chú của người dùng',	
 	'ALL_REPORTS'			=> 'Tất cả báo cáo',
 	'ALREADY_REPORTED'		=> 'Bài viết này đã được báo cáo rồi.',
 	'ALREADY_REPORTED_PM'	=> 'Tin nhắn này đã được báo cáo rồi.',
@@ -64,7 +55,7 @@ $lang = array_merge($lang, array(
 	'APPROVE_POSTS_CONFIRM'	=> 'Bạn có chắc chắn muốn duyệt những bài viết đã chọn?',
 
 	'CANNOT_MOVE_SAME_FORUM'	=> 'Bạn không thể di chuyển một chủ đề đến chuyên mục đang chứa chủ đề đó.',
-	'CANNOT_WARN_ANONYMOUS'		=> 'Bạn không thể cảnh cáo khách chưa đăng ký thành viên.',
+	'CANNOT_WARN_ANONYMOUS'		=> 'Bạn không thể cảnh cáo khách chưa đăng ký tài khoản.',
 	'CANNOT_WARN_SELF'			=> 'Bạn không thể cảnh cáo chính mình.',	
 	'CAN_LEAVE_BLANK'			=> 'Mục thông tin này không được phép để trống.',
 	'CHANGE_POSTER'				=> 'Thay đổi người gửi',
@@ -120,7 +111,7 @@ $lang = array_merge($lang, array(
 	'GLOBAL_ANNOUNCEMENT'	=> 'Thông báo chung',
 
 	'IP_INFO'				=> 'Thông tin về địa chỉ IP',
-	'IPS_POSTED_FROM'		=> 'Những địa chỉ IP mà thành viên này đã sử dụng để gửi bài',
+	'IPS_POSTED_FROM'		=> 'Những địa chỉ IP mà người dùng này đã sử dụng để gửi bài',
 	
 	'LATEST_LOGS'				=> '5 thao tác ghi nhận mới nhất',
 	'LATEST_REPORTED'			=> '5 báo cáo mới nhất',
@@ -147,14 +138,14 @@ $lang = array_merge($lang, array(
 	'LOOKUP_ALL'				=> 'Tra cứu tất cả địa chỉ IP',
 	'LOOKUP_IP'					=> 'Tra cứu địa chỉ IP',
 
-	'MARKED_NOTES_DELETED'		=> 'Đã gỡ bỏ thành công tất cả ghi chú của thành viên được đánh dấu.',
+	'MARKED_NOTES_DELETED'		=> 'Đã gỡ bỏ thành công tất cả ghi chú của người dùng được chọn.',
 
 	'MCP_ADD'	=> 'Thêm cảnh cáo',
 
 	'MCP_BAN'				=> 'Bảng cấm',
 	'MCP_BAN_EMAILS'		=> 'Cấm email',
 	'MCP_BAN_IPS'			=> 'Cấm địa chỉ IP',
-	'MCP_BAN_USERNAMES'		=> 'Cấm tên thành viên',
+	'MCP_BAN_USERNAMES'		=> 'Cấm tài khoản',
 
 	'MCP_LOGS'				=> 'Ghi nhận về điều hành viên',
 	'MCP_LOGS_FRONT'		=> 'Trang chính',
@@ -183,9 +174,9 @@ $lang = array_merge($lang, array(
 	'MCP_MAKE_NORMALS'				=> 'Thay đổi thành “Các chủ đề bình thường”',
 	'MCP_MAKE_NORMALS_CONFIRM'		=> 'Bạn có chắc chắn muốn thay đổi những chủ đề đã chọn trở thành “Các chủ đề bình thường”?',
 
-	'MCP_NOTES'						=> 'Ghi chú thành viên',
+	'MCP_NOTES'						=> 'Ghi chú người dùng',
 	'MCP_NOTES_FRONT'				=> 'Trang chính',
-	'MCP_NOTES_USER'				=> 'Chi tiết về thành viên',
+	'MCP_NOTES_USER'				=> 'Chi tiết về người dùng',
 
 	'MCP_POST_REPORTS'				=> 'Những báo cáo được chỉ định cho bài viết này',
 
@@ -210,16 +201,16 @@ $lang = array_merge($lang, array(
 	'MCP_QUEUE_UNAPPROVED_TOPICS'			=> 'Những chủ đề đang chờ được duyệt',
 	'MCP_QUEUE_UNAPPROVED_TOPICS_EXPLAIN'	=> 'Đây là danh sách của tất cả các chủ đề đòi hỏi phải được duyệt trước khi hiển thị cho mọi người xem.',
 
-	'MCP_VIEW_USER'			=> 'Xem cảnh cáo đối với một thành viên xác định',
+	'MCP_VIEW_USER'			=> 'Xem cảnh cáo đối với một người dùng xác định',
 
 	'MCP_WARN'				=> 'Cảnh cáo',
 	'MCP_WARN_FRONT'		=> 'Trang chính',
 	'MCP_WARN_LIST'			=> 'Danh sách cảnh cáo',
 	'MCP_WARN_POST'			=> 'Cảnh cáo bài viết xác định',
-	'MCP_WARN_USER'			=> 'Cảnh cáo thành viên',
+	'MCP_WARN_USER'			=> 'Cảnh cáo người dùng',
 
 	'MERGE_POSTS_CONFIRM'	=> 'Bạn có chắc chắn muốn di chuyển những bài viết đã chọn?',
-	'MERGE_TOPIC_EXPLAIN'	=> 'Sử dụng bảng điều khiển bên dưới, bạn có thể di chuyển những bài viết đã chọn sang một chủ đề khác. Bài viết sẽ được chia nhỏ từ chủ đề này và nhập chung sang chủ đề khác. Những bài viết này có thể không giữ được thứ tự như cũ và sẽ hiển thị như khi thành viên trả lời trong chủ đề mới.<br />Bạn hãy nhập vào số ID của chủ đề muốn thực hiện hoặc bấm vào “Chọn chủ đề” để tìm kiếm.',
+	'MERGE_TOPIC_EXPLAIN'	=> 'Sử dụng bảng điều khiển bên dưới, bạn có thể di chuyển những bài viết đã chọn sang một chủ đề khác. Bài viết sẽ được chia nhỏ từ chủ đề này và nhập chung sang chủ đề khác. Những bài viết này có thể không giữ được thứ tự như cũ và sẽ hiển thị như khi người dùng trả lời trong chủ đề mới.<br />Bạn hãy nhập vào số ID của chủ đề muốn thực hiện hoặc bấm vào “Chọn chủ đề” để tìm kiếm.',
 	'MERGE_TOPIC_ID'		=> 'Số ID của chủ đề muốn nhập chung',
 	'MERGE_TOPICS'			=> 'Nhập chung chủ đề',
 	'MERGE_TOPICS_CONFIRM'	=> 'Bạn có chắc chắn muốn nhập chung những chủ đề đã chọn?',
@@ -228,22 +219,22 @@ $lang = array_merge($lang, array(
 	'MODERATE_POST'			=> 'Điều hành bài viết',
 	'MOD_OPTIONS'			=> 'Tùy chọn cho điều hành viên',
 	'MORE_INFO'				=> 'Thông tin thêm',
-	'MOST_WARNINGS'			=> 'Thành viên có nhiều cảnh cáo',
+	'MOST_WARNINGS'			=> 'Người dùng nhận nhiều cảnh cáo',
 	'MOVE_TOPIC_CONFIRM'	=> 'Bạn có chắc chắn muốn di chuyển chủ đề đã chọn sang một chuyên mục mới?',
 	'MOVE_TOPICS'			=> 'Di chuyển những chủ đề đã chọn',
 	'MOVE_TOPICS_CONFIRM'	=> 'Bạn có chắc chắn muốn di chuyển những chủ đề đã chọn sang một chuyên mục mới',
 
 	'NOTIFY_POSTER_APPROVAL'		=> 'Thông báo cho người gửi biết về việc duyệt bài?',
 	'NOTIFY_POSTER_DISAPPROVAL' 	=> 'Thông báo cho người gửi biết về việc từ chối?',
-	'NOTIFY_USER_WARN'				=> 'Thông báo cho thành viên biết về việc cảnh cáo?',
+	'NOTIFY_USER_WARN'				=> 'Thông báo cho người dùng biết về việc cảnh cáo?',
 	'NOT_MODERATOR'					=> 'Bạn không phải là người điều hành của chuyên mục này.',
 	'NO_DESTINATION_FORUM'			=> 'Hãy chọn một chuyên mục để tiếp tục.',
 	'NO_DESTINATION_FORUM_FOUND'	=> 'Không có chuyên mục nào có sẵn để chọn.',
 	'NO_ENTRIES'					=> 'Không có mục ghi nhận nào trong thời điểm này.',
-	'NO_FEEDBACK'					=> 'Không có phản hồi nào về thành viên này.',
+	'NO_FEEDBACK'					=> 'Không có phản hồi nào về người dùng này.',
 	'NO_FINAL_TOPIC_SELECTED'		=> 'Bạn phải chọn một chủ đề để thực hiện nhập chung những bài viết.',
 	'NO_MATCHES_FOUND'				=> 'Không tìm thấy kết quả.',
-	'NO_POST'						=> 'Bạn phải chọn một bài viết để cảnh cáo thành viên về bài viết đó.',	
+	'NO_POST'						=> 'Bạn phải chọn một bài viết để cảnh cáo người dùng về bài viết đó.',	
 	'NO_POST_REPORT'				=> 'Bài viết này đã không được báo cáo',
 	'NO_POST_SELECTED'				=> 'Bạn phải chọn ít nhất một bài viết để thực hiện yêu cầu này.',
 	'NO_REASON_DISAPPROVAL'			=> 'Hãy đưa ra một nguyên nhân thích hợp về việc từ chối.',	
@@ -255,7 +246,7 @@ $lang = array_merge($lang, array(
 	'NO_TOPICS_QUEUE'				=> 'Không có chủ đề nào chờ được duyệt.',
 
 	'ONLY_TOPIC'	=> 'Chỉ trong chủ đề “%s”',	
-	'OTHER_USERS'	=> 'Những thành viên khác gửi bài từ địa chỉ IP này',
+	'OTHER_USERS'	=> 'Những người dùng khác gửi bài từ địa chỉ IP này',
 
 	'PM_REPORT_CLOSED_SUCCESS'		=> 'Báo cáo tin nhắn vừa chọn đã được kết thúc thành công.',
 	'PM_REPORT_DELETED_SUCCESS'		=> 'Báo cáo tin nhắn vừa chọn đã được xóa thành công.',
@@ -283,8 +274,8 @@ $lang = array_merge($lang, array(
 	'POST_REPORTED_SUCCESS'			=> 'Bài viết đã được báo cáo thành công.',
 	'POST_UNLOCKED_SUCCESS'			=> 'Bài viết đã được mở khóa thành công.',
 
-	'READ_USERNOTES'			=> 'Ghi chú thành viên',
-	'READ_WARNINGS'				=> 'Cảnh cáo thành viên',
+	'READ_USERNOTES'			=> 'Ghi chú người dùng',
+	'READ_WARNINGS'				=> 'Cảnh cáo người dùng',
 	'REPORTER'					=> 'Người báo cáo',
 	'REPORTED'					=> 'Đã báo cáo',
 	'REPORTED_BY'				=> 'Được báo cáo bởi',
@@ -322,7 +313,7 @@ $lang = array_merge($lang, array(
 	'SELECT_MERGE'						=> 'Chọn nhập chung',
 	'SELECT_TOPICS_FROM'				=> 'Chọn những chủ đề từ',
 	'SELECT_TOPIC'						=> 'Chọn chủ đề',
-	'SELECT_USER'						=> 'Chọn thành viên',
+	'SELECT_USER'						=> 'Chọn người dùng',
 	'SORT_ACTION'						=> 'Thao tác ghi nhận',
 	'SORT_DATE'							=> 'Ngày tháng',
 	'SORT_IP'							=> 'Địa chỉ IP',
@@ -378,15 +369,15 @@ $lang = array_merge($lang, array(
 	'UNLOCK_TOPICS_CONFIRM'			=> 'Bạn có chắc chắn muốn mở khóa những chủ đề đã chọn?',
 	'USER_CANNOT_POST'				=> 'Bạn không thể gửi bài trong chuyên mục này.',
 	'USER_CANNOT_REPORT'			=> 'Bạn không thể báo cáo bài viết trong chuyên mục này.',
-	'USER_FEEDBACK_ADDED'			=> 'Đã thêm phản hồi của thành viên thành công.',
-	'USER_WARNING_ADDED'			=> 'Đã cảnh cáo thành viên thành công.',
+	'USER_FEEDBACK_ADDED'			=> 'Đã thêm phản hồi về người dùng thành công.',
+	'USER_WARNING_ADDED'			=> 'Đã cảnh cáo người dùng thành công.',
 
 	'VIEW_DETAILS'	=> 'Xem chi tiết',
 	'VIEW_PM'		=> 'Xem tin nhắn',
 	'VIEW_POST'		=> 'Xem bài viết',
 
-	'WARNED_USERS'			=> 'Những thành viên đã cảnh cáo',
-	'WARNED_USERS_EXPLAIN'	=> 'Đây là danh sách tất cả các thành viên vẫn chưa hết thời gian bị cảnh cáo.',	
+	'WARNED_USERS'			=> 'Những người dùng đã cảnh cáo',
+	'WARNED_USERS_EXPLAIN'	=> 'Đây là danh sách tất cả người dùng vẫn chưa hết thời gian bị cảnh cáo.',	
 	'WARNING_PM_BODY'		=> 'Dưới đây là cảnh cáo dành cho bạn bởi các điều hành viên hay quản trị viên của website. [quote]%s[/quote]',
 	'WARNING_PM_SUBJECT'	=> 'Cảnh cáo từ ban điều hành diễn đàn',
 	'WARNING_POST_DEFAULT'	=> 'Đây là cảnh cáo về việc gửi bài của bạn: “%s”.',

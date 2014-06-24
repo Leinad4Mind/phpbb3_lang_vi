@@ -1,21 +1,12 @@
 <?php
 /** 
 *
-* acp_attachments [Vietnamese]
+* acp/attachments [Vietnamese]
 *
 * @package language
-* @version $Id: attachments.php 29 2013-06-26 19:12:00Z nedka $
-* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.31
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -48,12 +39,12 @@ $lang = array_merge($lang, array(
 	'ACP_ATTACHMENT_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thay đổi những thiết lập chính về chức năng đính kèm tập tin và những nhóm tập tin kết hợp trong hệ thống.',
 	'ACP_EXTENSION_GROUPS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thêm vào, xóa, chỉnh sửa hoặc vô hiệu những nhóm tập tin được phép đính kèm. Bạn cũng có thể sử dụng những tùy chọn khác như chỉ định một loại nhóm tập tin đặc biệt, thay đổi cơ chế tải về của các tập tin và xác định biểu tượng tập tin cho từng loại nhóm tập tin hiển thị trong phần tải về tập tin đính kèm.',
 	'ACP_MANAGE_EXTENSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể quản lí những loại tập tin đã được cho phép sử dụng khi đính kèm tập tin trong hệ thống. Để kích hoạt những loại tập tin này, hãy tham khảo bảng quản lí các loại nhóm tập tin. Chúng tôi khuyên bạn không nên thêm vào những loại tập tin mã nguồn như <code>php</code>, <code>php3</code>, <code>php4</code>, <code>phtml</code>, <code>pl</code>, <code>cgi</code>, <code>py</code>, <code>rb</code>, <code>asp</code>, <code>aspx</code> và những loại khác giống như thế…',
-	'ACP_ORPHAN_ATTACHMENTS_EXPLAIN'	=> 'Với công cụ này, bạn có thể phát hiện những tập tin đính kèm không được sử dụng trong bất kì bài viết nào. Hầu hết điều này xảy ra khi các thành viên tải lên xong tập tin nhưng lại không gửi kèm vào bài viết nữa. Bạn có thể xóa những tập tin này hoặc đính kèm chúng vào những bài viết hiện có. Việc đính kèm tập tin vào bài viết yêu cầu bạn phải xác định chính xác số ID của bài viết và bạn phải tự mình xác định số ID này. Thao tác này sẽ thêm tập tin đính kèm đã được tải lên vào bài viết hiện có mà bạn chọn.',
+	'ACP_ORPHAN_ATTACHMENTS_EXPLAIN'	=> 'Với công cụ này, bạn có thể phát hiện những tập tin đính kèm không được sử dụng trong bất kì bài viết nào. Hầu hết điều này xảy ra khi người dùng tải lên xong tập tin nhưng lại không gửi kèm vào bài viết nữa. Bạn có thể xóa những tập tin này hoặc đính kèm chúng vào những bài viết hiện có. Việc đính kèm tập tin vào bài viết yêu cầu bạn phải xác định chính xác số ID của bài viết và bạn phải tự mình xác định số ID này. Thao tác này sẽ thêm tập tin đính kèm đã được tải lên vào bài viết hiện có mà bạn chọn.',
 	'ADD_EXTENSION'						=> 'Thêm loại tập tin',
 	'ADD_EXTENSION_GROUP'				=> 'Thêm nhóm tập tin',
 	'ADMIN_UPLOAD_ERROR'				=> 'Có lỗi xảy ra trong khi đính kèm tập tin: “%s”.',
 	'ALLOWED_FORUMS'					=> 'Chuyên mục được phép đính kèm tập tin',
-	'ALLOWED_FORUMS_EXPLAIN'			=> 'Cho phép thành viên có thể đính kèm những loại tập tin trong các chuyên mục được chọn hoặc tất cả các chuyên mục.',
+	'ALLOWED_FORUMS_EXPLAIN'			=> 'Cho phép người dùng có thể đính kèm những loại tập tin trong các chuyên mục được chọn hoặc tất cả các chuyên mục.',
 	'ALLOWED_IN_PM_POST'				=> 'Cho phép',
 	'ALLOW_ATTACHMENTS'					=> 'Cho phép đính kèm tập tin',
 	'ALLOW_ALL_FORUMS'					=> 'Cho phép đính kèm tập tin trong tất cả các chuyên mục',

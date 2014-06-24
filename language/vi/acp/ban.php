@@ -1,21 +1,12 @@
 <?php
 /** 
 *
-* acp_ban [Vietnamese]
+* acp/ban [Vietnamese]
 *
 * @package language
-* @version $Id: ban.php 22 2011-12-03 15:30:00Z nedka $
-* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.24
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -50,7 +41,7 @@ $lang = array_merge($lang, array(
 	'30_MINS'		=> '30 phút',
 	'6_HOURS'		=> '6 giờ',
 
-	'ACP_BAN_EXPLAIN'	=> 'Sử dụng công cụ này, bạn có thể điều khiển việc cấm các thành viên theo tên thành viên, địa chỉ IP hay địa chỉ email. Những phương pháp này sẽ ngăn cản thành viên bị cấm truy cập vào bất kì thành phần nào trong hệ thống. Bạn có thể đưa ra một nguyên nhân ngắn giới hạn với tối đa là <strong>3000</strong> ký tự về việc vì sao thành viên đó bị cấm. Các thao tác cấm này sẽ được ghi nhận trong bảng ghi nhận của quản trị viên. Bạn cũng có thể xác định thời gian thực hiện lệnh cấm. Nếu bạn muốn xác định chính xác ngày kết thúc lệnh cấm, tốt hơn cách thiết lập một khoảng thời gian cấm trong bao lâu, bạn có thể chọn <span style="text-decoration: underline;">Cho đến ngày -&gt;</span> và nhập vào ngày tháng theo định dạng <kbd>YYYY-MM-DD</kbd>.',
+	'ACP_BAN_EXPLAIN'	=> 'Sử dụng công cụ này, bạn có thể điều khiển việc cấm các thành viên theo tên tài khoản, địa chỉ IP hay địa chỉ email. Những phương pháp này sẽ ngăn cản thành viên bị cấm truy cập vào bất kì thành phần nào trong hệ thống. Bạn có thể đưa ra một nguyên nhân ngắn giới hạn với tối đa là <strong>3000</strong> ký tự về việc vì sao thành viên đó bị cấm. Các thao tác cấm này sẽ được ghi nhận trong bảng ghi nhận của quản trị viên. Bạn cũng có thể xác định thời gian thực hiện lệnh cấm. Nếu bạn muốn xác định chính xác ngày kết thúc lệnh cấm, tốt hơn cách thiết lập một khoảng thời gian cấm trong bao lâu, bạn có thể chọn <span style="text-decoration: underline;">Cho đến ngày -&gt;</span> và nhập vào ngày tháng theo định dạng <kbd>YYYY-MM-DD</kbd>.',
 
 	'BAN_EXCLUDE'			=> 'Loại ra từ lệnh cấm',
 	'BAN_LENGTH'			=> 'Thời gian thực hiện lệnh cấm',
@@ -83,12 +74,12 @@ $lang = array_merge($lang, array(
 	'PERMANENT'	=> 'Vĩnh viễn',
 
 	'UNTIL'						=> 'Cho đến ngày',
-	'USER_BAN'					=> 'Cấm một hay nhiều tên thành viên',
+	'USER_BAN'					=> 'Cấm một hay nhiều tên tài khoản',
 	'USER_BAN_EXCLUDE_EXPLAIN'	=> 'Bật tùy chọn này để loại trừ các thành viên đã nhập vào khỏi các lệnh cấm hiện tại.',
-	'USER_BAN_EXPLAIN'			=> 'Để xác định nhiều thành viên cùng lúc, bạn hãy nhập mỗi tên thành viên trong một dòng. Sử dụng chức năng <span style="text-decoration: underline;">Tìm một thành viên</span> để tra cứu và thêm vào một hay nhiều thành viên tự động.',
-	'USER_NO_BANNED'			=> 'Không có thành viên nào bị cấm',
-	'USER_UNBAN'				=> 'Ngưng cấm hoặc ngưng loại trừ thành viên',
-	'USER_UNBAN_EXPLAIN'		=> 'Bạn có thể ngưng cấm hoặc ngưng loại trừ nhiều thành viên cùng lúc trong một thao tác bằng cách kết hợp hiệu quả chuột và bàn phím từ máy tính và trình duyệt. Những thành viên bị loại trừ được đánh dấu nổi bật.',
+	'USER_BAN_EXPLAIN'			=> 'Để xác định nhiều thành viên cùng lúc, bạn hãy nhập mỗi tên tài khoản trong một dòng. Sử dụng chức năng <span style="text-decoration: underline;">Tìm một người dùng</span> để tra cứu và thêm vào một hay nhiều tài khoản tự động.',
+	'USER_NO_BANNED'			=> 'Không có tài khoản nào bị cấm',
+	'USER_UNBAN'				=> 'Ngưng cấm hoặc ngưng loại trừ tài khoản',
+	'USER_UNBAN_EXPLAIN'		=> 'Bạn có thể ngưng cấm hoặc ngưng loại trừ nhiều tài khoản cùng lúc trong một thao tác bằng cách kết hợp chuột và bàn phím trên máy tính của mình. Những tài khoản bị loại trừ được đánh dấu nổi bật.',
 ));
 
 ?>

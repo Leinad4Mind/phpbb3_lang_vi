@@ -4,18 +4,9 @@
 * search [Vietnamese]
 *
 * @package language
-* @version $Id: search.php 28 2011-04-29 09:57:00Z nedka $
-* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.30
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -61,9 +52,9 @@ $lang = array_merge($lang, array(
 
 	'JUMP_TO_POST'			=> 'Chuyển đến bài viết',
 
-	'LOGIN_EXPLAIN_EGOSEARCH'		=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào để xem những bài viết của mình.',
-	'LOGIN_EXPLAIN_UNREADSEARCH'	=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào để tìm những bài viết chưa xem của mình.',
-	'LOGIN_EXPLAIN_NEWPOSTS'		=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào để xem những bài viết mới kể từ lần ghé thăm trước của bạn.',
+	'LOGIN_EXPLAIN_EGOSEARCH'		=> 'Hệ thống yêu cầu bạn phải đăng nhập vào để xem những bài viết của mình.',
+	'LOGIN_EXPLAIN_UNREADSEARCH'	=> 'Hệ thống yêu cầu bạn phải đăng nhập vào để tìm những bài viết chưa xem của mình.',
+	'LOGIN_EXPLAIN_NEWPOSTS'		=> 'Hệ thống yêu cầu bạn phải đăng nhập vào để xem những bài viết mới kể từ lần ghé thăm trước.',
 
 	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> 'Bạn đã dùng quá nhiều từ khóa để tìm kiếm. Xin đừng nhập vào nhiều hơn <strong>%1$d</strong> từ.',
 
@@ -86,6 +77,7 @@ $lang = array_merge($lang, array(
 
 	'SEARCHED_FOR'				=> 'Điều kiện tìm kiếm đã sử dụng',
 	'SEARCHED_TOPIC'			=> 'Chủ đề đã tìm kiếm',
+	'SEARCHED_QUERY'			=> 'Từ khóa đã tìm',
 	'SEARCH_ALL_TERMS'			=> 'Tìm kiếm theo tất cả điều kiện hoặc sử dụng truy vấn tìm kiếm đã nhập',
 	'SEARCH_ANY_TERMS'			=> 'Tìm kiếm theo bất kì điều kiện nào',
 	'SEARCH_AUTHOR'				=> 'Tìm kiếm theo người gửi',

@@ -4,18 +4,9 @@
 * captcha_qa [Vietnamese]
 *
 * @package language
-* @version $Id: captcha_qa.php 6 2011-03-30 09:19:00Z nedka $
-* @copyright (c) 2009 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.08
+* @copyright (c) 2009 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -66,7 +57,7 @@ $lang = array_merge($lang, array(
 	'QUESTION_TEXT'				=> 'Câu hỏi',
 	'QUESTION_TEXT_EXPLAIN'		=> 'Câu hỏi xác nhận dùng để kiểm tra người dùng.',
 	'QUESTIONS'					=> 'Các câu hỏi',
-	'QUESTIONS_EXPLAIN'			=> 'Trong mỗi trang nhập liệu có bật chức năng kiểm tra này, các thành viên mới sẽ phải trả lời một trong những câu hỏi đã được thiết lập sẵn. Để sử dụng phần mở rộng này, phải có ít nhất một câu hỏi được thiết lập với ngôn ngữ mặc định của hệ thống. Các câu hỏi nên dễ dàng cho thành viên trả lời nhưng tránh thông dụng vì chương trình tự động có thể truy vấn tìm kiếm thông qua Google. Sử dụng số lượng câu hỏi đa dạng và thường xuyên thay đổi sẽ giúp việc ngăn chặn đạt kết quả tốt. Nếu câu hỏi yêu cầu phân biệt hoa thường, xác định rõ dấu chấm câu hay khoảng trắng, hãy sử dụng tùy chọn kiểm tra chặt chẽ.',
+	'QUESTIONS_EXPLAIN'			=> 'Trong mỗi trang nhập liệu có bật chức năng kiểm tra này, người dùng sẽ phải trả lời một trong những câu hỏi đã được thiết lập sẵn. Để sử dụng phần mở rộng này, phải có ít nhất một câu hỏi được thiết lập với ngôn ngữ mặc định của hệ thống. Các câu hỏi nên dễ dàng cho người dùng trả lời nhưng tránh thông dụng vì chương trình tự động có thể truy vấn tìm kiếm thông qua Google. Sử dụng số lượng câu hỏi đa dạng và thường xuyên thay đổi sẽ giúp việc ngăn chặn đạt kết quả tốt. Nếu câu hỏi yêu cầu phân biệt hoa thường, xác định rõ dấu chấm câu hay khoảng trắng, hãy sử dụng tùy chọn kiểm tra chặt chẽ.',
 ));
 
 ?>

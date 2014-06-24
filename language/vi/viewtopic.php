@@ -4,18 +4,9 @@
 * viewtopic [Vietnamese]
 *
 * @package language
-* @version $Id: viewtopic.php 32 2009-11-18 22:20:00Z nedka $
-* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.34
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -73,7 +64,7 @@ $lang = array_merge($lang, array(
 
 	'LINKAGE_FORBIDDEN'		=> 'Bạn không được phép xem, tải về hoặc liên kết đến website này.',
 	'LOGIN_NOTIFY_TOPIC'	=> 'Hãy vui lòng đăng nhập để xem chủ đề này.',
-	'LOGIN_VIEWTOPIC'		=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem chủ đề này.',
+	'LOGIN_VIEWTOPIC'		=> 'Hệ thống yêu cầu bạn phải đăng nhập vào để xem chủ đề này.',
 
 	'MAKE_ANNOUNCE'				=> 'Thay đổi thành “Thông báo”',
 	'MAKE_GLOBAL'				=> 'Thay đổi thành “Thông báo chung”',

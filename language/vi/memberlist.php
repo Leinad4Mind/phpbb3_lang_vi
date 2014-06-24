@@ -4,18 +4,9 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version $Id: memberlist.php 39 2013-06-26 18:59:00Z nedka $
-* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.41
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -73,7 +64,7 @@ $lang = array_merge($lang, array(
 	'EMPTY_SUBJECT_EMAIL'	=> 'Bạn phải nhập tiêu đề cho email.',
 	'EQUAL_TO'				=> 'Bằng',
 
-	'FIND_USERNAME_EXPLAIN'	=> 'Công cụ này sẽ giúp bạn tìm kiếm những thành viên xác định trong hệ thống. Bạn không cần phải điền đầy đủ thông tin trong tất cả các mục bên dưới. Sử dụng dấu * để tìm kiếm những thành viên có tến giống nhau một phần nào đó. Khi nhập thông tin về ngày tháng bạn cần sử dụng định dạng <kbd>YYYY-MM-DD</kbd>. Ví dụ: <samp>2004-02-29</samp>. Đánh dấu chọn trong phần đánh dấu để chọn một hay nhiều tên thành viên. Những tên thành viên khác nhau có thể được chọn tùy thuộc vào bảng được liệt kê. Bấm vào nút <strong>Chọn đánh dấu</strong> nếu có để quay về bảng điều khiển trước.',
+	'FIND_USERNAME_EXPLAIN'	=> 'Công cụ này sẽ giúp bạn tìm kiếm những thành viên xác định trong hệ thống. Bạn không cần phải điền đầy đủ thông tin trong tất cả các mục bên dưới. Sử dụng dấu * để tìm kiếm những thành viên có tến giống nhau một phần nào đó. Khi nhập thông tin về ngày tháng bạn cần sử dụng định dạng <kbd>YYYY-MM-DD</kbd>. Ví dụ: <samp>2004-02-29</samp>. Đánh dấu chọn trong phần đánh dấu để chọn một hay nhiều tên tài khoản. Những tên tài khoản khác nhau có thể được chọn tùy thuộc vào bảng được liệt kê. Bấm vào nút <strong>Chọn đánh dấu</strong> nếu có để quay về bảng điều khiển trước.',
 	'FLOOD_EMAIL_LIMIT'		=> 'Bạn không thể gửi email vào thời điểm này. Hãy thử lại sau vài phút nữa!',
 
 	'GROUP_LEADER'			=> 'Trưởng nhóm',
@@ -137,7 +128,7 @@ $lang = array_merge($lang, array(
 	'SORT_LAST_ACTIVE'		=> 'Lần hoạt động trước',
 	'SORT_POST_COUNT'		=> 'Số bài viết',
 
-	'USERNAME_BEGINS_WITH'	=> 'Tên thành viên bắt đầu bằng',
+	'USERNAME_BEGINS_WITH'	=> 'Tên tài khoản bắt đầu bằng',
 	'USER_ADMIN'			=> 'Quản trị viên',
 	'USER_BAN'				=> 'Bảng cấm',
 	'USER_FORUM'			=> 'Thống kê thành viên',

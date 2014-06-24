@@ -1,21 +1,12 @@
 <?php
 /** 
 *
-* acp_modules [Vietnamese]
+* acp/modules [Vietnamese]
 *
 * @package language
-* @version $Id: modules.php 15 2008-11-01 22:58:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.17
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 

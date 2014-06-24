@@ -4,18 +4,9 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php 50 2013-06-26 19:01:00Z nedka $
-* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.53
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -63,9 +54,9 @@ $lang = array_merge($lang, array(
 	'BBCODE_IS_OFF'			=> '%sBBCode%s đang <em>TẮT</em>',
 	'BBCODE_IS_ON'			=> '%sBBCode%s đang <em>BẬT</em>',
 	'BBCODE_I_HELP'			=> 'Văn bản in nghiêng: [i]văn bản muốn in nghiêng[/i]',
-	'BBCODE_L_HELP'			=> 'Tạo danh sách: [list]văn bản muốn tạo danh sách[/list]',
-	'BBCODE_LISTITEM_HELP'	=> 'Mục liệt kê: [*]văn bản trong dòng liệt kê[/*]',
-	'BBCODE_O_HELP'			=> 'Tạo danh sách theo thứ tự: [list=]văn bản muốn tạo danh sách theo thứ tự[/list]',
+	'BBCODE_L_HELP'			=> 'Tạo danh sách: [list][*]văn bản muốn tạo danh sách[/list]',
+	'BBCODE_LISTITEM_HELP'	=> 'Mục liệt kê: [*]văn bản trong dòng liệt kê',
+	'BBCODE_O_HELP'			=> 'Tạo danh sách theo thứ tự: [list=1][*]Dòng đầu tiên[/list] hoặc [list=a][*]Mục a[/list]',
 	'BBCODE_P_HELP'			=> 'Chèn hình: [img]http://địa chỉ URL tập tin hình ảnh[/img]',
 	'BBCODE_Q_HELP'			=> 'Trích dẫn văn bản: [quote]văn bản muốn trích dẫn[/quote]',
 	'BBCODE_S_HELP'			=> 'Màu chữ: [color=red]văn bản muốn tô màu[/color] Lưu ý: Bạn cũng có thể sử dụng dạng color=#FF0000',
@@ -124,7 +115,7 @@ $lang = array_merge($lang, array(
 
 	'LOAD'						=> 'Nạp',
 	'LOAD_DRAFT'				=> 'Nạp bản nháp',
-	'LOAD_DRAFT_EXPLAIN'		=> 'Với công cụ này, bạn có thể chọn cho mình bản nháp để tiếp tục soạn bài viết. Bài viết hiện tại của bạn sẽ được hủy bỏ và tất cả nội dung trong bài viết sẽ được xóa. Xem, sửa và xóa những bản nháp trong bảng điều khiển thành viên của bạn.',
+	'LOAD_DRAFT_EXPLAIN'		=> 'Với công cụ này, bạn có thể chọn cho mình bản nháp để tiếp tục soạn bài viết. Bài viết hiện tại của bạn sẽ được hủy bỏ và tất cả nội dung trong bài viết sẽ được xóa. Xem, sửa và xóa những bản nháp trong bảng thiết lập cá nhân của mình.',
 	'LOGIN_EXPLAIN_BUMP'		=> 'Bạn phải đăng nhập để đẩy các chủ đề trong chuyên mục này.',
 	'LOGIN_EXPLAIN_DELETE'		=> 'Bạn phải đăng nhập để xóa các bài viết trong chuyên mục này.',
 	'LOGIN_EXPLAIN_POST'		=> 'Bạn phải đăng nhập để gửi bài trong chuyên mục này.',
@@ -156,8 +147,8 @@ $lang = array_merge($lang, array(
 	'POLL_DELETE'				=> 'Xóa bình chọn',
 	'POLL_FOR'					=> 'Thời gian bình chọn',
 	'POLL_FOR_EXPLAIN'			=> 'Nhập số <strong>0</strong> hoặc để trống cho bình chọn không giới hạn thời gian.',
-	'POLL_MAX_OPTIONS'			=> 'Lựa chọn tối đa của mỗi thành viên',
-	'POLL_MAX_OPTIONS_EXPLAIN'	=> 'Đây là số lựa chọn tối đa mà mỗi thành viên tham gia bình chọn có thể thực hiện.',
+	'POLL_MAX_OPTIONS'			=> 'Lựa chọn tối đa của mỗi người dùng',
+	'POLL_MAX_OPTIONS_EXPLAIN'	=> 'Đây là số lựa chọn tối đa mà mỗi người dùng tham gia bình chọn có thể thực hiện.',
 	'POLL_OPTIONS'				=> 'Đối tượng bình chọn',
 	'POLL_OPTIONS_EXPLAIN'		=> 'Đặt mỗi đối tượng bình chọn trong một dòng mới. Bạn có thể tạo đến <strong>%d</strong> đối tượng bình chọn.',
 	'POLL_OPTIONS_EDIT_EXPLAIN'	=> 'Đặt mỗi đối tượng bình chọn trong một dòng mới. Bạn có thể tạo đến <strong>%d</strong> đối tượng bình chọn. Nếu bạn gỡ gỏ hay thêm vào những đối tượng bình chọn thì tất cả kết quả bình chọn trước đây sẽ được tạo lại từ đầu.',
@@ -165,7 +156,7 @@ $lang = array_merge($lang, array(
 	'POLL_TITLE_TOO_LONG'		=> 'Tên bình chọn không được vượt quá <strong>100</strong> ký tự.',
 	'POLL_TITLE_COMP_TOO_LONG'	=> 'Độ dài tên bình chọn thực tế của bạn quá lớn, hãy vui lòng bỏ bớt các thẻ lệnh BBCode hay biểu tượng vui.',
 	'POLL_VOTE_CHANGE'			=> 'Cho phép bình chọn lại',
-	'POLL_VOTE_CHANGE_EXPLAIN'	=> 'Nếu lựa chọn này được bật, những thành viên có thể thay đổi lựa chọn mà họ đã tham gia bình chọn.',
+	'POLL_VOTE_CHANGE_EXPLAIN'	=> 'Nếu lựa chọn này được bật, người dùng có thể thay đổi lựa chọn mà họ đã tham gia bình chọn.',
 	'POSTED_ATTACHMENTS'		=> 'Tập tin đã được đính kèm',
 	'POST_APPROVAL_NOTIFY'		=> 'Bạn sẽ được thông báo khi bài viết của mình được duyệt.',
 	'POST_CONFIRMATION'			=> 'Xác nhận bài viết',
@@ -178,7 +169,7 @@ $lang = array_merge($lang, array(
 	'POST_NORMAL'				=> 'Bài viết bình thường',
 	'POST_REVIEW'				=> 'Xem lại bài viết',
 	'POST_REVIEW_EDIT'			=> 'Xem lại bài viết được sửa',
-	'POST_REVIEW_EDIT_EXPLAIN'	=> 'Nội dung bài viết này đã được thay đổi bởi một thành viên khác trong khi bạn đang chỉnh sửa. Bạn nên xem lại nội dung của phiên bản hiện tại và điều chỉnh những thay đổi của mình.',
+	'POST_REVIEW_EDIT_EXPLAIN'	=> 'Nội dung bài viết này đã được thay đổi bởi một người dùng khác trong khi bạn đang chỉnh sửa. Bạn nên xem lại nội dung của phiên bản hiện tại và điều chỉnh những thay đổi của mình.',
 	'POST_REVIEW_EXPLAIN'		=> 'Có ít nhất một bài viết mới được gửi trong chủ đề này. Có thể bạn muốn xem lại nội dung của nó trước khi tiếp tục gửi bài trả lời.',
 	'POST_STORED'				=> 'Bài viết này đã được gửi thành công.',
 	'POST_STORED_MOD'			=> 'Bài viết này đã được gửi thành công nhưng vẫn cần phải được duyệt lại bởi một điều hành viên trước khi mọi người có thể xem được.',
@@ -209,13 +200,13 @@ $lang = array_merge($lang, array(
 	'TOO_MANY_POLL_OPTIONS'		=> 'Bạn đã tạo quá nhiều đối tượng bình chọn.',
 	'TOO_MANY_SMILIES'			=> 'Bài viết của bạn sử dụng quá nhiều biểu tượng vui. Số lượng biểu tượng vui tối đa cho phép sử dụng trong mỗi bài viết là <strong>%d</strong>.',
 	'TOO_MANY_URLS'				=> 'Bài viết của bạn có quá nhiều địa chỉ URL. Số lượng địa chỉ URL tối đa được phép sử dụng trong mỗi bài viết là <strong>%d</strong>.',
-	'TOO_MANY_USER_OPTIONS'		=> 'Bạn không thể xác định số đối tượng bình chọn tối đa cho mỗi thành viên nhiều hơn số lượng đối tượng bình chọn hiện có trong bình chọn này',
+	'TOO_MANY_USER_OPTIONS'		=> 'Bạn không thể xác định số đối tượng bình chọn tối đa cho mỗi người dùng nhiều hơn số lượng đối tượng bình chọn hiện có trong bình chọn này',
 	'TOPIC_BUMPED'				=> 'Chủ đề đã được đẩy lên thành công.',
 
 	'UNAUTHORISED_BBCODE'		=> 'Bạn không thể sử dụng những thẻ lệnh BBCode sau: “%s”.',
 	'UNGLOBALISE_EXPLAIN'		=> 'Để chuyển đổi chủ đề này từ loại thông báo quan trọng thành chủ đề bình thường, bạn cần phải chọn chuyên mục chứa chủ đề này.',
 	'UPDATE_COMMENT'			=> 'Cập nhật chú thích',
-	'URL_INVALID'				=> 'Địa chỉ URL bạn vừa nhập không chính xác.',
+	'URL_INVALID'				=> 'Địa chỉ URL bạn nhập không chính xác.',
 	'URL_NOT_FOUND'				=> 'Không thể tìm thấy tập tin vừa chọn.',
 	'URL_IS_OFF'				=> 'Thẻ [url] đang <em>TẮT</em>',
 	'URL_IS_ON'					=> 'Thẻ [url] đang <em>BẬT</em>',

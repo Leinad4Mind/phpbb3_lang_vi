@@ -1,21 +1,12 @@
 <?php
 /** 
 *
-* acp_styles [Vietnamese]
+* acp/styles [Vietnamese]
 *
 * @package language
-* @version $Id: styles.php 57 2013-06-26 19:42:00Z nedka $
-* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.60
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -46,7 +37,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ACP_IMAGESETS_EXPLAIN'	=> 'Một gói hình giao diện bao gồm tất cả các hình nút bấm, biểu tượng, thư mục… và những hình ảnh khác thay đổi theo từng gói giao diện được sử dụng trong hệ thống. Với công cụ này, bạn có thể chỉnh sửa, xuất hay xóa những gói hình giao diện hiện tại và nhập hoặc kích hoạt những gói hình giao diện mới.',
-	'ACP_STYLES_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí tất cả các giao diện có sẵn trong hệ thống. Một gói giao diện gồm có một khuôn mẫu, kiểu dáng và gói hình giao diện được đính kèm bên trong. Bạn có thể thay đổi những giao diện hiện có, xóa, ngưng kích hoạt, kích hoạt lại, tạo và nhập vào những gói giao diện mới. Bạn cũng có thể sử dụng chức năng xem trước để xem giao diện được hiển thị như thế nào trong hệ thống. Giao diện mặc định hiện tại của hệ thống được đánh dấu * để phân biệt. Công cụ này cũng liệt kê có bao nhiêu thành viên sử dụng mỗi giao diện, lưu ý thiết lập thay thế toàn bộ giao diện của thành viên không phải nằm trong phần này.',
+	'ACP_STYLES_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí tất cả các giao diện có sẵn trong hệ thống. Một gói giao diện gồm có một khuôn mẫu, kiểu dáng và gói hình giao diện được đính kèm bên trong. Bạn có thể thay đổi những giao diện hiện có, xóa, ngưng kích hoạt, kích hoạt lại, tạo và nhập vào những gói giao diện mới. Bạn cũng có thể sử dụng chức năng xem trước để xem giao diện được hiển thị như thế nào trong hệ thống. Giao diện mặc định hiện tại của hệ thống được đánh dấu * để phân biệt. Công cụ này cũng liệt kê có bao nhiêu người dùng sử dụng mỗi giao diện, lưu ý thiết lập thay thế toàn bộ giao diện của người dùng không phải nằm trong phần này.',
 	'ACP_TEMPLATES_EXPLAIN'	=> 'Một khuôn mẫu bao gồm tất cả các thẻ đánh dấu nằm trong các tập tin khuôn mẫu được sử dụng để thiết kế và bố trí giao diện cho hệ thống. Với công cụ này, bạn có thể chỉnh sửa những khuôn mẫu hiện có, xóa, xuất, nhập và xem trước các khuôn mẫu này. Bạn cũng có thể chỉnh sửa một phần mã HTML của khuôn mẫu dùng để sử dụng cho các thẻ BBCode.',
 	'ACP_THEMES_EXPLAIN'	=> 'Với công cụ này, bạn có thể tạo, cài đặt, cỉnh sửa, xóa và xuất các kiểu dáng. Một kiểu dáng là sự kết hợp của các thông số màu sắc và hình ảnh được xác định trong khuôn mẫu của bạn để tạo ra giao diện hoàn chỉnh cho hệ thống. Việc bạn có thể thay đổi các thông số cấu hình này là tùy thuộc vào cấu hình máy chủ của bạn và quá trình cài đặt hệ thống phpBB. Hãy xem qua tài liệu sử dụng của hệ thống để biết thêm thông tin. Lưu ý rằng việc tạo ra các kiểu dáng mới dựa trên các kiểu dáng hiện có có thể tùy biến hoàn toàn.',
 	'ADD_IMAGESET'			=> 'Tạo gói hình giao diện',
@@ -118,7 +109,7 @@ $lang = array_merge($lang, array(
 	'FOREGROUND'			=> 'Tiền cảnh',
 	'FONT_COLOUR'			=> 'Màu chữ',
 	'FONT_FACE'				=> 'Phông chữ',
-	'FONT_FACE_EXPLAIN'		=> 'Bạn có thể xác định nhiều phông chữ, ngăn cách nhau bằng dấu phẩy (,). Nếu trên máy tính của thành viên không có phông chữ đầu tiên mà bạn chọn thì lần lượt các phông chữ kế tiếp sẽ được chọn.',
+	'FONT_FACE_EXPLAIN'		=> 'Bạn có thể xác định nhiều phông chữ, ngăn cách nhau bằng dấu phẩy (,). Nếu trên máy tính của người dùng không có phông chữ đầu tiên mà bạn chọn thì lần lượt các phông chữ kế tiếp sẽ được chọn.',
 	'FONT_SIZE'				=> 'Kích thước phông chữ',
 
 	'GLOBAL_IMAGES'			=> 'Hình ảnh dùng chung',
@@ -151,14 +142,14 @@ $lang = array_merge($lang, array(
 	'IMAGESET_UPDATED'			=> 'Gói hình giao diện đã được cập nhật thành công.',
 	'ITALIC'					=> 'Nghiêng',
 
-	'IMG_CAT_BUTTONS'		=> 'Các nút bấm tùy thuộc vào gói ngôn ngữ',
+	'IMG_CAT_BUTTONS'		=> 'Các nút bấm tùy thuộc vào ngôn ngữ',
 	'IMG_CAT_CUSTOM'		=> 'Hình tùy chọn',
 	'IMG_CAT_FOLDERS'		=> 'Biểu tượng chủ đề',
 	'IMG_CAT_FORUMS'		=> 'Biểu tượng chuyên mục',
 	'IMG_CAT_ICONS'			=> 'Biểu tượng tổng quát',
 	'IMG_CAT_LOGOS'			=> 'Logo',
 	'IMG_CAT_POLLS'			=> 'Hình bình chọn',
-	'IMG_CAT_UI'			=> 'Các thành phần tổng quát trong giao diện thành viên',
+	'IMG_CAT_UI'			=> 'Các thành phần tổng quát trong giao diện người dùng',
 	'IMG_CAT_USER'			=> 'Hình thêm vào',
 
 	'IMG_SITE_LOGO'			=> 'Logo chính',
@@ -251,11 +242,11 @@ $lang = array_merge($lang, array(
 	'IMG_ICON_TOPIC_REPORTED'		=> 'Bài viết đã được báo cáo',
 	'IMG_ICON_TOPIC_UNAPPROVED'		=> 'Bài viết đã bị từ chối',
 
-	'IMG_ICON_USER_ONLINE'		=> 'Thành viên trực tuyến',
-	'IMG_ICON_USER_OFFLINE'		=> 'Thành viên ngoại tuyến',
+	'IMG_ICON_USER_ONLINE'		=> 'Người dùng trực tuyến',
+	'IMG_ICON_USER_OFFLINE'		=> 'Người dùng ngoại tuyến',
 	'IMG_ICON_USER_PROFILE'		=> 'Hiển thị thông tin cá nhân',
 	'IMG_ICON_USER_SEARCH'		=> 'Tìm kiếm bài viết của thành viên',
-	'IMG_ICON_USER_WARN'		=> 'Cảnh cáo thành viên',
+	'IMG_ICON_USER_WARN'		=> 'Cảnh cáo người dùng',
 
 	'IMG_BUTTON_PM_FORWARD'		=> 'Tin nhắn chuyển tiếp',
 	'IMG_BUTTON_PM_NEW'			=> 'Tin nhắn mới',
@@ -264,20 +255,20 @@ $lang = array_merge($lang, array(
 	'IMG_BUTTON_TOPIC_NEW'		=> 'Chủ đề mới',
 	'IMG_BUTTON_TOPIC_REPLY'	=> 'Trả lời chủ đề',
 
-	'IMG_USER_ICON1'		=> 'Hình xác định thành viên 1',
-	'IMG_USER_ICON2'		=> 'Hình xác định thành viên 2',
-	'IMG_USER_ICON3'		=> 'Hình xác định thành viên 3',
-	'IMG_USER_ICON4'		=> 'Hình xác định thành viên 4',
-	'IMG_USER_ICON5'		=> 'Hình xác định thành viên 5',
-	'IMG_USER_ICON6'		=> 'Hình xác định thành viên 6',
-	'IMG_USER_ICON7'		=> 'Hình xác định thành viên 7',
-	'IMG_USER_ICON8'		=> 'Hình xác định thành viên 8',
-	'IMG_USER_ICON9'		=> 'Hình xác định thành viên 9',
-	'IMG_USER_ICON10'		=> 'Hình xác định thành viên 10',
+	'IMG_USER_ICON1'		=> 'Hình xác định người dùng 1',
+	'IMG_USER_ICON2'		=> 'Hình xác định người dùng 2',
+	'IMG_USER_ICON3'		=> 'Hình xác định người dùng 3',
+	'IMG_USER_ICON4'		=> 'Hình xác định người dùng 4',
+	'IMG_USER_ICON5'		=> 'Hình xác định người dùng 5',
+	'IMG_USER_ICON6'		=> 'Hình xác định người dùng 6',
+	'IMG_USER_ICON7'		=> 'Hình xác định người dùng 7',
+	'IMG_USER_ICON8'		=> 'Hình xác định người dùng 8',
+	'IMG_USER_ICON9'		=> 'Hình xác định người dùng 9',
+	'IMG_USER_ICON10'		=> 'Hình xác định người dùng 10',
 
 	'INACTIVE_STYLES'			=> 'Giao diện không sử dụng',
 	'INCLUDE_DIMENSIONS'		=> 'Đính kèm kích thước',
-	'INCLUDE_IMAGESET'			=> 'Đính kèm gói ngôn ngữ hình ảnh',
+	'INCLUDE_IMAGESET'			=> 'Đính kèm gói hình ảnh theo ngôn ngữ',
 	'INCLUDE_TEMPLATE'			=> 'Đính kèm khuôn mẫu',
 	'INCLUDE_THEME'				=> 'Đính kèm kiểu dáng',
 	'INHERITING_FROM'			=> 'Kế thừa từ',
@@ -299,7 +290,7 @@ $lang = array_merge($lang, array(
 	'KEEP_THEME'	=> 'Giữ lại kiểu dáng “%s”',
 
 	'LINE_SPACING'				=> 'Khoảng cách dòng',
-	'LOCALISED_IMAGES'			=> 'Hình ảnh tùy thuộc vào gói ngôn ngữ',
+	'LOCALISED_IMAGES'			=> 'Hình ảnh thay đổi theo ngôn ngữ',
 	'LOCATION_DISABLED_EXPLAIN'	=> 'Thiết lập này được kế thừa và không thể thay đổi.',
 
 	'NO_CLASS'					=> 'Không thể tìm thấy lớp CSS trong kiểu dáng.',
@@ -329,7 +320,7 @@ $lang = array_merge($lang, array(
 	'REPLACE_IMAGESET'			=> 'Thay thế gói hình giao diện bằng',
 	'REPLACE_IMAGESET_EXPLAIN'	=> 'Gói hình giao diện này sẽ thay thế cho gói hình giao diện mà bạn đang xóa trong bất kì giao diện nào sử dụng đến.',
 	'REPLACE_STYLE'				=> 'Thay thế giao diện bằng',
-	'REPLACE_STYLE_EXPLAIN'		=> 'Giao diện này sẽ thay thế cho giao diện mà bạn đang xóa được thành viên sử dụng.',
+	'REPLACE_STYLE_EXPLAIN'		=> 'Giao diện này sẽ thay thế cho giao diện mà bạn đang xóa được người dùng sử dụng.',
 	'REPLACE_TEMPLATE'			=> 'Thay thế khuôn mẫu bằng',
 	'REPLACE_TEMPLATE_EXPLAIN'	=> 'Khuôn mẫu này sẽ thay thế cho khuôn mẫu mà bạn đang xóa trong bất kì giao diện nào sử dụng đến.',
 	'REPLACE_THEME'				=> 'Thay thế kiểu dáng bằng',
@@ -364,7 +355,7 @@ $lang = array_merge($lang, array(
 	'STYLE_ERR_NAME_EXIST'		=> 'Tên giao diện này đã được sử dụng.',
 	'STYLE_ERR_NAME_LONG'		=> 'Tên giao diện không được phép vượt quá <strong>30</strong> ký tự.',
 	'STYLE_ERR_NO_IDS'			=> 'Bạn phải chọn một khuôn mẫu, kiểu dáng và gói hình giao diện cho giao diện này.',
-	'STYLE_ERR_NOT_STYLE'		=> 'Giao diện bạn vừa nhập hay tải lên không hợp lệ.',
+	'STYLE_ERR_NOT_STYLE'		=> 'Giao diện bạn nhập hay tải lên không hợp lệ.',
 	'STYLE_ERR_STYLE_NAME'		=> 'Bạn phải nhập tên cho giao diện này.',
 	'STYLE_EXPORT'				=> 'Xuất giao diện',
 	'STYLE_EXPORT_EXPLAIN'		=> 'Với công cụ này, bạn có thể xuất một giao diện để lưu trữ. Giao diện xuất không nhất thiết phải đính kèm toàn bộ thành phần giao diện đi kèm nhưng phải chứa ít nhất một thành phần. Ví dụ, nếu bạn đã tạo một kiểu dáng mới và gói hình giao diện cho một khuôn mẫu được sử dụng nhiều bởi các kiểu dáng khác, bạn chỉ cần đơn giản là xuất kiểu dáng và gói hình giao diện đó mà thôi và bỏ qua khuôn mẫu. Bạn có thể chọn tải về tập tin này trực tiếp hoặc giữ lại trong thư mục lưu trữ của hệ thống để tải về sau.',
@@ -393,7 +384,7 @@ $lang = array_merge($lang, array(
 	'TEMPLATE_ERR_NAME_CHARS'				=> 'Tên khuôn mẫu chỉ được phép sử dụng chữ số, chữ cái, các ký tự -, +, _ và khoảng trắng.',
 	'TEMPLATE_ERR_NAME_EXIST'				=> 'Tên khuôn mẫu này đã được sử dụng.',
 	'TEMPLATE_ERR_NAME_LONG'				=> 'Tên khuôn mẫu không được phép vượt quá <strong>30</strong> ký tự.',
-	'TEMPLATE_ERR_NOT_TEMPLATE'				=> 'Khuôn mẫu bạn vừa nhập hay tải lên không hợp lệ.',
+	'TEMPLATE_ERR_NOT_TEMPLATE'				=> 'Khuôn mẫu bạn nhập hay tải lên không hợp lệ.',
 	'TEMPLATE_ERR_REQUIRED_OR_INCOMPLETE'	=> 'Khuôn mẫu mới yêu cầu khuôn mẫu %s phải được cài đặt và không thể kế thừa từ chính nó.',
 	'TEMPLATE_ERR_STYLE_NAME'				=> 'Bạn phải nhập tên cho khuôn mẫu này.',
 	'TEMPLATE_EXPORT'						=> 'Xuất khuôn mẫu',
@@ -422,7 +413,7 @@ $lang = array_merge($lang, array(
 	'THEME_ERR_NAME_CHARS'		=> 'Tên kiểu dáng chỉ được phép sử dụng chữ số, chữ cái, các ký tự -, +, _ và khoảng trắng.',
 	'THEME_ERR_NAME_EXIST'		=> 'Tên kiểu dáng này đã được sử dụng.',
 	'THEME_ERR_NAME_LONG'		=> 'Tên kiểu dáng không được phép vượt quá <strong>30</strong> ký tự.',
-	'THEME_ERR_NOT_THEME'		=> 'Kiểu dáng bạn vừa nhập hay tải lên không hợp lệ.',
+	'THEME_ERR_NOT_THEME'		=> 'Kiểu dáng bạn nhập hay tải lên không hợp lệ.',
 	'THEME_ERR_REFRESH_FS'		=> 'Kiểu dáng này đã được lưu trữ trong hệ thống tập tin giao diện vì thế không cần nạp lại.',
 	'THEME_ERR_STYLE_NAME'		=> 'Bạn phải nhập tên cho kiểu dáng này.',
 	'THEME_FILE'				=> 'Tập tin kiểu dáng',

@@ -4,18 +4,9 @@
 * help_faq [Vietnamese]
 *
 * @package language
-* @version $Id: help_faq.php 64 2013-06-26 18:56:00Z nedka $
-* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.67
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -42,22 +33,22 @@ if (!defined('IN_PHPBB'))
 $help = array(
 	array(
 		0 => '--',
-		1 => 'Những câu hỏi về đăng ký thành viên và đăng nhập'
+		1 => 'Những câu hỏi về đăng ký tài khoản và đăng nhập'
 	),
 	array(
 		0 => 'Tại sao tôi không thể đăng nhập được?',
-		1 => 'Có một vài nguyên nhân dẫn đến việc này. Trước tiên, hãy chắc chắn rằng tên thành viên và mật khẩu của bạn đã nhập vào chính xác. Nếu bạn đã nhập chính xác mà vẫn không thể đăng nhập được, hãy liên hệ với người quản trị để chắc chắn rằng bạn không bị cấm tham gia. Cũng có thể, người quản lí website đã cấu hình sai hệ thống ở một chỗ nào đó và họ cần bạn thông báo để biết mà tiến hành khắc phục.'
+		1 => 'Có một vài nguyên nhân dẫn đến việc này. Trước tiên, hãy chắc chắn rằng tên tài khoản và mật khẩu của bạn đã nhập vào chính xác. Nếu bạn đã nhập chính xác mà vẫn không thể đăng nhập được, hãy liên hệ với người quản trị để chắc chắn rằng bạn không bị cấm tham gia. Cũng có thể, người quản lí website đã cấu hình sai hệ thống ở một chỗ nào đó và họ cần bạn thông báo để biết mà tiến hành khắc phục.'
 	),
 	array(
-		0 => 'Tại sao tôi cần phải đăng ký làm thành viên?',
-		1 => 'Bạn có thể không cần phải làm như thế nhưng đôi khi bạn cần phải đăng ký mới có thể gửi bài trong diễn đàn, tùy theo yêu cầu của người quản trị. Tuy nhiên, việc đăng ký làm thành viên sẽ giúp bạn sử dụng được hết tất cả các chức năng mà hệ thống chỉ dành cho các thành viên đã đăng ký và không dành cho khách sử dụng, ví dụ như hình đại diện, gửi tin nhắn, gửi email đến các thành viên khác, tham gia vào các nhóm… Bạn chỉ mất vài phút để hoàn tất việc đăng ký, vì vậy hãy đăng ký làm thành viên của chúng tôi.'
+		0 => 'Tại sao tôi cần phải đăng ký tài khoản?',
+		1 => 'Bạn có thể không cần phải làm như thế nhưng đôi khi bạn cần phải đăng ký mới có thể gửi bài trong diễn đàn, tùy theo yêu cầu của người quản trị. Tuy nhiên, việc đăng ký làm thành viên sẽ giúp bạn sử dụng được hết tất cả các chức năng mà hệ thống chỉ dành cho những ai đã đăng ký và không dành cho khách sử dụng, ví dụ như hình đại diện, gửi tin nhắn, gửi email đến các người dùng khác, tham gia vào các nhóm… Bạn chỉ mất vài phút để hoàn tất việc đăng ký, vì vậy hãy đăng ký làm thành viên của chúng tôi.'
 	),
 	array(
 		0 => 'Tại sao tôi thường xuyên bị thoát ra khỏi hệ thống?',
 		1 => 'Nếu bạn không đánh dấu chọn vào lựa chọn <em>Đăng nhập tự động mỗi lần ghé thăm</em> khi bạn đăng nhập, hệ thống sẽ chỉ cho phép bạn đăng nhập vào trong thời điểm hiện tại. Điều này sẽ giúp ngăn cản việc lạm dụng tài khoản của bạn bởi một ai đó. Để vẫn luôn trong trạng thái đã đăng nhập, hãy đánh dấu vào lựa chọn trên một lần trong khi đăng nhập. Điều này không được khuyến cáo sử dụng nếu bạn đang truy nhập vào hệ thống từ một máy tính dùng chung, ví dụ như trong thư viện, tiệm Internet, phòng vi tính trong trường học. Nếu bạn không nhìn thấy lựa chọn trên thì có nghĩa là người quản trị đã vô hiệu chức năng này.'
 	),
 	array(
-		0 => 'Làm sao để tên thành viên của tôi không xuất hiện trong danh sách các thành viên trực tuyến?',
+		0 => 'Làm sao để tên tài khoản của tôi không xuất hiện trong danh sách các thành viên trực tuyến?',
 		1 => 'Trong bảng thiết lập cá nhân của mình, tại phần “Thiết lập hệ thống”, bạn hãy tìm đến lựa chọn <em>Luôn ẩn trạng thái trực tuyến của tôi</em>. Nếu bạn chọn <samp>Có</samp>, bạn sẽ chỉ xuất hiện trực tuyến đối với các quản trị viên, các điều hành viên hoặc với chính mình. Bạn sẽ được tính như là một thành viên ẩn.'
 	),
 	array(
@@ -66,19 +57,19 @@ $help = array(
 	),
 	array(
 		0 => 'Tôi đã đăng ký nhưng không thể đăng nhập được!',
-		1 => 'Trước tiên, hãy kiểm tra tên thành viên và mật khẩu của bạn. Nếu tất cả đều chính xác thì có thể bạn rơi vào một trong hai trường hợp sau: Nếu yêu cầu COPPA được bật trong hệ thống và bạn đã xác định mình dưới 13 tuổi khi đăng ký thành viên thì bạn cần phải làm theo những hướng dẫn đã được gửi sau đó. Nếu bạn không rơi vào trường hợp trên thì có thể tài khoản của bạn chưa được kích hoạt. Một vài diễn đàn bắt buộc tài khoản thành viên phải được kích hoạt sau khi đăng ký thành công, có thể bạn được yêu cầu tự làm việc này hoặc chờ người quản trị kích hoạt trước khi bạn có thể đăng nhập vào hệ thống. Khi bạn đăng ký thành công, bạn sẽ được thông báo có phải kích hoạt tài khoản của mình hay không. Nếu bạn nhận được một email yêu cầu kích hoạt thì hãy làm theo hướng dẫn trong đó. Nếu bạn không nhận được email nào, có thể bạn đã cung cấp sai địa chỉ email của mình khi đăng ký hoặc địa chỉ email này bị chặn bởi các công cụ quét thư rác. Lý do của việc bắt buộc phải kích hoạt tài khoản này là để hạn chế sự lạm dụng của một vài người muốn quấy phá hệ thống. Nếu bạn chắc chắn mình đã nhập đúng địa chỉ email, hãy cố gắng liên hệ với người quản trị.'
+		1 => 'Trước tiên, hãy kiểm tra tên tài khoản và mật khẩu của bạn. Nếu tất cả đều chính xác thì có thể bạn rơi vào một trong hai trường hợp sau: Nếu yêu cầu COPPA được bật trong hệ thống và bạn đã xác định mình dưới 13 tuổi khi đăng ký thành viên thì bạn cần phải làm theo những hướng dẫn đã được gửi sau đó. Nếu bạn không rơi vào trường hợp trên thì có thể tài khoản của bạn chưa được kích hoạt. Một vài diễn đàn bắt buộc tài khoản phải được kích hoạt sau khi đăng ký thành công, có thể bạn được yêu cầu tự làm việc này hoặc chờ người quản trị kích hoạt trước khi bạn có thể đăng nhập vào hệ thống. Khi bạn đăng ký thành công, bạn sẽ được thông báo có phải kích hoạt tài khoản của mình hay không. Nếu bạn nhận được một email yêu cầu kích hoạt thì hãy làm theo hướng dẫn trong đó. Nếu bạn không nhận được email nào, có thể bạn đã cung cấp sai địa chỉ email của mình khi đăng ký hoặc địa chỉ email này bị chặn bởi các công cụ quét thư rác. Lý do của việc bắt buộc phải kích hoạt tài khoản này là để hạn chế sự lạm dụng của một vài người muốn quấy phá hệ thống. Nếu bạn chắc chắn mình đã nhập đúng địa chỉ email, hãy cố gắng liên hệ với người quản trị.'
 	),
 	array(
 		0 => 'Tôi đã từng đăng ký trước đây nhưng bây giờ không thể đăng nhập được nữa!',
-		1 => 'Có thể người quản trị đã ngưng kích hoạt hoặc xóa tài khoản của bạn ra khỏi hệ thống vì một vài lý do nào đó. Thông thường, một vài diễn đàn sẽ xóa định kỳ các tài khoản thành viên không hoạt động trong một thời gian dài để giảm bớt dung lượng của cơ sở dữ liệu trong hệ thống. Nếu đúng như thế, bạn hãy cố gắng đăng ký trở lại và tham gia thảo luận nhiệt tình hơn với mọi người.'
+		1 => 'Có thể người quản trị đã ngưng kích hoạt hoặc xóa tài khoản của bạn ra khỏi hệ thống vì một vài lý do nào đó. Thông thường, một vài diễn đàn sẽ xóa định kỳ các tài khoản không hoạt động trong một thời gian dài để giảm bớt dung lượng của cơ sở dữ liệu trong hệ thống. Nếu đúng như thế, bạn hãy cố gắng đăng ký trở lại và tham gia thảo luận nhiệt tình hơn với mọi người.'
 	),
 	array(
 		0 => 'Điều khoản COPPA là gì?',
 		1 => 'COPPA là tên viết tắt từ <strong>Child Online Privacy and Protection Act</strong>. Đây là một luật lệ ban hành vào năm 1998 trong hệ thống pháp luật của Mỹ. Luật lệ này yêu cầu các website có những hoạt động thu thập thông tin từ trẻ vị thành niên dưới 13 tuổi phải được sự đồng ý của cha mẹ hay người bảo hộ của chúng hoặc sử dụng một vài biện pháp khác từ hệ thống kiến thức bảo hộ pháp luật trong việc cho phép thu thập những thông tin cá nhân có thể nhận biết từ một trẻ vị thành niên dưới 13 tuổi. Nếu bạn chắc chắn rằng mình hay một vài người khác thuộc diện qui định trong điều khoản này hoặc website mà bạn đang đăng ký thành viên có áp dụng điều khoản này, bạn hãy liên hệ với các luật sư tư vấn pháp lý để tìm kiếm sự giúp đỡ. Lưu ý rằng tổ chức phpBB không thể đưa ra cho bạn bất kì một lời khuyên nào về pháp luật và cũng đừng liên hệ với chúng tôi về những vấn đề này ngoại trừ một vài nguyên tắc chung bên dưới.',
 	),
 	array(
-		0 => 'Tại sao tôi không thể đăng ký thành viên?',
-		1 => 'Có thể người quản lí website đã cấm địa chỉ IP của bạn hoặc không cho phép sử dụng tên thành viên mà bạn đang định sử dụng để đăng ký mới. Cũng có thể người quản lí website đã cho tạm ngưng đăng ký thành viên mới bằng cách vô hiệu chức năng này trong hệ thống vì một lý do nào đó. Bạn hãy liên hệ với người quản trị để được giúp đỡ.',
+		0 => 'Tại sao tôi không thể đăng ký tài khoản?',
+		1 => 'Có thể người quản lí website đã cấm địa chỉ IP của bạn hoặc không cho phép sử dụng tên tài khoản mà bạn đang định sử dụng để đăng ký mới. Cũng có thể người quản lí website đã cho tạm ngưng đăng ký mới bằng cách vô hiệu chức năng này trong hệ thống vì một lý do nào đó. Bạn hãy liên hệ với người quản trị để được giúp đỡ.',
 	),
 	array(
 		0 => 'Liên kết “Xóa hết cookie” có tác dụng gì?',
@@ -86,15 +77,15 @@ $help = array(
 	),
 	array(
 		0 => '--',
-		1 => 'Những câu hỏi về thiết lập cá nhân của thành viên'
+		1 => 'Những câu hỏi về thiết lập cá nhân'
 	),
 	array(
 		0 => 'Làm sao để tôi thay đổi thiết lập cá nhân của mình?',
-		1 => 'Nếu bạn đã đăng ký làm thành viên, tất cả thiết lập cá nhân của bạn đều được lưu giữ trong cơ sở dữ liệu của hệ thống. Để thay đổi chúng, bạn hãy truy cập vào bảng thiết lập cá nhân của mình. Liên kết này thường hiện ra ở đầu mỗi trang. Bảng điều khiển này cũng sẽ giúp bạn thay đổi tất cả thiết lập và thông tin cá nhân của mình.'
+		1 => 'Nếu bạn đã đăng ký tài khoản, tất cả thiết lập cá nhân của bạn đều được lưu giữ trong cơ sở dữ liệu của hệ thống. Để thay đổi chúng, bạn hãy truy cập vào bảng thiết lập cá nhân của mình. Liên kết này thường hiện ra ở đầu mỗi trang. Bảng điều khiển này cũng sẽ giúp bạn thay đổi tất cả thiết lập và thông tin cá nhân của mình.'
 	),
 	array(
 		0 => 'Thời gian trên hệ thống chạy không chính xác!',
-		1 => 'Nếu được thiết lập, thời gian có thể được hiển thị với một múi giờ khác múi giờ tại nơi bạn đang sống. Nếu rơi vào trường hợp này, bạn nên thay đổi lại múi giờ cho phù hợp trong bảng thiết lập cá nhân của mình theo từng khu vực xác định, ví dụ như <em>London, Paris, New York, Sydney…</em> Bạn cũng cần lưu ý rằng thiết lập thay đổi lại múi giờ cũng như hầu hết những thiết lập cá nhân khác, chỉ dành cho những thành viên đã đăng ký. Vì thế, nếu bạn vẫn chưa đăng ký làm thành viên của chúng tôi thì đây là thời điểm thích hợp cho bạn thực hiện điều này!'
+		1 => 'Nếu được thiết lập, thời gian có thể được hiển thị với một múi giờ khác múi giờ tại nơi bạn đang sống. Nếu rơi vào trường hợp này, bạn nên thay đổi lại múi giờ cho phù hợp trong bảng thiết lập cá nhân của mình theo từng khu vực xác định, ví dụ như <em>London, Paris, New York, Sydney…</em> Bạn cũng cần lưu ý rằng thiết lập thay đổi lại múi giờ cũng như hầu hết những thiết lập cá nhân khác, chỉ dành cho những ai đã đăng ký. Vì thế, nếu bạn vẫn chưa đăng ký làm thành viên của chúng tôi thì đây là thời điểm thích hợp cho bạn thực hiện điều này!'
 	),
 	array(
 		0 => 'Tôi đã thay đổi múi giờ nhưng thời gian vẫn chạy sai!',
@@ -102,19 +93,19 @@ $help = array(
 	),
 	array(
 		0 => 'Ngôn ngữ của tôi không có trong danh sách hỗ trợ!',
-		1 => 'Có thể quản trị viên chưa cài đặt gói ngôn ngữ mà bạn dùng vào hệ thống hay đơn giản là chưa từng có ai phiên dịch hệ thống này sang ngôn ngữ của bạn. Hãy cố gắng yêu cầu người quản trị cài đặt gói ngôn ngữ của bạn vào hệ thống nếu nó có sẵn. Nếu chưa có, bạn có thể đề nghị cùng tham gia phiên dịch hệ thống sang ngôn ngữ của bạn. Bạn có thể tìm hiểu nhiều thông tin về các gói ngôn ngữ cho hệ thống này tại website của tổ chức phpBB có ở cuối trang.'
+		1 => 'Có thể quản trị viên chưa cài đặt ngôn ngữ mà bạn dùng vào hệ thống hay đơn giản là chưa từng có ai phiên dịch hệ thống này sang ngôn ngữ của bạn. Hãy cố gắng yêu cầu người quản trị cài đặt ngôn ngữ của bạn vào hệ thống nếu nó có sẵn. Nếu chưa có, bạn có thể đề nghị cùng tham gia phiên dịch hệ thống sang ngôn ngữ của bạn. Bạn có thể tìm hiểu nhiều thông tin về các ngôn ngữ cho hệ thống này tại website của tổ chức phpBB có ở cuối trang.'
 	),
 	array(
-		0 => 'Làm sao để hiển thị hình ảnh đi kèm tên thành viên của tôi?',
-		1 => 'Có hai hình ảnh có thể được hiển thị kèm theo tên thành viên trong phần xem bài viết. Một trong hai hình có thể là hình ảnh thể hiện xếp hạng hiện tại của bạn. Thông thường, chúng là những hình ngôi sao hay hình khối hiển thị tùy thuộc vào số lượng bài viết mà bạn đã gửi hay trạng thái, vị trí, chức vụ… của bạn trong hệ thống. Hình còn lại, thường lớn hơn, được gọi là hình đại diện. Đây là những hình ảnh thể hiện cá tính và phong cách riêng của mỗi thành viên. Nếu người quản trị cho phép sử dụng hình đại diện, bạn có thể tự do thay đổi chúng và lựa chọn cách thức sử dụng phù hợp. Nếu bạn không thể sử dụng hình đại diện, bạn hãy liên hệ với người quản trị và hỏi họ lý do tại sao.'
+		0 => 'Làm sao để hiển thị hình ảnh đi kèm tên tài khoản của tôi?',
+		1 => 'Có hai hình ảnh có thể được hiển thị kèm theo tên tài khoản trong phần xem bài viết. Một trong hai hình có thể là hình ảnh thể hiện danh hiệu hiện tại của bạn. Thông thường, chúng là những hình ngôi sao hay hình khối hiển thị tùy thuộc vào số lượng bài viết mà bạn đã gửi hay trạng thái, vị trí, chức vụ… của bạn trong hệ thống. Hình còn lại, thường lớn hơn, được gọi là hình đại diện. Đây là những hình ảnh thể hiện cá tính và phong cách riêng của mỗi thành viên. Nếu người quản trị cho phép sử dụng hình đại diện, bạn có thể tự do thay đổi chúng và lựa chọn cách thức sử dụng phù hợp. Nếu bạn không thể sử dụng hình đại diện, bạn hãy liên hệ với người quản trị và hỏi họ lý do tại sao.'
 	),
 	array(
-		0 => 'Xếp hạng thành viên là gì và làm sao tôi có thể thay đổi xếp hạng của mình?',
-		1 => 'Xếp hạng thành viên, xuất hiện bên dưới tên thành viên của bạn, tượng trưng cho số lượng bài viết mà bạn đã gửi hoặc dùng để xác định một vài thành viên đặc biệt, ví dụ như điều hành viên và quản trị viên. Thông thường, bạn không thể thay đổi trực tiếp xếp hạng của mình ở bất cứ diễn đàn nào mà quản trị viên đã thiết lập cho bạn. Xin bạn đừng lạm dụng việc gửi nhiều bài viết vô ích và nhảm nhí để mong tăng xếp hạng thành viên của mình. Hầu hết mọi diễn đàn sẽ không khoan dung cho việc làm này và đơn giản là các quản trị viên hay điều hành viên chỉ cần hạ thấp số lượng bài viết của bạn xuống.'
+		0 => 'Danh hiệu là gì và làm sao tôi có thể thay đổi danh hiệu của mình?',
+		1 => 'Danh hiệu xuất hiện bên dưới tên tài khoản của bạn, tượng trưng cho số lượng bài viết mà bạn đã gửi hoặc dùng để xác định một vài tài khoản người dùng đặc biệt, ví dụ như điều hành viên và quản trị viên. Thông thường, bạn không thể thay đổi trực tiếp danh hiệu của mình ở bất cứ diễn đàn nào mà quản trị viên đã thiết lập cho bạn. Xin bạn đừng lạm dụng việc gửi nhiều bài viết vô ích và nhảm nhí để mong tăng danh hiệu thành viên của mình. Hầu hết mọi diễn đàn sẽ không khoan dung cho việc làm này và đơn giản là các quản trị viên hay điều hành viên chỉ cần hạ thấp số lượng bài viết của bạn xuống.'
 	),
 	array(
 		0 => 'Khi tôi bấm vào liên kết email của một thành viên, tôi được yêu cầu phải đăng nhập!',
-		1 => 'Chỉ có những thành viên đã đăng ký mới được phép gửi email đến các thành viên khác trong hệ thống từ công cụ gửi email và chỉ khi người quản trị đã kích hoạt công cụ này. Điều này nhằm để ngăn cản những kẻ quấy phá ẩn danh dùng công cụ gửi email của hệ thống để gây rối.'
+		1 => 'Chỉ có những ai đã đăng ký mới được phép gửi email đến các thành viên khác trong hệ thống từ công cụ gửi email và chỉ khi người quản trị đã kích hoạt công cụ này. Điều này nhằm để ngăn cản những kẻ quấy phá ẩn danh dùng công cụ gửi email của hệ thống để gây rối.'
 	),
 	array(
 		0 => '--',
@@ -126,7 +117,7 @@ $help = array(
 	),
 	array(
 		0 => 'Làm sao để tôi sửa hay xóa một bài viết?',
-		1 => 'Nếu bạn không phải là quản trị viên hay điều hành viên, bạn chỉ có thể sửa hay xóa những bài viết của chính mình mà thôi. Bạn có thể sửa một bài viết bằng cách bấm vào nút sửa bài trong bài viết tương ứng, thỉnh thoảng bạn có thể bị hạn chế thời gian sửa bài sau khi gửi bài viết. Nếu có một ai đó đã trả lời bài viết này, khi quay lại xem chủ đề, bạn sẽ thấy một dòng chữ bên dưới bài viết hiển thị tổng số lần mà bạn đã sửa cùng với ngày giờ sửa. Dòng chữ này chỉ xuất hiện nếu có một ai đó trả lời bài viết và nó sẽ không xuất hiện nếu như các quản trị viên hay điều hành viên sửa bài viết này. Có thể họ sẽ để lại một ghi chú nêu rõ lý do vì sao sửa bài viết của bạn theo quan điểm của họ. Bạn cũng cần lưu ý rằng những thành viên bình thường sẽ không được phép xóa một bài viết đã được trả lời dù rằng đó là bài viết của họ.'
+		1 => 'Nếu bạn không phải là quản trị viên hay điều hành viên, bạn chỉ có thể sửa hay xóa những bài viết của chính mình mà thôi. Bạn có thể sửa một bài viết bằng cách bấm vào nút sửa bài trong bài viết tương ứng, thỉnh thoảng bạn có thể bị hạn chế thời gian sửa bài sau khi gửi bài viết. Nếu có một ai đó đã trả lời bài viết này, khi quay lại xem chủ đề, bạn sẽ thấy một dòng chữ bên dưới bài viết hiển thị tổng số lần mà bạn đã sửa cùng với ngày giờ sửa. Dòng chữ này chỉ xuất hiện nếu có một ai đó trả lời bài viết và nó sẽ không xuất hiện nếu như các quản trị viên hay điều hành viên sửa bài viết này. Có thể họ sẽ để lại một ghi chú nêu rõ lý do vì sao sửa bài viết của bạn theo quan điểm của họ. Bạn cũng cần lưu ý rằng những người dùng bình thường sẽ không được phép xóa một bài viết đã được trả lời dù rằng đó là bài viết của họ.'
 	),
 	array(
 		0 => 'Làm sao để tôi đính kèm chữ ký cá nhân sau mỗi bài viết của mình?',
@@ -134,7 +125,7 @@ $help = array(
 	),
 	array(
 		0 => 'Làm sao để tôi tạo một bình chọn?',
-		1 => 'Khi bạn đang tạo một chủ đề mới hoặc đang sửa bài viết đầu tiên của một chủ đề, nếu bạn được cấp phép tạo bình chọn, bạn sẽ nhìn thấy phần “Tạo bình chọn” bên dưới phần soạn thảo nội dung bài viết. Nếu bạn không nhìn thấy phần này thì có nghĩa là bạn không được cấp phép để tạo bình chọn. Bạn phải nhập tiêu đề cho bình chọn trong phần “Câu hỏi bình chọn” và ít nhất là hai đối tượng bình chọn với mỗi đối tượng xác định trên một dòng trong khung văn bản. Bạn cũng có thể thiếp lập tổng số đối tượng bình chọn mà thành viên có thể lựa chọn trong phần “Lựa chọn tối đa của mỗi thành viên”, giới hạn thời gian tham gia bình chọn (nhập số <strong>0</strong> cho bình chọn không giới hạn thời gian) và cho phép các thành viên có thể thay đổi lại lựa chọn của họ khi đã tham gia vào bình chọn rồi.'
+		1 => 'Khi bạn đang tạo một chủ đề mới hoặc đang sửa bài viết đầu tiên của một chủ đề, nếu bạn được cấp phép tạo bình chọn, bạn sẽ nhìn thấy phần “Tạo bình chọn” bên dưới phần soạn thảo nội dung bài viết. Nếu bạn không nhìn thấy phần này thì có nghĩa là bạn không được cấp phép để tạo bình chọn. Bạn phải nhập tiêu đề cho bình chọn trong phần “Câu hỏi bình chọn” và ít nhất là hai đối tượng bình chọn với mỗi đối tượng xác định trên một dòng trong khung văn bản. Bạn cũng có thể thiếp lập tổng số đối tượng bình chọn mà thành viên có thể lựa chọn trong phần “Lựa chọn tối đa của mỗi người dùng”, giới hạn thời gian tham gia bình chọn (nhập số <strong>0</strong> cho bình chọn không giới hạn thời gian) và cho phép người bình chọn có thể thay đổi lại lựa chọn khác khi đã tham gia vào bình chọn rồi.'
 	),
 	array(
 		0 => 'Tại sao tôi không thể thêm vào nhiều hơn nữa số lượng đối tượng bình chọn?',
@@ -247,7 +238,7 @@ $help = array(
 	),
 	array(
 		0 => '“Nhóm mặc định” là gì?',
-		1 => 'Nếu bạn là thành viên của nhiều nhóm khác nhau, nhóm mặc định của bạn sẽ được sử dụng để quyết định màu nhóm và xếp hạng của nhóm nào được hiển thị như thông tin cá nhân mặc định của bạn. Người quản trị có thể chỉ định thiết lập cấp phép cho bạn được quyền thay đổi nhóm mặc định của mình từ bảng thiết lập cá nhân của bạn.'
+		1 => 'Nếu bạn là thành viên của nhiều nhóm khác nhau, nhóm mặc định của bạn sẽ được sử dụng để quyết định màu nhóm và danh hiệu của nhóm nào được hiển thị như thông tin cá nhân mặc định của bạn. Người quản trị có thể chỉ định thiết lập cấp phép cho bạn được quyền thay đổi nhóm mặc định của mình từ bảng thiết lập cá nhân của bạn.'
 	),
 	array(
 		0 => 'Liên kết “Ban điều hành” là gì?',
@@ -278,8 +269,8 @@ $help = array(
 		1 => 'Bạn có thể sử dụng những danh sách này để tổ chức quản lí các thành viên khác trong hệ thống. Những thành viên được thêm vào trong danh sách bạn thân sẽ được liệt kê trong bảng thiết lập cá nhân của bạn để bạn bạn có thể biết nhanh trạng thái trực tuyến của họ và gửi tin nhắn cho họ. Nếu giao diện hỗ trợ, các bài viết từ những thành viên này đều được tô sáng nổi bật. Nếu bạn thêm một thành viên vào danh sách kẻ thù của mình thì bất kì bài viết nào của họ theo mặc định trong hệ thống sẽ ẩn đi đối với bạn.'
 	),
 	array(
-		0 => 'Làm thế nào tôi có thể thêm/gỡ bỏ các thành viên trong danh sách bạn thân hay kẻ thù của mình?',
-		1 => 'Bạn có thể thêm các thành viên vào danh sách của mình theo hai cách. Trong mỗi trang thông tin cá nhân của thành viên đó, có một liên kết để bạn thêm họ vào danh sách bạn thân hay kẻ thù của mình. Ngoài ra, trong bảng thiết lập cá nhân của mình, bạn có thể thêm trực tiếp các thành viên bằng cách nhập vào tên thành viên của họ. Bạn cũng có thể gỡ bỏ các thành viên ra khỏi danh sách của mình cũng từ trang ở trên.'
+		0 => 'Làm thế nào tôi có thể thêm/gỡ bỏ ai đó trong danh sách bạn thân hay kẻ thù của mình?',
+		1 => 'Bạn có thể thêm người khác vào danh sách của mình theo hai cách. Trong mỗi trang thông tin cá nhân của họ, có một liên kết để bạn thêm vào danh sách bạn thân hay kẻ thù của mình. Ngoài ra, trong bảng thiết lập cá nhân của mình, bạn có thể thêm trực tiếp bằng cách nhập vào tên tài khoản của họ. Bạn cũng có thể gỡ bỏ người khác ra khỏi danh sách của mình ngay tại trang này.'
 	),
 	array(
 		0 => '--',
@@ -339,11 +330,11 @@ $help = array(
 	),
 	array(
 		0 => 'Ai đã viết và phát triển hệ thống này?',
-		1 => 'Chương trình này với những chức năng ban đầu của nó đã được phát triển, phát hành và thuộc bản quyền của <a href="http://www.phpbb.com/">tổ chức phpBB</a>. Nó được phát hành dưới bản quyền của <em>GNU General Public License</em> và phân phối hoàn toàn miễn phí. Bạn hãy ghé thăm website chính của chúng tôi để tìm hiểu thêm thông tin về phpBB.'
+		1 => 'Chương trình này với những chức năng ban đầu của nó đã được phát triển, phát hành và thuộc bản quyền của <a href="https://www.phpbb.com/">tổ chức phpBB</a>. Nó được phát hành dưới bản quyền của <em>GNU General Public License</em> và phân phối hoàn toàn miễn phí. Bạn hãy ghé thăm website chính của chúng tôi để tìm hiểu thêm thông tin về phpBB.'
 	),
 	array(
 		0 => 'Tại sao hệ thống không có những chức năng khác?',
-		1 => 'Chương trình này được phát triển và thuộc bản quyền của <em>tổ chức phpBB</em>. Nếu bạn cảm thấy một chức năng mới cần được thêm vào, hoặc muốn báo lỗi phần mềm, hãy vui lòng ghé thăm <a href="http://area51.phpbb.com/">khu vực Area51</a> của phpBB, nơi mà tổ chức này ghi nhận mọi sự đóng góp của bạn.'
+		1 => 'Chương trình này được phát triển và thuộc bản quyền của <em>tổ chức phpBB</em>. Nếu bạn cảm thấy một chức năng mới cần được thêm vào, hãy vui lòng ghé thăm <a href="https://www.phpbb.com/ideas/">trang ý tưởng</a> của phpBB, nơi mà bạn có thể bình chọn cho những ý tưởng đang được đề xuất hoặc đề nghị thêm chức năng mới.'
 	),
 	array(
 		0 => 'Tôi phải liên hệ với ai về việc lạm dụng và vi phạm pháp luật liên quan đến website này?',

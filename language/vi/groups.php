@@ -4,18 +4,9 @@
 * groups [Vietnamese]
 *
 * @package language
-* @version $Id: groups.php 24 2008-12-13 11:15:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
-
-/**
-*
-* Vietnamese Language Pack for phpBB3
-*
-* phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+* @version 1.26
+* @copyright (c) 2006 nedka
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -74,7 +65,7 @@ $lang = array_merge($lang, array(
 	'GROUP_MEMBERS'						=> 'Các thành viên trong nhóm',
 	'GROUP_NAME'						=> 'Tên nhóm',
 	'GROUP_OPEN'						=> 'Nhóm tự do',
-	'GROUP_RANK'						=> 'Xếp hạng của nhóm',
+	'GROUP_RANK'						=> 'Danh hiệu của nhóm',
 	'GROUP_RESIGN_MEMBERSHIP'			=> 'Rút ra khỏi nhóm',
 	'GROUP_RESIGN_MEMBERSHIP_CONFIRM'	=> 'Bạn có chắc chắn muốn rút ra không làm thành viên của nhóm vừa chọn?',
 	'GROUP_RESIGN_PENDING'				=> 'Rút ra khỏi nhóm đang chờ quyết định',
