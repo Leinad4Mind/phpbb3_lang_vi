@@ -4,8 +4,8 @@
 * acp_prune [Vietnamese]
 *
 * @package language
-* @version $Id: prune.php 16 2008-12-13 11:16:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: prune.php 18 2009-11-22 08:35:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -46,23 +46,23 @@ if (empty($lang) || !is_array($lang))
 
 // User pruning
 $lang = array_merge($lang, array(
-	'ACP_PRUNE_USERS_EXPLAIN'	=> 'Sử dụng công cụ này, bạn có thể xóa hoặc ngưng kích hoạt tài khoản của các thành viên trong hệ thống. Bạn có thể thực hiện việc này theo nhiều cách khác nhau: theo số bài viết, lần ghé thăm trước… Mỗi cách dọn dẹp có thể kết hợp với nhau, ví dụ như bạn muốn dọn dẹp những thành viên có lần ghé thăm cuối cùng trước ngày 2002/01/01 và có ít hơn 10 bài viết. Bạn có thể nhập vào trực tiếp danh sách của các thành viên vào khung bên dưới, bất kì điều kiện nào nhập vào khung này đều vô hiệu. Hãy cẩn thận với công cụ này! Khi một thành viên đã bị xóa bạn không thể phục hồi lại được.',
+	'ACP_PRUNE_USERS_EXPLAIN'	=> 'Sử dụng công cụ này, bạn có thể xóa hoặc ngưng kích hoạt các thành viên trong hệ thống. Những tài khoản này có thể được lọc theo nhiều cách: theo số bài viết, lần ghé thăm trước… Điều kiện dọn dẹp có thể kết hợp với nhau để giới hạn chính xác những tài khoản cần dọn dẹp. Ví dụ, bạn có thể dọn sạch những thành viên có ít hơn 10 bài viết và không còn ghé thăm từ ngày 01/01/2002. Ngoài ra, bạn có thể bỏ qua toàn bộ điều kiện dọn dẹp bằng cách nhập vào trực tiếp danh sách các thành viên vào khung bên dưới, mỗi tên thành viên trên một dòng mới. Hãy cẩn thận với công cụ này! Khi một thành viên đã bị xóa bạn không thể phục hồi lại được.',
 
 	'DEACTIVATE_DELETE'			=> 'Ngưng kích hoạt hoặc xóa',
-	'DEACTIVATE_DELETE_EXPLAIN'	=> 'Chọn ngưng kích hoạt thành viên hay xóa tài khoản của họ hoàn toàn, lưu ý rằng thao tác này không thể phục hồi lại!',
+	'DEACTIVATE_DELETE_EXPLAIN'	=> 'Chọn ngưng kích hoạt thành viên hay xóa tài khoản của họ hoàn toàn. Lưu ý rằng thành viên khi đã bị xóa thì không thể phục hồi lại được.',
 	'DELETE_USERS'				=> 'Xóa',
 	'DELETE_USER_POSTS'			=> 'Xóa bài viết của những thành viên đã dọn dẹp',
 	'DELETE_USER_POSTS_EXPLAIN' => 'Gỡ bỏ những bài viết được gửi bởi các thành viên đã bị xóa, sẽ không có tác dụng nếu thành viên chưa được kích hoạt.',
 
 	'JOINED_EXPLAIN'			=> 'Nhập vào ngày tham gia theo định dạng ngày tháng <kbd>YYYY-MM-DD</kbd>.',
 
-	'LAST_ACTIVE_EXPLAIN'		=> 'Nhập vào ngày ghé thăm trước theo định dạng ngày tháng <kbd>YYYY-MM-DD</kbd>.',
+	'LAST_ACTIVE_EXPLAIN'		=> 'Nhập vào ngày ghé thăm trước theo định dạng ngày tháng <kbd>YYYY-MM-DD</kbd>. Nhập vào <kbd>0000-00-00</kbd> để dọn dẹp những thành viên chưa bao giờ đăng nhập, lúc này điều kiện <em>Trước</em> và <em>Sau</em> sẽ vô hiệu.',
 
 	'PRUNE_USERS_LIST'				=> 'Những thành viên được dọn dẹp',
 	'PRUNE_USERS_LIST_DELETE'		=> 'Với những điều kiện đã chọn cho thao tác dọn dẹp thành viên, các tài khoản sau đây sẽ bị gỡ bỏ.',
 	'PRUNE_USERS_LIST_DEACTIVATE'	=> 'Với những điều kiện đã chọn cho thao tác dọn dẹp thành viên, các tài khoản sau đây sẽ bị ngưng kích hoạt.',
 
-	'SELECT_USERS_EXPLAIN'		=> 'Nhập vào những tên thành viên xác định tại đây, những tên thành viên này được sử dụng để thiết lập trong các tùy chọn bên dưới.',
+	'SELECT_USERS_EXPLAIN'		=> 'Nhập vào những tên thành viên xác định tại đây, những tên thành viên này được sử dụng để thiết lập trong các tùy chọn bên dưới. Bạn không thể dọn dẹp thành viên là người sáng lập.',
 
 	'USER_DEACTIVATE_SUCCESS'	=> 'Những thành viên vừa chọn đã được ngưng kích hoạt thành công.',
 	'USER_DELETE_SUCCESS'		=> 'Những thành viên vừa chọn đã được xóa thành công.',

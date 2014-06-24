@@ -4,8 +4,8 @@
 * acp_profile [Vietnamese]
 *
 * @package language
-* @version $Id: profile.php 28 2008-12-13 11:16:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: profile.php 29 2009-11-18 23:03:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -75,6 +75,8 @@ $lang = array_merge($lang, array(
 	'DISPLAY_AT_PROFILE_EXPLAIN'	=> 'Cho phép thành viên có thể thay đổi mục thông tin cá nhân này trong bảng điều khiển của mình.',	
 	'DISPLAY_AT_REGISTER'			=> 'Hiển thị trong phần đăng ký thành viên mới',
 	'DISPLAY_AT_REGISTER_EXPLAIN'	=> 'Nếu tùy chọn này được bật, mục thông tin cá nhân sẽ được thêm vào trong phần đăng ký thành viên.',
+	'DISPLAY_ON_VT'					=> 'Hiển thị trên trang xem chủ đề',
+	'DISPLAY_ON_VT_EXPLAIN'			=> 'Nếu tùy chọn này được bật, mục thông tin cá nhân sẽ được hiển thị trong phần thông tin người gửi trên trang xem chủ đề.',
 	'DISPLAY_PROFILE_FIELD'			=> 'Hiển thị mục thông tin cá nhân',
 	'DISPLAY_PROFILE_FIELD_EXPLAIN'	=> 'Hiển thị mục thông tin cá nhân tại tất cả trang cho phép nếu tùy chọn này được bật trong phần thiết lập nạp trang. Vô hiệu tùy chọn này sẽ ẩn mục thông tin cá nhân khỏi trang xem chủ đề, trang thông tin cá nhân và danh sách thành viên.',
 	'DROPDOWN_ENTRIES_EXPLAIN'		=> 'Nhập vào những tùy chọn của bạn với mỗi tùy chọn trên một dòng.',

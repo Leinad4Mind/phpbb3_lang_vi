@@ -4,8 +4,8 @@
 * acp_groups [Vietnamese]
 *
 * @package language
-* @version $Id: groups.php 38 2008-12-13 11:17:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: groups.php 39 2009-07-25 22:38:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -97,12 +97,15 @@ $lang = array_merge($lang, array(
 	'GROUP_PENDING'					=> 'Thành viên chờ quyết định',
 	'GROUP_MAX_RECIPIENTS'			=> 'Số người nhận tối đa cho phép trong mỗi tin nhắn',
 	'GROUP_MAX_RECIPIENTS_EXPLAIN'	=> 'Số lượng người nhận tối đa cho phép đối với một tin nhắn gửi đến nhóm. Nhập số <strong>0</strong> để sử dụng thiết lập chung từ hệ thống.',
+	'GROUP_OPTIONS_SAVE'			=> 'Thiết lập cho toàn nhóm',
 	'GROUP_PROMOTE'					=> 'Thăng chức thành trưởng nhóm',
 	'GROUP_RANK'					=> 'Xếp hạng của nhóm',
 	'GROUP_RECEIVE_PM'				=> 'Cho phép nhóm nhận tin nhắn',
 	'GROUP_RECEIVE_PM_EXPLAIN'		=> 'Lưu ý rằng bạn không thể gửi tin nhắn cho những nhóm ẩn và điều đó không phụ thuộc vào thiết lập này.',
 	'GROUP_REQUEST'					=> 'Nhóm tham gia phải gửi yêu cầu',
-	'GROUP_SETTINGS_SAVE'			=> 'Thiết lập của nhóm',
+	'GROUP_SETTINGS_SAVE'			=> 'Thiết lập cho nhóm',
+	'GROUP_SKIP_AUTH'				=> 'Không áp dụng cấp phép cho trưởng nhóm',
+	'GROUP_SKIP_AUTH_EXPLAIN'		=> 'Nếu bật tùy chọn này, trưởng nhóm sẽ không bị ảnh hưởng bởi những thiết lập cấp phép từ nhóm này.',
 	'GROUP_TYPE'					=> 'Loại nhóm',
 	'GROUP_TYPE_EXPLAIN'			=> 'Chọn loại nhóm cho phép các thành viên tham gia vào nhóm hay xem thông tin về nhóm.',
 	'GROUP_UPDATED'					=> 'Thiết lập của nhóm đã được cập nhật thành công.',

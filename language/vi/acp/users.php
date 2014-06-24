@@ -4,8 +4,8 @@
 * acp_users [Vietnamese]
 *
 * @package language
-* @version $Id: users.php 30 2008-12-13 11:16:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: users.php 31 2009-07-25 23:04:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -86,6 +86,7 @@ $lang = array_merge($lang, array(
 	'MOVE_POSTS_EXPLAIN'	=> 'Hãy chọn chuyên mục mà bạn muốn di chuyển tất cả các bài viết của thành viên này đến.',
 
 	'NO_SPECIAL_RANK'		=> 'Không có xếp hạng đặc biệt nào được chỉ định',
+	'NO_WARNINGS'			=> 'Không có cảnh cáo nào.',
 	'NOT_MANAGE_FOUNDER'	=> 'Bạn đang cố gắng quản lí một thành viên là người sáng lập. Chỉ có những người sáng lập mới được phép quản lí lẫn nhau.',
 
 	'QUICK_TOOLS'			=> 'Công cụ nhanh',
@@ -111,30 +112,38 @@ $lang = array_merge($lang, array(
 	'USER_ADMIN_DEACTIVED'			=> 'Tài khoản thành viên đã được ngưng kích hoạt thành công.',
 	'USER_ADMIN_DEL_ATTACH'			=> 'Xóa tất cả tập tin đính kèm của thành viên này',
 	'USER_ADMIN_DEL_AVATAR'			=> 'Xóa hình đại diện của thành viên này',
+	'USER_ADMIN_DEL_OUTBOX'			=> 'Dọn sạch hộp thư chuyển đi',
 	'USER_ADMIN_DEL_POSTS'			=> 'Xóa tất cả bài viết của thành viên này',
 	'USER_ADMIN_DEL_SIG'			=> 'Xóa chữ ký cá nhân của thành viên này',
 	'USER_ADMIN_EXPLAIN'			=> 'Với công cụ này, bạn có thể thay đổi thông tin cá nhân của các thành viên cũng như những tùy chọn hay thiết lập cá nhân của họ.',
 	'USER_ADMIN_FORCE'				=> 'Yêu cầu thành viên này kích hoạt lại tài khoản của mình',
+	'USER_ADMIN_LEAVE_NR'			=> 'Gỡ bỏ khỏi nhóm “Thành viên mới đăng ký”',
 	'USER_ADMIN_MOVE_POSTS'			=> 'Di chuyển tất cả bài viết của thành viên này',
 	'USER_ADMIN_SIG_REMOVED'		=> 'Đã gỡ bỏ thành công chữ ký cá nhân của thành viên này.',
 	'USER_ATTACHMENTS_REMOVED'		=> 'Đã gỡ bỏ thành công tất cả tập tin đính kèm của thành viên này.',
+	'USER_AVATAR_NOT_ALLOWED'		=> 'Hình đại diện không được hiển thị vì chức năng này đã bị vô hiệu.',
 	'USER_AVATAR_UPDATED'			=> 'Đã cập nhật thành công hình đại diện của thành viên này.',
+	'USER_AVATAR_TYPE_NOT_ALLOWED'	=> 'Hình đại diện hiện tại không được hiển thị vì loại hình này không được phép dùng.',
 	'USER_CUSTOM_PROFILE_FIELDS'	=> 'Mục thông tin cá nhân tùy biến',
 	'USER_DELETED'					=> 'Tài khoản của thành viên này đã được xóa thành công.',
 	'USER_GROUP_ADD'				=> 'Thêm thành viên này vào',
 	'USER_GROUP_NORMAL'				=> 'Nhóm do thành viên chỉ định, là thành viên của nhóm',
 	'USER_GROUP_PENDING'			=> 'Nhóm đang trong chế độ chờ quyết định',
 	'USER_GROUP_SPECIAL'			=> 'Nhóm đã được chỉ định trước, là thành viên của nhóm',
+	'USER_LIFTED_NR'				=> 'Đã gỡ bỏ thành công trạng thái mới đăng ký cho thành viên này.',
 	'USER_NO_ATTACHMENTS'			=> 'Chưa đính kèm bất kì tập tin nào.',
+	'USER_OUTBOX_EMPTIED'			=> 'Đã dọn sạch thành công hộp thư chuyển đi của thành viên này.',
+	'USER_OUTBOX_EMPTY'				=> 'Không có tin nhắn nào trong hộp thư chuyển đi của thành viên này.',
 	'USER_OVERVIEW_UPDATED'			=> 'Thông tin chi tiết về thành viên đã được cập nhật thành công.',
-	'USER_POSTS_DELETED'			=> 'Đã gỡ bỏ thành công tất cả bài viết của thành viên này',
-	'USER_POSTS_MOVED'				=> 'Đã di chuyển thành công tất cả bài viết của thành viên này đến chuyên mục đã chọn',
+	'USER_POSTS_DELETED'			=> 'Đã gỡ bỏ thành công tất cả bài viết của thành viên này.',
+	'USER_POSTS_MOVED'				=> 'Đã di chuyển thành công tất cả bài viết của thành viên này đến chuyên mục được chọn.',
 	'USER_PREFS_UPDATED'			=> 'Thiết lập cá nhân của thành viên đã được cập nhật thành công.',
 	'USER_PROFILE'					=> 'Thông tin cá nhân của thành viên',
 	'USER_PROFILE_UPDATED'			=> 'Thông tin cá nhân của thành viên đã được cập nhật thành công.',
 	'USER_RANK'						=> 'Xếp hạng của thành viên',
 	'USER_RANK_UPDATED'				=> 'Xếp hạng của thành viên đã được cập nhật thành công.',
 	'USER_SIG_UPDATED'				=> 'Chữ ký cá nhân của thành viên đã được cập nhật thành công.',
+	'USER_WARNING_LOG_DELETED'		=> 'Không nhận được cảnh cáo nào. Có thể bản ghi cảnh cáo đã bị xóa.',
 	'USER_TOOLS'					=> 'Công cụ đơn giản',
 ));
 

@@ -4,8 +4,8 @@
 * acp_language [Vietnamese]
 *
 * @package language
-* @version $Id: language.php 18 2008-11-01 22:57:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: language.php 19 2009-07-25 22:40:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -46,7 +46,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ACP_FILES'						=> 'Tập tin ngôn ngữ dùng trong bảng quản trị viên',
-	'ACP_LANGUAGE_PACKS_EXPLAIN'	=> 'Bảng điều khiển này sẽ giúp bạn cài đặt hoặc gỡ bỏ các gói ngôn ngữ trong hệ thống.',
+	'ACP_LANGUAGE_PACKS_EXPLAIN'	=> 'Bảng điều khiển này sẽ giúp bạn cài đặt hoặc gỡ bỏ các gói ngôn ngữ trong hệ thống. Gói ngôn ngữ mặc định được đánh dấu bằng một dấu sao (*).',
 
 	'EMAIL_FILES'			=> 'Tập tin ngôn ngữ dùng trong email',
 

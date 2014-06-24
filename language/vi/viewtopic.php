@@ -4,8 +4,8 @@
 * viewtopic [Vietnamese]
 *
 * @package language
-* @version $Id: viewtopic.php 30 2008-11-13 07:21:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: viewtopic.php 32 2009-11-18 22:20:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -56,7 +56,8 @@ $lang = array_merge($lang, array(
 	'BUMPED_BY'				=> 'Được đẩy lên lần cuối bởi <strong>%1$s</strong> vào ngày %2$s.',
 	'BUMP_TOPIC'			=> 'Đẩy chủ đề lên',
 
-	'CODE'					=> 'Mã',
+	'CODE'			=> 'Mã',
+	'COLLAPSE_QR'	=> 'Ẩn trả lời nhanh',
 
 	'DELETE_TOPIC'			=> 'Xóa chủ đề',
 	'DOWNLOAD_NOTICE'		=> 'Bạn không được cấp phép để xem tập tin đính kèm trong bài viết này.',
@@ -68,6 +69,7 @@ $lang = array_merge($lang, array(
 
 	'FILE_NOT_FOUND_404'	=> 'Tập tin <strong>%s</strong> không tồn tại.',
 	'FORK_TOPIC'			=> 'Sao chép chủ đề',
+	'FULL_EDITOR'			=> 'Trình soạn thảo đầy đủ',
 
 	'LINKAGE_FORBIDDEN'		=> 'Bạn không được phép xem, tải về hoặc liên kết đến website này.',
 	'LOGIN_NOTIFY_TOPIC'	=> 'Hãy vui lòng đăng nhập để xem chủ đề này.',
@@ -95,11 +97,13 @@ $lang = array_merge($lang, array(
 	'PRINT_TOPIC'			=> 'Xem bản in',
 
 	'QUICK_MOD'				=> 'Công cụ',
+	'QUICKREPLY'			=> 'Trả lời nhanh',
 	'QUOTE'					=> 'Trích dẫn',
 
 	'REPLY_TO_TOPIC'		=> 'Gửi bài trả lời',
 	'RETURN_POST'			=> '%sQuay về bài viết đang xem%s',
 
+	'SHOW_QR'				=> 'Trả lời nhanh',
 	'SUBMIT_VOTE'			=> 'Chấp nhận bình chọn',
 
 	'TOTAL_VOTES'			=> 'Tổng số bình chọn',

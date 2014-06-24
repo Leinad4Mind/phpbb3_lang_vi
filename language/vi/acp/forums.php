@@ -4,7 +4,7 @@
 * acp_forums [Vietnamese]
 *
 * @package language
-* @version $Id: forums.php 39 2009-05-07 18:05:00Z nedka $
+* @version $Id: forums.php 41 2009-11-18 22:53:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -53,9 +53,12 @@ $lang = array_merge($lang, array(
 	'AUTO_PRUNE_VIEWED'			=> 'Số ngày tự động dọn dẹp bài viết sau khi xem',
 	'AUTO_PRUNE_VIEWED_EXPLAIN'	=> 'Nếu chủ đề không có ai xem sau số ngày được thiết lập này thì chủ đề sẽ được tự động gỡ bỏ.',
 
+	'CONTINUE'						=> 'Tiếp tục',
 	'COPY_PERMISSIONS'				=> 'Sao chép thiết lập cấp phép từ',
 	'COPY_PERMISSIONS_ADD_EXPLAIN'	=> 'Sau khi sao chép thiết lập cấp phép, chuyên mục sẽ có thiết lập cấp phép giống như của chuyên mục mà bạn chọn sao chép. Nếu không có chuyên mục nào được chọn thì chuyên mục vừa mới tạo sẽ không thể truy cập được cho đến khi bạn thiết lập cấp phép xong.',
 	'COPY_PERMISSIONS_EDIT_EXPLAIN'	=> 'Nếu bạn chọn sao chép thiết lập cấp phép, chuyên mục sẽ có thiết lập cấp phép giống như của chuyên mục mà bạn chọn sao chép. Thiết lập cấp phép mới mà bạn chọn sẽ thay thế cho bất kì thiết lập cấp phép nào mà bạn đã thiết lập trước đây cho chuyên mục này. Nếu không có chuyên mục nào được chọn, những thiết lập cấp phép hiện tại của chuyên mục này sẽ được giữ nguyên.',	
+	'COPY_PERMISSIONS_EXPLAIN'		=> 'Để thiết lập cấp phép dễ dàng cho chuyên mục tạo mới, bạn có thể sao chép cấp phép từ một chuyên mục hiện có.',
+	'COPY_TO_ACL'					=> 'Cách khác, bạn cũng có thể %sthiết lập cấp phép mới%s cho chuyên mục này.',
 	'CREATE_FORUM'					=> 'Tạo chuyên mục mới',
 
 	'DECIDE_MOVE_DELETE_CONTENT'		=> 'Xóa toàn bộ nội dung hoặc di chuyển đến chuyên mục',
@@ -66,13 +69,15 @@ $lang = array_merge($lang, array(
 	'DISPLAY_ACTIVE_TOPICS'				=> 'Hiển thị những chủ đề sôi nổi',
 	'DISPLAY_ACTIVE_TOPICS_EXPLAIN'		=> 'Nếu bật tùy chọn này, những chủ đề sôi nổi trong các chuyên mục con đã chọn sẽ được hiển thị trong chuyên mục này.',
 
-	'EDIT_FORUM'				=> 'Sửa chuyên mục',
-	'ENABLE_INDEXING'			=> 'Bật chỉ mục tìm kiếm',
-	'ENABLE_INDEXING_EXPLAIN'	=> 'Nếu bạn bật tùy chọn này, những bài viết trong chuyên mục này sẽ được tạo chỉ mục để có thể tìm kiếm.',
+	'EDIT_FORUM'					=> 'Sửa chuyên mục',
+	'ENABLE_INDEXING'				=> 'Bật chỉ mục tìm kiếm',
+	'ENABLE_INDEXING_EXPLAIN'		=> 'Nếu bật tùy chọn này, những bài viết trong chuyên mục này sẽ được tạo chỉ mục để có thể tìm kiếm.',
 	'ENABLE_POST_REVIEW'			=> 'Cho phép xem lại bài viết',
-	'ENABLE_POST_REVIEW_EXPLAIN'	=> 'Nếu bật tùy chọn này, các thành viên có thể xem lại bài viết của họ nếu có những bài viết mới được gửi đến chủ đề trong khi họ đang soạn bài. Bạn nên tắt tùy chọn này nếu sử dụng diễn đàn chỉ để tán gẫu.',	
-	'ENABLE_RECENT'					=> 'Hiển thị những chủ đề không bị khóa',
-	'ENABLE_RECENT_EXPLAIN'			=> 'Nếu bật tùy chọn này, những chủ đề được gửi trong các chuyên mục sẽ được hiển thị trong danh sách chủ đề không bị khóa.',
+	'ENABLE_POST_REVIEW_EXPLAIN'	=> 'Nếu bật tùy chọn này, các thành viên có thể xem lại bài viết của họ nếu có những bài viết mới được gửi đến chủ đề trong khi họ đang soạn bài. Bạn nên tắt tùy chọn này nếu sử dụng diễn đàn chỉ để tán gẫu.',
+	'ENABLE_QUICK_REPLY'			=> 'Bật trả lời nhanh',
+	'ENABLE_QUICK_REPLY_EXPLAIN'	=> 'Nếu bật tùy chọn này, các thành viên có thể sử dụng chức năng trả lời nhanh tại chuyên mục này. Tuy nhiên, nếu chức năng trả lời nhanh bị vô hiệu hay chuyên mục này không cho phép gửi bài thì khung trả lời nhanh sẽ không hiển thị.',
+	'ENABLE_RECENT'					=> 'Hiển thị những chủ đề sôi nổi',
+	'ENABLE_RECENT_EXPLAIN'			=> 'Nếu bật tùy chọn này, những chủ đề được gửi trong chuyên mục này sẽ được hiển thị trong danh sách chủ đề sôi nổi.',
 	'ENABLE_TOPIC_ICONS'			=> 'Sử dụng biểu tượng cho chủ đề',
 
 	'FORUM_ADMIN'						=> 'Quản lí chuyên mục',

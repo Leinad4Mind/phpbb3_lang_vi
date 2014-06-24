@@ -4,7 +4,7 @@
 * acp_posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php 49 2009-05-07 18:08:00Z nedka $
+* @version $Id: posting.php 51 2009-11-18 23:00:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -77,7 +77,7 @@ $lang = array_merge($lang, array(
 
 	'TOKEN'					=> 'Mã thay thế',
 	'TOKENS'				=> 'Những mã thay thế',
-	'TOKENS_EXPLAIN'		=> 'Mã thay thế có nhiệm vụ thay thế cho nguồn nhập vào của thành viên. Nguồn nhập vào chỉ được kiểm tra hợp lệ nếu kết quả định danh của nó chính xác. Nếu cần thiết, bạn có thể đánh số chúng bằng cách thêm vào một con số sau ký tự nằm trong dấu ngoặc móc, ví dụ như <var>{TEXT1}, {TEXT2}</var>.<br /><br />Ngoài ra, những mã thay thế này có thể sử dụng bất kì chuỗi ngôn ngữ nào trong thư mục <samp>language/</samp> của hệ thống, giống như: <var>{L_<em>&lt;STRINGNAME&gt;</em>}</var> với <em>&lt;STRINGNAME&gt;</em> là tên của chuỗi đã được phiên dịch trong gói ngôn ngữ mà bạn muốn thêm vào. Ví dụ, <var>{L_WROTE}</var> sẽ hiển thị thành &quot;đã viết&quot; hoặc nội dung khác tùy theo nghĩa phiên dịch trong gói ngôn ngữ mà thành viên chọn.<br /><br /><strong>Lưu ý rằng những mã thay thế được liệt kê bên dưới có thể sử dụng được trong các thẻ BBCode tùy biến.</strong>',
+	'TOKENS_EXPLAIN'		=> 'Mã thay thế có nhiệm vụ thay thế cho nguồn nhập vào của thành viên. Nguồn nhập vào chỉ được kiểm tra hợp lệ nếu kết quả định danh của nó chính xác. Nếu cần thiết, bạn có thể đánh số chúng bằng cách thêm vào một con số sau ký tự nằm trong dấu ngoặc móc, ví dụ như <var>{TEXT1}, {TEXT2}</var>.<br /><br />Ngoài ra, những mã thay thế này có thể sử dụng bất kì chuỗi ngôn ngữ nào trong thư mục <samp>language/</samp> của hệ thống, giống như: <var>{L_<em>&lt;STRINGNAME&gt;</em>}</var> với <em>&lt;STRINGNAME&gt;</em> là tên của chuỗi đã được phiên dịch trong gói ngôn ngữ mà bạn muốn thêm vào. Ví dụ, <var>{L_WROTE}</var> sẽ hiển thị thành “đã viết” hoặc nội dung khác tùy theo nghĩa phiên dịch trong gói ngôn ngữ mà thành viên chọn.<br /><br /><strong>Lưu ý rằng những mã thay thế được liệt kê bên dưới có thể sử dụng được trong các thẻ BBCode tùy biến.</strong>',
 	'TOKEN_DEFINITION'		=> 'Định danh mã thay thế',
 	'TOO_MANY_BBCODES'		=> 'Bạn không thể tạo quá nhiều thẻ BBCode. Hãy gỡ bỏ một hay nhiều thẻ BBCode rồi thử lại.',
 
@@ -87,7 +87,7 @@ $lang = array_merge($lang, array(
 		'IDENTIFIER'	=> 'Những ký tự từ bảng chữ cái Latinh (A-Z), chữ số, dấu gạch nối và dấu gạch dưới.',
 		'NUMBER'		=> 'Bất kì giá trị số nào.',
 		'EMAIL'			=> 'Địa chỉ email hợp lệ.',
-		'URL'			=> 'Địa chỉ URL hợp lệ sử dụng bất kì giao thức nào (http, ftp… không thể sử dụng được vì các vấn đề với mã Javascript). Nếu bạn không nhập vào giao thức, &quot;http://&quot; sẽ được sử dụng làm tiền tố đầu của chuỗi.',
+		'URL'			=> 'Địa chỉ URL hợp lệ sử dụng bất kì giao thức nào (http, ftp… không thể sử dụng được vì các vấn đề với mã Javascript). Nếu bạn không nhập vào giao thức, “http://” sẽ được sử dụng làm tiền tố đầu của chuỗi.',
 		'LOCAL_URL'		=> 'Địa chỉ URL trong hệ thống. Địa chỉ URL này phải liên quan đến các trang trong hệ thống và không thể chứa một tên miền khác hay giao thức nào.',
 		'COLOR'			=> 'Mã màu HTML, có thể sử dụng định dạng mã màu số như <samp>#FF1234</samp> hay một <a href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">từ khóa màu định dạng CSS</a> giống như <samp>fuchsia</samp> hay <samp>InactiveBorder</samp>.'
 	)
@@ -187,6 +187,8 @@ $lang = array_merge($lang, array(
 	'SMILIES_URL'				=> 'Hình biểu tượng',
 	'SMILIES_WIDTH'				=> 'Chiều rộng',
 
+	'TOO_MANY_SMILIES'	=> 'Vượt quá giới hạn <strong>%d</strong> biểu tượng vui.',
+
 	'WRONG_PAK_TYPE'	=> 'Gói biểu tượng vừa chọn không chứa dữ liệu thích hợp.',
 ));
 
@@ -224,6 +226,7 @@ $lang = array_merge($lang, array(
 	'RANK_ADDED'			=> 'Xếp hạng đã được thêm vào thành công.',
 	'RANK_IMAGE'			=> 'Hình ảnh xếp hạng',
 	'RANK_IMAGE_EXPLAIN'	=> 'Hình ảnh xác định nhỏ hiển thị cùng với xếp hạng này. Đường dẫn đến hình ảnh phải nằm trong thư mục hệ thống.',
+	'RANK_IMAGE_IN_USE'		=> '(Đang dùng)',
 	'RANK_MINIMUM'			=> 'Số bài viết tối thiểu',
 	'RANK_REMOVED'			=> 'Xếp hạng đã được gỡ bỏ thành công.',
 	'RANK_SPECIAL'			=> 'Chọn làm xếp hạng đặc biệt',

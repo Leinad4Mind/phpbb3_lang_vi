@@ -4,8 +4,8 @@
 * acp_database [Vietnamese]
 *
 * @package language
-* @version $Id: database.php 20 2008-11-01 22:57:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: database.php 21 2009-07-25 22:28:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -63,6 +63,7 @@ $lang = array_merge($lang, array(
 	'DOWNLOAD_BACKUP'			=> 'Tải về bản sao lưu',
 
 	'FILE_TYPE'			=> 'Loại tập tin',
+	'FILE_WRITE_FAIL'	=> 'Thư mục lưu trữ không thể ghi tập tin.',
 	'FULL_BACKUP'		=> 'Toàn bộ',
 
 	'RESTORE_FAILURE'		=> 'Tập tin sao lưu có thể đã bị hỏng.',

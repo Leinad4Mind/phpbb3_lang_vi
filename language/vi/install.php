@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version $Id: install.php 100 2009-05-07 17:55:00Z nedka $
+* @version $Id: install.php 103 2009-11-18 22:09:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -142,6 +142,7 @@ $lang = array_merge($lang, array(
 	'DB_PASSWORD'				=> 'Mật khẩu kết nối cơ sở dữ liệu',
 	'DB_PORT'					=> 'Cổng máy chủ cơ sở dữ liệu',
 	'DB_PORT_EXPLAIN'			=> 'Để trống mục này nếu như bạn không biết cổng tiêu chuẩn đang được sử dụng của máy chủ.',
+	'DB_UPDATE_NOT_SUPPORTED'	=> 'Chúng tôi rất tiếc vì công cụ này không hỗ trợ cập nhật các phiên bản phpBB trước “%1$s”. Phiên bản phpBB mà bạn đang sử dụng là “%2$s”. Hãy vui lòng cập nhật đến một bản phát hành phpBB cũ hơn trước khi chạy lại công cụ cập nhật này. Mọi hướng dẫn về vấn đề bạn đang gặp đều có tại diễn đàn trợ giúp trên phpBB.com.',
 	'DB_USERNAME'				=> 'Tên đăng nhập cơ sở dữ liệu',
 	'DB_TEST'					=> 'Kiểm tra kết nối',
 	'DEFAULT_LANG'				=> 'Ngôn ngữ mặc định',
@@ -169,37 +170,39 @@ $lang = array_merge($lang, array(
 
 	'ENABLE_KEYS'				=> 'Đang bật lại những loại bị vô hiệu. Quá trình này có thể mất nhiều thời gian.',
 
-	'FILES_OPTIONAL'			=> 'Thư mục và tập tin tùy chọn',
-	'FILES_OPTIONAL_EXPLAIN'	=> '<strong>Tùy chọn</strong> - Những thư mục, tập tin hay thiết lập cấp phép này không bắt buộc. Công cụ cài đặt của hệ thống sẽ sử dụng các phương pháp khác nhau để tạo ra chúng nếu như chúng không tồn tại hoặc không thể ghi được trên máy chủ. Tuy nhiên, nếu có những mục này sẽ đẩy nhanh quá trình cài đặt.',
-	'FILES_REQUIRED'			=> 'Thư mục và tập tin',
-	'FILES_REQUIRED_EXPLAIN'	=> '<strong>Yêu cầu bắt buộc</strong> - Để có thể sử dụng các chức năng đã được xây dựng, hệ thống phpBB cần phải được phép truy cập hoặc ghi tập tin đến các thư mục và tập tin của hệ thống. Nếu bạn nhìn thấy thông báo “Không tìm thấy”, bạn cần phải tạo hay tải lên lại những thư mục và tập tin tương ứng. Nếu bạn nhìn thấy thông báo “Không thể ghi”, bạn cần phải thay đổi lại thiết lập cấp phép trên máy chủ cho các thư mục hay tập tin tương ứng.',
-	'FILLING_TABLE'				=> 'Điền vào bảng dữ liệu <strong>%s</strong>',
-	'FILLING_TABLES'			=> 'Bảng dữ liệu điền vào',
-	'FINAL_STEP'				=> 'Thực thi bước cuối cùng',
-	'FORUM_ADDRESS'				=> 'Địa chỉ hệ thống',
-	'FORUM_ADDRESS_EXPLAIN'		=> 'Đây là địa chỉ URL của hệ thống, ví dụ như <samp>http://www.example.com/phpBB3/</samp>. Nếu bạn nhập vào một địa chỉ trong phần này và không để trống, mọi trường hợp của địa chỉ này sẽ được thay thế bằng địa chỉ hệ thống mới trong các bài biết, tin nhắn và chữ ký đính kèm của thành viên.',
-	'FORUM_PATH'				=> 'Đường dẫn hệ thống',
-	'FORUM_PATH_EXPLAIN'		=> 'Đường dẫn đến thư mục gốc cài đặt hệ thống phpBB trên máy chủ của bạn',
-	'FOUND'						=> 'Đã tìm thấy',
-	'FTP_CONFIG'				=> 'Chuyển tập tin cấu hình bằng FTP',
-	'FTP_CONFIG_EXPLAIN'		=> 'Hệ thống đã xác định sự tồn tại của gói chức năng FTP trên máy chủ của bạn. Bạn có thể chọn cài đặt với tập tin cấu hình <samp>config.php</samp> của mình thông qua phương pháp này. Bạn sẽ cần phải cung cấp thông tin về FTP trong phần bên dưới. Hãy nhớ tên đăng nhập và mật khẩu kết nối đến máy chủ FTP của bạn. Nếu không nhớ, bạn có thể yêu cầu nhà cung cấp dịch vụ lưu trữ Web của mình gửi lại cho bạn những thông tin này.',
-	'FTP_PATH'					=> 'Đường dẫn FTP',
-	'FTP_PATH_EXPLAIN'			=> 'Đây là đường dẫn đến thư mục chính cài đặt hệ thống phpBB, ví dụ như <samp>htdocs/phpBB3/</samp>.',
-	'FTP_UPLOAD'				=> 'Tải lên',
+	'FILES_OPTIONAL'				=> 'Thư mục và tập tin tùy chọn',
+	'FILES_OPTIONAL_EXPLAIN'		=> '<strong>Tùy chọn</strong> - Những thư mục, tập tin hay thiết lập cấp phép này không bắt buộc. Công cụ cài đặt của hệ thống sẽ sử dụng các phương pháp khác nhau để tạo ra chúng nếu như chúng không tồn tại hoặc không thể ghi được trên máy chủ. Tuy nhiên, nếu có những mục này sẽ đẩy nhanh quá trình cài đặt.',
+	'FILES_REQUIRED'				=> 'Thư mục và tập tin',
+	'FILES_REQUIRED_EXPLAIN'		=> '<strong>Yêu cầu bắt buộc</strong> - Để có thể sử dụng các chức năng đã được xây dựng, hệ thống phpBB cần phải được phép truy cập hoặc ghi tập tin đến các thư mục và tập tin của hệ thống. Nếu bạn nhìn thấy thông báo “Không tìm thấy”, bạn cần phải tạo hay tải lên lại những thư mục và tập tin tương ứng. Nếu bạn nhìn thấy thông báo “Không thể ghi”, bạn cần phải thay đổi lại thiết lập cấp phép trên máy chủ cho các thư mục hay tập tin tương ứng.',
+	'FILLING_TABLE'					=> 'Điền vào bảng dữ liệu <strong>%s</strong>',
+	'FILLING_TABLES'				=> 'Bảng dữ liệu điền vào',
+	'FINAL_STEP'					=> 'Thực thi bước cuối cùng',
+	'FIREBIRD_DBMS_UPDATE_REQUIRED'	=> 'Hệ thống phpBB không còn hỗ trợ hệ quản trị Firebird/Interbase các phiên bản trước 2.1. Hãy vui lòng cập nhật bản cài đặt Firebird trên máy chủ của bạn lên phiên bản tối thiểu là 2.1.0 trước khi tiếp tục quá trình cập nhật.',
+	'FORUM_ADDRESS'					=> 'Địa chỉ hệ thống',
+	'FORUM_ADDRESS_EXPLAIN'			=> 'Đây là địa chỉ URL của hệ thống, ví dụ như <samp>http://www.example.com/phpBB3/</samp>. Nếu bạn nhập vào một địa chỉ trong phần này và không để trống, mọi trường hợp của địa chỉ này sẽ được thay thế bằng địa chỉ hệ thống mới trong các bài biết, tin nhắn và chữ ký đính kèm của thành viên.',
+	'FORUM_PATH'					=> 'Đường dẫn hệ thống',
+	'FORUM_PATH_EXPLAIN'			=> 'Đường dẫn đến thư mục gốc cài đặt hệ thống phpBB trên máy chủ của bạn',
+	'FOUND'							=> 'Đã tìm thấy',
+	'FTP_CONFIG'					=> 'Chuyển tập tin cấu hình bằng FTP',
+	'FTP_CONFIG_EXPLAIN'			=> 'Hệ thống đã xác định sự tồn tại của gói chức năng FTP trên máy chủ của bạn. Bạn có thể chọn cài đặt với tập tin cấu hình <samp>config.php</samp> của mình thông qua phương pháp này. Bạn sẽ cần phải cung cấp thông tin về FTP trong phần bên dưới. Hãy nhớ tên đăng nhập và mật khẩu kết nối đến máy chủ FTP của bạn. Nếu không nhớ, bạn có thể yêu cầu nhà cung cấp dịch vụ lưu trữ Web của mình gửi lại cho bạn những thông tin này.',
+	'FTP_PATH'						=> 'Đường dẫn FTP',
+	'FTP_PATH_EXPLAIN'				=> 'Đây là đường dẫn đến thư mục chính cài đặt hệ thống phpBB, ví dụ như <samp>htdocs/phpBB3/</samp>.',
+	'FTP_UPLOAD'					=> 'Tải lên',
 
-	'GPL'						=> 'Giấy phép bản quyền GNU-GPL',
+	'GPL'	=> 'Giấy phép bản quyền GNU-GPL',
 
 	'INITIAL_CONFIG'				=> 'Cấu hình đơn giản',
 	'INITIAL_CONFIG_EXPLAIN'		=> 'Chương trình cài đặt xác định máy chủ của bạn có thể sử dụng hệ thống phpBB. Bạn cần phải cung cấp cho hệ thống biết một vài thông tin xác định bên dưới. Nếu bạn không biết làm thế nào để kết nối đến cơ sở dữ liệu của mình, hãy liên hệ trước tiên đến nhà cung cấp dịch vụ lưu trữ Web của bạn hoặc tìm kiếm sự giúp đỡ trong các diễn đàn hỗ trợ phpBB. Khi nhập vào thông tin, hãy chắc chắn bạn đã kiểm tra hoàn toàn những thông tin này trước khi tiếp tục quá trình cài đặt.',
 	'INSTALL_CONGRATS'				=> 'Xin chúc mừng!',
 	'INSTALL_CONGRATS_EXPLAIN'		=> '
-		<p>Bạn đã cài đặt thành công hệ thống phpBB %1$s. Ngay bây giờ, bạn có hai tùy chọn để quyết định sử dụng bản cài đặt phpBB3 mà mình mới vừa hoàn tất như thế nào:</p>
-		<h2>Chuyển đổi dữ liệu hiện có từ một hệ thống sang bản cài đặt phpBB3 mới cài này</h2>
+		Bạn đã cài đặt thành công hệ thống phpBB %1$s. Để hoàn tất, hãy chọn một trong những tùy chọn sau:</p>
+		<h2>Chuyển đổi từ một hệ thống hiện có sang phpBB3</h2>
 		<p>Công cụ phpBB Unified Convertor Framework hỗ trợ việc chuyển đổi dữ liệu từ bản cài đặt phpBB 2.0.x hoặc các loại hệ thống khác không phải phpBB sang phiên bản phpBB3. Nếu bạn muốn chuyển đổi dữ liệu từ một hệ thống hiện có, hãy vui lòng <a href="%2$s">tiến hành việc chuyển đổi</a>.</p>
-		<h2>Trực tiếp sử dụng bản cài đặt phpBB3 mới này!</h2>
-		<p>Bấm vào nút bên dưới, bạn sẽ được chuyển đến bảng điều khiển dành cho quản trị viên của mình. Đa số mỗi tùy chọn trong bảng điều khiển này đều có hướng dẫn giải thích cho bạn công dụng của chúng. Hãy nhớ rằng bạn luôn được giúp đỡ từ <a href="http://www.phpbb.com/support/documentation/3.0/">tài liệu hướng dẫn sử dụng</a> và <a href="http://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ</a>. Bạn hãy xem tập tin <a href="%3$s">README</a> để biết thêm thông tin.</p><p><strong>Ngay bây giờ, bạn hãy vui lòng xóa, di chuyển hoặc đổi tên thư mục <samp>install</samp> trước khi bạn bắt đầu sử dụng hệ thống. Nếu thư mục này vẫn còn hiện hữu, bạn sẽ chỉ có thể truy cập được vào bảng điều khiển dành cho quản trị viên.</strong></p>',
+		<h2>Bắt đầu sử dụng bản phpBB3 của bạn!</h2>
+		<p>Bấm vào nút bên dưới, bạn sẽ được chuyển đến trang gửi dữ liệu thống kê về phpBB trong bảng quản trị viên của mình. Chúng tôi đánh giá cao việc gửi dữ liệu thống kê sử dụng của bạn nhằm giúp hoàn thiện sản phẩm hơn. Đa số mỗi tùy chọn trong bảng điều khiển này đều có hướng dẫn giải thích cho bạn công dụng của chúng. Bạn không bao giờ phải giải quyết rắc rối một mình với <a href="%3$s">tài liệu sử dụng cơ bản</a,> <a href="http://www.phpbb.com/support/documentation/3.0/">tài liệu sử dụng trực tuyến</a> và <a href="http://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ</a> của chúng tôi.</p>
+		<p><strong>Hãy vui lòng xóa, di chuyển hoặc đổi tên ngay thư mục <samp>install</samp> trước khi bạn bắt đầu sử dụng hệ thống. Nếu thư mục này vẫn còn, bạn sẽ chỉ có thể truy cập được vào bảng quản trị viên.</strong>',
 	'INSTALL_INTRO'					=> 'Chuẩn bị trước khi cài đặt',
-	'INSTALL_INTRO_BODY'		=> 'Với công cụ này, bạn sẽ bắt đầu quá trình cài đặt hệ thống phpBB3 trên máy chủ của mình.</p><p>Để bắt đầu cài đặt, bạn phải cung cấp cho công cụ cài đặt những thông tin về cơ sở dữ liệu của mình. Nếu bạn không biết thông tin về cơ sở dữ liệu này, hãy vui lòng liên hệ với nhà cung cấp dịch vụ lưu trữ Web của bạn và yêu cầu họ cung cấp cho bạn. Bạn sẽ không thể tiếp tục cài đặt mà thiếu những thông tin này. Bạn cần biết:</p>
+	'INSTALL_INTRO_BODY'			=> 'Với công cụ này, bạn sẽ bắt đầu quá trình cài đặt hệ thống phpBB3 trên máy chủ của mình.</p><p>Để bắt đầu cài đặt, bạn phải cung cấp cho công cụ cài đặt những thông tin về cơ sở dữ liệu của mình. Nếu bạn không biết thông tin về cơ sở dữ liệu này, hãy vui lòng liên hệ với nhà cung cấp dịch vụ lưu trữ Web của bạn và yêu cầu họ cung cấp cho bạn. Bạn sẽ không thể tiếp tục cài đặt mà thiếu những thông tin này. Bạn cần biết:</p>
 
 	<ul>
 		<li>Loại cơ sở dữ liệu - hệ quản trị cơ sở dữ liệu mà bạn sẽ sử dụng cho hệ thống.</li>
@@ -216,7 +219,7 @@ $lang = array_merge($lang, array(
 		<li>MySQL 3.23 trở lên (hỗ trợ MySQLi)</li>
 		<li>PostgreSQL 7.3+</li>
 		<li>SQLite 2.8.2+</li>
-		<li>Firebird 2.0+</li>
+		<li>Firebird 2.1+</li>
 		<li>MSSQL Server 2000 trở lên (trực tiếp hoặc thông qua ODBC)</li>
 		<li>Oracle</li>
 	</ul>
@@ -238,7 +241,7 @@ $lang = array_merge($lang, array(
 	'INST_ERR_DB_NO_MYSQLI'			=> 'Phiên bản MySQL được cài đặt trên máy chủ không tương thích với tùy chọn “MySQL với phần mở rộng MySQLi” mà bạn vừa chọn. Hãy thử thay thế bằng tùy chọn “MySQL” để tiếp tục.',
 	'INST_ERR_DB_NO_SQLITE'			=> 'Phiên bản phần mở rộng SQLite được cài đặt trên máy chủ đã quá cũ. Nó phải được nâng cấp ít nhất đến phiên bản 2.8.2 để sử dụng với hệ thống này.',
 	'INST_ERR_DB_NO_ORACLE'			=> 'Phiên bản Oracle được cài đặt trên máy chủ yêu cầu bạn phải thiết lập thông số <var>NLS_CHARACTERSET</var> thành <var>UTF-8</var>. Bạn hãy vui lòng nâng cấp hệ thống lên phiên bản 9.2+ hoặc chỉ cần thay đổi lại thông số trên.',
-	'INST_ERR_DB_NO_FIREBIRD'		=> 'Phiên bản Firebird được cài đặt trên máy chủ cũ hơn phiên bản 2.0, bạn hãy vui lòng nâng cấp hệ thống lên phiên bản mới hơn.',
+	'INST_ERR_DB_NO_FIREBIRD'		=> 'Phiên bản Firebird được cài đặt trên máy chủ cũ hơn phiên bản 2.1, bạn hãy vui lòng nâng cấp hệ thống lên phiên bản mới hơn.',
 	'INST_ERR_DB_NO_FIREBIRD_PS'	=> 'Cơ sở dữ liệu vừa chọn để sử dụng cho Firebird có một trang kích thước nhỏ hơn <strong>8192</strong>, hệ thống yêu cầu ít nhất phải là <strong>8192</strong>.',
 	'INST_ERR_DB_NO_POSTGRES'		=> 'Cơ sở dữ liệu vừa chọn không được tạo ra trong chế độ mã hóa <var>UNICODE</var> hoặc <var>UTF-8</var>. Bạn hãy vui lòng cài đặt lại với một cơ sở dữ liệu được mã hóa theo <var>UNICODE</var> hoặc <var>UTF-8</var>.',
 	'INST_ERR_DB_NO_NAME'			=> 'Bạn chưa nhập tên cơ sở dữ liệu.',	
@@ -375,7 +378,7 @@ $lang = array_merge($lang, array(
 
 // Updater
 $lang = array_merge($lang, array(
-	'ALL_FILES_UP_TO_DATE'		=> 'Tất cả các tập tin đã được cập nhật lên phiên bản mới nhất của phpBB. Ngay bây giờ bạn nên <a href="../ucp.php?mode=login">đăng nhập vào hệ thống</a> và kiểm tra lại để đảm bảo mọi thứ đều hoạt động tốt. Bạn cũng đừng quên xóa, đổi tên hay di chuyển thư mục cài đặt của hệ thống!',
+	'ALL_FILES_UP_TO_DATE'		=> 'Tất cả các tập tin đã được cập nhật lên phiên bản mới nhất của phpBB. Ngay bây giờ bạn nên <a href="../ucp.php?mode=login&amp;redirect=adm/index.php%3Fi=send_statistics%26mode=send_statistics">đăng nhập vào hệ thống</a> và kiểm tra lại để đảm bảo mọi thứ đều hoạt động tốt. Bạn cũng đừng quên xóa, đổi tên hay di chuyển thư mục cài đặt của hệ thống! Hãy vui lòng gửi cho chúng tôi thông tin đã cập nhật về máy chủ và cấu hình hệ thống phpBB của bạn từ trang <a href="../ucp.php?mode=login&amp;redirect=adm/index.php%3Fi=send_statistics%26mode=send_statistics">gửi thống kê</a> trong bảng quản trị viên.',
 	'ARCHIVE_FILE'				=> 'Tập tin gốc được lưu trữ',
 
 	'BACK'				=> 'Quay lại',
@@ -456,8 +459,8 @@ $lang = array_merge($lang, array(
 	'MERGE_MODIFICATIONS_OPTION'	=> 'Nhập chung những thay đổi',
 	'MERGE_NO_MERGE_NEW_OPTION'		=> 'Đừng nhập chung - Sử dụng tập tin mới',
 	'MERGE_NO_MERGE_MOD_OPTION'		=> 'Đừng nhập chung - Sử dụng tập tin đã cài đặt hiện tại',
-	'MERGE_MOD_FILE_OPTION'			=> 'Nhập chung những chỉnh sửa (Mất mã nguồn phpBB mới trong phần xung đột)',
-	'MERGE_NEW_FILE_OPTION'			=> 'Nhập chung những chỉnh sửa (Mất mã nguồn đã chỉnh sửa trong phần xung đột)',
+	'MERGE_MOD_FILE_OPTION'			=> 'Nhập chung những chỉnh sửa (Gỡ bỏ mã nguồn phpBB mới trong phần xung đột)',
+	'MERGE_NEW_FILE_OPTION'			=> 'Nhập chung những chỉnh sửa (Gỡ bỏ mã nguồn đã chỉnh sửa trong phần xung đột)',
 	'MERGE_SELECT_ERROR'			=> 'Chế độ nhập chung tập tin xung đột không chính xác như đã chọn.',
 	'MERGING_FILES'					=> 'Đang nhập chung những điểm khác nhau',
 	'MERGING_FILES_EXPLAIN'			=> 'Hệ thống hiện tại đang dò tìm những thay đổi cuối cùng từ tập tin.<br /><br />Bạn hãy vui lòng chờ đợi cho đến khi hệ thống hoàn tất các thao tác trên những tập tin đã bị thay đổi.',
@@ -475,7 +478,7 @@ $lang = array_merge($lang, array(
 	'NO_VISIBLE_CHANGES'			=> 'Không có thay đổi nào rõ ràng',
 	'NOTICE'						=> 'Thông báo',
 	'NUM_CONFLICTS'					=> 'Số lượng xung đột',
-	'NUMBER_OF_FILES_COLLECTED'		=> 'Những điểm khác nhau hiện tại của %1$d trong %2$d tập tin đã được kiểm tra.<br />Hãy vui lòng chờ đợi cho đến khi tất cả tập tin được kiểm tra xong.',
+	'NUMBER_OF_FILES_COLLECTED'		=> 'Những điểm khác nhau hiện tại của %1$d trong tổng số %2$d tập tin đã được kiểm tra.<br />Hãy vui lòng chờ đợi cho đến khi tất cả tập tin được kiểm tra xong.',
 
 	'OLD_UPDATE_FILES'		=> 'Những tập tin cập nhật này là dành cho phiên bản cũ. Những tập tin cập nhật này được xác định là dành cho việc cập nhật hệ thống phpBB từ phiên bản %1$s lên phiên bản %2$s trong khi phiên bản phpBB mới nhất là %3$s.',
 
@@ -563,18 +566,19 @@ $lang = array_merge($lang, array(
 	'UPDATED_VERSION'				=> 'Phiên bản đã cập nhật',
 	'UPLOAD_METHOD'					=> 'Phương pháp tải lên',
 
-	'UPDATE_DB_SUCCESS'				=> 'Cơ sở dữ liệu của hệ thống đã được cập nhật thành công.',
-	'USER_ACTIVE'					=> 'Thành viên đang hoạt động',
-	'USER_INACTIVE'					=> 'Thành viên ngưng hoạt động',
+	'UPDATE_DB_SUCCESS'	=> 'Cơ sở dữ liệu của hệ thống đã được cập nhật thành công.',
+	'USER_ACTIVE'		=> 'Thành viên đang hoạt động',
+	'USER_INACTIVE'		=> 'Thành viên ngưng hoạt động',
 
 	'VERSION_CHECK'					=> 'Kiểm tra phiên bản',
-	'VERSION_CHECK_EXPLAIN'			=> 'Tiến hành kiểm tra phiên bản để chắc chắn rằng hệ thống của bạn đang sử dụng phiên bản phpBB mới nhất.',
-	'VERSION_NOT_UP_TO_DATE'		=> 'Phiên bản phpBB bạn đang sử dụng chưa phải là phiên bản mới nhất. Hãy vui lòng tiếp tục tiến hành cập nhật.',
-	'VERSION_NOT_UP_TO_DATE_ACP'	=> 'Phiên bản phpBB bạn đang sử dụng chưa phải là phiên bản mới nhất.<br />Trong phần bên dưới, bạn sẽ tìm thấy liên kết đến thông báo phát hành của phiên bản phpBB mới nhất cùng với những hướng dẫn cách tiến hành cập nhật cho hệ thống của mình.',
-	'VERSION_UP_TO_DATE'			=> 'Phiên bản phpBB bạn đang sử dụng là phiên bản mới nhất. Bạn có thể tiếp tục kiểm tra sự hợp lệ của các tập tin trong hệ thống.',
-	'VERSION_UP_TO_DATE_ACP'		=> 'Phiên bản phpBB bạn đang sử dụng là phiên bản mới nhất. Bạn không cần phải tiến hành cập nhật bản cài đặt này.',
-	'VIEWING_FILE_CONTENTS'			=> 'Đang hiển thị nội dung tập tin',
-	'VIEWING_FILE_DIFF'				=> 'Đang hiển thị những thay đổi mã nguồn',
+	'VERSION_CHECK_EXPLAIN'			=> 'Tiến hành kiểm tra để chắc chắn rằng hệ thống của bạn đang chạy phiên bản phpBB mới nhất.',
+	'VERSION_NOT_UP_TO_DATE'		=> 'Phiên bản phpBB của bạn chưa phải là bản mới nhất. Hãy vui lòng tiếp tục tiến hành cập nhật.',
+	'VERSION_NOT_UP_TO_DATE_ACP'	=> 'Phiên bản phpBB của bạn chưa phải là bản mới nhất.<br /Bên dưới là liên kết đến thông báo phát hành cùng với những hướng dẫn tiến hành cập nhật.',
+	'VERSION_NOT_UP_TO_DATE_TITLE'	=> 'Phiên bản phpBB của bạn chưa phải là bản mới nhất.',
+	'VERSION_UP_TO_DATE'			=> 'Phiên bản phpBB của bạn là bản mới nhất. Mặc dù hiện tại không có bản cập nhật mới nào nhưng bạn có thể tiếp tục kiểm tra sự hợp lệ của các tập tin.',
+	'VERSION_UP_TO_DATE_ACP'		=> 'Phiên bản phpBB của bạn là bản mới nhất. Hiện tại không có bản cập nhật mới nào.',
+	'VIEWING_FILE_CONTENTS'			=> 'Hiển thị nội dung tập tin',
+	'VIEWING_FILE_DIFF'				=> 'Hiển thị những thay đổi mã nguồn',
 
 	'WRONG_INFO_FILE_FORMAT'	=> 'Sai định dạng tập tin thông tin',
 ));
@@ -607,30 +611,30 @@ $lang = array_merge($lang, array(
 	'REPORT_OFF_TOPIC'			=> 'Bài viết có nội dung không phù hợp.',
 	'REPORT_OTHER'				=> 'Bài viết đã báo cáo không phải vì các nguyên nhân đã liệt kê ở trên, bạn hãy tự nhập vào thông tin giới thiệu chi tiết.',
 
-	'SMILIES_ARROW'			=> 'Mũi tên',
-	'SMILIES_CONFUSED'		=> 'Lúng túng',
-	'SMILIES_COOL'			=> 'Phấn chấn',
-	'SMILIES_CRYING'		=> 'Khóc',
-	'SMILIES_EMARRASSED'	=> 'Ngượng',
-	'SMILIES_EVIL'			=> 'Điên cuồng',
+	'SMILIES_ARROW'			=> 'Nhìn nè',
+	'SMILIES_CONFUSED'		=> 'Nghe ai giờ',
+	'SMILIES_COOL'			=> 'Yêu đời quá',
+	'SMILIES_CRYING'		=> 'Hu hu',
+	'SMILIES_EMARRASSED'	=> 'Ngại quá',
+	'SMILIES_EVIL'			=> 'Điên rồi nha',
 	'SMILIES_EXCLAMATION'	=> 'Bó tay',
-	'SMILIES_GEEK'			=> 'Lập dị',
-	'SMILIES_IDEA'			=> 'Ý tưởng',
-	'SMILIES_LAUGHING'		=> 'Cười',
-	'SMILIES_MAD'			=> 'Mất trí',
-	'SMILIES_MR_GREEN'		=> 'Xanh lè',
-	'SMILIES_NEUTRAL'		=> 'Trung lập',
-	'SMILIES_QUESTION'		=> 'Thắc mắc',
+	'SMILIES_GEEK'			=> 'Đồ lập dị',
+	'SMILIES_IDEA'			=> 'Tui nghĩ vậy',
+	'SMILIES_LAUGHING'		=> 'Ha ha',
+	'SMILIES_MAD'			=> 'Đừng chọc à',
+	'SMILIES_MR_GREEN'		=> 'Gớm quá',
+	'SMILIES_NEUTRAL'		=> 'Miễn bàn',
+	'SMILIES_QUESTION'		=> 'Hiểu chết liền',
 	'SMILIES_RAZZ'			=> 'Chế giễu',
-	'SMILIES_ROLLING_EYES'	=> 'Liếc mắt',
-	'SMILIES_SAD'			=> 'Buồn',
-	'SMILIES_SHOCKED'		=> 'Sốc',
-	'SMILIES_SMILE'			=> 'Mỉm cười',
-	'SMILIES_SURPRISED'		=> 'Nhạc nhiên',
-	'SMILIES_TWISTED_EVIL'	=> 'Quỷ',
-	'SMILIES_UBER_GEEK'		=> 'Chuyên viên',
-	'SMILIES_VERY_HAPPY'	=> 'Rất vui',
-	'SMILIES_WINK'			=> 'Nháy mắt',
+	'SMILIES_ROLLING_EYES'	=> 'Cưng ơi',
+	'SMILIES_SAD'			=> 'Chán',
+	'SMILIES_SHOCKED'		=> 'Sốc quá',
+	'SMILIES_SMILE'			=> 'Hi hi',
+	'SMILIES_SURPRISED'		=> 'Má ơi',
+	'SMILIES_TWISTED_EVIL'	=> 'He he',
+	'SMILIES_UBER_GEEK'		=> 'Đồ gà',
+	'SMILIES_VERY_HAPPY'	=> 'Là lá la',
+	'SMILIES_WINK'			=> 'Hiểu chưa cưng',
 
 	'TOPICS_TOPIC_TITLE'	=> 'Chào mừng bạn đến với phpBB',
 ));

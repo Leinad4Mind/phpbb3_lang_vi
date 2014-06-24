@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version $Id: ucp.php 103 2009-05-07 18:00:00Z nedka $
+* @version $Id: ucp.php 105 2009-11-18 22:17:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -88,6 +88,7 @@ $lang = array_merge($lang, array(
 	'ADD_NEW_RULE'					=> 'Thêm qui định cá nhân mới',
 	'ADD_RULE'						=> 'Thêm qui định cá nhân',
 	'ADD_TO'						=> 'Thêm vào [Người nhận]',
+	'ADD_USERS_UCP_EXPLAIN'			=> 'Sử dụng công cụ này, bạn có thể thêm các thành viên mới vào nhóm. Bạn cũng có thể thiết lập nhóm này làm nhóm mặc định cho những thành viên vừa nhập. Hãy nhập mỗi tên thành viên trên một dòng mới.',
 	'ADMIN_EMAIL'					=> 'Nhận những thông tin qua email từ quản trị viên',
 	'AGREE'							=> 'Tôi đồng ý với những điều khoản trên',
 	'ALLOW_PM'						=> 'Nhận tin nhắn từ các thành viên khác',
@@ -101,7 +102,9 @@ $lang = array_merge($lang, array(
 	'AVATAR_FEATURES_DISABLED'		=> 'Chức năng sử dụng hình đại diện hiện tại đã bị vô hiệu.',
 	'AVATAR_GALLERY'				=> 'Thư viện hình đại diện',
 	'AVATAR_GENERAL_UPLOAD_ERROR'	=> 'Không thể tải lên hình đại diện đến “%s”.',
+	'AVATAR_NOT_ALLOWED'			=> 'Hình đại diện của bạn không được hiển thị vì chức năng này đã bị vô hiệu.',
 	'AVATAR_PAGE'					=> 'Trang',
+	'AVATAR_TYPE_NOT_ALLOWED'		=> 'Hình đại diện hiện tại của bạn không được hiển thị bởi vì loại hình này đã bị cấm sử dụng.',
 
 	'BACK_TO_DRAFTS'			=> 'Quay lại bản nháp đã lưu',
 	'BACK_TO_LOGIN'				=> 'Quay lại trang đăng nhập',
@@ -206,6 +209,7 @@ $lang = array_merge($lang, array(
 	'FOES_UPDATED'				=> 'Danh sách những kẻ thù của bạn đã được cập nhật thành công.',
 	'FOLDER_ADDED'				=> 'Thư mục đã được tạo thành công.',
 	'FOLDER_MESSAGE_STATUS'		=> '%1$d trong số %2$d tin nhắn được lưu trữ',
+	'FOLDER_NAME_EMPTY'			=> 'Bạn phải nhập tên cho thư mục này.',
 	'FOLDER_NAME_EXIST'			=> 'Thư mục mang tên “%s” đã có rồi.',
 	'FOLDER_OPTIONS'			=> 'Tùy chọn thư mục',
 	'FOLDER_RENAMED'			=> 'Thư mục đã được đổi tên thành công.',
@@ -281,12 +285,14 @@ $lang = array_merge($lang, array(
 	'NOTIFY_METHOD_EXPLAIN'			=> 'Chọn phương pháp gửi tin nhắn từ hệ thống.',
 	'NOTIFY_METHOD_IM'				=> 'Chỉ dùng tài khoản Jabber',
 	'NOTIFY_ON_PM'					=> 'Thông báo cho tôi khi có tin nhắn mới',
-	'NOT_ADDED_FRIENDS_ANONYMOUS'	=> 'Bạn không thể thêm các thành viên ẩn danh vào danh sách bạn thân của mình.',
-	'NOT_ADDED_FRIENDS_FOES'		=> 'Bạn không thể thêm những thành viên đang có trong danh sách kẻ thù vào danh sách bạn thân của mình.',
+	'NOT_ADDED_FRIENDS_ANONYMOUS'	=> 'Bạn không thể thêm thành viên ẩn vào danh sách bạn thân của mình.',
+	'NOT_ADDED_FRIENDS_BOTS'		=> 'Bạn không thể thêm máy tìm kiếm vào danh sách bạn thân của mình.',
+	'NOT_ADDED_FRIENDS_FOES'		=> 'Bạn không thể thêm thành viên đang có trong danh sách kẻ thù vào danh sách bạn thân của mình.',
 	'NOT_ADDED_FRIENDS_SELF'		=> 'Bạn không thể thêm chính mình vào danh sách bạn thân.',
 	'NOT_ADDED_FOES_MOD_ADMIN'		=> 'Bạn không thể thêm các quản trị viên và điều hành viên vào danh sách kẻ thù của mình.',
 	'NOT_ADDED_FOES_ANONYMOUS'		=> 'Bạn không thể thêm các thành viên ẩn danh vào danh sách kẻ thù của mình.',
-	'NOT_ADDED_FOES_FRIENDS'		=> 'Bạn không thể thêm những thành viên đang có trong danh sách bạn thân vào danh sách kẻ thù của mình.',
+	'NOT_ADDED_FOES_BOTS'			=> 'Bạn không thể thêm máy tìm kiếm vào danh sách kẻ thù của mình.',
+	'NOT_ADDED_FOES_FRIENDS'		=> 'Bạn không thể thêm thành viên đang có trong danh sách bạn thân vào danh sách kẻ thù của mình.',
 	'NOT_ADDED_FOES_SELF'			=> 'Bạn không thể thêm chính mình vào danh sách kẻ thù.',
 	'NOT_AGREE'						=> 'Tôi không đồng ý với những điều khoản trên',
 	'NOT_ENOUGH_SPACE_FOLDER'		=> 'Dung lượng thư mục bạn chọn <strong>%s</strong> dường như đã bị đầy. Yêu cầu vừa rồi bị từ chối.',
@@ -355,7 +361,7 @@ $lang = array_merge($lang, array(
 	'POST_EDIT_PM'				=> 'Sửa tin nhắn',
 	'POST_FORWARD_PM'			=> 'Chuyển tiếp tin nhắn',
 	'POST_NEW_PM'				=> 'Soạn tin nhắn',
-	'POST_PM_LOCKED'			=> 'Tin nhắn bị khóa',
+	'POST_PM_LOCKED'			=> 'Chức năng gửi tin nhắn đã bị khóa.',
 	'POST_PM_POST'				=> 'Trích dẫn bài viết',
 	'POST_QUOTE_PM'				=> 'Trích dẫn tin nhắn',
 	'POST_REPLY_PM'				=> 'Trả lời tin nhắn',
@@ -377,6 +383,8 @@ $lang = array_merge($lang, array(
 	'RENAME'							=> 'Đổi tên',
 	'RENAME_FOLDER'						=> 'Đổi tên thư mục',
 	'REPLIED_MESSAGE'					=> 'Tin nhắn đã trả lời',
+	'REPLY_TO_ALL'						=> 'Trả lời người gửi và tất cả người nhận cùng.',
+	'REPORT_PM'							=> 'Báo cáo tin nhắn này',
 	'RESIGN_SELECTED'					=> 'Không tham gia nữa vào nhóm đã chọn',
 	'RETURN_FOLDER'						=> '%1$sQuay về thư mục trước%2$s',
 	'RETURN_UCP'						=> '%sQuay về bảng thiết lập cá nhân%s',
@@ -426,7 +434,7 @@ $lang = array_merge($lang, array(
 	'UCP_MAIN_FRONT'		=> 'Trang trước',
 	'UCP_MAIN_SUBSCRIBED'	=> 'Bảng theo dõi',
 
-	'UCP_MSNM'				=> 'Tài khoản MSN',
+	'UCP_MSNM'				=> 'Tài khoản Windows Live/MSN',
 	'UCP_NO_ATTACHMENTS'	=> 'Bạn chưa tải lên bất kì tập tin nào.',
 
 	'UCP_PREFS'				=> 'Thiết lập hệ thống',

@@ -1,0 +1,60 @@
+<?php
+/**
+*
+* captcha_recaptcha [Vietnamese]
+*
+* @package language
+* @version $Id: captcha_recaptcha.php 3 2009-11-18 18:37:00Z nedka $
+* @copyright (c) 2009 nedka (Nguyen Dang Khoa)
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+*
+*/
+
+/**
+*
+* Vietnamese Language Pack for phpBB3
+*
+* phpBB iVN (phpBB in Vietnamese) Project
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
+*
+*/
+
+/**
+* DO NOT CHANGE
+*/
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
+if (empty($lang) || !is_array($lang))
+{
+	$lang = array();
+}
+
+// DEVELOPERS PLEASE NOTE
+//
+// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+//
+// Placeholders can now contain order information, e.g. instead of
+// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+// translators to re-order the output of data while ensuring it remains correct
+//
+// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+// equally where a string contains only two placeholders which are used to wrap text
+// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+
+$lang = array_merge($lang, array(
+	'CAPTCHA_RECAPTCHA'	=> 'reCaptcha',
+
+	'RECAPTCHA_EXPLAIN'			=> 'Nhằm ngăn cản các chương trình nhập liệu tự động, bạn hãy vui lòng nhập vào cả hai từ nhìn thấy trong hình vào dòng bên dưới.',
+	'RECAPTCHA_INCORRECT'		=> 'Mã xác nhận vừa nhập không chính xác.',
+	'RECAPTCHA_LANG'			=> 'en',// Nên để 'en' nếu dịch vụ reCaptcha chưa hỗ trợ tiếng Việt
+	'RECAPTCHA_NOT_AVAILABLE'	=> 'Để sử dụng được reCaptcha, bạn phải tạo tài khoản tại trang <a href="http://recaptcha.net">reCaptcha.net</a>.',
+	'RECAPTCHA_PRIVATE'			=> 'Khóa reCaptcha cá nhân',
+	'RECAPTCHA_PRIVATE_EXPLAIN'	=> 'Khóa sử dụng reCaptcha cá nhân mà bạn được cung cấp. Các khóa này được cung cấp tại trang <a href="http://recaptcha.net">reCaptcha.net</a>.',
+	'RECAPTCHA_PUBLIC'			=> 'Khóa reCaptcha công cộng',
+	'RECAPTCHA_PUBLIC_EXPLAIN'	=> 'Khóa sử dụng reCaptcha công cộng mà bạn được cung cấp. Các khóa này được cung cấp tại trang <a href="http://recaptcha.net">reCaptcha.net</a>.',
+));
+
+?>

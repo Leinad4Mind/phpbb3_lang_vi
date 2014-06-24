@@ -4,8 +4,8 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version $Id: memberlist.php 35 2008-11-01 23:06:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: memberlist.php 37 2009-11-18 22:11:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -90,7 +90,7 @@ $lang = array_merge($lang, array(
 	'IM_MESSAGE'			=> 'Nội dung tin nhắn nhanh',
 	'IM_MSNM'				=> 'Lưu ý bạn cần phải cài đặt chương trình <strong>Windows Messenger</strong> trên máy tính của mình để có thể sử dụng được chức năng này.',
 	'IM_MSNM_BROWSER'		=> 'Trình duyệt của bạn không hỗ trợ chương trình này.',
-	'IM_MSNM_CONNECT'		=> 'Tài khoản MSN của bạn chưa được kết nối.\nBạn phải kết nối đến dịch vụ của MSN để tiếp tục gửi tin nhắn.',		
+	'IM_MSNM_CONNECT'		=> 'Tài khoản MSN của bạn chưa được kết nối.\nBạn phải kết nối đến dịch vụ của MSN để tiếp tục gửi tin nhắn.',
 	'IM_NAME'				=> 'Tên của bạn',
 	'IM_NO_DATA'			=> 'Không có thông tin liên hệ phù hợp nào về thành viên này.',
 	'IM_NO_JABBER'			=> 'Xin lỗi, chức năng gửi tin nhắn trực tiếp đến các thành viên sử dụng Jabber không được hỗ trợ trên diễn đàn này. Bạn sẽ cần phải cài đặt ứng dụng <strong>Jabber</strong> trên máy tính của mình để liên hệ với người nhận trên.',
@@ -143,6 +143,10 @@ $lang = array_merge($lang, array(
 	'USER_ADMIN'			=> 'Quản trị viên',
 	'USER_BAN'				=> 'Bảng cấm',
 	'USER_FORUM'			=> 'Thống kê thành viên',
+	'USER_LAST_REMINDED'	=> array(
+		0	=> 'Hiện tại chưa bị nhắc nhở.',
+		1	=> 'Đã bị nhắc nhở %1$d lần.<br />» %2$s',
+	),
 	'USER_ONLINE'			=> 'Đang trực tuyến',
 	'USER_PRESENCE'			=> 'Hiện diện',
 

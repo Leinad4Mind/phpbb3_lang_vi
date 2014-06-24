@@ -4,7 +4,7 @@
 * acp_permissions [Vietnamese]
 *
 * @package language
-* @version $Id: permissions.php 49 2009-05-07 18:07:00Z nedka $
+* @version $Id: permissions.php 52 2009-11-18 22:58:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -89,6 +89,7 @@ $lang = array_merge($lang, array(
 	'ACP_ADMINISTRATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉ định những thiết lập cấp phép của người quản trị đối với thành viên và nhóm. Tất cả thành viên được cấp phép quản trị viên đều có thể truy cập vào bảng quản trị viên.',
 	'ACP_FORUM_MODERATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉ định thành viên hay nhóm sẽ trở thành điều hành viên của chuyên mục. Để chỉ định thành viên được phép truy cập chuyên mục, chỉ định thiết lập cấp phép của điều hành viên chính hay quản trị viên, hãy sử dụng trang cấp phép tương ứng.',
 	'ACP_FORUM_PERMISSIONS_EXPLAIN'				=> 'Với công cụ này, bạn có thể thay đổi những thành viên và nhóm nào có thể truy cập vào chuyên mục. Để chỉ định điều hành viên hay quản trị viên, hãy sử dụng trang cấp phép tương ứng.',
+	'ACP_FORUM_PERMISSIONS_COPY_EXPLAIN'		=> 'Với công cụ này, bạn có thể sao chép cấp phép chuyên mục từ một chuyên mục ban đầu sang một hay nhiều chuyên mục khác.',
 	'ACP_GLOBAL_MODERATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉ định thiết lập cấp phép của điều hành viên chính cho các thành viên hay nhóm. Những điều hành viên chính đều giống với các điều hành viên bình thường ngoại trừ việc họ có thể truy cập bất cứ chuyên mục nào.',
 	'ACP_GROUPS_FORUM_PERMISSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể chỉ định những cấp phép chuyên mục dành cho nhóm.',
 	'ACP_GROUPS_PERMISSIONS_EXPLAIN'			=> 'Với công cụ này, bạn có thể chỉ định những thiết lập cấp phép chung cho cấp phép thành viên - nhóm, cấp phép điều hành viên chính và quản trị viên. Thiết lập cấp phép thành viên như sử dụng hình đại diện, gửi tin nhắn… ; thiết lập cấp phép điều hành viên chính như duyệt bài viết, quản lí chủ đề, quản lí bảng cấm… và cuối cùng thiết lập cấp phép quản trị viên như thay đổi thiết lập cấp phép, tạo các thẻ BBCode tùy biến, quản lí chuyên mục… Những thiết lập cấp phép thành viên riêng lẻ ít khi cần thay đổi, phương pháp chúng tôi khuyên bạn nên dùng là đặt những thành viên vào chung trong nhóm và thiết lập cấp phép cho nhóm sẽ dễ dàng hơn.',
@@ -117,6 +118,12 @@ $lang = array_merge($lang, array(
 	'APPLY_PERMISSIONS'			=> 'Áp dụng thiết lập cấp phép',
 	'APPLY_PERMISSIONS_EXPLAIN'	=> 'Thiết lập cấp phép và nhiệm vụ được xác định cho mục này sẽ chỉ được áp dụng cho mục này và những mục bạn đã đánh dấu chọn.',
 	'AUTH_UPDATED'				=> 'Thiết lập cấp phép đã được cập nhật thành công.',
+
+	'COPY_PERMISSIONS_CONFIRM'				=> 'Bạn có chắc chắn muốn thực hiện thao tác này? Hãy cẩn thận vì thao tác này sẽ thay thế bất kì cấp phép nào đã gán trên các chuyên mục chọn sao chép đến.',
+	'COPY_PERMISSIONS_FORUM_FROM_EXPLAIN'	=> 'Chuyên mục nguồn mà bạn muốn sao chép cấp phép.',
+	'COPY_PERMISSIONS_FORUM_TO_EXPLAIN'		=> 'Các chuyên mục đích mà bạn muốn áp dụng cấp phép được sao chép.',
+	'COPY_PERMISSIONS_FROM'					=> 'Sao chép cấp phép từ',
+	'COPY_PERMISSIONS_TO'					=> 'Áp dụng cấp phép cho',
 
 	'CREATE_ROLE'				=> 'Tạo nhiệm vụ mới',
 	'CREATE_ROLE_FROM'			=> 'Sử dụng thiết lập từ…',
@@ -173,6 +180,7 @@ $lang = array_merge($lang, array(
 	'ROLE_FORUM_POLLS'			=> 'Truy cập bình thường + Bình chọn',
 	'ROLE_FORUM_READONLY'		=> 'Truy cập chỉ được phép xem',
 	'ROLE_FORUM_STANDARD'		=> 'Truy cập bình thường',
+	'ROLE_FORUM_NEW_MEMBER'		=> 'Thành viên mới đăng ký',
 	'ROLE_MOD_FULL'				=> 'Điều hành toàn quyền',
 	'ROLE_MOD_QUEUE'			=> 'Điều hành kiểm duyệt nội dung',
 	'ROLE_MOD_SIMPLE'			=> 'Điều hành đơn giản',
@@ -182,6 +190,7 @@ $lang = array_merge($lang, array(
 	'ROLE_USER_NOAVATAR'		=> 'Không sử dụng hình đại diện',
 	'ROLE_USER_NOPM'			=> 'Không sử dụng tin nhắn',
 	'ROLE_USER_STANDARD'		=> 'Chức năng bình thường',
+	'ROLE_USER_NEW_MEMBER'		=> 'Thành viên mới đăng ký',
 
 	'ROLE_DESCRIPTION_ADMIN_FORUM'			=> 'Có thể truy cập quản lí chuyên mục và thiết lập cấp phép chuyên mục.',
 	'ROLE_DESCRIPTION_ADMIN_FULL'			=> 'Có thể sử dụng tất cả chức năng của quản trị viên trong hệ thống.<br />Không khuyến cáo sử dụng.',
@@ -196,6 +205,7 @@ $lang = array_merge($lang, array(
 	'ROLE_DESCRIPTION_FORUM_POLLS'			=> 'Giống như truy cập bình thường nhưng có thể tạo bình chọn.',
 	'ROLE_DESCRIPTION_FORUM_READONLY'		=> 'Có thể xem chuyên mục nhưng không thể tạo chủ đề mới hay trả lời bài viết.',
 	'ROLE_DESCRIPTION_FORUM_STANDARD'		=> 'Có thể sử dụng hầu hết chức năng trong chuyên mục như đính kèm tập tin và xóa những chủ đề của mình nhưng không thể khóa chúng và không thể tạo bình chọn.',
+	'ROLE_DESCRIPTION_FORUM_NEW_MEMBER'		=> 'Nhiệm vụ dành riêng cho nhóm đặc biệt “Thành viên mới đăng ký”, bao gồm những thiết lập cấp phép <samp>CHƯA BAO GIỜ</samp> để khóa những chức năng chuyên mục đối với các thành viên nhóm này.',
 	'ROLE_DESCRIPTION_MOD_FULL'				=> 'Có thể sử dụng tất cả chức năng của điều hành viên bao gồm cả bảng cấm.',
 	'ROLE_DESCRIPTION_MOD_QUEUE'			=> 'Có thể sử dụng chức năng của điều hành viên để kiểm tra và sửa bài viết, ngoài ra không có gì khác.',
 	'ROLE_DESCRIPTION_MOD_SIMPLE'			=> 'Chỉ có thể sử dụng các thao tác chủ đề đơn giản. Không thể gửi cảnh cáo hay sử dụng các chức năng điều hành viên khác.',
@@ -205,6 +215,7 @@ $lang = array_merge($lang, array(
 	'ROLE_DESCRIPTION_USER_NOAVATAR'		=> 'Hạn chế chức năng thiết lập và không được phép sử dụng hình đại diện.',
 	'ROLE_DESCRIPTION_USER_NOPM'			=> 'Hạn chế chức năng thiết lập và không được phép sử dụng tin nhắn.',
 	'ROLE_DESCRIPTION_USER_STANDARD'		=> 'Có thể sử dụng hầu hết chức năng của thành viên nhưng không thể thay đổi tên thành viên hay bị giới hạn thời gian gửi bài giữa hai bài viết.',
+	'ROLE_DESCRIPTION_USER_NEW_MEMBER'		=> 'Nhiệm vụ dành riêng cho nhóm đặc biệt “Thành viên mới đăng ký”, bao gồm những thiết lập cấp phép <samp>CHƯA BAO GIỜ</samp> để khóa những chức năng thành viên đối với các thành viên nhóm này.',
 
 	'ROLE_DESCRIPTION_EXPLAIN'		=> 'Bạn có thể nhập vào một giới thiệu ngắn về nhiệm vụ này có vai trò như thế nào trong hệ thống. Nội dung bạn nhập vào đây cũng sẽ được hiển thị trong trang thiết lập cấp phép.',
 	'ROLE_DESCRIPTION_LONG'			=> 'Giới thiệu về nhiệm vụ mà bạn nhập quá dài. Hãy giới hạn nội dung giới thiệu này trong <strong>4000</strong> ký tự.',
@@ -250,7 +261,7 @@ $lang = array_merge($lang, array(
 	'TRACE_USER_GLOBAL_YES_TOTAL_NEVER'		=> 'Thiết lập cấp phép thành viên trong chuyên mục độc lập được đánh giá là <samp>CÓ</samp> thay thế cho giá trị hiện tại là <samp>CHƯA BAO GIỜ</samp>. %sTheo dõi cấp phép chung%s',
 	'TRACE_USER_GLOBAL_NEVER_TOTAL_KEPT'	=> 'Thiết lập cấp phép thành viên trong chuyên mục độc lập được đánh giá là <samp>CHƯA BAO GIỜ</samp> không ảnh hưởng đến thiết lập cấp phép riêng. %sTheo dõi cấp phép chung%s',
 
-	'TRACE_USER_FOUNDER'					=> 'Đây là thành viên sáng lập, vì thế những thiết lập quản trị viên được thiết lập mặc định là <samp>CÓ</samp>.',
+	'TRACE_USER_FOUNDER'					=> 'Đây là thành viên sáng lập, vì thế những thiết lập quản trị viên luôn được thiết lập là <samp>CÓ</samp>.',
 	'TRACE_USER_KEPT'						=> 'Thiết lập cấp phép của thành viên là <samp>KHÔNG</samp> vì thế tất cả giá trị cũ được giữ lại.',
 	'TRACE_USER_KEPT_LOCAL'					=> 'Thiết lập cấp phép của thành viên trong chuyên mục này là <samp>KHÔNG</samp> vì thế tất cả giá trị cũ được giữ lại.',
 	'TRACE_USER_NEVER_TOTAL_NEVER'			=> 'Thiết lập cấp phép của thành viên đã được chọn là <samp>CHƯA BAO GIỜ</samp> và tất cả giá trị đã được chọn là <samp>CHƯA BAO GIỜ</samp>, vì thế không có gì thay đổi.',

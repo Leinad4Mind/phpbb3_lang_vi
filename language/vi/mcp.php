@@ -4,8 +4,8 @@
 * mcp [Vietnamese]
 *
 * @package language
-* @version $Id: mcp.php 50 2008-11-13 07:19:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: mcp.php 52 2009-07-29 02:15:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -55,6 +55,7 @@ $lang = array_merge($lang, array(
 	'ALL_NOTES_DELETED'		=> 'Đã gỡ bỏ thành công tất cả ghi chú của thành viên/',	
 	'ALL_REPORTS'			=> 'Tất cả báo cáo',
 	'ALREADY_REPORTED'		=> 'Bài viết này đã được báo cáo rồi.',
+	'ALREADY_REPORTED_PM'	=> 'Tin nhắn này đã được báo cáo rồi.',
 	'ALREADY_WARNED'		=> 'Một cảnh cáo đã được đưa ra cho bài viết này.',
 	'APPROVE'				=> 'Chấp nhận',
 	'APPROVE_POST'			=> 'Chấp nhận bài viết',
@@ -67,17 +68,25 @@ $lang = array_merge($lang, array(
 	'CANNOT_WARN_SELF'			=> 'Bạn không thể cảnh cáo chính mình.',	
 	'CAN_LEAVE_BLANK'			=> 'Mục thông tin này không được phép để trống.',
 	'CHANGE_POSTER'				=> 'Thay đổi người gửi',
+	'CLOSE_PM_REPORT'			=> 'Kết thúc báo cáo tin nhắn',
+	'CLOSE_PM_REPORT_CONFIRM'	=> 'Bạn có chắc chắn muốn kết thúc báo cáo tin nhắn đã chọn?',
+	'CLOSE_PM_REPORTS'			=> 'Kết thúc các báo cáo tin nhắn',
+	'CLOSE_PM_REPORTS_CONFIRM'	=> 'Bạn có chắc chắn muốn kết thúc các báo cáo tin nhắn đã chọn?',
 	'CLOSE_REPORT'				=> 'Kết thúc báo cáo',
 	'CLOSE_REPORT_CONFIRM'		=> 'Bạn có chắc chắn muốn kết thúc báo cáo đã chọn?',
 	'CLOSE_REPORTS'				=> 'Kết thúc các báo cáo',
 	'CLOSE_REPORTS_CONFIRM'		=> 'Bạn có chắc chắn muốn kết thúc những báo cáo đã chọn?',
 
+	'DELETE_PM_REPORT'			=> 'Xóa báo cáo tin nhắn',
+	'DELETE_PM_REPORT_CONFIRM'	=> 'Bạn có chắc chắn muốn xóa báo cáo tin nhắn đã chọn?',
+	'DELETE_PM_REPORTS'			=> 'Xóa các báo cáo tin nhắn',
+	'DELETE_PM_REPORTS_CONFIRM'	=> 'Bạn có chắc chắn muốn các xóa báo cáo tin nhắn đã chọn?',
 	'DELETE_POSTS'				=> 'Xóa bài viết',
 	'DELETE_POSTS_CONFIRM'		=> 'Bạn có chắc chắn muốn xóa những bài viết này?',
 	'DELETE_POST_CONFIRM'		=> 'Bạn có chắc chắn muốn xóa bài viết này?',
-	'DELETE_REPORT'				=> 'Xóa báo cáo này',
+	'DELETE_REPORT'				=> 'Xóa báo cáo',
 	'DELETE_REPORT_CONFIRM'		=> 'Bạn có chắc chắn muốn xóa báo cáo đã chọn?',
-	'DELETE_REPORTS'			=> 'Xóa những báo cáo này',
+	'DELETE_REPORTS'			=> 'Xóa các báo cáo',
 	'DELETE_REPORTS_CONFIRM'	=> 'Bạn có chắc chắn muốn xóa những báo cáo đã chọn?',
 	'DELETE_SHADOW_TOPIC'		=> 'Xóa liên kết đến chủ đề trong chuyên mục cũ',
 	'DELETE_TOPICS'				=> 'Xóa những chủ đề đã chọn',
@@ -113,8 +122,9 @@ $lang = array_merge($lang, array(
 	'IP_INFO'				=> 'Thông tin về địa chỉ IP',
 	'IPS_POSTED_FROM'		=> 'Những địa chỉ IP mà thành viên này đã sử dụng để gửi bài',
 	
-	'LATEST_LOGS'				=> '5 thao tác được ghi nhận mới nhất',
+	'LATEST_LOGS'				=> '5 thao tác ghi nhận mới nhất',
 	'LATEST_REPORTED'			=> '5 báo cáo mới nhất',
+	'LATEST_REPORTED_PMS'		=> '5 báo cáo tin nhắn mới nhất',
 	'LATEST_UNAPPROVED'			=> '5 bài viết mới nhất đang chờ duyệt',
 	'LATEST_WARNING_TIME'		=> 'Cảnh cáo mới nhất được đưa ra',
 	'LATEST_WARNINGS'			=> '5 cảnh cáo mới nhất',
@@ -179,8 +189,15 @@ $lang = array_merge($lang, array(
 
 	'MCP_POST_REPORTS'				=> 'Những báo cáo được chỉ định cho bài viết này',
 
-	'MCP_REPORTS'					=> 'Bài viết đã báo cáo',
-	'MCP_REPORT_DETAILS'			=> 'Thông tin chi tiết về báo cáo',
+	'MCP_PM_REPORTS'				=> 'Tin nhắn được báo cáo',
+	'MCP_PM_REPORT_DETAILS'			=> 'Chi tiết báo cáo',
+	'MCP_PM_REPORTS_CLOSED'			=> 'Báo cáo đã kết thúc',
+	'MCP_PM_REPORTS_CLOSED_EXPLAIN'	=> 'Đây là danh sách của tất cả các báo cáo về tin nhắn đã được giải quyết trước đây.',
+	'MCP_PM_REPORTS_OPEN'			=> 'Báo cáo tin nhắn chờ xử lí',
+	'MCP_PM_REPORTS_OPEN_EXPLAIN'	=> 'Đây là danh sách của tất cả các báo cáo về tin nhắn vẫn chưa giải quyết xong.',
+
+	'MCP_REPORTS'					=> 'Bài viết được báo cáo',
+	'MCP_REPORT_DETAILS'			=> 'Chi tiết báo cáo',
 	'MCP_REPORTS_CLOSED'			=> 'Báo cáo đã kết thúc',
 	'MCP_REPORTS_CLOSED_EXPLAIN'	=> 'Đây là danh sách của tất cả các báo cáo về bài viết đã được giải quyết trước đây.',
 	'MCP_REPORTS_OPEN'				=> 'Báo cáo chờ xử lí',
@@ -238,9 +255,16 @@ $lang = array_merge($lang, array(
 	'NO_TOPIC_SELECTED'				=> 'Bạn phải chọn ít nhất một chủ đề để thực hiện yêu cầu này.',
 	'NO_TOPICS_QUEUE'				=> 'Không có chủ đề nào chờ được duyệt.',
 
-	'ONLY_TOPIC'		=> 'Chỉ trong chủ đề “%s”',	
-	'OTHER_USERS'		=> 'Những thành viên khác gửi bài từ địa chỉ IP này',
+	'ONLY_TOPIC'	=> 'Chỉ trong chủ đề “%s”',	
+	'OTHER_USERS'	=> 'Những thành viên khác gửi bài từ địa chỉ IP này',
 
+	'PM_REPORT_CLOSED_SUCCESS'	=> 'Báo cáo tin nhắn vừa chọn đã được kết thúc thành công.',
+	'PM_REPORT_DELETED_SUCCESS'	=> 'Báo cáo tin nhắn vừa chọn đã được kết thúc thành công.',
+	'PM_REPORTED_SUCCESS'		=> 'Tin nhắn vừa chọn đã được báo cáo thành công.',
+	'PM_REPORT_TOTAL'			=> 'Chỉ có <strong>1</strong> báo cáo để xem lại.',
+	'PM_REPORTS_TOTAL'			=> 'Có tất cả <strong>%d</strong> báo cáo để xem lại.',
+	'PM_REPORTS_ZERO_TOTAL'		=> 'Không có báo cáo nào để xem lại.',
+	'PM_REPORT_DETAILS'			=> 'Chi tiết báo cáo tin nhắn',
 	'POSTER'					=> 'Người gửi',
 	'POSTS_APPROVED_SUCCESS'	=> 'Những bài viết vừa chọn đã được duyệt thành công.',
 	'POSTS_DELETED_SUCCESS'		=> 'Những bài viết vừa chọn đã được xóa thành công.',
@@ -264,16 +288,16 @@ $lang = array_merge($lang, array(
 	'REPORTED'					=> 'Đã báo cáo',
 	'REPORTED_BY'				=> 'Được báo cáo bởi',
 	'REPORTED_ON_DATE'			=> 'vào ngày',
-	'REPORTS_CLOSED_SUCCESS'	=> 'Những báo cáo vừa chọn đã được kết thúc thành công.',
-	'REPORTS_DELETED_SUCCESS'	=> 'Những báo cáo vừa chọn đã được xóa thành công.',
+	'REPORTS_CLOSED_SUCCESS'	=> 'Các báo cáo vừa chọn đã được kết thúc thành công.',
+	'REPORTS_DELETED_SUCCESS'	=> 'Các báo cáo vừa chọn đã được xóa thành công.',
 	'REPORTS_TOTAL'				=> 'Có tất cả <strong>%d</strong> báo cáo để xem lại.',
 	'REPORTS_ZERO_TOTAL'		=> 'Không có báo cáo nào để xem lại.',
 	'REPORT_CLOSED'				=> 'Báo cáo này đã được kết thúc.',
 	'REPORT_CLOSED_SUCCESS'		=> 'Báo cáo vừa chọn đã được kết thúc thành công.',
 	'REPORT_DELETED_SUCCESS'	=> 'Báo cáo vừa chọn đã được xóa thành công.',
 	'REPORT_DETAILS'			=> 'Chi tiết báo cáo',
-	'REPORT_MESSAGE'			=> 'Báo cáo bài viết này',
-	'REPORT_MESSAGE_EXPLAIN'	=> 'Sử dụng công cụ này để báo cáo bài viết đã chọn. Bạn chỉ nên tiến hành báo cáo nếu bài viết thực sự vi phạm nội qui chuyên mục.',
+	'REPORT_MESSAGE'			=> 'Báo cáo bài viết/tin nhắn này',
+	'REPORT_MESSAGE_EXPLAIN'	=> 'Sử dụng công cụ này để báo cáo bài viết hay tin nhắn đã chọn. Bạn chỉ nên tiến hành báo cáo nếu bài viết thực sự vi phạm nội qui chuyên mục. <strong>Không có điều hành viên nào xem được nội dung báo cáo của các tin nhắn.</strong>',
 	'REPORT_NOTIFY'				=> 'Thông báo cho tôi',
 	'REPORT_NOTIFY_EXPLAIN'		=> 'Bạn sẽ được thông báo khi báo cáo của mình được giải quyết.',
 	'REPORT_POST_EXPLAIN'		=> 'Sử dụng bảng điều khiển này để báo cáo bài viết đã chọn đến các điều hành viên của chuyên mục này và quản trị viên. Bạn chỉ nên tiến hành báo cáo nếu bài viết thực sự vi phạm nội qui chuyên mục.',
@@ -284,6 +308,7 @@ $lang = array_merge($lang, array(
 	'RETURN_MESSAGE'			=> '%sQuay về nội dung vừa xem%s',
 	'RETURN_NEW_FORUM'			=> '%sChuyển đến chuyên mục mới%s',
 	'RETURN_NEW_TOPIC'			=> '%sChuyển đến chủ đề mới%s',
+	'RETURN_PM'					=> '%sQuay về tin nhắn vừa xem%s',
 	'RETURN_POST'				=> '%sQuay về bài viết vừa xem%s',
 	'RETURN_QUEUE'				=> '%sQuay về hàng vừa xem%s',
 	'RETURN_REPORTS'			=> '%sQuay về báo cáo vừa xem%s',
@@ -355,6 +380,7 @@ $lang = array_merge($lang, array(
 	'USER_WARNING_ADDED'			=> 'Đã cảnh cáo thành viên thành công.',
 
 	'VIEW_DETAILS'	=> 'Xem chi tiết',
+	'VIEW_PM'		=> 'Xem tin nhắn',
 	'VIEW_POST'		=> 'Xem bài viết',
 
 	'WARNED_USERS'			=> 'Những thành viên đã cảnh cáo',
@@ -374,10 +400,10 @@ $lang = array_merge($lang, array(
 			'OTHER'		=> 'Nguyên nhân khác',
 		),
 		'DESCRIPTION' => array(
-			'WAREZ'		=> 'Bài viết có chứa các liên kết liên quan đến những phần mềm sao chép trái pháp luật.',
-			'SPAM'		=> 'Bài viết chỉ nhằm mục đích quảng cáo cho một website hay các sản phẩm khác.',
-			'OFF_TOPIC'	=> 'Bài viết có nội dung không phù hợp.',
-			'OTHER'		=> 'Bài viết đã báo cáo không phải vì các nguyên nhân đã liệt kê ở trên, bạn hãy tự nhập vào thông tin giới thiệu chi tiết.',
+			'WAREZ'		=> 'Nội dung có chứa các liên kết liên quan đến những phần mềm sao chép trái phép.',
+			'SPAM'		=> 'Nội dung chỉ nhằm mục đích quảng cáo cho một website hay các sản phẩm khác.',
+			'OFF_TOPIC'	=> 'Nội dung không phù hợp.',
+			'OTHER'		=> 'Nội dung được báo cáo không phải vì các nguyên nhân đã liệt kê ở trên, bạn hãy tự nhập vào mô tả chi tiết.',
 		)
 	),
 ));

@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php 47 2009-05-07 17:56:00Z nedka $
+* @version $Id: posting.php 48 2009-07-25 19:29:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -176,6 +176,8 @@ $lang = array_merge($lang, array(
 	'POST_ICON'					=> 'Biểu tượng bài viết',
 	'POST_NORMAL'				=> 'Bài viết bình thường',
 	'POST_REVIEW'				=> 'Xem lại bài viết',
+	'POST_REVIEW_EDIT'			=> 'Xem lại bài viết được sửa',
+	'POST_REVIEW_EDIT_EXPLAIN'	=> 'Nội dung bài viết này đã được thay đổi bởi một thành viên khác trong khi bạn đang chỉnh sửa. Bạn nên xem lại nội dung của phiên bản hiện tại và điều chỉnh những thay đổi của mình.',
 	'POST_REVIEW_EXPLAIN'		=> 'Có ít nhất một bài viết mới được gửi trong chủ đề này. Có thể bạn muốn xem lại nội dung của nó trước khi tiếp tục gửi bài trả lời.',
 	'POST_STORED'				=> 'Bài viết này đã được gửi thành công.',
 	'POST_STORED_MOD'			=> 'Bài viết này đã được gửi thành công nhưng vẫn cần phải được duyệt lại bởi một điều hành viên trước khi mọi người có thể xem được.',
@@ -193,10 +195,11 @@ $lang = array_merge($lang, array(
 	'SMILIES_ARE_ON'			=> 'Biểu tượng vui đang <em>BẬT</em>',
 	'STICKY_ANNOUNCE_TIME_LIMIT'=> 'Thời gian hiển thị chủ đề dưới dạng chú ý/thông báo',
 	'STICK_TOPIC_FOR'			=> 'Đánh dấu quan trọng cho chủ đề trong',
-	'STICK_TOPIC_FOR_EXPLAIN'	=> 'Nhập số <strong>0</strong> hay để trống cho chú ý/thông báo không giới hạn thời gian.',
+	'STICK_TOPIC_FOR_EXPLAIN'	=> 'Nhập số <strong>0</strong> hay để trống cho chú ý/thông báo không giới hạn thời gian. Lưu ý rằng con số này có liên quan đến ngày tháng gửi bài.',
 	'STYLES_TIP'				=> 'Chú ý: Bạn có thể chọn nhanh đoạn văn bản rồi bấm vào những nút bên trên.',
 
 	'TOO_FEW_CHARS'				=> 'Nội dung bài viết của bạn quá ngắn.',
+	'TOO_FEW_CHARS_LIMIT'		=> 'Nội dung bài viết của bạn chỉ có <strong>%1$d</strong> ký tự. Số ký tự tối thiểu yêu cầu trong một bài viết là <strong>%2$d</strong>.',
 	'TOO_FEW_POLL_OPTIONS'		=> 'Bạn phải tạo ít nhất hai đối tượng bình chọn.',
 	'TOO_MANY_ATTACHMENTS'		=> 'Không thể gửi thêm tập tin đính kèm nào khác, số lượng tập tin tối đa cho phép đính kèm là <strong>%d</strong>.',
 	'TOO_MANY_CHARS'			=> 'Nội dung bài viết của bạn quá dài.',

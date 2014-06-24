@@ -4,8 +4,8 @@
 * help_faq [Vietnamese]
 *
 * @package language
-* @version $Id: help_faq.php 60 2008-12-13 11:15:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: help_faq.php 61 2009-07-25 18:58:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -211,6 +211,11 @@ $help = array(
 	array(
 		0 => 'Biểu tượng bài viết là gì?',
 		1 => 'Biểu tượng bài viết là những hình ảnh mà người gửi bài đã chọn đi kèm với mỗi bài viết để nhấn mạnh nội dung của những bài viết này. Việc bạn có thể sử dụng biểu tượng bài viết khi gửi bài hay không tùy thuộc vào thiết lập cấp phép của người quản trị dành cho bạn.'
+	),
+	// This block will switch the FAQ-Questions to the second template column
+	array(
+		0 => '--',
+		1 => '--'
 	),
 	array(
 		0 => '--',

@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php 135 2009-05-07 17:49:00Z nedka $
+* @version $Id: common.php 137 2009-07-29 02:12:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -188,6 +188,8 @@ $lang = array_merge($lang, array(
 
 	'FAQ'					=> 'Trợ giúp',
 	'FAQ_EXPLAIN'			=> 'Những câu hỏi thường gặp',
+	'FEED'					=> 'Tin nhanh',
+	'FEED_NEWS'				=> 'Tin tức',
 	'FILENAME'				=> 'Tên tập tin',
 	'FILESIZE'				=> 'Dung lượng tập tin',
 	'FILEDATE'				=> 'Ngày cập nhật tập tin',
@@ -259,6 +261,7 @@ $lang = array_merge($lang, array(
 	'G_REGISTERED'				=> 'Thành viên',
 	'G_REGISTERED_COPPA'		=> 'Thành viên theo điều khoản COPPA',
 	'G_GLOBAL_MODERATORS'		=> 'Điều hành viên chính',
+	'G_NEWLY_REGISTERED'		=> 'Thành viên mới đăng ký',
 
 	'HIDDEN_USERS_ONLINE'			=> '<strong>%d</strong> thành viên ẩn trực tuyến',
 	'HIDDEN_USERS_TOTAL'			=> '<strong>%d</strong> thành viên ẩn',
@@ -377,6 +380,8 @@ $lang = array_merge($lang, array(
 	'NO_EMAIL_MESSAGE'			=> 'Bạn chưa nhập nội dung email.',
 	'NO_EMAIL_RESPONSE_CODE'	=> 'Không nhận được phản hồi từ máy chủ gửi Mail.',
 	'NO_EMAIL_SUBJECT'			=> 'Bạn chưa nhập tiêu đề cho email.',	
+	'NO_FEED_ENABLED'			=> 'Nguồn tin nhanh đang bị vô hiệu trên diễn đàn này.',
+	'NO_FEED'					=> 'Nguồn tin nhanh bạn yêu cầu hiện không có tin.',
 	'NO_FORUM'					=> 'Chuyên mục vừa chọn không tồn tại.',
 	'NO_FORUMS'					=> 'Diễn đàn này không có chuyên mục nào.',
 	'NO_GROUP'					=> 'Nhóm bạn vừa yêu cầu không tồn tại.',
@@ -526,11 +531,12 @@ $lang = array_merge($lang, array(
 	'SEARCH_SELF'				=> 'Bài viết của bạn',
 	'SEARCH_TOPIC'				=> 'Tìm kiếm trong chủ đề này…',
 	'SEARCH_UNANSWERED'			=> 'Bài viết chưa được trả lời',
+	'SEARCH_UNREAD'				=> 'Bài viết chưa xem',
 	'SECONDS'					=> 'Giây',
 	'SELECT'					=> 'Chọn',
 	'SELECT_ALL_CODE'			=> 'Chọn tất cả',
-	'SELECT_DESTINATION_FORUM'	=> 'Hãy chọn một chuyên mục để tiếp tục',
-	'SELECT_FORUM'				=> 'Chọn một chuyên mục',
+	'SELECT_DESTINATION_FORUM'	=> 'Chọn chuyên mục đích',
+	'SELECT_FORUM'				=> 'Chọn chuyên mục',
 	'SEND_EMAIL'				=> 'Gửi email', // Used for submit buttons
 	'SEND_EMAIL_USER'			=> 'Gửi email cho', // Used as: {L_SEND_EMAIL_USER} {USERNAME} -> E-mail UserX
 	'SEND_PRIVATE_MESSAGE'		=> 'Gửi tin nhắn',
@@ -544,6 +550,7 @@ $lang = array_merge($lang, array(
 	'SORT_JOINED'				=> 'Ngày tham gia',
 	'SORT_LOCATION'				=> 'Nơi đến',
 	'SORT_RANK'					=> 'Xếp hạng',
+	'SORT_POSTS'				=> 'Số bài viết',
 	'SORT_TOPIC_TITLE'			=> 'Tiêu đề bài viết',
 	'SORT_USERNAME'				=> 'Tên thành viên',
 	'SPLIT_TOPIC'				=> 'Chia nhỏ chủ đề',
@@ -606,7 +613,6 @@ $lang = array_merge($lang, array(
 	'TOO_SHORT_YIM'					=> 'Tên tài khoản Yahoo bạn vừa nhập quá ngắn.',
 
 	'TOPIC'					=> 'Chủ đề',
-	'TOPICS'				=> 'Chủ đề',
 	'TOPIC_ICON'			=> 'Biểu tượng bài viết',
 	'TOPIC_LOCKED'			=> 'Chủ đề này đã bị khóa, bạn không thể sửa những bài viết của mình hay trả lời bài viết thêm nữa.',
 	'TOPIC_LOCKED_SHORT'	=> 'Chủ đề đã khóa',
@@ -614,6 +620,8 @@ $lang = array_merge($lang, array(
 	'TOPIC_REVIEW'			=> 'Xem lại chủ đề',
 	'TOPIC_TITLE'			=> 'Tiêu đề',
 	'TOPIC_UNAPPROVED'		=> 'Chủ đề này chưa được duyệt',
+	'TOPICS'				=> 'Chủ đề',
+	'TOPICS_UNAPPROVED'		=> 'Có ít nhất một chủ đề trong chuyên mục này chưa được duyệt.',
 	'TOTAL_ATTACHMENTS'		=> 'Tập tin đính kèm',
 	'TOTAL_LOG'				=> '<strong>1</strong> ghi nhận',
 	'TOTAL_LOGS'			=> '<strong>%d</strong> ghi nhận',
@@ -652,6 +660,8 @@ $lang = array_merge($lang, array(
 	'USER_POSTS'				=> '%d bài viết',
 	'USERS'						=> 'Người',
 	'USE_PERMISSIONS'			=> 'Kiểm tra cấp phép cho thành viên',
+
+	'USER_NEW_PERMISSION_DISALLOWED'	=> 'Xin lỗi, bạn không được phép sử dụng chức năng này. Bạn có thể chỉ vừa mới đăng ký làm thành viên và cần tham gia nhiều hơn để có thể sử dụng chức năng này.',
 
 	'VARIANT_DATE_SEPARATOR'	=> ' / ', // Used in date format dropdown, eg: "Today, 13:37 / 01 Jan 2007, 13:37" ... to join a relative date with calendar date
 	'VIEWED'					=> 'Đã xem',

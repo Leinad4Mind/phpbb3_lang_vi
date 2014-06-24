@@ -4,7 +4,7 @@
 * help_bbcode [Vietnamese]
 *
 * @package language
-* @version $Id: help_bbcode.php 34 2009-05-07 17:50:00Z nedka $
+* @version $Id: help_bbcode.php 35 2009-07-25 18:57:00Z nedka $
 * @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -87,6 +87,11 @@ $help = array(
 	array(
 		0 => 'Tạo danh sách liệt kê theo thứ tự',
 		1 => 'Loại danh sách liệt kê thứ hai - danh sách liệt kê có thứ tự - sẽ giúp bạn tự động đánh số thứ tự trước mỗi mục liệt kê trong danh sách. Để tạo danh sách loại này bạn dùng cặp thẻ <strong>[list=1][/list]</strong> để tạo ra một danh sách liệt kê theo thứ tự số đếm hoặc lựa chọn <strong>[list=a][/list]</strong> để tạo ra một danh sách liệt kê theo thứ tự chữ cái ABC. Giống như khi tạo danh sách liệt kê không theo thứ tự, mỗi mục liệt kê trong danh sách này đều phải có thẻ con <strong>[*]</strong> đứng trước. Ví dụ:<br /><br /><strong>[list=1]</strong><br /><strong>[*]</strong>Đi đến cửa hàng<br /><strong>[*]</strong>Mua một chiếc máy vi tính mới<br /><strong>[*]</strong>Nguyền rủa chiếc máy tính khi nó bị hư<br /><strong>[/list]</strong><br /><br />sẽ cho ra kết quả như sau:<ol style="list-style-type: decimal;"><li>Đi đến cửa hàng</li><li>Mua một chiếc máy vi tính mới</li><li>Nguyền rủa chiếc máy tính khi nó bị hư</li></ol>Trong khi muốn tạo danh sách liệt kê theo thứ tự chữ cái ABC bạn phải làm như sau:<br /><br /><strong>[list=a]</strong><br /><strong>[*]</strong>Câu trả lời hợp lí thứ nhất<br /><strong>[*]</strong>Câu trả lời hợp lí thứ hai<br /><strong>[*]</strong>Câu trả lời hợp lí thứ ba<br /><strong>[/list]</strong><br /><br />sẽ thành<ol style="list-style-type: lower-alpha;"><li>Câu trả lời hợp lí thứ nhất</li><li>Câu trả lời hợp lí thứ hai</li><li>Câu trả lời hợp lí thứ ba</li></ol>'
+	),
+	// This block will switch the FAQ-Questions to the second template column
+	array(
+		0 => '--',
+		1 => '--'
 	),
 	array(
 		0 => '--',

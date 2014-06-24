@@ -4,8 +4,8 @@
 * acp_ban [Vietnamese]
 *
 * @package language
-* @version $Id: ban.php 20 2008-12-13 11:17:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: ban.php 21 2009-07-25 19:45:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -57,6 +57,8 @@ $lang = array_merge($lang, array(
 	'BAN_REASON'			=> 'Nguyên nhân bị cấm',
 	'BAN_GIVE_REASON'		=> 'Nguyên nhân giải thích cho thành viên khi bị cấm',
 	'BAN_UPDATE_SUCCESSFUL'	=> 'Danh sách cấm đã được cập nhật thành công.',
+	'BANNED_UNTIL_DATE'		=> 'đến ngày %s', // Example: "until Mon 13.Jul.2009, 14:44"
+	'BANNED_UNTIL_DURATION'	=> '%1$s (đến ngày %2$s)', // Example: "7 days (until Tue 14.Jul.2009, 14:44)"
 
 	'EMAIL_BAN'					=> 'Cấm một hay nhiều địa chỉ email',
 	'EMAIL_BAN_EXCLUDE_EXPLAIN'	=> 'Bật tùy chọn này để loại trừ các địa chỉ email đã nhập vào khỏi các lệnh cấm hiện tại.',
@@ -75,8 +77,8 @@ $lang = array_merge($lang, array(
 
 	'LENGTH_BAN_INVALID'	=> 'Ngày tháng thi hành lệnh cấm phải sử dụng định dạng <kbd>YYYY-MM-DD</kbd>.',
 
-	'PERMANENT'		=> 'Vĩnh viễn',
-	
+	'PERMANENT'	=> 'Vĩnh viễn',
+
 	'UNTIL'						=> 'Cho đến ngày',
 	'USER_BAN'					=> 'Cấm một hay nhiều tên thành viên',
 	'USER_BAN_EXCLUDE_EXPLAIN'	=> 'Bật tùy chọn này để loại trừ các thành viên đã nhập vào khỏi các lệnh cấm hiện tại.',

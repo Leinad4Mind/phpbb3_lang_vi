@@ -4,8 +4,8 @@
 * acp_styles [Vietnamese]
 *
 * @package language
-* @version $Id: styles.php 53 2008-12-13 11:15:00Z nedka $
-* @copyright (c) 2006, 2008 nedka (Nguyen Dang Khoa)
+* @version $Id: styles.php 54 2009-11-18 23:08:00Z nedka $
+* @copyright (c) 2006 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -329,9 +329,9 @@ $lang = array_merge($lang, array(
 	'REPLACE_TEMPLATE_EXPLAIN'	=> 'Khuôn mẫu này sẽ thay thế cho khuôn mẫu mà bạn đang xóa trong bất kì giao diện nào sử dụng đến.',
 	'REPLACE_THEME'				=> 'Thay thế kiểu dáng bằng',
 	'REPLACE_THEME_EXPLAIN'		=> 'Kiểu dáng này sẽ thay thế cho kiểu dáng mà bạn đang xóa trong bất kì giao diện nào sử dụng đến.',
-	'REQUIRES_IMAGESET'			=> 'Giao diện này yêu cầu gói hình giao diện <strong>%s</strong> phải được cài đặt.',
-	'REQUIRES_TEMPLATE'			=> 'Giao diện này yêu cầu khuôn mẫu <strong>%s</strong> phải được cài đặt.',
-	'REQUIRES_THEME'			=> 'Giao diện này yêu cầu kiểu dáng <strong>%s</strong> phải được cài đặt.',
+	'REQUIRES_IMAGESET'			=> 'Giao diện này yêu cầu gói hình giao diện “%s” phải được cài đặt.',
+	'REQUIRES_TEMPLATE'			=> 'Giao diện này yêu cầu khuôn mẫu “%s” phải được cài đặt.',
+	'REQUIRES_THEME'			=> 'Giao diện này yêu cầu kiểu dáng “%s” phải được cài đặt.',
 
 	'SELECT_IMAGE'				=> 'Chọn hình ảnh',
 	'SELECT_TEMPLATE'			=> 'Chọn tập tin khuôn mẫu',
@@ -395,10 +395,11 @@ $lang = array_merge($lang, array(
 	'TEMPLATE_EXPORTED'						=> 'Khuôn mẫu đã được xuất thành công và được lưu trữ trong %s.',
 	'TEMPLATE_FILE'							=> 'Tập tin khuôn mẫu',
 	'TEMPLATE_FILE_UPDATED'					=> 'Tập tin khuôn mẫu đã được tải lên thành công.',
-	'TEMPLATE_INHERITS'						=> 'Khuôn mẫu này được kế thừa từ %s, vì thế không thể chọn thiết lập lưu trữ khác thay cho bộ khuôn mẫu đã được chọn của nó.',
+	'TEMPLATE_INHERITS'						=> 'Khuôn mẫu này được kế thừa từ “%s”, vì thế không thể chọn thiết lập lưu trữ khác thay cho bộ khuôn mẫu đã được chọn của nó.',
 	'TEMPLATE_LOCATION'						=> 'Lưu trữ khuôn mẫu trong',
 	'TEMPLATE_LOCATION_EXPLAIN'				=> 'Những hình ảnh luôn được lưu trữ trong hệ thống tập tin giao diện.',
 	'TEMPLATE_NAME'							=> 'Tên khuôn mẫu',
+	'TEMPLATE_FILE_NOT_WRITABLE'			=> 'Không thể ghi tập tin khuôn mẫu “%s”. Hãy vui lòng kiểm tra lại thiết lập cấp phép cho thư mục và các tập tin tương ứng.',
 	'TEMPLATE_REFRESHED'					=> 'Khuôn mẫu đã được nạp lại thành công.',
 
 	'THEME_ADDED'				=> 'Kiểu dáng mới đã được thêm vào hệ thống tập tin giao diện.',
