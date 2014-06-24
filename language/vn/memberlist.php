@@ -4,7 +4,7 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version $Id: memberlist.php,v 1.12 2006/06/28 12:09:00 nedka Exp $
+* @version $Id: memberlist.php,v 1.15 2006/08/15 13:57:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -65,7 +65,7 @@ $lang = array_merge($lang, array(
 	'EMPTY_SUBJECT_EMAIL'	=> 'Bạn phải nhập tiêu đề cho Email.',
 	'EQUAL_TO'				=> 'Ngang bằng',
 
-	'FIND_USERNAME_EXPLAIN'	=> 'Công cụ này sẽ giúp bạn tìm kiếm những thành viên xác định trong hệ thống. Bạn không cần phải điền đầy đủ thông tin trong tất cả các mục bên dưới. Sử dụng dấu đại diện <strong>*</strong> để tìm kiếm những thông tin giống nhau theo một số ký tự. Khi nhập thông tin về ngày tháng bạn cần sử dụng định dạng <strong>yyyy-mm-dd</strong>. Ví dụ: <i>2002-01-01</i>. Đánh dấu chọn trong phần đánh dấu để chọn một hay nhiều tên thành viên. Những tên thành viên khác nhau có thể được chọn tuỳ thuộc vào form được liệt kê. Bạn có thể lựa chọn đánh dấu những thành viên mình cần tìm và bấm vào nút chọn đánh dấu.',
+	'FIND_USERNAME_EXPLAIN'	=> 'Công cụ này sẽ giúp bạn tìm kiếm những thành viên xác định trong hệ thống. Bạn không cần phải điền đầy đủ thông tin trong tất cả các mục bên dưới. Sử dụng dấu đại diện <strong>*</strong> để tìm kiếm những thông tin giống nhau theo một số ký tự. Khi nhập thông tin về ngày tháng bạn cần sử dụng định dạng <strong>yyyy-mm-dd</strong>. Ví dụ: <strong>2002-01-01</strong>. Đánh dấu chọn trong phần đánh dấu để chọn một hay nhiều tên thành viên. Những tên thành viên khác nhau có thể được chọn tuỳ thuộc vào bảng được liệt kê. Bấm vào nút <strong>Chọn đánh dấu</strong> để quay về bảng điều khiển trước.',
 	'FLOOD_EMAIL_LIMIT'		=> 'Bạn không thể gửi Email vào thời điểm này. Hãy thử lại sau vài phút nữa!',
 
 	'GROUP_LEADER'			=> 'Người điều hành nhóm',
@@ -76,14 +76,14 @@ $lang = array_merge($lang, array(
 	'IM_ADD_CONTACT'		=> 'Thêm thành viên',
 	'IM_AIM'				=> 'Lưu ý bạn cần phải cài đặt chương trình <strong>AOL Instant Messenger</strong> trên máy tính của mình để có thể sử dụng được chức năng này.',
 	'IM_AIM_EXPRESS'		=> 'Chương trình <strong>AIM Express</strong>',
-	'IM_DOWNLOAD_APP'		=> 'Download ứng dụng',
+	'IM_DOWNLOAD_APP'		=> 'Tải về ứng dụng',
 	'IM_ICQ'				=> 'Lưu ý rằng các thành viên có thể chọn không nhận những tin nhắn nhanh mà họ không mong muốn.',
 	'IM_JABBER'				=> 'Lưu ý rằng các thành viên có thể chọn không nhận những tin nhắn nhanh mà họ không mong muốn.',
 	'IM_JABBER_SUBJECT'		=> 'Đây là tin nhắn thông báo tự động, xin đừng trả lời! Tin nhắn từ thành viên <strong>%1$s</strong> trong %2$s',
 	'IM_MESSAGE'			=> 'Nội dung tin nhắn của bạn',
 	'IM_MSNM'				=> 'Lưu ý bạn cần phải cài đặt chương trình <strong>Windows Messenger</strong> trên máy tính của mình để có thể sử dụng được chức năng này.',
 	'IM_NAME'				=> 'Tên của bạn',
-	'IM_NO_JABBER'			=> 'Xin lỗi, chức năng gửi tin nhắn trực tiếp đến các thành viên sử dụng Jabber không được hỗ trợ trên server này. Bạn sẽ cần phải cài ứng dụng <strong>Jabber</strong> bản client trên máy tính của mình để liên hệ với người nhận trên.',
+	'IM_NO_JABBER'			=> 'Xin lỗi, chức năng gửi tin nhắn trực tiếp đến các thành viên sử dụng Jabber không được hỗ trợ trên máy chủ này. Bạn sẽ cần phải cài đặt ứng dụng <strong>Jabber</strong> trên máy tính của mình để liên hệ với người nhận trên.',
 	'IM_RECIPIENT'			=> 'Người nhận',
 	'IM_SEND'				=> 'Gửi tin nhắn',
 	'IM_SEND_MESSAGE'		=> 'Gửi tin nhắn',
@@ -96,10 +96,10 @@ $lang = array_merge($lang, array(
 	'LESS_THAN'					=> 'Ít hơn',
 	'LIST_USER'					=> '1 thành viên',
 	'LIST_USERS'				=> '%d thành viên',
-	'LOGIN_EXPLAIN_LEADERS'		=> 'Administrator yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem danh sách ban điều hành.',
-	'LOGIN_EXPLAIN_MEMBERLIST'	=> 'Administrator yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem danh sách thành viên.',
-	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'Administrator yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để thực hiện tìm kiếm thành viên.',	
-	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'Administrator yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem thông tin cá nhân của thành viên.',
+	'LOGIN_EXPLAIN_LEADERS'		=> 'Người quản trị yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem danh sách ban điều hành.',
+	'LOGIN_EXPLAIN_MEMBERLIST'	=> 'Người quản trị yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem danh sách thành viên.',
+	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'Người quản trị yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để thực hiện tìm kiếm thành viên.',	
+	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'Người quản trị yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem thông tin cá nhân của thành viên.',
 
 	'MORE_THAN'				=> 'Nhiều hơn',
 	'MSNM'					=> 'Tài khoản MSN',
@@ -115,7 +115,7 @@ $lang = array_merge($lang, array(
 	'REAL_NAME'				=> 'Tên người nhận',
 	'RECIPIENT'				=> 'Người nhận',
 
-	'SEARCH_USER_POSTS'		=> 'Tìm tất cả bài viết của thành viên',
+	'SEARCH_USER_POSTS'		=> 'Tìm tất cả bài viết của thành viên này',
 	'SELECT_MARKED'			=> 'Chọn đánh dấu',
 	'SELECT_SORT_METHOD'	=> 'Chọn cách sắp xếp',
 	'SEND_IM'				=> 'Nhắn tin nhanh',
@@ -125,9 +125,9 @@ $lang = array_merge($lang, array(
 	'SORT_POST_COUNT'		=> 'Số bài viết',
 
 	'USERNAME_BEGINS_WITH'	=> 'Tên thành viên bắt đầu bằng',
-	'USER_ADMIN'			=> 'Administrator',
+	'USER_ADMIN'			=> 'Quản trị viên',
 	'USER_FORUM'			=> 'Thống kê thành viên',
-	'USER_ONLINE'			=> 'Đang online',
+	'USER_ONLINE'			=> 'Đang trực tuyến',
 	'USER_PRESENCE'			=> 'Hiện diện',
 
 	'VIEWING_PROFILE'		=> 'Đang xem thông tin cá nhân của %s',

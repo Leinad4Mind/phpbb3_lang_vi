@@ -4,7 +4,7 @@
 * acp_forums [Vietnamese]
 *
 * @package language
-* @version $Id: forums.php,v 1.08 2006/06/27 13:17:00 nedka Exp $
+* @version $Id: forums.php,v 1.11 2006/08/15 15:48:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -48,7 +48,8 @@ $lang = array_merge($lang, array(
 	'AUTO_PRUNE_VIEWED_EXPLAIN'	=> 'Nếu chủ đề không có ai xem sau số ngày được thiết lập này thì chủ đề sẽ được tự động gỡ bỏ.',
 
 	'COPY_PERMISSIONS'				=> 'Copy thiết lập cấp phép từ',
-	'COPY_PERMISSIONS_EXPLAIN'		=> 'Sau khi copy thiết lập cấp phép, chuyên mục sẽ có thiết lập cấp phép giống như của chuyên mục mà bạn chọn copy. Nếu không có chuyên mục nào được chọn thì chuyên mục vừa mới tạo sẽ không thể truy cập được cho đến khi bạn thiết lập cấp phép xong.',
+	'COPY_PERMISSIONS_ADD_EXPLAIN'	=> 'Sau khi copy thiết lập cấp phép, chuyên mục sẽ có thiết lập cấp phép giống như của chuyên mục mà bạn chọn copy. Nếu không có chuyên mục nào được chọn thì chuyên mục vừa mới tạo sẽ không thể truy cập được cho đến khi bạn thiết lập cấp phép xong.',
+	'COPY_PERMISSIONS_EDIT_EXPLAIN'	=> 'Nếu bạn chọn copy thiết lập cấp phép, chuyên mục sẽ có thiết lập cấp phép giống như của chuyên mục mà bạn chọn copy. Thiết lập cấp phép mới mà bạn chọn sẽ thay thế cho bất kì thiết lập cấp phép nào mà bạn đã thiết lập trước đây cho chuyên mục này. Nếu không có chuyên mục nào được chọn, những thiết lập cấp phép hiện tại của chuyên mục này sẽ được giữ nguyên.',	
 	'CREATE_FORUM'					=> 'Tạo chuyên mục mới',
 
 	'DECIDE_MOVE_DELETE_CONTENT'		=> 'Xoá toàn bộ nội dung hoặc di chuyển đến chuyên mục',
@@ -61,6 +62,8 @@ $lang = array_merge($lang, array(
 	'EDIT_FORUM'				=> 'Sửa chuyên mục',
 	'ENABLE_INDEXING'			=> 'Bật chỉ mục tìm kiếm',
 	'ENABLE_INDEXING_EXPLAIN'	=> 'Nếu bạn bật tuỳ chọn này, những bài viết trong chuyên mục này sẽ được tạo chỉ mục để có thể tìm kiếm.',
+	'ENABLE_POST_REVIEW'			=> 'Cho phép xem lại bài viết',
+	'ENABLE_POST_REVIEW_EXPLAIN'	=> 'Nếu bật tuỳ chọn này, các thành viên có thể xem lại bài viết của họ nếu có những bài viết mới được gửi đến chủ đề trong khi họ đang soạn bài. Bạn chỉ nên tắt tuỳ chọn này nếu sử dụng diễn đàn chỉ để chat hay tán gẫu.',	
 	'ENABLE_RECENT'				=> 'Hiển thị những chủ đề không bị khoá',
 	'ENABLE_RECENT_EXPLAIN'		=> 'Nếu bật tuỳ chọn này, những chủ đề được gửi trong các chuyên mục sẽ được hiển thị trong danh sách chủ đề không bị khoá.',
 	'ENABLE_TOPIC_ICONS'		=> 'Sử dụng biểu tượng cho chủ đề',
@@ -76,7 +79,7 @@ $lang = array_merge($lang, array(
 	'FORUM_DELETED'						=> 'Chuyên mục đã được xoá thành công.',
 	'FORUM_DESC'						=> 'Giới thiệu về chuyên mục',
 	'FORUM_DESC_EXPLAIN'				=> 'Bất kì thẻ đánh dấu nào được nhập trong đây đều được hiển thị.',
-	'FORUM_EDIT_EXPLAIN'				=> 'Bảng điều khiển bên dưới sẽ giúp bạn tuỳ chỉnh chuyên mục này. Lưu ý rằng việc thiết lập Moderator cho chuyên mục này cũng như bảng điều khiển bộ đếm số bài viết được thiết lập từ mục cấp phép chuyên mục trong công cụ cấp phép cho các thành viên và nhóm thành viên.',
+	'FORUM_EDIT_EXPLAIN'				=> 'Bảng điều khiển bên dưới sẽ giúp bạn tuỳ chỉnh chuyên mục này. Lưu ý rằng việc thiết lập điều hành viên cho chuyên mục này cũng như bảng điều khiển bộ đếm số bài viết được thiết lập từ mục cấp phép chuyên mục trong công cụ cấp phép cho các thành viên và nhóm thành viên.',
 	'FORUM_IMAGE'						=> 'Hình chuyên mục',
 	'FORUM_IMAGE_EXPLAIN'				=> 'Đường dẫn đến hình ảnh sử dụng cho chuyên mục này, nằm trong thư mục chính cài đặt hệ thống.',
 	'FORUM_LINK_EXPLAIN'				=> 'Địa chỉ URL đầy đủ đính kèm cả giao thức, ví dụ như <strong>http://</strong> để xác định liên kết khi thành viên bấm vào chuyên mục liên kết này.',
@@ -90,6 +93,7 @@ $lang = array_merge($lang, array(
 	'FORUM_PASSWORD_CONFIRM_EXPLAIN'	=> 'Bạn chỉ cần xác nhận lại mật khẩu này nếu đã nhập mật khẩu cho chuyên mục ở trên.',
 	'FORUM_PASSWORD_EXPLAIN'			=> 'Chọn mật khẩu cho chuyên mục này, sử dụng hệ thống cấp phép trong thiết lập.',
 	'FORUM_PASSWORD_MISMATCH'			=> 'Mật khẩu của chuyên mục bạn vừa nhập không phù hợp.',
+	'FORUM_PRUNE_SETTINGS'				=> 'Thiết lập dọn dẹp chuyên mục',	
 	'FORUM_RESYNCED'					=> 'Chuyên mục <strong>%s</strong> đã được đồng bộ thành công',
 	'FORUM_RULES_EXPLAIN'				=> 'Nội qui chuyên mục được hiển thị trong bất cứ trang nào của chuyên mục đó.',
 	'FORUM_RULES_LINK'					=> 'Liên kết đến nội qui chuyên mục',

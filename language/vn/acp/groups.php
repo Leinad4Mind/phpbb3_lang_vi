@@ -4,7 +4,7 @@
 * acp_groups [Vietnamese]
 *
 * @package language
-* @version $Id: groups.php,v 1.03 2006/06/27 01:40:00 nedka Exp $
+* @version $Id: groups.php,v 1.05 2006/08/15 15:55:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -58,7 +58,7 @@ $lang = array_merge($lang, array(
 	'GROUP_COLOR_EXPLAIN'			=> 'Xác định màu phân biệt cho tên thành viên của các thành viên trong nhóm, để trống để sử dụng màu mặc định dành cho thành viên.',
 	'GROUP_CREATED'					=> 'Nhóm đã được tạo thành công',
 	'GROUP_DEFAULT'					=> 'Mặc định',
-	'GROUP_DEFS_UPDATED'			=> 'Nhóm mặc định thiết lập cho tất cả thành viên',
+	'GROUP_DEFS_UPDATED'			=> 'Nhóm mặc định thiết lập cho tất cả thành viên đã chọn',
 	'GROUP_DELETE'					=> 'Xoá nhóm',
 	'GROUP_DELETED'					=> 'Nhóm đã được xoá và nhóm mặc định của thành viên đã được thiết lập thành công',
 	'GROUP_DEMOTE'					=> 'Giáng chức',
@@ -99,6 +99,9 @@ $lang = array_merge($lang, array(
 	'GROUP_USERS_EXIST'				=> 'Thành viên bạn vừa chọn đã là thành viên của nhóm.',
 	'GROUP_USERS_REMOVE'			=> 'Thành viên đã được gỡ bỏ khỏi nhóm và những thiết lập mặc định đã được chọn thành công',
 
+	'MAKE_DEFAULT_FOR_ALL'	=> 'Chọn làm nhóm mặc định cho tất cả thành viên',
+	'MEMBERS'				=> 'Thành viên',
+
 	'NO_GROUP'					=> 'Không có nhóm nào được xác định',
 	'NO_PERMISSIONS'			=> 'Đừng copy thiết lập cấp phép',
 
@@ -110,7 +113,7 @@ $lang = array_merge($lang, array(
 	'USERS_APPROVED'				=> 'Thành viên đã được chấp nhận thành công.',
 	'USER_DEFAULT'					=> 'Thành viên mặc định',
 	'USER_DEF_GROUPS'				=> 'Thành viên đã xác định nhóm',
-	'USER_DEF_GROUPS_EXPLAIN'		=> 'Đây là những nhóm được tạo ra bởi chính bạn hoặc các Administrator trong website. Bạn có thể quản lý tư cách thành viên trong nhóm như sửa thiết lập của nhóm hoặc thậm chí là gỡ bỏ nhóm. Bằng cách bấm vào nút <strong>Mặc định</strong>, bạn có thể chọn cho các nhóm này những giá trị thiết lập mặc định đến các thành viên có trong nhóm.',
+	'USER_DEF_GROUPS_EXPLAIN'		=> 'Đây là những nhóm được tạo ra bởi chính bạn hoặc các quản trị viên trong website. Bạn có thể quản lý tư cách thành viên trong nhóm như sửa thiết lập của nhóm hoặc thậm chí là gỡ bỏ nhóm. Bằng cách bấm vào nút <strong>Mặc định</strong>, bạn có thể chọn cho các nhóm này những giá trị thiết lập mặc định đến các thành viên có trong nhóm.',
 	'USER_GROUP_DEFAULT'			=> 'Chọn làm nhóm mặc định',
 	'USER_GROUP_DEFAULT_EXPLAIN'	=> 'Bật tuỳ chọn này để thiết lập nhóm này làm nhóm mặc định cho các thành viên đã thêm vào',
 	'USER_GROUP_LEADER'				=> 'Chọn làm người điều hành nhóm',

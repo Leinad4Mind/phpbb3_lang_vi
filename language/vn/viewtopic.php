@@ -4,7 +4,7 @@
 * viewtopic [Vietnamese]
 *
 * @package language
-* @version $Id: viewtopic.php,v 1.05 2006/06/26 11:51:00 nedka Exp $
+* @version $Id: viewtopic.php,v 1.11 2006/08/15 14:06:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -62,20 +62,20 @@ $lang = array_merge($lang, array(
 	'FILE_NOT_FOUND_404'	=> 'Tập tin <strong>%s</strong> không tồn tại.',
 	'FORK_TOPIC'			=> 'Copy chủ đề',
 
-	'LINKAGE_FORBIDDEN'		=> 'Bạn không được phép xem, download hoặc liên kết đến website này.',
+	'LINKAGE_FORBIDDEN'		=> 'Bạn không được phép xem, tải về hoặc liên kết đến website này.',
 	'LOGIN_NOTIFY_TOPIC'	=> 'Hãy vui lòng đăng nhập để xem chủ đề này.',
-	'LOGIN_VIEWTOPIC'		=> 'Administrator yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem chủ đề này.',
+	'LOGIN_VIEWTOPIC'		=> 'Người quản trị yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem chủ đề này.',
 
 	'MAKE_ANNOUNCE'				=> 'Thay đổi thành thông báo',
-	'MAKE_GLOBAL'				=> 'Thay đổi thành thông báo quan trọng',
+	'MAKE_GLOBAL'				=> 'Thay đổi thành thông báo chung',
 	'MAKE_NORMAL'				=> 'Thay đổi thành bài viết bình thường',
 	'MAKE_STICKY'				=> 'Thay đổi thành chú ý',
 	'MAX_OPTIONS_SELECT'		=> 'Bạn có thể chọn đến <strong>%d</strong> đối tượng bình chọn',
 	'MAX_OPTION_SELECT'			=> 'Bạn chỉ có thể chọn <strong>1</strong> đối tượng bình chọn',
-	'MISSING_INLINE_ATTACHMENT'	=> 'Tập tin đính kèm <strong>%s</strong> hiện tại không còn trên server',
+	'MISSING_INLINE_ATTACHMENT'	=> 'Tập tin đính kèm <strong>%s</strong> hiện tại không còn trên máy chủ',
 	'MOVE_TOPIC'				=> 'Di chuyển chủ đề',
 
-	'NO_ATTACHMENT_SELECTED'=> 'Bạn chưa chọn tập tin đính kèm để xem hoặc download.',
+	'NO_ATTACHMENT_SELECTED'=> 'Bạn chưa chọn tập tin đính kèm để xem hoặc tải về.',
 	'NO_NEWER_TOPICS'		=> 'Không có chủ đề nào mới hơn trong chuyên mục này.',
 	'NO_OLDER_TOPICS'		=> 'Không có chủ đề nào cũ hơn trong chuyên mục này.',
 	'NO_UNREAD_POSTS'		=> 'Không có bài viết chưa xem mới nào trong chủ đề này.',
@@ -83,7 +83,7 @@ $lang = array_merge($lang, array(
 
 	'POLL_RUN_TILL'			=> 'Bình chọn cho đến ngày %s',
 	'POLL_VOTED_OPTION'		=> 'Bạn đã bình chọn cho đối tượng này',
-	'POST_ENCODING'			=> 'Bài viết này được gửi bởi <strong>%1$s</strong> với nội dung được mã hoá khác với chế độ mã hoá trong ngôn ngữ mà bạn đang dùng. Bấm %2$svào đây%3$s để xem đúng chế độ mã hoá của bài viết này.',
+	'POST_ENCODING'			=> 'Bài viết này được gửi bởi <strong>%1$s</strong> với nội dung được mã hoá khác với chế độ mã hoá trong ngôn ngữ mà bạn đang dùng. %2$sXem đúng chế độ mã hoá của bài viết này%3$s.',
 	'PRINT_TOPIC'			=> 'Xem bản in',
 
 	'QUICK_MOD'				=> 'Công cụ',

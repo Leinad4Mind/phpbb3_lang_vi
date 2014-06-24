@@ -35,7 +35,7 @@ Ngày tháng: _______________
 
 -8<----------------------------- CẮT TẠI ĐÂY ------------------------------
 
-Sau khi Administrator nhận được cam kết bên trên thông qua địa chỉ Fax hay Email, tài khoản của bạn sẽ được kích hoạt.
+Sau khi người quản trị nhận được cam kết bên trên thông qua địa chỉ Fax hay Email, tài khoản của bạn sẽ được kích hoạt.
 
 Xin vui lòng đừng quên mật khẩu của bạn bởi vì nó đã được mã hoá trong cơ sở dữ liệu của hệ thống và chúng tôi không thể khôi phục lại nó cho bạn. Tuy nhiên, nếu bạn quên mật khẩu của mình, bạn có thể yêu cầu một mật khẩu mới và cũng cần phải được kích hoạt giống như tài khoản này.
 

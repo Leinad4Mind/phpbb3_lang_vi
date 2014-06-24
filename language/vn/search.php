@@ -4,7 +4,7 @@
 * search [Vietnamese]
 *
 * @package language
-* @version $Id: search.php,v 1.06 2006/06/26 11:56:00 nedka Exp $
+* @version $Id: search.php,v 1.08 2006/08/01 10:08:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -48,7 +48,7 @@ $lang = array_merge($lang, array(
 	'FOUND_SEARCH_MATCHES'	=> 'Đã tìm thấy <strong>%d</strong> kết quả',
 	'FOUND_MORE_SEARCH_MATCHES'	=> 'Đã tìm thấy nhiều hơn <strong>%d</strong> kết quả',
 
-	'GLOBAL'				=> 'Chủ đề quan trọng',
+	'GLOBAL'				=> 'Chủ đề chung',
 
 	'IGNORED_TERMS'			=> 'không được phép sử dụng',
 	'IGNORED_TERMS_EXPLAIN'	=> 'Những từ khoá tìm kiếm của bạn dưới đây không được phép sử dụng: <strong>%s</strong>',
@@ -58,6 +58,8 @@ $lang = array_merge($lang, array(
 	'NO_SEARCH'				=> 'Xin lỗi, bạn không được phép sử dụng công cụ tìm kiếm trong hệ thống.',
 	'NO_SEARCH_RESULTS'		=> 'Không tìm thấy kết quả nào.',
 	'NO_SEARCH_TIME'		=> 'Xin lỗi, bạn không thể tiếp tục sử dụng công cụ tìm kiếm ngay lúc này. Hãy thử lại sau vài phút nữa.',
+	'WORD_IN_NO_POST'		=> 'Không tìm thấy kết quả bởi vì từ khoá <strong>%s</strong> không có trong bất cứ bài viết nào.',
+	'WORDS_IN_NO_POST'		=> 'Không tìm thấy kết quả bởi vì những từ khoá <strong>%s</strong> không có trong bất cứ bài viết nào.',
 
 	'POST_CHARACTERS'		=> 'ký tự của bài viết',
 
@@ -76,7 +78,7 @@ $lang = array_merge($lang, array(
 	'SEARCH_FORUMS'			=> 'Tìm kiếm trong những chuyên mục',
 	'SEARCH_FORUMS_EXPLAIN'	=> 'Chọn một hoặc nhiều chuyên mục mà bạn muốn thực hiện tìm kiếm trong phạm vi đó. Để cải thiện tốc độ tìm kiếm, tất cả chuyên mục con sẽ chỉ được thực hiện tìm kiếm khi chuyên mục chính được chọn và tuỳ chọn tìm kiếm trong những chuyên mục con được bật bên dưới.',
 	'SEARCH_IN_RESULTS'		=> 'Tìm kiếm trong những kết quả này',
-	'SEARCH_KEYWORDS_EXPLAIN'	=> 'Đặt dấu <strong>+</strong> trước từ khoá mà bạn thực sự muốn tìm kiếm và dấu <strong>-</strong> trước từ khoá mà bạn không muốn hiển thị trong kết quả tìm kiếm. Nếu bạn đặt dấu <strong>|</strong> trước từ khoá tìm kiếm, mỗi kết quả tìm thấy sẽ có nội dung chứa ít nhất một trong những từ khoá này. Sử dụng dấu đại diện <strong>*</strong> để tìm kiếm những thông tin giống nhau theo một số ký tự',
+	'SEARCH_KEYWORDS_EXPLAIN'	=> 'Đặt dấu <strong>+</strong> trước từ khoá mà bạn thực sự muốn tìm kiếm và dấu <strong>-</strong> trước từ khoá mà bạn không muốn hiển thị trong kết quả tìm kiếm. Đặt một danh sách từ khoá tìm kiếm ngăn cách nhau bởi dấu <strong>|</strong> trong dấu ngoặc đơn nếu bạn muốn mỗi kết quả tìm thấy chứa ít nhất một trong những từ khoá này. Sử dụng dấu đại diện <strong>*</strong> để tìm kiếm những thông tin giống nhau theo một số ký tự.',
 	'SEARCH_MSG_ONLY'		=> 'Chỉ tìm kiếm theo nội dung bài viết',
 	'SEARCH_OPTIONS'		=> 'Tuỳ chọn tìm kiếm',
 	'SEARCH_QUERY'			=> 'Truy vấn tìm kiếm',

@@ -4,7 +4,7 @@
 * acp_search [Vietnamese]
 *
 * @package language
-* @version $Id: search.php,v 1.05 2006/06/28 09:43:00 nedka Exp $
+* @version $Id: search.php,v 1.06 2006/08/15 16:14:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -67,7 +67,7 @@ $lang = array_merge($lang, array(
 	'INDEXING_IN_PROGRESS_EXPLAIN'			=> 'Phương pháp tìm kiếm hiện tại đang lập chỉ mục các bài viết trong hệ thống. Quá trình này có thể mất từ vài phút đến vài giờ tuỳ thuộc vào dung lượng cơ sở dữ liệu của bạn.',
 
 	'LIMIT_SEARCH_LOAD'						=> 'Giới hạn thời gian hệ thống nạp trang tìm kiếm',
-	'LIMIT_SEARCH_LOAD_EXPLAIN'				=> 'Nếu trong vòng một phút hệ thống nạp vượt quá giá trị được thiết lập này thì trang tìm kiếm sẽ chuyển sang chế độ ngưng hoạt động, ví dụ 1.0 gần bằng ~100% tài nguyên được sử dụng của một bộ xử lí server. Chỉ sử dụng chức năng này trên các server UNIX.',
+	'LIMIT_SEARCH_LOAD_EXPLAIN'				=> 'Nếu trong vòng một phút hệ thống nạp vượt quá giá trị được thiết lập này thì trang tìm kiếm sẽ chuyển sang chế độ ngưng hoạt động, ví dụ 1.0 gần bằng ~100% tài nguyên được sử dụng của một bộ xử lí máy chủ. Chỉ sử dụng chức năng này trên các máy chủ UNIX.',
 
 	'MAX_SEARCH_CHARS'						=> 'Số ký tự tối đa để tạo chỉ mục tìm kiếm',
 	'MAX_SEARCH_CHARS_EXPLAIN'				=> 'Số ký tự tối đa cho phép trong mỗi từ của bài viết được tạo chỉ mục tìm kiếm.',

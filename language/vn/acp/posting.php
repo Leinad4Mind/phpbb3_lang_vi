@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php,v 1.07 2006/06/27 13:32:00 nedka Exp $
+* @version $Id: posting.php,v 1.11 2006/08/15 16:08:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -48,17 +48,21 @@ $lang = array_merge($lang, array(
 	'BBCODE_EDITED'				=> 'Thẻ BBCode đã được chỉnh sửa thành công',
 	'BBCODE_INVALID_TAG_NAME'	=> 'Tên thẻ BBCode bạn vừa chọn không hợp lệ',
 	'BBCODE_NOT_EXIST'			=> 'Thẻ BBCode bạn vừa chọn không tồn tại',
+	'BBCODE_HELPLINE'			=> 'Hướng dẫn sử dụng thẻ BBCode',
+	'BBCODE_HELPLINE_EXPLAIN'	=> 'Mục thông tin hướng dẫn sử dụng này sẽ được hiển thị khi rê chuột lên thẻ BBCode tương ứng trong phần soạn bài viết',
+	'BBCODE_HELPLINE_TEXT'		=> 'Nội dung hướng dẫn',
 	'BBCODE_TAG'				=> 'Thẻ BBCode',
+	'BBCODE_TAG_TOO_LONG'		=> 'Thẻ BBCode xác định bạn vừa nhập quá dài, hãy vui lòng chọn tên thẻ ngắn hơn.',
 	'BBCODE_USAGE'				=> 'Cách sử dụng thẻ BBCode',
 	'BBCODE_USAGE_EXAMPLE'		=> '[colour={COLOR}]{TEXT}[/colour]<br /><br />[font={TEXT1}]{TEXT2}[/font]',
-	'BBCODE_USAGE_EXPLAIN'		=> 'Bạn có thể xác định cách sử dụng thẻ BBCode tại đây. Thay thế bất kì biến nào nhập vào bằng mã tương ứng (Xem bên dưới)',
+	'BBCODE_USAGE_EXPLAIN'		=> 'Bạn có thể xác định cách sử dụng thẻ BBCode tại đây. Thay thế bất kì biến nào nhập vào bằng mã tương ứng (%sXem bên dưới%s)',
 
 	'EXAMPLE'						=> 'Ví dụ:',
 	'EXAMPLES'						=> 'Các ví dụ:',
 
 	'HTML_REPLACEMENT'				=> 'Mã HTML thay thế',
 	'HTML_REPLACEMENT_EXAMPLE'		=> '&lt;font color="{COLOR}"&gt;{TEXT}&lt;/font&gt;<br /><br />&lt;font face="{TEXT1}"&gt;{TEXT2}&lt;/font&gt;',
-	'HTML_REPLACEMENT_EXPLAIN'		=> 'Bạn có thể xác định mã HTML thay thế cho thẻ BBCode tại đây. Mỗi giao diện có thể có mã HTML thay thế của riêng mình. Do not forget to put back tokens you used above!',
+	'HTML_REPLACEMENT_EXPLAIN'		=> 'Bạn có thể xác định mã HTML thay thế cho thẻ BBCode tại đây. Mỗi giao diện có thể có mã HTML thay thế của riêng mình. Đừng đặt lại những mã thay thế mà bạn đã sử dụng ở bên trên!',
 
 	'TOKEN'					=> 'Mã thay thế',
 	'TOKENS'				=> 'Những mã thay thế',
@@ -97,9 +101,9 @@ $lang = array_merge($lang, array(
 	'EDIT_SMILIES'				=> 'Sửa biểu tượng vui',
 	'EMOTION'					=> 'Ký tự xác định biểu tượng vui',
 	'EXPORT_ICONS'				=> 'Tạo gói biểu tượng bài viết',
-	'EXPORT_ICONS_EXPLAIN'		=> 'Để tạo gói biểu tượng cho những biểu tượng bài viết đã cài đặt của bạn, hãy bấm %svào đây%s để download về tập tin gói biểu tượng .pak. Sau khi download về, bạn hãy tạo một tập tin zip hay tgz có chứa tất cả các biểu tượng bài viết mà bạn muốn thêm vào gói biểu tượng cùng với tập tin cấu hình .pak của gói biểu tượng bên trong.',
+	'EXPORT_ICONS_EXPLAIN'		=> 'Để tạo gói biểu tượng cho những biểu tượng bài viết đã cài đặt của bạn, hãy bấm %svào đây%s để tải về tập tin gói biểu tượng .pak. Sau khi tải về, bạn hãy tạo một tập tin zip hay tgz có chứa tất cả các biểu tượng bài viết mà bạn muốn thêm vào gói biểu tượng cùng với tập tin cấu hình .pak của gói biểu tượng bên trong.',
 	'EXPORT_SMILIES'			=> 'Tạo gói biểu tượng vui',
-	'EXPORT_SMILIES_EXPLAIN'	=> 'Để tạo gói biểu tượng cho những biểu tượng vui đã cài đặt của bạn, hãy bấm %svào đây%s để download về tập tin gói biểu tượng .pak. Sau khi download về, bạn hãy tạo một tập tin zip hay tgz có chứa tất cả các biểu tượng vui mà bạn muốn thêm vào gói biểu tượng cùng với tập tin cấu hình .pak của gói biểu tượng bên trong.',
+	'EXPORT_SMILIES_EXPLAIN'	=> 'Để tạo gói biểu tượng cho những biểu tượng vui đã cài đặt của bạn, hãy bấm %svào đây%s để tải về tập tin gói biểu tượng .pak. Sau khi tải về, bạn hãy tạo một tập tin zip hay tgz có chứa tất cả các biểu tượng vui mà bạn muốn thêm vào gói biểu tượng cùng với tập tin cấu hình .pak của gói biểu tượng bên trong.',
 
 	'FIRST'			=> 'Đầu tiên',
 

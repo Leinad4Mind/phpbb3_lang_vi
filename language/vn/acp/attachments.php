@@ -4,7 +4,7 @@
 * acp_attachments [Vietnamese]
 *
 * @package language
-* @version $Id: attachments.php,v 1.01 2006/06/26 11:45:00 nedka Exp $
+* @version $Id: attachments.php,v 1.03 2006/08/15 15:04:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -40,9 +40,9 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ACP_ATTACHMENT_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thay đổi những thiết lập chính về chức năng đính kèm tập tin và những nhóm tập tin kết hợp trong hệ thống.',
-	'ACP_EXTENSION_GROUPS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thêm vào, xoá và chỉnh sửa những nhóm tập tin của bạn, bạn có thể vô hiệu việc sử dụng một loại nhóm tập tin, chỉ định một loại nhóm tập tin đặc biệt, thay đổi cơ chế download và bạn có thể xác định biểu tượng tập tin cho từng loại tập tin hiển thị trong phần download tập tin đính kèm.',
+	'ACP_EXTENSION_GROUPS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thêm vào, xoá và chỉnh sửa những nhóm tập tin của bạn, bạn có thể vô hiệu việc sử dụng một loại nhóm tập tin, chỉ định một loại nhóm tập tin đặc biệt, thay đổi cơ chế tải về và bạn có thể xác định biểu tượng tập tin cho từng loại tập tin hiển thị trong phần tải về tập tin đính kèm.',
 	'ACP_MANAGE_EXTENSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể quản lý những loại tập tin đã được cho phép sử dụng khi đính kèm tập tin trong hệ thống. Để kích hoạt những loại tập tin này, hãy tham khảo bảng quản lý các loại nhóm tập tin. Chúng tôi khuyến cáo bạn không nên thêm vào những loại tập tin mã nguồn như php, php3, php4, phtml, pl, cgi, asp, aspx ...',
-	'ACP_ORPHAN_ATTACHMENTS_EXPLAIN'	=> 'Với công cụ này, bạn có thể phát hiện những tập tin đính kèm nằm trong thư mục upload tập tin nhưng không được sử dụng trong bất kì bài viết nào. Hầu hết điều này xảy ra khi các thành viên upload xong tập tin đính kèm nhưng lại không chấp nhận gửi bài viết nữa. Bạn có thể xoá những tập tin này hoặc đính kèm chúng vào những bài viết hiện tại. Việc đính kèm tập tin vào bài viết yêu cầu bạn phải xác định chính xác số ID của bài viết, bạn phải tự mình xác định số ID này. Chức năng này dành cho những ai muốn upload tập tin lên hệ thống bằng các chương trình phần mềm chuyên dụng khác, thông thường là do tập tin có dung lượng lớn, rồi đính kèm những tập tin này vào các bài viết hiện có trong hệ thống.',
+	'ACP_ORPHAN_ATTACHMENTS_EXPLAIN'	=> 'Với công cụ này, bạn có thể phát hiện những tập tin đính kèm nằm trong thư mục tập tin tải lên nhưng không được sử dụng trong bất kì bài viết nào. Hầu hết điều này xảy ra khi các thành viên tải lên xong tập tin đính kèm nhưng lại không chấp nhận gửi bài viết nữa. Bạn có thể xoá những tập tin này hoặc đính kèm chúng vào những bài viết hiện tại. Việc đính kèm tập tin vào bài viết yêu cầu bạn phải xác định chính xác số ID của bài viết, bạn phải tự mình xác định số ID này. Chức năng này dành cho những ai muốn tải tập tin lên hệ thống bằng các chương trình phần mềm chuyên dụng khác, thông thường là do tập tin có dung lượng lớn, rồi đính kèm những tập tin này vào các bài viết hiện có trong hệ thống.',
 	'ADD_EXTENSION'						=> 'Thêm loại tập tin',
 	'ADD_EXTENSION_GROUP'				=> 'Thêm nhóm tập tin',
 	'ADMIN_UPLOAD_ERROR'				=> 'Có lỗi xảy ra trong khi đính kèm tập tin: <strong>%s</strong>',
@@ -77,8 +77,8 @@ $lang = array_merge($lang, array(
 	'DEFINE_ALLOWED_IPS'			=> 'Xác định địa chỉ IP/tên miền cho phép đính kèm tập tin',
 	'DEFINE_DISALLOWED_IPS'			=> 'Xác định địa chỉ IP/tên miền cấm đính kèm tập tin',
 	'DOWNLOAD_ADD_IPS_EXPLAIN'		=> 'Để xác định nhiều địa chỉ IP hay tên miền khác nhau, bạn hãy nhập mỗi địa chỉ IP hay tên miền trong một dòng. Để xác định một dãy địa chỉ IP, bắt đầu và kết thúc bằng dấu gạch nối (-), xác định những địa chỉ IP cùng loại bằng dấu đại diện *',
-	'DOWNLOAD_MODE'					=> 'Chế độ download',
-	'DOWNLOAD_MODE_EXPLAIN'			=> 'Nếu bạn gặp rắc rối trong việc download tập tin, thiết lập chế độ download này thành <strong>Vật lí</strong>, các thành viên sẽ download trực tiếp tập tin từ địa chỉ thư mục trên server. Đừng chuyển sang chế độ download vật lí nếu không thực sự cần thiết bởi vì nó chỉ rõ cho thành viên vị trí tập tin trên server.',
+	'DOWNLOAD_MODE'					=> 'Chế độ tải về',
+	'DOWNLOAD_MODE_EXPLAIN'			=> 'Nếu bạn gặp rắc rối trong việc tải về tập tin, thiết lập chế độ tải về này thành <strong>Vật lí</strong>, các thành viên sẽ tải trực tiếp tập tin về từ địa chỉ thư mục trên máy chủ. Đừng chuyển sang chế độ tải về vật lí nếu không thực sự cần thiết bởi vì nó chỉ rõ cho thành viên vị trí tập tin trên máy chủ.',
 	'DOWNLOAD_REMOVE_IPS_EXPLAIN'	=> 'Bạn có thể gỡ bỏ hoặc ngưng loại trừ nhiều địa chỉ IP hay tên miền cùng lúc trong một thao tác bằng cách kết hợp hiệu quả chuột và bàn phím từ máy tính và trình duyệt. Những địa chỉ IP hay tên miền bị loại trừ được đánh dấu bằng màu nền xám.',
 	'DISPLAY_INLINED'				=> 'Hiển thị hình ảnh trong bài viết',
 	'DISPLAY_INLINED_EXPLAIN'		=> 'Nếu bạn tắt tuỳ chọn này, những hình ảnh được đính kèm sẽ hiển thị như liên kết.',
@@ -102,7 +102,7 @@ $lang = array_merge($lang, array(
 	'IMAGE_LINK_SIZE'			=> 'Kích thước hình ảnh sẽ hiển thị như liên kết',
 	'IMAGE_LINK_SIZE_EXPLAIN'	=> 'Hiển thị những hình ảnh được đính kèm như liên kết nếu kích thước hình ảnh lớn hơn kích thước đã chọn, thiết lập <strong>0 Pixel x 0 Pixel</strong> để vô hiệu chức năng này.',
 	'IMAGICK_PATH'				=> 'Đường dẫn chương trình Imagemagick',
-	'IMAGICK_PATH_EXPLAIN'		=> 'Đường dẫn chính xác đến ứng dụng chuyển đổi hình ảnh Imagemagick trên server, ví dụ như <strong>/usr/bin/</strong>',
+	'IMAGICK_PATH_EXPLAIN'		=> 'Đường dẫn chính xác đến ứng dụng chuyển đổi hình ảnh Imagemagick trên máy chủ, ví dụ như <strong>/usr/bin/</strong>',
 
 	'MAX_ATTACHMENTS'				=> 'Số tập tin đính kèm tối đa trong mỗi bài viết',
 	'MAX_ATTACHMENTS_PM'			=> 'Số tập tin đính kèm tối đa trong mỗi tin nhắn',
@@ -116,12 +116,14 @@ $lang = array_merge($lang, array(
 
 	'NOT_ALLOWED_IN_PM'			=> 'Không cho phép trong tin nhắn',
 	'NOT_ASSIGNED'				=> 'Không chỉ định',
+	'NO_EXT_GROUP'				=> 'Không có nhóm tập tin nào',
 	'NO_EXT_GROUP_NAME'			=> 'Bạn chưa nhập tên nhóm tập tin',
 	'NO_EXT_GROUP_SPECIFIED'	=> 'Không có nhóm tập tin nào được xác định',
+	'NO_FILE_CAT'				=> 'Không có loại tập tin nào',	
 	'NO_IMAGE'					=> 'Không có hình ảnh',
-	'NO_THUMBNAIL_SUPPORT'		=> 'Chức năng hỗ trợ tạo hình thu nhỏ đã bị vô hiệu bởi vì server của bạn không hỗ trợ thư viện GD và đường dẫn đến chương trình Imagemagick không thể tìm thấy.',
-	'NO_UPLOAD_DIR'				=> 'Thư mục upload bạn vừa chọn không tồn tại.',
-	'NO_WRITE_UPLOAD'			=> 'Thư mục upload bạn vừa chọn không được cấp phép có thể ghi trên server. Bạn hãy vui lòng thay đổi thiết lập cấp phép có thể ghi cho thư mục này trên server.',
+	'NO_THUMBNAIL_SUPPORT'		=> 'Chức năng hỗ trợ tạo hình thu nhỏ đã bị vô hiệu bởi vì máy chủ của bạn không hỗ trợ thư viện GD và đường dẫn đến chương trình Imagemagick không thể tìm thấy.',
+	'NO_UPLOAD_DIR'				=> 'Thư mục tải lên bạn vừa chọn không tồn tại.',
+	'NO_WRITE_UPLOAD'			=> 'Thư mục tải lên bạn vừa chọn không được cấp phép có thể ghi trên máy chủ. Bạn hãy vui lòng thay đổi thiết lập cấp phép có thể ghi cho thư mục này trên máy chủ.',
 
 	'ORDER_ALLOW_DENY'		=> 'Đồng ý',
 	'ORDER_DENY_ALLOW'		=> 'Từ chối',
@@ -131,27 +133,27 @@ $lang = array_merge($lang, array(
 
 	'SEARCH_IMAGICK'				=> 'Tìm kiếm ứng dụng Imagemagick',
 	'SECURE_ALLOW_DENY'				=> 'Danh sách đồng ý/từ chối',
-	'SECURE_ALLOW_DENY_EXPLAIN'		=> 'Danh sách đồng ý hay từ chối của các địa chỉ, thiết lập này chỉ áp dụng cho việc download tập tin',
-	'SECURE_DOWNLOADS'				=> 'Bật chế độ download an toàn',
-	'SECURE_DOWNLOADS_EXPLAIN'		=> 'Nếu bật tuỳ chọn này, việc cho phép download tập tin sẽ giới hạn trong những địa chỉ IP/Tên miền mà bạn đã chỉ định cho phép.',
-	'SECURE_DOWNLOAD_NOTICE'		=> 'Chế độ download an toàn không được bật. Những thiết lập bên dưới chỉ có tác dụng nếu như bạn bật chế độ download an toàn.',
-	'SECURE_DOWNLOAD_UPDATE_SUCCESS'=> 'Danh sách địa chỉ IP/Tên miền đã được cập nhật thành công',
-	'SECURE_EMPTY_REFERER'			=> 'Cho phép sử dụng tham chiếu địa chỉ trống',
-	'SECURE_EMPTY_REFERER_EXPLAIN'	=> 'Chế độ download an toàn dựa trên những tham chiếu địa chỉ của server. Bạn có muốn bỏ qua tham chiếu địa chỉ cho chế độ download an toàn?',
+	'SECURE_ALLOW_DENY_EXPLAIN'		=> 'Danh sách đồng ý hay từ chối của các địa chỉ, thiết lập này chỉ áp dụng cho việc tải về tập tin',
+	'SECURE_DOWNLOADS'				=> 'Bật chế độ tải về an toàn',
+	'SECURE_DOWNLOADS_EXPLAIN'		=> 'Nếu bật tuỳ chọn này, việc cho phép tải về tập tin sẽ giới hạn trong những địa chỉ IP/Tên miền mà bạn đã chỉ định cho phép.',
+	'SECURE_DOWNLOAD_NOTICE'		=> 'Chế độ tải về an toàn không được bật. Những thiết lập bên dưới chỉ có tác dụng nếu như bạn bật chế độ tải về an toàn.',
+	'SECURE_DOWNLOAD_UPDATE_SUCCESS'=> 'Danh sách địa chỉ IP/tên miền đã được cập nhật thành công',
+	'SECURE_EMPTY_REFERRER'			=> 'Cho phép sử dụng tham chiếu địa chỉ trống',
+	'SECURE_EMPTY_REFERRER_EXPLAIN'	=> 'Chế độ tải về an toàn dựa trên những tham chiếu địa chỉ của máy chủ. Bạn có muốn bỏ qua tham chiếu địa chỉ cho chế độ tải về an toàn?',
 	'SETTINGS_CAT_IMAGES'			=> 'Thiết lập nhóm tập tin hình ảnh',
 	'SPECIAL_CATEGORY'				=> 'Nhóm tập tin đặc biệt',
 	'SPECIAL_CATEGORY_EXPLAIN'		=> 'Nhóm tập tin đặc biệt là những loại tập tin xuất hiện đặc biệt trong bài viết.',
-	'SUCCESSFULLY_UPLOADED'			=> 'Đã upload thành công',
+	'SUCCESSFULLY_UPLOADED'			=> 'Đã tải lên thành công',
 	'SUCCESS_EXTENSION_GROUP_ADD'	=> 'Nhóm tập tin đã được tạo thành công',
 	'SUCCESS_EXTENSION_GROUP_EDIT'	=> 'Nhóm tập tin đã được cập nhật thành công',
 
-	'UPLOADING_FILES'				=> 'Đang upload tập tin',
-	'UPLOADING_FILE_TO'				=> 'Đang upload tập tin <strong>%1$s</strong> đến bài viết có số ID <strong>%2$d</strong> ...',
-	'UPLOAD_DENIED_FORUM'			=> 'Bạn không được cấp phép để upload tập tin đến chuyên mục <strong>%s</strong>',
-	'UPLOAD_DIR'					=> 'Thư mục upload',
+	'UPLOADING_FILES'				=> 'Đang tải lên tập tin',
+	'UPLOADING_FILE_TO'				=> 'Đang tải lên tập tin <strong>%1$s</strong> đến bài viết có số ID <strong>%2$d</strong> ...',
+	'UPLOAD_DENIED_FORUM'			=> 'Bạn không được cấp phép để tải lên tập tin đến chuyên mục <strong>%s</strong>',
+	'UPLOAD_DIR'					=> 'Thư mục tải lên',
 	'UPLOAD_DIR_EXPLAIN'			=> 'Thư mục chưa những tập tin đính kèm trong hệ thống.',
 	'UPLOAD_ICON'					=> 'Biểu tượng tập tin',
-	'UPLOAD_NOT_DIR'				=> 'Thư mục upload bạn vừa chọn không phải là địa chỉ của một thư mục.',
+	'UPLOAD_NOT_DIR'				=> 'Thư mục tải lên bạn vừa chọn không phải là địa chỉ của một thư mục.',
 ));
 
 ?>

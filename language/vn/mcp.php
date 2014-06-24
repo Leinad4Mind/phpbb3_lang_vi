@@ -4,7 +4,7 @@
 * mcp [Vietnamese]
 *
 * @package language
-* @version $Id: mcp.php,v 1.12 2006/06/26 11:57:00 nedka Exp $
+* @version $Id: mcp.php,v 1.17 2006/08/15 13:50:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -57,11 +57,12 @@ $lang = array_merge($lang, array(
 
 	'CANNOT_MOVE_SAME_FORUM'=> 'Bạn không thể di chuyển một chủ đề đến chuyên mục đang chứa chủ đề đó',
 	'CANNOT_WARN_ANONYMOUS'	=> 'Bạn không thể cảnh cáo khách',
+	'CANNOT_WARN_SELF'		=> 'Bạn không thể cảnh cáo chính mình',	
 	'CAN_LEAVE_BLANK'		=> 'Mục thông tin này không được phép để trống.',
 	'CHANGE_POSTER'			=> 'Thay đổi người gửi',
-	'CLOSE_REPORT'			=> 'Đóng báo cáo',
+	'CLOSE_REPORT'			=> 'Kết thúc báo cáo',
 	'CLOSE_REPORT_CONFIRM'	=> 'Bạn có chắc chắn muốn kết thúc báo cáo đã chọn?',
-	'CLOSE_REPORTS'			=> 'Kết thúc báo cáo',
+	'CLOSE_REPORTS'			=> 'Kết thúc các báo cáo',
 	'CLOSE_REPORTS_CONFIRM'	=> 'Bạn có chắc chắn muốn kết thúc những báo cáo đã chọn?',
 
 	'DELETE_POSTS'			=> 'Xoá bài viết',
@@ -75,7 +76,7 @@ $lang = array_merge($lang, array(
 	'DELETE_TOPICS_CONFIRM'	=> 'Bạn có chắc chắn muốn xoá những chủ đề này?',
 	'DELETE_TOPIC_CONFIRM'	=> 'Bạn có chắc chắn muốn xoá chủ đề này?',
 	'DISAPPROVE'			=> 'Từ chối',
-	'DISAPPROVE_REASON'		=> 'Lí do từ chối',
+	'DISAPPROVE_REASON'		=> 'Lý do từ chối',
 	'DISAPPROVE_POST'		=> 'Từ chối bài viết này',
 	'DISAPPROVE_POST_CONFIRM'	=> 'Bạn có chắc chắn muốn từ chối bài viết này?',
 	'DISAPPROVE_POSTS'		=> 'Từ chối những bài viết này',
@@ -99,11 +100,9 @@ $lang = array_merge($lang, array(
 	'FORUM_STATUS'			=> 'Trạng thái chuyên mục',
 	'FORUM_STYLE'			=> 'Kiểu dáng chuyên mục',
 
-	'GLOBAL_ANNOUNCEMENT'	=> 'Thông báo quan trọng',
+	'GLOBAL_ANNOUNCEMENT'	=> 'Thông báo chung',
 
-	'IP_INFO'				=> 'Thông tin IP',
-
-	'JUMP_TO'					=> 'Quản lý chuyên mục',		// Overwriting the jump to language variable for the mcp jumpbox
+	'IP_INFO'				=> 'Thông tin về địa chỉ IP',
 	
 	'LATEST_LOGS'				=> '5 thao tác được ghi nhận mới nhất',
 	'LATEST_REPORTED'			=> '5 báo cáo mới nhất',
@@ -135,10 +134,10 @@ $lang = array_merge($lang, array(
 
 	'MCP_BAN'					=> 'Bảng cấm',
 	'MCP_BAN_EMAILS'			=> 'Cấm Email',
-	'MCP_BAN_IPS'				=> 'Cấm IP',
+	'MCP_BAN_IPS'				=> 'Cấm địa chỉ IP',
 	'MCP_BAN_USERNAMES'			=> 'Cấm tên thành viên',
 
-	'MCP_LOGS'						=> 'Ghi nhận về Moderator',
+	'MCP_LOGS'						=> 'Ghi nhận về điều hành viên',
 	'MCP_LOGS_FRONT'				=> 'Trang trước',
 	'MCP_LOGS_FORUM_VIEW'			=> 'Ghi nhận về chuyên mục',
 	'MCP_LOGS_TOPIC_VIEW'			=> 'Ghi nhận về chủ đề',
@@ -176,16 +175,13 @@ $lang = array_merge($lang, array(
 	'MCP_REPORTS_OPEN'				=> 'Báo cáo chờ xử lí',
 	'MCP_REPORTS_OPEN_EXPLAIN'		=> 'Đây là danh sách của tất cả các báo cáo về bài viết vẫn chưa giải quyết xong',
 
-	'MCP_QUEUE'								=> 'Công việc chờ xử lí của Moderator',
+	'MCP_QUEUE'								=> 'Công việc chờ xử lí của điều hành viên',
 	'MCP_QUEUE_APPROVE_DETAILS'				=> 'Thông tin chi tiết về việc chấp nhận',
 	'MCP_QUEUE_UNAPPROVED_POSTS'			=> 'Những bài viết đang chờ được chấp nhận',
 	'MCP_QUEUE_UNAPPROVED_POSTS_EXPLAIN'	=> 'Đây là danh sách của tất cả các bài viết đòi hỏi phải được chấp nhận trước khi hiển thị cho mọi người xem',
 	'MCP_QUEUE_UNAPPROVED_TOPICS'			=> 'Những chủ đề đang chờ được chấp nhận',
 	'MCP_QUEUE_UNAPPROVED_TOPICS_EXPLAIN'	=> 'Đây là danh sách của tất cả các chủ đề đòi hỏi phải được chấp nhận trước khi hiển thị cho mọi người xem',
 
-	'MCP_VIEW_ALL'			=> 'Xem tất cả (%s)',
-	'MCP_VIEW_LOGS'			=> 'Xem những ghi nhận',
-	'MCP_VIEW_RECENT'		=> 'Xem gần đây (%s)',
 	'MCP_VIEW_USER'			=> 'Xem cảnh cáo đối với một thành viên xác định',
 
 	'MCP_WARN'				=> 'Cảnh cáo',
@@ -198,7 +194,8 @@ $lang = array_merge($lang, array(
 	'MERGE_POSTS_CONFIRM'	=> 'Bạn có chắc chắn muốn nhập chung những bài viết đã chọn?',
 	'MERGE_TOPIC_EXPLAIN'	=> 'Sử dụng bảng điều khiển bên dưới, bạn có thể nhập chung những bài viết đã chọn tạo thành chủ đề khác. Những bài viết này sẽ không thể sắp xếp trở lại như cũ và sẽ hiển thị như khi thành viên tạo chủ đề mới.<br />Bạn hãy nhập vào số ID của chủ đề muốn thực hiện hoặc bấm vào nút <strong>Chọn</strong> để tìm kiếm trong danh sách',
 	'MERGE_TOPIC_ID'		=> 'Số ID của chủ đề muốn nhập chung',
-	'MOD_OPTIONS'			=> 'Tuỳ chọn cho Moderator',
+	'MODERATE_FORUM'		=> 'Điều hành chuyên mục',	
+	'MOD_OPTIONS'			=> 'Tuỳ chọn cho điều hành viên',
 	'MORE_INFO'				=> 'Thông tin thêm',
 	'MOST_WARNINGS'			=> 'Thành viên có nhiều cảnh cáo',
 	'MOVE_TOPIC_CONFIRM'	=> 'Bạn có chắc chắn muốn di chuyển chủ đề đã chọn sang một chuyên mục mới?',
@@ -208,8 +205,9 @@ $lang = array_merge($lang, array(
 	'NOTIFY_POSTER_APPROVAL'=> 'Thông báo cho người gửi biết về việc chấp nhận?',
 	'NOTIFY_POSTER_DISAPPROVAL' => 'Thông báo cho người gửi biết về việc từ chối?',
 	'NOTIFY_USER_WARN'		=> 'Thông báo cho thành viên biết về việc cảnh cáo?',
-	'NOT_MODERATOR'			=> 'Bạn không phải là Moderator của chuyên mục này',
+	'NOT_MODERATOR'			=> 'Bạn không phải là người điều hành của chuyên mục này',
 	'NO_DESTINATION_FORUM'	=> 'Hãy chọn một chuyên mục để tiếp tục',
+	'NO_DESTINATION_FORUM_FOUND'	=> 'Không có chuyên mục nào có sẵn để chọn.',
 	'NO_ENTRIES'			=> 'Không có mục ghi nhận nào trong thời điểm này',
 	'NO_FEEDBACK'			=> 'Không có phản hồi nào về thành viên này',
 	'NO_FINAL_TOPIC_SELECTED'	=> 'Bạn phải chọn một chủ đề để thực hiện nhập chung những bài viết',
@@ -218,6 +216,7 @@ $lang = array_merge($lang, array(
 	'NO_POST_REPORT'		=> 'Bài viết này đã không được báo cáo',
 	'NO_POST_SELECTED'		=> 'Bạn phải chọn ít nhất một bài viết để thực hiện yêu cầu này',
 	'NO_REASON_DISAPPROVAL'	=> 'Hãy đưa ra một nguyên nhân thích hợp về việc từ chối',	
+	'NO_TOPIC_ICON'			=> 'Không dùng biểu tượng',
 	'NO_TOPIC_SELECTED'		=> 'Bạn phải chọn ít nhất một chủ đề để thực hiện yêu cầu này',
 
 	'OTHER_IPS'				=> 'Những địa chỉ IP khác mà thành viên này đã sử dụng để gửi bài',
@@ -245,6 +244,8 @@ $lang = array_merge($lang, array(
 	'READ_WARNINGS'			=> 'Cảnh cáo thành viên',
 	'REPORTER'				=> 'Người báo cáo',
 	'REPORTED'				=> 'Đã báo cáo',
+	'REPORTED_BY'			=> 'Được báo cáo bởi',
+	'REPORTED_ON_DATE'		=> 'vào ngày',
 	'REPORTS_CLOSED_SUCCESS'	=> 'Những báo cáo bạn vừa chọn đã được kết thúc thành công.',
 	'REPORTS_DELETED_SUCCESS'	=> 'Những báo cáo bạn vừa chọn đã được xoá thành công.',
 	'REPORTS_TOTAL'			=> 'Có tất cả <strong>%d</strong> báo cáo để xem lại',
@@ -254,10 +255,10 @@ $lang = array_merge($lang, array(
 	'REPORT_DELETED_SUCCESS'	=> 'Báo cáo bạn vừa chọn đã được xoá thành công.',
 	'REPORT_DETAILS'		=> 'Chi tiết báo cáo',
 	'REPORT_MESSAGE'		=> 'Báo cáo bài viết này',
-	'REPORT_MESSAGE_EXPLAIN'=> 'Sử dụng công cụ này để báo cáo bài viết đã chọn đến Administrator. Bạn chỉ nên tiến hành báo cáo nếu bài viết thực sự vi phạm nội qui chuyên mục.',
+	'REPORT_MESSAGE_EXPLAIN'=> 'Sử dụng công cụ này để báo cáo bài viết đã chọn đến người quản trị. Bạn chỉ nên tiến hành báo cáo nếu bài viết thực sự vi phạm nội qui chuyên mục.',
 	'REPORT_NOTIFY'			=> 'Thông báo cho tôi',
 	'REPORT_NOTIFY_EXPLAIN'	=> 'Bạn sẽ được thông báo khi báo cáo của mình được giải quyết',
-	'REPORT_POST_EXPLAIN'	=> 'Sử dụng bảng điều khiển này để báo cáo bài viết đã chọn đến các Moderator của chuyên mục này và Administrator. Bạn chỉ nên tiến hành báo cáo nếu bài viết thực sự vi phạm nội qui chuyên mục.',
+	'REPORT_POST_EXPLAIN'	=> 'Sử dụng bảng điều khiển này để báo cáo bài viết đã chọn đến các điều hành viên của chuyên mục này và quản trị viên. Bạn chỉ nên tiến hành báo cáo nếu bài viết thực sự vi phạm nội qui chuyên mục.',
 	'REPORT_REASON'			=> 'Lí do báo cáo',
 	'REPORT_TIME'			=> 'Ngày báo cáo',
 	'REPORT_TOTAL'			=> 'Chỉ có <strong>1</strong> báo cáo để xem lại',
@@ -269,6 +270,7 @@ $lang = array_merge($lang, array(
 	'RETURN_QUEUE'			=> '%sQuay về hàng vừa xem%s',
 	'RETURN_REPORTS'		=> '%sQuay về báo cáo vừa xem%s',
 	
+	'SEARCH_POSTS_BY_USER'	=> 'Tìm tất cả bài viết của',
 	'SELECT_ACTION'			=> 'Chọn thao tác yêu cầu',
 	'SELECT_TOPIC'			=> 'Chọn chủ đề',
 	'SELECT_USER'			=> 'Chọn thành viên',
@@ -332,8 +334,9 @@ $lang = array_merge($lang, array(
 
 	'WARNED_USERS'			=> 'Những thành viên đã cảnh cáo',
 	'WARNED_USERS_EXPLAIN'	=> 'Đây là danh sách tất cả các thành viên vẫn chưa hết thời gian bị cảnh cáo',	
-	'WARNING_PM_BODY'		=> 'Dưới đây là cảnh cáo dành cho bạn bởi các Moderator hay Administrator của website. [quote]%s[/quote]',
+	'WARNING_PM_BODY'		=> 'Dưới đây là cảnh cáo dành cho bạn bởi các điều hành viên hay quản trị viên của website. [quote]%s[/quote]',
 	'WARNING_PM_SUBJECT'	=> 'Cảnh cáo từ ban điều hành diễn đàn',
+	'WARNING_POST_DEFAULT'	=> 'Đây là cảnh cáo về việc gửi bài của bạn: %s',
 	'WARNINGS_ZERO_TOTAL'	=> 'Không có cảnh cáo nào',
 
 	'YOU_SELECTED_TOPIC'	=> 'Bạn đã chọn chủ đề số <strong>%d</strong>: %s',
@@ -341,7 +344,7 @@ $lang = array_merge($lang, array(
 	'report_reasons'		=> array(
 		'TITLE'	=> array(
 			'WAREZ'		=> 'Vi phạm bản quyền',
-			'SPAM'		=> 'Spam',
+			'SPAM'		=> 'Nhảm nhí',
 			'OFF_TOPIC'	=> 'Không phù hợp',
 			'OTHER'		=> 'Nguyên nhân khác'
 		),

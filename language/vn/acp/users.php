@@ -4,7 +4,7 @@
 * acp_users [Vietnamese]
 *
 * @package language
-* @version $Id: users.php,v 1.03 2006/06/26 11:48:00 nedka Exp $
+* @version $Id: users.php,v 1.05 2006/07/11 10:08:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -40,20 +40,24 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ADMIN_SIG_PREVIEW'		=> 'Xem trước chữ ký cá nhân',
+	'AT_LEAST_ONE_FOUNDER'	=> 'Bạn không thể thay đổi người sáng lập này trở thành một thành viên bình thường. Trong hệ thống chỉ cần ít nhất một thành viên là người sáng lập được chọn. Nếu bạn muốn thay đổi người sáng lập này thành các thành viên khác thì trước hết bạn phải là một người sáng lập của website.',
 	
 	'BAN_SUCCESSFUL'		=> 'Lệnh cấm đã được thực hiện thành công',
 
-	'CANNOT_REMOVE_ANONYMOUS'	=> 'Bạn không thể gỡ bỏ tài khoản của khách.',
-	'CANNOT_REMOVE_YOURSELF'	=> 'Bạn không được phép gỡ bỏ tài khoản thành viên của chính mình.',
-	'CONFIRM_EMAIL_EXPLAIN'		=> 'Bạn chỉ cần xác nhận lại địa chỉ Email nếu bạn muốn thay đổi địa chỉ Email của thành viên.',
+	'CANNOT_BAN_YOURSELF'			=> 'Bạn không thể cấm tài khoản của chính mình.',
+	'CANNOT_DEACTIVATE_YOURSELF'	=> 'Bạn không thể ngưng kích hoạt tài khoản của chính mình.',
+	'CANNOT_FORCE_REACT_YOURSELF'	=> 'Bạn không thể yêu cầu kích hoạt lại tài khoản của chính mình.',
+	'CANNOT_REMOVE_ANONYMOUS'		=> 'Bạn không thể gỡ bỏ tài khoản của khách.',
+	'CANNOT_REMOVE_YOURSELF'		=> 'Bạn không được phép gỡ bỏ tài khoản thành viên của chính mình.',
+	'CONFIRM_EMAIL_EXPLAIN'			=> 'Bạn chỉ cần xác nhận lại địa chỉ Email nếu bạn muốn thay đổi địa chỉ Email của thành viên.',
 	
 	'DELETE_POSTS'			=> 'Xoá bài viết',
 	'DELETE_USER'			=> 'Xoá thành viên',
 	'DELETE_USER_EXPLAIN'	=> 'Lưu ý rằng việc xoá thành viên này sẽ xoá vĩnh viễn và không thể phục hồi lại được',
 
 	'FORCE_REACTIVATION_SUCCESS'	=> 'Việc yêu cầu thành viên kích hoạt lại tài khoản của mình đã được thực hiện thành công',
-	'FOUNDER'						=> 'Founder',
-	'FOUNDER_EXPLAIN'				=> 'Founder không bao giờ bị cấm, xoá hay thay đổi bởi bất kì thành viên nào',
+	'FOUNDER'						=> 'Người sáng lập',
+	'FOUNDER_EXPLAIN'				=> 'Người sáng lập không bao giờ bị cấm, xoá hay thay đổi bởi bất kì thành viên nào',
 
 	'GROUP_DEFAULT'					=> 'Mặc định',
 	'GROUP_DELETE'					=> 'Xoá',
@@ -67,7 +71,7 @@ $lang = array_merge($lang, array(
 	'MOVE_POSTS_EXPLAIN'	=> 'Hãy chọn chuyên mục mà bạn muốn di chuyển tất cả các bài viết của thành viên này đến.',
 
 	'NO_SPECIAL_RANK'		=> 'Không có xếp hạng đặc biệt nào được chỉ định',
-	'NOT_MANAGE_FOUNDER'	=> 'Bạn đang cố gắng quản lý một thành viên Founder. Chỉ có những Founder mới được phép quản lý lẫn nhau.',
+	'NOT_MANAGE_FOUNDER'	=> 'Bạn đang cố gắng quản lý một thành viên là người sáng lập. Chỉ có những người sáng lập mới được phép quản lý lẫn nhau.',
 
 	'QUICK_TOOLS'			=> 'Công cụ nhanh',
 
@@ -78,7 +82,7 @@ $lang = array_merge($lang, array(
 	'SELECT_FORM'			=> 'Chọn bảng',
 	'SELECT_USER'			=> 'Chọn thành viên',
 
-	'USER_ADMIN'					=> 'Administrator',
+	'USER_ADMIN'					=> 'Quản trị viên',
 	'USER_ADMIN_ACTIVATE'			=> 'Kích hoạt tài khoản',
 	'USER_ADMIN_ACTIVATED'			=> 'Tài khoản thành viên đã được kích hoạt thành công',
 	'USER_ADMIN_AVATAR_REMOVED'		=> 'Hình đại diện của thành viên đã được gỡ bỏ thành công',

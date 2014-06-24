@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php,v 1.07 2006/06/26 11:57:00 nedka Exp $
+* @version $Id: posting.php,v 1.11 2006/08/15 14:03:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -39,18 +39,19 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ADD_ATTACHMENT'			=> 'Upload tập tin đính kèm',
+	'ADD_ATTACHMENT'			=> 'Tải lên tập tin đính kèm',
 	'ADD_ATTACHMENT_EXPLAIN'	=> 'Nếu bạn muốn đính kèm một hay nhiều tập tin trong bài viết, hãy sử dụng công cụ bên dưới',
 	'ADD_FILE'					=> 'Thêm tập tin',
 	'ADD_POLL'					=> 'Tạo bình chọn',
 	'ADD_POLL_EXPLAIN'			=> 'Nếu bạn không muốn thêm vào một bình chọn trong chủ đề của mình, hãy để trống phần này',
 	'ALREADY_DELETED'			=> 'Xin lỗi, bài viết này vừa bị xoá.',
-	'ATTACH_QUOTA_REACHED'		=> 'Xin lỗi, dung lượng upload cấp phép cho diễn đàn đã hết.',
-	'ATTACH_SIG'				=> 'Đính kèm chữ ký cá nhân (Chữ ký có thể thay đổi từ bảng điều khiển của thành viên)',
+	'ATTACH_QUOTA_REACHED'		=> 'Xin lỗi, dung lượng cấp phép tải lên cho diễn đàn đã hết.',
+	'ATTACH_SIG'				=> 'Đính kèm chữ ký cá nhân (Chữ ký có thể thay đổi từ bảng điều khiển thành viên của bạn)',
 
 	'BBCODE_A_HELP'				=> 'Đóng tất cả thẻ lệnh BBCode còn đang mở',
 	'BBCODE_B_HELP'				=> 'Văn bản in đậm: [b]văn bản muốn in đậm[/b] (Phím tắt: Alt + B)',
 	'BBCODE_C_HELP'				=> 'Hiển thị mã: [code]mã muốn hiển thị[/code] (Phím tắt: Alt + C)',
+	'BBCODE_D_HELP'				=> 'Chèn tập tin Flash: [flash=chiều cao,chiều rộng]http://địa chỉ URL của tập tin Flash[/flash] (Phím tắt: Alt + D)',
 	'BBCODE_E_HELP'				=> 'Danh sách: Tạo danh sách liệt kê các mục',
 	'BBCODE_F_HELP'				=> 'Kích thước văn bản: [size=x-small]văn bản muốn thay đổi kích thước[/size]',
 	'BBCODE_IS_OFF'				=> '%sBBCode%s đang <em>TẮT</em>',
@@ -58,7 +59,7 @@ $lang = array_merge($lang, array(
 	'BBCODE_I_HELP'				=> 'Văn bản in nghiêng: [i]văn bản muốn in nghiêng[/i] (Phím tắt: Alt + I)',
 	'BBCODE_L_HELP'				=> 'Tạo danh sách: [list]văn bản muốn tạo danh sách[/list] (Phím tắt: Alt + L)',
 	'BBCODE_O_HELP'				=> 'Tạo danh sách theo thứ tự: [list=]văn bản muốn tạo danh sách theo thứ tự[/list] (Phím tắt: Alt + O)',
-	'BBCODE_P_HELP'				=> 'Chèn hình: [img]http://địa chỉ URL của hình[/img] (Phím tắt: Alt + P)',
+	'BBCODE_P_HELP'				=> 'Chèn hình: [img]http://địa chỉ URL của tập tin hình[/img] (Phím tắt: Alt + P)',
 	'BBCODE_Q_HELP'				=> 'Trích dẫn văn bản: [quote]văn bản muốn trích dẫn[/quote] (Phím tắt: Alt + Q)',
 	'BBCODE_S_HELP'				=> 'Màu chữ: [color=red]văn bản muốn tô màu[/color] Lưu ý: Bạn cũng có thể sử dụng dạng color=#FF0000',
 	'BBCODE_U_HELP'				=> 'Văn bản gạch chân: [u]văn bản muốn gạch chân[/u] (Phím tắt: Alt + U)',
@@ -90,9 +91,9 @@ $lang = array_merge($lang, array(
 	'DRAFT_TITLE'				=> 'Tiêu đề nháp',
 
 	'EDIT_REASON'				=> 'Lý do sửa bài viết này',
-	'EMPTY_FILEUPLOAD'			=> 'Tập tin đã upload là tập tin rỗng',
+	'EMPTY_FILEUPLOAD'			=> 'Tập tin bạn vừa tải lên là tập tin rỗng',
 	'EMPTY_MESSAGE'				=> 'Bạn phải nhập nội dung cho bài viết.',
-	'EMPTY_REMOTE_DATA'			=> 'Không thể upload tập tin, hãy cố gắng tự upload tập tin này.',
+	'EMPTY_REMOTE_DATA'			=> 'Không thể tải lên tập tin, bạn hãy cố gắng tự tải lên tập tin này.',
 
 	'FLASH_IS_OFF'				=> '[flash] đang <em>TẮT</em>',
 	'FLASH_IS_ON'				=> '[flash] đang <em>BẬT</em>',
@@ -105,7 +106,7 @@ $lang = array_merge($lang, array(
 	'FONT_SMALL'				=> 'Nhỏ vừa',
 	'FONT_TINY'					=> 'Nhỏ nhất',
 
-	'GENERAL_UPLOAD_ERROR'		=> 'Không thể upload tập tin đính kèm đến %s',
+	'GENERAL_UPLOAD_ERROR'		=> 'Không thể tải lên tập tin đính kèm đến %s',
 
 	'IMAGES_ARE_OFF'			=> '[img] đang <em>TẮT</em>',
 	'IMAGES_ARE_ON'				=> '[img] đang <em>BẬT</em>',
@@ -128,15 +129,16 @@ $lang = array_merge($lang, array(
 	'MORE_SMILIES'				=> 'Xem tất cả biểu tượng vui',
 
 	'NOTIFY_REPLY'				=> 'Thông báo cho tôi bằng Email khi có bài viết trả lời',
-	'NOT_UPLOADED'				=> 'Không thể upload được tập tin.',
+	'NOT_UPLOADED'				=> 'Không thể tải lên được tập tin.',
 	'NO_DELETE_POLL_OPTIONS'	=> 'Bạn không thể xoá những đối tượng bình chọn đang có',
 	'NO_POLL_TITLE'				=> 'Bạn chưa nhập câu hỏi bình chọn',
 	'NO_POST'					=> 'Bài viết bạn vừa yêu cầu không tồn tại.',
 	'NO_POST_MODE'				=> 'Không xác định chế độ bài viết',
+	'NO_TOPIC_ICON'				=> 'Không dùng biểu tượng',
 
-	'PARTIAL_UPLOAD'			=> 'Tập tin đính kèm bạn vừa chọn chỉ được upload một phần và chưa hoàn chỉnh',
+	'PARTIAL_UPLOAD'			=> 'Tập tin đính kèm bạn vừa chọn chỉ được tải lên một phần và chưa hoàn chỉnh',
 	'PHP_SIZE_NA'				=> 'Dung lượng tập tin đính kèm quá lớn.<br />Không thể xác định dung lượng tập tin tối đa được xác lập bởi PHP trong tập tin <strong>php.ini</strong>.',
-	'PHP_SIZE_OVERRUN'			=> 'Dung lượng tập tin đính kèm quá lớn, dung lượng tập tin được phép upload tối đa là <strong>%d</strong> MB.<br />Dung lượng tối đa này được xác lập trong tập tin <strong>php.ini</strong> và không thể tự thay đổi được.',
+	'PHP_SIZE_OVERRUN'			=> 'Dung lượng tập tin đính kèm quá lớn, dung lượng tập tin được phép tải lên tối đa là <strong>%d</strong> MB.<br />Dung lượng tối đa này được xác lập trong tập tin <strong>php.ini</strong> và không thể tự thay đổi được.',
 	'PLACE_INLINE'				=> 'Đặt trong dòng',
 	'POLL_DELETE'				=> 'Xoá bình chọn',
 	'POLL_FOR'					=> 'Thời gian bình chọn',
@@ -150,7 +152,7 @@ $lang = array_merge($lang, array(
 	'POLL_VOTE_CHANGE_EXPLAIN'	=> 'Nếu lựa chọn này được bật, những thành viên có thể thay đổi lựa chọn mà họ đã tham gia bình chọn.',
 	'POSTED_ATTACHMENTS'		=> 'Tập tin được kính kèm',
 	'POST_CONFIRMATION'			=> 'Xác nhận bài viết',
-	'POST_CONFIRM_EXPLAIN'		=> 'Để ngăn chặn những bài viết được tự động gửi vào hệ thống, Administrator yêu cầu bạn phải nhập vào một đoạn mã xác nhận. Mã xác nhận được hiển thị trong hình bên dưới mà bạn nhìn thấy. Nếu bạn gặp vấn đề về thị lực hoặc không thể nhìn thấy đoạn mã này vì một lí do nào đó, hãy liên hệ với %sAdministrator%s.',
+	'POST_CONFIRM_EXPLAIN'		=> 'Để ngăn chặn những bài viết được tự động gửi vào hệ thống, quản trị viên yêu cầu bạn phải nhập vào một đoạn mã xác nhận. Mã xác nhận được hiển thị trong hình bên dưới mà bạn nhìn thấy. Nếu bạn gặp vấn đề về thị lực hoặc không thể nhìn thấy đoạn mã này vì một lí do nào đó, hãy liên hệ với %sngười quản trị%s.',
 	'POST_DELETED'				=> 'Bài viết của bạn đã được xoá thành công',
 	'POST_EDITED'				=> 'Bài viết của bạn đã được sửa thành công',
 	'POST_EDITED_MOD'			=> 'Bài viết của bạn đã được sửa những vẫn phải chờ được chấp thuận',
@@ -190,9 +192,8 @@ $lang = array_merge($lang, array(
 	'TOO_MANY_USER_OPTIONS'		=> 'Bạn không thể xác định số đối tượng bình chọn tối đa cho mỗi thành viên nhiều hơn số lượng đối tượng bình chọn hiện có trong bình chọn này',
 	'TOPIC_BUMPED'				=> 'Chủ đề đã được bump thành công',
 
-	'UNABLE_GET_IMAGE_SIZE'		=> 'Không thể truy cập được vào tập tin hình ảnh hoặc tập tin hình ảnh này không hợp lệ.',
 	'UNAUTHORISED_BBCODE'		=> 'Bạn không thể sử dụng những thẻ lệnh BBCode sau: ',
-	'UNGLOBALISE_EXPLAIN'		=> 'Để chuyển đổi chủ đề này từ loại thông báo quan trọng thành chủ đề bình thường, bạn cần phải chọn chuyên mục chứa chủ đề này',
+	'UNGLOBALISE_EXPLAIN'		=> 'Để chuyển đổi chủ đề này từ loại thông báo quan trọng thành chủ đề bình thường, bạn cần phải chọn chuyên mục chứa chủ đề này.',
 	'UPDATE_COMMENT'			=> 'Cập nhật chú thích',
 	'URL_INVALID'				=> 'Địa chỉ URL bạn vừa nhập không chính xác.',
 	'URL_NOT_FOUND'				=> 'Không thể tìm thấy tập tin bạn vừa chọn.',

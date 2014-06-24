@@ -4,7 +4,7 @@
 * groups [Vietnamese]
 *
 * @package language
-* @version $Id: groups.php,v 1.06 2006/06/26 11:58:00 nedka Exp $
+* @version $Id: groups.php,v 1.07 2006/08/15 13:18:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -54,7 +54,7 @@ $lang = array_merge($lang, array(
 	'GROUP_IS_FREE'						=> 'Đây là một nhóm hoàn toàn tự do, tất cả thành viên mới đều được chào đón.', 
 	'GROUP_IS_HIDDEN'					=> 'Đây là một nhóm ẩn, chỉ có những thành viên của nhóm này mới xem được tư cách thành viên của mình trong nhóm.',
 	'GROUP_IS_OPEN'						=> 'Đây là một nhóm tự do, những thành viên mới có thể thoải mái tham gia vào nhóm.',
-	'GROUP_IS_SPECIAL'					=> 'Đây là một nhóm đặc biệt, những nhóm đặc biệt như thế này được điều hành bởi chính Administrator.', 	
+	'GROUP_IS_SPECIAL'					=> 'Đây là một nhóm đặc biệt, những nhóm đặc biệt như thế này được điều hành bởi chính người quản trị.', 	
 	'GROUP_JOIN'						=> 'Tham gia vào nhóm này',
 	'GROUP_JOIN_CONFIRM'				=> 'Bạn có chắc chắn muốn tham gia vào nhóm vừa chọn?',
 	'GROUP_JOIN_PENDING'				=> 'Gửi yêu cầu tham gia vào nhóm này',

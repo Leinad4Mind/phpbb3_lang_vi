@@ -4,7 +4,7 @@
 * acp_modules [Vietnamese]
 *
 * @package language
-* @version $Id: modules.php,v 1.03 2006/06/26 11:47:00 nedka Exp $
+* @version $Id: modules.php,v 1.04 2006/08/01 10:14:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -39,25 +39,25 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ACP_MODULE_MANAGEMENT_EXPLAIN'	=> 'Công cụ này cho phép bạn quản lý tất cả các loại moduel trong hệ thống. Lưu ý rằng nếu bạn sắp xếp các moduel giống nhau trong những nhóm moduel khác nhau thì nhóm moduel được chọn là nhóm đầu tiên được tìm thấy trong nhánh hiển thị.',
-	'ADD_MODULE'					=> 'Thêm moduel',
-	'ADD_MODULE_CONFIRM'			=> 'Bạn có chắc chắn muốn thêm vào moduel với chế độ đã chọn?',
-	'ADD_MODULE_TITLE'				=> 'Thêm vào moduel',
+	'ACP_MODULE_MANAGEMENT_EXPLAIN'	=> 'Công cụ này cho phép bạn quản lý tất cả các loại module trong hệ thống. Lưu ý rằng nếu bạn sắp xếp các module giống nhau trong những nhóm module khác nhau thì nhóm module được chọn là nhóm đầu tiên được tìm thấy trong nhánh hiển thị.',
+	'ADD_MODULE'					=> 'Thêm module',
+	'ADD_MODULE_CONFIRM'			=> 'Bạn có chắc chắn muốn thêm vào module với chế độ đã chọn?',
+	'ADD_MODULE_TITLE'				=> 'Thêm vào module',
 
 	'CANNOT_REMOVE_MODULE'	=> 'Không thể gỡ bỏ module này vì nó có chứa nhiều mục con. Hãy gở bỏ hoặc di chuyển tất cả các mục con trước khi thực hiện yêu cầu này.',
-	'CATEGORY'				=> 'Nhóm moduel',
-	'CHOOSE_MODE'			=> 'Chọn chế độ moduel',
-	'CHOOSE_MODE_EXPLAIN'	=> 'Chọn những chế độ moduel được sử dụng.',
+	'CATEGORY'				=> 'Nhóm module',
+	'CHOOSE_MODE'			=> 'Chọn chế độ module',
+	'CHOOSE_MODE_EXPLAIN'	=> 'Chọn những chế độ module được sử dụng.',
 	'CHOOSE_MODULE'			=> 'Chọn module',
-	'CHOOSE_MODULE_EXPLAIN'	=> 'Chọn tập tin được thực thi bởi moduel này.',
-	'CREATE_MODULE'			=> 'Tạo moduel mới',
+	'CHOOSE_MODULE_EXPLAIN'	=> 'Chọn tập tin được thực thi bởi module này.',
+	'CREATE_MODULE'			=> 'Tạo module mới',
 
 	'DEACTIVATED_MODULE'	=> 'Module đã ngưng kích hoạt',
 	'DELETE_MODULE'			=> 'Xoá module',
-	'DELETE_MODULE_CONFIRM'	=> 'Bạn có chắc chắn muốn gỡ bỏ moduel này?',
+	'DELETE_MODULE_CONFIRM'	=> 'Bạn có chắc chắn muốn gỡ bỏ module này?',
 
 	'EDIT_MODULE'			=> 'Sửa module',
-	'EDIT_MODULE_EXPLAIN'	=> 'Bạn có thể thay đổi lại thiết lập của moduel tại đây',
+	'EDIT_MODULE_EXPLAIN'	=> 'Bạn có thể thay đổi lại thiết lập của module tại đây',
 
 	'HIDDEN_MODULE'			=> 'Module ẩn',
 
@@ -65,17 +65,17 @@ $lang = array_merge($lang, array(
 	'MODULE_ADDED'				=> 'Module đã được tạo thành công',
 	'MODULE_DELETED'			=> 'Module đã được gỡ bỏ thành công',
 	'MODULE_DISPLAYED'			=> 'Module đã được hiển thị thành công',
-	'MODULE_DISPLAYED_EXPLAIN'	=> 'Nếu bạn không muốn hiển thị moduel này nhưng vẫn muốn sử dụng chức năng của nó, hãy chọn không hiển thị moduel tại đây.',
+	'MODULE_DISPLAYED_EXPLAIN'	=> 'Nếu bạn không muốn hiển thị module này nhưng vẫn muốn sử dụng chức năng của nó, hãy chọn không hiển thị module tại đây.',
 	'MODULE_EDITED'				=> 'Module đã được sửa thành công',
 	'MODULE_ENABLED'			=> 'Module đã được kích hoạt',
-	'MODULE_LANGNAME'			=> 'Tên ngôn ngữ moduel',
-	'MODULE_LANGNAME_EXPLAIN'	=> 'Nhập vào tên ngôn ngữ mà moduel sẽ được hiển thị. Sử dụng tên hằng ngôn ngữ để nhập vào nếu tên này đã được xác trong tập tin ngôn ngữ.',
-	'MODULE_TYPE'				=> 'Loại moduel',
+	'MODULE_LANGNAME'			=> 'Tên ngôn ngữ module',
+	'MODULE_LANGNAME_EXPLAIN'	=> 'Nhập vào tên ngôn ngữ mà module sẽ được hiển thị. Sử dụng tên hằng ngôn ngữ để nhập vào nếu tên này đã được xác trong tập tin ngôn ngữ.',
+	'MODULE_TYPE'				=> 'Loại module',
 
-	'NO_CATEGORY_TO_MODULE'	=> 'Không thể thay đổi nhóm moduel trở thành module. Hãy gở bỏ hoặc di chuyển tất cả các mục con trước khi thực hiện yêu cầu này.',
-	'NO_MODULE'				=> 'Không tìm thấy moduel',
-	'NO_MODULE_ID'			=> 'Không có moduel nào được xác định',
-	'NO_MODULE_LANGNAME'	=> 'Không có tên ngôn ngữ moduel nào được xác định',
+	'NO_CATEGORY_TO_MODULE'	=> 'Không thể thay đổi nhóm module trở thành module. Hãy gở bỏ hoặc di chuyển tất cả các mục con trước khi thực hiện yêu cầu này.',
+	'NO_MODULE'				=> 'Không tìm thấy module',
+	'NO_MODULE_ID'			=> 'Không có module nào được xác định',
+	'NO_MODULE_LANGNAME'	=> 'Không có tên ngôn ngữ module nào được xác định',
 	'NO_PARENT'				=> 'Không có thư mục chính',
 
 	'PARENT'				=> 'Thư mục chính',

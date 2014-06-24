@@ -3,6 +3,6 @@ Charset: utf-8
 
 Chào bạn, {USERNAME}
 
-Bạn nhận được Email thông báo này vì báo cáo của bạn về bài viết "{POST_SUBJECT}" trong chủ đề "{TOPIC_TITLE}" tại website "{SITENAME}" đã bị xoá bởi một Moderator hoặc Administrator của website.
+Bạn nhận được Email thông báo này vì báo cáo của bạn về bài viết "{POST_SUBJECT}" trong chủ đề "{TOPIC_TITLE}" tại website "{SITENAME}" đã bị xoá bởi một điều hành viên hoặc quản trị viên của website.
 
 {EMAIL_SIG}

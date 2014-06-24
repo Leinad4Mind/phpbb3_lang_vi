@@ -3,7 +3,7 @@ Charset: utf-8
 
 Chào bạn, {USERNAME}
 
-Bạn nhận được Email thông báo này bởi vì chủ đề của bạn "{TOPIC_TITLE}" trong website "{SITENAME}" đã được chấp nhận bởi một Moderator hoặc Administrator của website.
+Bạn nhận được Email thông báo này bởi vì chủ đề của bạn "{TOPIC_TITLE}" trong website "{SITENAME}" đã được chấp nhận bởi một điều hành viên hoặc quản trị viên của website.
 
 Nếu bạn muốn xem chủ đề này, hãy bấm vào liên kết dưới đây:
 

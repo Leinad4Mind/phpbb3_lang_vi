@@ -4,7 +4,7 @@
 * help_bbcode [Vietnamese]
 *
 * @package language
-* @version $Id: help_bbcode.php,v 1.07 2006/06/26 11:58:00 nedka Exp $
+* @version $Id: help_bbcode.php,v 1.09 2006/08/15 13:21:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -40,7 +40,7 @@ $help = array(
 	),
 	array(
 		0 => 'BBCode là gì?',
-		1 => 'BBCode là một dạng thức bổ sung đặc biệt của mã HTML. Việc bạn có sử dụng BBCode được hay không là tuỳ vào quyết định của <strong>Administrator</strong>. Bạn cũng có thể tắt BBCode với lựa chọn xuất hiện sau mỗi form soạn bài viết. Bản thân BBCode tương tự gần giống như HTML: thẻ lệnh được đóng mở bằng dấu [ và ] thay vì &lt; và &gt;. Nó cho phép tuỳ biến sử dụng và điều khiển dễ dàng hơn mã HTML. Tuỳ thuộc vào giao diện mà bạn đang sử dụng, bạn sẽ nhận thấy việc sử dụng các thẻ lệnh BBCode dễ dàng như thế nào khi chỉ với thao tác click chuột với thanh công cụ BBCode nằm bên trên khung soạn thảo nội dung bài viết. Thậm chí với những công cụ dễ dàng như vậy, bạn cũng sẽ được cung cấp một tài liệu hướng dẫn sử dụng chi tiết trong phần dưới đây.'
+		1 => 'BBCode là một dạng thức bổ sung đặc biệt của mã HTML. Việc bạn có sử dụng BBCode được hay không là tuỳ vào quyết định của người quản trị. Bạn cũng có thể tắt BBCode với lựa chọn xuất hiện sau mỗi form soạn bài viết. Bản thân BBCode tương tự gần giống như HTML: thẻ lệnh được đóng mở bằng dấu [ và ] thay vì &lt; và &gt;. Nó cho phép tuỳ biến sử dụng và điều khiển dễ dàng hơn mã HTML. Tuỳ thuộc vào giao diện mà bạn đang sử dụng, bạn sẽ nhận thấy việc sử dụng các thẻ lệnh BBCode dễ dàng như thế nào khi chỉ cần đến các thao tác bấm chuột vào thanh công cụ BBCode nằm bên trên khung soạn thảo nội dung bài viết. Thậm chí với những công cụ dễ dàng như vậy, bạn cũng sẽ được cung cấp một tài liệu hướng dẫn sử dụng chi tiết trong phần dưới đây.'
 	),
 	array(
 		0 => '--',
@@ -64,7 +64,7 @@ $help = array(
 	),
 	array(
 		0 => 'Trích dẫn văn bản trong những bài trả lời',
-		1 => 'Có 2 cách để bạn trích dẫn một văn bản: trích dẫn có nguồn gốc hoặc trích dẫn không nguồn gốc.<ul><li>Khi bạn sử dụng chức năng trích dẫn để trả lời một bài viết trong diễn đàn, bạn phải đặt toàn bộ nội dung muốn trích dẫn nằm trong cặp thẻ <strong>[quote=""][/quote]</strong>. Phương pháp này cho phép bạn trích dẫn một văn bản có nguồn gốc từ một người hoặc bất cứ ai, bất cứ cái gì bạn muốn thêm vào. Ví dụ, để trích dẫn một đoạn văn bản mà Mr. Blobby đã viết, bạn sẽ phải sử dụng như sau:<br /><br /><strong>[quote="Mr. Blobby"]</strong>Đoạn văn bản muốn trích dẫn của Mr. Blobby<strong>[/quote]</strong><br /><br />Kết quả xuất ra sẽ tự động thêm vào dòng <strong>Mr. Blobby đã viết:</strong> trước đoạn văn bản bạn dùng để trích dẫn. Hãy nhớ rằng bạn <strong>phải</strong> đính kèm dấu ngoặc kép "" trước và sau tên người hay tên của bất cứ thứ gì mà bạn muốn dùng làm nguồn để trích dẫn. Đây là tuỳ chọn không bắt buộc phải có.</li><br /><li>Cách thứ hai cho phép bạn trích dẫn tuỳ ý bất cứ thứ gì. Để sử dụng đúng, bạn cũng phải đặt đoạn văn bản muốn trích dẫn nằm trong cặp thẻ <strong>[quote][/quote]</strong>. Khi bạn xem bài viết nó sẽ tự động hiển thị dòng <strong>Trích dẫn:</strong> trước đoạn văn bản bạn dùng để trích dẫn.</li></ul>'
+		1 => 'Có hai cách để bạn trích dẫn một văn bản: trích dẫn có nguồn gốc hoặc trích dẫn không nguồn gốc.<ul><li>Khi bạn sử dụng chức năng trích dẫn để trả lời một bài viết trong diễn đàn, bạn phải đặt toàn bộ nội dung muốn trích dẫn nằm trong cặp thẻ <strong>[quote=""][/quote]</strong>. Phương pháp này cho phép bạn trích dẫn một văn bản có nguồn gốc từ một người hoặc bất cứ ai, bất cứ cái gì bạn muốn thêm vào. Ví dụ, để trích dẫn một đoạn văn bản mà Mr. Blobby đã viết, bạn sẽ phải sử dụng như sau:<br /><br /><strong>[quote="Mr. Blobby"]</strong>Đoạn văn bản muốn trích dẫn của Mr. Blobby<strong>[/quote]</strong><br /><br />Kết quả xuất ra sẽ tự động thêm vào dòng <strong>Mr. Blobby đã viết:</strong> trước đoạn văn bản bạn dùng để trích dẫn. Hãy nhớ rằng bạn <strong>phải</strong> đính kèm dấu ngoặc kép "" trước và sau tên người hay tên của bất cứ thứ gì mà bạn muốn dùng làm nguồn để trích dẫn. Đây là tuỳ chọn không bắt buộc phải có.</li><br /><li>Cách thứ hai cho phép bạn trích dẫn tuỳ ý bất cứ thứ gì. Để sử dụng đúng, bạn cũng phải đặt đoạn văn bản muốn trích dẫn nằm trong cặp thẻ <strong>[quote][/quote]</strong>. Khi bạn xem bài viết nó sẽ tự động hiển thị dòng <strong>Trích dẫn:</strong> trước đoạn văn bản bạn dùng để trích dẫn.</li></ul>'
 	),
 	array(
 		0 => 'Trích dẫn mã hoặc văn bản cố định chiều rộng',
@@ -76,7 +76,7 @@ $help = array(
 	),
 	array(
 		0 => 'Tạo danh sách liệt kê không theo thứ tự',
-		1 => 'Thẻ lệnh BBCode hỗ trợ 2 loại danh sách liệt kê: không theo thứ tự và có thứ tự. Về bản chất chúng cũng giống như những thẻ lệnh HTML tương tự. Một danh sách liệt kê không theo thứ tự sẽ xuất ra mỗi mục trong danh sách liệt kê của bạn liên tục từng dòng và tự động thụt vào trong với một ký tự hình tròn. Để tạo danh sách loại này bạn dùng cặp thẻ <strong>[list][/list]</strong> và xác định trước mỗi mục trong danh sách liệt kê một thẻ con <strong>[*]</strong>. Ví dụ, để tạo một danh sách liệt kê những màu mà mình ưa thích, bạn làm như sau:<br /><br /><strong>[list]</strong><br /><strong>[*]</strong>Đỏ<br /><strong>[*]</strong>Xanh<br /><strong>[*]</strong>Vàng<br /><strong>[/list]</strong><br /><br />Kết quả sẽ tạo ra một danh sách liệt kê như sau:<ul><li>Đỏ</li><li>Xanh</li><li>Vàng</li></ul>'
+		1 => 'Thẻ lệnh BBCode hỗ trợ hai loại danh sách liệt kê: không theo thứ tự và có thứ tự. Về bản chất chúng cũng giống như những thẻ lệnh HTML tương tự. Một danh sách liệt kê không theo thứ tự sẽ xuất ra mỗi mục trong danh sách liệt kê của bạn liên tục từng dòng và tự động thụt vào trong với một ký tự hình tròn. Để tạo danh sách loại này bạn dùng cặp thẻ <strong>[list][/list]</strong> và xác định trước mỗi mục trong danh sách liệt kê một thẻ con <strong>[*]</strong>. Ví dụ, để tạo một danh sách liệt kê những màu mà mình ưa thích, bạn làm như sau:<br /><br /><strong>[list]</strong><br /><strong>[*]</strong>Đỏ<br /><strong>[*]</strong>Xanh<br /><strong>[*]</strong>Vàng<br /><strong>[/list]</strong><br /><br />Kết quả sẽ tạo ra một danh sách liệt kê như sau:<ul><li>Đỏ</li><li>Xanh</li><li>Vàng</li></ul>'
 	),
 	array(
 		0 => 'Tạo danh sách liệt kê theo thứ tự',
@@ -96,7 +96,7 @@ $help = array(
 	),
 	array(
 		0 => 'Thêm một hình ảnh trong bài viết',
-		1 => 'Các thẻ lệnh BBCode kết hợp chặt chẽ với thẻ lệnh đính kèm hình ảnh trong bài viết. Có 2 điều quan trọng mà bạn cần nhớ khi sử dụng thẻ này là: Nhiều người không đánh giá cao việc dùng quá nhiều hình ảnh trong bài viết và thứ hai, hình ảnh bạn dùng hiển thị trong bài viết phải hiện hữu trên Internet, nó không thể là hình trên máy tính của bạn được trừ khi máy tính của bạn là một Web Server. Hiện tại chưa có phương pháp lưu trữ hình trên hệ thống với phpBB (Những khó khăn này sẽ được giải quyết trong nhánh phiên bản kế tiếp của phpBB). Để hiển thị đúng hình ảnh, bạn phải đặt đường dẫn URL của nó nằm trong cặp thẻ <strong>[img][/img]</strong>. Ví dụ:<br /><br /><strong>[img]</strong>http://www.phpbb.com/images/phplogo.gif<strong>[/img]</strong><br /><br />Bạn cũng có thể tạo ra một liên kết là một hình ảnh khi dùng cách trên phối hợp với cặp thẻ <strong>[url][/url]</strong>. Ví dụ như:<br /><br /><strong>[url=http://www.phpbb.com/][img]</strong>http://www.phpbb.com/images/phplogo.gif<strong>[/img][/url]</strong><br /><br />sẽ tạo thành:<br /><br /><a href="http://www.phpbb.com/" target="_blank"><img src="http://www.phpbb.com/images/phplogo.gif" border="0" alt="" /></a><br />'
+		1 => 'Các thẻ lệnh BBCode kết hợp chặt chẽ với thẻ lệnh đính kèm hình ảnh trong bài viết. Có 2 điều quan trọng mà bạn cần nhớ khi sử dụng thẻ này là: Nhiều người không đánh giá cao việc dùng quá nhiều hình ảnh trong bài viết và thứ hai, hình ảnh bạn dùng hiển thị trong bài viết phải hiện hữu trên Internet, nó không thể là hình trên máy tính của bạn được trừ khi máy tính của bạn là một máy chủ Web. Hiện tại chưa có phương pháp lưu trữ hình trên hệ thống với phpBB (Những khó khăn này sẽ được giải quyết trong nhánh phiên bản kế tiếp của phpBB). Để hiển thị đúng hình ảnh, bạn phải đặt đường dẫn URL của nó nằm trong cặp thẻ <strong>[img][/img]</strong>. Ví dụ:<br /><br /><strong>[img]</strong>http://www.phpbb.com/images/phplogo.gif<strong>[/img]</strong><br /><br />Bạn cũng có thể tạo ra một liên kết là một hình ảnh khi dùng cách trên phối hợp với cặp thẻ <strong>[url][/url]</strong>. Ví dụ như:<br /><br /><strong>[url=http://www.phpbb.com/][img]</strong>http://www.phpbb.com/images/phplogo.gif<strong>[/img][/url]</strong><br /><br />sẽ tạo thành:<br /><br /><a href="http://www.phpbb.com/" target="_blank"><img src="http://www.phpbb.com/images/phplogo.gif" border="0" alt="" /></a><br />'
 	),
 	array(
 		0 => '--',

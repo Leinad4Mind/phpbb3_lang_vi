@@ -13,26 +13,45 @@ _ _ _ _ _    |  |_ _ _   _ _ _ _ _     |  |__|  /  |  |__|  /                   
  .                                 \  |  /    |  | |  |_ _ _ _     |  |      |  | \  |  | |  |   |  | |  | \  |  / |  | .
  .                                  \_ _/     |__| |__ _ _ _ _|    |__|      |__|  \_ __| |__|   |__| |__|  \_ _/  |__| .
  .                                                                                                                      .
-.........................................................................................................................=========================================================================================================================
+.........................................................................................................................
+=========================================================================================================================
 @ Project Name: phpBB iVN (phpBB in Vietnamese)
 @ Main Project: phpBBVietNam
 @ phpBBVietNam Group [ The Vietnamize Team ]
 ---[ Information ]--------------------------------------------------------------
 Language Pack Name: Vietnamese Language Pack for phpBB3
-Language Pack Version: 3.0.0 Beta1-a
+Language Pack Version: 3.0.0 Beta2-e
 Encoding: Unicode (UTF-8)
-Release Date: 2006/06/28
+Release Date: 2006/09/17
 ---[ Description ]--------------------------------------------------------------
-Vietnamese Language Pack for phpBB 3.0.0 Olympus Beta1 (3.x.x)
+Vietnamese Language Pack for phpBB 3.0.0 Olympus Beta2 (3.x.x)
 ---[ Translators in this language pack ]----------------------------------------
 # nedka (Nguyen Dang Khoa) <admin@phpbbvietnam.com> http://www.phpbbvietnam.com
 ---[ History ]------------------------------------------------------------------
+# 2006/09/17: Version 3.0.0 Beta2-e
+Added Vietnamese Translation of "GNU-GPL License": File "COPYING" in /docs directory.
+Thanks to Dang Minh Tuan (dangtuan@vietkey.net).
+
+# 2006/08/17: Version 3.0.0 Beta2-d
+Added Vietnamese Imagesets for subSilver Style :D
+
+# 2006/08/17: Version 3.0.0 Beta2-c
+Fixed error: T_CONSTANT_ENCAPSED_STRING in language/vn/acp/board.php line 222 :p
+
+# 2006/08/15: Version 3.0.0 Beta2-b
+Updated code changes in language from phpBB 3.0 Beta1 to phpBB 3.0 Beta2
+Fixed "moduel" -> "module" :p
+Completed translate "Administrator | Global Moderator | Moderator | Founder | Webmaster | download | upload | server | online | offline" into Vietnamese: "Quan tri vien | Dieu hanh vien chinh | Dieu hanh vien | Nguoi sang lap | Nguoi chu website | tai ve | tai len | may chu | truc tuyen | ngoai tuyen".
+
+# 2006/08/14: Version 3.0.0 Beta2-a
+Supported for phpBB 3.0.0 Beta2
+
 # 2006/06/28: Version 3.0.0 Beta1-a
-Support for phpBB 3.0.0 Beta1
+Supported for phpBB 3.0.0 Beta1
 Translated completely English Language Pack into Vietnamese [ Main + ACP + Email ]
 First release ...
 ---[ Notes ]--------------------------------------------------------------------
-Only use for phpBB3 Olympus Version 3.0.0 Beta1
+Only use for phpBB3 Olympus Version 3.0.0 Beta2
 Thanks you to use this language pack of mine ( ^ _ ^ )
 ---[ License ]------------------------------------------------------------------
 http://opensource.org/licenses/gpl-license.php GNU General Public License v2

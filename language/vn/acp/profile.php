@@ -4,7 +4,7 @@
 * acp_profile [Vietnamese]
 *
 * @package language
-* @version $Id: profile.php,v 1.04 2006/06/28 02:53:00 nedka Exp $
+* @version $Id: profile.php,v 1.07 2006/08/15 16:38:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -63,15 +63,17 @@ $lang = array_merge($lang, array(
 	'DEFAULT_VALUE'					=> 'Giá trị mặc định',
 	'DELETE_PROFILE_FIELD'			=> 'Gỡ bỏ mục thông tin cá nhân',
 	'DELETE_PROFILE_FIELD_CONFIRM'	=> 'Bạn có chắc chắn muốn xoá mục thông tin cá nhân này?',
-	'DISPLAY_AT_PROFILE'			=> 'Hiển thị trong phần thông tin cá nhân của thành viên',
+	'DISPLAY_AT_PROFILE'			=> 'Hiển thị trong bảng điều khiển của thành viên',
+	'DISPLAY_AT_PROFILE_EXPLAIN'	=> 'Cho phép thành viên có thể thay đổi mục thông tin cá nhân này trong bảng điều khiển của mình.',	
 	'DISPLAY_AT_REGISTER'			=> 'Hiển thị trong phần đăng ký thành viên mới',
-	'DISPLAY_AT_REGISTER_EXPLAIN'	=> 'Nếu tuỳ chọn này được bật, mục thông tin cá nhân sẽ được thêm vào trong phần đăng ký thành viên.',
+	'DISPLAY_AT_REGISTER_EXPLAIN'	=> 'Nếu tuỳ chọn này được bật, mục thông tin cá nhân sẽ được thêm vào trong phần đăng ký thành viên và có thể thay đổi sau này trong bảng điều khiển của thành viên.',
 	'DISPLAY_PROFILE_FIELD'			=> 'Hiển thị mục thông tin cá nhân',
 	'DISPLAY_PROFILE_FIELD_EXPLAIN'	=> 'Hiển thị mục thông tin cá nhân torng phần xem chủ đề/xem thông tin cá nhân/danh sách thành viên ...',
 	'DROPDOWN_ENTRIES_EXPLAIN'		=> 'Nhập vào những tuỳ chọn của bạn với mỗi tuỳ chọn trên một dòng',
 
+	'EDIT_DROPDOWN_LANG_EXPLAIN'	=> 'Lưu ý rằng bạn có thể thay đổi những đối tượng ngôn ngữ của mình và cũng có thể thêm vào những đối tượng mới ở phần cuối. Chúng tôi không khuyến cáo bạn thêm vào những đối tượng mới giữa các đối tượng hiện có bởi vì điều này có thể dẫn đến kết quả là những đối tượng sai sẽ được chỉ định cho các thành viên của bạn. Điều này cũng có thể xảy ra nếu bạn gỡ bỏ những đối tượng nửa thế này nửa thế khác. Việc gỡ bỏ những đối tượng từ kết quả sau cùng mà các thành viên được chỉ định những đối tượng này sẽ được quay trả về đối tượng mặc định.',
 	'EMPTY_FIELD_IDENT'			=> 'Bạn chưa nhập tên mục thông tin cá nhân',
-	'EMPTY_USER_FIELD_NAME'		=> 'Bạn chưa nhập tên mục thông tin cá nhân hiển thị cho thành viên',
+	'EMPTY_USER_FIELD_NAME'		=> 'Bạn chưa nhập tên hiển thị cho mục thông tin cá nhân của thành viên',
 	'ENTRIES'					=> 'Mục',
 	'EVERYTHING_OK'				=> 'Mọi thứ đều bình thường',
 
@@ -81,7 +83,7 @@ $lang = array_merge($lang, array(
 	'FIELD_DESCRIPTION_EXPLAIN'	=> 'Giới thiệu về mục thông tin cá nhân này hiển thị cho thành viên',
 	'FIELD_DROPDOWN'			=> 'Menu thả xuống dropdown',
 	'FIELD_IDENT'				=> 'Tên mục thông tin cá nhân',
-	'FIELD_IDENT_EXPLAIN'		=> 'Tên mục thông tin cá nhân giúp bạn định danh và quản lý dễ dàng, nó không hiển thị đến các thành viên.',
+	'FIELD_IDENT_EXPLAIN'		=> 'Tên mục thông tin cá nhân là tên xác định mục thông tin cá nhân trong cơ sở dữ liệu và trong các tập tin khuôn mẫu.',
 	'FIELD_INT'					=> 'Chữ số',
 	'FIELD_LENGTH'				=> 'Độ dài khung input',
 	'FIELD_NOT_FOUND'			=> 'Không tìm thấy mục thông tin cá nhân',
@@ -93,7 +95,7 @@ $lang = array_merge($lang, array(
 	'FIRST_OPTION'				=> 'Tuỳ chọn đầu tiên',
 
 	'HIDE_PROFILE_FIELD'			=> 'Ẩn mục thông tin cá nhân',
-	'HIDE_PROFILE_FIELD_EXPLAIN'	=> 'Chỉ có các Administrator và Moderator mới có thể nhìn thấy và điền vào mục thông tin cá nhân loại này. Nếu tuỳ chọn này được bật, mục thông tin cá nhân sẽ chỉ hiển thị trong phần thông tin cá nhân của thành viên.',
+	'HIDE_PROFILE_FIELD_EXPLAIN'	=> 'Chỉ có các quản trị viên và điều hành viên mới có thể nhìn thấy và điền vào mục thông tin cá nhân loại này. Nếu tuỳ chọn này được bật, mục thông tin cá nhân sẽ chỉ hiển thị trong phần thông tin cá nhân của thành viên.',
 
 	'INVALID_CHARS_FIELD_IDENT'	=> 'Tên mục thông tin cá nhân chỉ được phép sử dụng ký tự thường a-z và dấu gạch nối _',
 	'ISO_LANGUAGE'				=> 'Ngôn ngữ [%s]',
@@ -122,7 +124,7 @@ $lang = array_merge($lang, array(
 	'RADIO_BUTTONS'				=> 'Nút tuỳ chọn radio',
 	'REMOVED_PROFILE_FIELD'		=> 'Đã gỡ bỏ thành công mục thông tin cá nhân.',
 	'REQUIRED_FIELD'			=> 'Mục thông tin cá nhân bắt buộc',
-	'REQUIRED_FIELD_EXPLAIN'	=> 'Yêu cầu thành viên phải nhập thông tin đầy đủ trong mục này. Nếu thiết lập này được chọn, mục thông tin cá nhân này sẽ được hiển thị trong phần đăng ký thành viên mới.',
+	'REQUIRED_FIELD_EXPLAIN'	=> 'Yêu cầu thành viên phải nhập thông tin đầy đủ trong mục này. Nếu thiết lập này được chọn, mục thông tin cá nhân này sẽ được hiển thị trong phần đăng ký thành viên mới và cả trong bảng điều khiển của thành viên.',
 	'ROWS'						=> 'Số hàng',
 
 	'SAVE'							=> 'Lưu',
@@ -136,7 +138,7 @@ $lang = array_merge($lang, array(
 	'STEP_2_TITLE_CREATE'			=> 'Tuỳ chọn xác định loại thông tin cá nhân',
 	'STEP_2_TITLE_EDIT'				=> 'Tuỳ chọn xác định loại thông tin cá nhân',
 	'STEP_3_EXPLAIN_CREATE'			=> 'Kể từ khi bạn có nhiều gói ngôn ngữ được cài đặt trong hệ thống, bạn phải điền đầy đủ thông tin cho các mục này trong từng gói ngôn ngữ. Mục thông tin cá nhân sẽ hiển thị với gói ngôn ngữ mặc định được chọn, bạn có thể điền đầy đủ thông tin cho các mục này trong từng gói ngôn ngữ sau nếu muốn.',
-	'STEP_3_EXPLAIN_EDIT'			=> 'Kể từ khi bạn có nhiều gói ngôn ngữ được cài đặt trong hệ thống, bạn có thể thay đổi ngay bây giờ hao8c5 thêm vào đầy đủ thông tin cho các mục này trong từng gói ngôn ngữ. Mục thông tin cá nhân sẽ hiển thị với gói ngôn ngữ mặc định được chọn.',
+	'STEP_3_EXPLAIN_EDIT'			=> 'Kể từ khi bạn có nhiều gói ngôn ngữ được cài đặt trong hệ thống, bạn có thể thay đổi ngay bây giờ hoặc thêm vào đầy đủ thông tin cho các mục này trong từng gói ngôn ngữ. Mục thông tin cá nhân sẽ hiển thị với gói ngôn ngữ mặc định được chọn.',
 	'STEP_3_TITLE_CREATE'			=> 'Xác định ngôn ngữ còn lại',
 	'STEP_3_TITLE_EDIT'				=> 'Xác định ngôn ngữ',
 	'STRING_DEFAULT_VALUE_EXPLAIN'	=> 'Nhập vào một cụm từ mặc định được hiển thị hay một giá trị mặc định. Bỏ trống phần này nếu bạn muốn hiển thị rỗng mục thông tin này cho thành viên tự điền vào.',
@@ -144,7 +146,7 @@ $lang = array_merge($lang, array(
 	'TEXT_DEFAULT_VALUE_EXPLAIN'	=> 'Nhập vào một đoạn văn bản mặc định được hiển thị hay một giá trị mặc định. Bỏ trống phần này nếu bạn muốn hiển thị rỗng mục thông tin này cho thành viên tự điền vào.',
 
 	'UPDATE_PREVIEW'	=> 'Xem trước cập nhật',
-	'USER_FIELD_NAME'	=> 'Tên mục thông tin cá nhân đã hiển thị cho thành viên',
+	'USER_FIELD_NAME'	=> 'Tên mục thông tin cá nhân hiển thị cho thành viên',
 
 	'VISIBILITY_OPTION'				=> 'Tuỳ chọn hiển thị',
 ));

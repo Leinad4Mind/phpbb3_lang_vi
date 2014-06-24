@@ -4,7 +4,7 @@
 * acp_email [Vietnamese]
 *
 * @package language
-* @version $Id: email.php,v 1.02 2006/06/26 11:49:00 nedka Exp $
+* @version $Id: email.php,v 1.03 2006/08/15 15:45:00 nedka Exp $
 * @copyright (c) 2006 phpBBVietNam Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -40,7 +40,7 @@ if (empty($lang) || !is_array($lang))
 
 // Bot settings
 $lang = array_merge($lang, array(
-	'ACP_MASS_EMAIL_EXPLAIN'		=> 'Công cụ này sẽ giúp bạn gửi Email đến tất cả các thành viên trong hệ thống hoặc tất cả thành viên trong một nhóm xác định. Để thực hiện việc này, một Email sẽ được gửi đến địa chỉ Email của Administrator đã được cung cấp với bản sao được gửi đến cho tất cả người nhận đã chọn. Nếu bạn gửi Email cho một nhóm lớn có rất đông thành viên, hãy kiên nhẫn chờ đợi sau khi bấm vào nút gửi và đừng dừng nạp trang này lại. Điều này là bình thường vì thời gian chờ đợi tỉ lệ thuận với số lượng thành viên và bạn sẽ được thông báo khi quá trình gửi Email thành viên hoàn tất.',
+	'ACP_MASS_EMAIL_EXPLAIN'		=> 'Công cụ này sẽ giúp bạn gửi Email đến tất cả các thành viên trong hệ thống hoặc tất cả thành viên trong một nhóm xác định. Để thực hiện việc này, một Email sẽ được gửi đến địa chỉ Email của quản trị viên đã được cung cấp với bản sao được gửi đến cho tất cả người nhận đã chọn. Nếu bạn gửi Email cho một nhóm lớn có rất đông thành viên, hãy kiên nhẫn chờ đợi sau khi bấm vào nút gửi và đừng dừng nạp trang này lại. Điều này là bình thường vì thời gian chờ đợi tỉ lệ thuận với số lượng thành viên và bạn sẽ được thông báo khi quá trình gửi Email thành viên hoàn tất.',
 	'ALL_USERS'						=> 'Tất cả thành viên',
 
 	'COMPOSE'				=> 'Soạn nội dung',
