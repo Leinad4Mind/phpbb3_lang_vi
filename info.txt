@@ -16,22 +16,24 @@ _ _ _ _ _    |  |_ _ _   _ _ _ _ _     |  |__|  /  |  |__|  /                   
 .........................................................................................................................
 =========================================================================================================================
 @ Project Name: phpBB iVN (phpBB in Vietnamese)
-@ Main Project: phpBBVietNam
-@ phpBBVietNam Group
+@ VinaBB Team
 ---[ Information ]--------------------------------------------------------------
 Language Pack Name: Vietnamese Language Pack for phpBB3
-Language Pack Version: 3.1.0.A1-a
+Language Pack Version: 3.1.0.A2-a
 Encoding: Unicode (UTF-8)
-Release Date: 2013/10/23
+Release Date: 2013/12/24
 ---[ Description ]--------------------------------------------------------------
 Vietnamese Language Pack for phpBB 3.1.x with following parts:
 + Main translation
 + ACP translation
 + Email translation
-+ Vietnamese Imagesets for default styles (proSilver & subSilver2)
++ Vietnamese buttons for default styles (proSilver & subSilver2)
 ---[ Translator ]----------------------------------------
 # nedka (Khoa Nguyen) <nedka@nedka.vn> http://www.nedka.vn/
 ---[ History ]------------------------------------------------------------------
+# 2013/12/24: Version 3.1.0.A2-a
+Updated code changes in language files from Alpha1 to Alpha2
+
 # 2013/10/23: Version 3.1.0.A1-a
 Updated code changes in language files from phpBB 3.0.12 to phpBB 3.1.0-Alpha1
 

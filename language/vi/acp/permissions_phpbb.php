@@ -3,7 +3,7 @@
 * acp/permissions_phpbb (phpBB Permission Set) [Vietnamese]
 *
 * @package language
-* @version 2.01
+* @version 2.02
 * @copyright (c) 2013 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 */
@@ -92,7 +92,7 @@ $lang = array_merge($lang, array(
 	'ACL_U_PM_EMAILPM'		=> 'Gửi email tin nhắn',
 	'ACL_U_PM_PRINTPM'		=> 'In tin nhắn',
 	'ACL_U_PM_ATTACH'		=> 'Đính kèm tập tin trong tin nhắn',
-	'ACL_U_PM_DOWNLOAD'		=> 'Tải về tập tin tron tin nhắn',
+	'ACL_U_PM_DOWNLOAD'		=> 'Tải về tập tin trong tin nhắn',
 	'ACL_U_PM_BBCODE'		=> 'Sử dụng BBCode trong tin nhắn',
 	'ACL_U_PM_SMILIES'		=> 'Sử dụng biểu tượng vui trong tin nhắn',
 	'ACL_U_PM_IMG'			=> 'Sử dụng thẻ [img] trong tin nhắn',

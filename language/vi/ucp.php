@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version 1.113
+* @version 1.114
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -316,12 +316,14 @@ $lang = array_merge($lang, array(
 	'NOTIFICATIONS_MARK_ALL_READ'			=> 'Đánh dấu đã xem tất cả thông báo',
 	'NOTIFICATIONS_MARK_ALL_READ_CONFIRM'	=> 'Bạn có chắc chắn muốn đánh dấu đã xem tất cả thông báo?',
 	'NOTIFICATIONS_MARK_ALL_READ_SUCCESS'	=> 'Tất cả thông báo đã được đánh dấu xem rồi.',
+	'NOTIFICATION_GROUP_ADMINISTRATION'		=> 'Thông báo quản trị viên',
 	'NOTIFICATION_GROUP_MISCELLANEOUS'		=> 'Thông báo khác',
 	'NOTIFICATION_GROUP_MODERATION'			=> 'Thông báo điều hành viên',
 	'NOTIFICATION_GROUP_POSTING'			=> 'Thông báo gửi bài',
 	'NOTIFICATION_METHOD_EMAIL'				=> 'Email',
 	'NOTIFICATION_METHOD_JABBER'			=> 'Jabber',
 	'NOTIFICATION_TYPE'						=> 'Loại thông báo',
+	'NOTIFICATION_TYPE_ADMIN_ACTIVATE_USER'	=> 'Kích hoạt tài khoản người dùng đăng ký mới',
 	'NOTIFICATION_TYPE_BOOKMARK'			=> 'Có người trả lời chủ đề mà bạn đánh dấu',
 	'NOTIFICATION_TYPE_GROUP_REQUEST'		=> 'Có người yêu cầu tham gia vào nhóm mà bạn quản lí',
 	'NOTIFICATION_TYPE_IN_MODERATION_QUEUE'	=> 'Có chủ đề hay bài viết chờ duyệt',
