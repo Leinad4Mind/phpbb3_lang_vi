@@ -4,8 +4,8 @@
 * acp_profile [Vietnamese]
 *
 * @package language
-* @version $Id: profile.php,v 1.22 2007/07/29 02:19:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: profile.php,v 1.023 2007/10/06 09:01:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,15 +13,20 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();

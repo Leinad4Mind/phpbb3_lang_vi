@@ -1,4 +1,4 @@
-Subject: Chào mừng bạn đã đến với "{SITENAME}" - {U_BOARD}
+Subject: Chào mừng bạn đã đến với "{SITENAME}"
 
 {WELCOME_MSG}
 
@@ -7,6 +7,8 @@ Hãy giữ Email này cẩn thận. Thông tin về tài khoản thành viên c�
 ----------------------------------
 Tên thành viên: {USERNAME}
 Mật khẩu: {PASSWORD}
+
+Địa chỉ diễn đàn: {U_BOARD}
 ----------------------------------
 
 Tài khoản của bạn hiện tại chưa được kích hoạt. Bạn không thể sử dụng tài khoản này để đăng nhập vào hệ thống cho đến khi bạn kích hoạt nó bằng cách bấm vào liên kết dưới đây:

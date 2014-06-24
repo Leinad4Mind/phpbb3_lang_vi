@@ -1,4 +1,4 @@
-Subject: Chào mừng bạn đã đến với "{SITENAME}" - {U_BOARD}
+Subject: Chào mừng bạn đã đến với "{SITENAME}"
 
 {WELCOME_MSG}
 
@@ -7,6 +7,8 @@ Hãy giữ lại Email này cẩn thận. Thông tin về tài khoản thành vi
 ----------------------------
 Tên thành viên: {USERNAME}
 Mật khẩu: {PASSWORD}
+
+Địa chỉ diễn đàn: {U_BOARD}
 ----------------------------
 
 Tài khoản của bạn chưa được kích hoạt, hãy vui lòng chờ cho đến khi người quản trị kích hoạt tài khoản này thì bạn mới có thể đăng nhập được vào hệ thống. Bạn sẽ nhận được một Email thông báo khác khi việc kích hoạt hoàn tất.

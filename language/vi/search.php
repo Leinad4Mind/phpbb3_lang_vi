@@ -4,8 +4,8 @@
 * search [Vietnamese]
 *
 * @package language
-* @version $Id: search.php,v 1.19 2007/08/25 11:18:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: search.php,v 1.020 2007/10/06 08:47:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,15 +13,20 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();

@@ -1,4 +1,4 @@
-Subject: Chào mừng bạn đã đến với "{SITENAME}" - {U_BOARD}
+Subject: Chào mừng bạn đã đến với "{SITENAME}"
 
 {WELCOME_MSG}
 
@@ -12,7 +12,7 @@ Hoặc gửi Email về địa chỉ:
 
 -8<----------------------------- CẮT TẠI ĐÂY ------------------------------
 
-Đồng ý cho phép tham gia vào website "{SITENAME}"
+Đồng ý cho phép tham gia vào website "{SITENAME}" - {U_BOARD}
 
 Tên thành viên: {USERNAME}
 Địa chỉ Email: {EMAIL_ADDRESS}

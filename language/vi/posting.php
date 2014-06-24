@@ -4,8 +4,8 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php,v 1.32 2007/07/24 20:02:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: posting.php,v 1.036 2007/10/06 07:33:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,15 +13,20 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -47,13 +52,13 @@ $lang = array_merge($lang, array(
 	'ADD_POLL_EXPLAIN'			=> 'Nếu bạn không muốn thêm vào một bình chọn trong chủ đề của mình, hãy để trống phần này.',
 	'ALREADY_DELETED'			=> 'Xin lỗi, bài viết này vừa bị xoá.',
 	'ATTACH_QUOTA_REACHED'		=> 'Xin lỗi, dung lượng cấp phép tải lên cho diễn đàn đã hết.',
-	'ATTACH_SIG'				=> 'Đính kèm chữ ký cá nhân (Chữ ký có thể thay đổi từ bảng điều khiển dành cho thành viên của bạn)',
+	'ATTACH_SIG'				=> 'Đính kèm chữ ký cá nhân (Chữ ký có thể thay đổi từ bảng điều khiển của thành viên)',
 
-	'BBCODE_A_HELP'				=> 'Đính kèm tập tin trong dòng: [attachment=]tên_tập_tin.đuôi_tập_tin[/attachment]',
+	'BBCODE_A_HELP'				=> 'Đính kèm tập tin trong dòng: [attachment=]tên_tập_tin.loại_tập_tin[/attachment]',
 	'BBCODE_B_HELP'				=> 'Văn bản in đậm: [b]văn bản muốn in đậm[/b]',
 	'BBCODE_C_HELP'				=> 'Hiển thị mã: [code]mã muốn hiển thị[/code]',
 	'BBCODE_E_HELP'				=> 'Danh sách: Tạo danh sách liệt kê các mục',
-	'BBCODE_F_HELP'				=> 'Kích thước văn bản: [size=x-small]văn bản muốn thay đổi kích thước[/size]',
+	'BBCODE_F_HELP'				=> 'Kích thước văn bản: [size=85]văn bản muốn thay đổi kích thước[/size]',
 	'BBCODE_IS_OFF'				=> '%sBBCode%s đang <em>TẮT</em>',
 	'BBCODE_IS_ON'				=> '%sBBCode%s đang <em>BẬT</em>',
 	'BBCODE_I_HELP'				=> 'Văn bản in nghiêng: [i]văn bản muốn in nghiêng[/i]',
@@ -64,8 +69,8 @@ $lang = array_merge($lang, array(
 	'BBCODE_Q_HELP'				=> 'Trích dẫn văn bản: [quote]văn bản muốn trích dẫn[/quote]',
 	'BBCODE_S_HELP'				=> 'Màu chữ: [color=red]văn bản muốn tô màu[/color] Lưu ý: Bạn cũng có thể sử dụng dạng color=#FF0000',
 	'BBCODE_U_HELP'				=> 'Văn bản gạch chân: [u]văn bản muốn gạch chân[/u]',
-	'BBCODE_W_HELP'				=> 'Chèn địa chỉ URL: [url]http://địa chỉ URL[/url] hoặc [url=http://địa chỉ URL]Tên liên kết URL[/url] (Phím tắt: Alt + W)',
-	'BBCODE_D_HELP'				=> 'Chèn Flash: [flash=chiều rộng,chiều cao]http://địa chỉ URL tập tin Flash[/flash]',
+	'BBCODE_W_HELP'				=> 'Chèn địa chỉ URL: [url]http://địa_chỉ_URL[/url] hoặc [url=http://địa_chỉ_URL]Tên liên kết URL[/url] (Phím tắt: Alt + W)',
+	'BBCODE_D_HELP'				=> 'Chèn Flash: [flash=chiều rộng,chiều cao]http://địa_chỉ_URL_tập_tin_Flash[/flash]',
 	'BUMP_ERROR'				=> 'Bạn không thể đẩy chủ đề này liên tục cùng lúc được.',
 
 	'CANNOT_DELETE_REPLIED'		=> 'Xin lỗi, bạn chỉ có thể xoá những bài viết chưa được trả lời.',
@@ -103,10 +108,10 @@ $lang = array_merge($lang, array(
 	'FONT_COLOR'				=> 'Màu chữ',
 	'FONT_COLOR_HIDE'			=> 'Ẩn màu chữ',
 	'FONT_HUGE'					=> 'Lớn nhất',
-	'FONT_LARGE'				=> 'Lớn hơn',
+	'FONT_LARGE'				=> 'Lớn vừa',
 	'FONT_NORMAL'				=> 'Bình thường',
 	'FONT_SIZE'					=> 'Kích thước',
-	'FONT_SMALL'				=> 'Nhỏ hơn',
+	'FONT_SMALL'				=> 'Nhỏ vừa',
 	'FONT_TINY'					=> 'Nhỏ nhất',
 
 	'GENERAL_UPLOAD_ERROR'		=> 'Không thể tải lên tập tin đính kèm đến “%s”.',
@@ -117,25 +122,25 @@ $lang = array_merge($lang, array(
 
 	'LOAD'						=> 'Nạp',
 	'LOAD_DRAFT'				=> 'Nạp bản nháp',
-	'LOAD_DRAFT_EXPLAIN'		=> 'Với công cụ này, bạn có thể chọn cho mình bản nháp để tiếp tục soạn bài viết. Bài viết hiện tại của bạn sẽ được huỷ bỏ và tất cả nội dung trong bài viết sẽ được xoá. Xem, sửa và xoá những bản nháp trong bảng điều khiển thành viên của bạn.',
-	'LOGIN_EXPLAIN_BUMP'		=> 'Bạn cần phải đăng nhập để đẩy các chủ đề trong chuyên mục này.',
-	'LOGIN_EXPLAIN_DELETE'		=> 'Bạn cần phải đăng nhập để xóa các bài viết trong chuyên mục này.',
-	'LOGIN_EXPLAIN_POST'		=> 'Bạn cần phải đăng nhập để gửi bài trong chuyên mục này.',
-	'LOGIN_EXPLAIN_QUOTE'		=> 'Bạn cần phải đăng nhập để trích dẫn các bài viết trong chuyên mục này.',
-	'LOGIN_EXPLAIN_REPLY'		=> 'Bạn cần phải đăng nhập để trả lời các chủ đề trong chuyên mục này.',
+	'LOAD_DRAFT_EXPLAIN'		=> 'Với công cụ này, bạn có thể chọn cho mình bản nháp để tiếp tục soạn bài viết. Bài viết hiện tại của bạn sẽ được hủy bỏ và tất cả nội dung trong bài viết sẽ được xoá. Xem, sửa và xóa những bản nháp trong bảng điều khiển thành viên của bạn.',
+	'LOGIN_EXPLAIN_BUMP'		=> 'Bạn phải đăng nhập để đẩy các chủ đề trong chuyên mục này.',
+	'LOGIN_EXPLAIN_DELETE'		=> 'Bạn phải đăng nhập để xóa các bài viết trong chuyên mục này.',
+	'LOGIN_EXPLAIN_POST'		=> 'Bạn phải đăng nhập để gửi bài trong chuyên mục này.',
+	'LOGIN_EXPLAIN_QUOTE'		=> 'Bạn phải đăng nhập để trích dẫn các bài viết trong chuyên mục này.',
+	'LOGIN_EXPLAIN_REPLY'		=> 'Bạn phải đăng nhập để trả lời các chủ đề trong chuyên mục này.',
 
 	'MAX_FONT_SIZE_EXCEEDED'	=> 'Bạn chỉ có thể chọn kích thước văn bản tối đa là <strong>%1$d</strong>.',
-	'MAX_FLASH_HEIGHT_EXCEEDED'	=> 'Chiều cao của những tập tin Flash mà bạn sử dụng chỉ có thể tối đa là <strong>%1$d</strong> Pixel.',
-	'MAX_FLASH_WIDTH_EXCEEDED'	=> 'Chiều rộng của những tập tin Flash mà bạn sử dụng chỉ có thể tối đa là <strong>%1$d</strong> Pixel.',	
-	'MAX_IMG_HEIGHT_EXCEEDED'	=> 'Chiều cao của những hình ảnh mà bạn sử dụng chỉ có thể tối đa là <strong>%1$d</strong> Pixel.',
-	'MAX_IMG_WIDTH_EXCEEDED'	=> 'Chiều rộng của những hình ảnh mà bạn sử dụng chỉ có thể tối đa là <strong>%1$d</strong> Pixel.',
+	'MAX_FLASH_HEIGHT_EXCEEDED'	=> 'Những tập tin Flash mà bạn sử dụng chỉ có thể cao tối đa là <strong>%1$d</strong> Pixel.',
+	'MAX_FLASH_WIDTH_EXCEEDED'	=> 'Những tập tin Flash mà bạn sử dụng chỉ có thể rộng tối đa là <strong>%1$d</strong> Pixel.',	
+	'MAX_IMG_HEIGHT_EXCEEDED'	=> 'Những hình ảnh mà bạn sử dụng chỉ có thể cao tối đa là <strong>%1$d</strong> Pixel.',
+	'MAX_IMG_WIDTH_EXCEEDED'	=> 'Những hình ảnh mà bạn sử dụng chỉ có thể rộng tối đa là <strong>%1$d</strong> Pixel.',
 
 	'MESSAGE_BODY_EXPLAIN'		=> 'Nhập nội dung bài viết của bạn tại đây nhưng không được quá <strong>%d</strong> ký tự.',
 	'MESSAGE_DELETED'			=> 'Bài viết này đã được xoá thành công.',
 	'MORE_SMILIES'				=> 'Xem tất cả biểu tượng vui',
 
-	'NOTIFY_REPLY'				=> 'Thông báo cho tôi khi có bài viết trả lời',
-	'NOT_UPLOADED'				=> 'Không thể tải lên được tập tin.',
+	'NOTIFY_REPLY'				=> 'Thông báo cho tôi khi có bài trả lời',
+	'NOT_UPLOADED'				=> 'Không thể tải lên tập tin.',
 	'NO_DELETE_POLL_OPTIONS'	=> 'Bạn không thể xoá những đối tượng bình chọn đang có.',
 	'NO_PM_ICON'				=> 'Không dùng biểu tượng tin nhắn',
 	'NO_POLL_TITLE'				=> 'Bạn chưa nhập câu hỏi bình chọn.',
@@ -143,8 +148,8 @@ $lang = array_merge($lang, array(
 	'NO_POST_MODE'				=> 'Không xác định chế độ bài viết.',
 
 	'PARTIAL_UPLOAD'			=> 'Tập tin đính kèm bạn vừa chọn chỉ được tải lên một phần và chưa hoàn chỉnh.',
-	'PHP_SIZE_NA'				=> 'Dung lượng tập tin đính kèm quá lớn.<br />Không thể xác định dung lượng tập tin tối đa được xác lập bởi PHP trong tập tin <code>php.ini</code>.',
-	'PHP_SIZE_OVERRUN'			=> 'Dung lượng tập tin đính kèm quá lớn, dung lượng tập tin được phép tải lên tối đa là <strong>%d</strong> MB.<br />Dung lượng tối đa này được xác lập trong tập tin <strong>php.ini</strong> và không thể tự thay đổi được.',
+	'PHP_SIZE_NA'				=> 'Dung lượng tập tin đính kèm quá lớn.<br />Không thể xác định dung lượng tập tin tối đa xác lập bởi PHP trong tập tin <code>php.ini</code>.',
+	'PHP_SIZE_OVERRUN'			=> 'Dung lượng tập tin đính kèm quá lớn, dung lượng tập tin được phép tải lên tối đa là <strong>%d</strong> MB.<br />Dung lượng tối đa này được xác lập trong tập tin <strong>php.ini</strong> và không thể tự thay đổi.',
 	'PLACE_INLINE'				=> 'Đặt trong dòng',
 	'POLL_DELETE'				=> 'Xoá bình chọn',
 	'POLL_FOR'					=> 'Thời gian bình chọn',
@@ -188,17 +193,17 @@ $lang = array_merge($lang, array(
 	'STICKY_ANNOUNCE_TIME_LIMIT'=> 'Thời gian hiển thị chủ đề dưới dạng chú ý/thông báo',
 	'STICK_TOPIC_FOR'			=> 'Đánh dấu quan trọng cho chủ đề trong',
 	'STICK_TOPIC_FOR_EXPLAIN'	=> 'Nhập vào số <strong>0</strong> hay để trống cho chú ý/thông báo không giới hạn thời gian.',
-	'STYLES_TIP'				=> 'Chú ý: Bạn có thể chọn nhanh vùng văn bản rồi bấm vào những nút bên trên.',
+	'STYLES_TIP'				=> 'Chú ý: Bạn có thể chọn nhanh đoạn văn bản rồi bấm vào những nút bên trên.',
 
 	'TOO_FEW_CHARS'				=> 'Nội dung bài viết của bạn quá ngắn.',
 	'TOO_FEW_POLL_OPTIONS'		=> 'Bạn phải tạo ít nhất hai đối tượng bình chọn.',
-	'TOO_MANY_ATTACHMENTS'		=> 'Không thể gửi thêm tập tin đính kèm nào khác, số lượng tập tin tối đa cho phép đính kèm là <strong>%d</strong> tập tin.',
+	'TOO_MANY_ATTACHMENTS'		=> 'Không thể gửi thêm tập tin đính kèm nào khác, số lượng tập tin tối đa cho phép đính kèm là <strong>%d</strong>.',
 	'TOO_MANY_CHARS'			=> 'Nội dung bài viết của bạn quá dài.',
 	'TOO_MANY_CHARS_POST'		=> 'Nội dung bài viết của bạn có đến <strong>%1$d</strong> ký tự. Số ký tự tối đa bạn được phép sử dụng là <strong>%2$d</strong>.',
 	'TOO_MANY_CHARS_SIG'		=> 'Nội dung chữ ký của bạn có đến <strong>%1$d<strong ký tự. Số ký tự tối đa bạn được phép sử dụng là <strong>%2$d</strong>.',
-	'TOO_MANY_POLL_OPTIONS'		=> 'Bạn đã tạo quá nhiều đối tượng bình chọn được cho phép.',
-	'TOO_MANY_SMILIES'			=> 'Bài viết của bạn sử dụng quá nhiều hình biểu tượng vui. Số lượng hình biểu tượng vui tối đa cho phép sử dụng trong mỗi bài viết là <strong>%d</strong> hình.',
-	'TOO_MANY_URLS'				=> 'Bài viết của bạn có quá nhiều địa chỉ URL. Số lượng địa chỉ URL tối đa được phép sử dụng trong mỗi bài viết là <strong>%d</strong> địa chỉ.',
+	'TOO_MANY_POLL_OPTIONS'		=> 'Bạn đã tạo quá nhiều đối tượng bình chọn.',
+	'TOO_MANY_SMILIES'			=> 'Bài viết của bạn sử dụng quá nhiều biểu tượng vui. Số lượng biểu tượng vui tối đa cho phép sử dụng trong mỗi bài viết là <strong>%d</strong>.',
+	'TOO_MANY_URLS'				=> 'Bài viết của bạn có quá nhiều địa chỉ URL. Số lượng địa chỉ URL tối đa được phép sử dụng trong mỗi bài viết là <strong>%d</strong>.',
 	'TOO_MANY_USER_OPTIONS'		=> 'Bạn không thể xác định số đối tượng bình chọn tối đa cho mỗi thành viên nhiều hơn số lượng đối tượng bình chọn hiện có trong bình chọn này',
 	'TOPIC_BUMPED'				=> 'Chủ đề đã được đẩy lên thành công.',
 
@@ -215,10 +220,11 @@ $lang = array_merge($lang, array(
 	'USER_CANNOT_REPLY'			=> 'Bạn không thể trả lời bài viết trong chuyên mục này.',
 	'USER_CANNOT_FORUM_POST'	=> 'Bạn không thể thực hiện các thao tác gửi bài trong chuyên mục này vì loại chủ đề này không hỗ trợ.',	
 
-	'VIEW_MESSAGE'		=> '%sXem bài viết vừa gửi của bạn%s',
+	'VIEW_MESSAGE'			=> '%sXem bài viết vừa gửi của bạn%s',
+	'VIEW_PRIVATE_MESSAGE'	=> '%sXem tin nhắn vừa gửi của bạn%s',
 
 	'WRONG_FILESIZE'	=> 'Dung lượng tập tin đính kèm quá lớn, dung lượng tối đa cho phép là <strong>%1d %2s</strong>.',
-	'WRONG_SIZE'		=> 'Kích thước hình ảnh bạn vừa chọn là <strong>%5$d</strong> Pixel về chiều rộng và <strong>%6$d</strong> Pixel về chiều cao. Kích thước hình ảnh không được phép nhỏ hơn <strong>%1$d</strong> Pixel về chiều rộng và <strong>%2$d</strong> Pixel về chiều cao cũng như không được phép lớn hơn <strong>%3$d</strong> Pixel về chiều rộng và <strong>%4$d</strong> Pixel về chiều cao.',
+	'WRONG_SIZE'		=> 'Kích thước hình ảnh bạn vừa chọn rộng <strong>%5$d</strong> Pixel và cao <strong>%6$d</strong> Pixel. Kích thước hình ảnh phải rộng ít nhất <strong>%1$d</strong> Pixel và cao ít nhất <strong>%2$d</strong> Pixel cũng như không được phép rộng hơn <strong>%3$d</strong> Pixel và cao hơn <strong>%4$d</strong> Pixel.',
 ));
 
 ?>

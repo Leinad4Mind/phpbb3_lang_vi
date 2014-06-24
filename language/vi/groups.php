@@ -4,8 +4,8 @@
 * groups [Vietnamese]
 *
 * @package language
-* @version $Id: groups.php,v 1.17 2007/07/23 23:50:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: groups.php,v 1.018 2007/10/06 08:48:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,15 +13,20 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -46,17 +51,17 @@ $lang = array_merge($lang, array(
 
 	'CHANGED_DEFAULT_GROUP'		=> 'Đã thay đổi nhóm mặc định thành công.',
 	
-	'GROUP_AVATAR'						=> 'Hình đại diện của nhóm', 
+	'GROUP_AVATAR'						=> 'Hình đại diện của nhóm',
 	'GROUP_CHANGE_DEFAULT'				=> 'Bạn có chắc chắn muốn thay đổi tư cách thành viên mặc định của nhóm “%s”?',
 	'GROUP_CLOSED'						=> 'Nhóm đã cố định',
 	'GROUP_DESC'						=> 'Giới thiệu về nhóm',
 	'GROUP_HIDDEN'						=> 'Nhóm ẩn',
-	'GROUP_INFORMATION'					=> 'Thông tin về nhóm',	
+	'GROUP_INFORMATION'					=> 'Thông tin về nhóm',
 	'GROUP_IS_CLOSED'					=> 'Đây là một nhóm đã cố định, những thành viên mới chỉ có thể tham gia vào nhóm bởi sự cho phép của người lãnh đạo nhóm này.',
-	'GROUP_IS_FREE'						=> 'Đây là một nhóm hoàn toàn tự do, tất cả thành viên mới đều được chào đón.', 
+	'GROUP_IS_FREE'						=> 'Đây là một nhóm hoàn toàn tự do, tất cả thành viên mới đều được chào đón.',
 	'GROUP_IS_HIDDEN'					=> 'Đây là một nhóm ẩn, chỉ có những thành viên của nhóm này mới xem được tư cách thành viên của mình trong nhóm.',
 	'GROUP_IS_OPEN'						=> 'Đây là một nhóm tự do, những thành viên mới có thể thoải mái tham gia vào nhóm.',
-	'GROUP_IS_SPECIAL'					=> 'Đây là một nhóm đặc biệt, những nhóm đặc biệt như thế này được điều hành bởi chính người quản trị.', 	
+	'GROUP_IS_SPECIAL'					=> 'Đây là một nhóm đặc biệt, những nhóm đặc biệt như thế này được điều hành bởi chính người quản trị.',
 	'GROUP_JOIN'						=> 'Tham gia vào nhóm này',
 	'GROUP_JOIN_CONFIRM'				=> 'Bạn có chắc chắn muốn tham gia vào nhóm vừa chọn?',
 	'GROUP_JOIN_PENDING'				=> 'Gửi yêu cầu tham gia vào nhóm này',
@@ -67,7 +72,7 @@ $lang = array_merge($lang, array(
 	'GROUP_MEMBERS'						=> 'Các thành viên trong nhóm',
 	'GROUP_NAME'						=> 'Tên nhóm',
 	'GROUP_OPEN'						=> 'Nhóm tự do',
-	'GROUP_RANK'						=> 'Xếp hạng của nhóm', 
+	'GROUP_RANK'						=> 'Xếp hạng của nhóm',
 	'GROUP_RESIGN_MEMBERSHIP'			=> 'Từ bỏ tư cách thành viên trong nhóm',
 	'GROUP_RESIGN_MEMBERSHIP_CONFIRM'	=> 'Bạn có chắc chắn muốn từ bỏ tư cách thành viên của mình trong nhóm vừa chọn?',
 	'GROUP_RESIGN_PENDING'				=> 'Từ bỏ tư cách thành viên đang chờ quyết định trong nhóm',

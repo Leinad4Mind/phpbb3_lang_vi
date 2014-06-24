@@ -4,8 +4,8 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version $Id: memberlist.php,v 1.26 2007/07/24 20:02:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: memberlist.php,v 1.027 2007/10/06 08:21:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,15 +13,20 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -99,10 +104,10 @@ $lang = array_merge($lang, array(
 	'LESS_THAN'					=> 'Ít hơn',
 	'LIST_USER'					=> '1 thành viên',
 	'LIST_USERS'				=> '%d thành viên',
-	'LOGIN_EXPLAIN_LEADERS'		=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem danh sách ban điều hành.',
-	'LOGIN_EXPLAIN_MEMBERLIST'	=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem danh sách thành viên.',
-	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để thực hiện tìm kiếm thành viên.',	
-	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem thông tin cá nhân của thành viên.',
+	'LOGIN_EXPLAIN_LEADERS'		=> 'Bạn phải là thành viên và đã đăng nhập vào hệ thống để xem danh sách ban điều hành.',
+	'LOGIN_EXPLAIN_MEMBERLIST'	=> 'Bạn phải là thành viên và đã đăng nhập vào hệ thống để xem danh sách thành viên.',
+	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'Bạn phải là thành viên và đã đăng nhập vào hệ thống để thực hiện tìm kiếm thành viên.',	
+	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'Bạn phải là thành viên và đã đăng nhập vào hệ thống để xem thông tin cá nhân của thành viên.',
 
 	'MORE_THAN'				=> 'Nhiều hơn',
 

@@ -4,8 +4,8 @@
 * help_bbcode [Vietnamese]
 *
 * @package language
-* @version $Id: help_bbcode.php,v 1.27 2007/07/30 16:51:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: help_bbcode.php,v 1.028 2007/10/06 08:47:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,14 +13,19 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
 
 /**
+* DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 // DEVELOPERS PLEASE NOTE 
 //

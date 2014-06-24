@@ -4,8 +4,8 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version $Id: ucp.php,v 1.84 2007/08/25 11:19:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: ucp.php,v 1.086 2007/10/10 10:35:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,15 +13,20 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -72,6 +77,7 @@ $lang = array_merge($lang, array(
 	'ACCOUNT_INACTIVE'				=> 'Tài khoản của bạn đã được tạo. Tuy nhiên, hệ thống yêu cầu bạn phải tự kích hoạt tài khoản của mình. Một khoá kích hoạt đã được gửi đến địa chỉ Email mà bạn đã dùng để đăng ký thành viên. Hãy kiểm tra Email của bạn để biết thêm thông tin.',
 	'ACCOUNT_INACTIVE_ADMIN'		=> 'Tài khoản của bạn đã được tạo. Tuy nhiên, hệ thống yêu cầu tài khoản của bạn phải được kích hoạt bởi nhóm quản trị viên. Một Email đã được gửi đến người quản trị và bạn sẽ được thông báo khi tài khoản của mình được kích hoạt.',
 	'ACTIVATION_EMAIL_SENT'			=> 'Email kích hoạt đã được gửi đến địa chỉ Email của bạn.',
+	'ACTIVATION_EMAIL_SENT_ADMIN'	=> 'Email kích hoạt đã được gửi đến địa chỉ Email của các quản trị viên.',
 	'ADD'							=> 'Thêm vào',
 	'ADD_BCC'						=> 'Thêm vào [Đồng gửi]',
 	'ADD_FOES'						=> 'Thêm kẻ thù mới',

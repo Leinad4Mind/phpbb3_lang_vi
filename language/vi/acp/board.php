@@ -4,8 +4,8 @@
 * acp_board [Vietnamese]
 *
 * @package language
-* @version $Id: board.php,v 1.65 2007/08/25 11:14:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: board.php,v 1.070 2007/10/10 10:45:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,15 +13,20 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -211,6 +216,10 @@ $lang = array_merge($lang, array(
 	'ENABLE_COPPA_EXPLAIN'			=> 'Tuỳ chọn này yêu cầu các thành viên từ 13 tuổi trở xuống phải cam kết với điều khoản U.S. COPPA. Nếu bạn vô hiệu điều khoản này thì các thành viên trong nhóm COPPA sẽ không còn được hiển thị nữa.',
 	'MAX_CHARS'						=> 'Tối đa',
 	'MIN_CHARS'						=> 'Tối thiểu',
+	'MIN_TIME_REG'					=> 'Thời gian chờ đợi đăng ký',
+	'MIN_TIME_REG_EXPLAIN'			=> 'Mẫu dữ liệu đăng ký không thể được gửi đến hệ thống trước khoảng thời gian này.',
+	'MIN_TIME_TERMS'				=> 'Thời gian chờ đợi chấp nhận điều khoản đăng ký',
+	'MIN_TIME_TERMS_EXPLAIN'		=> 'Trang điều khoản đăng ký không thể bị bỏ qua trước khoảng thời gian này.',
 	'NO_AUTH_PLUGIN'				=> 'Không có phương pháp xác thực thích hợp nào được tìm thấy.',
 	'PASSWORD_LENGTH'				=> 'Độ dài mật khẩu',
 	'PASSWORD_LENGTH_EXPLAIN'		=> 'Số ký tự tối thiểu và tối đa bắt buộc đối với mật khẩu.',
@@ -300,7 +309,7 @@ $lang = array_merge($lang, array(
 
 // Auth settings
 $lang = array_merge($lang, array(
-	'ACP_AUTH_SETTINGS_EXPLAIN'	=> 'Hệ thống phpBB hỗ trợ sử dụng các gói bổ sung chức năng hoặc gói thành phần chức năng xác thực. Điều này giúp bạn lựa chọn phương pháp xác thực các thành viên khi họ đăng nhập vào hệ thống. Mặc định, có ba plugin được cung cấp kèm theo hệ thống phpBB: DB, LDAP và Apache. Không phải tất cả các phương pháp đều yêu cầu bạn phải khai báo thêm thông tin với hệ thống. Bạn chỉ cần cung cấp thêm thông tin cho hệ thống biết liên quan đến phương pháp xác thực mà mình đã chọn.',
+	'ACP_AUTH_SETTINGS_EXPLAIN'	=> 'Hệ thống phpBB hỗ trợ sử dụng các gói chức năng xác thực. Điều này giúp bạn lựa chọn phương pháp xác thực các thành viên khi họ đăng nhập vào hệ thống. Mặc định, có ba plugin được cung cấp kèm theo hệ thống phpBB: DB, LDAP và Apache. Không phải tất cả các phương pháp đều yêu cầu bạn phải khai báo thêm thông tin với hệ thống. Bạn chỉ cần cung cấp thêm thông tin cho hệ thống biết liên quan đến phương pháp xác thực mà mình đã chọn.',
 
 	'AUTH_METHOD'				=> 'Chọn phương pháp xác thực',
 
@@ -343,7 +352,7 @@ $lang = array_merge($lang, array(
 	'SCRIPT_PATH'				=> 'Đường dẫn hệ thống',
 	'SCRIPT_PATH_EXPLAIN'		=> 'Đường dẫn đến thư mục mà hệ thống phpBB được định vị đối với tên miền, ví dụ như <samp>/phpBB3</samp>.',
 	'SERVER_NAME'				=> 'Tên miền',
-	'SERVER_NAME_EXPLAIN'		=> 'Tên miền mà máy chủ đang sử dụng, ví dụ như <samp>www.foo.bar</samp>.',
+	'SERVER_NAME_EXPLAIN'		=> 'Tên miền mà máy chủ đang sử dụng, ví dụ như <samp>www.example.com</samp>.',
 	'SERVER_PORT'				=> 'Cổng máy chủ',
 	'SERVER_PORT_EXPLAIN'		=> 'Cổng mà máy chủ của bạn đang sử dụng, thông thường là <strong>80</strong>, bạn chỉ nên thay đổi nếu chắc chắn máy chủ của mình đang chạy trên cổng khác.',
 	'SERVER_PROTOCOL'			=> 'Giao thức máy chủ',
@@ -373,7 +382,13 @@ $lang = array_merge($lang, array(
 	'EMAIL_CHECK_MX'				=> 'Kiểm tra tên miền của Email theo bản ghi tên miền MX hợp lệ',
 	'EMAIL_CHECK_MX_EXPLAIN'		=> 'Nếu bạn bật chức năng này, tên miền của các địa chỉ Email được cung cấp trong quá trình đăng ký và thay đổi thông tin cá nhân sẽ được kiểm tra để đảm bảo đây là bản ghi tên miền MX hợp lệ.',
 	'FORCE_PASS_CHANGE'				=> 'Số ngày yêu cầu thay đổi mật khẩu',
-	'FORCE_PASS_CHANGE_EXPLAIN'		=> 'Yêu cầu thành viên phải thay đổi mật khẩu của họ sau khi hết số ngày được thiết lập. Nhập vào số <strong>0</strong> để vô hiệu chức năng này.',
+	'FORCE_PASS_CHANGE_EXPLAIN'		=> 'Yêu cầu thành viên phải thay đổi mật khẩu của họ sau khi hết số ngày được thiết lập. Nhập vào số <strong>0</strong> để vô hiệu thiết lập này.',
+	'FORM_TIME_MAX'					=> 'Thời gian tối đa để gửi các mẫu dữ liệu',
+	'FORM_TIME_MAX_EXPLAIN'			=> 'Thời gian tối đa cho phép mà thành viên có thể gửi các mẫu dữ liệu vào hệ thống. Nhập vào số <strong>-1</strong> để vô hiệu thiết lập này. Lưu ý rằng một mẫu dữ liệu cũng có thể trở nên không hợp lệ nếu phiên đăng nhập đó đã hết hiệu lực, không phải do thiết lập này.',
+	'FORM_TIME_MIN'					=> 'Thời gian tối thiểu để gửi các mẫu dữ liệu',
+	'FORM_TIME_MIN_EXPLAIN'			=> 'Những mẫu dữ liệu được gửi nhanh hơn mức thời gian này sẽ bị hệ thống ngăn lại. Nhập vào số <strong>0</strong> để vô hiệu thiết lập này.',
+	'FORM_SID_GUESTS'				=> 'Kết nối mẫu dữ liệu đến phiên đăng nhập của khách',
+	'FORM_SID_GUESTS_EXPLAIN'		=> 'Nếu bạn bật tùy chọn này, mẫu dữ liệu sẵn có dành cho khách sẽ được loại trừ không sử dụng đến phiên đăng nhập. Điều này có thể tạo ra những rắc rối với một vài nhà cung cấp dịch vụ ISP.',
 	'FORWARDED_FOR_VALID'			=> 'Kiểm tra tiêu đề <var>X_FORWARDED_FOR</var> hợp lệ',
 	'FORWARDED_FOR_VALID_EXPLAIN'	=> 'Những phiên đăng nhập này sẽ chỉ được tiếp tục nếu tiêu đề <var>X_FORWARDED_FOR</var> gửi đi bằng với một phiên đăng nhập đã gửi trong yêu cầu trước đó. Những thiết lập cấm cũng sẽ được kiểm tra lại các địa chỉ IP trong <var>X_FORWARDED_FOR</var>.',
 	'IP_VALID'						=> 'Kiểm tra địa chỉ IP ',
@@ -434,10 +449,9 @@ $lang = array_merge($lang, array(
 $lang = array_merge($lang, array(
 	'ACP_JABBER_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lý thiết lập và bật tuỳ chọn sử dụng máy chủ Jabber để gửi tin nhắn nhanh và thông báo của website. Jabber là một giao thức mã nguồn mở và bất kỳ ai cũng có thể sử dụng miễn phí. Một vài máy chủ Jabber đính kèm cả cổng truy xuất và dịch vụ chuyển tin cho phép bạn liên hệ với các thành viên trên các hệ thống mạng khác. Không phải tất cả các máy chủ đều có dịch vụ chuyển tin và những thay đổi trong giao thức kết nối có thể ngăn cản việc gửi tin nhắn. Hãy chắc chắn rằng bạn nhập thông tin về tài khoản đã được đăng ký. Hệ thống phpBB sẽ sử dụng những thông tin mà bạn cung cấp này tại đây.',
 
-	'ERR_JAB_AUTH'				=> 'Không thể xác thực trên máy chủ Jabber.',
-	'ERR_JAB_CONNECT'			=> 'Không thể kết nối đến máy chủ Jabber.',
 	'JAB_ENABLE'				=> 'Sử dụng tài khoản Jabber',
 	'JAB_ENABLE_EXPLAIN'		=> 'Tuỳ chọn cho phép nhắn tin và thông báo bằng máy chủ Jabber.',
+	'JAB_GTALK_NOTE'			=> 'Lưu ý rằng GTalk sẽ không hoạt động được bởi vì hàm chức năng <samp>dns_get_record</samp> không thể tìm thấy. Hàm chức năng này không có sẵn trong PHP4 và không được bổ sung trên các hệ thống Windows. Hiện tại, nó cũng không hoạt động trên các hệ thống BSD, bao gồm cả Mac OS.',
 	'JAB_PACKAGE_SIZE'			=> 'Số lượng tin nhắn trong gói Jabber',
 	'JAB_PACKAGE_SIZE_EXPLAIN'	=> 'Số lượng tin nhắn được gửi đi trong một gói Jabber. Nếu bạn nhập vào số <strong>0</strong>, tin nhắn sẽ được gửi đi ngay lập tức và không phải chờ đợi để được gửi.',
 	'JAB_PASSWORD'				=> 'Mật khẩu đăng nhập tài khoản Jabber',

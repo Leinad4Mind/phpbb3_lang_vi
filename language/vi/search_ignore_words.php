@@ -4,8 +4,8 @@
 * search_ignore_words [Vietnamese]
 *
 * @package language
-* @version $Id: search_ignore_words.php,v 1.04 2007/07/23 23:59:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: search_ignore_words.php,v 1.005 2007/10/06 08:49:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,11 +13,19 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* search_ignore_words (English)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
+
+/**
+* DO NOT CHANGE
+*/
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 $words = array(
 	'a',

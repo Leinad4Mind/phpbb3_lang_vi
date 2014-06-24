@@ -1,4 +1,4 @@
-Subject: Kích hoạt lại tài khoản của bạn trong "{SITENAME}" - {U_BOARD}
+Subject: Kích hoạt lại tài khoản của bạn trong "{SITENAME}"
 
 Một quản trị viên đã yêu cầu bạn phải kích hoạt lại tài khoản của mình. Tài khoản của bạn tạm thời ngưng kích hoạt.
 Bạn hãy vui lòng làm theo những bước dưới đây để kích hoạt lại tài khoản của mình.

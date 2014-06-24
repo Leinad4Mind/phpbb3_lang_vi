@@ -4,8 +4,8 @@
 * acp_permissions [Vietnamese]
 *
 * @package language
-* @version $Id: permissions.php,v 1.37 2007/07/26 04:05:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: permissions.php,v 1.040 2007/10/10 10:46:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,15 +13,20 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -266,15 +271,16 @@ $lang = array_merge($lang, array(
 	'TRACE_TOTAL'							=> 'Toàn bộ',
 
 	'USERS_NOT_ASSIGNED'			=> 'Không có thành viên nào được chỉ định nhiệm vụ này',
-	'USER_IS_MEMBER_OF_DEFAULT'		=> 'là một thành viên của những nhóm mặc định dưới đây',
-	'USER_IS_MEMBER_OF_CUSTOM'		=> 'là một thành viên của những nhóm tuỳ chọn dưới đây',
+	'USER_IS_MEMBER_OF_DEFAULT'		=> 'là một thành viên của những nhóm đã chỉ định trước dưới đây',
+	'USER_IS_MEMBER_OF_CUSTOM'		=> 'là một thành viên của những nhóm thành viên đã chỉ định dưới đây',
 
 	'VIEW_ASSIGNED_ITEMS'	=> 'Xem những mục đã chỉ định',
 	'VIEW_LOCAL_PERMS'		=> 'Xem thiết lập cấp phép riêng',
 	'VIEW_GLOBAL_PERMS'		=> 'Xem thiết lập cấp phép chung',
 	'VIEW_PERMISSIONS'		=> 'Xem thiết lập cấp phép',
 
-	'WRONG_PERMISSION_TYPE'	=> 'Loại thiết lập cấp phép sai đã được chọn',
+	'WRONG_PERMISSION_TYPE'				=> 'Loại thiết lập cấp phép sai đã được chọn',
+	'WRONG_PERMISSION_SETTING_FORMAT'	=> 'Những thiết lập cấp phép đang nằm trong một định dạng sai, hệ thống phpBB không thể thực thi chúng chính xác.',
 ));
 
 ?>

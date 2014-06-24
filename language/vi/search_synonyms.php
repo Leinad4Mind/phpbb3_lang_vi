@@ -4,8 +4,8 @@
 * search_synonyms [Vietnamese]
 *
 * @package language
-* @version $Id: search_synonyms.php,v 1.02 2007/07/23 23:59:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: search_synonyms.php,v 1.003 2007/10/06 08:48:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,11 +13,19 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* search_synonyms (English)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
+
+/**
+* DO NOT CHANGE
+*/
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 $synonyms = array(
 	'abcense'			=> 'absence',

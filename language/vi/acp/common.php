@@ -4,8 +4,8 @@
 * acp common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php,v 1.75 2007/08/21 15:25:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: common.php,v 1.077 2007/10/06 09:10:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,15 +13,20 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -126,7 +131,7 @@ $lang = array_merge($lang, array(
 	'ACP_MASS_EMAIL'			=> 'Gửi Email thành viên',
 	'ACP_MESSAGES'				=> 'Bài viết',
 	'ACP_MESSAGE_SETTINGS'		=> 'Thiết lập tin nhắn',
-	'ACP_MODULE_MANAGEMENT'		=> 'Quản lý gói thành phần chức năng',
+	'ACP_MODULE_MANAGEMENT'		=> 'Quản lý gói chức năng',
 	'ACP_MOD_LOGS'				=> 'Ghi nhận điều hành viên',
 	'ACP_MOD_ROLES'				=> 'Nhiệm vụ điều hành viên',
 	
@@ -275,7 +280,7 @@ $lang = array_merge($lang, array(
 
 // PHP info
 $lang = array_merge($lang, array(
-	'ACP_PHP_INFO_EXPLAIN'	=> 'Trang này liệt kê các thông tin về phiên bản PHP hiện tại được cài đặt trên máy chủ của bạn. Trang này cũng đính kèm thông tin chi tiết về các gói thành phần chức năng đã được cài đặt và nạp cùng với PHP, những biến PHP sẵn có và những thiết lập PHP mặc định. Thông tin này có thể hữu ích cho bạn nếu bạn đang giải quyết những rắc rối mà mình gặp phải với hệ thống. Cần lưu ý rằng có một vài công ty cung cấp dịch vụ lưu trữ Web sẽ hạn chế những thông tin về PHP được hiển thị trong đây vì nguyên nhân bảo mật. Một lời khuyên dành cho bạn là đừng bao giờ cung cấp cho người khác biết những thông tin trên trang này ngoại trừ khi bạn đang yêu cầu hỗ trợ từ <a href="http://www.phpbb.com/about/team/">các thành viên trong nhóm chính thức</a> của diễn đàn hỗ trợ phpBB.',
+	'ACP_PHP_INFO_EXPLAIN'	=> 'Trang này liệt kê các thông tin về phiên bản PHP hiện tại được cài đặt trên máy chủ của bạn. Trang này cũng đính kèm thông tin chi tiết về các gói chức năng đã được cài đặt và nạp cùng với PHP, những biến PHP sẵn có và những thiết lập PHP mặc định. Thông tin này có thể hữu ích cho bạn nếu bạn đang giải quyết những rắc rối mà mình gặp phải với hệ thống. Cần lưu ý rằng có một vài công ty cung cấp dịch vụ lưu trữ Web sẽ hạn chế những thông tin về PHP được hiển thị trong đây vì nguyên nhân bảo mật. Một lời khuyên dành cho bạn là đừng bao giờ cung cấp cho người khác biết những thông tin trên trang này ngoại trừ khi bạn đang yêu cầu hỗ trợ từ <a href="http://www.phpbb.com/about/team/">các thành viên trong nhóm chính thức</a> của diễn đàn hỗ trợ phpBB.',
 
 	'NO_PHPINFO_AVAILABLE'	=> 'Thông tin cấu hình PHP trên máy chủ của bạn không thể thu thập được. Hàm <code>phpinfo()</code> đã bị vô hiệu vì nguyên nhân bảo mật.',
 ));
@@ -562,13 +567,13 @@ $lang = array_merge($lang, array(
 
 	'LOG_MCP_CHANGE_POSTER'	=> '<strong>Đã thay đổi người gửi trong chủ đề “%1$s”</strong><br />» từ %2$s thành %3$s',
 
-	'LOG_MODULE_DISABLE'	=> '<strong>Gói thành phần chức năng đã được vô hiệu</strong><br />» %s',
-	'LOG_MODULE_ENABLE'		=> '<strong>Gói thành phần chức năng đã được kích hoạt</strong><br />» %s',
-	'LOG_MODULE_MOVE_DOWN'	=> '<strong>Gói thành phần chức năng đã được di chuyển xuống</strong><br />» %1$s xuống dưới %2$s',
-	'LOG_MODULE_MOVE_UP'	=> '<strong>Gói thành phần chức năng đã được di chuyển lên</strong><br />» %1$s lên trên %2$s',
-	'LOG_MODULE_REMOVED'	=> '<strong>Gói thành phần chức năng đã được gỡ bỏ</strong><br />» %s',
-	'LOG_MODULE_ADD'		=> '<strong>Gói thành phần chức năng đã được thêm vào</strong><br />» %s',
-	'LOG_MODULE_EDIT'		=> '<strong>Gói thành phần chức năng đã được chỉnh sửa</strong><br />» %s',
+	'LOG_MODULE_DISABLE'	=> '<strong>Gói chức năng đã được vô hiệu</strong><br />» %s',
+	'LOG_MODULE_ENABLE'		=> '<strong>Gói chức năng đã được kích hoạt</strong><br />» %s',
+	'LOG_MODULE_MOVE_DOWN'	=> '<strong>Gói chức năng đã được di chuyển xuống</strong><br />» %1$s xuống dưới %2$s',
+	'LOG_MODULE_MOVE_UP'	=> '<strong>Gói chức năng đã được di chuyển lên</strong><br />» %1$s lên trên %2$s',
+	'LOG_MODULE_REMOVED'	=> '<strong>Gói chức năng đã được gỡ bỏ</strong><br />» %s',
+	'LOG_MODULE_ADD'		=> '<strong>Gói chức năng đã được thêm vào</strong><br />» %s',
+	'LOG_MODULE_EDIT'		=> '<strong>Gói chức năng đã được chỉnh sửa</strong><br />» %s',
 
 	'LOG_A_ROLE_ADD'		=> '<strong>Nhiệm vụ quản trị viên đã được thêm vào</strong><br />» %s',
 	'LOG_A_ROLE_EDIT'		=> '<strong>Nhiệm vụ quản trị viên đã được chỉnh sửa</strong><br />» %s',

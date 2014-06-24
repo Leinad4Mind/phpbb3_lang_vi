@@ -4,8 +4,8 @@
 * help_faq [Vietnamese]
 *
 * @package language
-* @version $Id: help_faq.php,v 1.45 2007/07/30 16:51:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: help_faq.php,v 1.047 2007/10/06 09:04:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,14 +13,19 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
 
 /**
+* DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 // DEVELOPERS PLEASE NOTE 
 //
@@ -213,7 +218,7 @@ $help = array(
 	),
 	array(
 		0 => 'Quản trị viên là ai?',
-		1 => 'Quản trị viên là những thành viên có quyền hạn cao nhất trong việc điều khiển toàn bộ mọi hoạt động của hệ thống. Những thành viên này có thể điều khiển tất cả các thành phần chức năng của hệ thống, bao gồm: thiết lập cấp phép, cấm thành viên, tạo nhóm hay các điều hành viên… tùy thuộc vào thiết lập cấp phép của người sáng lập dành cho các quản trị viên này. Họ cũng có đầy đủ quyền hạn của điều hành viên trong tất cả các chuyên mục và cũng tùy thuộc vào thiết lập cấp phép của người sáng lập.'
+		1 => 'Quản trị viên là những thành viên có quyền hạn cao nhất trong việc điều khiển toàn bộ mọi hoạt động của hệ thống. Những thành viên này có thể điều khiển tất cả các chức năng của hệ thống, bao gồm: thiết lập cấp phép, cấm thành viên, tạo nhóm hay các điều hành viên… tùy thuộc vào thiết lập cấp phép của người sáng lập dành cho các quản trị viên này. Họ cũng có đầy đủ quyền hạn của điều hành viên trong tất cả các chuyên mục và cũng tùy thuộc vào thiết lập cấp phép của người sáng lập.'
 	),
 	array(
 		0 => 'Điều hành viên là ai?',

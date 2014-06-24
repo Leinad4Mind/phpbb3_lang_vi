@@ -4,8 +4,8 @@
 * acp_forums [Vietnamese]
 *
 * @package language
-* @version $Id: forums.php,v 1.23 2007/07/24 20:48:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: forums.php,v 1.025 2007/10/06 10:43:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,15 +13,20 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -95,7 +100,10 @@ $lang = array_merge($lang, array(
 	'FORUM_PASSWORD_CONFIRM'			=> 'Xác nhận mật khẩu chuyên mục',
 	'FORUM_PASSWORD_CONFIRM_EXPLAIN'	=> 'Bạn chỉ cần xác nhận lại mật khẩu này nếu đã nhập mật khẩu cho chuyên mục ở trên.',
 	'FORUM_PASSWORD_EXPLAIN'			=> 'Chọn mật khẩu cho chuyên mục này, sử dụng hệ thống cấp phép trong thiết lập.',
+	'FORUM_PASSWORD_UNSET'				=> 'Gỡ bỏ mật khẩu chuyên mục',
+	'FORUM_PASSWORD_UNSET_EXPLAIN'		=> 'Đánh dấu vào tùy chọn này nếu bạn muốn gỡ bỏ mật khẩu của chuyên mục.',
 	'FORUM_PASSWORD_MISMATCH'			=> 'Mật khẩu của chuyên mục bạn vừa nhập không phù hợp.',
+	'FORUM_PASSWORD_OLD'				=> 'Mật khẩu đang sử dụng của chuyên mục được mã hóa theo phương pháp cũ và bạn nên thay đổi lại nó.',
 	'FORUM_PRUNE_SETTINGS'				=> 'Thiết lập dọn dẹp chuyên mục',	
 	'FORUM_RESYNCED'					=> 'Chuyên mục <strong>%s</strong> đã được đồng bộ thành công.',
 	'FORUM_RULES_EXPLAIN'				=> 'Nội quy chuyên mục được hiển thị trong bất cứ trang nào của chuyên mục đó.',

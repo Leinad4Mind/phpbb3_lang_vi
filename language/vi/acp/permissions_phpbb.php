@@ -4,8 +4,8 @@
 * acp_permissions (phpBB Permission Set) [Vietnamese]
 *
 * @package language
-* @version $Id: permissions_phpbb.php,v 1.23 2007/07/26 03:06:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: permissions_phpbb.php,v 1.025 2007/10/06 09:11:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,15 +13,20 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -234,7 +239,7 @@ $lang = array_merge($lang, array(
 	'acl_a_styles'		=> array('lang' => 'Có thể quản lý giao diện', 'cat' => 'misc'),
 	'acl_a_viewlogs'	=> array('lang' => 'Có thể xem ghi nhận', 'cat' => 'misc'),
 	'acl_a_clearlogs'	=> array('lang' => 'Có thể xoá ghi nhận', 'cat' => 'misc'),
-	'acl_a_modules'		=> array('lang' => 'Có thể quản lý gói thành phần chức năng', 'cat' => 'misc'),
+	'acl_a_modules'		=> array('lang' => 'Có thể quản lý gói chức năng', 'cat' => 'misc'),
 	'acl_a_language'	=> array('lang' => 'Có thể quản lý gói ngôn ngữ', 'cat' => 'misc'),
 	'acl_a_email'		=> array('lang' => 'Có thể gửi Email thành viên', 'cat' => 'misc'),
 	'acl_a_bots'		=> array('lang' => 'Có thể quản lý máy tìm kiếm', 'cat' => 'misc'),

@@ -4,8 +4,8 @@
 * acp_users [Vietnamese]
 *
 * @package language
-* @version $Id: users.php,v 1.18 2007/08/21 15:37:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: users.php,v 1.020 2007/10/10 10:51:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,15 +13,20 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -117,9 +122,9 @@ $lang = array_merge($lang, array(
 	'USER_CUSTOM_PROFILE_FIELDS'	=> 'Mục thông tin cá nhân tuỳ biến',
 	'USER_DELETED'					=> 'Tài khoản của thành viên này đã được xoá thành công.',
 	'USER_GROUP_ADD'				=> 'Thêm thành viên này vào',
-	'USER_GROUP_NORMAL'				=> 'Loại nhóm bình thường, là thành viên của nhóm',
-	'USER_GROUP_PENDING'			=> 'Loại nhóm đang trong chế độ chờ quyết định',
-	'USER_GROUP_SPECIAL'			=> 'Loại nhóm đặc biệt, là thành viên của nhóm',
+	'USER_GROUP_NORMAL'				=> 'Nhóm do thành viên chỉ định, là thành viên của nhóm',
+	'USER_GROUP_PENDING'			=> 'Nhóm đang trong chế độ chờ quyết định',
+	'USER_GROUP_SPECIAL'			=> 'Nhóm đã được chỉ định trước, là thành viên của nhóm',
 	'USER_NO_ATTACHMENTS'			=> 'Chưa đính kèm bất kỳ tập tin nào.',
 	'USER_OVERVIEW_UPDATED'			=> 'Thông tin chi tiết về thành viên đã được cập nhật thành công.',
 	'USER_POSTS_DELETED'			=> 'Đã gỡ bỏ thành công tất cả bài viết của thành viên này',

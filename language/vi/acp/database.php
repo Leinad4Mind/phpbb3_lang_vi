@@ -4,8 +4,8 @@
 * acp_database [Vietnamese]
 *
 * @package language
-* @version $Id: database.php,v 1.15 2007/07/23 23:53:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @version $Id: database.php,v 1.017 2007/10/06 08:57:00 nedka Exp $
+* @copyright (c) 2006, 2007 nedka (Nguyen Dang Khoa)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,15 +13,20 @@
 /**
 *
 * Vietnamese Language Pack for phpBB3
-* 
+*
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa) - http://www.vinabb.com/
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -48,7 +53,7 @@ $lang = array_merge($lang, array(
 	'BACKUP_INVALID'	=> 'Tập tin bạn vừa chọn sao lưu không hợp lệ.',
 	'BACKUP_OPTIONS'	=> 'Tuỳ chọn sao lưu',
 	'BACKUP_SUCCESS'	=> 'Tập tin sao lưu đã được tạo thành công.',
-	'BACKUP_TYPE'		=> 'Loại tập tin sao lưu',
+	'BACKUP_TYPE'		=> 'Hình thức sao lưu',
 
 	'DATABASE'					=> 'Các công cụ cơ sở dữ liệu',
 	'DATA_ONLY'					=> 'Chỉ sao lưu nội dung dữ liệu',
