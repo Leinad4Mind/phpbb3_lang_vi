@@ -4,7 +4,7 @@
 * acp/common [Vietnamese]
 *
 * @package language
-* @version 1.108
+* @version 1.109
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -364,6 +364,7 @@ $lang = array_merge($lang, array(
 
 	'GZIP_COMPRESSION'	=> 'Chế độ nén Gzip',
 
+	'NO_SEARCH_INDEX'	=> 'Phương pháp tìm kiếm đang dùng chưa được lập chỉ mục.<br >Vui lòng tạo chỉ mục cho “%1$s” trong phần %2$schỉ mục tìm kiếm%3$s.',
 	'NOT_AVAILABLE'		=> 'Không có sẵn',
 	'NUMBER_FILES'		=> 'Số tập tin đính kèm',
 	'NUMBER_POSTS'		=> 'Số bài viết',

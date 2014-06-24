@@ -4,7 +4,7 @@
 * plupload [Vietnamese]
 *
 * @package language
-* @version 1.00
+* @version 1.01
 * @copyright (c) 2013 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -43,15 +43,27 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'PLUPLOAD_ADD_FILES'			=> 'Thêm tập tin',
 	'PLUPLOAD_ADD_FILES_TO_QUEUE'	=> 'Thêm tập tin vào hàng chờ và bấm nút <strong>“Bắt đầu tải lên hàng chờ”</strong> để tải lên hết toàn bộ.',
+	'PLUPLOAD_ALREADY_QUEUED'		=> 'Tập tin %s đã có trong hàng chờ.',
+	'PLUPLOAD_CLOSE'				=> 'Đóng',
 	'PLUPLOAD_DRAG'					=> 'Kéo thả tập tin vào đây.',
+	'PLUPLOAD_DRAG_TEXTAREA'		=> 'Bạn có thể đính kèm nhanh tập tin bằng cách kéo thả vào khung soạn thảo.',
+	'PLUPLOAD_DUPLICATE_ERROR'		=> 'Lỗi trùng tập tin.',
+	'PLUPLOAD_ERR_FILE_COUNT'		=> 'Lỗi đếm tập tin.',
+	'PLUPLOAD_ERR_FILE_INVALID_EXT'	=> 'Phẩn mở rộng tập tin không hợp lệ:',
+	'PLUPLOAD_ERR_FILE_TOO_LARGE'	=> 'Dung lượng tập tin quá lớn:',
 	'PLUPLOAD_ERR_INPUT'			=> 'Có lỗi khi mở dữ liệu nhập.',
 	'PLUPLOAD_ERR_MOVE_UPLOADED'	=> 'Có lỗi khi di chuyển tập tin đã tải lên.',
 	'PLUPLOAD_ERR_OUTPUT'			=> 'Có lỗi khi mở dữ liệu xuất.',
+	'PLUPLOAD_ERR_RUNTIME_MEMORY'	=> 'Tiến trình xử lí đã vượt quá dung lượng bộ nhớ.',
+	'PLUPLOAD_ERR_UPLOAD_URL'		=> 'Địa chỉ URL tải lên bị lỗi hoặc không tồn tại.',
 	'PLUPLOAD_EXTENSION_ERROR'		=> 'Lỗi loại tập tin.',
+	'PLUPLOAD_FILE'					=> 'Tập tin: %s',
+	'PLUPLOAD_FILE_DETAILS'			=> 'Tập tin: %s, dung lượng: %d, dung lượng tối đa: %d',
 	'PLUPLOAD_FILENAME'				=> 'Tên tập tin',
 	'PLUPLOAD_FILES_QUEUED'			=> '%d tập tin đang chờ',
 	'PLUPLOAD_GENERIC_ERROR'		=> 'Lỗi tổng quát.',
 	'PLUPLOAD_HTTP_ERROR'			=> 'Lỗi HTTP.',
+	'PLUPLOAD_IMAGE_FORMAT'			=> 'Định dạng hình ảnh bị lỗi hoặc không được hỗ trợ.',
 	'PLUPLOAD_INIT_ERROR'			=> 'Lỗi khởi tạo.',
 	'PLUPLOAD_IO_ERROR'				=> 'Lỗi nhập/xuất.',
 	'PLUPLOAD_NOT_APPLICABLE'		=> 'Không sẵn sàng',

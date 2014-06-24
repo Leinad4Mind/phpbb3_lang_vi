@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version 1.114
+* @version 1.115
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -414,7 +414,6 @@ $lang = array_merge($lang, array(
 	'PM_SUBJECT'				=> 'Tiêu đề tin nhắn',
 	'PM_TO'						=> 'Người nhận',
 	'PM_USERS_REMOVED_NO_PM'	=> 'Bạn không thể thêm vào một vài người dùng bởi vì họ đã vô hiệu chức năng nhận tin nhắn của mình.',
-	'POPUP_ON_PM'				=> 'Mở cửa sổ thông báo khi có tin nhắn mới',
 	'POST_EDIT_PM'				=> 'Sửa tin nhắn',
 	'POST_FORWARD_PM'			=> 'Chuyển tiếp tin nhắn',
 	'POST_NEW_PM'				=> 'Soạn tin nhắn',
@@ -526,8 +525,6 @@ $lang = array_merge($lang, array(
 	'UCP_PM_COMPOSE'		=> 'Soạn tin nhắn',
 	'UCP_PM_DRAFTS'			=> 'Tin nhắn nháp',
 	'UCP_PM_OPTIONS'		=> 'Qui định cá nhân và tùy chọn thư mục',
-	'UCP_PM_POPUP'			=> 'Tin nhắn',
-	'UCP_PM_POPUP_TITLE'	=> 'Thông báo tin nhắn mới',
 	'UCP_PM_UNREAD'			=> 'Tin nhắn chưa xem',
 	'UCP_PM_VIEW'			=> 'Xem tin nhắn',
 

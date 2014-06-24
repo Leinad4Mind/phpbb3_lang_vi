@@ -19,9 +19,9 @@ _ _ _ _ _    |  |_ _ _   _ _ _ _ _     |  |__|  /  |  |__|  /                   
 @ VinaBB Team
 ---[ Information ]--------------------------------------------------------------
 Language Pack Name: Vietnamese Language Pack for phpBB3
-Language Pack Version: 3.1.0.A2-a
+Language Pack Version: 3.1.0.A3-a
 Encoding: Unicode (UTF-8)
-Release Date: 2013/12/24
+Release Date: 2014/02/20
 ---[ Description ]--------------------------------------------------------------
 Vietnamese Language Pack for phpBB 3.1.x with following parts:
 + Main translation
@@ -31,8 +31,11 @@ Vietnamese Language Pack for phpBB 3.1.x with following parts:
 ---[ Translator ]----------------------------------------
 # nedka (Khoa Nguyen) <nedka@nedka.vn> http://www.nedka.vn/
 ---[ History ]------------------------------------------------------------------
+# 2014/02/20: Version 3.1.0.A3-a
+Updated code changes in language files from Alpha 2 to Alpha 3
+
 # 2013/12/24: Version 3.1.0.A2-a
-Updated code changes in language files from Alpha1 to Alpha2
+Updated code changes in language files from Alpha 1 to Alpha 2
 
 # 2013/10/23: Version 3.1.0.A1-a
 Updated code changes in language files from phpBB 3.0.12 to phpBB 3.1.0-Alpha1

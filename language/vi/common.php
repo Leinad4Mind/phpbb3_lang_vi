@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version 1.151
+* @version 1.152
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -145,6 +145,7 @@ $lang = array_merge($lang, array(
 	'BUTTON_QUOTE'				=> 'Trích dẫn',
 	'BUTTON_TOPIC_LOCKED'		=> 'Đã khóa',
 	'BYTES'						=> 'Byte',
+	'BYTES_SHORT'				=> 'B',
 
 	'CANCEL'				=> 'Hủy bỏ',
 	'CHANGE'				=> 'Thay đổi',
@@ -155,7 +156,6 @@ $lang = array_merge($lang, array(
 		1	=> '%d ký tự',
 		2	=> '%d ký tự',
 	),
-	'CLICK_VIEW_PRIVMSG'	=> '%sChuyển đến hộp tin nhận của bạn%s',	
 	'COLLAPSE_VIEW'			=> 'Xem thu gọn',	
 	'CLOSE_WINDOW'			=> 'Đóng cửa sổ',
 	'COLON'					=> ':',
@@ -286,6 +286,8 @@ $lang = array_merge($lang, array(
 	'GB'						=> 'GB',
 	'GIB'						=> 'GiB',
 	'GO'						=> 'Chuyển',
+	'GOTO_FIRST_POST'			=> 'Bài viết đầu',
+	'GOTO_LAST_POST'			=> 'Bài viết cuối',
 	'GOTO_PAGE'					=> 'Chuyển đến trang',
 	'GROUP'						=> 'Nhóm',
 	'GROUPS'					=> 'Nhóm',
@@ -373,8 +375,9 @@ $lang = array_merge($lang, array(
 	'LOGIN_FORUM'								=> 'Để xem hoặc gửi bài trong chuyên mục này, bạn phải nhập vào mật khẩu.',
 	'LOGIN_INFO'								=> 'Để đăng nhập vào hệ thống, bạn phải có tài khoản người dùng đã đăng ký. Việc đăng ký chỉ tốn mất của bạn một chút thời gian nhưng bù lại bạn có thể sử dụng đầy đủ công cụ và chức năng trong hệ thống. Quản trị viên có thể thay đổi quyền hạn của những người dùng đã đăng ký. Trước khi tiến hành đăng ký, hãy chắc chắn rằng bạn đã biết rõ về những điều khoản của chúng tôi và các chính sách có liên quan khác. Bạn cũng phải chắc chắn rằng đã đọc kỹ nội qui riêng của từng chuyên mục trong diễn đàn.',
 	'LOGIN_VIEWFORUM'							=> 'Bạn phải đăng nhập để xem chuyên mục này.',
-	'LOGIN_EXPLAIN_EDIT'						=> 'Bạn phải đăng nhập vào hệ thống mới có thể sửa các bài viết trong chuyên mục này.',
-	'LOGIN_EXPLAIN_VIEWONLINE'					=> 'Bạn phải đăng nhập vào hệ thống mới có thể xem danh sách những ai trực tuyến.',
+	'LOGIN_EXPLAIN_EDIT'						=> 'Bạn phải đăng nhập để sửa các bài viết trong chuyên mục này.',
+	'LOGIN_EXPLAIN_VIEWONLINE'					=> 'Bạn phải đăng nhập để xem danh sách những ai trực tuyến.',
+	'LOGIN_REQUIRED'							=> 'Bạn phải đăng nhập để thực hiện thao tác này.',
 	'LOGOUT'									=> 'Thoát',
 	'LOGOUT_USER'								=> 'Thoát [ %s ]',
 	'LOG_ME_IN'									=> 'Đăng nhập tự động',
@@ -382,6 +385,7 @@ $lang = array_merge($lang, array(
 	'MAIN'					=> 'Chính',
 	'MARK'					=> 'Chọn',
 	'MARK_ALL'				=> 'Chọn hết',
+	'MARK_ALL_READ'			=> 'Đánh dấu đã xem hết',
 	'MARK_FORUMS_READ'		=> 'Đánh dấu đã xem các chuyên mục',
 	'MARK_READ'				=> 'Đánh dấu đã xem',
 	'MARK_SUBFORUMS_READ'	=> 'Đánh dấu đã xem các chuyên mục con',
@@ -422,14 +426,17 @@ $lang = array_merge($lang, array(
 	'NOT_WATCHING_TOPIC'					=> 'Bạn không còn nhận thông báo bài viết mới trong chủ đề này nữa.',
 	'NOTIFICATION_ADMIN_ACTIVATE_USER'		=> 'Người dùng “%1$s” mới đăng ký và cần được kích hoạt tài khoản.',
 	'NOTIFICATION_BOOKMARK'					=> '%1$s trả lời chủ đề “%2$s” mà bạn đã đánh dấu.',
+	'NOTIFICATION_BOOKMARK_TRIMMED'			=> '%1$s và %3$d người khác trả lời chủ đề “%2$s” mà bạn đã đánh dấu.',
 	'NOTIFICATION_GROUP_REQUEST'			=> '%1$s yêu cầu tham gia vào nhóm %2$s.',
 	'NOTIFICATION_GROUP_REQUEST_APPROVED'	=> 'Yêu cầu tham gia vào nhóm %1$s đã được chấp thuận.',
 	'NOTIFICATION_PM'						=> '%1$s gửi cho bạn tin nhắn “%2$s”.',
 	'NOTIFICATION_POST'						=> '%1$s trả lời chủ đề “%2$s”.',
+	'NOTIFICATION_POST_TRIMMED'				=> '%1$s và %3$d người khác trả lời chủ đề “%2$s”',
 	'NOTIFICATION_POST_APPROVED'			=> 'Bài viết “%2$s” của bạn đã được duyệt đăng.',
 	'NOTIFICATION_POST_DISAPPROVED'			=> 'Bài viết “%1$s” của bạn đã bị từ chối đăng vì lý do: “%2$s”.',
 	'NOTIFICATION_POST_IN_QUEUE'			=> 'Bài viết mới “%2$s” gửi bởi %1$s đang chờ duyệt.',
 	'NOTIFICATION_QUOTE'					=> '%1$s nhắc đến bạn trong bài viết “%2$s”.',
+	'NOTIFICATION_QUOTE_TRIMMED'			=> '%1$s và %3$d người khác nhắc đến bạn trong chủ đề “%2$s”',
 	'NOTIFICATION_REPORT_PM'				=> '%1$s báo cáo tin nhắn “%2$s” vì lý do: “%3$s”.',
 	'NOTIFICATION_REPORT_POST'				=> '%1$s báo cáo bài viết “%2$s” vì lý do: "%3$s".',
 	'NOTIFICATION_REPORT_CLOSED'   			=> '%1$s đã đóng báo cáo của bạn về “%2$s”.',
@@ -835,9 +842,6 @@ $lang = array_merge($lang, array(
 	'YES'				=> 'Có',
 	'YIM'				=> 'Tài khoản Yahoo',
 	'YOU_LAST_VISIT'	=> 'Lần ghé thăm trước: %s',
-	'YOU_NEW_PM'		=> 'Bạn có một tin nhắn mới trong hộp tin nhận của mình.',
-	'YOU_NEW_PMS'		=> 'Bạn có nhiều tin nhắn mới trong hộp tin nhận của mình.',
-	'YOU_NO_NEW_PM'		=> 'Bạn không có tin nhắn mới nào trong hộp tin nhận của mình.',
 
 	'datetime'		=> array(
 		'TODAY'		=> 'Hôm nay',

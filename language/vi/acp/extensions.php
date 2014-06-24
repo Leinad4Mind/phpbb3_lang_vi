@@ -4,7 +4,7 @@
 * acp/extensions [Vietnamese]
 *
 * @package language
-* @version 2.00
+* @version 2.01
 * @copyright (c) 2013 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -56,6 +56,7 @@ $lang = array_merge($lang, array(
 	'EXTENSION_DELETE_DATA_EXPLAIN'		=> 'Thao tác này sẽ xóa sạch mọi tập tin hay thiết lập mà phần mở rộng đã tạo ra. Các tập tin ban đầu của phần mở rộng vẫn được giữ lại, vì thế bạn có thể cài đặt lại nếu muốn.',
 	'EXTENSION_DELETE_DATA_IN_PROGRESS'	=> 'Dữ liệu của phần mở rộng đang được xóa. Vui lòng đừng đóng hay nạp lại trang này cho đến khi hoàn tất.',
 	'EXTENSION_DELETE_DATA_SUCCESS'		=> 'Dữ liệu của phần mở rộng đã được xóa thành công.',
+	'EXTENSION_DIR_INVALID'				=> 'Phần mở rộng đã chọn có cấu trúc thư mục không hợp lệ và không thể cài đặt.',
 	'EXTENSION_DISABLE'					=> 'Vô hiệu',
 	'EXTENSION_DISABLE_CONFIRM'			=> 'Bạn có chắc chắn muốn vô hiệu phần mở rộng “%s”?',
 	'EXTENSION_DISABLE_EXPLAIN'			=> 'Việc vô hiệu sẽ không xóa đi các tập tin, dữ liệu hay thiết lập của một phần mở rộng, nhưng các chức năng của nó sẽ không còn hoạt động.',
@@ -70,6 +71,19 @@ $lang = array_merge($lang, array(
 	'EXTENSION_NAME'					=> 'Tên phần mở rộng',
 	'EXTENSION_NOT_AVAILABLE'			=> 'Phần mở rộng đã chọn không thể sử dụng trên hệ thống này. Bạn hãy vui lòng kiểm tra lại phiên bản phpBB cũng như PHP được hỗ trợ bên dưới.',
 	'EXTENSION_OPTIONS'					=> 'Tùy chọn',
+	'EXTENSION_REMOVE_EXPLAIN'			=> '<ol>
+		<li>Vô hiệu phần mở rộng.</li>
+		<li>Xóa toàn bộ dữ liệu tạo ra bởi phần mở rộng.</li>
+		<li>Xóa tất cả tập tin của phần mở rộng khỏi hệ thống.</li>
+	</ol>',
+	'EXTENSION_REMOVE_HEADLINE'			=> 'Gỡ bỏ toàn bộ phần mở rộng khỏi hệ thống',
+	'EXTENSION_UPDATE_EXPLAIN'			=> '<ol>
+		<li>Tạm vô hiệu phần mở rộng.</li>
+		<li>Xóa tất cả tập tin cũ của phần mở rộng khỏi hệ thống.</li>
+		<li>Tải lên các tập tin mới.</li>
+		<li>Kích hoạt lại phần mở rộng.</li>
+	</ol>',
+	'EXTENSION_UPDATE_HEADLINE'			=> 'Cập nhật phần mở rộng',
 	'EXTENSIONS'						=> 'Phần mở rộng',
 	'EXTENSIONS_ADMIN'					=> 'Quản lí phần mở rộng',
 	'EXTENSIONS_DISABLED'				=> 'Phần mở rộng đã vô hiệu',

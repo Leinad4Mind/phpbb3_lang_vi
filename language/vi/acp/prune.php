@@ -4,7 +4,7 @@
 * acp/prune [Vietnamese]
 *
 * @package language
-* @version 1.22
+* @version 1.23
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -58,6 +58,7 @@ $lang = array_merge($lang, array(
 
 	'POSTS_ON_QUEUE'				=> 'Bài viết chờ duyệt',
 	'PRUNE_USERS_GROUP_EXPLAIN'		=> 'Giới hạn số người dùng trong nhóm đã chọn.',
+	'PRUNE_USERS_GROUP_NONE'		=> 'Tất cả nhóm',
 	'PRUNE_USERS_LIST'				=> 'Những tài khoản được dọn dẹp',
 	'PRUNE_USERS_LIST_DELETE'		=> 'Với những điều kiện đã chọn cho thao tác dọn dẹp, các tài khoản sau đây sẽ bị gỡ bỏ. Bạn có thể loại bỏ từng tài khoản riêng lẻ khỏi danh sách xóa bằng việc bỏ dấu chọn trước tên tài khoản của họ.',
 	'PRUNE_USERS_LIST_DEACTIVATE'	=> 'Với những điều kiện đã chọn cho thao tác dọn dẹp, các tài khoản sau đây sẽ bị ngưng kích hoạt. Bạn có thể loại bỏ từng tài khoản riêng lẻ khỏi danh sách ngưng kích hoạt bằng việc bỏ dấu chọn trước tên tài khoản của họ.',

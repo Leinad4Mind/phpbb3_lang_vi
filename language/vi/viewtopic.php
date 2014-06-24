@@ -4,7 +4,7 @@
 * viewtopic [Vietnamese]
 *
 * @package language
-* @version 1.34
+* @version 1.35
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -110,6 +110,7 @@ $lang = array_merge($lang, array(
 
 	'SUBMIT_VOTE'	=> 'Bình chọn',
 
+	'TOPIC_TOOLS'	=> 'Công cụ',
 	'TOTAL_VOTES'	=> 'Số lượt bình chọn',
 
 	'UNLOCK_TOPIC'	=> 'Mở khóa chủ đề',

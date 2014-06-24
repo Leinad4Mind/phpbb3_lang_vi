@@ -4,7 +4,7 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version 1.43
+* @version 1.44
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -146,6 +146,7 @@ $lang = array_merge($lang, array(
 	),
 	'USER_ONLINE'			=> 'Đang trực tuyến',
 	'USER_PRESENCE'			=> 'Hiện diện',
+	'USERS_PER_PAGE'		=> 'Số lượng thành viên mỗi trang',
 
 	'VIEWING_PROFILE'	=> 'Đang xem thông tin cá nhân về %s',
 	'VISITED'			=> 'Lần ghé thăm trước',

@@ -4,7 +4,7 @@
 * search [Vietnamese]
 *
 * @package language
-* @version 1.31
+* @version 1.32
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -66,7 +66,10 @@ $lang = array_merge($lang, array(
 	'LOGIN_EXPLAIN_UNREADSEARCH'	=> 'Hệ thống yêu cầu bạn phải đăng nhập vào để tìm những bài viết chưa xem của mình.',
 	'LOGIN_EXPLAIN_NEWPOSTS'		=> 'Hệ thống yêu cầu bạn phải đăng nhập vào để xem những bài viết mới kể từ lần ghé thăm trước.',
 
-	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> 'Bạn đã dùng quá nhiều từ khóa để tìm kiếm. Xin đừng nhập vào nhiều hơn <strong>%1$d</strong> từ.',
+	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> array(
+		1	=> 'Bạn đã dùng quá nhiều từ khóa để tìm kiếm. Vui lòng đừng nhập nhiều hơn <strong>%1$d</strong> từ.',
+		2	=> 'Bạn đã dùng quá nhiều từ khóa để tìm kiếm. Vui lòng đừng nhập nhiều hơn <strong>%1$d</strong> từ.',
+	),
 
 	'NO_KEYWORDS'			=> 'Bạn phải xác định ít nhất một từ khóa để thực hiện tìm kiếm. Mỗi từ khóa phải có ít nhất là <strong>%d</strong> và không được nhiều quá <strong>%d</strong>, không tính dấu *.',
 	'NO_RECENT_SEARCHES'	=> 'Không có tìm kiếm nào được thực hiện gần đây.',
