@@ -4,9 +4,9 @@
 * acp_forums [Vietnamese]
 *
 * @package language
-* @version $Id: forums.php,v 1.20 2007/05/26 03:50:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: forums.php,v 1.23 2007/07/24 20:48:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -72,7 +71,7 @@ $lang = array_merge($lang, array(
 	'ENABLE_TOPIC_ICONS'			=> 'Sử dụng biểu tượng cho chủ đề',
 
 	'FORUM_ADMIN'						=> 'Quản lý chuyên mục',
-	'FORUM_ADMIN_EXPLAIN'				=> 'Trong hệ thống phpBB mới không có khái niệm loại chuyên mục như trước, mọi thứ bây giờ đều chứa trong chuyên mục với nhau. Mỗi chuyên mục có thể có số chuyên mục con không hạn chế về số lượng và cấp độ. Bạn cũng có thể chọn chuyên mục nào thành viên được phép và không được phép gửi bài. Với công cụ này, bạn có thể thêm vào, chỉnh sửa, xoá, khoá, mở khoá từng chuyên mục riêng lẻ với các công cụ điều khiển. Nếu những chủ đề và bài viết của bạn không được đồng bộ, bạn cũng có thể đồng bộ hoá lại chuyên mục.',
+	'FORUM_ADMIN_EXPLAIN'				=> 'Trong hệ thống phpBB mới không có khái niệm nhóm chuyên mục như trước, mọi thứ bây giờ đều chứa trong chuyên mục với nhau. Mỗi chuyên mục có thể có số chuyên mục con không hạn chế về số lượng và cấp độ. Bạn cũng có thể chọn chuyên mục nào thành viên được phép và không được phép gửi bài. Với công cụ này, bạn có thể thêm vào, chỉnh sửa, xoá, khoá, mở khoá từng chuyên mục riêng lẻ với các công cụ điều khiển. Nếu những chủ đề và bài viết của bạn không được đồng bộ, bạn cũng có thể đồng bộ hoá lại chuyên mục. <strong>Bạn cần phải sao chép hoặc tạo thiết lập cấp phép thích hợp cho những chuyên mục tạo mới thì chúng mới được hiển thị ngoài hệ thống.</strong>',
 	'FORUM_AUTO_PRUNE'					=> 'Bật chế độ tự động dọn dẹp',
 	'FORUM_AUTO_PRUNE_EXPLAIN'			=> 'Tuỳ chọn dọn dẹp các chủ đề trong chuyên mục, thiết lập các thông số thời gian bên dưới.',
 	'FORUM_CREATED'						=> 'Chuyên mục mới đã được tạo thành công.',
@@ -109,8 +108,10 @@ $lang = array_merge($lang, array(
 	'FORUM_STYLE'						=> 'Giao diện chuyên mục',
 	'FORUM_TOPICS_PAGE'					=> 'Số chủ đề mỗi trang',
 	'FORUM_TOPICS_PAGE_EXPLAIN'			=> 'Nếu không có giá trị <strong>0</strong>, giá trị này sẽ thay thế cho số chủ đề mặc định hiển thị trong mỗi trang được thiết lập.',
-	'FORUM_TYPE'						=> 'Loại chuyên mục',
+	'FORUM_TYPE'						=> 'Nhóm chuyên mục',
 	'FORUM_UPDATED'						=> 'Thông tin về chuyên mục đã được cập nhật thành công.',
+
+	'FORUM_WITH_SUBFORUMS_NOT_TO_LINK'	=> 'Bạn đã chọn thay đổi một chuyên mục có thể gửi bài có các chuyên mục con trở thành một liên kết. Hãy vui lòng di chuyển tất cả chuyên mục con của chuyên mục này trước khi bạn tiến hành, bởi vì sau khi thay đổi chuyên mục này thành một liên kết, bạn sẽ không còn xem được những chuyên mục con hiện tại đang nằm trong chuyên mục này.',
 
 	'GENERAL_FORUM_SETTINGS'	=> 'Thiết lập chuyên mục tổng quát',
 
@@ -136,13 +137,13 @@ $lang = array_merge($lang, array(
 	'PRUNE_STICKY'				=> 'Dọn dẹp chú ý',
 	'PRUNE_OLD_POLLS'			=> 'Dọn dẹp bình chọn cũ',
 	'PRUNE_OLD_POLLS_EXPLAIN'	=> 'Số ngày gỡ bỏ các chủ đề có bình chọn trong bài viết không ai tham gia.',
-	
+
 	'REDIRECT_ACL'	=> 'Ngay bây giờ bạn có thể %sthiết lập cấp phép%s cho chuyên mục này.',
 
 	'SYNC_IN_PROGRESS'			=> 'Đang đồng độ hóa chuyên mục',
 	'SYNC_IN_PROGRESS_EXPLAIN'	=> 'Đang đồng bộ hóa chủ đề trong dải %1$d/%2$d.',
 
-	'TYPE_CAT'			=> 'Loại chuyên mục',
+	'TYPE_CAT'			=> 'Nhóm chuyên mục',
 	'TYPE_FORUM'		=> 'Chuyên mục',
 	'TYPE_LINK'			=> 'Liên kết',
 

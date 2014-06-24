@@ -4,9 +4,9 @@
 * acp_users [Vietnamese]
 *
 * @package language
-* @version $Id: users.php,v 1.15 2007/06/25 22:31:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: users.php,v 1.17 2007/07/23 23:56:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -109,7 +108,7 @@ $lang = array_merge($lang, array(
 	'USER_ADMIN_DEL_AVATAR'			=> 'Xoá hình đại diện của thành viên này',
 	'USER_ADMIN_DEL_POSTS'			=> 'Xoá tất cả bài viết của thành viên này',
 	'USER_ADMIN_DEL_SIG'			=> 'Xoá chữ ký cá nhân của thành viên này',
-	'USER_ADMIN_EXPLAIN'			=> 'Sử dụng công cụ này, bạn có thể thay đổi thông tin cá nhân của các thành viên cũng như những tuỳ chọn hay thiết lập cá nhân của họ. Để thay đổi những cấp phép dành cho thành viên, hãy sử dụng công cụ cấp phép dành cho thành viên và nhóm thành viên.',
+	'USER_ADMIN_EXPLAIN'			=> 'Sử dụng công cụ này, bạn có thể thay đổi thông tin cá nhân của các thành viên cũng như những tuỳ chọn hay thiết lập cá nhân của họ. Để thay đổi những cấp phép dành cho thành viên, hãy sử dụng công cụ cấp phép dành cho thành viên và nhóm.',
 	'USER_ADMIN_FORCE'				=> 'Yêu cầu thành viên này kích hoạt lại tài khoản của mình',
 	'USER_ADMIN_MOVE_POSTS'			=> 'Di chuyển tất cả bài viết của thành viên này',
 	'USER_ADMIN_SIG_REMOVED'		=> 'Đã gỡ bỏ thành công chữ ký cá nhân của thành viên này.',

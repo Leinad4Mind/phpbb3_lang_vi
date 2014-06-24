@@ -4,9 +4,9 @@
 * viewtopic [Vietnamese]
 *
 * @package language
-* @version $Id: viewtopic.php,v 1.19 2007/05/26 13:20:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: viewtopic.php,v 1.21 2007/07/24 20:11:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -110,8 +109,6 @@ $lang = array_merge($lang, array(
 	'VIEW_UNREAD_POST'		=> 'Bài viết chưa xem đầu tiên',
 	'VISIT_WEBSITE'			=> 'Ghé thăm website của người gửi',
 	'VOTE_SUBMITTED'		=> 'Bạn đã tham gia bình chọn xong.',
-
-	'WROTE'					=> 'đã viết',
 ));
 
 ?>

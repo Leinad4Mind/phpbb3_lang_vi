@@ -4,9 +4,9 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php,v 1.27 2007/06/10 15:07:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: posting.php,v 1.29 2007/07/26 03:20:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -67,12 +66,12 @@ $lang = array_merge($lang, array(
 	'EXAMPLES'						=> 'Các ví dụ:',
 
 	'HTML_REPLACEMENT'				=> 'Mã HTML thay thế',
-	'HTML_REPLACEMENT_EXAMPLE'		=> '&lt;span style="background-color:{COLOR};"&gt;{TEXT}&lt;/span&gt;<br /><br />&lt;span style="font-family:{TEXT1};"&gt;{TEXT2}&lt;/span&gt;',
+	'HTML_REPLACEMENT_EXAMPLE'		=> '&lt;span style="background-color: {COLOR};"&gt;{TEXT}&lt;/span&gt;<br /><br />&lt;span style="font-family: {TEXT1};"&gt;{TEXT2}&lt;/span&gt;',
 	'HTML_REPLACEMENT_EXPLAIN'		=> 'Bạn có thể xác định mã HTML thay thế cho thẻ BBCode tại đây. Đừng quên đặt lại những mã thay thế mà bạn đã sử dụng ở bên trên!',
 
 	'TOKEN'					=> 'Mã thay thế',
 	'TOKENS'				=> 'Những mã thay thế',
-	'TOKENS_EXPLAIN'		=> 'Mã thay thế có nhiệm vụ thay thế cho nguồn nhập vào của thành viên. Nguồn nhập vào chỉ được kiểm tra hợp lệ nếu kết quả định danh của nó chính xác. Nếu cần thiết, bạn có thể đánh số chúng bằng cách thêm vào một con số sau ký tự nằm trong dấu ngoặc móc, ví dụ như <strong>{USERNAME1}, {USERNAME2}</strong>.<br /><br />Ngoài ra, những mã thay thế này có thể sử dụng bất kỳ chuỗi ngôn ngữ nào trong thư mục <strong>language/</strong> của hệ thống, giống như: <strong>{L_<em>&lt;STRINGNAME&gt;</em>}</strong> với <strong><em>&lt;STRINGNAME&gt;</em></strong> là tên của chuỗi ngôn ngữ trong gói ngôn ngữ mà bạn muốn thêm vào. Ví dụ, <strong>{L_WROTE}</strong> là một chuỗi ngôn ngữ trong gói ngôn ngữ sẽ được hiển thị thành &quot;đã viết&quot; hoặc có thể hiển thị nội dung này theo nhiều ngôn ngữ khác nhau tùy vào gói ngôn ngữ mà thành viên chọn.',
+	'TOKENS_EXPLAIN'		=> 'Mã thay thế có nhiệm vụ thay thế cho nguồn nhập vào của thành viên. Nguồn nhập vào chỉ được kiểm tra hợp lệ nếu kết quả định danh của nó chính xác. Nếu cần thiết, bạn có thể đánh số chúng bằng cách thêm vào một con số sau ký tự nằm trong dấu ngoặc móc, ví dụ như <var>{TEXT1}, {TEXT2}</var>.<br /><br />Ngoài ra, những mã thay thế này có thể sử dụng bất kỳ chuỗi ngôn ngữ nào trong thư mục <samp>language/</samp> của hệ thống, giống như: <var>{L_<em>&lt;STRINGNAME&gt;</em>}</var> với <em>&lt;STRINGNAME&gt;</em> là tên của chuỗi đã được phiên dịch trong gói ngôn ngữ mà bạn muốn thêm vào. Ví dụ, <var>{L_WROTE}</var> sẽ hiển thị thành &quot;đã viết&quot; hoặc nội dung khác tùy theo nghĩa phiên dịch trong gói ngôn ngữ mà thành viên chọn.<br /><br /><strong>Lưu ý rằng những mã thay thế được liệt kê bên dưới có thể sử dụng được trong các thẻ BBCode tùy biến.</strong>',
 	'TOKEN_DEFINITION'		=> 'Định danh mã thay thế',
 	'TOO_MANY_BBCODES'		=> 'Bạn không thể tạo quá nhiều thẻ BBCode. Hãy gỡ bỏ một hay nhiều thẻ BBCode rồi thử lại.',
 
@@ -80,7 +79,7 @@ $lang = array_merge($lang, array(
 		'TEXT'			=> 'Bất kỳ văn bản nào, bao gồm các ký tự, chữ số…',
 		'NUMBER'		=> 'Bất kỳ giá trị số nào',
 		'EMAIL'			=> 'Địa chỉ Email hợp lệ',
-		'URL'			=> 'Địa chỉ URL hợp lệ sử dụng bất kỳ giao thức nào như <samp>http://</samp>, <samp>ftp://</samp>… không thể sử dụng được vì các vấn đề với mã Javascript. Nếu bạn không nhập vào giao thức, <samp>http://</samp> sẽ được sử dụng làm tiền tố đầu của chuỗi.',
+		'URL'			=> 'Địa chỉ URL hợp lệ sử dụng bất kỳ giao thức nào (http, ftp… không thể sử dụng được vì các vấn đề với mã Javascript). Nếu bạn không nhập vào giao thức, &quot;http://&quot; sẽ được sử dụng làm tiền tố đầu của chuỗi.',
 		'LOCAL_URL'		=> 'Địa chỉ URL trong hệ thống. Địa chỉ URL này phải liên quan đến các trang trong hệ thống và không thể chứa một tên miền khác hay giao thức nào.',
 		'COLOR'			=> 'Mã màu HTML, có thể sử dụng định dạng mã màu số như <samp>#FF1234</samp> hay một <a href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">từ khóa màu định dạng CSS</a> giống như <samp>fuchsia</samp> hay <samp>InactiveBorder</samp>'
 	)

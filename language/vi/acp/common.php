@@ -4,9 +4,9 @@
 * acp common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php,v 1.67 2007/06/13 15:41:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: common.php,v 1.74 2007/07/30 16:56:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -306,6 +305,7 @@ $lang = array_merge($lang, array(
 	'AVATAR_DIR_SIZE'			=> 'Dung lượng thư mục hình đại diện',
 
 	'BOARD_STARTED'		=> 'Ngày hệ thống bắt đầu hoạt động',
+	'BOARD_VERSION'		=> 'Phiên bản hệ thống',
 
 	'DATABASE_SERVER_INFO'	=> 'Máy chủ cơ sở dữ liệu',
 	'DATABASE_SIZE'			=> 'Dung lượng cơ sở dữ liệu',
@@ -324,12 +324,12 @@ $lang = array_merge($lang, array(
 
 	'POSTS_PER_DAY'		=> 'Số bài viết/ngày',
 
-	'PURGE_CACHE'			=> 'Dọn sạch cache',
-	'PURGE_CACHE_CONFIRM'	=> 'Bạn có chắc chắn muốn dọn sạch cache?',
-	'PURGE_CACHE_EXPLAIN'	=> 'Dọn sạch tất cả các thành phần có liên quan đến cache, bao gồm tất cả các tập tin khuôn mẫu và lệnh truy xuất SQL đã được cache.',
+	'PURGE_CACHE'			=> 'Dọn sạch bộ nhớ đệm',
+	'PURGE_CACHE_CONFIRM'	=> 'Bạn có chắc chắn muốn dọn sạch bộ nhớ đệm?',
+	'PURGE_CACHE_EXPLAIN'	=> 'Dọn sạch tất cả các thành phần có liên quan đến bộ nhớ đệm, bao gồm tất cả các tập tin khuôn mẫu và lệnh truy xuất SQL đã được tạo bộ nhớ đệm.',
 
 	'RESET_DATE'					=> 'Tạo lại ngày hệ thống bắt đầu hoạt động mới',
-	'RESET_DATE_CONFIRM'			=> 'Bạn có chắc chắn muốn tạo lại ngày website bắt đầu hoạt động mới?',
+	'RESET_DATE_CONFIRM'			=> 'Bạn có chắc chắn muốn tạo lại ngày hệ thống bắt đầu hoạt động mới?',
 	'RESET_ONLINE'					=> 'Tạo lại thông tin số lượng thành viên trực tuyến đông nhất',
 	'RESET_ONLINE_CONFIRM'			=> 'Bạn có chắc chắn muốn tạo lại thông tin số lượng thành viên trực tuyến đông nhất?',
 	'RESYNC_POSTCOUNTS'				=> 'Đồng bộ hóa bộ đếm số bài viết',
@@ -404,14 +404,16 @@ $lang = array_merge($lang, array(
 	'LOG_ACL_DEL_ADMIN_GLOBAL_A_'		=> '<strong>Đã gỡ bỏ quản trị viên</strong><br />» %s',
 	'LOG_ACL_DEL_MOD_GLOBAL_M_'			=> '<strong>Đã gỡ bỏ điều hành viên chính</strong><br />» %s',
 	'LOG_ACL_DEL_MOD_LOCAL_M_'			=> '<strong>Đã gỡ bỏ điều hành viên</strong> từ %1$s<br />» %2$s',
-	'LOG_ACL_DEL_FORUM_LOCAL_F_'		=> '<strong>Đã gỡ bỏ cấp phép chuyên mục dành cho thành viên/nhóm thành viên</strong> từ %1$s<br />» %2$s',
+	'LOG_ACL_DEL_FORUM_LOCAL_F_'		=> '<strong>Đã gỡ bỏ cấp phép chuyên mục dành cho thành viên/nhóm</strong> từ %1$s<br />» %2$s',
 
 	'LOG_ACL_TRANSFER_PERMISSIONS'		=> '<strong>Thiết lập cấp phép đã được chuyển từ</strong><br />» %s',
 	'LOG_ACL_RESTORE_PERMISSIONS'		=> '<strong>Thiết lập cấp phép đã được khôi phục kể từ khi chuyển thiết lập cấp phép từ</strong><br />» %s',
 
 	'LOG_ADMIN_AUTH_FAIL'		=> '<strong>Đăng nhập thất bại vào bảng điều khiển của quản trị viên</strong>',
 	'LOG_ADMIN_AUTH_SUCCESS'	=> '<strong>Đăng nhập thành công vào bảng điều khiển của quản trị viên</strong>',
-	
+
+	'LOG_ATTACHMENTS_DELETED'	=> '<strong>Đã gỡ bỏ những tập tin đính kèm của thành viên</strong><br />» %s',
+
 	'LOG_ATTACH_EXT_ADD'		=> '<strong>Đã thêm vào hoặc chỉnh sửa loại tập tin đính kèm</strong><br />» %s',
 	'LOG_ATTACH_EXT_DEL'		=> '<strong>Đã gỡ bỏ loại tập tin đính kèm</strong><br />» %s',
 	'LOG_ATTACH_EXT_UPDATE'		=> '<strong>Đã cập nhật loại tập tin đính kèm</strong><br />» %s',
@@ -518,7 +520,7 @@ $lang = array_merge($lang, array(
 
 	'LOG_GROUP_CREATED'		=> '<strong>Nhóm thành viên mới đã được tạo</strong><br />» %s',
 	'LOG_GROUP_DEFAULTS'	=> '<strong>Đã chọn “%1$s” là nhóm mặc định cho các thành viên</strong><br />» %2$s',
-	'LOG_GROUP_DELETE'		=> '<strong>Nhóm thành viên đã được xoá</strong><br />» %s',
+	'LOG_GROUP_DELETE'		=> '<strong>Nhóm đã được xoá</strong><br />» %s',
 	'LOG_GROUP_DEMOTED'		=> '<strong>Người điều hành đã được giáng chức trong nhóm</strong> %1$s<br />» %2$s',
 	'LOG_GROUP_PROMOTED'	=> '<strong>Thành viên đã được thăng chức người điều hành trong nhóm</strong> %1$s<br />» %2$s',
 	'LOG_GROUP_REMOVE'		=> '<strong>Thành viên đã được gỡ bỏ khỏi nhóm</strong> %1$s<br />» %2$s',
@@ -533,6 +535,7 @@ $lang = array_merge($lang, array(
 	'LOG_IMAGESET_EDIT_DETAILS'		=> '<strong>Đã chỉnh sửa thông tin gói hình ảnh giao diện</strong><br />» %s',
 	'LOG_IMAGESET_EDIT'				=> '<strong>Đã chỉnh sửa gói hình ảnh giao diện</strong><br />» %s',
 	'LOG_IMAGESET_EXPORT'			=> '<strong>Đã xuất gói hình ảnh giao diện</strong><br />» %s',
+	'LOG_IMAGESET_LANG_MISSING'		=> '<strong>Gói hình ảnh giao diện đã bỏ sót phần phiên dịch “%2$s”</strong><br />» %1$s',
 	'LOG_IMAGESET_LANG_REFRESHED'	=> '<strong>Đã nạp lại bản phiên dịch “%2$s” của gói hình ảnh giao diện</strong><br />» %1$s',
 	'LOG_IMAGESET_REFRESHED'		=> '<strong>Đã nạp lại gói hình ảnh giao diện</strong><br />» %s',
 
@@ -542,7 +545,7 @@ $lang = array_merge($lang, array(
 	'LOG_INSTALL_CONVERTED'	=> '<strong>Đã chuyển đổi từ hệ thống %1$s sang hệ thống phpBB %2$s</strong>',
 	'LOG_INSTALL_INSTALLED'	=> '<strong>Đã cài đặt hệ thống phpBB %s</strong>',
 
-	'LOG_IP_BROWSER_FORWARDED_CHECK'	=> '<strong>Không thể kiểm tra địa chỉ IP/trình duyệt/X_FORWARDED_FOR trong phiên session này</strong><br />» Địa chỉ IP của thành viên “<em>%1$s</em>” đã được kiểm tra lại trong phiên session này với kết quả là “<em>%2$s</em>”, chuỗi trình duyệt thành viên “<em>%3$s</em>” đã được kiểm tra lại trong phiên session này với kết quả là “<em>%4$s</em>” và chuỗi X_FORWARDED_FOR thành viên “<em>%5$s</em>” đã được kiểm tra lại trong phiên session này với kết quả là “<em>%6$s</em>”.',
+	'LOG_IP_BROWSER_FORWARDED_CHECK'	=> '<strong>Không thể kiểm tra địa chỉ IP/trình duyệt/X_FORWARDED_FOR trong phiên đăng nhập này</strong><br />» Địa chỉ IP của thành viên “<em>%1$s</em>” đã được kiểm tra lại trong phiên đăng nhập này với kết quả là “<em>%2$s</em>”, chuỗi trình duyệt thành viên “<em>%3$s</em>” đã được kiểm tra lại trong phiên đăng nhập này với kết quả là “<em>%4$s</em>” và chuỗi X_FORWARDED_FOR thành viên “<em>%5$s</em>” đã được kiểm tra lại trong phiên đăng nhập này với kết quả là “<em>%6$s</em>”.',
 
 	'LOG_JAB_CHANGED'			=> '<strong>Tài khoản Jabber đã được thay đổi</strong>',
 	'LOG_JAB_PASSCHG'			=> '<strong>Mật khẩu tài khoản Jabber đã được thay đổi</strong>',
@@ -592,7 +595,7 @@ $lang = array_merge($lang, array(
 	'LOG_PRUNE_USER_DEL_DEL'	=> '<strong>Thành viên đã được dọn dẹp và toàn bộ bài viết đã được xoá</strong><br />» %s',
 	'LOG_PRUNE_USER_DEL_ANON'	=> '<strong>Thành viên đã được dọn dẹp và toàn bộ bài viết đã được giữ lại</strong><br />» %s',
 
-	'LOG_PURGE_CACHE'		=> '<strong>Đã dọn sạch cache</strong>',
+	'LOG_PURGE_CACHE'		=> '<strong>Đã dọn sạch bộ nhớ đệm</strong>',
 
 	'LOG_RANK_ADDED'		=> '<strong>Đã thêm vào xếp hạng mới</strong><br />» %s',
 	'LOG_RANK_REMOVED'		=> '<strong>Đã gỡ bỏ xếp hạng</strong><br />» %s',
@@ -617,7 +620,7 @@ $lang = array_merge($lang, array(
 
 	'LOG_TEMPLATE_ADD_DB'			=> '<strong>Đã thêm vào khuôn mẫu mới trong cơ sở dữ liệu</strong><br />» %s',
 	'LOG_TEMPLATE_ADD_FS'			=> '<strong>Đã thêm vào khuôn mẫu mới trong hệ thống tập tin giao diện</strong><br />» %s',
-	'LOG_TEMPLATE_CACHE_CLEARED'	=> '<strong>Đã xoá những tập tin cache trong khuôn mẫu <em>%1$s</em></strong><br />» %2$s',
+	'LOG_TEMPLATE_CACHE_CLEARED'	=> '<strong>Đã xoá những tập tin khuôn mẫu được tạo bộ nhớ đệm <em>%1$s</em></strong><br />» %2$s',
 	'LOG_TEMPLATE_DELETE'			=> '<strong>Đã xoá khuôn mẫu</strong><br />» %s',
 	'LOG_TEMPLATE_EDIT'				=> '<strong>Đã chỉnh sửa khuôn mẫu <em>%1$s</em></strong><br />» %2$s',
 	'LOG_TEMPLATE_EDIT_DETAILS'		=> '<strong>Đã chỉnh sửa thông tin khuôn mẫu</strong><br />» %s',

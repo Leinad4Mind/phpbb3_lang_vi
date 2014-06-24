@@ -4,9 +4,9 @@
 * acp_profile [Vietnamese]
 *
 * @package language
-* @version $Id: profile.php,v 1.19 2007/06/05 01:28:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: profile.php,v 1.22 2007/07/29 02:19:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -48,7 +47,7 @@ $lang = array_merge($lang, array(
 	'ALWAYS_TODAY'			=> 'Sử dụng ngày tháng hiện tại',
 
 	'BOOL_ENTRIES_EXPLAIN'	=> 'Nhập vào tuỳ chọn của bạn',
-	'BOOL_TYPE_EXPLAIN'		=> 'Xác định loại là ô kiểm vuông nhiều tùy chọn hay ô kiểm tròn một tùy chọn.',
+	'BOOL_TYPE_EXPLAIN'		=> 'Xác định loại là ô kiểm vuông nhiều tùy chọn hay ô kiểm tròn một tùy chọn. Ô kiểm vuông nhiều tùy chọn chỉ được hiển thị nếu nó đã được đánh dấu cho thành viên lựa chọn. Trong trường hợp đó, tùy chọn ngôn ngữ <strong>thứ hai</strong> sẽ được sử dụng. Ô kiểm tròn một tùy chọn sẽ hiển thị bất chấp giá trị của chúng.',
 
 	'CHANGED_PROFILE_FIELD'			=> 'Mục thông tin cá nhân đã được thay đổi thành công.',
 	'CHARS_ANY'						=> 'Bất kỳ ký tự nào',
@@ -72,7 +71,7 @@ $lang = array_merge($lang, array(
 	'DISPLAY_AT_REGISTER'			=> 'Hiển thị trong phần đăng ký thành viên mới',
 	'DISPLAY_AT_REGISTER_EXPLAIN'	=> 'Nếu tuỳ chọn này được bật, mục thông tin cá nhân sẽ được thêm vào trong phần đăng ký thành viên và có thể thay đổi sau này trong bảng điều khiển của thành viên.',
 	'DISPLAY_PROFILE_FIELD'			=> 'Hiển thị mục thông tin cá nhân',
-	'DISPLAY_PROFILE_FIELD_EXPLAIN'	=> 'Hiển thị mục thông tin cá nhân trong các trang xem chủ đề, thông tin cá nhân và danh sách thành viên nếu tùy chọn này được bật trong phần thiết lập nạp trang. Chỉ hiển thị trong phần thông tin cá nhân của thành viên là tùy chọn mặc định.',
+	'DISPLAY_PROFILE_FIELD_EXPLAIN'	=> 'Hiển thị mục thông tin cá nhân tại các trang cho phép nếu tùy chọn này được bật trong phần thiết lập nạp trang. Vô hiệu tùy chọn này sẽ ẩn mục thông tin cá nhân khỏi trang xem chủ đề, trang thông tin cá nhân và danh sách thành viên.',
 	'DROPDOWN_ENTRIES_EXPLAIN'		=> 'Nhập vào những tuỳ chọn của bạn với mỗi tuỳ chọn trên một dòng.',
 
 	'EDIT_DROPDOWN_LANG_EXPLAIN'	=> 'Lưu ý rằng bạn có thể thay đổi những đối tượng ngôn ngữ của mình và cũng có thể thêm vào những đối tượng mới ở phần cuối. Chúng tôi không khuyên bạn thêm vào những đối tượng mới giữa các đối tượng hiện có bởi vì điều này có thể dẫn đến kết quả là những đối tượng sai sẽ được chỉ định cho các thành viên của bạn. Điều này cũng có thể xảy ra nếu bạn gỡ bỏ những đối tượng nửa thế này nửa thế khác. Việc gỡ bỏ những đối tượng từ kết quả sau cùng mà các thành viên được chỉ định những đối tượng này sẽ được quay trả về đối tượng mặc định.',

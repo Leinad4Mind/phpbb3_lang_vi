@@ -4,9 +4,9 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php,v 1.30 2007/07/06 14:21:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: posting.php,v 1.32 2007/07/24 20:02:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -161,7 +160,7 @@ $lang = array_merge($lang, array(
 	'POLL_VOTE_CHANGE'			=> 'Cho phép bình chọn lại',
 	'POLL_VOTE_CHANGE_EXPLAIN'	=> 'Nếu lựa chọn này được bật, những thành viên có thể thay đổi lựa chọn mà họ đã tham gia bình chọn.',
 	'POSTED_ATTACHMENTS'		=> 'Tập tin đã được đính kèm',
-	'POST_APPROVAL_NOTIFY'		=> ' Bạn sẽ được thông báo khi bài viết của mình được chấp nhận.',
+	'POST_APPROVAL_NOTIFY'		=> 'Bạn sẽ được thông báo khi bài viết của mình được chấp nhận.',
 	'POST_CONFIRMATION'			=> 'Xác nhận bài viết',
 	'POST_CONFIRM_EXPLAIN'		=> 'Để ngăn chặn những bài viết được tự động gửi vào hàng loạt, hệ thống yêu cầu bạn phải nhập vào một đoạn mã xác nhận. Mã xác nhận được hiển thị trong hình bên dưới mà bạn nhìn thấy. Nếu bạn gặp vấn đề về thị lực hoặc không thể nhìn thấy đoạn mã này vì một lý do nào đó, hãy liên hệ với %sngười quản trị%s.',
 	'POST_DELETED'				=> 'Bài viết này đã được xoá thành công.',

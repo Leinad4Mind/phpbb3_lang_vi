@@ -4,9 +4,9 @@
 * acp_bots [Vietnamese]
 *
 * @package language
-* @version $Id: bots.php,v 1.07 2007/07/06 14:38:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: bots.php,v 1.10 2007/07/24 20:38:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -43,7 +42,7 @@ if (empty($lang) || !is_array($lang))
 // Bot settings
 $lang = array_merge($lang, array(
 	'BOTS'				=> 'Quản lý máy tìm kiếm',
-	'BOTS_EXPLAIN'		=> '&quot;Bot&quot;, &quot;spider&quot; hay &quot;crawler&quot; là những cỗ máy tự động thường được sử dụng trong các dịch vụ tìm kiếm để cập nhật chỉ mục tìm kiếm trong cơ sở dữ liệu của họ. Hiếm khi những loại này sử dụng session thích hợp vì thế thường làm cho kết quả trong các bộ đếm của hệ thống sai lệch khi đếm số lượt người ghé thăm website, đếm tăng thêm số lượng không chính xác và thỉnh thoảng không thể lập chỉ mục cho website chính xác. Với công cụ này, bạn có thể xác định một loại thành viên đặc biệt gồm những loại máy tìm kiếm này để khắc phục những rắc rối kể trên.',
+	'BOTS_EXPLAIN'		=> '“Bot”, “Spider” hay “Crawler” là những cỗ máy tự động thường được sử dụng trong các dịch vụ tìm kiếm để cập nhật chỉ mục tìm kiếm trong cơ sở dữ liệu của họ. Hiếm khi những loại này sử dụng phiên đăng nhập thích hợp vì thế thường làm cho kết quả trong các bộ đếm của hệ thống sai lệch khi đếm số lượt người ghé thăm website, đếm tăng thêm số lượng không chính xác và thỉnh thoảng không thể lập chỉ mục cho website chính xác. Với công cụ này, bạn có thể xác định một loại thành viên đặc biệt gồm những loại máy tìm kiếm này để khắc phục những rắc rối kể trên.',
 	'BOT_ACTIVATE'		=> 'Kích hoạt',
 	'BOT_ACTIVE'		=> 'Máy tìm kiếm được kích hoạt',
 	'BOT_ADD'			=> 'Thêm máy tìm kiếm',

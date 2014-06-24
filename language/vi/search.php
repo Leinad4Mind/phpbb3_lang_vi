@@ -4,9 +4,9 @@
 * search [Vietnamese]
 *
 * @package language
-* @version $Id: search.php,v 1.16 2007/07/06 14:25:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: search.php,v 1.18 2007/07/24 20:05:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -83,7 +82,7 @@ $lang = array_merge($lang, array(
 	'SEARCH_AUTHOR_EXPLAIN'		=> 'Sử dụng dấu đại diện <strong>*</strong> để tìm kiếm những thông tin giống nhau theo một số ký tự.',
 	'SEARCH_FIRST_POST'			=> 'Chỉ tìm kiếm bài viết đầu tiên trong các chủ đề',
 	'SEARCH_FORUMS'				=> 'Tìm kiếm trong các chuyên mục',
-	'SEARCH_FORUMS_EXPLAIN'		=> 'Chọn một hoặc nhiều chuyên mục mà bạn muốn thực hiện tìm kiếm trong phạm vi đó. Để cải thiện tốc độ tìm kiếm, tất cả chuyên mục con sẽ chỉ được thực hiện tìm kiếm khi chuyên mục chính được chọn và tuỳ chọn tìm kiếm trong những chuyên mục con được bật bên dưới.',
+	'SEARCH_FORUMS_EXPLAIN'		=> 'Chọn một hoặc nhiều chuyên mục mà bạn muốn thực hiện tìm kiếm trong phạm vi đó. Các chuyên mục con sẽ được thực hiện tìm kiếm tự động nếu bạn không vô hiệu trong tùy chọn “Tìm kiếm trong các chuyên mục con” bên dưới.',
 	'SEARCH_IN_RESULTS'			=> 'Tìm kiếm trong những kết quả này',
 	'SEARCH_KEYWORDS_EXPLAIN'	=> 'Đặt dấu <strong>+</strong> trước từ khoá mà bạn thực sự muốn tìm kiếm và dấu <strong>-</strong> trước từ khoá mà bạn không muốn hiển thị trong kết quả tìm kiếm. Đặt một danh sách từ khoá tìm kiếm ngăn cách nhau bởi dấu <strong>|</strong> trong dấu ngoặc đơn nếu bạn muốn mỗi kết quả tìm thấy chứa ít nhất một trong những từ khoá này. Sử dụng dấu đại diện <strong>*</strong> để tìm kiếm những thông tin giống nhau theo một số ký tự.',
 	'SEARCH_MSG_ONLY'			=> 'Chỉ tìm kiếm theo nội dung bài viết',

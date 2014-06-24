@@ -4,9 +4,9 @@
 * acp_board [Vietnamese]
 *
 * @package language
-* @version $Id: board.php,v 1.54 2007/06/10 15:03:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: board.php,v 1.62 2007/07/30 16:56:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -66,13 +65,15 @@ $lang = array_merge($lang, array(
 	'ACP_BOARD_FEATURES_EXPLAIN'	=> 'Với công cụ này, bạn có thể kích hoạt hay vô hiệu một vài chức năng trong hệ thống.',
 
 	'ALLOW_ATTACHMENTS'			=> 'Cho phép đính kèm tập tin',
+	'ALLOW_BIRTHDAYS'			=> 'Cho phép thông tin sinh nhật',
+	'ALLOW_BIRTHDAYS_EXPLAIN'	=> 'Tùy chọn cho phép thông tin sinh nhật được thành viên nhập vào và thông tin về tuổi được hiển thị trong thông tin cá nhân về họ. Lưu ý rằng phần danh sách các thành viên có ngày sinh nhật trên trang chủ được điều khiển bởi một thiết lập nạp trang riêng.',
 	'ALLOW_BOOKMARKS'			=> 'Cho phép đánh dấu chủ đề vào trang yêu thích',
 	'ALLOW_BOOKMARKS_EXPLAIN'	=> 'Tuỳ chọn cho phép thành viên đánh dấu lại những chủ đề mà mình quan tâm vào trang yêu thích.',
 	'ALLOW_BBCODE'				=> 'Cho phép sử dụng BBCode',
 	'ALLOW_FORUM_NOTIFY'		=> 'Cho phép theo dõi chuyên mục',
 	'ALLOW_NAME_CHANGE'			=> 'Cho phép thay đổi tên thành viên',
 	'ALLOW_NO_CENSORS'			=> 'Cho phép tắt chế độ kiểm duyệt từ',
-	'ALLOW_NO_CENSORS_EXPLAIN'	=> 'Tuỳ chọn cho phép thành viên có thể tắt chế độ kiểm duyệt từ tự động trong các bài viết và tin nhắn cá nhân.',
+	'ALLOW_NO_CENSORS_EXPLAIN'	=> 'Tuỳ chọn cho phép thành viên có thể tắt chế độ kiểm duyệt từ tự động trong các bài viết và tin nhắn.',
 	'ALLOW_PM_ATTACHMENTS'		=> 'Cho phép đính kèm tập tin trong tin nhắn',
 	'ALLOW_SIG'					=> 'Cho phép sử dụng chữ ký cá nhân',
 	'ALLOW_SIG_BBCODE'			=> 'Cho phép sử dụng BBCode trong chữ ký cá nhân',
@@ -124,7 +125,7 @@ $lang = array_merge($lang, array(
 	'BOXES_LIMIT'				=> 'Số tin nhắn tối đa trong mỗi thư mục',
 	'BOXES_LIMIT_EXPLAIN'		=> 'Số lượng tin nhắn tối đa mà thành viên nhận được trong mỗi thư mục tin nhắn của mình. Nhập vào số <strong>0</strong> để không hạn chế tin nhắn.',
 	'BOXES_MAX'					=> 'Số thư mục tin nhắn tối đa',
-	'BOXES_MAX_EXPLAIN'			=> 'Số lượng thư mục tin nhắn cá nhân tối đa mà thành viên có thể tạo cho mình.',
+	'BOXES_MAX_EXPLAIN'			=> 'Số lượng thư mục tin nhắn tối đa mà thành viên có thể tạo cho mình.',
 	'ENABLE_PM_ICONS'			=> 'Cho phép sử dụng biểu tượng tin nhắn',
 	'FULL_FOLDER_ACTION'		=> 'Thao tác xử lý mặc định khi thư mục vượt quá dung lượng',
 	'FULL_FOLDER_ACTION_EXPLAIN'=> 'Thao tác xử lý mặc định sẽ được áp dụng nếu một thư mục tin nhắn của thành viên vượt quá dung lượng cho phép. Nếu bạn thiết lập tất cả, mọi thứ sẽ không còn phù hợp nữa. Chỉ có ngoại lệ đối với thư mục tin nhắn đặc biệt là “Hộp thư gửi”, thao tác xử lý mặc định luôn luôn là xoá những tin nhắn cũ.',
@@ -207,14 +208,14 @@ $lang = array_merge($lang, array(
 	'COPPA_MAIL'					=> 'Địa chỉ Email dùng cho điều khoản COPPA',
 	'COPPA_MAIL_EXPLAIN'			=> 'Địa chỉ Email dùng để cho cha mẹ hay người bảo hộ của các thành viên trong điều khoản COPPA gửi bản cam kết đến.',
 	'ENABLE_COPPA'					=> 'Bật điều khoản COPPA',
-	'ENABLE_COPPA_EXPLAIN'			=> 'Tuỳ chọn này yêu cầu các thành viên từ 13 tuổi trở xuống phải cam kết với điều khoản U.S. COPPA. Nếu bạn vô hiệu điều khoản này thì các nhóm thành viên COPPA sẽ không còn được hiển thị nữa.',
+	'ENABLE_COPPA_EXPLAIN'			=> 'Tuỳ chọn này yêu cầu các thành viên từ 13 tuổi trở xuống phải cam kết với điều khoản U.S. COPPA. Nếu bạn vô hiệu điều khoản này thì các thành viên trong nhóm COPPA sẽ không còn được hiển thị nữa.',
 	'MAX_CHARS'						=> 'Tối đa',
 	'MIN_CHARS'						=> 'Tối thiểu',
 	'NO_AUTH_PLUGIN'				=> 'Không có phương pháp xác thực thích hợp nào được tìm thấy.',
 	'PASSWORD_LENGTH'				=> 'Độ dài mật khẩu',
 	'PASSWORD_LENGTH_EXPLAIN'		=> 'Số ký tự tối thiểu và tối đa bắt buộc đối với mật khẩu.',
 	'REG_LIMIT'						=> 'Số lần giới hạn đăng ký',
-	'REG_LIMIT_EXPLAIN'				=> 'Số lần nạp lại tốt đa mã xác nhận trong phần đăng ký thành viên trước khi bị khoá đăng ký trong phiên session đó.',
+	'REG_LIMIT_EXPLAIN'				=> 'Số lần nạp lại tốt đa mã xác nhận trong phần đăng ký thành viên trước khi bị khoá đăng ký trong phiên đăng nhập đó.',
 	'USERNAME_ALPHA_ONLY'			=> 'Chỉ được dùng vừa chữ cái vừa chữ số',
 	'USERNAME_ALPHA_SPACERS'		=> 'Vừa chữ cái vừa chữ số và có khoảng trắng',
 	'USERNAME_ASCII'				=> 'Chỉ được dùng ký tự ASCII (không có mã Unicode quốc tế)',	
@@ -259,19 +260,19 @@ $lang = array_merge($lang, array(
 	'COOKIE_SECURE_EXPLAIN'		=> 'Nếu máy chủ của bạn đang chạy SSL thì hãy bật tuỳ chọn này, còn nếu không thì hãy vô hiệu đi. Nếu như bạn bật tuỳ chọn này và máy chủ của bạn không chạy trên SSL thì kết quả là sẽ xảy ra lỗi trong suốt quá trình truy xuất đến máy chủ.',
 	'ONLINE_LENGTH'				=> 'Thời gian tính thành viên đang trực tuyến',
 	'ONLINE_LENGTH_EXPLAIN'		=> 'Số phút mà những thành viên không còn hoạt động trong hệ thống sẽ không được hiển thị trong danh sách “Ai đang trực tuyến?”. Giá trị thời gian thiết lập càng lớn thì càng mất nhiều thời gian hơn dể tạo ra danh sách.',
-	'SESSION_LENGTH'			=> 'Thời gian session hiệu lực',
-	'SESSION_LENGTH_EXPLAIN'	=> 'Số giây session có hiệu lực kể từ khi được tạo mới.',
+	'SESSION_LENGTH'			=> 'Thời gian phiên đăng nhập có hiệu lực',
+	'SESSION_LENGTH_EXPLAIN'	=> 'Số giây mà phiên đăng nhập có hiệu lực kể từ khi được tạo mới.',
 ));
 
 // Load Settings
 $lang = array_merge($lang, array(
-	'ACP_LOAD_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể bật hay tắt những chức năng nhất định của hệ thống để giảm bớt số lượng xử lý được yêu cầu gửi đến máy chủ. Trên hều hết các máy chủ, bạn không cần thiết phải tắt bất kỳ chức năng nào của hệ thống tại đây. Tuy nhiên, trên một vài máy chủ nhất định hoặc các hệ thống sử dụng dịch vụ lưu trữ Web dùng chung với nhiều người khác trên cùng một máy chủ, việc tắt một vài chức năng không cần đến là rất hết sức cần thiết để giảm bớt khối lượng công việc xử lý cho máy chủ. Bạn cũng nên xác định giới hạn thời gian nạp hệ thống và số lượng session vượt quá để hệ thống tự động chuyển sang chế độ ngưng hoạt động kịp thời.',
+	'ACP_LOAD_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể bật hay tắt những chức năng nhất định của hệ thống để giảm bớt số lượng xử lý được yêu cầu gửi đến máy chủ. Trên hều hết các máy chủ, bạn không cần thiết phải tắt bất kỳ chức năng nào của hệ thống tại đây. Tuy nhiên, trên một vài máy chủ nhất định hoặc các hệ thống sử dụng dịch vụ lưu trữ Web dùng chung với nhiều người khác trên cùng một máy chủ, việc tắt một vài chức năng không cần đến là rất hết sức cần thiết để giảm bớt khối lượng công việc xử lý cho máy chủ. Bạn cũng nên xác định giới hạn thời gian nạp hệ thống và số lượng phiên đăng nhập vượt quá để hệ thống tự động chuyển sang chế độ ngưng hoạt động kịp thời.',
 
 	'CUSTOM_PROFILE_FIELDS'			=> 'Mục thông tin cá nhân tuỳ biến',
 	'LIMIT_LOAD'					=> 'Giới hạn thời gian nạp hệ thống',
 	'LIMIT_LOAD_EXPLAIN'			=> 'Nếu trong vòng một phút hệ thống nạp trung bình vượt quá giá trị được thiết lập này thì hệ thống sẽ tự động chuyển sang chế độ ngưng hoạt động. Giá trị 1.0 gần bằng ~100% tài nguyên được sử dụng của một bộ xử lý máy chủ. Chức năng này chỉ có tác dụng trên các máy chủ UNIX và chỉ trên những máy chủ này, thời gian giới hạn được thiết lập mới có thể sử dụng được. Giá trị này sẽ xác lập lại chính nó thành <strong>0</strong> nếu hệ thống phpBB không thể nhận được giới hạn nạp.',
-	'LIMIT_SESSIONS'				=> 'Giới hạn số session',
-	'LIMIT_SESSIONS_EXPLAIN'		=> 'Nếu số lượng session vượt quá giá trị được thiết lập này trong quãng thời gian một phút thì hệ thống sẽ tự động chuyển sang chế độ ngưng hoạt động. Nhập vào số <strong>0</strong> để không hạn chế số session.',
+	'LIMIT_SESSIONS'				=> 'Giới hạn số phiên đăng nhập',
+	'LIMIT_SESSIONS_EXPLAIN'		=> 'Nếu số lượng phiên đăng nhập vượt quá giá trị được thiết lập này trong quãng thời gian một phút thì hệ thống sẽ tự động chuyển sang chế độ ngưng hoạt động. Nhập vào số <strong>0</strong> để không hạn chế số phiên đăng nhập.',
 	'LOAD_CPF_MEMBERLIST'			=> 'Hiển thị các mục thông tin cá nhân tuỳ biến trong danh sách thành viên',
 	'LOAD_CPF_VIEWPROFILE'			=> 'Hiển thị các mục thông tin cá nhân tuỳ biến trong trang thông tin cá nhân',
 	'LOAD_CPF_VIEWTOPIC'			=> 'Hiển thị các mục thông tin cá nhân tuỳ biến trong trang xem chủ đề',
@@ -281,7 +282,8 @@ $lang = array_merge($lang, array(
 	'RECOMPILE_STYLES_EXPLAIN'		=> 'Kiểm tra những thành phần giao diện đã được cập nhật trong hệ thống tập tin giao diện và biên dịch lại.',
 	'YES_ANON_READ_MARKING'			=> 'Bật đánh dấu chủ đề cho khách',
 	'YES_ANON_READ_MARKING_EXPLAIN'	=> 'Tuỳ chọn sắp xếp thông tin trạng thái các chủ đề đã xem/chưa xem cho khách. Nếu bạn vô hiệu tuỳ chọn này, các bài viết sẽ luôn luôn được đánh dấu đã xem đối với khách.',
-	'YES_BIRTHDAYS'					=> 'Hiển thị danh sách sinh nhật',
+	'YES_BIRTHDAYS'					=> 'Hiển thị danh sách các thành viên có sinh nhật',
+	'YES_BIRTHDAYS_EXPLAIN'			=> 'Nếu bạn vô hiệu tùy chọn này, danh sách các thành viên có ngày sinh nhật sẽ không được hiển thị nữa. Ngoài ra, để thiết lập này có tác dụng, thiết lập cho phép thông tin sinh nhật của thành viên cũng phải được bật.',
 	'YES_JUMPBOX'					=> 'Hiển thị danh sách chuyên mục',
 	'YES_MODERATORS'				=> 'Hiển thị danh sách điều hành viên',
 	'YES_ONLINE'					=> 'Hiển thị danh sách thành viên đang trực tuyến',
@@ -351,7 +353,7 @@ $lang = array_merge($lang, array(
 
 // Security Settings
 $lang = array_merge($lang, array(
-	'ACP_SECURITY_SETTINGS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thay đổi những thiết lập liên quan đến session và đăng nhập trong hệ thống.',
+	'ACP_SECURITY_SETTINGS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thay đổi những thiết lập liên quan đến phiên đăng nhập và việc đăng nhập trong hệ thống.',
 
 	'ALL'							=> 'Tất cả',
 	'ALLOW_AUTOLOGIN'				=> 'Cho phép đăng nhập tự động',
@@ -359,7 +361,7 @@ $lang = array_merge($lang, array(
 	'AUTOLOGIN_LENGTH'				=> 'Số ngày hết hạn khoá đăng nhập tự động',
 	'AUTOLOGIN_LENGTH_EXPLAIN'		=> 'Số ngày kể từ lần ghé thăm trước của thành viên, khoá đăng nhập tự động sẽ hết hạn. Nhập vào số <strong>0</strong> để vô hiệu chức năng này.',
 	'BROWSER_VALID'					=> 'Kiểm tra trình duyệt',
-	'BROWSER_VALID_EXPLAIN'			=> 'Bật chế độ kiểm tra trình duyệt cho mỗi session để tăng cường khả năng bảo mật.',
+	'BROWSER_VALID_EXPLAIN'			=> 'Bật chế độ kiểm tra trình duyệt cho mỗi phiên đăng nhập để tăng cường khả năng bảo mật.',
 	'CHECK_DNSBL'					=> 'Kiểm tra lại địa chỉ IP với danh sách các địa chỉ đen DNS',
 	'CHECK_DNSBL_EXPLAIN'			=> 'Nếu bạn bật chức năng này, địa chỉ IP sẽ được tiến hành kiểm tra lại với danh sách từ các dịch vụ DNSBL sau đây trong quá trình đăng ký và gửi bài: <a href="http://spamcop.net">spamcop.net</a>, <a href="http://dsbl.org">dsbl.org</a> và <a href="http://spamhaus.org">spamhaus.org</a>. Việc tra cứu các danh sách này có thể mất nhiều thời gian, tùy thuộc vào cấu hình máy chủ của bạn. Nếu việc kiểm tra làm chậm lại hệ thống hoặc có quá nhiều kết quả sai được báo cáo, chúng tôi khuyên bạn nên vô hiệu chức năng này.',
 	'CLASS_B'						=> 'A.B',
@@ -369,9 +371,9 @@ $lang = array_merge($lang, array(
 	'FORCE_PASS_CHANGE'				=> 'Số ngày yêu cầu thay đổi mật khẩu',
 	'FORCE_PASS_CHANGE_EXPLAIN'		=> 'Yêu cầu thành viên phải thay đổi mật khẩu của họ sau khi hết số ngày được thiết lập. Nhập vào số <strong>0</strong> để vô hiệu chức năng này.',
 	'FORWARDED_FOR_VALID'			=> 'Kiểm tra tiêu đề <var>X_FORWARDED_FOR</var> hợp lệ',
-	'FORWARDED_FOR_VALID_EXPLAIN'	=> 'Những phiên session này sẽ chỉ được tiếp tục nếu tiêu đề <var>X_FORWARDED_FOR</var> gửi đi bằng với một phiên session đã gửi trong yêu cầu trước đó. Những thiết lập cấm cũng sẽ được kiểm tra lại các địa chỉ IP trong <var>X_FORWARDED_FOR</var>.',
+	'FORWARDED_FOR_VALID_EXPLAIN'	=> 'Những phiên đăng nhập này sẽ chỉ được tiếp tục nếu tiêu đề <var>X_FORWARDED_FOR</var> gửi đi bằng với một phiên đăng nhập đã gửi trong yêu cầu trước đó. Những thiết lập cấm cũng sẽ được kiểm tra lại các địa chỉ IP trong <var>X_FORWARDED_FOR</var>.',
 	'IP_VALID'						=> 'Kiểm tra địa chỉ IP ',
-	'IP_VALID_EXPLAIN'				=> 'Tuỳ chọn xác định số lượng địa chỉ IP được sử dụng để kiểm tra phiên session của thành viên. Chọn <samp>Tất cả</samp> sẽ so sánh toàn bộ địa chỉ IP: <samp>A.B.C</samp> thay cho x.x.x, <samp>A.B</samp> thay cho x.x. Chọn <samp>Không có</samp> để tắt chức năng kiểm tra này. Với những địa chỉ IP dùng IPv6, <samp>A.B.C</samp> sẽ so sánh 4 khối đầu tiên và <samp>A.B</samp> là 3 khối đầu tiên.',
+	'IP_VALID_EXPLAIN'				=> 'Tuỳ chọn xác định số lượng địa chỉ IP được sử dụng để kiểm tra phiên đăng nhập của thành viên. Chọn <samp>Tất cả</samp> sẽ so sánh toàn bộ địa chỉ IP: <samp>A.B.C</samp> thay cho x.x.x, <samp>A.B</samp> thay cho x.x. Chọn <samp>Không có</samp> để tắt chức năng kiểm tra này. Với những địa chỉ IP dùng IPv6, <samp>A.B.C</samp> sẽ so sánh 4 khối đầu tiên và <samp>A.B</samp> là 3 khối đầu tiên.',
 	'MAX_LOGIN_ATTEMPTS'			=> 'Số lần đăng nhập tối đa cho phép',
 	'MAX_LOGIN_ATTEMPTS_EXPLAIN'	=> 'Số lần tối đa cho phép thành viên cố gắng đăng nhập vào hệ thống khi đăng nhập thất bại nhiều lần. Sau khi đăng nhập thất bại vượt quá số lần được thiết lập này, thành viên phải nhập thêm vào mã xác nhận khi đăng nhập.',
 	'NO_IP_VALIDATION'				=> 'Không kiểm tra địa chỉ IP',
@@ -387,7 +389,7 @@ $lang = array_merge($lang, array(
 
 // Email Settings
 $lang = array_merge($lang, array(
-	'ACP_EMAIL_SETTINGS_EXPLAIN'	=> 'Những thiết lập này được sử dụng khi hệ thống gửi Email đến các thành viên khác. Hãy chắc chắn địa chỉ Email liên hệ mà bạn nhập vào là hợp lệ, bất kỳ thư rác hay Email không gửi được nào có khả năng sẽ được gửi đến địa chỉ này. Nếu máy chủ của bạn không hỗ trợ gửi Email thông qua PHP, bạn có thể thay thế bằng cách gửi Email trực tiếp thông qua máy chủ SMTP. Điều này yêu cầu bạn phải cung cấp một địa chỉ máy chủ SMTP chính xác cho hệ thống biết. Bạn có thể hỏi nhà cung cấp dịch vụ lưu trữ Web của bạn nếu cần thiết và đừng xác định những máy chủ đã quá lạc hậu! Nếu máy chủ SMTP yêu cầu phải xác thực và chỉ khi thực sự được yêu cầu, bạn hãy cung cấp cho hệ thống biết tên tài khoản và mật khẩu đăng nhập máy chủ SMTP. Lưu ý rằng hệ thống chỉ hỗ trợ những phương pháp xác thực đơn giản, các phương pháp xác thực khác hiện tại chưa được hỗ trợ.',
+	'ACP_EMAIL_SETTINGS_EXPLAIN'	=> 'Những thiết lập này được sử dụng khi hệ thống gửi Email đến các thành viên khác. Hãy chắc chắn địa chỉ Email liên hệ mà bạn nhập vào là hợp lệ, bất kỳ thư rác hay Email không gửi được nào có khả năng sẽ được gửi đến địa chỉ này. Nếu máy chủ của bạn không hỗ trợ gửi Email thông qua PHP, bạn có thể thay thế bằng cách gửi Email trực tiếp thông qua máy chủ SMTP. Điều này yêu cầu bạn phải cung cấp một địa chỉ máy chủ SMTP chính xác cho hệ thống biết. Bạn có thể hỏi nhà cung cấp dịch vụ lưu trữ Web của bạn nếu cần thiết và đừng xác định những máy chủ đã quá lạc hậu! Nếu máy chủ SMTP yêu cầu phải xác thực và chỉ khi thực sự được yêu cầu, bạn hãy cung cấp cho hệ thống biết tên tài khoản, mật khẩu đăng nhập và phương pháp xác thực của máy chủ SMTP.',
 
 	'ADMIN_EMAIL'					=> 'Địa chỉ Email gửi đi',
 	'ADMIN_EMAIL_EXPLAIN'			=> 'Địa chỉ Email này được sử dụng làm địa chỉ Email của người gửi trên tất cả các Email được gửi đi và địa chỉ Email hỗ trợ kỹ thuật. Nó sẽ luôn luôn được sử dụng trong phần <samp>Địa chỉ quay về</samp> và <samp>Địa chỉ người gửi</samp> trong các Email.',
@@ -399,8 +401,8 @@ $lang = array_merge($lang, array(
 	'CONTACT_EMAIL_EXPLAIN'			=> 'Địa chỉ Email này được sử dụng khi có việc cần liên hệ, ví dụ như vấn đề thư rác, có lỗi xảy ra… Nó sẽ luôn luôn được sử dụng trong phần thông tin <samp>Gửi từ</samp> và <samp>Trả lời đến địa chỉ</samp> của các Email.',
 	'EMAIL_FUNCTION_NAME'			=> 'Tên hàm dùng để gửi Email',
 	'EMAIL_FUNCTION_NAME_EXPLAIN'	=> 'Hàm chức năng PHP bạn muốn sử dụng để gửi Email.',
-	'EMAIL_PACKAGE_SIZE'			=> 'Số lượng Email trong gói Email',
-	'EMAIL_PACKAGE_SIZE_EXPLAIN'	=> 'Số lượng Email được gửi đi trong một gói Email.',
+	'EMAIL_PACKAGE_SIZE'			=> 'Số lượng Email trong mỗi gói Email',
+	'EMAIL_PACKAGE_SIZE_EXPLAIN'	=> 'Số lượng Email tối đa được gửi đi trong một gói Email. Thiết lập này được áp dụng cho những Email chờ được gửi đi bên trong máy chủ. Nhập vào số <strong>0</strong> trong phần này nếu bạn gặp phải bất kỳ rắc rối nào về những Email không gửi đi được.',
 	'EMAIL_SIG'						=> 'Chữ ký Email',
 	'EMAIL_SIG_EXPLAIN'				=> 'Chữ ký được đính kèm trong tất cả các Email được gửi đi từ website.',
 	'ENABLE_EMAIL'					=> 'Bật chức năng gửi Email trong hệ thống',

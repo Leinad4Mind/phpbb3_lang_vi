@@ -4,9 +4,9 @@
 * help_faq [Vietnamese]
 *
 * @package language
-* @version $Id: help_faq.php,v 1.38 2007/05/27 03:53:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: help_faq.php,v 1.45 2007/07/30 16:51:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -46,7 +45,7 @@ $help = array(
 	),
 	array(
 		0 => 'Tại sao tôi cần phải đăng ký làm thành viên?',
-		1 => 'Bạn có thể không cần phải làm như thế nhưng đôi khi bạn cần phải đăng ký mới có thể gửi bài trong diễn đàn, tuỳ theo yêu cầu của người quản trị. Tuy nhiên, việc đăng ký làm thành viên sẽ giúp bạn sử dụng được hết tất cả các chức năng mà hệ thống chỉ dành cho các thành viên đã đăng ký và không dành cho khách sử dụng, ví dụ như hình đại diện, gửi tin nhắn, gửi Email đến các thành viên khác, tham gia vào các nhóm thành viên… Bạn chỉ mất vài phút để hoàn tất việc đăng ký, vì vậy hãy đăng ký làm thành viên của chúng tôi.'
+		1 => 'Bạn có thể không cần phải làm như thế nhưng đôi khi bạn cần phải đăng ký mới có thể gửi bài trong diễn đàn, tuỳ theo yêu cầu của người quản trị. Tuy nhiên, việc đăng ký làm thành viên sẽ giúp bạn sử dụng được hết tất cả các chức năng mà hệ thống chỉ dành cho các thành viên đã đăng ký và không dành cho khách sử dụng, ví dụ như hình đại diện, gửi tin nhắn, gửi Email đến các thành viên khác, tham gia vào các nhóm… Bạn chỉ mất vài phút để hoàn tất việc đăng ký, vì vậy hãy đăng ký làm thành viên của chúng tôi.'
 	),
 	array(
 		0 => 'Tại sao tôi thường xuyên bị thoát ra khỏi hệ thống?',
@@ -70,15 +69,15 @@ $help = array(
 	),
 	array(
 		0 => 'Điều khoản COPPA là gì?',
-		1 => 'COPPA là tên viết tắt từ <strong>Child Online Privacy and Protection Act</strong>. Đây là một luật lệ ban hành vào năm 1998 trong hệ thống pháp luật của Mỹ. Luật lệ này yêu cầu các website có những hoạt động thu thập thông tin từ trẻ vị thành niên dưới 13 tuổi phải được sự đồng ý của cha mẹ hay người bảo hộ của chúng hoặc sử dụng một vài biện pháp khác từ hệ thống kiến thức bảo hộ pháp luật trong việc cho phép thu thập những thông tin cá nhân có thể nhận biết từ một trẻ vị thành niên dưới 13 tuổi. Nếu bạn chắc chắn rằng mình hay một vài người khác thuộc diện quy định trong điều khoản này hoặc website mà bạn đang đăng ký thành viên có áp dụng điều khoản này, bạn hãy liên hệ với các luật sư tư vấn pháp lý để tìm kiếm sự giúp đỡ. Lưu ý rằng phpBB Group không thể đưa ra cho bạn bất kỳ một lời khuyên nào về pháp luật và cũng đừng liên hệ với chúng tôi về những vấn đề này ngoại trừ một vài nguyên tắc chung bên dưới.',
+		1 => 'COPPA là tên viết tắt từ <strong>Child Online Privacy and Protection Act</strong>. Đây là một luật lệ ban hành vào năm 1998 trong hệ thống pháp luật của Mỹ. Luật lệ này yêu cầu các website có những hoạt động thu thập thông tin từ trẻ vị thành niên dưới 13 tuổi phải được sự đồng ý của cha mẹ hay người bảo hộ của chúng hoặc sử dụng một vài biện pháp khác từ hệ thống kiến thức bảo hộ pháp luật trong việc cho phép thu thập những thông tin cá nhân có thể nhận biết từ một trẻ vị thành niên dưới 13 tuổi. Nếu bạn chắc chắn rằng mình hay một vài người khác thuộc diện quy định trong điều khoản này hoặc website mà bạn đang đăng ký thành viên có áp dụng điều khoản này, bạn hãy liên hệ với các luật sư tư vấn pháp lý để tìm kiếm sự giúp đỡ. Lưu ý rằng tổ chức phpBB không thể đưa ra cho bạn bất kỳ một lời khuyên nào về pháp luật và cũng đừng liên hệ với chúng tôi về những vấn đề này ngoại trừ một vài nguyên tắc chung bên dưới.',
 	),
 	array(
 		0 => 'Tại sao tôi không thể đăng ký thành viên?',
 		1 => 'Có thể người quản lý website đã cấm địa chỉ IP của bạn hoặc không cho phép sử dụng tên thành viên mà bạn đang định sử dụng để đăng ký mới. Cũng có thể người quản lý website đã cho tạm ngưng đăng ký thành viên mới bằng cách vô hiệu chức năng này trong hệ thống vì một lý do nào đó. Bạn hãy liên hệ với người quản trị để được giúp đỡ.',
 	),
 	array(
-		0 => 'Liên kết “Xóa tất cả cookie từ website này” có tác dụng gì?',
-		1 => 'Thao tác này sẽ xóa tất cả các cookie được tạo ra bởi hệ thống phpBB trên máy tính của bạn. Việc tạo ra các cookie này là nhằm giữ cho việc xác thực và đăng nhập vào hệ thống của bạn luôn ở trong trạng thái sẵn sàng đồng thời nó cũng đi kèm với một vài chức năng khác từ hệ thống như việc đánh dấu những chủ đề/bài viết đã xem nếu thiết lập này được thiết lập bởi người quản trị. Nếu bạn gặp rắc rối trong quá trình đăng nhập hay thoát khỏi hệ thống, việc xóa cookie này có thể sẽ giúp bạn thoát khỏi rắc rối đó.',
+		0 => 'Liên kết “Xóa tất cả dữ liệu ghi nhận từ website này” có tác dụng gì?',
+		1 => 'Thao tác này sẽ xóa tất cả các dữ liệu ghi nhận được tạo ra bởi hệ thống phpBB trên máy tính của bạn. Việc tạo ra các dữ liệu ghi nhận này là nhằm giữ cho việc xác thực và đăng nhập vào hệ thống của bạn luôn ở trong trạng thái sẵn sàng đồng thời nó cũng đi kèm với một vài chức năng khác từ hệ thống như việc đánh dấu những chủ đề/bài viết đã xem nếu thiết lập này được thiết lập bởi người quản trị. Nếu bạn gặp rắc rối trong quá trình đăng nhập hay thoát khỏi hệ thống, việc xóa dữ liệu ghi nhận này có thể sẽ giúp bạn thoát khỏi rắc rối đó.',
 	),
 	array(
 		0 => '--',
@@ -98,7 +97,7 @@ $help = array(
 	),
 	array(
 		0 => 'Ngôn ngữ của tôi không có trong danh sách hỗ trợ!',
-		1 => 'Có thể quản trị viên chưa cài đặt gói ngôn ngữ mà bạn dùng vào hệ thống hay đơn giản là chưa từng có ai phiên dịch hệ thống này sang ngôn ngữ của bạn. Hãy cố gắng yêu cầu người quản trị cài đặt gói ngôn ngữ của bạn vào hệ thống nếu nó có sẵn. Nếu chưa có, bạn có thể đề nghị cùng tham gia phiên dịch hệ thống sang ngôn ngữ của bạn. Bạn có thể tìm hiểu nhiều thông tin về các gói ngôn ngữ cho hệ thống này tại website của phpBB Group có ở cuối trang.'
+		1 => 'Có thể quản trị viên chưa cài đặt gói ngôn ngữ mà bạn dùng vào hệ thống hay đơn giản là chưa từng có ai phiên dịch hệ thống này sang ngôn ngữ của bạn. Hãy cố gắng yêu cầu người quản trị cài đặt gói ngôn ngữ của bạn vào hệ thống nếu nó có sẵn. Nếu chưa có, bạn có thể đề nghị cùng tham gia phiên dịch hệ thống sang ngôn ngữ của bạn. Bạn có thể tìm hiểu nhiều thông tin về các gói ngôn ngữ cho hệ thống này tại website của tổ chức phpBB có ở cuối trang.'
 	),
 	array(
 		0 => 'Làm sao để hiển thị hình ảnh bên dưới tên thành viên của tôi?',
@@ -150,7 +149,7 @@ $help = array(
 	),
 	array(
 		0 => 'Tại sao tôi lại nhận được một cảnh cáo?',
-		1 => 'Mỗi quản trị viên có những quy định riêng dành cho website của mình. Nếu bạn vi phạm một trong những nội quy của họ, bạn có thể sẽ nhận được một cảnh cáo. Bạn cần lưu ý rằng đây là quyết định của chính người quản trị tại diễn đàn mà bạn tham gia và phpBB Group không có liên quan gì trong việc đưa ra những cảnh cáo này. Hãy liên hệ với người quản trị nếu bạn không chắc chắn lý do tại sao mình lại nhận được một cảnh cáo.'
+		1 => 'Mỗi quản trị viên có những quy định riêng dành cho website của mình. Nếu bạn vi phạm một trong những nội quy của họ, bạn có thể sẽ nhận được một cảnh cáo. Bạn cần lưu ý rằng đây là quyết định của chính người quản trị tại diễn đàn mà bạn tham gia và tổ chức phpBB không có liên quan gì trong việc đưa ra những cảnh cáo này. Hãy liên hệ với người quản trị nếu bạn không chắc chắn lý do tại sao mình lại nhận được một cảnh cáo.'
 	),
 	array(
 		0 => 'Làm sao tôi có thể báo cáo bài viết đến người điều hành?',
@@ -210,7 +209,7 @@ $help = array(
 	),
 	array(
 		0 => '--',
-		1 => 'Những câu hỏi về cấp bậc thành viên và nhóm thành viên'
+		1 => 'Những câu hỏi về cấp bậc thành viên và nhóm'
 	),
 	array(
 		0 => 'Quản trị viên là ai?',
@@ -246,7 +245,7 @@ $help = array(
 	),
 	array(
 		0 => '--',
-		1 => 'Những câu hỏi về tin nhắn cá nhân'
+		1 => 'Những câu hỏi về tin nhắn'
 	),
 	array(
 		0 => 'Tôi không thể gửi tin nhắn được!',
@@ -302,7 +301,7 @@ $help = array(
 	),
 	array(
 		0 => 'Theo dõi chủ đề và đánh dấu chủ đề khác nhau như thế nào?',
-		1 => 'Chức năng đánh dấu chủ đề trong hệ thống phpBB3 cũng giống như việc bạn đánh dấu các trang Web trong trình duyệt của mình. Bạn không nhất thiết phải được thông báo mỗi khi chủ đề này được cập nhật nhưng bạn có thể quay lại xem chủ đề này bất cứ khi nào bạn muốn. Ngược lại, chức năng theo dõi chủ đề sẽ thông báo cho bạn biết mỗi khi chủ đề hay chuyên mục mà bạn chọn theo dõi được cập nhật trong diễn đàn thông qua cách thông báo mà bạn đã thiết lập hay của hệ thống.'
+		1 => 'Chức năng đánh dấu chủ đề trong hệ thống phpBB cũng giống như việc bạn đánh dấu các trang Web trong trình duyệt của mình. Bạn không nhất thiết phải được thông báo mỗi khi chủ đề này được cập nhật nhưng bạn có thể quay lại xem chủ đề này bất cứ khi nào bạn muốn. Ngược lại, chức năng theo dõi chủ đề sẽ thông báo cho bạn biết mỗi khi chủ đề hay chuyên mục mà bạn chọn theo dõi được cập nhật trong diễn đàn thông qua cách thông báo mà bạn đã thiết lập hay của hệ thống.'
 	),
 	array(
 		0 => 'Làm thế nào tôi có thể theo dõi các chuyên mục hay chủ đề xác định?',
@@ -330,15 +329,15 @@ $help = array(
 	),
 	array(
 		0 => 'Ai đã viết và phát triển hệ thống này?',
-		1 => 'Chương trình này với những chức năng ban đầu của nó đã được phát triển, phát hành và thuộc bản quyền của <a href="http://www.phpbb.com/">phpBB Group</a>. Nó được phát hành dưới bản quyền của <em>GNU General Public License</em> và phân phối hoàn toàn miễn phí. Bạn hãy ghé thăm website chính của chúng tôi để tìm hiểu thêm thông tin về phpBB.'
+		1 => 'Chương trình này với những chức năng ban đầu của nó đã được phát triển, phát hành và thuộc bản quyền của <a href="http://www.phpbb.com/">tổ chức phpBB</a>. Nó được phát hành dưới bản quyền của <em>GNU General Public License</em> và phân phối hoàn toàn miễn phí. Bạn hãy ghé thăm website chính của chúng tôi để tìm hiểu thêm thông tin về phpBB.'
 	),
 	array(
 		0 => 'Tại sao hệ thống không có những chức năng khác?',
-		1 => 'Chương trình này được phát triển và thuộc bản quyền của <em>phpBB Group</em>. Nếu bạn cảm thấy một chức năng mới cần được thêm vào chương trình này, hãy ghé thăm website phpBB.com của chúng tôi và xem ý kiến đánh giá của <em>phpBB Group</em>. Xin đừng gửi bài yêu cầu những chức năng mới trong diễn đàn của phpBB.com bởi vì chỉ có những thành viên của phpBB trong <em>SourceForge</em> mới có nhiệm vụ phát triển những chức năng mới. Hãy đọc qua các chuyên mục trong diễn đàn để xem ý kiến của họ, dù cho thế nào chăng nữa chúng tôi cũng cần phải quyết định thật kỹ càng về những chức năng cần thiết phải làm cho chương trình này.'
+		1 => 'Chương trình này được phát triển và thuộc bản quyền của <em>tổ chức phpBB</em>. Nếu bạn cảm thấy một chức năng mới cần được thêm vào chương trình này, hãy ghé thăm website phpBB.com của chúng tôi và xem ý kiến đánh giá của <em>tổ chức phpBB</em>. Xin đừng gửi bài yêu cầu những chức năng mới trong diễn đàn của phpBB.com bởi vì chỉ có những thành viên của phpBB trong <em>SourceForge</em> mới có nhiệm vụ phát triển những chức năng mới. Hãy đọc qua các chuyên mục trong diễn đàn để xem ý kiến của họ, dù cho thế nào chăng nữa chúng tôi cũng cần phải quyết định thật kỹ càng về những chức năng cần thiết phải làm cho chương trình này.'
 	),
 	array(
 		0 => 'Tôi phải liên hệ với ai về việc lạm dụng và vi phạm pháp luật liên quan đến website này?',
-		1 => 'Bất kỳ người quản trị nào được liệt kê trong trang “Ban điều hành” đều là người thích hợp cho bạn cần liên hệ hay gửi các thắc mắc của mình. Nếu như việc liên hệ này không có phản hồi nào, bạn nên liên hệ với người quản lý tên miền này bằng cách thực hiện <a href="http://www.google.com/search?q=whois">tra cứu trên miền (WHOIS)</a> hoặc nếu website này đang chạy trên một dịch vụ lưu trữ Web miễn phí như Yahoo!, free.fr, f2s.com… thì bạn hãy thử liên hệ với người quản lý hay bộ phận giải quyết các vi phạm của dịch vụ đó. Bạn cần lưu ý rằng <em>phpBB Group</em> hoàn toàn <strong>không liên quan và không chịu trách nhiệm</strong> đến bất kỳ vấn đề nào xảy ra trong website này ở bất kỳ đâu và với bất kỳ ai sử dụng chương trình này. Sẽ hoàn toàn vô nghĩa nếu bạn tìm cách liên hệ với <em>phpBB Group</em> về các vấn đề liên quan đến pháp luật, các trách nhiệm pháp lý, những bài viết nói xấu lẫn nhau… nếu nó <strong>không liên quan trực tiếp</strong> đến website phpBB.com hoặc những chương trình riêng biệt của chính phpBB. Nếu bạn gửi Email cho <em>phpBB Group</em> về <strong>bất kỳ vấn đề nào phát sinh từ bên thứ ba</strong> trong việc sử dụng chương trình này của người dùng cuối thì có thể bạn sẽ nhận được một hồi âm ngắn gọn hoặc không có sự phản hồi nào.'
+		1 => 'Bất kỳ người quản trị nào được liệt kê trong trang “Ban điều hành” đều là người thích hợp cho bạn cần liên hệ hay gửi các thắc mắc của mình. Nếu như việc liên hệ này không có phản hồi nào, bạn nên liên hệ với người quản lý tên miền này bằng cách thực hiện <a href="http://www.google.com/search?q=whois">tra cứu trên miền</a> hoặc nếu website này đang chạy trên một dịch vụ lưu trữ Web miễn phí như Yahoo!, free.fr, f2s.com… thì bạn hãy thử liên hệ với người quản lý hay bộ phận giải quyết các vi phạm của dịch vụ đó. Bạn cần lưu ý rằng <em>tổ chức phpBB</em> hoàn toàn <strong>không liên quan và không chịu trách nhiệm</strong> đến bất kỳ vấn đề nào xảy ra trong website này ở bất kỳ đâu và với bất kỳ ai sử dụng chương trình này. Sẽ hoàn toàn vô nghĩa nếu bạn tìm cách liên hệ với <em>tổ chức phpBB</em> về các vấn đề liên quan đến pháp luật, các trách nhiệm pháp lý, những bài viết nói xấu lẫn nhau… nếu nó <strong>không liên quan trực tiếp</strong> đến website phpBB.com hoặc những chương trình riêng biệt của chính phpBB. Nếu bạn gửi Email cho <em>tổ chức phpBB</em> về <strong>bất kỳ vấn đề nào phát sinh từ bên thứ ba</strong> trong việc sử dụng chương trình này của người dùng cuối thì có thể bạn sẽ nhận được một hồi âm ngắn gọn hoặc không có sự phản hồi nào.'
 	)
 );
 

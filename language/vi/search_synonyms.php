@@ -1,12 +1,12 @@
 <?php
 /** 
 *
-* search_synonyms (English) [Vietnamese]
+* search_synonyms [Vietnamese]
 *
 * @package language
-* @version $Id: search_synonyms.php,v 1.01 2007/04/25 18:54:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: search_synonyms.php,v 1.02 2007/07/23 23:59:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file:
+* search_synonyms (English)
 *
 */
 

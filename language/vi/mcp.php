@@ -4,9 +4,9 @@
 * mcp [Vietnamese]
 *
 * @package language
-* @version $Id: mcp.php,v 1.35 2007/06/13 15:35:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: mcp.php,v 1.38 2007/07/31 11:35:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -143,13 +142,13 @@ $lang = array_merge($lang, array(
 	'MCP_BAN_USERNAMES'		=> 'Cấm tên thành viên',
 
 	'MCP_LOGS'				=> 'Ghi nhận về điều hành viên',
-	'MCP_LOGS_FRONT'		=> 'Trang trước',
+	'MCP_LOGS_FRONT'		=> 'Trang chính',
 	'MCP_LOGS_FORUM_VIEW'	=> 'Ghi nhận về chuyên mục',
 	'MCP_LOGS_TOPIC_VIEW'	=> 'Ghi nhận về chủ đề',
 
 	'MCP_MAIN'						=> 'Trang chính',
 	'MCP_MAIN_FORUM_VIEW'			=> 'Xem chuyên mục',
-	'MCP_MAIN_FRONT'				=> 'Trang trước',
+	'MCP_MAIN_FRONT'				=> 'Trang chính',
 	'MCP_MAIN_POST_DETAILS'			=> 'Chi tiết bài viết',
 	'MCP_MAIN_TOPIC_VIEW'			=> 'Xem chủ đề',
 	'MCP_MAKE_ANNOUNCEMENT'			=> 'Thay đổi thành “Thông báo”',
@@ -170,7 +169,7 @@ $lang = array_merge($lang, array(
 	'MCP_MAKE_NORMALS_CONFIRM'		=> 'Bạn có chắc chắn muốn thay đổi những chủ đề đã chọn trở thành “Các chủ đề bình thường”?',
 
 	'MCP_NOTES'						=> 'Ghi chú thành viên',
-	'MCP_NOTES_FRONT'				=> 'Trang trước',
+	'MCP_NOTES_FRONT'				=> 'Trang chính',
 	'MCP_NOTES_USER'				=> 'Chi tiết về thành viên',
 
 	'MCP_POST_REPORTS'				=> 'Những báo cáo được chỉ định cho bài viết này',
@@ -182,7 +181,7 @@ $lang = array_merge($lang, array(
 	'MCP_REPORTS_OPEN'				=> 'Báo cáo chờ xử lý',
 	'MCP_REPORTS_OPEN_EXPLAIN'		=> 'Đây là danh sách của tất cả các báo cáo về bài viết vẫn chưa giải quyết xong.',
 
-	'MCP_QUEUE'								=> 'Công việc chờ xử lý của điều hành viên',
+	'MCP_QUEUE'								=> 'Công việc chờ xử lý',
 	'MCP_QUEUE_APPROVE_DETAILS'				=> 'Thông tin chi tiết về việc chấp nhận',
 	'MCP_QUEUE_UNAPPROVED_POSTS'			=> 'Những bài viết đang chờ được chấp nhận',
 	'MCP_QUEUE_UNAPPROVED_POSTS_EXPLAIN'	=> 'Đây là danh sách của tất cả các bài viết đòi hỏi phải được chấp nhận trước khi hiển thị cho mọi người xem.',
@@ -192,7 +191,7 @@ $lang = array_merge($lang, array(
 	'MCP_VIEW_USER'			=> 'Xem cảnh cáo đối với một thành viên xác định',
 
 	'MCP_WARN'				=> 'Cảnh cáo',
-	'MCP_WARN_FRONT'		=> 'Trang trước',
+	'MCP_WARN_FRONT'		=> 'Trang chính',
 	'MCP_WARN_LIST'			=> 'Danh sách cảnh cáo',
 	'MCP_WARN_POST'			=> 'Cảnh cáo bài viết xác định',
 	'MCP_WARN_USER'			=> 'Cảnh cáo thành viên',
@@ -372,7 +371,7 @@ $lang = array_merge($lang, array(
 			'WAREZ'		=> 'Bài viết có chứa các liên kết liên quan đến những phần mềm sao chép trái pháp luật.',
 			'SPAM'		=> 'Bài viết chỉ nhằm mục đích quảng cáo cho một website hay các sản phẩm khác.',
 			'OFF_TOPIC'	=> 'Bài viết có nội dung không phù hợp.',
-			'OTHER'		=> 'Bài viết đã báo cáo không phải vì các nguyên nhân đã liệt kê ở trên, bạn hãy tự nhập vào phần giới thiệu.',
+			'OTHER'		=> 'Bài viết đã báo cáo không phải vì các nguyên nhân đã liệt kê ở trên, bạn hãy tự nhập vào thông tin giới thiệu chi tiết.',
 		)
 	),
 ));

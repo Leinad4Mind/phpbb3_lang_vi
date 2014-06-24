@@ -4,9 +4,9 @@
 * common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php,v 1.84 2007/07/09 21:16:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: common.php,v 1.97 2007/07/31 11:36:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -45,7 +44,7 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'TRANSLATION_INFO'	=> 'Vietnamese translation by <a href="http://www.vinabb.com/">nedka</a>',
+	'TRANSLATION_INFO'	=> 'Vietnamese translation by <a href="http://www.vinabb.com/">nedka</a>', // Please do not edit or remove my copyright
 	'DIRECTION'			=> 'ltr',
 	'DATE_FORMAT'		=> '|d M Y|', // 01 Jan 2007 (with Relative days enabled)
 	'USER_LANG'			=> 'vi',
@@ -105,14 +104,14 @@ $lang = array_merge($lang, array(
 	'BBCODE_GUIDE'			=> 'Tài liệu hướng dẫn sử dụng BBCode',
 	'BCC'					=> 'Đồng gửi',
 	'BIRTHDAYS'				=> 'Sinh nhật',
-	'BOARD_BAN_PERM'		=> 'Bạn đã bị cấm tham gia vào website thường xuyên.<br /><br />Hãy liên hệ với %2$sngười quản trị%3$s để biết thêm thông tin.',
+	'BOARD_BAN_PERM'		=> 'Bạn đã bị cấm tham gia vào website.<br /><br />Hãy liên hệ với %2$sngười quản trị%3$s để biết thêm thông tin.',
 	'BOARD_BAN_REASON'		=> 'Nguyên nhân dẫn đến việc bạn bị cấm tham gia là: <strong>%s</strong>',
 	'BOARD_BAN_TIME'		=> 'Bạn đã bị cấm tham gia vào website cho đến ngày <strong>%1$s</strong>.<br /><br />Hãy liên hệ với %2$sngười quản trị%3$s để biết thêm thông tin.',
 	'BOARD_DISABLE'			=> 'Xin lỗi, hệ thống hiện tại không thể hoạt động được.',
 	'BOARD_DISABLED'		=> 'Hệ thống hiện tại ngưng hoạt động.',	
 	'BOARD_UNAVAILABLE'		=> 'Xin lỗi, hệ thống tạm thời không thể hoạt động được. Bạn hãy vui lòng quay lại sau vài phút nữa.',
-	'BROWSING_FORUM_GUEST'	=> 'Đang xem chuyên mục này: %1$s và %2$d khách',
-	'BROWSING_FORUM_GUESTS'	=> 'Đang xem chuyên mục này: %1$s và %2$d khách',
+	'BROWSING_FORUM_GUEST'	=> 'Đang xem chuyên mục này: <strong>%1$s</strong> và <strong>%2$d</strong> khách',
+	'BROWSING_FORUM_GUESTS'	=> 'Đang xem chuyên mục này: <strong>%1$s</strong> và <strong>%2$d</strong> khách',
 	'BYTES'					=> 'Byte',
 
 	'CANCEL'				=> 'Huỷ bỏ',
@@ -124,7 +123,7 @@ $lang = array_merge($lang, array(
 	'COLLAPSE_VIEW'			=> 'Xem thu gọn',	
 	'CLOSE_WINDOW'			=> 'Đóng cửa sổ',
 	'COLOUR_SWATCH'			=> 'Bảng mã màu',
-	'COMMA_SEPARATOR'		=> ', ',	// Used in pagination of ACP & prosilver, use localised comma if appropriate, eg: Ideographic or Arabic
+	'COMMA_SEPARATOR'		=> ', ', // Used in pagination of ACP & prosilver, use localised comma if appropriate, eg: Ideographic or Arabic
 	'CONFIRM'				=> 'Xác nhận',
 	'CONFIRM_CODE'			=> 'Mã xác nhận',
 	'CONFIRM_CODE_EXPLAIN'	=> 'Nhập vào đoạn mã xác nhận mà bạn thực sự nhìn thấy trong hình. Tất cả chữ cái đều được phân biệt với chữ số và không có số <strong>O</strong>.',
@@ -236,10 +235,10 @@ $lang = array_merge($lang, array(
 	'GUEST'						=> 'Khách',
 	'GUEST_USERS_ONLINE'		=> 'Có <strong>%d</strong> khách đang trực tuyến',
 	'GUEST_USERS_TOTAL'			=> '<strong>%d</strong> khách',
-	'GUEST_USERS_ZERO_ONLINE'	=> 'không có vị khách nào đang trực tuyến',
-	'GUEST_USERS_ZERO_TOTAL'	=> 'không có vị khách nào',
-	'GUEST_USER_ONLINE'			=> 'chỉ có <strong>%d</strong> vị khách đang trực tuyến',
-	'GUEST_USER_TOTAL'			=> 'chỉ có <strong>%d</strong> vị khách',
+	'GUEST_USERS_ZERO_ONLINE'	=> '<strong>0</strong> khách đang trực tuyến',
+	'GUEST_USERS_ZERO_TOTAL'	=> '<strong>0</strong> khách',
+	'GUEST_USER_ONLINE'			=> '<strong>%d</strong> khách đang trực tuyến',
+	'GUEST_USER_TOTAL'			=> '<strong>%d</strong> khách',
 	'G_ADMINISTRATORS'			=> 'Quản trị viên',
 	'G_BOTS'					=> 'Máy tìm kiếm',
 	'G_GUESTS'					=> 'Khách',
@@ -249,10 +248,10 @@ $lang = array_merge($lang, array(
 
 	'HIDDEN_USERS_ONLINE'		=> '<strong>%d</strong> thành viên ẩn đang trực tuyến',
 	'HIDDEN_USERS_TOTAL'		=> '<strong>%d</strong> thành viên ẩn và ',
-	'HIDDEN_USERS_ZERO_ONLINE'	=> 'không có thành viên ẩn nào đang trực tuyến',
-	'HIDDEN_USERS_ZERO_TOTAL'	=> 'không có thành viên ẩn và ',
-	'HIDDEN_USER_ONLINE'		=> 'chỉ có <strong>%d</strong> thành viên ẩn đang trực tuyến',
-	'HIDDEN_USER_TOTAL'			=> 'chỉ có <strong>%d</strong> thành viên ẩn và ',
+	'HIDDEN_USERS_ZERO_ONLINE'	=> '<strong>0</strong> thành viên ẩn đang trực tuyến',
+	'HIDDEN_USERS_ZERO_TOTAL'	=> '<strong>0</strong> thành viên ẩn và ',
+	'HIDDEN_USER_ONLINE'		=> '<strong>%d</strong> thành viên ẩn đang trực tuyến',
+	'HIDDEN_USER_TOTAL'			=> '<strong>%d</strong> thành viên ẩn và ',
 	'HIDE_GUESTS'				=> 'Không hiển thị khách',
 	'HIDE_ME'					=> 'Ẩn trạng thái trực tuyến của tôi trong phiên đăng nhập này',
 	'HOURS'						=> 'Giờ',
@@ -262,8 +261,8 @@ $lang = array_merge($lang, array(
 	'ICQ_STATUS'				=> 'Trạng thái ICQ',
 	'IF'						=> 'Nếu',
 	'IMAGE'						=> 'Hình ảnh',	
-	'IMAGE_FILETYPE_INVALID'	=> 'Loại tập tin hình ảnh %d trong nhóm tập tin %s không được hỗ trợ.',
-	'IMAGE_FILETYPE_MISMATCH'	=> 'Loại tập tin hình ảnh không phù hợp: đuôi tập tin mở rộng khai báo là %1$s nhưng thực sự lại là %2$s.',
+	'IMAGE_FILETYPE_INVALID'	=> 'Loại tập tin hình ảnh “%d” trong nhóm tập tin “%s” không được hỗ trợ.',
+	'IMAGE_FILETYPE_MISMATCH'	=> 'Loại tập tin hình ảnh không phù hợp: đuôi tập tin mở rộng khai báo là “%1$s” nhưng thực sự lại là “%2$s”.',
 	'IN'						=> 'trong',
 	'INDEX'						=> 'Trang chủ',
 	'INFORMATION'				=> 'Thông tin',
@@ -303,7 +302,8 @@ $lang = array_merge($lang, array(
 	'LOGIN_FORUM'						=> 'Để xem hoặc gửi bài trong chuyên mục này, bạn phải nhập vào mật khẩu.',
 	'LOGIN_INFO'						=> 'Để đăng nhập vào hệ thống, bạn phải có tài khoản thành viên đã đăng ký. Việc đăng ký chỉ tốn mất của bạn một chút thời gian nhưng bù lại bạn có thể sử dụng đầy đủ công cụ và chức năng trong hệ thống dành cho thành viên. Quản trị viên có thể thay đổi quyền hạn của những thành viên đã đăng ký trong hệ thống. Trước khi tiến hành đăng ký, hãy chắc chắn rằng bạn đã biết rõ về những điều khoản của chúng tôi và những chính sách có liên quan khác. Bạn cũng phải chắc chắn rằng đã đọc kỹ nội quy của từng chuyên mục riêng trong diễn đàn.',
 	'LOGIN_VIEWFORUM'					=> 'Hệ thống yêu cầu bạn phải đăng nhập để xem chuyên mục này.',
-	'LOGIN_EXPLAIN_EDIT'				=> 'Để sửa các bài viết trong chuyên mục này, bạn phải là thành viên đã đăng ký và đã đăng nhập vào hệ thống.',	
+	'LOGIN_EXPLAIN_EDIT'				=> 'Để sửa các bài viết trong chuyên mục này, bạn phải là thành viên đã đăng ký và đã đăng nhập vào hệ thống.',
+	'LOGIN_EXPLAIN_VIEWONLINE'			=> 'Để xem danh sách thành viên đang trực tuyến, bạn phải là thành viên đã đăng ký và đã đăng nhập vào hệ thống.',
 	'LOGOUT'							=> 'Thoát',
 	'LOGOUT_USER'						=> 'Thoát [ %s ]',
 	'LOG_ME_IN'							=> 'Đăng nhập tự động mỗi lần ghé thăm',
@@ -330,7 +330,7 @@ $lang = array_merge($lang, array(
 	'MSNM'					=> 'Tài khoản MSNM/WLM',	
 
 	'NA'						=> 'N/A',
-	'NEWEST_USER'				=> 'Chào mừng thành viên mới nhất của chúng ta: <strong>%s%s%s</strong>',
+	'NEWEST_USER'				=> 'Chào mừng thành viên mới nhất của chúng ta: <strong>%s</strong>',
 	'NEW_MESSAGE'				=> 'Tin nhắn mới',
 	'NEW_MESSAGES'				=> 'Tin nhắn mới',
 	'NEW_PM'					=> 'Bạn chỉ có <strong>%d</strong> tin nhắn mới',
@@ -341,10 +341,10 @@ $lang = array_merge($lang, array(
 	'NEXT_STEP'					=> 'Bước kế tiếp',
 	'NEVER'						=> 'Không bao giờ',	
 	'NO'						=> 'Không đồng ý',
-	'NOT_ALLOWED_MANAGE_GROUP'	=> 'Bạn không được phép quản lý nhóm thành viên này.',
+	'NOT_ALLOWED_MANAGE_GROUP'	=> 'Bạn không được phép quản lý nhóm này.',
 	'NOT_AUTHORISED'			=> 'Bạn không được phép truy cập khu vực này.',
-	'NOT_WATCHING_FORUM'		=> 'Bạn đã chọn không theo dõi những thông tin cập nhật trong chuyên mục này nữa.',
-	'NOT_WATCHING_TOPIC'		=> 'Bạn đã chọn không theo dõi những thông tin cập nhật trong chủ đề này nữa.',
+	'NOT_WATCHING_FORUM'		=> 'Bạn đã chọn không nhận thông báo về các bài viết mới trong chuyên mục này nữa.',
+	'NOT_WATCHING_TOPIC'		=> 'Bạn đã chọn không nhận thông báo về các bài viết mới trong chủ đề này nữa.',
 	'NOTIFY_ADMIN'				=> 'Bạn hãy vui lòng thông báo cho quản trị viên hoặc người chủ của website này.',
 	'NOTIFY_ADMIN_EMAIL'		=> 'Bạn hãy vui lòng thông báo cho quản trị viên hoặc người chủ của website này: <a href="mailto:%1$s">%1$s</a>',
 	'NO_ACCESS_ATTACHMENT'		=> 'Bạn không được phép truy cập tập tin này.',
@@ -360,7 +360,7 @@ $lang = array_merge($lang, array(
 	'NO_EMAIL_SUBJECT'			=> 'Bạn chưa nhập tiêu đề cho Email.',	
 	'NO_FORUM'					=> 'Chuyên mục bạn vừa chọn không tồn tại.',
 	'NO_FORUMS'					=> 'Diễn đàn này không có chuyên mục nào.',
-	'NO_GROUP'					=> 'Nhóm thành viên bạn vừa yêu cầu không tồn tại.',
+	'NO_GROUP'					=> 'Nhóm bạn vừa yêu cầu không tồn tại.',
 	'NO_GROUP_MEMBERS'			=> 'Nhóm này hiện tại chưa có thành viên nào tham gia.',
 	'NO_IPS_DEFINED'			=> 'Không có địa chỉ IP hoặc tên miền nào được chỉ định',
 	'NO_MEMBERS'				=> 'Không tìm thấy thành viên nào với lựa chọn tìm kiếm này.',
@@ -399,7 +399,7 @@ $lang = array_merge($lang, array(
 	'PLAY_QUICKTIME_FILE'		=> 'Chạy tập tin Quicktime',
 	'PM'						=> 'Tin nhắn',
 	'POSTING_MESSAGE'			=> 'Đang gửi bài viết trong chuyên mục %s',
-	'POSTING_PRIVATE_MESSAGE'	=> 'Đang soạn tin nhắn cá nhân',
+	'POSTING_PRIVATE_MESSAGE'	=> 'Đang soạn tin nhắn',
 	'POST'						=> 'Gửi bài',
 	'POST_ANNOUNCEMENT'			=> 'Thông báo',
 	'POST_STICKY'				=> 'Chú ý',
@@ -421,7 +421,7 @@ $lang = array_merge($lang, array(
 	'POST_SUBJECT'				=> 'Tiêu đề bài viết',
 	'POST_TIME'					=> 'Ngày gửi',
 	'POST_TOPIC'				=> 'Tạo chủ đề mới',
-	'POST_UNAPPROVED'			=> 'Bài viết này đang chờ đợi được chấp nhận',
+	'POST_UNAPPROVED'			=> 'Bài viết này đang chờ được chấp nhận',
 	'PREVIEW'					=> 'Xem trước',
 	'PREVIOUS'					=> 'Trang vừa xem', // Used in pagination
 	'PREVIOUS_STEP'				=> 'Bước vừa hoàn tất',
@@ -437,17 +437,17 @@ $lang = array_merge($lang, array(
 	'READING_TOPIC'				=> 'Đang xem các bài viết trong chủ đề %s',
 	'READ_PROFILE'				=> 'Xem thông tin cá nhân',
 	'REASON'					=> 'Nguyên nhân',
-	'RECORD_ONLINE_USERS'		=> 'Số lượt người ghé thăm website đông nhất là <strong>%1$s</strong> vào ngày %2$s',
+	'RECORD_ONLINE_USERS'		=> 'Số lượt người ghé thăm đông nhất là <strong>%1$s</strong> vào ngày %2$s',
 	'REDIRECT'					=> 'Chuyển trang',
 	'REDIRECTS'					=> 'Tổng số lượt ghé thăm',
 	'REGISTER'					=> 'Đăng ký',
 	'REGISTERED_USERS'			=> 'Các thành viên đang trực tuyến:',
 	'REG_USERS_ONLINE'			=> 'Có <strong>%d</strong> thành viên và ',
 	'REG_USERS_TOTAL'			=> '<strong>%d</strong> thành viên, ',
-	'REG_USERS_ZERO_ONLINE'		=> 'Không có thành viên nào và ',
-	'REG_USERS_ZERO_TOTAL'		=> 'không có thành viên, ',
-	'REG_USER_ONLINE'			=> 'Chỉ có <strong>%d</strong> thành viên và ',
-	'REG_USER_TOTAL'			=> 'Chỉ có <strong>%d</strong> thành viên, ',
+	'REG_USERS_ZERO_ONLINE'		=> '<strong>0</strong> thành viên và ',
+	'REG_USERS_ZERO_TOTAL'		=> '<strong>0</strong> thành viên, ',
+	'REG_USER_ONLINE'			=> '<strong>%d</strong> thành viên và ',
+	'REG_USER_TOTAL'			=> '<strong>%d</strong> thành viên, ',
 	'REMOVE'					=> 'Gỡ bỏ',
 	'REMOVE_INSTALL'			=> 'Hãy vui lòng xoá, di chuyển hoặc đổi tên thư mục <samp>install/</samp> trước khi bạn bắt đầu sử dụng hệ thống. Nếu thư mục này vẫn còn hiện diện, bạn sẽ chỉ có thể truy cập vào được bảng điều khiển của quản trị viên.',
 	'REPLIES'					=> 'Trả lời',
@@ -488,7 +488,7 @@ $lang = array_merge($lang, array(
 	'SEARCH_ADV_EXPLAIN'		=> 'Xem những lựa chọn tìm kiếm nâng cao',
 	'SEARCH_KEYWORDS'			=> 'Tìm kiếm với từ khoá',
 	'SEARCHING_FORUMS'			=> 'Đang tìm kiếm những chuyên mục',
-	'SEARCH_ACTIVE_TOPICS'		=> 'Xem những chủ đề không bị khoá',
+	'SEARCH_ACTIVE_TOPICS'		=> 'Xem những chủ đề còn hoạt động',
 	'SEARCH_FOR'				=> 'Tìm kiếm với từ khoá',
 	'SEARCH_FORUM'				=> 'Tìm kiếm trong chuyên mục này…',	
 	'SEARCH_NEW'				=> 'Xem những bài viết mới',
@@ -547,7 +547,7 @@ $lang = array_merge($lang, array(
 	'TOO_LONG_USERNAME'				=> 'Tên thành viên bạn vừa nhập quá dài.',
 	'TOO_LONG_EMAIL'				=> 'Địa chỉ Email bạn vừa nhập quá dài.',
 	'TOO_LONG_EMAIL_CONFIRM'		=> 'Địa chỉ Email xác nhận bạn vừa nhập quá dài.',
-	'TOO_LONG_WEBSITE'				=> 'Địa chỉ Website bạn vừa nhập quá dài.',
+	'TOO_LONG_WEBSITE'				=> 'Địa chỉ website bạn vừa nhập quá dài.',
 	'TOO_LONG_YIM'					=> 'Tên tài khoản Yahoo bạn vừa nhập quá dài.',
 		
 	'TOO_MANY_VOTE_OPTIONS'			=> 'Bạn không thể bình chọn cho nhiều đối tượng.',
@@ -566,7 +566,7 @@ $lang = array_merge($lang, array(
 	'TOO_SHORT_USERNAME'			=> 'Tên thành viên bạn vừa nhập quá ngắn.',
 	'TOO_SHORT_EMAIL'				=> 'Địa chỉ Email bạn vừa nhập quá ngắn.',
 	'TOO_SHORT_EMAIL_CONFIRM'		=> 'Địa chỉ Email xác nhận bạn vừa nhập quá ngắn.',
-	'TOO_SHORT_WEBSITE'				=> 'Địa chỉ Website bạn vừa nhập quá ngắn.',
+	'TOO_SHORT_WEBSITE'				=> 'Địa chỉ website bạn vừa nhập quá ngắn.',
 	'TOO_SHORT_YIM'					=> 'Tên tài khoản Yahoo bạn vừa nhập quá ngắn.',
 
 	'TOPIC'				=> 'Chủ đề',
@@ -598,8 +598,8 @@ $lang = array_merge($lang, array(
 	'UNKNOWN_BROWSER'		=> 'Trình duyệt không xác định',
 	'UNMARK_ALL'			=> 'Bỏ đánh dấu',
 	'UNREAD_MESSAGES'		=> 'Tin nhắn chưa xem',
-	'UNREAD_PM'				=> 'Chỉ có <strong>%d</strong> tin nhắn chưa xem',
-	'UNREAD_PMS'			=> 'Có <strong>%d</strong> tin nhắn chưa xem',
+	'UNREAD_PM'				=> '<strong>%d</strong> tin nhắn chưa xem',
+	'UNREAD_PMS'			=> '<strong>%d</strong> tin nhắn chưa xem',
 	'UNWATCHED_FORUMS'		=> 'Bạn không còn theo dõi những chuyên mục đã chọn.',
 	'UNWATCHED_TOPICS'		=> 'Bạn không còn theo dõi những chủ đề đã chọn.',
 	'UPDATE'				=> 'Cập nhật',	
@@ -622,7 +622,7 @@ $lang = array_merge($lang, array(
 	'VIEWING_ONLINE'			=> 'Đang xem các thành viên trực tuyến',
 	'VIEWING_MCP'				=> 'Đang xem bảng điều khiển dành cho điều hành viên',
 	'VIEWING_MEMBER_PROFILE'	=> 'Đang xem thông tin cá nhân của thành viên',
-	'VIEWING_PRIVATE_MESSAGES'	=> 'Đang xem tin nhắn cá nhân',
+	'VIEWING_PRIVATE_MESSAGES'	=> 'Đang xem tin nhắn',
 	'VIEWING_REGISTER'			=> 'Đang đăng ký tài khoản thành viên mới',
 	'VIEWING_UCP'				=> 'Đang xem bảng điều khiển của thành viên',
 	'VIEWS'						=> 'Xem',
@@ -630,9 +630,9 @@ $lang = array_merge($lang, array(
 	'VIEW_FORUM_LOGS'			=> 'Xem ghi nhận chuyên mục',
 	'VIEW_LATEST_POST'			=> 'Xem bài viết mới nhất vừa gửi',
 	'VIEW_NEWEST_POST'			=> 'Xem bài viết chưa xem đầu tiên',
-	'VIEW_NOTES'				=> 'Xem ghi chú cá nhân của thành viên',
-	'VIEW_ONLINE_TIME'			=> 'Thông tin trên được cập nhật trong vòng <strong>%d</strong> phút vừa qua',
-	'VIEW_ONLINE_TIMES'			=> 'Thông tin trên được cập nhật trong vòng <strong>%d</strong> phút vừa qua',
+	'VIEW_NOTES'				=> 'Xem phản hồi về thành viên',
+	'VIEW_ONLINE_TIME'			=> 'Thông tin trên được cập nhật mỗi <strong>%d</strong> phút',
+	'VIEW_ONLINE_TIMES'			=> 'Thông tin trên được cập nhật mỗi <strong>%d</strong> phút',
 	'VIEW_TOPIC'				=> 'Xem chủ đề',
 	'VIEW_TOPIC_ANNOUNCEMENT'	=> 'Thông báo: ',
 	'VIEW_TOPIC_GLOBAL'			=> 'Thông báo chung: ',	
@@ -655,6 +655,7 @@ $lang = array_merge($lang, array(
 	'WRONG_DATA_JABBER'			=> 'Tên tài khoản Jabber bạn vừa nhập không hợp lệ.',
 	'WRONG_DATA_LANG'			=> 'Ngôn ngữ bạn vừa nhập không hợp lệ.',
 	'WRONG_DATA_WEBSITE'		=> 'Địa chỉ website bạn vừa nhập không phải là một địa chỉ URL hợp lệ và phải đính kèm cả giao thức. Ví dụ: <code>http://www.example.com/</code>.',
+	'WROTE'						=> 'đã viết',
 
 	'YEAR'				=> 'Năm',
 	'YEAR_MONTH_DAY'	=> '(YYYY-MM-DD)',
@@ -703,7 +704,7 @@ $lang = array_merge($lang, array(
 		'Feb'		=> 'Tháng 2',
 		'Mar'		=> 'Tháng 3',
 		'Apr'		=> 'Tháng 4',
-		'May_short'	=> 'Tháng 5',	// Short representation of "May". May_short used because in English the short and long date are the same for May.		
+		'May_short'	=> 'Tháng 5', // Short representation of "May". May_short used because in English the short and long date are the same for May.		
 		'Jun'		=> 'Tháng 6',
 		'Jul'		=> 'Tháng 7',
 		'Aug'		=> 'Tháng 8',
@@ -757,11 +758,11 @@ $lang = array_merge($lang, array(
 	),
 
 	'tz_zones'	=> array(
-		'-12'	=> '[UTC - 12] Giờ tiêu chuẩn của Baker Island',
+		'-12'	=> '[UTC - 12] Giờ tiêu chuẩn của đảo Baker',
 		'-11'	=> '[UTC - 11] Giờ tiêu chuẩn của Niue, Samoa',
-		'-10'	=> '[UTC - 10] Giờ tiêu chuẩn của Hawaii-Aleutian, Cook Island',
-		'-9.5'	=> '[UTC - 9:30] Giờ tiêu chuẩn của Marquesas Islands',
-		'-9'	=> '[UTC - 9] Giờ tiêu chuẩn của Alaska, Gambier Island',
+		'-10'	=> '[UTC - 10] Giờ tiêu chuẩn của Hawaii-Aleutian, đảo Cook',
+		'-9.5'	=> '[UTC - 9:30] Giờ tiêu chuẩn của quần đảo Marquesas',
+		'-9'	=> '[UTC - 9] Giờ tiêu chuẩn của Alaska, đảo Gambier',
 		'-8'	=> '[UTC - 8] Giờ tiêu chuẩn của Thái Bình Dương',
 		'-7'	=> '[UTC - 7] Giờ tiêu chuẩn của Mountain',
 		'-6'	=> '[UTC - 6] Giờ tiêu chuẩn của trung tâm thế giới',
@@ -769,7 +770,7 @@ $lang = array_merge($lang, array(
 		'-4'	=> '[UTC - 4] Giờ tiêu chuẩn của Đại Tây Dương',
 		'-3.5'	=> '[UTC - 3:30] Giờ tiêu chuẩn của Newfoundland',
 		'-3'	=> '[UTC - 3] Giờ tiêu chuẩn của Amazon, trung tâm Greenland',
-		'-2'	=> '[UTC - 2] Giờ tiêu chuẩn của Fernando de Noronha, phía Nam Georgia &amp; Sandwich Islands',
+		'-2'	=> '[UTC - 2] Giờ tiêu chuẩn của Fernando de Noronha, phía Nam Georgia &amp; quần đảo Sandwich',
 		'-1'	=> '[UTC - 1] Giờ tiêu chuẩn của Azores, Cape Verde, phía Đông Greenland',
 		'0'		=> '[UTC] Giờ tiêu chuẩn của Tây Âu, Greenwich Mean',
 		'1'		=> '[UTC + 1] Giờ tiêu chuẩn của trung tâm châu Âu, Tây Phi',
@@ -790,12 +791,12 @@ $lang = array_merge($lang, array(
 		'9.5'	=> '[UTC + 9:30] Giờ tiêu chuẩn của trung tâm nước Úc',
 		'10'	=> '[UTC + 10] Giờ tiêu chuẩn của phía Đông nước Úc, Vladivostok',
 		'10.5'	=> '[UTC + 10:30] Giờ tiêu chuẩn của Lord Howe',
-		'11'	=> '[UTC + 11] Giờ tiêu chuẩn của Solomon Island, Magadan',
-		'11.5'	=> '[UTC + 11:30] Giờ tiêu chuẩn của Norfolk Island',
+		'11'	=> '[UTC + 11] Giờ tiêu chuẩn của đảo Solomon, Magadan',
+		'11.5'	=> '[UTC + 11:30] Giờ tiêu chuẩn của đảo Norfolk',
 		'12'	=> '[UTC + 12] Giờ tiêu chuẩn của New Zealand, Fiji, Kamchatka',
-		'12.75'	=> '[UTC + 12:45] Giờ tiêu chuẩn của Chatham Islands',
-		'13'	=> '[UTC + 13] Giờ tiêu chuẩn của Tonga, Phoenix Islands',
-		'14'	=> '[UTC + 14] Giờ tiêu chuẩn của Line Island',
+		'12.75'	=> '[UTC + 12:45] Giờ tiêu chuẩn của quần đảo Chatham',
+		'13'	=> '[UTC + 13] Giờ tiêu chuẩn của Tonga, quần đảo Phoenix',
+		'14'	=> '[UTC + 14] Giờ tiêu chuẩn của đảo Line',
 	),
 
 	// The value is only an example and will get replaced by the current time on view

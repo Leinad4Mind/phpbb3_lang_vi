@@ -4,9 +4,9 @@
 * acp_email [Vietnamese]
 *
 * @package language
-* @version $Id: email.php,v 1.08 2007/04/14 18:07:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: email.php,v 1.10 2007/07/23 23:53:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -51,7 +50,7 @@ $lang = array_merge($lang, array(
 	'EMAIL_SENT'			=> 'Email này đã được gửi thành công.',
 	'EMAIL_SENT_QUEUE'		=> 'Email này đang chờ để được gửi.',
 
-	'LOG_SESSION'			=> 'Ghi nhận session trong quá trình gửi Email',
+	'LOG_SESSION'			=> 'Ghi nhận phiên đăng nhập trong quá trình gửi Email',
 
 	'SEND_IMMEDIATELY'		=> 'Gửi trực tiếp',
 	'SEND_TO_GROUP'			=> 'Gửi đến nhóm',

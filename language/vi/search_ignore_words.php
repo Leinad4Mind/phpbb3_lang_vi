@@ -1,12 +1,12 @@
 <?php
 /** 
 *
-* search_ignore_words (English) [Vietnamese]
+* search_ignore_words [Vietnamese]
 *
 * @package language
-* @version $Id: search_ignore_words.php,v 1.03 2006/10/22 07:00:00 nedka Exp $
-* @copyright (c) 2006 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: search_ignore_words.php,v 1.04 2007/07/23 23:59:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file:
+* search_ignore_words (English)
 *
 */
 

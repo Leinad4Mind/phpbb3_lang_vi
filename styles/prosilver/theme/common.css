@@ -332,6 +332,7 @@ ul.linklist li.rightside, p.rightside {
 
 ul.navlinks {
 	padding-bottom: 1px;
+	margin-bottom: 1px;
 	border-bottom: 1px solid #FFFFFF;
 	font-weight: bold;
 }
@@ -590,6 +591,10 @@ div.rules {
 	padding: 0 10px;
 	margin: 10px 0;
 	font-size: 1.1em;
+}
+
+div.rules li {
+	margin-left: 20px;
 }
 
 p.rules {

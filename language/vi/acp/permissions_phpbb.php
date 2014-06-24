@@ -4,9 +4,9 @@
 * acp_permissions (phpBB Permission Set) [Vietnamese]
 *
 * @package language
-* @version $Id: permissions_phpbb.php,v 1.20 2007/06/10 15:04:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: permissions_phpbb.php,v 1.23 2007/07/26 03:06:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -90,22 +89,26 @@ $lang = array_merge($lang, array(
 		'user_group'	=> 'Thành viên &amp; nhóm',
 	),
 
+	// With defining 'global' here we are able to specify what is printed out if the permission is within the global scope.
 	'permission_type'	=> array(
 		'u_'			=> 'Cấp phép thành viên',
 		'a_'			=> 'Cấp phép quản trị viên',
 		'm_'			=> 'Cấp phép điều hành viên',
 		'f_'			=> 'Cấp phép chuyên mục',
+		'global'		=> array(
+			'm_'			=> 'Cấp phép điều hành viên chính',
+		),
 	),
 ));
 
 // User Permissions
 $lang = array_merge($lang, array(
-	'acl_u_viewprofile'	=> array('lang' => 'Có thể xem thông tin cá nhân', 'cat' => 'profile'),
+	'acl_u_viewprofile'	=> array('lang' => 'Có thể xem thông tin cá nhân, danh sách thành viên và những người đang trực tuyến', 'cat' => 'profile'),
 	'acl_u_chgname'		=> array('lang' => 'Có thể thay đổi tên thành viên', 'cat' => 'profile'),
 	'acl_u_chgpasswd'	=> array('lang' => 'Có thể thay đổi mật khẩu', 'cat' => 'profile'),
 	'acl_u_chgemail'	=> array('lang' => 'Có thể thay đổi địa chỉ Email', 'cat' => 'profile'),
 	'acl_u_chgavatar'	=> array('lang' => 'Có thể thay đổi hình đại diện', 'cat' => 'profile'),
-	'acl_u_chggrp'		=> array('lang' => 'Có thể thay đổi nhóm thành viên mặc định', 'cat' => 'profile'),
+	'acl_u_chggrp'		=> array('lang' => 'Có thể thay đổi nhóm mặc định', 'cat' => 'profile'),
 
 	'acl_u_attach'		=> array('lang' => 'Có thể đính kèm tập tin', 'cat' => 'post'),
 	'acl_u_download'	=> array('lang' => 'Có thể tải về tập tin', 'cat' => 'post'),
@@ -187,8 +190,8 @@ $lang = array_merge($lang, array(
 	'acl_m_merge'	=> array('lang' => 'Có thể nhập chung chủ đề', 'cat' => 'topic_actions'),
 
 	'acl_m_info'	=> array('lang' => 'Có thể xem thông tin về bài viết', 'cat' => 'misc'),
-	'acl_m_warn'	=> array('lang' => 'Có thể cảnh cáo thành viên', 'cat' => 'misc'), // This moderator setting is only global (and not local)
-	'acl_m_ban'		=> array('lang' => 'Có thể quản lý danh sách cấm', 'cat' => 'misc'), // This moderator setting is only global (and not local)
+	'acl_m_warn'	=> array('lang' => 'Có thể cảnh cáo thành viên<br /><em>Thiết lập này chỉ được chọn toàn bộ và nó không phụ thuộc vào chuyên mục.</em>', 'cat' => 'misc'), // This moderator setting is only global (and not local)
+	'acl_m_ban'		=> array('lang' => 'Có thể quản lý danh sách cấm<br /><em>Thiết lập này chỉ được chọn toàn bộ và nó không phụ thuộc vào chuyên mục.</em>', 'cat' => 'misc'), // This moderator setting is only global (and not local)
 ));
 
 // Admin Permissions
@@ -208,7 +211,7 @@ $lang = array_merge($lang, array(
 	'acl_a_bbcode'		=> array('lang' => 'Có thể xác định thẻ BBCode', 'cat' => 'posting'),
 	'acl_a_attach'		=> array('lang' => 'Có thể thay đổi thiết lập tập tin đính kèm', 'cat' => 'posting'),
 
-	'acl_a_user'		=> array('lang' => 'Có thể quản lý thành viên', 'cat' => 'user_group'),
+	'acl_a_user'		=> array('lang' => 'Có thể quản lý thành viên<br /><em>Thiết lập này cũng bao gồm việc cho phép xem chữ ký trình duyệt của thành viên trong danh sách những ai đang trực tuyến.</em>', 'cat' => 'user_group'),
 	'acl_a_userdel'		=> array('lang' => 'Có thể xoá/dọn dẹp thành viên', 'cat' => 'user_group'),
 	'acl_a_group'		=> array('lang' => 'Có thể quản lý nhóm', 'cat' => 'user_group'),
 	'acl_a_groupadd'	=> array('lang' => 'Có thể tạo nhóm mới', 'cat' => 'user_group'),

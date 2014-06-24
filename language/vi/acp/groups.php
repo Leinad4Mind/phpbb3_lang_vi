@@ -4,9 +4,9 @@
 * acp_groups [Vietnamese]
 *
 * @package language
-* @version $Id: groups.php,v 1.24 2007/07/06 14:50:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: groups.php,v 1.26 2007/07/23 23:54:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -41,13 +40,13 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ACP_GROUPS_MANAGE_EXPLAIN'		=> 'Với công cụ này, bạn có thể quản lý tất cả nhóm thành viên trong hệ thống. Bạn có thể xoá, tạo mói hay chỉnh sửa những nhóm thành viên hiện có. Ngoài ra, bạn cũng có thể chọn ra người lãnh đạo nhóm, thay đổi loại nhóm tự do/ẩn/cố định cũng như cập nhật tên nhóm và giới thiệu về nhóm.',
+	'ACP_GROUPS_MANAGE_EXPLAIN'		=> 'Với công cụ này, bạn có thể quản lý tất cả nhóm trong hệ thống. Bạn có thể xoá, tạo mới hay chỉnh sửa những nhóm hiện có. Ngoài ra, bạn cũng có thể chọn ra người lãnh đạo nhóm, thay đổi loại nhóm tự do/ẩn/cố định cũng như cập nhật tên nhóm và giới thiệu về nhóm.',
 	'ADD_USERS'						=> 'Thêm thành viên',
 	'ADD_USERS_EXPLAIN'				=> 'Với công cụ này, bạn có thể thêm những thành viên mới cho nhóm. Bạn cũng có thể thay đổi nhóm mặc định cho các thành viên được chọn. Ngoài ra, bạn cũng có thể xác định thành viên trở thành người lãnh đạo của nhóm. Hãy nhập mỗi tên thành viên trên một dòng xác định.',
 
 	'COPY_PERMISSIONS'				=> 'Sao chép thiết lập cấp phép từ',
 	'COPY_PERMISSIONS_EXPLAIN'		=> 'Sau khi sao chép thiết lập cấp phép, nhóm này sẽ có thiết lập cấp phép giống như thiêt lập cấp phép của nhóm mà bạn chọn sao chép đến.',
-	'CREATE_GROUP'					=> 'Tạo nhóm thành viên mới',
+	'CREATE_GROUP'					=> 'Tạo nhóm mới',
 
 	'GROUPS_NO_MEMBERS'				=> 'Nhóm này chưa có thành viên',
 	'GROUPS_NO_MODS'				=> 'Bạn chưa xác định người lãnh đạo cho nhóm',
@@ -69,10 +68,10 @@ $lang = array_merge($lang, array(
 	'GROUP_DEMOTE'					=> 'Giáng chức người lãnh đạo nhóm',
 	'GROUP_DESC'					=> 'Giới thiệu về nhóm',
 	'GROUP_DETAILS'					=> 'Thông tin về nhóm',
-	'GROUP_EDIT_EXPLAIN'			=> 'Với công cụ này, bạn có thể chỉnh sửa các nhóm thành viên hiện có. Bạn có thể thay đổi tên nhóm, giới thiệu về nhóm và loại nhóm như tự do, cố định… Bạn cũng có thể thiết lập những tuỳ chọn cho nhóm như màu sắc phân biệt, xếp hạng… Những thay đổi thiết lập trong đây sẽ thay thế cho thiết lập hiện tại của thành viên. Lưu ý rằng những thành viên trong nhóm có thể thay đổi thiết lập hình đại diện thay thế của nhóm nếu như bạn không thiết lập cấp phép phù hợp.',
+	'GROUP_EDIT_EXPLAIN'			=> 'Với công cụ này, bạn có thể chỉnh sửa các nhóm hiện có. Bạn có thể thay đổi tên nhóm, giới thiệu về nhóm và loại nhóm như tự do, cố định… Bạn cũng có thể thiết lập những tuỳ chọn cho nhóm như màu sắc phân biệt, xếp hạng… Những thay đổi thiết lập trong đây sẽ thay thế cho thiết lập hiện tại của thành viên. Lưu ý rằng những thành viên trong nhóm có thể thay đổi thiết lập hình đại diện thay thế của nhóm nếu như bạn không thiết lập cấp phép phù hợp.',
 	'GROUP_ERR_USERS_EXIST'			=> 'Thành viên bạn vừa chọn đã là thành viên trong nhóm.',
 	'GROUP_FOUNDER_MANAGE'			=> 'Chỉ người sáng lập quản lý',
-	'GROUP_FOUNDER_MANAGE_EXPLAIN'	=> 'Giới hạn quyền quản lý nhóm thành viên này chỉ dành cho những người sáng lập. Những thành viên có thiết lập cấp phép nhóm vẫn có thể nhìn thấy nhóm này giống như các thành viên khác trong nhóm.',
+	'GROUP_FOUNDER_MANAGE_EXPLAIN'	=> 'Giới hạn quyền quản lý nhóm này chỉ dành cho những người sáng lập. Những thành viên có thiết lập cấp phép nhóm vẫn có thể nhìn thấy nhóm này giống như các thành viên khác trong nhóm.',
 	'GROUP_HIDDEN'					=> 'Nhóm ẩn',
 	'GROUP_LANG'					=> 'Ngôn ngữ của nhóm',
 	'GROUP_LEAD'					=> 'Người lãnh đạo nhóm',
@@ -109,12 +108,12 @@ $lang = array_merge($lang, array(
 	'MEMBERS'				=> 'Thành viên',
 
 	'NO_GROUP'					=> 'Không có nhóm nào được xác định.',
-	'NO_GROUPS_CREATED'			=> 'Chưa có nhóm thành viên nào được tạo.',
+	'NO_GROUPS_CREATED'			=> 'Chưa có nhóm nào được tạo.',
 	'NO_PERMISSIONS'			=> 'Đừng sao chép thiết lập cấp phép',
 	'NO_USERS'					=> 'Bạn chưa nhập vào bất kỳ thành viên nào.',
 
 	'SPECIAL_GROUPS'			=> 'Nhóm đặc biệt',
-	'SPECIAL_GROUPS_EXPLAIN'	=> 'Có một vài loại nhóm đặc biệt khác hẳn các loại nhóm thành viên khác, những nhóm này không thể xoá cũng như chỉnh sửa trực tiếp được. Tuy nhiên, bạn vẫn có thể thêm thành viên mới vào những nhóm này và thay đổi những thiết lập đơn giản.',
+	'SPECIAL_GROUPS_EXPLAIN'	=> 'Có một vài loại nhóm đặc biệt khác hẳn với các nhóm còn lại, những nhóm này không thể xoá cũng như chỉnh sửa trực tiếp được. Tuy nhiên, bạn vẫn có thể thêm thành viên mới vào những nhóm này và thay đổi những thiết lập đơn giản.',
 
 	'TOTAL_MEMBERS'				=> 'Tổng số thành viên',
 

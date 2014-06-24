@@ -4,9 +4,9 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version $Id: ucp.php,v 1.70 2007/07/06 14:31:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: ucp.php,v 1.83 2007/07/30 16:57:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -44,14 +43,14 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'TERMS_OF_USE_CONTENT'	=> 'Để tham gia vào “%1$s” (Hiểu ở đây là “chúng tôi” , “của chúng tôi” , “%1$s” , “%2$s”), bạn phải cam kết đồng ý với các điều khoản bên dưới của website. Nếu bạn không đồng ý với các điều khoản này thì đơn giản là hãy đóng trang này lại và bạn có thể không tham gia vào “%1$s”. Điều này chúng tôi không bắt buộc bạn. Chúng tôi có thể thay đổi lại những điều khoản này vào bất cứ lúc nào và chúng tôi sẽ cố gắng thông báo đến bạn sau này, dù rằng chúng tôi khuyên bạn nên thường xuyên xem lại những điều khoản này nếu bạn tham gia vào “%1$s” lâu dài bởi vì nếu có những thay đổi trong điều khoản thành viên sau này nghĩa là bạn cũng cam kết với những phần đã được chỉnh sửa và bổ sung đó.<br />
 	<br />
-	Website của chúng tôi sử dụng hệ thống phpBB (Hiểu ở đây là “họ”, “của họ”, “hệ thống phpBB”, “www.phpbb.com”, “phpBB Group”, “ban điều hành phpBB”) là một giải pháp về phần mềm Bulletin Board mã nguồn mở được phát hành dưới bản quyền “<a href="http://www.gnu.org/licenses/gpl.html">General Public License</a>” (Hiểu ở đây là “GPL”) và có thể tải về miễn phí tại trang chủ <a href="http://www.phpbb.com/">www.phpbb.com</a>. Hệ thống phpBB được phát triển để xây dựng các diễn đàn thảo luận trên Internet và bản quyền GPL đã quy định rõ những gì các diễn đàn này được phép làm và không được phép làm với nội dung và tư cách chấp nhận được. Để biết thêm nhiều thông tin về phpBB, hãy ghé thăm chúng tôi tại: <a href="http://www.phpbb.com/">http://www.phpbb.com/</a>.<br />
+	Website của chúng tôi sử dụng hệ thống phpBB (Hiểu ở đây là “họ”, “của họ”, “hệ thống phpBB”, “www.phpbb.com”, “tổ chức phpBB”, “ban điều hành phpBB”) là một giải pháp về phần mềm diễn đàn mã nguồn mở được phát hành dưới bản quyền “<a href="http://www.gnu.org/licenses/gpl.html">General Public License</a>” (Hiểu ở đây là “GPL”) và có thể tải về miễn phí tại trang chủ <a href="http://www.phpbb.com/">www.phpbb.com</a>. Hệ thống phpBB được phát triển để xây dựng các diễn đàn thảo luận trên mạng, tổ chức phpBB không liên quan gì đến những việc chúng tôi quy định bạn được phép làm và không được phép làm với nội dung lẫn tư cách chấp nhận được. Để biết thêm nhiều thông tin về phpBB, hãy ghé thăm chúng tôi tại: <a href="http://www.phpbb.com/">http://www.phpbb.com/</a>.<br />
 	<br />
-	Bạn cam kết không gửi bất cứ bài viết nào có nội dung lừa đảo, thô tục, thiếu văn hoá ; vu khống, khiêu khích, đe doạ người khác ; liên quan đến các vấn đề tình dục hay bất cứ nội dung nào vi phạm luật pháp của quốc gia mà bạn đang sống, luật pháp của quốc gia nơi đặt máy chủ cho website “%1$s” hay luật pháp quốc tế. Nếu vẫn cố tình vi phạm, ngay lập tức bạn sẽ bị cấm tham gia vào website giống như một số nhà cung cấp dịch vụ Internet của bạn, nếu bạn vẫn cho rằng những điều này chỉ riêng chúng tôi đòi hỏi. Địa chỉ IP của tất cả các bài viết đều được ghi nhận lại để bảo vệ các điều khoản cam kết này trong trường hợp bạn không tuân thủ. Bạn đồng ý rằng website “%1$s” có quyền gỡ bỏ, sửa, di chuyển hoặc khoá bất kỳ bài viết nào trong website vào bất cứ lúc nào tuỳ theo nhu cầu công việc. Đăng ký làm thành viên của chúng tôi, bạn cũng phải cam kết bất kỳ thông tin cá nhân nào mà bạn cung cấp đều được lưu trữ trong cơ sở dữ liệu của hệ thống. Trong khi những thông tin này sẽ không được cung cấp cho bất kỳ người thứ ba nào khác mà không được sự đồng ý của bạn, website “%1$s” cũng như phpBB Group sẽ không chịu trách nhiệm về việc những thông tin cá nhân này của bạn bị lộ ra bên ngoài từ những kẻ phá hoại có ý đồ xấu tấn công vào cơ sở dữ liệu của hệ thống.
+	Bạn cam kết không gửi bất cứ bài viết nào có nội dung lừa đảo, thô tục, thiếu văn hoá ; vu khống, khiêu khích, đe doạ người khác ; liên quan đến các vấn đề tình dục hay bất cứ nội dung nào vi phạm luật pháp của quốc gia mà bạn đang sống, luật pháp của quốc gia nơi đặt máy chủ cho website “%1$s” hay luật pháp quốc tế. Nếu vẫn cố tình vi phạm, ngay lập tức bạn sẽ bị cấm tham gia vào website giống như một số nhà cung cấp dịch vụ Internet của bạn, nếu bạn vẫn cho rằng những điều này chỉ riêng chúng tôi đòi hỏi. Địa chỉ IP của tất cả các bài viết đều được ghi nhận lại để bảo vệ các điều khoản cam kết này trong trường hợp bạn không tuân thủ. Bạn đồng ý rằng website “%1$s” có quyền gỡ bỏ, sửa, di chuyển hoặc khoá bất kỳ bài viết nào trong website vào bất cứ lúc nào tuỳ theo nhu cầu công việc. Đăng ký làm thành viên của chúng tôi, bạn cũng phải cam kết bất kỳ thông tin cá nhân nào mà bạn cung cấp đều được lưu trữ trong cơ sở dữ liệu của hệ thống. Trong khi những thông tin này sẽ không được cung cấp cho bất kỳ người thứ ba nào khác mà không được sự đồng ý của bạn, website “%1$s” cũng như tổ chức phpBB sẽ không chịu trách nhiệm về việc những thông tin cá nhân này của bạn bị lộ ra bên ngoài từ những kẻ phá hoại có ý đồ xấu tấn công vào cơ sở dữ liệu của hệ thống.
 	',
 
-	'PRIVACY_POLICY'		=> 'Quy định cá nhân này sẽ giải thích cho bạn biết mối quan hệ giữa website “%1$s” (Hiểu ở đây là “chúng tôi”, “của chúng tôi”, “%1$s”, “%2$s”) và hệ thống phpBB (Hiểu ở đây là “họ”, “của họ”, “hệ thống phpBB”, “www.phpbb.com”, “phpBB Group”, “ban điều hành phpBB”) trong việc sử dụng những thông tin thu thập được trong suốt phiên session sử dụng của bạn vào website (Hiểu ở đây là “bạn”, “của bạn”, “thông tin của bạn”).<br />
+	'PRIVACY_POLICY'		=> 'Quy định cá nhân này sẽ giải thích cho bạn biết mối quan hệ giữa website “%1$s” (Hiểu ở đây là “chúng tôi”, “của chúng tôi”, “%1$s”, “%2$s”) và hệ thống phpBB (Hiểu ở đây là “họ”, “của họ”, “hệ thống phpBB”, “www.phpbb.com”, “tổ chức phpBB”, “ban điều hành phpBB”) trong việc sử dụng những thông tin thu thập được trong suốt phiên đăng nhập sử dụng của bạn vào website (Hiểu ở đây là “bạn”, “của bạn”, “thông tin của bạn”).<br />
 	<br />
-	Thông tin của bạn được thu thập qua hai bước. Đầu tiên, bạn truy cập vào website “%1$s” có sử dụng hệ thống phpBB và tạo ra các cookie. Đây là những tập tin thông tin nhỏ được tải tự động về máy tính của bạn thông qua trình duyệt bạn đang dùng và lưu trữ trong thư mục chứa các tập tin tạm của trình duyệt. Hai cookie đầu tiên được sử dụng để xác thực người dùng trong hệ thống (Hiểu ở đây là “user-id”) và định danh phiên session của khách ghé thăm (Hiểu ở đây là “session-id”), được chỉ định tự động cho tài khoản thành viên của bạn bởi hệ thống phpBB. Cookie thứ ba được tạo ra khi bạn xem các bài viết trong website “%1$s” và cookie này được dùng để ghi nhận những bài viết nào bạn đã xem rồi nhằm giúp bạn tiết kiệm thời gian khi tìm kiếm nội dung website.<br />
+	Thông tin của bạn được thu thập qua hai bước. Đầu tiên, bạn truy cập vào website “%1$s” có sử dụng hệ thống phpBB và tạo ra các cookie. Đây là những tập tin thông tin nhỏ được tải tự động về máy tính của bạn thông qua trình duyệt bạn đang dùng và lưu trữ trong thư mục chứa các tập tin tạm của trình duyệt. Hai cookie đầu tiên được sử dụng để xác thực người dùng trong hệ thống (Hiểu ở đây là “số ID thành viên”) và định danh phiên đăng nhập của khách ghé thăm (Hiểu ở đây là “số ID phiên đăng nhập”), được chỉ định tự động cho tài khoản thành viên của bạn bởi hệ thống phpBB. Cookie thứ ba được tạo ra khi bạn xem các bài viết trong website “%1$s” và cookie này được dùng để ghi nhận những bài viết nào bạn đã xem rồi nhằm giúp bạn tiết kiệm thời gian khi tìm kiếm nội dung website.<br />
 	<br />
 	Chúng tôi cũng có thể tạo ra các cookie khác không phải từ hệ thống phpBB khi bạn truy cập vào website “%1$s”, mặc dù chúng đã vượt qua phạm vi của văn bản này khi đây không phải vấn đề thuộc về hệ thống phpBB. Bước thứ hai trong quá trình chúng tôi thu thập thông tin của bạn là những thông tin cá nhân bạn đã cung cấp cho chúng tôi. Những thông tin này không bị giới hạn như gửi bài viết từ tài khoản khách (Hiểu ở đây là “bài viết của khách”), đăng ký thành viên trong website “%1$s” (Hiểu ở đây là “tài khoản thành viên của bạn”) cũng như những bài viết được bạn gửi sau khi đã đăng ký thành viên của chúng tôi và đăng nhập vào hệ thống (Hiểu ở đây là “bài viết của bạn”).<br />
 	<br />
@@ -115,6 +114,7 @@ $lang = array_merge($lang, array(
 
 	'CANNOT_EDIT_MESSAGE_TIME'		=> 'Bạn không còn có thể sửa hay xoá tin nhắn này.',
 	'CANNOT_MOVE_TO_SAME_FOLDER'	=> 'Những tin nhắn không thể di chuyển đến thư mục đang chứa các tin nhắn này.',
+	'CANNOT_MOVE_FROM_SPECIAL'		=> 'Những tin nhắn không thể di chuyển khỏi hộp tin chuyển đi.',
 	'CANNOT_RENAME_FOLDER'			=> 'Thư mục này không thể đổi tên được.',
 	'CANNOT_REMOVE_FOLDER'			=> 'Thư mục này không thể gỡ bỏ được.',
 	'CHANGE_DEFAULT_GROUP'			=> 'Thay đổi nhóm mặc định',
@@ -171,7 +171,7 @@ $lang = array_merge($lang, array(
 	'EDIT_DRAFT_EXPLAIN'		=> 'Sử dụng bảng điều khiển này, bạn có thể sửa những bản nháp đã lưu của mình. Những bản nháp sẽ không chứa bất kỳ thông tin nào về các tập tin đính kèm hay bình chọn.',
 	'EMAIL_BANNED_EMAIL'		=> 'Địa chỉ Email bạn vừa nhập không được phép sử dụng.',
 	'EMAIL_INVALID_EMAIL'		=> 'Địa chỉ Email bạn vừa nhập không hợp lệ.',
-	'EMAIL_REMIND'				=> 'Bạn phải khai báo địa chỉ Email của mình khi đăng ký thành viên.',
+	'EMAIL_REMIND'				=> 'Bạn phải khai báo địa chỉ Email đang sử dụng cho tài khoản của mình. Nếu bạn không thay đổi địa chỉ này thông qua bảng điều khiển thành viên của mình, địa chỉ này sẽ được lấy từ địa chỉ Email mà bạn đã đăng ký thành viên.',
 	'EMAIL_TAKEN_EMAIL'			=> 'Địa chỉ Email bạn vừa nhập đã được sử dụng bởi một thành viên khác.',
 	'EMPTY_DRAFT'				=> 'Bạn phải nhập nội dung cho bản nháp của mình.',
 	'EMPTY_DRAFT_TITLE'			=> 'Bạn phải nhập tiêu đề cho bản nháp của mình.',
@@ -193,7 +193,7 @@ $lang = array_merge($lang, array(
 	'FIELD_INVALID_DATE'				=> 'Mục thông tin “%s” có nội dung chứa ngày tháng không hợp lệ.',
 
 	'FOE_MESSAGE'				=> 'Tin nhắn từ kẻ thù',
-	'FOES_EXPLAIN'				=> 'Kẻ thù là những thành viên đã được bạn thiết lập mặc định không quan hệ. Các bài viết được gửi bởi những thành viên này sẽ không được hiển thị khi bạn xem. Các tin nhắn cá nhân từ kẻ thù vẫn được phép gửi đến bạn. Lưu ý rằng bạn không thể chọn kẻ thù của mình là các điều hành viên hay quản trị viên trong website.',
+	'FOES_EXPLAIN'				=> 'Kẻ thù là những thành viên đã được bạn thiết lập mặc định không quan hệ. Các bài viết được gửi bởi những thành viên này sẽ không được hiển thị khi bạn xem. Các tin nhắn từ kẻ thù vẫn được phép gửi đến bạn. Lưu ý rằng bạn không thể chọn kẻ thù của mình là các điều hành viên hay quản trị viên trong website.',
 	'FOES_UPDATED'				=> 'Danh sách những kẻ thù của bạn đã được cập nhật thành công.',
 	'FOLDER_ADDED'				=> 'Thư mục đã được tạo thành công.',
 	'FOLDER_MESSAGE_STATUS'		=> '%1$d trong tổng số %2$d tin nhắn được lưu trữ',
@@ -239,7 +239,7 @@ $lang = array_merge($lang, array(
 	'LINK_REMOTE_SIZE_EXPLAIN'	=> 'Xác định chiều rộng và chiều cao của hình đại diện mà bạn muốn hiển thị, để trống nếu bạn muốn hiển thị hình đại diện của mình theo đúng kích thước thực hiện tại.',
 	'LOGIN_EXPLAIN_UCP'			=> 'Vui lòng đăng nhập nếu bạn muốn truy cập vào bảng điều khiển của thành viên.',
 	'LOGIN_REDIRECT'			=> 'Bạn đã đăng nhập thành công vào hệ thống.',
-	'LOGOUT_FAILED'				=> 'Bạn chưa thoát khỏi hệ thống được bởi vì yêu cầu vừa rồi của bạn không phù hợp với phiên session của mình. Hãy vui lòng liên hệ với quản trị viên nếu bạn vẫn tiếp tục gặp phải rắc rối này.',
+	'LOGOUT_FAILED'				=> 'Bạn chưa thoát khỏi hệ thống được bởi vì yêu cầu vừa rồi của bạn không phù hợp với phiên đăng nhập của mình. Hãy vui lòng liên hệ với quản trị viên nếu bạn vẫn tiếp tục gặp phải rắc rối này.',
 	'LOGOUT_REDIRECT'			=> 'Bạn đã thoát khỏi hệ thống thành công.',
 
 	'MARK_IMPORTANT'				=> 'Đánh dấu/Gỡ bỏ đánh dấu quan trọng',
@@ -298,6 +298,7 @@ $lang = array_merge($lang, array(
 	'NO_BCC_RECIPIENT'			=> 'Không có',
 	'NO_BOOKMARKS'				=> 'Bạn không có trang yêu thích nào.',
 	'NO_BOOKMARKS_SELECTED'		=> 'Bạn chưa chọn bất kỳ trang yêu thích nào.',
+	'NO_EDIT_READ_MESSAGE'		=> 'Bạn không thể sửa tin nhắn bởi vì nó đã được người nhận xem rồi.',
 	'NO_EMAIL_USER'				=> 'Không thể tìm thấy địa chỉ Email/tên thành viên mà bạn vừa nhập.',
 	'NO_FOES'					=> 'Không có kẻ thù nào được xác định',
 	'NO_FRIENDS'				=> 'Không có bạn thân nào được xác định',
@@ -330,14 +331,14 @@ $lang = array_merge($lang, array(
 	'PM_FROM'					=> 'Người gửi',
 	'PM_FROM_REMOVED_AUTHOR'	=> 'Tin nhắn này được gửi bởi một thành viên đã bị xóa khỏi hệ thống.',
 	'PM_ICON'					=> 'Biểu tượng tin nhắn',
-	'PM_INBOX'					=> 'Hộp thư nhận',
+	'PM_INBOX'					=> 'Hộp tin nhận',
 	'PM_NO_USERS'				=> 'Thành viên bạn vừa yêu cầu thêm vào không tồn tại.',
-	'PM_OUTBOX'					=> 'Hộp thư chuyển',
-	'PM_SENTBOX'				=> 'Hộp thư gửi',
+	'PM_OUTBOX'					=> 'Hộp tin chuyển đi',
+	'PM_SENTBOX'				=> 'Hộp tin đã gửi',
 	'PM_SUBJECT'				=> 'Tiêu đề tin nhắn',
 	'PM_TO'						=> 'Người nhận',
 	'PM_USERS_REMOVED_NO_PM'	=> 'Bạn không thể thêm vào một vài thành viên bởi vì họ đã vô hiệu chức năng nhận tin nhắn của mình.',
-	'POPUP_ON_PM'				=> 'Mở cửa sổ popup thông báo khi có tin nhắn mới',
+	'POPUP_ON_PM'				=> 'Mở cửa sổ thông báo khi có tin nhắn mới',
 	'POST_EDIT_PM'				=> 'Sửa tin nhắn',
 	'POST_FORWARD_PM'			=> 'Chuyển tiếp tin nhắn',
 	'POST_NEW_PM'				=> 'Soạn tin nhắn',
@@ -370,8 +371,8 @@ $lang = array_merge($lang, array(
 	'RULE_ALREADY_DEFINED'				=> 'Quy định cá nhân này đã được xác định rồi.',
 	'RULE_DELETED'						=> 'Quy định cá nhân đã được gỡ bỏ thành công.',
 	'RULE_NOT_DEFINED'					=> 'Quy định cá nhân không được xác định chính xác.',
-	'RULE_REMOVED_MESSAGE'				=> 'Một tin nhắn cá nhân đã bị gỡ bỏ căn cứ theo bộ lọc tin nhắn.',
-	'RULE_REMOVED_MESSAGES'				=> '%d tin nhắn cá nhân đã bị gỡ bỏ căn cứ theo bộ lọc tin nhắn.',
+	'RULE_REMOVED_MESSAGE'				=> 'Một tin nhắn đã bị gỡ bỏ căn cứ theo bộ lọc tin nhắn.',
+	'RULE_REMOVED_MESSAGES'				=> '%d tin nhắn đã bị gỡ bỏ căn cứ theo bộ lọc tin nhắn.',
 
 	'SAME_PASSWORD_ERROR'		=> 'Mật khẩu mới bạn vừa nhập trùng với mật khẩu hiện tại của bạn.',
 	'SEARCH_YOUR_POSTS'			=> 'Xem những bài viết của bạn',
@@ -392,7 +393,7 @@ $lang = array_merge($lang, array(
 	'TIMEZONE'					=> 'Múi giờ',
 	'TO'						=> 'Người nhận',
 	'TOO_MANY_RECIPIENTS'		=> 'Có quá nhiều người nhận.',
-	'TOO_MANY_REGISTERS'		=> 'Bạn đã vượt quá số lượng đăng ký thành viên cho phép trong phiên session này. Hãy thử lại vào lúc khác!',
+	'TOO_MANY_REGISTERS'		=> 'Bạn đã vượt quá số lượng đăng ký thành viên cho phép trong phiên kết nối này. Hãy thử lại vào lúc khác!',
 
 	'UCP'						=> 'Bảng điều khiển của thành viên',
 	'UCP_ACTIVATE'				=> 'Kích hoạt tài khoản',
@@ -420,29 +421,29 @@ $lang = array_merge($lang, array(
 	'UCP_PREFS_POST'			=> 'Sửa thiết lập gửi bài viết',
 	'UCP_PREFS_VIEW'			=> 'Sửa thiết lập xem bài viết',
 	
-	'UCP_PM'					=> 'Tin nhắn cá nhân',
+	'UCP_PM'					=> 'Tin nhắn',
 	'UCP_PM_COMPOSE'			=> 'Soạn tin nhắn',
 	'UCP_PM_DRAFTS'				=> 'Tin nhắn nháp',
 	'UCP_PM_OPTIONS'			=> 'Quy định cá nhân và tùy chọn thư mục',
-	'UCP_PM_POPUP'				=> 'Tin nhắn cá nhân',
+	'UCP_PM_POPUP'				=> 'Tin nhắn',
 	'UCP_PM_POPUP_TITLE'		=> 'Thông báo tin nhắn mới',
 	'UCP_PM_UNREAD'				=> 'Tin nhắn chưa xem',
 	'UCP_PM_VIEW'				=> 'Xem tin nhắn',
 
-	'UCP_PROFILE'				=> 'Thông tin cá nhân của bạn',
+	'UCP_PROFILE'				=> 'Thông tin cá nhân',
 	'UCP_PROFILE_AVATAR'		=> 'Sửa hình đại diện',
 	'UCP_PROFILE_PROFILE_INFO'	=> 'Sửa thông tin cá nhân',
 	'UCP_PROFILE_REG_DETAILS'	=> 'Sửa thiết lập tài khoản',
 	'UCP_PROFILE_SIGNATURE'		=> 'Sửa chữ ký cá nhân',
 
-	'UCP_USERGROUPS'			=> 'Nhóm thành viên',
+	'UCP_USERGROUPS'			=> 'Nhóm',
 	'UCP_USERGROUPS_MEMBER'		=> 'Sửa tư cách thành viên',
 	'UCP_USERGROUPS_MANAGE'		=> 'Quản lý nhóm',
 
 	'UCP_REGISTER_DISABLE'					=> 'Hiện tại website không cho đăng ký thành viên mới.',
 	'UCP_REMIND'							=> 'Gửi mật khẩu',
 	'UCP_RESEND'							=> 'Gửi Email kích hoạt tài khoản',
-	'UCP_WELCOME'							=> 'Chào mừng bạn đã đến với bảng điều khiển của thành viên. Với bảng điều khiển này, bạn có thể quản lý, xem và cập nhật thông tin cá nhân của mình, thiết lập những sở thích cá nhân của riêng mình, theo dõi các chuyên mục và chủ đề mà mình quan tâm. Nếu được cấp phép, bạn cũng có thể gửi tin nhắn đến các thành viên khác. Hãy chắc chắn rằng bạn đã đọc qua các thông báo quan trọng nếu có trước khi tiếp tục.',
+	'UCP_WELCOME'							=> 'Chào mừng bạn đã đến với bảng điều khiển của thành viên. Với bảng điều khiển này, bạn có thể quản lý, xem và cập nhật thông tin cá nhân, thiết lập những sở thích cá nhân, theo dõi các chuyên mục và chủ đề mà mình quan tâm. Nếu được cấp phép, bạn cũng có thể gửi tin nhắn đến các thành viên khác. Hãy chắc chắn rằng bạn đã đọc qua các thông báo quan trọng nếu có trước khi tiếp tục.',
 	'UCP_YIM'								=> 'Tài khoản Yahoo',
 	'UCP_ZEBRA'								=> 'Bạn thân &amp; kẻ thù',
 	'UCP_ZEBRA_FOES'						=> 'Quản lý kẻ thù',
@@ -525,7 +526,7 @@ $lang = array_merge($lang, array(
 		'TO_ME'			=> 'đến tôi'
 	),
 
-	'GROUPS_EXPLAIN'	=> 'Những nhóm thành viên làm nhiệm vụ của quản trị viên sẽ làm việc tốt hơn các thành viên quản trị riêng lẻ rất nhiều. Mặc định, bạn sẽ được đặt tham gia vào một nhóm xác định, đây là nhóm mặc định của bạn. Nhóm này sẽ phân biệt bạn là thành viên của nhóm với các thành viên của những nhóm khác thông qua màu sắc trên tên thành viên, hình đại diện, xếp hạng… Tuỳ thuộc vào quyết định của người quản trị có cho phép hay không mà bạn có thể thay đổi nhóm mặc định của mình. Bạn cũng có thể được tự thêm vào hoặc tự mình tham gia vào các nhóm thành viên khác. Một vài nhóm có thể đòi hỏi bạn thiết lập cấp phép bổ sung để xem một vài thông tin của nhóm hay năng lực để tham gia vào trong một số lĩnh vực riêng của họ.',
+	'GROUPS_EXPLAIN'	=> 'Những nhóm làm nhiệm vụ của quản trị viên sẽ làm việc tốt hơn các thành viên quản trị riêng lẻ rất nhiều. Mặc định, bạn sẽ được đặt tham gia vào một nhóm xác định, đây là nhóm mặc định của bạn. Nhóm này sẽ phân biệt bạn là thành viên của nhóm với các thành viên của những nhóm khác thông qua màu sắc trên tên thành viên, hình đại diện, xếp hạng… Tuỳ thuộc vào quyết định của người quản trị có cho phép hay không mà bạn có thể thay đổi nhóm mặc định của mình. Bạn cũng có thể được tự thêm vào hoặc tự mình tham gia vào các nhóm thành viên khác. Một vài nhóm có thể đòi hỏi bạn thiết lập cấp phép bổ sung để xem một vài thông tin của nhóm hay năng lực để tham gia vào trong một số lĩnh vực riêng của họ.',
 	'GROUP_LEADER'		=> 'Là người lãnh đạo của nhóm',
 	'GROUP_MEMBER'		=> 'Là thành viên của nhóm',
 	'GROUP_PENDING'		=> 'Là thành viên đang chờ quyết định của nhóm',

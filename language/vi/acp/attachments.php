@@ -4,9 +4,9 @@
 * acp_attachments [Vietnamese]
 *
 * @package language
-* @version $Id: attachments.php,v 1.17 2007/05/26 13:15:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: attachments.php,v 1.19 2007/07/24 20:19:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -132,7 +131,7 @@ $lang = array_merge($lang, array(
 	'NO_UPLOAD_DIR'				=> 'Thư mục tải lên bạn vừa chọn không tồn tại.',
 	'NO_WRITE_UPLOAD'			=> 'Thư mục tải lên bạn vừa chọn không được cấp phép có thể ghi trên máy chủ. Bạn hãy vui lòng thay đổi thiết lập cấp phép có thể ghi cho thư mục này trên máy chủ.',
 
-	'ONLY_ALLOWED_IN_PM'	=> 'Chỉ đồng ý trong tin nhắn cá nhân',
+	'ONLY_ALLOWED_IN_PM'	=> 'Chỉ đồng ý trong tin nhắn',
 	'ORDER_ALLOW_DENY'		=> 'Đồng ý',
 	'ORDER_DENY_ALLOW'		=> 'Từ chối',
 

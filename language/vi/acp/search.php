@@ -4,9 +4,9 @@
 * acp_search [Vietnamese]
 *
 * @package language
-* @version $Id: search.php,v 1.21 2007/05/26 01:49:00 nedka Exp $
-* @copyright (c) 2006, 2007 phpBBVietNam Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @version $Id: search.php,v 1.23 2007/07/23 23:56:00 nedka Exp $
+* @copyright (c) 2006, 2007 phpBBVietNam Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -92,8 +91,8 @@ $lang = array_merge($lang, array(
 	'SEARCH_INDEX_REMOVED'					=> 'Đã xoá thành công chỉ mục tìm kiếm cho phương pháp tìm kiếm này.',
 	'SEARCH_INTERVAL'						=> 'Thời gian chờ giữa hai lần tìm kiếm dành cho thành viên',
 	'SEARCH_INTERVAL_EXPLAIN'				=> 'Số giây mà thành viên phải chờ giữa hai lần thực hiện việc tìm kiếm trong hệ thống. Khoảng thời gian này được kiểm tra độc lập riêng cho mỗi thành viên.',
-	'SEARCH_STORE_RESULTS'					=> 'Thời gian cache kết quả tìm kiếm',
-	'SEARCH_STORE_RESULTS_EXPLAIN'			=> 'Số giây những kết quả tìm kiếm đã được cache sẽ hết hạn. Nhập vào số <strong>0</strong> nếu bạn muốn vô hiệu chức năng cache kết quả tìm kiếm.',
+	'SEARCH_STORE_RESULTS'					=> 'Thời gian lưu trữ bộ nhớ đệm cho kết quả tìm kiếm',
+	'SEARCH_STORE_RESULTS_EXPLAIN'			=> 'Số giây mà những kết quả tìm kiếm đã được lưu vào bộ nhớ đệm sẽ hết hạn. Nhập vào số <strong>0</strong> nếu bạn muốn vô hiệu chức năng lưu trữ bộ nhớ đệm cho kết quả tìm kiếm.',
 	'SEARCH_TYPE'							=> 'Phương pháp tìm kiếm',
 	'SEARCH_TYPE_EXPLAIN'					=> 'Hệ thống phpBB cho phép bạn chọn phương pháp được sử dụng để thực hiện tìm kiếm nội dung bài viết trong hệ thống. Theo thiết lập mặc định, chức năng tìm kiếm sẽ sử dụng tìm kiếm FULLTEXT của chính hệ thống phpBB.',
 	'SWITCHED_SEARCH_BACKEND'				=> 'Bạn đã chọn chuyển đổi phương pháp tìm kiếm. Ngoài ra, để sử dụng phương pháp tìm kiếm mới này, bạn nên chắc chắn đã tạo chỉ mục cho phương pháp tìm kiếm đã chọn.',

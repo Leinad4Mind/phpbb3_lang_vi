@@ -4,9 +4,9 @@
 * acp_styles [Vietnamese]
 *
 * @package language
-* @version $Id: styles.php,v 1.38 2007/06/13 15:39:00 nedka Exp $
+* @version $Id: styles.php,v 1.41 2007/07/26 03:26:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -15,8 +15,7 @@
 * Vietnamese Language Pack for phpBB3
 * 
 * phpBB iVN (phpBB in Vietnamese) Project
-* Translated by phpBBVietNam Group [ The Vietnamize Team ]
-* Translators in this file: nedka (Nguyen Dang Khoa)
+* Translated by nedka (Nguyen Dang Khoa)
 *
 */
 
@@ -62,13 +61,13 @@ $lang = array_merge($lang, array(
 	'BACKGROUND_REPEAT'		=> 'Nền lặp lại',
 	'BOLD'					=> 'Đậm',
 
-	'CACHE'							=> 'Cache',
-	'CACHE_CACHED'					=> 'Đã cache',
+	'CACHE'							=> 'Bộ nhớ đệm',
+	'CACHE_CACHED'					=> 'Đã tạo bộ nhớ đệm',
 	'CACHE_FILENAME'				=> 'Tập tin khuôn mẫu',
 	'CACHE_FILESIZE'				=> 'Dung lượng tập tin',
 	'CACHE_MODIFIED'				=> 'Ngày chỉnh sửa',
 	'CONFIRM_IMAGESET_REFRESH'		=> 'Bạn có chắc chắn muốn nạp lại tất cả dữ liệu gói hình ảnh giao diện? Những thiết lập từ tập tin cấu hình của gói hình ảnh giao diện sẽ thay thế cho tất cả những chỉnh sửa đến gói hình ảnh giao diện được thực hiện bởi công cụ chỉnh sửa hình ảnh giao diện.',	
-	'CONFIRM_TEMPLATE_CLEAR_CACHE'	=> 'Bạn có chắc chắn muốn xoá tất cả các tập tin khuôn mẫu đã cache?',
+	'CONFIRM_TEMPLATE_CLEAR_CACHE'	=> 'Bạn có chắc chắn muốn xoá tất cả các tập tin khuôn mẫu đã tạo bộ nhớ đệm?',
 	'CONFIRM_TEMPLATE_REFRESH'		=> 'Bạn có chắc chắn muốn nạp lại tất cả dữ liệu khuôn mẫu trong cơ sở dữ liệu với nội dung của những tập tin khuôn mẫu này sang hệ thống tập tin giao diện? Thiết lập này sẽ thay thế toàn bộ chỉnh sửa đã thực hiện với khuôn mẫu kể từ khi được lưu trữ trong cơ sở dữ liệu.',
 	'CONFIRM_THEME_REFRESH'			=> 'Bạn có chắc chắn muốn nạp lại tất cả dữ liệu kiểu dáng trong cơ sở dữ liệu với nội dung của toàn bộ kiểu dáng này sang hệ thống tập tin giao diện? Thiết lập này sẽ thay thế toàn bộ chỉnh sửa đã thực hiện với kiểu dáng kể từ khi được lưu trữ trong cơ sở dữ liệu.',
 	'COPYRIGHT'						=> 'Bản quyền',
@@ -102,11 +101,12 @@ $lang = array_merge($lang, array(
 	'EDIT_IMAGESET'						=> 'Sửa gói hình ảnh giao diện',
 	'EDIT_IMAGESET_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉnh sửa từng hình hảnh riêng lẻ được sử dụng trong gói hình ảnh giao diện. Bạn cũng có thể xác định kích thước hiển thị cho những hình ảnh này. Thông số kích thước hoàn toàn tuỳ chọn, việc xác định chúng có thể khắc phục các vấn đề nạp trang nhất định trong một vài trình duyệt. Nếu không xác định thông số kích thước, bạn có thể giảm bớt dung lượng cho cơ sở dữ liệu.',
 	'EDIT_TEMPLATE'						=> 'Sửa khuôn mẫu',
-	'EDIT_TEMPLATE_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉnh sửa trực tiếp khuôn mẫu của mình. Hãy nhớ rằng những chỉnh sửa này sẽ áp dụng mãi mãi và không thể phục hồi lại như cũ một khi đã chấp nhận. Nếu các tập tin khuôn mẫu trong thư mục giao diện của hệ thống được cấp phép có thể ghi trên máy chủ thì bất kỳ thay đổi này ở đây sẽ được ghi trực tiếp đến những tập tin này. Còn nếu không, toàn bộ thay đổi sẽ được lưu vào cơ sở dữ liệu và bảng chỉnh sửa này chỉ là tạm thời. Hãy cẩn thận khi chỉnh sửa khuôn mẫu của bạn và hãy nhớ kết thúc tất cả các biến điều kiện <strong>{XXXX}</strong> cũng như các thông số điều kiện.',
+	'EDIT_TEMPLATE_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉnh sửa trực tiếp khuôn mẫu của mình. Hãy nhớ rằng những chỉnh sửa này sẽ áp dụng mãi mãi và không thể phục hồi lại như cũ một khi đã chấp nhận. Nếu các tập tin khuôn mẫu trong thư mục giao diện của hệ thống được cấp phép có thể ghi trên máy chủ thì bất kỳ thay đổi này ở đây sẽ được ghi trực tiếp đến những tập tin này. Còn nếu không, toàn bộ thay đổi sẽ được lưu vào cơ sở dữ liệu và bảng chỉnh sửa này chỉ là tạm thời. Hãy cẩn thận khi chỉnh sửa khuôn mẫu của bạn và hãy nhớ kết thúc tất cả các biến điều kiện <var>{XXXX}</var> cũng như các thông số điều kiện.',
 	'EDIT_TEMPLATE_STORED_DB'			=> 'Tập tin khuôn mẫu không thể ghi được trên máy chủ vì thế khuôn mẫu này hiện tại được lưu trữ trong cơ sở dữ liệu với tập tin đã chỉnh sửa.',
 	'EDIT_THEME'						=> 'Sửa kiểu dáng',
 	'EDIT_THEME_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉnh sửa kiểu dáng đã chọn, thay đổi màu sắc, hình ảnh…',
 	'EDIT_THEME_STORED_DB'				=> 'Tập tin kiểu dáng không được cấp phép có thể ghi trên máy chủ. Vì thế kiểu dáng này đang được lưu trữ trong cơ sở dữ liệu với tất cả những chỉnh sửa của bạn.',
+	'EDIT_THEME_STORE_PARSED'			=> 'Kiểu dáng yêu cầu nội dung của nó phải được phân tích. Điều này chỉ có thể thực hiện nếu nó được lưu trữ trong cơ sở dữ liệu.',
 	'EXPORT'							=> 'Xuất',
 
 	'FOREGROUND'			=> 'Tiền cảnh',
@@ -363,17 +363,17 @@ $lang = array_merge($lang, array(
 
 	'TEMPLATE_ADDED'			=> 'Khuôn mẫu đã được thêm vào thành công và được lưu trữ trong hệ thống tập tin giao diện.',
 	'TEMPLATE_ADDED_DB'			=> 'Khuôn mẫu đã được thêm vào thành công và được lưu trữ trong cơ sở dữ liệu.',
-	'TEMPLATE_CACHE'			=> 'Khuôn mẫu cache',
-	'TEMPLATE_CACHE_EXPLAIN'	=> 'Theo thiết lập mặc định, hệ thống giao diện của phpBB sẽ biên dịch cache cho toàn bộ các tập tin khuôn mẫu. Việc này sẽ rút ngắn thời gian nạp trang cho bạn khi một trang trong hệ thống đã được xem lần đầu và theo cách này có thể giảm bớt thời gian tạo trang cho máy chủ. Với công cụ này, bạn có thể xem trạng thái cache của mỗi tập tin và xoá riêng lẻ từng tập tin hay mục cache.',
-	'TEMPLATE_CACHE_CLEARED'	=> 'Cache của khuôn mẫu đã được xoá thành công.',
-	'TEMPLATE_CACHE_EMPTY'		=> 'Không có khuôn mẫu nào được cache.',
+	'TEMPLATE_CACHE'			=> 'Khuôn mẫu đã tạo bộ nhớ đệm',
+	'TEMPLATE_CACHE_EXPLAIN'	=> 'Theo thiết lập mặc định, hệ thống giao diện của phpBB sẽ biên dịch bộ nhớ đệm cho toàn bộ các tập tin khuôn mẫu. Việc này sẽ rút ngắn thời gian nạp trang cho bạn khi một trang trong hệ thống đã được xem lần đầu và theo cách này có thể giảm bớt thời gian tạo trang cho máy chủ. Với công cụ này, bạn có thể xem trạng thái bộ nhớ đệm của mỗi tập tin và xoá riêng lẻ từng tập tin hay chỉ mục bộ nhớ đệm.',
+	'TEMPLATE_CACHE_CLEARED'	=> 'Bộ nhớ đệm của khuôn mẫu đã được xoá thành công.',
+	'TEMPLATE_CACHE_EMPTY'		=> 'Không có khuôn mẫu nào được tạo bộ nhớ đệm.',
 	'TEMPLATE_DELETED'			=> 'Khuôn mẫu đã được xoá thành công.',
 	'TEMPLATE_DELETED_FS'		=> 'Khuôn mẫu đã được gỡ bỏ khỏi cơ sở dữ liệu nhưng một vài tập tin vẫn còn trong hệ thống tập tin giao diện.',
 	'TEMPLATE_DETAILS_UPDATED'	=> 'Thông tin khuôn mẫu đã được cập nhật thành công.',
 	'TEMPLATE_EDITOR'			=> 'Công cụ chỉnh sửa mã HTML của khuôn mẫu',
 	'TEMPLATE_EDITOR_HEIGHT'	=> 'Chiều cao công cụ chỉnh sửa khuôn mẫu',
 	'TEMPLATE_ERR_ARCHIVE'		=> 'Bạn hãy chọn một phương pháp lưu trữ khuôn mẫu.',
-	'TEMPLATE_ERR_CACHE_READ'	=> 'Không thể đọc được thư mục dùng để lưu trữ cache cho các tập tin khuôn mẫu.',
+	'TEMPLATE_ERR_CACHE_READ'	=> 'Không thể đọc được thư mục dùng để lưu trữ bộ nhớ đệm cho các tập tin khuôn mẫu.',
 	'TEMPLATE_ERR_COPY_LONG'	=> 'Nội dung bản quyền khuôn mẫu không được phép vượt quá <strong>60</strong> ký tự.',
 	'TEMPLATE_ERR_NAME_CHARS'	=> 'Tên khuôn mẫu chỉ được phép sử dụng chữ số, chữ cái, các ký tự -, +, _ và khoảng trắng.',
 	'TEMPLATE_ERR_NAME_EXIST'	=> 'Tên khuôn mẫu này đã được sử dụng.',
