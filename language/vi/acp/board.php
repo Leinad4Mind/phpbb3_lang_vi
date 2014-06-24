@@ -4,7 +4,7 @@
 * acp_board [Vietnamese]
 *
 * @package language
-* @version $Id: board.php,v 1.62 2007/07/30 16:56:00 nedka Exp $
+* @version $Id: board.php,v 1.65 2007/08/25 11:14:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -259,7 +259,7 @@ $lang = array_merge($lang, array(
 	'COOKIE_SECURE'				=> 'Cookie bảo mật',
 	'COOKIE_SECURE_EXPLAIN'		=> 'Nếu máy chủ của bạn đang chạy SSL thì hãy bật tuỳ chọn này, còn nếu không thì hãy vô hiệu đi. Nếu như bạn bật tuỳ chọn này và máy chủ của bạn không chạy trên SSL thì kết quả là sẽ xảy ra lỗi trong suốt quá trình truy xuất đến máy chủ.',
 	'ONLINE_LENGTH'				=> 'Thời gian tính thành viên đang trực tuyến',
-	'ONLINE_LENGTH_EXPLAIN'		=> 'Số phút mà những thành viên không còn hoạt động trong hệ thống sẽ không được hiển thị trong danh sách “Ai đang trực tuyến?”. Giá trị thời gian thiết lập càng lớn thì càng mất nhiều thời gian hơn dể tạo ra danh sách.',
+	'ONLINE_LENGTH_EXPLAIN'		=> 'Số phút mà những thành viên không còn hoạt động trong hệ thống sẽ không được hiển thị trong danh sách “Ai đang trực tuyến?”. Giá trị thời gian thiết lập càng lớn thì càng mất nhiều thời gian hơn để tạo ra danh sách.',
 	'SESSION_LENGTH'			=> 'Thời gian phiên đăng nhập có hiệu lực',
 	'SESSION_LENGTH_EXPLAIN'	=> 'Số giây mà phiên đăng nhập có hiệu lực kể từ khi được tạo mới.',
 ));
@@ -314,13 +314,17 @@ $lang = array_merge($lang, array(
 	'LDAP_NO_EMAIL'					=> 'Thuộc tính của địa chỉ Email bạn vừa xác định không tồn tại.',	
 	'LDAP_NO_IDENTITY'				=> 'Không thể tìm khoá định danh đăng nhập cho <strong>%s</strong>.',
 	'LDAP_PASSWORD'					=> 'Mật khẩu LDAP',
-	'LDAP_PASSWORD_EXPLAIN'			=> 'Để trống phần này nếu bạn muốn truy cập ẩn danh. Nếu máy chủ dịch vụ không cho phép truy cập ẩn danh, bạn hãy điền vào mật khẩu cho tài khoản LDAP tương ứng ở trên. <strong>CẢNH BÁO:</strong> Mật khẩu này sẽ được lưu trữ dưới dạng văn bản thuần trong cơ sở dữ liệu, vì thế nó có thể bị xem bởi bất kỳ ai có quyền truy cập vào cơ sở dữ liệu của bạn.',
+	'LDAP_PASSWORD_EXPLAIN'			=> 'Để trống phần này để sử dụng liên kết ẩn danh. Nếu máy chủ dịch vụ không cho phép truy cập ẩn danh, bạn hãy điền vào mật khẩu cho tài khoản LDAP tương ứng ở trên. Mục này được yêu cầu cho các thư mục máy chủ đang hoạt động. <strong>CẢNH BÁO:</strong> Mật khẩu này sẽ được lưu trữ dưới dạng văn bản thuần trong cơ sở dữ liệu, vì thế nó có thể bị xem bởi bất kỳ ai có quyền truy cập vào cơ sở dữ liệu của bạn hoặc được phép xem trang cấu hình này.',
+	'LDAP_PORT'						=> 'Cổng máy chủ LDAP',
+	'LDAP_PORT_EXPLAIN'				=> 'Tùy chọn này cho phép bạn có thể xác định một cổng khác được sử dụng để kết nối đến máy chủ LDAP thay vì dùng cổng mặc định là <strong>389</strong>.',
 	'LDAP_SERVER'					=> 'Địa chỉ máy chủ LDAP',
-	'LDAP_SERVER_EXPLAIN'			=> 'Nếu bạn chọn sử dụng LDAP thì nhập vào đây tên miền hoặc địa chỉ của máy chủ LDAP.',
+	'LDAP_SERVER_EXPLAIN'			=> 'Nếu bạn chọn sử dụng LDAP thì nhập vào đây tên miền hoặc địa chỉ của máy chủ LDAP. Cách khác, bạn có thể xác định một địa chỉ URL dạng <samp>ldap://tên_miền:cổng_máy_chủ/</samp>',
 	'LDAP_UID'						=> 'Khoá LDAP <var>uid</var>',
 	'LDAP_UID_EXPLAIN'				=> 'Đây là khoá tìm kiếm một định danh đăng nhập được cung cấp, ví dụ như <var>uid</var>, <var>sn</var>…',
-	'LDAP_USER'						=> 'Tên tài khoản LDAP',
-	'LDAP_USER_EXPLAIN'				=> 'Để trống phần này nếu bạn muốn truy cập ẩn danh. Nếu bạn điền vào tên tài khoản trong phần này, hệ thống sẽ kết nối đến máy chủ dịch vụ LDAP với tên tài khoản đó.',
+	'LDAP_USER'						=> 'Tên tài khoản LDAP <var>dn</var>',
+	'LDAP_USER_EXPLAIN'				=> 'Để trống phần này để sử dụng liên kết ẩn danh. Nếu bạn đã điền vào mục này, hệ thống sẽ sử dụng tên khác biệt đã xác định cho các thao tác đăng nhập để tìm ra tên tài khoản chính xác, ví dụ <samp>uid=Username, ou=MyUnit, o=MyCompany, c=US</samp>. Mục này được yêu cầu cho các thư mục máy chủ đang hoạt động.',
+	'LDAP_USER_FILTER'				=> 'Bộ lọc tên tài khoản LDAP',
+	'LDAP_USER_FILTER_EXPLAIN'		=> 'Tùy chọn này cho phép bạn có thể giới hạn thêm những đối tượng được tìm kiếm với các bộ lọc bổ sung. Ví dụ như <samp>objectClass=posixGroup</samp> sẽ cho ra kết quả sử dụng là <samp>(&(uid=$username)(objectClass=posixGroup))</samp>',
 ));
 
 // Server Settings
@@ -363,7 +367,7 @@ $lang = array_merge($lang, array(
 	'BROWSER_VALID'					=> 'Kiểm tra trình duyệt',
 	'BROWSER_VALID_EXPLAIN'			=> 'Bật chế độ kiểm tra trình duyệt cho mỗi phiên đăng nhập để tăng cường khả năng bảo mật.',
 	'CHECK_DNSBL'					=> 'Kiểm tra lại địa chỉ IP với danh sách các địa chỉ đen DNS',
-	'CHECK_DNSBL_EXPLAIN'			=> 'Nếu bạn bật chức năng này, địa chỉ IP sẽ được tiến hành kiểm tra lại với danh sách từ các dịch vụ DNSBL sau đây trong quá trình đăng ký và gửi bài: <a href="http://spamcop.net">spamcop.net</a>, <a href="http://dsbl.org">dsbl.org</a> và <a href="http://spamhaus.org">spamhaus.org</a>. Việc tra cứu các danh sách này có thể mất nhiều thời gian, tùy thuộc vào cấu hình máy chủ của bạn. Nếu việc kiểm tra làm chậm lại hệ thống hoặc có quá nhiều kết quả sai được báo cáo, chúng tôi khuyên bạn nên vô hiệu chức năng này.',
+	'CHECK_DNSBL_EXPLAIN'			=> 'Nếu bạn bật chức năng này, địa chỉ IP sẽ được tiến hành kiểm tra lại với danh sách từ các dịch vụ DNSBL sau đây trong quá trình đăng ký và gửi bài: <a href="http://spamcop.net">spamcop.net</a>, <a href="http://dsbl.org">dsbl.org</a> và <a href="http://www.spamhaus.org">www.spamhaus.org</a>. Việc tra cứu các danh sách này có thể mất nhiều thời gian, tùy thuộc vào cấu hình máy chủ của bạn. Nếu việc kiểm tra làm chậm lại hệ thống hoặc có quá nhiều kết quả sai được báo cáo, chúng tôi khuyên bạn nên vô hiệu chức năng này.',
 	'CLASS_B'						=> 'A.B',
 	'CLASS_C'						=> 'A.B.C',
 	'EMAIL_CHECK_MX'				=> 'Kiểm tra tên miền của Email theo bản ghi tên miền MX hợp lệ',

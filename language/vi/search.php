@@ -4,7 +4,7 @@
 * search [Vietnamese]
 *
 * @package language
-* @version $Id: search.php,v 1.18 2007/07/24 20:05:00 nedka Exp $
+* @version $Id: search.php,v 1.19 2007/08/25 11:18:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -52,7 +52,7 @@ $lang = array_merge($lang, array(
 	'GLOBAL'				=> 'Thông báo chung',
 
 	'IGNORED_TERMS'			=> 'không được phép sử dụng',
-	'IGNORED_TERMS_EXPLAIN'	=> 'Những từ khoá tìm kiếm của bạn dưới đây không được phép sử dụng: <strong>%s</strong>.',
+	'IGNORED_TERMS_EXPLAIN'	=> 'Những từ khoá tìm kiếm của bạn dưới đây không được phép sử dụng bởi vì chúng là những từ phổ biến: <strong>%s</strong>.',
 
 	'JUMP_TO_POST'			=> 'Chuyển đến bài viết',
 

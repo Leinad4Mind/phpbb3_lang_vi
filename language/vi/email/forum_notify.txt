@@ -6,8 +6,13 @@ Bạn nhận được thông báo này vì bạn đã chọn theo dõi chuyên m
 
 {U_NEWEST_POST}
 
-Nếu bạn không muốn theo dõi chuyên mục này nữa, bạn có thể bấm vào liên kết "Ngừng theo dõi chuyên mục này" trong phần xem chuyên mục hay bấm vào liên kết dưới đây:
+Nếu bạn muốn xem chủ đề, hãy bấm vào liên kết dưới đây:
+{U_TOPIC}
 
+Nếu bạn muốn xem chuyên mục, hãy bấm vào liên kết dưới đây:
+{U_FORUM}
+
+Nếu bạn không muốn theo dõi chuyên mục này nữa, bạn có thể bấm vào liên kết "Ngừng theo dõi chuyên mục này" trong phần xem chuyên mục hay bấm vào liên kết dưới đây:
 {U_STOP_WATCHING_FORUM}
 
 {EMAIL_SIG}

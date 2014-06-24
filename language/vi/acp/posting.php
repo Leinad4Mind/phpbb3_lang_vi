@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version $Id: posting.php,v 1.29 2007/07/26 03:20:00 nedka Exp $
+* @version $Id: posting.php,v 1.35 2007/08/21 15:37:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -59,14 +59,14 @@ $lang = array_merge($lang, array(
 	'BBCODE_TAG_DEF_TOO_LONG'	=> 'Tên định danh của thẻ BBCode bạn vừa nhập quá dài. Hãy vui lòng sử dụng tên định danh cho thẻ ngắn hơn.',
 	'BBCODE_TAG_TOO_LONG'		=> 'Thẻ BBCode xác định bạn vừa nhập quá dài, hãy vui lòng chọn tên thẻ ngắn hơn.',
 	'BBCODE_USAGE'				=> 'Cách sử dụng thẻ BBCode',
-	'BBCODE_USAGE_EXAMPLE'		=> '[hilight={COLOR}]{TEXT}[/hilight]<br /><br />[font={TEXT1}]{TEXT2}[/font]',
+	'BBCODE_USAGE_EXAMPLE'		=> '[hilight={COLOR}]{TEXT}[/hilight]<br /><br />[font={SIMPLETEXT1}]{SIMPLETEXT2}[/font]',
 	'BBCODE_USAGE_EXPLAIN'		=> 'Bạn có thể xác định cách sử dụng thẻ BBCode tại đây. Thay thế bất kỳ biến nào nhập vào bằng mã tương ứng (%sXem bên dưới%s).',
 
 	'EXAMPLE'						=> 'Ví dụ:',
 	'EXAMPLES'						=> 'Các ví dụ:',
 
 	'HTML_REPLACEMENT'				=> 'Mã HTML thay thế',
-	'HTML_REPLACEMENT_EXAMPLE'		=> '&lt;span style="background-color: {COLOR};"&gt;{TEXT}&lt;/span&gt;<br /><br />&lt;span style="font-family: {TEXT1};"&gt;{TEXT2}&lt;/span&gt;',
+	'HTML_REPLACEMENT_EXAMPLE'		=> '&lt;span style="background-color: {COLOR};"&gt;{TEXT}&lt;/span&gt;<br /><br />&lt;span style="font-family: {SIMPLETEXT1};"&gt;{SIMPLETEXT2}&lt;/span&gt;',
 	'HTML_REPLACEMENT_EXPLAIN'		=> 'Bạn có thể xác định mã HTML thay thế cho thẻ BBCode tại đây. Đừng quên đặt lại những mã thay thế mà bạn đã sử dụng ở bên trên!',
 
 	'TOKEN'					=> 'Mã thay thế',
@@ -76,12 +76,14 @@ $lang = array_merge($lang, array(
 	'TOO_MANY_BBCODES'		=> 'Bạn không thể tạo quá nhiều thẻ BBCode. Hãy gỡ bỏ một hay nhiều thẻ BBCode rồi thử lại.',
 
 	'tokens'	=>	array(
-		'TEXT'			=> 'Bất kỳ văn bản nào, bao gồm các ký tự, chữ số…',
-		'NUMBER'		=> 'Bất kỳ giá trị số nào',
-		'EMAIL'			=> 'Địa chỉ Email hợp lệ',
+		'TEXT'			=> 'Bất kỳ văn bản nào, bao gồm các ký tự, chữ số… Bạn không nên sử dụng những mã thay thế này trong các thẻ lệnh HTML. Thay vào đó, bạn hãy sử dụng <var>IDENTIFIER</var> hoặc <var>SIMPLETEXT</var>.',
+		'SIMPLETEXT'	=> 'Những ký tự từ bảng chữ cái Latinh (A-Z), chữ số, khoảng trắng, dấu phẩy, dấu chấm, dấu trừ, dấu cộng, dấu gạch nối và dấu gạch dưới.',
+		'IDENTIFIER'	=> 'Những ký tự từ bảng chữ cái Latinh (A-Z), chữ số, dấu gạch nối và dấu gạch dưới.',
+		'NUMBER'		=> 'Bất kỳ giá trị số nào.',
+		'EMAIL'			=> 'Địa chỉ Email hợp lệ.',
 		'URL'			=> 'Địa chỉ URL hợp lệ sử dụng bất kỳ giao thức nào (http, ftp… không thể sử dụng được vì các vấn đề với mã Javascript). Nếu bạn không nhập vào giao thức, &quot;http://&quot; sẽ được sử dụng làm tiền tố đầu của chuỗi.',
 		'LOCAL_URL'		=> 'Địa chỉ URL trong hệ thống. Địa chỉ URL này phải liên quan đến các trang trong hệ thống và không thể chứa một tên miền khác hay giao thức nào.',
-		'COLOR'			=> 'Mã màu HTML, có thể sử dụng định dạng mã màu số như <samp>#FF1234</samp> hay một <a href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">từ khóa màu định dạng CSS</a> giống như <samp>fuchsia</samp> hay <samp>InactiveBorder</samp>'
+		'COLOR'			=> 'Mã màu HTML, có thể sử dụng định dạng mã màu số như <samp>#FF1234</samp> hay một <a href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">từ khóa màu định dạng CSS</a> giống như <samp>fuchsia</samp> hay <samp>InactiveBorder</samp>.'
 	)
 ));
 
@@ -102,6 +104,8 @@ $lang = array_merge($lang, array(
 	'CURRENT_SMILIES_EXPLAIN'	=> 'Chọn yêu cầu bạn muốn thực hiện với những biểu tượng vui đã cài đặt hiện tại của mình.',
 
 	'DISPLAY_ON_POSTING'	=> 'Hiển thị trong trang gửi bài',
+	'DISPLAY_POSTING'		=> 'Hiển thị trong trang gửi bài',
+	'DISPLAY_POSTING_NO'	=> 'Không hiển thị trong trang gửi bài',
 
 	'EDIT_ICONS'				=> 'Sửa biểu tượng bài viết',
 	'EDIT_SMILIES'				=> 'Sửa biểu tượng vui',
@@ -114,20 +118,24 @@ $lang = array_merge($lang, array(
 	'FIRST'			=> 'Đầu tiên',
 
 	'ICONS_ADD'				=> 'Thêm biểu tượng bài viết mới',
-	'ICONS_ADDED'			=> 'Biểu tượng bài viết đã được thêm vào thành công.',
+	'ICON_NONE_ADDED'		=> 'Không có biểu tượng bài viết nào được thêm vào.',
+	'ICONS_ONE_ADDED'		=> 'Biểu tượng bài viết đã được thêm vào thành công.',
+	'ICONS_ADDED'			=> 'Những biểu tượng bài viết đã được thêm vào thành công.',
 	'ICONS_CONFIG'			=> 'Cấu hình biểu tượng bài viết',
 	'ICONS_DELETED'			=> 'Biểu tượng bài viết đã được gỡ bỏ thành công.',
 	'ICONS_EDIT'			=> 'Sửa biểu tượng bài viết',
-	'ICONS_EDITED'			=> 'Biểu tượng bài viết đã được cập nhật thành công.',
-	'ICONS_HEIGHT'			=> 'Chiều cao biểu tượng bài viết',
+	'ICONS_ONE_EDITED'		=> 'Biểu tượng bài viết đã được cập nhật thành công.',
+	'ICON_NONE_EDITED'		=> 'Không có biểu tượng bài viết nào được cập nhật.',
+	'ICONS_EDITED'			=> 'Những biểu tượng bài viết đã được cập nhật thành công.',
+	'ICONS_HEIGHT'			=> 'Chiều cao',
 	'ICONS_IMAGE'			=> 'Hình dùng làm biểu tượng bài viết',
 	'ICONS_IMPORTED'		=> 'Gói biểu tượng bài viết đã được cài đặt thành công.',
 	'ICONS_IMPORT_SUCCESS'	=> 'Gói biểu tượng bài viết đã được nhập thành công.',
-	'ICONS_LOCATION'		=> 'Vị trí biểu tượng bài viết',
+	'ICONS_LOCATION'		=> 'Tên tập tin hình',
 	'ICONS_NOT_DISPLAYED'	=> 'Những biểu tượng bài viết dưới đây không được hiển thị trong phần gửi bài viết',
-	'ICONS_ORDER'			=> 'Sắp xếp biểu tượng bài viết',
-	'ICONS_URL'				=> 'Tập tin hình ảnh dùng làm biểu tượng bài viết',
-	'ICONS_WIDTH'			=> 'Chiều rộng biểu tượng bài viết',
+	'ICONS_ORDER'			=> 'Sắp xếp',
+	'ICONS_URL'				=> 'Hình biểu tượng bài viết',
+	'ICONS_WIDTH'			=> 'Chiều rộng',
 	'IMPORT_ICONS'			=> 'Cài đặt gói biểu tượng bài viết',
 	'IMPORT_SMILIES'		=> 'Cài đặt gói biểu tượng vui',
 
@@ -150,20 +158,24 @@ $lang = array_merge($lang, array(
 
 	'SELECT_PACKAGE'			=> 'Chọn một gói biểu tượng',
 	'SMILIES_ADD'				=> 'Thêm biểu tượng vui mới',
-	'SMILIES_ADDED'				=> 'Biểu tượng vui đã được thêm vào thành công.',
-	'SMILIES_CODE'				=> 'Mã biểu tượng vui',
+	'SMILIES_NONE_ADDED'		=> 'Không có biểu tượng vui nào được thêm vào.',
+	'SMILIES_ONE_ADDED'			=> 'Biểu tượng vui đã được thêm vào thành công.',
+	'SMILIES_ADDED'				=> 'Những biểu tượng vui đã được thêm vào thành công.',
+	'SMILIES_CODE'				=> 'Mã nhập',
 	'SMILIES_CONFIG'			=> 'Cấu hình biểu tượng vui',
 	'SMILIES_DELETED'			=> 'Biểu tượng vui đã được gỡ bỏ thành công.',
 	'SMILIES_EDIT'				=> 'Sửa biểu tượng vui',
-	'SMILIES_EDITED'			=> 'Biểu tượng vui đã được cập nhật thành công.',
-	'SMILIES_EMOTION'			=> 'Biểu tượng vui',
+	'SMILIES_NONE_EDITED'		=> 'Không có biểu tượng vui nào được cập nhật.',
+	'SMILIES_ONE_EDITED'		=> 'Biểu tượng vui đã được cập nhật thành công.',
+	'SMILIES_EDITED'			=> 'Những biểu tượng vui đã được cập nhật thành công.',
+	'SMILIES_EMOTION'			=> 'Cảm xúc',
 	'SMILIES_HEIGHT'			=> 'Chiều cao',
 	'SMILIES_IMAGE'				=> 'Hình dùng làm biểu tượng vui',
 	'SMILIES_IMPORTED'			=> 'Gói biểu tượng vui đã được cài đặt thành công.',
 	'SMILIES_IMPORT_SUCCESS'	=> 'Gói biểu tượng vui đã được nhập thành công.',
 	'SMILIES_LOCATION'			=> 'Tên tập tin hình',
 	'SMILIES_NOT_DISPLAYED'		=> 'Những biểu tượng vui dưới đây không được hiển thị trong phần gửi bài viết',
-	'SMILIES_ORDER'				=> 'Sắp xếp biểu tượng vui',
+	'SMILIES_ORDER'				=> 'Sắp xếp',
 	'SMILIES_URL'				=> 'Hình biểu tượng vui',
 	'SMILIES_WIDTH'				=> 'Chiều rộng',
 

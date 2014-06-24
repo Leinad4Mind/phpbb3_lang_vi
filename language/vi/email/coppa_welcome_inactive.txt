@@ -5,11 +5,9 @@ Subject: Chào mừng bạn đã đến với "{SITENAME}" - {U_BOARD}
 Bạn đã đồng ý với điều khoản đăng ký thành viên COPPA vì thế tài khoản hiện tại của bạn sẽ chưa được kích hoạt.
 
 Hãy vui lòng in Email này ra rồi đưa cho cha mẹ hay người bảo hộ của bạn ký tên và ghi ngày tháng vào đây. Sau đó Fax lại đến địa chỉ:
-
 {FAX_INFO}
 
 Hoặc gửi Email về địa chỉ:
-
 {MAIL_INFO}
 
 -8<----------------------------- CẮT TẠI ĐÂY ------------------------------

@@ -4,7 +4,7 @@
 * acp common [Vietnamese]
 *
 * @package language
-* @version $Id: common.php,v 1.74 2007/07/30 16:56:00 nedka Exp $
+* @version $Id: common.php,v 1.75 2007/08/21 15:25:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -277,7 +277,7 @@ $lang = array_merge($lang, array(
 $lang = array_merge($lang, array(
 	'ACP_PHP_INFO_EXPLAIN'	=> 'Trang này liệt kê các thông tin về phiên bản PHP hiện tại được cài đặt trên máy chủ của bạn. Trang này cũng đính kèm thông tin chi tiết về các gói thành phần chức năng đã được cài đặt và nạp cùng với PHP, những biến PHP sẵn có và những thiết lập PHP mặc định. Thông tin này có thể hữu ích cho bạn nếu bạn đang giải quyết những rắc rối mà mình gặp phải với hệ thống. Cần lưu ý rằng có một vài công ty cung cấp dịch vụ lưu trữ Web sẽ hạn chế những thông tin về PHP được hiển thị trong đây vì nguyên nhân bảo mật. Một lời khuyên dành cho bạn là đừng bao giờ cung cấp cho người khác biết những thông tin trên trang này ngoại trừ khi bạn đang yêu cầu hỗ trợ từ <a href="http://www.phpbb.com/about/team/">các thành viên trong nhóm chính thức</a> của diễn đàn hỗ trợ phpBB.',
 
-	'NO_PHPINFO_AVAILABLE'	=> 'Thông tin về PHP không thể thu thập được. Hàm <code>phpinfo()</code> đã bị vô hiệu trên máy chủ của bạn vì nguyên nhân bảo mật.',
+	'NO_PHPINFO_AVAILABLE'	=> 'Thông tin cấu hình PHP trên máy chủ của bạn không thể thu thập được. Hàm <code>phpinfo()</code> đã bị vô hiệu vì nguyên nhân bảo mật.',
 ));
 
 // Logs

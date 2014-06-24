@@ -711,8 +711,13 @@ optgroup, select {
 }
 
 optgroup {
-	font-size: 1.00em;
+	font-size: 1em;
 	font-weight: bold;
+}
+
+optgroup.disabled-options {
+	display: none;
+	background-color: gray;
 }
 
 option {

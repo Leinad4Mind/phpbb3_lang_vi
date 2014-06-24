@@ -8,10 +8,9 @@ Email dưới đây được gửi đến cho bạn từ quản trị viên củ
 Hãy nhớ đính kèm bản sao của Email này, đặc biệt là phần tiêu đề Email. 
 
 Nội dung Email gửi cho bạn như sau:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 {MESSAGE}
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 {EMAIL_SIG}

@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version $Id: install.php,v 1.72 2007/07/26 04:19:00 nedka Exp $
+* @version $Id: install.php,v 1.73 2007/08/25 11:16:00 nedka Exp $
 * @copyright (c) 2006, 2007 phpBBVietNam Group
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -43,10 +43,10 @@ $lang = array_merge($lang, array(
 	'ADMIN_CONFIG'				=> 'Cấu hình tài khoản quản trị viên',
 	'ADMIN_PASSWORD'			=> 'Mật khẩu của quản trị viên',
 	'ADMIN_PASSWORD_CONFIRM'	=> 'Xác nhận mật khẩu quản trị viên',
-	'ADMIN_PASSWORD_EXPLAIN'	=> '(Mật khẩu không được phép ít hơn <strong>6</strong> ký tự và vượt quá <strong>30</strong> ký tự)',
+	'ADMIN_PASSWORD_EXPLAIN'	=> 'Mật khẩu không được phép ít hơn <strong>6</strong> ký tự và vượt quá <strong>30</strong> ký tự.',
 	'ADMIN_TEST'				=> 'Kiểm tra thiết lập quản trị viên',
 	'ADMIN_USERNAME'			=> 'Tên thành viên của người quản trị',
-	'ADMIN_USERNAME_EXPLAIN'	=> '(Tên thành viên không được phép ít hơn <strong>3</strong> ký tự và vượt quá <strong>20</strong> ký tự)',	
+	'ADMIN_USERNAME_EXPLAIN'	=> 'Tên thành viên không được phép ít hơn <strong>3</strong> ký tự và vượt quá <strong>20</strong> ký tự.',	
 	'APP_MAGICK'				=> 'Hỗ trợ Imagemagick [ Đính kèm tập tin ]',
 	'AUTHOR_NOTES'				=> 'Ghi chú của tác giả<br />» %s',
 	'AVAILABLE'					=> 'Có sẵn',
@@ -346,10 +346,10 @@ $lang = array_merge($lang, array(
 
 	'SUPPORT_BODY'		=> 'Trong suốt quá trình sử dụng phiên bản RC (Release Candidate) này của phpBB 3.0.0, bạn có thể được hỗ trợ đầy đủ tại <a href="http://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ phpBB 3.0.x</a>. Chúng tôi sẽ giải đáp các thắc mắc và vấn đề thường gặp trong việc cài đặt, các rắc rối trong việc cấu hình hệ thống và chuyển đổi hệ thống cũng như hỗ trợ giải quyết các rắc rối thường gặp liên quan đến các lỗi bug. Chúng tôi cũng cho phép bạn thảo luận về các gói MOD, mã tùy biến và giao diện bổ sung.</p><p>Để tìm kiếm thêm sự giúp đỡ, bạn hãy tham khảo <a href="http://www.phpbb.com/support/documentation/3.0/quickstart/">tài liệu cài đặt và cấu hình nhanh</a> cũng như <a href="http://www.phpbb.com/support/documentation/3.0/">tài liệu trực tuyến</a> của chúng tôi.</p><p>Để chắc chắn bạn luôn sử dụng phiên bản mới nhất và cập nhật những thông tin mới nhất, tại sao bạn không tham gia vào <a href="http://www.phpbb.com/support/">danh sách tin tức qua Email</a> của chúng tôi',
 
-	'SYNC_FORUMS'			=> 'Bắt đầu đồng bộ chuyên mục',
+	'SYNC_FORUMS'			=> 'Bắt đầu đồng bộ hóa các chuyên mục',
 	'SYNC_POST_COUNT'		=> 'Đang đồng bộ <var>post_counts</var>',
 	'SYNC_POST_COUNT_ID'	=> 'Đang đồng bộ <var>post_counts</var> từ <var>mục</var> %1$s đến %2$s.',
-	'SYNC_TOPICS'			=> 'Bắt đầu đồng bộ chủ đề',
+	'SYNC_TOPICS'			=> 'Bắt đầu đồng bộ hóa các chủ đề',
 	'SYNC_TOPIC_ID'			=> 'Đang đồng bộ những chủ đề có <var>topic_id</var> từ <strong>%1$s</strong> đến <strong>%2$s</strong>.',
 
 	'TABLES_MISSING'		=> 'Không thể tìm thấy những bảng dữ liệu sau<br />» <strong>%s</strong>.',
