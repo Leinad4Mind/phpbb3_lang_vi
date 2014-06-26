@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version 1.56
+* @version 1.59
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -105,9 +105,9 @@ $lang = array_merge($lang, array(
 	'DELETE_TOPIC_PERMANENTLY_CONFIRM'	=> 'Bạn có chắc chắn muốn xóa <strong>vĩnh viễn</strong> chủ đề này?',
 	'DELETE_TOPICS_CONFIRM'				=> 'Bạn có chắc chắn muốn xóa những chủ đề đã chọn?',
 	'DELETE_TOPICS_PERMANENTLY_CONFIRM'	=> 'Bạn có chắc chắn muốn xóa <strong>vĩnh viễn</strong> những chủ đề này?',
-	'DISABLE_BBCODE'					=> 'Tắt các thẻ <strong>BBCode</strong>',
-	'DISABLE_MAGIC_URL'					=> 'Đừng tự động nhận diện các địa chỉ URL',
-	'DISABLE_SMILIES'					=> 'Tắt <strong>Biểu tượng vui</strong>',
+	'DISABLE_BBCODE'					=> 'Tắt các thẻ BBCode',
+	'DISABLE_MAGIC_URL'					=> 'Không tự động nhận dạng các địa chỉ URL',
+	'DISABLE_SMILIES'					=> 'Tắt biểu tượng vui',
 	'DISALLOWED_CONTENT'				=> 'Tập tin bạn vừa tải lên bị từ chối bởi vì nội dung tập tin này đã được xác định có mục đích tấn công hệ thống.',
 	'DISALLOWED_EXTENSION'				=> 'Loại tập tin “%s” không được phép sử dụng.',
 	'DRAFT_LOADED'						=> 'Bản nháp đã được nạp vào phần nội dung, bạn có thể hoàn tất bài viết của mình ngay bây giờ.<br />Bản nháp của bạn sẽ được xóa sau khi bạn gửi xong bài viết này.',
@@ -200,7 +200,7 @@ $lang = array_merge($lang, array(
 	),
 	'POLL_QUESTION'				=> 'Câu hỏi bình chọn',
 	'POLL_TITLE_TOO_LONG'		=> 'Tên bình chọn không được vượt quá <strong>100</strong> ký tự.',
-	'POLL_TITLE_COMP_TOO_LONG'	=> 'Độ dài tên bình chọn thực tế của bạn quá lớn, hãy vui lòng bỏ bớt các thẻ lệnh BBCode hay biểu tượng vui.',
+	'POLL_TITLE_COMP_TOO_LONG'	=> 'Độ dài tên bình chọn thực tế của bạn quá lớn, hãy vui lòng bỏ bớt các thẻ BBCode hay biểu tượng vui.',
 	'POLL_VOTE_CHANGE'			=> 'Cho phép bình chọn lại',
 	'POLL_VOTE_CHANGE_EXPLAIN'	=> 'Nếu lựa chọn này được bật, người dùng có thể thay đổi lựa chọn mà họ đã tham gia bình chọn.',
 	'POSTED_ATTACHMENTS'		=> 'Tập tin đã được đính kèm',
@@ -227,6 +227,8 @@ $lang = array_merge($lang, array(
 		2	=> 'Bạn chỉ có thể trích dẫn lại <strong>%d</strong> bài trong một bài viết.',
 	),
 	'QUOTE_NO_NESTING'		=> 'Bạn chỉ được phép trích dẫn mỗi lần một bài viết.',
+
+	'REMOTE_UPLOAD_TIMEOUT'	=> 'Tập tin vừa chọn không tải lên thành công vì vượt quá thời gian xử lí.',
 
 	'SAVE'							=> 'Lưu',
 	'SAVE_DATE'						=> 'Đã lưu vào ngày',
@@ -257,21 +259,23 @@ $lang = array_merge($lang, array(
 	'TOO_MANY_USER_OPTIONS'		=> 'Bạn không thể xác định số đối tượng bình chọn tối đa cho mỗi người dùng nhiều hơn số lượng đối tượng bình chọn hiện có trong bình chọn này',
 	'TOPIC_BUMPED'				=> 'Chủ đề đã được đẩy lên thành công.',
 
-	'UNAUTHORISED_BBCODE'		=> 'Bạn không thể sử dụng những thẻ lệnh BBCode sau: “%s”.',
-	'UNGLOBALISE_EXPLAIN'		=> 'Để chuyển đổi chủ đề này từ loại thông báo quan trọng thành chủ đề bình thường, bạn cần phải chọn chuyên mục chứa chủ đề này.',
-	'UPDATE_COMMENT'			=> 'Cập nhật chú thích',
-	'URL_INVALID'				=> 'Địa chỉ URL bạn nhập không chính xác.',
-	'URL_NOT_FOUND'				=> 'Không thể tìm thấy tập tin vừa chọn.',
-	'URL_IS_OFF'				=> 'Thẻ [url] đang <em>TẮT</em>',
-	'URL_IS_ON'					=> 'Thẻ [url] đang <em>BẬT</em>',
-	'USER_CANNOT_BUMP'			=> 'Bạn không thể đẩy chủ đề lên trong chuyên mục này.',
-	'USER_CANNOT_DELETE'		=> 'Bạn không thể xóa bài viết trong chuyên mục này.',
-	'USER_CANNOT_EDIT'			=> 'Bạn không thể sửa bài viết trong chuyên mục này.',
-	'USER_CANNOT_REPLY'			=> 'Bạn không thể trả lời bài viết trong chuyên mục này.',
-	'USER_CANNOT_FORUM_POST'	=> 'Bạn không thể thực hiện các thao tác gửi bài trong chuyên mục này vì loại chủ đề này không hỗ trợ.',	
+	'UNAUTHORISED_BBCODE'				=> 'Bạn không thể sử dụng những thẻ BBCode sau: “%s”.',
+	'UNGLOBALISE_EXPLAIN'				=> 'Để chuyển đổi chủ đề này từ loại thông báo quan trọng thành chủ đề bình thường, bạn cần phải chọn chuyên mục chứa chủ đề này.',
+	'UNSUPPORTED_CHARACTERS_MESSAGE'	=> 'Nội dung có chứa những ký tự không hỗ trợ:<br />%s',
+	'UNSUPPORTED_CHARACTERS_SUBJECT'	=> 'Tiêu đề có chứa những ký tự không hỗ trợ:<br />%s',
+	'UPDATE_COMMENT'					=> 'Cập nhật chú thích',
+	'URL_INVALID'						=> 'Địa chỉ URL bạn nhập không chính xác.',
+	'URL_NOT_FOUND'						=> 'Không thể tìm thấy tập tin vừa chọn.',
+	'URL_IS_OFF'						=> 'Thẻ [url] đang <em>TẮT</em>',
+	'URL_IS_ON'							=> 'Thẻ [url] đang <em>BẬT</em>',
+	'USER_CANNOT_BUMP'					=> 'Bạn không thể đẩy chủ đề lên trong chuyên mục này.',
+	'USER_CANNOT_DELETE'				=> 'Bạn không thể xóa bài viết trong chuyên mục này.',
+	'USER_CANNOT_EDIT'					=> 'Bạn không thể sửa bài viết trong chuyên mục này.',
+	'USER_CANNOT_REPLY'					=> 'Bạn không thể trả lời bài viết trong chuyên mục này.',
+	'USER_CANNOT_FORUM_POST'			=> 'Bạn không thể thực hiện các thao tác gửi bài trong chuyên mục này vì loại chủ đề này không hỗ trợ.',	
 
-	'VIEW_MESSAGE'			=> '%sXem bài viết bạn vừa gửi%s',
-	'VIEW_PRIVATE_MESSAGE'	=> '%sXem tin nhắn bạn vừa gửi%s',
+	'VIEW_MESSAGE'			=> '%sXem bài viết vừa gửi%s',
+	'VIEW_PRIVATE_MESSAGE'	=> '%sXem tin nhắn vừa gửi%s',
 
 	'WRONG_FILESIZE'	=> 'Dung lượng tập tin đính kèm quá lớn, dung lượng tối đa cho phép là %1$d %2$s.',
 	'WRONG_SIZE'		=> 'Kích thước hình ảnh vừa chọn rộng %5$d và cao %6$d. Kích thước hình ảnh phải rộng ít nhất %1$d và cao ít nhất %2$d cũng như không được phép rộng quá %3$d và cao quá %4$d.',

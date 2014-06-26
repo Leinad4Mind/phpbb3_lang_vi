@@ -4,7 +4,7 @@
 * acp/posting [Vietnamese]
 *
 * @package language
-* @version 1.58
+* @version 1.60
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -81,7 +81,7 @@ $lang = array_merge($lang, array(
 	'TOO_MANY_BBCODES'		=> 'Bạn không thể tạo quá nhiều thẻ BBCode. Hãy gỡ bỏ một hay nhiều thẻ BBCode rồi thử lại.',
 
 	'tokens'	=>	array(
-		'TEXT'			=> 'Bất kì văn bản nào, bao gồm các ký tự, chữ số… Bạn không nên sử dụng những mã thay thế này trong các thẻ lệnh HTML. Thay vào đó, bạn hãy sử dụng <var>IDENTIFIER, INTTEXT</var> hoặc <var>SIMPLETEXT</var>.',
+		'TEXT'			=> 'Bất kì văn bản nào, bao gồm các ký tự, chữ số… Bạn không nên sử dụng những mã thay thế này trong các thẻ HTML. Thay vào đó, bạn hãy sử dụng <var>IDENTIFIER, INTTEXT</var> hoặc <var>SIMPLETEXT</var>.',
 		'SIMPLETEXT'	=> 'Những ký tự từ bảng chữ cái Latinh (A-Z), chữ số, khoảng trắng, dấu phẩy, dấu chấm, dấu trừ, dấu cộng, dấu gạch nối và dấu gạch dưới.',
 		'INTTEXT'		=> 'Những ký tự chữ Unicode, chữ số, khoảng trắng, dấu phẩy, dấu chấm, dấu trừ, dấu cộng, dấu gạch nối và dấu gạch dưới.',
 		'IDENTIFIER'	=> 'Những ký tự từ bảng chữ cái Latinh (A-Z), chữ số, dấu gạch nối và dấu gạch dưới.',
@@ -265,30 +265,30 @@ $lang = array_merge($lang, array(
 
 // Reasons
 $lang = array_merge($lang, array(
-	'ACP_REASONS_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí những nguyên nhân được sử dụng trong các báo cáo và nội dung từ chối khi từ chối những bài viết. Có một nguyên nhân mặc định trong đây được đánh dấu * mà bạn không thể gỡ bỏ được, nguyên nhân này được sử dụng cho tất cả các báo cáo khi từ chối mà không chọn nguyên nhân.',
-	'ADD_NEW_REASON'		=> 'Thêm nguyên nhân mới',
-	'AVAILABLE_TITLES'		=> 'Các nguyên nhân đã được phiên dịch có sẵn',
+	'ACP_REASONS_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí những lý do được sử dụng trong các báo cáo và nội dung từ chối khi từ chối những bài viết. Có một lý do mặc định trong đây được đánh dấu * mà bạn không thể gỡ bỏ được, lý do này được sử dụng cho tất cả các báo cáo khi từ chối mà không chọn lý do.',
+	'ADD_NEW_REASON'		=> 'Thêm lý do mới',
+	'AVAILABLE_TITLES'		=> 'Các lý do đã được phiên dịch có sẵn',
 
-	'IS_NOT_TRANSLATED'			=> 'Nguyên nhân <strong>chưa được</strong> phiên dịch',
-	'IS_NOT_TRANSLATED_EXPLAIN'	=> 'Đây là những nguyên nhân <strong>chưa được</strong> phiên dịch. Nếu bạn muốn cung cấp nội dung trong phần phiên dịch, hãy xác định một khóa chính xác từ các tập tin trong ngôn ngữ để báo cáo về nguyên nhân trên.',
-	'IS_TRANSLATED'				=> 'Nguyên nhân đã được phiên dịch',
-	'IS_TRANSLATED_EXPLAIN'		=> 'Đây là những nguyên nhân đã được phiên dịch. Nếu tên nguyên nhân bạn nhập vào ở đây đã được xác định từ các tập tin trong ngôn ngữ để báo cáo về nguyên nhân trên, phần nội dung phiên dịch của tên và nội dung nguyên nhân sẽ được sử dụng.',
+	'IS_NOT_TRANSLATED'			=> 'Lý do <strong>chưa được</strong> phiên dịch',
+	'IS_NOT_TRANSLATED_EXPLAIN'	=> 'Đây là những lý do <strong>chưa được</strong> phiên dịch. Nếu bạn muốn cung cấp nội dung trong phần phiên dịch, hãy xác định một khóa chính xác từ các tập tin trong ngôn ngữ để báo cáo về lý do trên.',
+	'IS_TRANSLATED'				=> 'Lý do đã được phiên dịch',
+	'IS_TRANSLATED_EXPLAIN'		=> 'Đây là những lý do đã được phiên dịch. Nếu tên lý do bạn nhập vào ở đây đã được xác định từ các tập tin trong ngôn ngữ để báo cáo về lý do trên, phần nội dung phiên dịch của tên và nội dung lý do sẽ được sử dụng.',
 
-	'NO_REASON'					=> 'Không thể tìm thấy nguyên nhân.',
-	'NO_REASON_INFO'			=> 'Bạn phải nhập vào tên và nội dung của nguyên nhân này.',
-	'NO_REMOVE_DEFAULT_REASON'	=> 'Bạn không thể gỡ bỏ nguyên nhân mặc định “Những nguyên nhân khác”.',
+	'NO_REASON'					=> 'Không thể tìm thấy lý do.',
+	'NO_REASON_INFO'			=> 'Bạn phải nhập vào tên và nội dung của lý do này.',
+	'NO_REMOVE_DEFAULT_REASON'	=> 'Bạn không thể gỡ bỏ lý do mặc định “Những lý do khác”.',
 
-	'REASON_ADD'				=> 'Thêm báo cáo/nguyên nhân từ chối',
-	'REASON_ADDED'				=> 'Báo cáo/nguyên nhân từ chối đã được thêm vào thành công.',
-	'REASON_ALREADY_EXIST'		=> 'Một nguyên nhân hiện tại đã sử dụng tên này, hãy nhập vào tên khác cho nguyên nhân này.',
-	'REASON_DESCRIPTION'		=> 'Nội dung nguyên nhân',
-	'REASON_DESC_TRANSLATED'	=> 'Nội dung nguyên nhân được hiển thị',
-	'REASON_EDIT'				=> 'Sửa báo cáo/nguyên nhân từ chối',
-	'REASON_EDIT_EXPLAIN'		=> 'Với công cụ này, bạn có thể thêm vào hoặc chỉnh sửa các nguyên nhân. Nếu nguyên nhân đã được phiên dịch trong ngôn ngữ thì nội dung phiên dịch này sẽ thay thế cho nội dung nguyên nhân bạn nhập vào tại đây.',
-	'REASON_REMOVED'			=> 'Báo cáo/nguyên nhân từ chối đã được gỡ bỏ thành công.',
-	'REASON_TITLE'				=> 'Tên nguyên nhân',
-	'REASON_TITLE_TRANSLATED'	=> 'Tên nguyên nhân được hiển thị',
-	'REASON_UPDATED'			=> 'Báo cáo/nguyên nhân từ chối đã được cập nhật thành công.',
+	'REASON_ADD'				=> 'Thêm báo cáo/lý do từ chối',
+	'REASON_ADDED'				=> 'Báo cáo/lý do từ chối đã được thêm vào thành công.',
+	'REASON_ALREADY_EXIST'		=> 'Một lý do hiện tại đã sử dụng tên này, hãy nhập vào tên khác cho lý do này.',
+	'REASON_DESCRIPTION'		=> 'Nội dung lý do',
+	'REASON_DESC_TRANSLATED'	=> 'Nội dung lý do được hiển thị',
+	'REASON_EDIT'				=> 'Sửa báo cáo/lý do từ chối',
+	'REASON_EDIT_EXPLAIN'		=> 'Với công cụ này, bạn có thể thêm vào hoặc chỉnh sửa các lý do. Nếu lý do đã được phiên dịch trong ngôn ngữ thì nội dung phiên dịch này sẽ thay thế cho nội dung lý do bạn nhập vào tại đây.',
+	'REASON_REMOVED'			=> 'Báo cáo/lý do từ chối đã được gỡ bỏ thành công.',
+	'REASON_TITLE'				=> 'Tên lý do',
+	'REASON_TITLE_TRANSLATED'	=> 'Tên lý do được hiển thị',
+	'REASON_UPDATED'			=> 'Báo cáo/lý do từ chối đã được cập nhật thành công.',
 
 	'USED_IN_REPORTS'		=> 'Đã sử dụng trong báo cáo',
 ));

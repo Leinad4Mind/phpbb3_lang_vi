@@ -4,7 +4,7 @@
 * acp/board [Vietnamese]
 *
 * @package language
-* @version 1.110
+* @version 1.111
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -116,9 +116,9 @@ $lang = array_merge($lang, array(
 	'ALLOW_REMOTE_UPLOAD_EXPLAIN'	=> 'Tùy chọn cho phép người dùng tải lên hình đại diện được đặt trên các website khác.',
 	'ALLOW_UPLOAD'					=> 'Cho phép tải lên hình đại diện',
 	'AVATAR_GALLERY_PATH'			=> 'Đường dẫn thư viện hình đại diện',
-	'AVATAR_GALLERY_PATH_EXPLAIN'	=> 'Đường dẫn đến thư mục chứa hình ảnh sử dụng cho thư viện hình đại diện trong hệ thống, ví dụ như <samp>images/avatars/gallery</samp>.',
+	'AVATAR_GALLERY_PATH_EXPLAIN'	=> 'Đường dẫn đến thư mục chứa hình ảnh sử dụng cho thư viện hình đại diện trong hệ thống, ví dụ như <samp>images/avatars/gallery</samp>.<br />Sử dụng 2 dấu chấm <samp>../</samp> sẽ bị bỏ qua vì lý do bảo mật.',
 	'AVATAR_STORAGE_PATH'			=> 'Đường dẫn thư mục chứa hình đại diện tải lên',
-	'AVATAR_STORAGE_PATH_EXPLAIN'	=> 'Đường dẫn đến thư mục chứa hình đại diện được tải lên trong hệ thống, ví dụ như <samp>images/avatars/upload</samp>.<br />Chức năng tải lên hình đại diện <strong>sẽ bị vô hiệu</strong> nếu thư mục này không thể ghi.',
+	'AVATAR_STORAGE_PATH_EXPLAIN'	=> 'Đường dẫn đến thư mục chứa hình đại diện được tải lên trong hệ thống, ví dụ như <samp>images/avatars/upload</samp>.<br />Chức năng tải lên hình đại diện <strong>sẽ bị vô hiệu</strong> nếu thư mục này không thể ghi.<br />Sử dụng 2 dấu chấm <samp>../</samp> sẽ bị bỏ qua vì lý do bảo mật.',
 	'MAX_AVATAR_SIZE'				=> 'Kích thước hình đại diện tối đa cho phép',
 	'MAX_AVATAR_SIZE_EXPLAIN'		=> 'Chiều rộng x chiều cao với đơn vị tính Pixel.',
 	'MAX_FILESIZE'					=> 'Dung lượng tập tin hình đại diện tối đa cho phép',
@@ -356,6 +356,18 @@ $lang = array_merge($lang, array(
 	'SESSION_LENGTH_EXPLAIN'	=> 'Số giây mà phiên đăng nhập có hiệu lực kể từ khi được tạo mới.',
 ));
 
+// Contact Settings
+$lang = array_merge($lang, array(
+	'ACP_CONTACT_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể mở hay vô hiệu trang liên hệ, cũng như cung cấp các thông tin liên hệ khi cần thiết đến người dùng.',
+
+	'CONTACT_US_ENABLE'			=> 'Mở trang liên hệ',
+	'CONTACT_US_ENABLE_EXPLAIN'	=> 'Trang liên hệ giúp người dùng có thể dễ dàng gửi email trực tiếp đến người quản trị.',
+	'CONTACT_US_INFO'			=> 'Thông tin liên hệ',
+	'CONTACT_US_INFO_EXPLAIN'	=> 'Nội dung sẽ được hiển thị trên trang liên hệ.',
+	'CONTACT_US_INFO_PREVIEW'	=> 'Trang liên hệ - Xem thử',
+	'CONTACT_US_INFO_UPDATED'	=> 'Thông tin trang liên hệ đã được cập nhật.',
+));
+
 // Load Settings
 $lang = array_merge($lang, array(
 	'ACP_LOAD_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể bật hay tắt những chức năng nhất định của hệ thống để giảm bớt số lượng xử lí được yêu cầu gửi đến máy chủ. Trên hều hết các máy chủ, bạn không cần thiết phải tắt bất kì chức năng nào của hệ thống tại đây. Tuy nhiên, trên một vài máy chủ nhất định hoặc các hệ thống sử dụng dịch vụ lưu trữ Web dùng chung với nhiều người khác trên cùng một máy chủ, việc tắt một vài chức năng không cần đến là rất hết sức cần thiết để giảm bớt khối lượng công việc xử lí cho máy chủ. Bạn cũng nên xác định giới hạn thời gian nạp hệ thống và số lượng phiên đăng nhập vượt quá để hệ thống tự động chuyển sang chế độ ngưng hoạt động kịp thời.',
@@ -404,7 +416,7 @@ $lang = array_merge($lang, array(
 
 	'AUTH_METHOD'								=> 'Chọn phương pháp xác thực',
 	'AUTH_PROVIDER_OAUTH_ERROR_ELEMENT_MISSING'	=> 'Bạn phải cung cấp cả khóa định danh lẫn khóa bảo mật của dịch vụ OAuth muốn sử dụng. Bạn chỉ mới cung cấp một khóa và chưa đủ yêu cầu.',
-	'AUTH_PROVIDER_OAUTH_EXPLAIN'				=> 'Mỗi nhà cung cấp dịch vụ OAuth đều yêu cầu một khóa định danh và khóa bảo mật duy nhất để xác thực với hệ thống của họ.<br />Bạn sẽ được cung cấp những khóa trên khi đăng ký website hay dịch vụ của mình với những dịch vụ OAuth này và hãy nhập vào chúng thật chính xác.<br />Bất kì dịch vụ nào không cung cấp đủ hai khóa trên sẽ không thể tiến hành kết nối với tài khoản người dùng trên hệ thống.',
+	'AUTH_PROVIDER_OAUTH_EXPLAIN'				=> 'Mỗi nhà cung cấp dịch vụ OAuth đều yêu cầu một khóa định danh và khóa bảo mật duy nhất để xác thực với hệ thống của họ. Bạn sẽ được cung cấp những khóa trên khi đăng ký website hay dịch vụ của mình với những dịch vụ OAuth này và hãy nhập vào chúng thật chính xác.<br />Bất kì dịch vụ nào không cung cấp đủ hai khóa trên sẽ không thể tiến hành kết nối với tài khoản người dùng trên hệ thống. Bên cạnh đó, người dùng vẫn có thể đăng ký và đăng nhập vào hệ thống qua cơ sở dữ liệu bình thường.',
 	'AUTH_PROVIDER_OAUTH_KEY'					=> 'Khóa',
 	'AUTH_PROVIDER_OAUTH_TITLE'					=> 'OAuth',
 	'AUTH_PROVIDER_OAUTH_SECRET'				=> 'Khóa bảo mật',
@@ -463,7 +475,7 @@ $lang = array_merge($lang, array(
 	'UPLOAD_ICONS_PATH'						=> 'Thư mục biểu tượng tập tin',
 	'UPLOAD_ICONS_PATH_EXPLAIN'				=> 'Đường dẫn đến thư mục chứa biểu tượng tập tin trong hệ thống, ví dụ như <samp>images/upload_icons</samp>.',
 	'USE_SYSTEM_CRON'						=> 'Chạy các thao tác định kì từ hệ thống',
-	'USE_SYSTEM_CRON_EXPLAIN'				=> 'Nếu không bật tùy chọn này, hệ thống phpBB sẽ sắp xếp các thao tác định kì và tự động thực thi chúng. Ngược lại, hệ thống sẽ không hẹn giờ thực thi bất kì thao tác nào mà người quản trị phải tự sắp xếp mã lệnh trong tập tin <code>cron.php</code> để chạy chúng theo tần số thông thường, ví dụ mỗi 5 phút.'
+	'USE_SYSTEM_CRON_EXPLAIN'				=> 'Nếu không bật tùy chọn này, hệ thống phpBB sẽ sắp xếp các thao tác định kì và tự động thực thi chúng. Ngược lại, hệ thống sẽ không hẹn giờ thực thi bất kì thao tác nào mà người quản trị phải tự sắp xếp mã lệnh trong tập tin <code>bin/phpbbcli.php cron:run</code> để chạy chúng theo tần số thông thường, ví dụ mỗi 5 phút.'
 ));
 
 // Security Settings

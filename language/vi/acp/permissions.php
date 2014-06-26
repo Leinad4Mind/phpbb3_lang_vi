@@ -4,7 +4,7 @@
 * acp/permissions [Vietnamese]
 *
 * @package language
-* @version 1.57
+* @version 1.58
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -82,7 +82,7 @@ $lang = array_merge($lang, array(
 	'ACL_VIEW_EXPLAIN'		=> 'Với công cụ này, bạn có thể xem toàn bộ thiết lập cấp phép đã gán cho người dùng/nhóm. Ô màu đỏ cho biết người dùng/nhóm đó chưa được thiết lập cấp phép và ngược lại, ô màu xanh lá tức là người dùng/nhóm đó đã được thiết lập cấp phép.',
 	'ACL_YES'				=> 'Có',
 
-	'ACP_ADMINISTRATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể gán những thiết lập cấp phép của người quản trị đối với người dùng và nhóm. Tất cả người dùng được cấp phép quản trị viên đều có thể truy cập vào bảng quản trị viên.',
+	'ACP_ADMINISTRATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể gán những thiết lập cấp phép của người quản trị đối với người dùng và nhóm. Tất cả người dùng được cấp phép quản trị viên đều có thể truy cập vào bảng quản trị.',
 	'ACP_FORUM_MODERATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể chọn người dùng hay nhóm sẽ trở thành điều hành viên của chuyên mục. Để xác định người dùng được phép truy cập chuyên mục, gán thiết lập cấp phép của điều hành viên chính hay quản trị viên, hãy sử dụng trang cấp phép tương ứng.',
 	'ACP_FORUM_PERMISSIONS_EXPLAIN'				=> 'Với công cụ này, bạn có thể thay đổi những người dùng và nhóm nào có thể truy cập vào chuyên mục. Để xác định điều hành viên hay quản trị viên, hãy sử dụng trang cấp phép tương ứng.',
 	'ACP_FORUM_PERMISSIONS_COPY_EXPLAIN'		=> 'Với công cụ này, bạn có thể sao chép cấp phép chuyên mục từ một chuyên mục ban đầu sang một hay nhiều chuyên mục khác.',

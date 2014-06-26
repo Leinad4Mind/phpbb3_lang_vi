@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version 1.122
+* @version 1.124
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -184,10 +184,10 @@ $lang = array_merge($lang, array(
 	'DOMAIN_NO_MX_RECORD_EMAIL'	=> 'Tên miền của địa chỉ email mà bạn nhập không phải là một bản ghi tên miền MX hợp lệ.',
 	'DOWNLOADS'					=> 'Số lần tải về',
 	'DRAFTS_DELETED'			=> 'Tất cả bản nháp vừa chọn đã được xóa thành công.',
-	'DRAFTS_EXPLAIN'			=> 'Với bảng điều khiển này, bạn có thể xem, sửa và xóa những bản nháp đã lưu của mình.',
+	'DRAFTS_EXPLAIN'			=> 'Với công cụ này, bạn có thể xem, sửa và xóa những bản nháp đã lưu của mình.',
 	'DRAFT_UPDATED'				=> 'Bản nháp đã được cập nhật thành công.',
 
-	'EDIT_DRAFT_EXPLAIN'		=> 'Sử dụng bảng điều khiển này, bạn có thể sửa những bản nháp đã lưu của mình. Những bản nháp sẽ không chứa bất kì thông tin nào về các tập tin đính kèm hay bình chọn.',
+	'EDIT_DRAFT_EXPLAIN'		=> 'Sử dụng công cụ này, bạn có thể sửa những bản nháp đã lưu của mình. Những bản nháp sẽ không chứa bất kì thông tin nào về các tập tin đính kèm hay bình chọn.',
 	'EMAIL_BANNED_EMAIL'		=> 'Địa chỉ email bạn nhập không được phép sử dụng.',
 	'EMAIL_REMIND'				=> 'Bạn phải khai báo địa chỉ email đang sử dụng cho tài khoản của mình. Nếu bạn không thay đổi địa chỉ này thông qua bảng thiết lập cá nhân của mình, địa chỉ này sẽ được lấy từ địa chỉ email mà bạn đã đăng ký.',
 	'EMAIL_TAKEN_EMAIL'			=> 'Địa chỉ email bạn nhập đã được sử dụng bởi người khác.',
@@ -213,9 +213,11 @@ $lang = array_merge($lang, array(
 	'FIELD_TOO_LARGE'						=> 'Giá trị của mục “%2$s” quá lớn, giá trị tối đa được phép sử dụng là <strong>%1$d</strong>.',
 	'FIELD_INVALID_CHARS_INVALID'			=> 'Mục thông tin “%s” chứa ký tự không hợp lệ.',
 	'FIELD_INVALID_CHARS_NUMBERS_ONLY'		=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào số.',
+	'FIELD_INVALID_CHARS_ALPHA_DOTS'		=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số và dấu chấm.',
 	'FIELD_INVALID_CHARS_ALPHA_ONLY'		=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ và số.',
-	'FIELD_INVALID_CHARS_ALPHA_SPACERS'		=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số, khoảng trắng và các ký tự <strong>-+_[]</strong>.',
-	'FIELD_INVALID_CHARS_ALPHA_UNDERSCORE'	=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số và dấu gạch dưới <strong>_</strong>.',
+	'FIELD_INVALID_CHARS_ALPHA_PUNCTUATION'	=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số và các dấu _ , - . nhưng ký tự đầu tiên phải là chữ.',
+	'FIELD_INVALID_CHARS_ALPHA_SPACERS'		=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số, khoảng trắng và các dấu - + _ [ ] đi kèm.',
+	'FIELD_INVALID_CHARS_ALPHA_UNDERSCORE'	=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số và dấu gạch dưới _ đi kèm.',
 	'FIELD_INVALID_DATE'					=> 'Mục thông tin “%s” chứa ngày tháng không hợp lệ.',
 	'FIELD_INVALID_URL'						=> 'Mục thông tin “%s” chứa địa chỉ URL không hợp lệ.',
 	'FIELD_INVALID_VALUE'					=> 'Mục thông tin “%s” chứa giá trị không hợp lệ.',
@@ -233,7 +235,7 @@ $lang = array_merge($lang, array(
 	'FOLDER_OPTIONS'				=> 'Tùy chọn thư mục',
 	'FOLDER_RENAMED'				=> 'Thư mục đã được đổi tên thành công.',
 	'FOLDER_REMOVED'				=> 'Thư mục đã được gỡ bỏ thành công.',
-	'FOLDER_STATUS_MSG'			=> array(
+	'FOLDER_STATUS_MSG'				=> array(
 		1	=> 'Dung lượng đầy: <strong>%3$d%%</strong> (%2$d / %1$s)',
 		2	=> 'Dung lượng đầy: <strong>%3$d%%</strong> (%2$d / %1$s)',
 	),

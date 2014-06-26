@@ -4,7 +4,7 @@
 * help_faq [Vietnamese]
 *
 * @package language
-* @version 1.71
+* @version 1.72
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -42,7 +42,7 @@ $help = array(
 	),
 	array(
 		0 => 'Tại sao tôi không thể đăng nhập được?',
-		1 => 'Có một vài nguyên nhân dẫn đến việc này. Trước tiên, hãy chắc chắn rằng tên tài khoản và mật khẩu của bạn đã nhập vào chính xác. Nếu bạn đã nhập chính xác mà vẫn không thể đăng nhập được, hãy liên hệ với người quản trị để chắc chắn rằng bạn không bị cấm tham gia. Cũng có thể, người quản lí website đã cấu hình sai hệ thống ở một chỗ nào đó và họ cần bạn thông báo để biết mà tiến hành khắc phục.'
+		1 => 'Có một vài lý do dẫn đến việc này. Trước tiên, hãy chắc chắn rằng tên tài khoản và mật khẩu của bạn đã nhập vào chính xác. Nếu bạn đã nhập chính xác mà vẫn không thể đăng nhập được, hãy liên hệ với người quản trị để chắc chắn rằng bạn không bị cấm tham gia. Cũng có thể, người quản lí website đã cấu hình sai hệ thống ở một chỗ nào đó và họ cần bạn thông báo để biết mà tiến hành khắc phục.'
 	),
 	array(
 		0 => 'Tại sao tôi cần phải đăng ký tài khoản?',
@@ -202,7 +202,7 @@ $help = array(
 	),
 	array(
 		0 => 'Chủ đề bị khóa là gì?',
-		1 => 'Chủ đề bị khóa là chủ đề mà các thành viên không còn có thể trả lời được và bất kì bình chọn nào trong những chủ đề này cũng sẽ tự động kết thúc. Những chủ đề như thế có thể bị khóa vì nhiều nguyên nhân khác nhau và được thực hiện bởi điều hành viên hay quản trị viên. Bạn cũng có thể tự khóa chủ đề của chính mình tùy thuộc vào thiết lập cấp phép mà bạn được chỉ định bởi người quản trị.'
+		1 => 'Chủ đề bị khóa là chủ đề mà các thành viên không còn có thể trả lời được và bất kì bình chọn nào trong những chủ đề này cũng sẽ tự động kết thúc. Những chủ đề như thế có thể bị khóa vì nhiều lý do khác nhau và được thực hiện bởi điều hành viên hay quản trị viên. Bạn cũng có thể tự khóa chủ đề của chính mình tùy thuộc vào thiết lập cấp phép mà bạn được chỉ định bởi người quản trị.'
 	),
 	array(
 		0 => 'Biểu tượng bài viết là gì?',
@@ -255,7 +255,7 @@ $help = array(
 	),
 	array(
 		0 => 'Tôi không thể gửi tin nhắn được!',
-		1 => 'Có ba nguyên nhân cho việc này: Bạn chưa đăng ký làm thành viên hoặc đã là thành viên nhưng chưa đăng nhập vào hệ thống, quản trị viên đã tắt chức năng gửi tin nhắn trong hệ thống hoặc đã không cho phép bạn sử dụng chức năng gửi tin nhắn trong hệ thống. Bạn có thể liên hệ với người quản trị để biết thêm thông tin chi tiết.'
+		1 => 'Có ba lý do cho việc này: Bạn chưa đăng ký làm thành viên hoặc đã là thành viên nhưng chưa đăng nhập vào hệ thống, quản trị viên đã tắt chức năng gửi tin nhắn trong hệ thống hoặc đã không cho phép bạn sử dụng chức năng gửi tin nhắn trong hệ thống. Bạn có thể liên hệ với người quản trị để biết thêm thông tin chi tiết.'
 	),
 	array(
 		0 => 'Tôi nhận được những tin nhắn không mong muốn!',

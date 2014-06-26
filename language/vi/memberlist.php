@@ -4,7 +4,7 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version 1.47
+* @version 1.49
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -51,19 +51,23 @@ $lang = array_merge($lang, array(
 
 	'BEFORE'	=> 'Trước',
 
-	'CC_EMAIL'	=> 'Gửi bản sao của email này cho tôi.',
+	'CC_EMAIL'		=> 'Gửi bản sao của email này cho tôi.',
+	'CONTACT_USER'	=> 'Liên hệ',
+	'CONTACT_ADMIN'	=> 'Liên hệ người quản trị',
 
 	'DEST_LANG'			=> 'Ngôn ngữ',
 	'DEST_LANG_EXPLAIN'	=> 'Chọn một ngôn ngữ thích hợp cho người nhận tin nhắn này.',
 
-	'EMAIL_BODY_EXPLAIN'	=> 'Email này sẽ được gửi dưới dạng văn bản thuần túy, vì thế bạn đừng sử dụng bất cứ thẻ lệnh HTML hay BBCode nào trong nội dung email này. Địa chỉ hồi âm của email này sẽ được thiết lập là địa chỉ email của bạn.',
+	'EMAIL_BODY_EXPLAIN'	=> 'Email này sẽ được gửi dưới dạng văn bản thuần túy, vì thế bạn đừng sử dụng bất cứ thẻ HTML hay BBCode nào trong nội dung email này. Địa chỉ hồi âm của email này sẽ được thiết lập là địa chỉ email của bạn.',
 	'EMAIL_DISABLED'		=> 'Xin lỗi, tất cả chức năng liên quan đến email trong hệ thống đã bị vô hiệu.',
 	'EMAIL_SENT'			=> 'Email đã được gửi thành công.',
-	'EMAIL_TOPIC_EXPLAIN'	=> 'Email này sẽ được gửi dưới dạng văn bản thuần túy, vì thế bạn đừng sử dụng bất cứ thẻ lệnh HTML hay BBCode nào trong nội dung email này. Lưu ý rằng thông tin về chủ đề này sẽ được đính kèm trong nội dung email. Địa chỉ hồi âm của email này sẽ được thiết lập là địa chỉ email của bạn.',
-	'EMPTY_ADDRESS_EMAIL'	=> 'Bạn phải nhập chính xác địa chỉ email của người nhận.',
+	'EMAIL_TOPIC_EXPLAIN'	=> 'Email này sẽ được gửi dưới dạng văn bản thuần túy, vì thế bạn đừng sử dụng bất cứ thẻ HTML hay BBCode nào trong nội dung email này. Lưu ý rằng thông tin về chủ đề này sẽ được đính kèm trong nội dung email. Địa chỉ hồi âm của email này sẽ được thiết lập là địa chỉ email của bạn.',
+	'EMPTY_ADDRESS_EMAIL'	=> 'Bạn phải nhập địa chỉ email hợp lệ của người nhận.',
 	'EMPTY_MESSAGE_EMAIL'	=> 'Bạn phải nhập nội dung cho email.',
 	'EMPTY_MESSAGE_IM'		=> 'Bạn phải nhập nội dung cho tin nhắn.',
 	'EMPTY_NAME_EMAIL'		=> 'Bạn phải nhập tên của người nhận.',
+	'EMPTY_SENDER_EMAIL'	=> 'Bạn phải nhập địa chỉ email hợp lệ.',
+	'EMPTY_SENDER_NAME'		=> 'Bạn phải nhập tên mình.',
 	'EMPTY_SUBJECT_EMAIL'	=> 'Bạn phải nhập tiêu đề cho email.',
 	'EQUAL_TO'				=> 'Bằng',
 
@@ -101,8 +105,10 @@ $lang = array_merge($lang, array(
 
 	'MORE_THAN'	=> 'Nhiều hơn',
 
-	'NO_EMAIL'		=> 'Bạn không được phép gửi email đến thành viên này.',
-	'NO_VIEW_USERS'	=> 'Bạn không được phép xem danh sách thành viên hay thông tin cá nhân của thành viên.',
+	'NO_CONTACT_FORM'	=> 'Thông tin liên hệ người quản trị đã bị vô hiệu.',
+	'NO_CONTACT_PAGE'	=> 'Trang liên hệ người quản trị đã bị vô hiệu.',
+	'NO_EMAIL'			=> 'Bạn không được phép gửi email đến thành viên này.',
+	'NO_VIEW_USERS'		=> 'Bạn không được phép xem danh sách thành viên hay thông tin cá nhân của thành viên.',
 
 	'ORDER'	=> 'Thứ tự',
 	'OTHER'	=> 'Thông tin khác',
@@ -116,6 +122,8 @@ $lang = array_merge($lang, array(
 
 	'SELECT_MARKED'			=> 'Chọn đánh dấu',
 	'SELECT_SORT_METHOD'	=> 'Chọn cách sắp xếp',
+	'SENDER_EMAIL_ADDRESS'	=> 'Địa chỉ email của bạn',
+	'SENDER_NAME'			=> 'Tên bạn',
 	'SEND_ICQ_MESSAGE'		=> 'Gửi tin nhắn ICQ',
 	'SEND_IM'				=> 'Nhắn tin nhanh',
 	'SEND_JABBER_MESSAGE'	=> 'Gửi tin nhắn Jabber',
@@ -138,7 +146,12 @@ $lang = array_merge($lang, array(
 	'USER_PRESENCE'			=> 'Hiện diện',
 	'USERS_PER_PAGE'		=> 'Số lượng thành viên mỗi trang',
 
-	'VIEWING_PROFILE'	=> 'Đang xem thông tin cá nhân của %s',
+	'VIEWING_PROFILE'			=> 'Thông tin cá nhân của %s',
+	'VIEW_FACEBOOK_PROFILE'		=> 'Xem trang Facebook',
+	'VIEW_SKYPE_PROFILE'		=> 'Xem trang Skype',
+	'VIEW_TWITTER_PROFILE'		=> 'Xem trang Twitter',
+	'VIEW_YOUTUBE_CHANNEL'  	=> 'Xem kênh YouTube',
+	'VIEW_GOOGLEPLUS_PROFILE'	=> 'Xem trang Google+',
 ));
 
 ?>

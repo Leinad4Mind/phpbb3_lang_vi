@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version 1.116
+* @version 1.119
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -146,7 +146,6 @@ $lang = array_merge($lang, array(
 	'DEV_NO_TEST_FILE'			=> 'Không có giá trị nào được xác định cho biến <var>test_file</var> của gói chức năng chuyển đổi. Nếu bạn là người sử dụng gói chức năng chuyển đổi này, bạn không nên xem lỗi này mà hãy báo cáo cho tác giả của gói chức năng chuyển đổi. Còn nếu bạn là tác giả của gói chức năng chuyển đổi này, bạn phải xác định tên của một tập tin tồn tại trong thư mục nguồn của hệ thống để kiểm tra chính xác đường dẫn.',
 	'DIRECTORIES_AND_FILES'		=> 'Thư mục và tập tin cài đặt',
 	'DISABLE_KEYS'				=> 'Loại vô hiệu',
-	'DLL_FIREBIRD'				=> 'Firebird',
 	'DLL_FTP'					=> 'Hỗ trợ FTP [ Cài đặt ]',
 	'DLL_GD'					=> 'Hỗ trợ thư viện đồ hoạ GD [ Mã xác nhận ]',
 	'DLL_MBSTRING'				=> 'Hỗ trợ loại ký tự Multi-byte',
@@ -175,7 +174,6 @@ $lang = array_merge($lang, array(
 	'FILLING_TABLE'					=> 'Điền vào bảng dữ liệu <strong>%s</strong>',
 	'FILLING_TABLES'				=> 'Bảng dữ liệu điền vào',
 	'FINAL_STEP'					=> 'Thực thi bước cuối cùng',
-	'FIREBIRD_DBMS_UPDATE_REQUIRED'	=> 'Hệ thống phpBB không còn hỗ trợ hệ quản trị Firebird/Interbase các phiên bản trước 2.1. Hãy vui lòng cập nhật bản cài đặt Firebird trên máy chủ của bạn lên phiên bản tối thiểu là 2.1.0 trước khi tiếp tục quá trình cập nhật.',
 	'FORUM_ADDRESS'					=> 'Địa chỉ hệ thống',
 	'FORUM_ADDRESS_EXPLAIN'			=> 'Đây là địa chỉ URL của hệ thống, ví dụ như <samp>http://www.example.com/phpBB3/</samp>. Nếu bạn nhập vào một địa chỉ trong phần này và không để trống, mọi trường hợp của địa chỉ này sẽ được thay thế bằng địa chỉ hệ thống mới trong các bài biết, tin nhắn và chữ ký đính kèm của người dùng.',
 	'FORUM_PATH'					=> 'Đường dẫn hệ thống',
@@ -197,8 +195,8 @@ $lang = array_merge($lang, array(
 		<h2>Chuyển đổi từ một hệ thống hiện có sang phpBB3</h2>
 		<p>Công cụ phpBB Unified Convertor Framework hỗ trợ việc chuyển đổi dữ liệu từ bản cài đặt phpBB 2.0.x hoặc các loại hệ thống khác không phải phpBB sang phiên bản phpBB3. Nếu bạn muốn chuyển đổi dữ liệu từ một hệ thống hiện có, hãy vui lòng <a href="%2$s">tiến hành việc chuyển đổi</a>.</p>
 		<h2>Bắt đầu sử dụng bản phpBB3 của bạn!</h2>
-		<p>Bấm vào nút bên dưới, bạn sẽ được chuyển đến trang gửi dữ liệu thống kê về phpBB trong bảng quản trị viên của mình. Chúng tôi đánh giá cao việc gửi dữ liệu thống kê sử dụng của bạn nhằm giúp hoàn thiện sản phẩm hơn. Đa số mỗi tùy chọn trong bảng điều khiển này đều có hướng dẫn giải thích cho bạn công dụng của chúng. Bạn không bao giờ phải giải quyết rắc rối một mình với <a href="%3$s">tài liệu sử dụng cơ bản</a>, <a href="https://www.phpbb.com/support/documentation/3.0/">tài liệu sử dụng trực tuyến</a> và <a href="https://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ</a> của chúng tôi.</p>
-		<p><strong>Hãy vui lòng xóa, di chuyển hoặc đổi tên ngay thư mục <samp>install</samp> trước khi bạn bắt đầu sử dụng hệ thống. Nếu thư mục này vẫn còn, bạn sẽ chỉ có thể truy cập được vào bảng quản trị viên.</strong>',
+		<p>Bấm vào nút bên dưới, bạn sẽ được chuyển đến trang gửi dữ liệu thống kê về phpBB trong bảng quản trị của mình. Chúng tôi đánh giá cao việc gửi dữ liệu thống kê sử dụng của bạn nhằm giúp hoàn thiện sản phẩm hơn. Đa số mỗi tùy chọn trong bảng điều khiển này đều có hướng dẫn giải thích cho bạn công dụng của chúng. Bạn không bao giờ phải giải quyết rắc rối một mình với <a href="%3$s">tài liệu sử dụng cơ bản</a>, <a href="https://www.phpbb.com/support/documentation/3.0/">tài liệu sử dụng trực tuyến</a> và <a href="https://www.phpbb.com/community/viewforum.php?f=46">diễn đàn hỗ trợ</a> của chúng tôi.</p>
+		<p><strong>Hãy vui lòng xóa, di chuyển hoặc đổi tên ngay thư mục <samp>install</samp> trước khi bạn bắt đầu sử dụng hệ thống. Nếu thư mục này vẫn còn, bạn sẽ chỉ có thể truy cập được vào bảng quản trị.</strong>',
 	'INSTALL_INTRO'					=> 'Chuẩn bị trước khi cài đặt',
 	'INSTALL_INTRO_BODY'			=> 'Với công cụ này, bạn sẽ bắt đầu quá trình cài đặt hệ thống phpBB3 trên máy chủ của mình.</p><p>Để bắt đầu cài đặt, bạn phải cung cấp cho công cụ cài đặt những thông tin về cơ sở dữ liệu của mình. Nếu bạn không biết thông tin về cơ sở dữ liệu này, hãy vui lòng liên hệ với nhà cung cấp dịch vụ lưu trữ Web của bạn và yêu cầu họ cung cấp cho bạn. Bạn sẽ không thể tiếp tục cài đặt mà thiếu những thông tin này. Bạn cần biết:</p>
 
@@ -218,7 +216,6 @@ $lang = array_merge($lang, array(
 		<li>PostgreSQL 8.3+</li>
 		<li>SQLite 2.8.2+</li>
 		<li>SQLite 3.6.15+</li>
-		<li>Firebird 2.1+</li>
 		<li>MS SQL Server 2000 trở lên (trực tiếp hoặc thông qua ODBC)</li>
 		<li>MS SQL Server 2005 trở lên (tự nhiên)</li>
 		<li>Oracle</li>
@@ -235,7 +232,7 @@ $lang = array_merge($lang, array(
 	'INSTALL_START'					=> 'Bắt đầu cài đặt',
 	'INSTALL_TEST'					=> 'Kiểm tra lại',
 	'INST_ERR'						=> 'Lỗi cài đặt',
-	'INST_ERR_DB_CONNECT'			=> 'Không thể kết nối đến cơ sở dữ liệu, bạn hãy xem thông báo lỗi bên dưới để biết nguyên nhân.',
+	'INST_ERR_DB_CONNECT'			=> 'Không thể kết nối đến cơ sở dữ liệu, bạn hãy xem thông báo lỗi bên dưới để biết lý do.',
 	'INST_ERR_DB_FORUM_PATH'		=> 'Tập tin cơ sở dữ liệu vừa chọn đang nằm trong thư mục cài đặt của hệ thống. Bạn không nên để tập tin này trong các thư mục của máy chủ.',
 	'INST_ERR_DB_INVALID_PREFIX'	=> 'Tiền tố bạn nhập không hợp lệ. Nó phải bắt đầu bằng một chữ cái và chỉ chứa chữ cái, số và dấu gạch dưới.',
 	'INST_ERR_DB_NO_ERROR'			=> 'Không có thông báo lỗi nào được đưa ra.',
@@ -243,8 +240,6 @@ $lang = array_merge($lang, array(
 	'INST_ERR_DB_NO_SQLITE'			=> 'Phiên bản phần mở rộng SQLite được cài đặt trên máy chủ đã quá cũ. Vui lòng nâng cấp ít nhất đến phiên bản 2.8.2.',
 	'INST_ERR_DB_NO_SQLITE3'		=> 'Phiên bản phần mở rộng SQLite được cài đặt trên máy chủ đã quá cũ. Vui lòng nâng cấp ít nhất đến phiên bản 3.6.15.',
 	'INST_ERR_DB_NO_ORACLE'			=> 'Phiên bản Oracle được cài đặt trên máy chủ yêu cầu bạn phải thiết lập thông số <var>NLS_CHARACTERSET</var> thành <var>UTF-8</var>. Bạn hãy vui lòng nâng cấp hệ thống lên phiên bản 9.2+ hoặc chỉ cần thay đổi lại thông số trên.',
-	'INST_ERR_DB_NO_FIREBIRD'		=> 'Phiên bản Firebird được cài đặt trên máy chủ cũ hơn phiên bản 2.1, bạn hãy vui lòng nâng cấp hệ thống lên phiên bản mới hơn.',
-	'INST_ERR_DB_NO_FIREBIRD_PS'	=> 'Cơ sở dữ liệu vừa chọn để sử dụng cho Firebird có một trang kích thước nhỏ hơn <strong>8192</strong>, hệ thống yêu cầu ít nhất phải là <strong>8192</strong>.',
 	'INST_ERR_DB_NO_POSTGRES'		=> 'Cơ sở dữ liệu vừa chọn không được tạo ra trong chế độ mã hóa <var>UNICODE</var> hoặc <var>UTF-8</var>. Bạn hãy vui lòng cài đặt lại với một cơ sở dữ liệu được mã hóa theo <var>UNICODE</var> hoặc <var>UTF-8</var>.',
 	'INST_ERR_DB_NO_NAME'			=> 'Bạn chưa nhập tên cơ sở dữ liệu.',	
 	'INST_ERR_EMAIL_INVALID'		=> 'Địa chỉ email bạn nhập không hợp lệ.',
@@ -290,7 +285,7 @@ $lang = array_merge($lang, array(
 	'NOT_UNDERSTAND'		=> 'Không hiểu %s #%d, bảng dữ liệu “%s” (“%s”)',
 	'NO_CONVERTORS'			=> 'Không chuyển đổi nào có sẵn đề sử dụng.',
 	'NO_CONVERT_SPECIFIED'	=> 'Không chuyển đổi nào được xác định.',
-	'NO_LOCATION'			=> 'Không thể chọn thư mục định vị. Nếu bạn chắc chắn Imagemagick đã được cài đặt trên máy chủ, bạn có thể xác định lại đường dẫn sau trong bảng quản trị viên.',
+	'NO_LOCATION'			=> 'Không thể chọn thư mục định vị. Nếu bạn chắc chắn Imagemagick đã được cài đặt trên máy chủ, bạn có thể xác định lại đường dẫn sau trong bảng quản trị.',
 	'NO_TABLES_FOUND'		=> 'Không tìm thấy bảng dữ liệu nào.',
 
 	'OVERVIEW_BODY'		=> 'Chào mừng bạn bước vào thế giới phpBB3!<br /><br />phpBB® là phần mềm diễn đàn mã nguồn mở được sử dụng rộng rãi trên thế giới. phpBB3 là dòng phiên bản mới nhất từ khi phần mềm này được phát hành lần đầu vào năm 2000. Giống như những phiên bản trước, phpBB3 có rất nhiều chức năng hữu ích, giao diện người dùng thân thiện và được hỗ trợ tận tình bởi các thành viên trong ban điều hành phpBB. phpBB3 cải thiện những gì phpBB2 đã có và bổ sung thêm những chức năng thông dụng được yêu cầu từ người dùng mà chưa hề có trong các phiên bản trước. Chúng tôi hi vọng nó sẽ đáp ứng được sự mong chờ của bạn.<br /><br />Hệ thống cài đặt này sẽ hướng dẫn bạn từng bước cài đặt phpBB3, cập nhật đến phiên bản phpBB3 mới nhất từ các bản phát hành cũ và tuyệt vời hơn là chuyển đổi đến phpBB3 từ các hệ thống diễn đàn khác (bao gồm cả phpBB2). Để khám phá nhiều hơn về phpBB3, chúng tôi khuyên bạn nên đọc qua <a href="../docs/INSTALL.html">tài liệu cài đặt</a>.<br /><br />Để xem bản quyền của phpBB3 hay muốn tìm hiểu về việc hỗ trợ và quan điểm phát triển của chúng tôi về sản phẩm này, bạn có thể chọn xem các mục tương ứng từ trình đơn. Để tiếp tục, hãy vui lòng chọn thao tác bạn muốn thực hiện.',
@@ -306,7 +301,7 @@ $lang = array_merge($lang, array(
 	'PHP_SUPPORTED_DB'					=> 'Loại cơ sở dữ liệu được hỗ trợ',
 	'PHP_SUPPORTED_DB_EXPLAIN'			=> '<strong>Bắt buộc</strong> - Máy chủ của bạn ít nhất phải hỗ trợ một loại cơ sở dữ liệu tương thích với PHP. Nếu không có bất cứ gói chức năng cơ sở dữ liệu nào có sẵn để sử dụng, bạn nên liên hệ với nhà cung cấp dịch vụ lưu trữ Web của mình hoặc xem lại tài liệu cài đặt PHP để tìm thấy lời khuyên.',
 	'PHP_REGISTER_GLOBALS'				=> 'Thiết lập PHP <var>register_globals</var> đã bị vô hiệu',
-	'PHP_REGISTER_GLOBALS_EXPLAIN'		=> 'Hê thống sẽ vẫn hoạt động nếu thiết lập này được bật, nhưng nếu có thể, chúng tôi khuyên bạn nên tắt thiết lập PHP <var>register_globals</var> vì một số nguyên nhân bảo mật.',
+	'PHP_REGISTER_GLOBALS_EXPLAIN'		=> 'Hê thống sẽ vẫn hoạt động nếu thiết lập này được bật, nhưng nếu có thể, chúng tôi khuyên bạn nên tắt thiết lập PHP <var>register_globals</var> vì một số lý do bảo mật.',
 	'PHP_SAFE_MODE'						=> 'Chế độ an toàn',
 	'PHP_SETTINGS'						=> 'Phiên bản PHP và thiết lập',
 	'PHP_SETTINGS_EXPLAIN'				=> '<strong>Bắt buộc</strong> - Bạn phải cài đặt phiên bản PHP ít nhất là <strong>5.3.3</strong> trở lên để sử dụng được hệ thống phpBB. Nếu <var>safe mode</var> được hiển thị bên dưới thì cũng có nghĩa PHP trên máy chủ của bạn đang chạy trong chế độ này. Điều này sẽ hạn chế việc quản trị hệ thống từ xa và những chức năng tương tự.',
@@ -331,13 +326,13 @@ $lang = array_merge($lang, array(
 	'SELECT_LANG'						=> 'Chọn ngôn ngữ',
 	'SERVER_CONFIG'						=> 'Cấu hình máy chủ',
 	'SEARCH_INDEX_UNCONVERTED'			=> 'Chỉ mục tìm kiếm không được chuyển đổi',
-	'SEARCH_INDEX_UNCONVERTED_EXPLAIN'	=> 'Những chỉ mục tìm kiếm trong hệ thống cũ của bạn không được chuyển đổi. Chức năng tìm kiếm sẽ vô dụng nếu như không có chỉ mục tìm kiếm được lập. Để tạo lại chỉ mục tìm kiếm mới, bạn hãy chuyển đến bảng quản trị viên, chọn “Bảo trì” trong trình đơn chính trên cùng và sau đó chọn vào “Chỉ mục tìm kiếm” từ trình đơn con bên trái.',
+	'SEARCH_INDEX_UNCONVERTED_EXPLAIN'	=> 'Những chỉ mục tìm kiếm trong hệ thống cũ của bạn không được chuyển đổi. Chức năng tìm kiếm sẽ vô dụng nếu như không có chỉ mục tìm kiếm được lập. Để tạo lại chỉ mục tìm kiếm mới, bạn hãy chuyển đến bảng quản trị, chọn “Bảo trì” trong trình đơn chính trên cùng và sau đó chọn vào “Chỉ mục tìm kiếm” từ trình đơn con bên trái.',
 	'SELECT_FORUM_GA'					=> 'Kể từ phpBB 3.1, các thông báo chung được liên kết vào trong chuyên mục. Hãy chọn một chuyên mục chứa các thông báo chung (có thể di chuyển sau):',
 	'SOFTWARE'							=> 'Phần mềm diễn đàn',
 	'SPECIFY_OPTIONS'					=> 'Xác định tùy chọn chuyển đổi',
 	'STAGE_ADMINISTRATOR'				=> 'Thông tin về quản trị viên',
 	'STAGE_ADVANCED'					=> 'Thiết lập nâng cao',
-	'STAGE_ADVANCED_EXPLAIN'			=> 'Những thiết lập trong trang này chỉ thực sự cần thiết nếu bạn muốn thay đổi những thiết lập mặc định trong hệ thống. Nếu bạn không chắc chắn, bạn có thể tiến hành bước kế tiếp vì những thiết lập này có thể thay đổi lại trong bảng quản trị viên.',
+	'STAGE_ADVANCED_EXPLAIN'			=> 'Những thiết lập trong trang này chỉ thực sự cần thiết nếu bạn muốn thay đổi những thiết lập mặc định trong hệ thống. Nếu bạn không chắc chắn, bạn có thể tiến hành bước kế tiếp vì những thiết lập này có thể thay đổi lại trong bảng quản trị.',
 	'STAGE_CONFIG_FILE'					=> 'Tập tin cấu hình',
 	'STAGE_CREATE_TABLE'				=> 'Tạo bảng dữ liệu cho cơ sở dữ liệu',
 	'STAGE_CREATE_TABLE_EXPLAIN'		=> 'Những bảng dữ liệu trong cơ sở dữ liệu được sử dụng bởi hệ thống phpBB đã được tạo thành công và đã được nhập vào những thiết lập mặc định ban đầu. Hãy tiến hành bước kế tiếp để hoàn tất việc cài đặt hệ thống phpBB.',	
@@ -373,7 +368,7 @@ $lang = array_merge($lang, array(
 	'UNAVAILABLE'				=> 'Không có sẵn',
 	'UNWRITABLE'				=> 'Không thể ghi',
 	'UPDATE_TOPICS_POSTED'		=> 'Đang tạo thông tin cho các chủ đề đã gửi',
-	'UPDATE_TOPICS_POSTED_ERR'	=> 'Có một lỗi xảy ra trong khi tạo thông tin cho các chủ đề đã gửi. Bạn có thể thử lại một lần nữa bước này trong bảng quản trị viên sau khi quá trình chuyển đổi hoàn tất.',
+	'UPDATE_TOPICS_POSTED_ERR'	=> 'Có một lỗi xảy ra trong khi tạo thông tin cho các chủ đề đã gửi. Bạn có thể thử lại một lần nữa bước này trong bảng quản trị sau khi quá trình chuyển đổi hoàn tất.',
 
 	'VERIFY_OPTIONS'	=> 'Đang kiểm tra các tùy chọn chuyển đổi',
 	'VERSION'			=> 'Phiên bản',
@@ -431,7 +426,7 @@ $lang = array_merge($lang, array(
 
 	'EDIT_USERNAME'			=> 'Sửa tên tài khoản',
 	'ERROR'					=> 'Lỗi',
-	'EVERYTHING_UP_TO_DATE'	=> 'Mọi thứ đã được cập nhật lên phiên bản phpBB mới nhất. Bạn nên <a href="%1$s">đăng nhập vào hệ thống</a> và kiểm tra lại để đảm bảo mọi thứ đều hoạt động tốt. Đừng quên xóa, đổi tên hay di chuyển thư mục cài đặt của hệ thống! Hãy vui lòng gửi cho chúng tôi thông tin đã cập nhật về máy chủ và cấu hình hệ thống phpBB của bạn từ trang <a href="%2$s">gửi thống kê</a> trong bảng quản trị viên.',
+	'EVERYTHING_UP_TO_DATE'	=> 'Mọi thứ đã được cập nhật lên phiên bản phpBB mới nhất. Bạn nên <a href="%1$s">đăng nhập vào hệ thống</a> và kiểm tra lại để đảm bảo mọi thứ đều hoạt động tốt. Đừng quên xóa, đổi tên hay di chuyển thư mục cài đặt của hệ thống! Hãy vui lòng gửi cho chúng tôi thông tin đã cập nhật về máy chủ và cấu hình hệ thống phpBB của bạn từ trang <a href="%2$s">gửi thống kê</a> trong bảng quản trị.',
 
 	'FILE_ALREADY_UP_TO_DATE'		=> 'Tập tin đã được cập nhật mới nhất.',
 	'FILE_DIFF_NOT_ALLOWED'			=> 'Tập tin không được phép so sánh mã nguồn.',
@@ -513,7 +508,7 @@ $lang = array_merge($lang, array(
 	'SHOW_DIFF_NOT_MODIFIED'	=> 'Hiện những chỗ khác nhau trong mã nguồn chưa chỉnh sửa',
 	'SOME_QUERIES_FAILED'		=> 'Một vài lệnh truy xuất SQL đã thất bại, câu lệnh đã khai báo và lỗi xảy ra được liệt kê bên dưới.',
 	'SQL'						=> 'Lệnh truy xuất SQL',
-	'SQL_FAILURE_EXPLAIN'		=> 'Bạn không phải lo lắng về điều này, việc cập nhật vẫn được tiếp tục. Về nguyên nhân của thất bại trong việc truy xuất SQL này, bạn nên yêu cầu được trợ giúp tại diễn đàn hỗ trợ của chúng tôi. Bạn hãy xem qua tập tin <a href="../docs/README.html">README</a> để biết thêm thông tin chi tiết và các lời khuyên hữu ích.',
+	'SQL_FAILURE_EXPLAIN'		=> 'Bạn không phải lo lắng về điều này, việc cập nhật vẫn được tiếp tục. Về lý do của thất bại trong việc truy xuất SQL này, bạn nên yêu cầu được trợ giúp tại diễn đàn hỗ trợ của chúng tôi. Bạn hãy xem qua tập tin <a href="../docs/README.html">README</a> để biết thêm thông tin chi tiết và các lời khuyên hữu ích.',
 	'STAGE_FILE_CHECK'			=> 'Kiểm tra tập tin',
 	'STAGE_UPDATE_DB'			=> 'Cập nhật cơ sở dữ liệu',
 	'STAGE_UPDATE_FILES'		=> 'Cập nhật tập tin',
@@ -606,7 +601,7 @@ $lang = array_merge($lang, array(
 	'REPORT_WAREZ'				=> 'Bài viết có chứa các liên kết liên quan đến những phần mềm sao chép trái pháp luật.',
 	'REPORT_SPAM'				=> 'Bài viết chỉ nhằm mục đích quảng cáo cho một website hay các sản phẩm khác.',
 	'REPORT_OFF_TOPIC'			=> 'Bài viết có nội dung không phù hợp.',
-	'REPORT_OTHER'				=> 'Bài viết đã báo cáo không phải vì các nguyên nhân đã liệt kê ở trên, bạn hãy tự nhập vào thông tin giới thiệu chi tiết.',
+	'REPORT_OTHER'				=> 'Bài viết đã báo cáo không phải vì các lý do đã liệt kê ở trên, bạn hãy tự nhập vào thông tin giới thiệu chi tiết.',
 
 	'SMILIES_ARROW'			=> 'Nhìn nè',
 	'SMILIES_CONFUSED'		=> 'Nghe ai giờ',

@@ -4,7 +4,7 @@
 * mcp [Vietnamese]
 *
 * @package language
-* @version 1.57
+* @version 1.59
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -44,9 +44,9 @@ $lang = array_merge($lang, array(
 	'ACTION'					=> 'Thao tác',
 	'ACTION_NOTE'				=> 'Thao tác/Ghi chú',
 	'ADD_FEEDBACK'				=> 'Thêm phản hồi',
-	'ADD_FEEDBACK_EXPLAIN'		=> 'Nếu bạn muốn thêm vào một báo cáo trong trang này thì hãy điền đầy đủ thông tin cho các mục trong bảng bên dưới. Chỉ sử dụng văn bản thuần túy, các thẻ lệnh HTML, BBCode… đều không được phép sử dụng.',
+	'ADD_FEEDBACK_EXPLAIN'		=> 'Nếu bạn muốn thêm vào một báo cáo trong trang này thì hãy điền đầy đủ thông tin cho các mục trong bảng bên dưới. Chỉ sử dụng văn bản thuần túy, các thẻ HTML, BBCode… đều không được phép sử dụng.',
 	'ADD_WARNING'				=> 'Thêm cảnh cáo',
-	'ADD_WARNING_EXPLAIN'		=> 'Để gửi một cảnh cáo đến người dùng này, bạn hãy điền đầy đủ thông tin cho các mục trong bảng bên dưới. Chỉ sử dụng văn bản thuần túy, các thẻ lệnh HTML, BBCode… đều không được phép sử dụng.',
+	'ADD_WARNING_EXPLAIN'		=> 'Để gửi một cảnh cáo đến người dùng này, bạn hãy điền đầy đủ thông tin cho các mục trong bảng bên dưới. Chỉ sử dụng văn bản thuần túy, các thẻ HTML, BBCode… đều không được phép sử dụng.',
 	'ALL_ENTRIES'				=> 'Tất cả các mục',
 	'ALL_NOTES_DELETED'			=> 'Đã gỡ bỏ thành công tất cả ghi chú của người dùng',	
 	'ALL_REPORTS'				=> 'Tất cả báo cáo',
@@ -250,7 +250,7 @@ $lang = array_merge($lang, array(
 	'NO_POST_SELECTED'				=> 'Bạn phải chọn ít nhất một bài viết để thực hiện yêu cầu này.',
 	'NO_POSTS_DELETED'				=> 'Không có bài viết nào bị xóa.',
 	'NO_POSTS_QUEUE'				=> 'Không có bài viết nào chờ duyệt.',
-	'NO_REASON_DISAPPROVAL'			=> 'Hãy đưa ra một nguyên nhân thích hợp về việc từ chối.',	
+	'NO_REASON_DISAPPROVAL'			=> 'Hãy đưa ra một lý do thích hợp về việc từ chối.',	
 	'NO_REPORT'						=> 'Không có báo cáo nào được tìm thấy.',
 	'NO_REPORTS'					=> 'Không có báo cáo nào được tìm thấy.',
 	'NO_REPORT_SELECTED'			=> 'Bạn phải chọn ít nhất một báo cáo để thực hiện yêu cầu này.',
@@ -425,13 +425,13 @@ $lang = array_merge($lang, array(
 			'WAREZ'		=> 'Vi phạm bản quyền',
 			'SPAM'		=> 'Nhảm nhí',
 			'OFF_TOPIC'	=> 'Không phù hợp',
-			'OTHER'		=> 'Nguyên nhân khác',
+			'OTHER'		=> 'Lý do khác',
 		),
 		'DESCRIPTION' => array(
 			'WAREZ'		=> 'Nội dung có chứa các liên kết liên quan đến những phần mềm sao chép trái phép.',
 			'SPAM'		=> 'Nội dung chỉ nhằm mục đích quảng cáo cho một website hay các sản phẩm khác.',
 			'OFF_TOPIC'	=> 'Nội dung không phù hợp.',
-			'OTHER'		=> 'Nội dung được báo cáo không phải vì các nguyên nhân đã liệt kê ở trên, bạn hãy tự nhập vào mô tả chi tiết.',
+			'OTHER'		=> 'Nội dung được báo cáo không phải vì các lý do đã liệt kê ở trên, bạn hãy tự nhập vào mô tả chi tiết.',
 		),
 	),
 ));

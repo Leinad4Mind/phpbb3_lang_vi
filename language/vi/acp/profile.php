@@ -4,7 +4,7 @@
 * acp/profile [Vietnamese]
 *
 * @package language
-* @version 1.34
+* @version 1.35
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -43,9 +43,11 @@ if (empty($lang) || !is_array($lang))
 // Custom profile fields
 $lang = array_merge($lang, array(
 	'ADDED_PROFILE_FIELD'	=> 'Mục thông tin cá nhân mới đã được thêm vào thành công.',
-	'ALPHA_ONLY'			=> 'Chỉ sử dụng chữ và số',
-	'ALPHA_SPACERS'			=> 'Chỉ sử dụng chữ, số và khoảng trắng',
-	'ALPHA_UNDERSCORE'		=> 'Chỉ sử dụng chữ, số và dấu gạch dưới',
+	'ALPHA_DOTS'			=> 'Chữ, số và dấu chấm',
+	'ALPHA_ONLY'			=> 'Chữ và số',
+	'ALPHA_PUNCTUATION'		=> 'Chữ, số và các dấu: phẩy, chấm, gạch dưới, gạch nối (phải bắt đầu bằng chữ)',
+	'ALPHA_SPACERS'			=> 'Chữ, số và khoảng trắng',
+	'ALPHA_UNDERSCORE'		=> 'Chữ, số và dấu gạch dưới',
 	'ALWAYS_TODAY'			=> 'Sử dụng ngày tháng hiện tại',
 
 	'BOOL_ENTRIES_EXPLAIN'	=> 'Nhập vào tùy chọn của bạn',
@@ -95,6 +97,7 @@ $lang = array_merge($lang, array(
 	'FIELD_DESCRIPTION'			=> 'Giới thiệu mục thông tin cá nhân',
 	'FIELD_DESCRIPTION_EXPLAIN'	=> 'Giới thiệu về mục thông tin cá nhân này hiển thị cho người dùng.',
 	'FIELD_DROPDOWN'			=> 'Danh sách chọn thả xuống',
+	'FIELD_GOOGLEPLUS'			=> 'Google+',
 	'FIELD_IDENT'				=> 'Tên mục thông tin cá nhân',
 	'FIELD_IDENT_ALREADY_EXIST'	=> 'Tên mục thông tin cá nhân vừa chọn đã có sẵn. Hãy vui lòng chọn một tên khác.',
 	'FIELD_IDENT_EXPLAIN'		=> 'Tên mục thông tin cá nhân là tên xác định mục thông tin cá nhân trong cơ sở dữ liệu và trong các tập tin khuôn mẫu.',

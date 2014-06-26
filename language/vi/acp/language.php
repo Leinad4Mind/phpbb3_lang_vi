@@ -4,7 +4,7 @@
 * acp/language [Vietnamese]
 *
 * @package language
-* @version 1.24
+* @version 1.25
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -41,7 +41,7 @@ if (empty($lang) || !is_array($lang))
 */
 
 $lang = array_merge($lang, array(
-	'ACP_FILES'						=> 'Tập tin ngôn ngữ dùng trong bảng quản trị viên',
+	'ACP_FILES'						=> 'Tập tin ngôn ngữ dùng trong bảng quản trị',
 	'ACP_LANGUAGE_PACKS_EXPLAIN'	=> 'Bảng điều khiển này sẽ giúp bạn cài đặt hoặc gỡ bỏ các ngôn ngữ trong hệ thống. Ngôn ngữ mặc định được đánh dấu bằng một dấu sao (*).',
 
 	'DELETE_LANGUAGE_CONFIRM'	=> 'Bạn có chắc chắn muốn xóa “%s”?',

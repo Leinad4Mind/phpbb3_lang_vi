@@ -4,7 +4,7 @@
 * acp/styles [Vietnamese]
 *
 * @package language
-* @version 1.64
+* @version 1.65
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -66,24 +66,24 @@ $lang = array_merge($lang, array(
 
 	'REQUIRES_STYLE'	=> 'Giao diện này yêu cầu giao diện khác là “%s” phải được cài đặt trước.',
 
-	'STYLE_ACTIVATE'						=> 'Kích hoạt',
-	'STYLE_ACTIVE'							=> 'Đang sử dụng',
-	'STYLE_DEACTIVATE'						=> 'Ngưng kích hoạt',
-	'STYLE_DEFAULT'							=> 'Chọn làm giao diện mặc định',
-	'STYLE_DEFAULT_CHANGE_INACTIVE'			=> 'Bạn phải kích hoạt giao diện trước khi chọn làm giao diện mặc định.',
-	'STYLE_ERR_INVALID_PARENT'				=> 'Giao diện kế thừa không hợp lệ.',
-	'STYLE_ERR_NAME_EXIST'					=> 'Tên giao diện này đã được sử dụng.',
-	'STYLE_ERR_STYLE_NAME'					=> 'Bạn phải nhập tên cho giao diện này.',
-	'STYLE_INSTALLED'						=> 'Giao diện “%s” đã được cài đặt thành công.',
-	'STYLE_INSTALLED_RETURN_STYLES'			=> 'Bấm <a href="%s">vào đây</a> để xem danh sách các giao diện đã cài đặt.',
-	'STYLE_INSTALLED_RETURN_UNINSTALLED'	=> 'Bấm <a href="%s">vào đây</a> để cài đặt thêm nhiều giao diện khác.',
-	'STYLE_NAME'							=> 'Tên giao diện',
-	'STYLE_NOT_INSTALLED'					=> 'Giao diện “%s” đã không được cài đặt.',
-	'STYLE_PATH'							=> 'Đường dẫn giao diện',
-	'STYLE_UNINSTALL'						=> 'Gỡ bỏ',
-	'STYLE_UNINSTALL_DEPENDENT'				=> 'Không thể gỡ bỏ giao diện “%s” vì nó đang được các giao diện khác sử dụng kế thừa lại.',
-	'STYLE_UNINSTALLED'						=> 'Giao diện “%s” đã được gỡ bỏ thành công.',
-	'STYLE_USED_BY'							=> 'Số người sử dụng (Bao gồm máy tìm kiếm)',
+	'STYLE_ACTIVATE'							=> 'Kích hoạt',
+	'STYLE_ACTIVE'								=> 'Đang sử dụng',
+	'STYLE_DEACTIVATE'							=> 'Ngưng kích hoạt',
+	'STYLE_DEFAULT'								=> 'Chọn làm giao diện mặc định',
+	'STYLE_DEFAULT_CHANGE_INACTIVE'				=> 'Bạn phải kích hoạt giao diện trước khi chọn làm giao diện mặc định.',
+	'STYLE_ERR_INVALID_PARENT'					=> 'Giao diện kế thừa không hợp lệ.',
+	'STYLE_ERR_NAME_EXIST'						=> 'Tên giao diện này đã được sử dụng.',
+	'STYLE_ERR_STYLE_NAME'						=> 'Bạn phải nhập tên cho giao diện này.',
+	'STYLE_INSTALLED'							=> 'Giao diện “%s” đã được cài đặt thành công.',
+	'STYLE_INSTALLED_RETURN_INSTALLED_STYLES'	=> 'Quay về danh sách giao diện đã cài',
+	'STYLE_INSTALLED_RETURN_UNINSTALLED_STYLES'	=> 'Cài thêm giao diện khác',
+	'STYLE_NAME'								=> 'Tên giao diện',
+	'STYLE_NOT_INSTALLED'						=> 'Giao diện “%s” chưa được cài đặt.',
+	'STYLE_PATH'								=> 'Đường dẫn giao diện',
+	'STYLE_UNINSTALL'							=> 'Gỡ bỏ',
+	'STYLE_UNINSTALL_DEPENDENT'					=> 'Không thể gỡ bỏ giao diện “%s” vì nó đang được các giao diện khác sử dụng kế thừa lại.',
+	'STYLE_UNINSTALLED'							=> 'Giao diện “%s” đã được gỡ bỏ thành công.',
+	'STYLE_USED_BY'								=> 'Số người sử dụng (Bao gồm máy tìm kiếm)',
 
 	'UNINSTALL_DEFAULT'	=> 'Bạn không thể gỡ bỏ giao diện mặc định.',
 ));

@@ -1,11 +1,13 @@
 <?php
 /**
+*
 * acp/permissions_phpbb (phpBB Permission Set) [Vietnamese]
 *
 * @package language
-* @version 2.03
+* @version 2.04
 * @copyright (c) 2013 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+*
 */
 
 /**
@@ -207,7 +209,7 @@ $lang = array_merge($lang, array(
 	'ACL_A_LANGUAGE'	=> 'Quản lí ngôn ngữ',
 	'ACL_A_EMAIL'		=> 'Gửi email thông báo người dùng',
 	'ACL_A_BOTS'		=> 'Quản lí máy tìm kiếm',
-	'ACL_A_REASONS'		=> 'Quản lí báo cáo, nguyên nhân từ chối',
+	'ACL_A_REASONS'		=> 'Quản lí báo cáo, lý do từ chối',
 	'ACL_A_BACKUP'		=> 'Sao lưu, phục hồi cơ sở dữ liệu',
 	'ACL_A_SEARCH'		=> 'Thiết lập tìm kiếm',
 ));

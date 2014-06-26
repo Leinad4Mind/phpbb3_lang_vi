@@ -4,7 +4,7 @@
 * acp/modules [Vietnamese]
 *
 * @package language
-* @version 1.18
+* @version 1.19
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -41,7 +41,7 @@ if (empty($lang) || !is_array($lang))
 */
 
 $lang = array_merge($lang, array(
-	'ACP_MODULE_MANAGEMENT_EXPLAIN'	=> 'Công cụ này cho phép bạn quản lí tất cả các loại nhóm và gói chức năng trong hệ thống. Cần lưu ý rằng bảng quản trị viên có cấu trúc trình đơn đến ba cấp (Nhóm chức năng -> Nhóm chức năng -> Gói chức năng) nhờ đó mà các gói chức năng khác có cấu trúc trình đơn hai cấp (Nhóm chức năng -> Gói chức năng) mới được giữ lại bên trong. Hãy cẩn thận vì bạn có thể làm hư hỏng toàn bộ các trình đơn trong bảng quản trị viên và mất chức năng điều khiển nếu bạn vô hiệu hay xóa các gói chức năng có nhiệm vụ quản lí cho các gói chức năng khác và cả chính nó.',
+	'ACP_MODULE_MANAGEMENT_EXPLAIN'	=> 'Công cụ này cho phép bạn quản lí tất cả các loại nhóm và gói chức năng trong hệ thống. Cần lưu ý rằng bảng quản trị có cấu trúc trình đơn đến ba cấp (Nhóm chức năng -> Nhóm chức năng -> Gói chức năng) nhờ đó mà các gói chức năng khác có cấu trúc trình đơn hai cấp (Nhóm chức năng -> Gói chức năng) mới được giữ lại bên trong. Hãy cẩn thận vì bạn có thể làm hư hỏng toàn bộ các trình đơn trong bảng quản trị và mất chức năng điều khiển nếu bạn vô hiệu hay xóa các gói chức năng có nhiệm vụ quản lí cho các gói chức năng khác và cả chính nó.',
 	'ADD_MODULE'					=> 'Thêm gói chức năng',
 	'ADD_MODULE_CONFIRM'			=> 'Bạn có chắc chắn muốn thêm vào gói chức năng với chế độ đã chọn?',
 	'ADD_MODULE_TITLE'				=> 'Thêm vào gói chức năng',

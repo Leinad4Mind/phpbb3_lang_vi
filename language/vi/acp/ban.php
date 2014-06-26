@@ -4,7 +4,7 @@
 * acp/ban [Vietnamese]
 *
 * @package language
-* @version 1.26
+* @version 1.27
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -46,12 +46,12 @@ $lang = array_merge($lang, array(
 	'30_MINS'	=> '30 phút',
 	'6_HOURS'	=> '6 giờ',
 
-	'ACP_BAN_EXPLAIN'	=> 'Sử dụng công cụ này, bạn có thể điều khiển việc cấm các thành viên theo tên tài khoản, địa chỉ IP hay địa chỉ email. Những phương pháp này sẽ ngăn cản thành viên bị cấm truy cập vào bất kì thành phần nào trong hệ thống. Bạn có thể đưa ra một nguyên nhân ngắn giới hạn với tối đa là <strong>3000</strong> ký tự về việc vì sao thành viên đó bị cấm. Các thao tác cấm này sẽ được ghi nhận trong bảng ghi nhận của quản trị viên. Bạn cũng có thể xác định thời gian thực hiện lệnh cấm. Nếu bạn muốn xác định chính xác ngày kết thúc lệnh cấm, tốt hơn cách thiết lập một khoảng thời gian cấm trong bao lâu, bạn có thể chọn <span style="text-decoration: underline;">Cho đến ngày -&gt;</span> và nhập vào ngày tháng theo định dạng <kbd>YYYY-MM-DD</kbd>.',
+	'ACP_BAN_EXPLAIN'	=> 'Sử dụng công cụ này, bạn có thể điều khiển việc cấm các thành viên theo tên tài khoản, địa chỉ IP hay địa chỉ email. Những phương pháp này sẽ ngăn cản thành viên bị cấm truy cập vào bất kì thành phần nào trong hệ thống. Bạn có thể đưa ra một lý do ngắn giới hạn với tối đa là <strong>3000</strong> ký tự về việc vì sao thành viên đó bị cấm. Các thao tác cấm này sẽ được ghi nhận trong bảng ghi nhận của quản trị viên. Bạn cũng có thể xác định thời gian thực hiện lệnh cấm. Nếu bạn muốn xác định chính xác ngày kết thúc lệnh cấm, tốt hơn cách thiết lập một khoảng thời gian cấm trong bao lâu, bạn có thể chọn <span style="text-decoration: underline;">Cho đến ngày -&gt;</span> và nhập vào ngày tháng theo định dạng <kbd>YYYY-MM-DD</kbd>.',
 
 	'BAN_EXCLUDE'			=> 'Loại ra từ lệnh cấm',
 	'BAN_LENGTH'			=> 'Thời gian thực hiện lệnh cấm',
-	'BAN_REASON'			=> 'Nguyên nhân bị cấm',
-	'BAN_GIVE_REASON'		=> 'Nguyên nhân giải thích cho thành viên khi bị cấm',
+	'BAN_REASON'			=> 'Lý do bị cấm',
+	'BAN_GIVE_REASON'		=> 'Lý do giải thích cho thành viên khi bị cấm',
 	'BAN_UPDATE_SUCCESSFUL'	=> 'Danh sách cấm đã được cập nhật thành công.',
 	'BANNED_UNTIL_DATE'		=> 'đến ngày %s', // Example: "until Mon 13.Jul.2009, 14:44"
 	'BANNED_UNTIL_DURATION'	=> '%1$s (đến ngày %2$s)', // Example: "7 days (until Tue 14.Jul.2009, 14:44)"
