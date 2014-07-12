@@ -4,7 +4,7 @@
 * acp/board [Vietnamese]
 *
 * @package language
-* @version 1.111
+* @version 1.112
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -525,8 +525,8 @@ $lang = array_merge($lang, array(
 	'PASS_TYPE_SYMBOL'						=> 'Phải sử dụng ký hiệu',
 	'REF_HOST'								=> 'Chỉ kiểm tra máy chủ',
 	'REF_PATH'								=> 'Kiểm tra luôn đường dẫn',
-	'REFERER_VALID'							=> 'Kiểm tra tham chiếu',
-	'REFERER_VALID_EXPLAIN'					=> 'Nếu bật tùy chọn này, tham chiếu của các yêu cầu <var>POST</var> sẽ được kiểm tra lại những thiết lập về máy chủ/đường dẫn. Thiết lập này có thể gây ra rắc rối cho những hệ thống đang sử dụng nhiều tên miền khác nhau hay các phương pháp xác thực bổ sung.',
+	'REFERRER_VALID'						=> 'Kiểm tra tham chiếu',
+	'REFERRER_VALID_EXPLAIN'				=> 'Nếu bật tùy chọn này, tham chiếu của các yêu cầu <var>POST</var> sẽ được kiểm tra lại những thiết lập về máy chủ/đường dẫn. Thiết lập này có thể gây ra rắc rối cho những hệ thống đang sử dụng nhiều tên miền khác nhau hay các phương pháp xác thực bổ sung.',
 	'TPL_ALLOW_PHP'							=> 'Cho phép sử dụng mã PHP trong các tập tin khuôn mẫu',
 	'TPL_ALLOW_PHP_EXPLAIN'					=> 'Nếu bật tùy chọn này, các lệnh <code>PHP</code> và <code>INCLUDEPHP</code> sẽ có thể được sử dụng và biên dịch trong các tập tin khuôn mẫu.',
 ));

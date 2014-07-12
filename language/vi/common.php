@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version 1.160
+* @version 1.161
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -64,7 +64,7 @@ $lang = array_merge($lang, array(
 	'ACCOUNT_DEACTIVATED'									=> 'Tài khoản của bạn đã bị ngưng kích hoạt và chỉ có thể được kích hoạt trở lại bởi một quản trị viên.',
 	'ACCOUNT_NOT_ACTIVATED'									=> 'Tài khoản của bạn chưa được kích hoạt.',
 	'ACP'													=> 'Bảng quản trị',
-	'ACP_SHORT'												=> 'Quản trị',
+	'ACP_SHORT'												=> 'ACP',
 	'ACTIVE'												=> 'có hiệu lực',
 	'ACTIVE_ERROR'											=> 'Tên tài khoản đã chọn hiện tại chưa được kích hoạt. Nếu bạn gặp rắc rối trong việc kích hoạt tài khoản của mình, hãy liên hệ với người quản trị.',
 	'ADMINISTRATOR'											=> 'Quản trị viên',
@@ -303,7 +303,7 @@ $lang = array_merge($lang, array(
 		1	=> 'Có <strong>%d</strong> khách trực tuyến',
 		2	=> 'Có <strong>%d</strong> khách trực tuyến',
 	),
-	'GUEST_USERS_TOTAL'			=>  array(
+	'GUEST_USERS_TOTAL'			=> array(
 		1	=> '%d khách',
 		2	=> '%d khách',
 	),
@@ -397,7 +397,7 @@ $lang = array_merge($lang, array(
 	'MB'							=> 'MB',
 	'MIB'							=> 'MiB',
 	'MCP'							=> 'Bảng điều hành',
-	'MCP_SHORT'						=> 'Điều hành',
+	'MCP_SHORT'						=> 'MCP',
 	'MEMBERLIST'					=> 'Thành viên',
 	'MEMBERLIST_EXPLAIN'			=> 'Xem toàn bộ danh sách thành viên',
 	'MERGE'							=> 'Nhập chung',
@@ -466,7 +466,7 @@ $lang = array_merge($lang, array(
 	'NOTIFICATION_REASON'					=> '<em>Lý do:</em> %1$s.',
 	'NOTIFICATION_REPORT_PM'				=> '<strong>Báo cáo tin nhắn</strong> từ %1$s:',
 	'NOTIFICATION_REPORT_POST'				=> '<strong>Báo cáo bài viết</strong> từ %1$s:',
-	'NOTIFICATION_REPORT_CLOSED'   			=> '<strong>Xử lí báo cáo</strong> bởi %1$s trong:',
+	'NOTIFICATION_REPORT_CLOSED'			=> '<strong>Xử lí báo cáo</strong> bởi %1$s trong:',
 	'NOTIFICATION_TOPIC'					=> '<strong>Chủ đề mới</strong> từ %1$s:',
 	'NOTIFICATION_TOPIC_APPROVED'			=> '<strong>Chủ đề được duyệt</strong>:',
 	'NOTIFICATION_TOPIC_DISAPPROVED'		=> '<strong>Chủ đề bị từ chối</strong>:',
@@ -567,7 +567,8 @@ $lang = array_merge($lang, array(
 	'POSTED_IN_FORUM'			=> 'trong chuyên mục',
 	'POSTED_ON_DATE'			=> 'vào ngày',
 	'POSTS'						=> 'Bài viết',
-	'POSTS_UNAPPROVED'			=> 'Có ít nhất một bài viết trong chủ đề này không được duyệt.',	
+	'POSTS_UNAPPROVED'			=> 'Có ít nhất một bài viết trong chủ đề này chưa được duyệt.',	
+	'POSTS_UNAPPROVED_FORUM'	=> 'Có ít nhất một bài viết trong chuyên mục này chưa được duyệt.',
 	'POST_BY_AUTHOR'			=> 'gửi bởi',
 	'POST_BY_FOE'				=> '<strong>%1$s</strong>, người trong danh sách chặn của bạn đã gửi bài viết này.',
 	'POST_DISPLAY'				=> '%1$sHiện bài viết%2$s.',
@@ -597,6 +598,8 @@ $lang = array_merge($lang, array(
 	'PRIVATE_MESSAGES'			=> 'Tin nhắn',
 	'PRIVATE_MESSAGING'			=> 'Đang gửi tin nhắn',
 	'PROFILE'					=> 'Thiết lập cá nhân',
+
+	'QUICK_LINKS'	=> 'Thao tác nhanh',
 
 	'RANK'						=> 'Danh hiệu',
 	'READING_FORUM'				=> 'Đang xem các chủ đề trong chuyên mục %s',

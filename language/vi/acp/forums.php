@@ -4,7 +4,7 @@
 * acp/forums [Vietnamese]
 *
 * @package language
-* @version 1.49
+* @version 1.50
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -42,12 +42,16 @@ if (empty($lang) || !is_array($lang))
 
 // Forum Admin
 $lang = array_merge($lang, array(
-	'AUTO_PRUNE_DAYS'			=> 'Số ngày tự động dọn dẹp bài viết sau khi gửi',
-	'AUTO_PRUNE_DAYS_EXPLAIN'	=> 'Nếu chủ đề không có bài viết mới nào sau số ngày được thiết lập này thì chủ đề sẽ được tự động gỡ bỏ.',
-	'AUTO_PRUNE_FREQ'			=> 'Chu kỳ thực hiện dọn dẹp tự động',
-	'AUTO_PRUNE_FREQ_EXPLAIN'	=> 'Số ngày giữa hai lần thực hiện việc dọn dẹp tự động.',
-	'AUTO_PRUNE_VIEWED'			=> 'Số ngày tự động dọn dẹp bài viết sau khi xem',
-	'AUTO_PRUNE_VIEWED_EXPLAIN'	=> 'Nếu chủ đề không có ai xem sau số ngày được thiết lập này thì chủ đề sẽ được tự động gỡ bỏ.',
+	'AUTO_PRUNE_DAYS'					=> 'Số ngày tự động dọn dẹp bài viết sau khi gửi',
+	'AUTO_PRUNE_DAYS_EXPLAIN'			=> 'Nếu chủ đề không có bài viết mới nào sau số ngày được thiết lập này thì chủ đề sẽ được tự động gỡ bỏ.',
+	'AUTO_PRUNE_FREQ'					=> 'Chu kỳ thực hiện dọn dẹp tự động',
+	'AUTO_PRUNE_FREQ_EXPLAIN'			=> 'Số ngày giữa hai lần thực hiện việc dọn dẹp tự động.',
+	'AUTO_PRUNE_VIEWED'					=> 'Số ngày tự động dọn dẹp bài viết sau khi xem',
+	'AUTO_PRUNE_VIEWED_EXPLAIN'			=> 'Nếu chủ đề không có ai xem sau số ngày được thiết lập này thì chủ đề sẽ được tự động gỡ bỏ.',
+	'AUTO_PRUNE_SHADOW_DAYS'			=> 'Thời gian để lại liên kết đến chủ đề cũ',
+	'AUTO_PRUNE_SHADOW_DAYS_EXPLAIN'	=> 'Sau khi chủ đề đã được di chuyển, liên kết cũ để lại sẽ bị xóa sau số ngày thiết lập này.',
+	'AUTO_PRUNE_SHADOW_FREQ'			=> 'Chu kỳ xóa liên kết chủ đề cũ tự động',
+	'AUTO_PRUNE_SHADOW_FREQ_EXPLAIN'	=> 'Số ngày tự động dọn dẹp các liên kết đến chủ đề cũ.',
 
 	'CONTINUE'						=> 'Tiếp tục',
 	'COPY_PERMISSIONS'				=> 'Sao chép thiết lập cấp phép từ',

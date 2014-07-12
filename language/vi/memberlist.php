@@ -4,7 +4,7 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version 1.49
+* @version 1.50
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -52,7 +52,6 @@ $lang = array_merge($lang, array(
 	'BEFORE'	=> 'Trước',
 
 	'CC_EMAIL'		=> 'Gửi bản sao của email này cho tôi.',
-	'CONTACT_USER'	=> 'Liên hệ',
 	'CONTACT_ADMIN'	=> 'Liên hệ người quản trị',
 
 	'DEST_LANG'			=> 'Ngôn ngữ',
@@ -150,7 +149,7 @@ $lang = array_merge($lang, array(
 	'VIEW_FACEBOOK_PROFILE'		=> 'Xem trang Facebook',
 	'VIEW_SKYPE_PROFILE'		=> 'Xem trang Skype',
 	'VIEW_TWITTER_PROFILE'		=> 'Xem trang Twitter',
-	'VIEW_YOUTUBE_CHANNEL'  	=> 'Xem kênh YouTube',
+	'VIEW_YOUTUBE_CHANNEL'		=> 'Xem kênh YouTube',
 	'VIEW_GOOGLEPLUS_PROFILE'	=> 'Xem trang Google+',
 ));
 

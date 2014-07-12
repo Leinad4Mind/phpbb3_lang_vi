@@ -4,7 +4,7 @@
 * help_faq [Vietnamese]
 *
 * @package language
-* @version 1.72
+* @version 1.73
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -259,7 +259,7 @@ $help = array(
 	),
 	array(
 		0 => 'Tôi nhận được những tin nhắn không mong muốn!',
-		1 => 'Bạn có thể cấm một thành viên gửi tin nhắn đến mình bằng cách sử dụng thiết lập nội qui tin nhắn trong bảng thiết lập cá nhân. Nếu bạn nhận được những tin nhắn lừa đảo, xâm phạm tính riêng tư, xúc phạm đến danh dự của mình từ một thành viên nào đó, bạn hãy thông báo ngay cho người quản trị biết về điều này bởi vì họ có quyền hạn ngăn cản một thành viên có thể gửi tin nhắn.'
+		1 => 'Bạn có thể thiết lập tự động xóa tin nhắn từ một người dùng bằng cách sử dụng thiết lập nội qui tin nhắn trong bảng thiết lập cá nhân. Nếu bạn nhận được những tin nhắn lừa đảo, xâm phạm tính riêng tư, xúc phạm đến danh dự của mình từ một thành viên nào đó, bạn hãy báo cáo tin nhắn đó cho người điều hành biết bởi vì họ có quyền hạn ngăn cản một thành viên có thể gửi tin nhắn.'
 	),
 	array(
 		0 => 'Tài khoản email của tôi toàn nhận được thư rác từ một ai đó trong hệ thống!',

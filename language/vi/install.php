@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version 1.119
+* @version 1.120
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -294,8 +294,8 @@ $lang = array_merge($lang, array(
 	'PCRE_UTF_SUPPORT_EXPLAIN'			=> 'Hệ thống phpBB sẽ <strong>không hoạt động</strong> được nếu bản cài đặt PHP trên máy chủ của bạn không được biên dịch với phần mở rộng PCRE có hỗ trợ UTF-8.',
 	'PHP_GETIMAGESIZE_SUPPORT'			=> 'Hàm PHP <code>getimagesize()</code> có thể sử dụng',
 	'PHP_GETIMAGESIZE_SUPPORT_EXPLAIN'	=> '<strong>Bắt buộc</strong> - Để các chức năng của hệ thống phpBB hoạt động chính xác, hàm PHP <code>getimagesize()</code> cần phải được phép sử dụng trên máy chủ.',
-	'PHP_JSON_SUPPORT'        			=> 'Hỗ trợ JSON cho PHP',
-	'PHP_JSON_SUPPORT_EXPLAIN'    		=> '<strong>Bắt buộc</strong> - Để các chức năng của hệ thống phpBB hoạt động chính xác, phần mở rộng JSON phải đi kèm với bản cài đặt PHP trên máy chủ.',
+	'PHP_JSON_SUPPORT'					=> 'Hỗ trợ JSON cho PHP',
+	'PHP_JSON_SUPPORT_EXPLAIN'			=> '<strong>Bắt buộc</strong> - Để các chức năng của hệ thống phpBB hoạt động chính xác, phần mở rộng JSON phải đi kèm với bản cài đặt PHP trên máy chủ.',
 	'PHP_OPTIONAL_MODULE'				=> 'Gói chức năng tùy chọn',
 	'PHP_OPTIONAL_MODULE_EXPLAIN'		=> '<strong>Tùy chọn</strong> - Những gói chức năng hay ứng dụng này đều hoàn toàn tùy chọn. Tuy nhiên, nếu chúng được cài đặt đầy đủ trên máy chủ, bạn sẽ sử dụng được đầy đủ tất cả các chức năng của hệ thống.',
 	'PHP_SUPPORTED_DB'					=> 'Loại cơ sở dữ liệu được hỗ trợ',
@@ -349,7 +349,7 @@ $lang = array_merge($lang, array(
 	'SUB_SUPPORT'						=> 'Hỗ trợ',
 	'SUCCESSFUL_CONNECT'				=> 'Kết nối thành công',
 
-	'SUPPORT_BODY'		=> 'Việc hỗ trợ được cung cấp đầy đủ cho bản phát hành chuẩn hiện tại của phpBB3, hoàn toàn miễn phí và phi lợi nhuận. Việc hỗ trợ này bao gồm:</p><ul><li>Cài đặt.</li><li>Cấu hình.</li><li>Các câu hỏi chuyên môn.</li><li>Các rắc rối liên quan đến những lỗi tiềm tàng trong phần mềm.</li><li>Cập nhật từ các phiên bản RC (Release Candidate) đến bản phát hành chuẩn mới nhất.</li><li>Nâng cấp từ phpBB 2.0.x lên phpBB3.</li><li>Chuyển đổi từ phần mềm diễn đàn khác sang phpBB3 (vui lòng xem qua chuyên mục <a href="https://www.phpbb.com/community/viewforum.php?f=65">Các công cụ chuyển đổi</a>).</li></ul><p>Chúng tôi khuyến cáo nếu bạn vẫn còn sử dụng các phiên bản thử nghiệm (Beta) của phpBB3 hãy thay thế ngay những bản cài đặt này bằng một bản chuẩn của phiên bản mới nhất.</p><h2>Các gói MOD/Giao diện</h2><p>Về những câu hỏi liên quan đến các gói MOD, bạn hãy vui lòng gửi trong chuyên mục <a href="https://www.phpbb.com/community/viewforum.php?f=81">Các gói MOD</a> thích hợp.<br />Về những câu hỏi liên quan đến giao diện, khuôn mẫu và kiểu dáng, hãy vui lòng gửi trong chuyên mục <a href="https://www.phpbb.com/community/viewforum.php?f=80">Giao diện</a> thích hợp.<br /><br />Nếu câu hỏi của bạn có liên quan đến một công cụ xác định, hãy vui lòng gửi trực tiếp trong chủ đề đã dành cho công cụ đó.</p><h2>Hỗ trợ sử dụng</h2><p><a href="https://www.phpbb.com/community/viewtopic.php?f=14&amp;t=571070">Giới thiệu chào mừng đến với phpBB</a><br /><a href="https://www.phpbb.com/support/">Khu vực hỗ trợ</a><br /><a href="https://www.phpbb.com/support/documentation/3.0/quickstart/">Tài liệu cho người mới bắt đầu</a><br /><br />Để chắc chắn bạn luôn sử dụng phiên bản mới nhất và nắm bắt các tin tức mới nhất của phần mềm này, tại sao bạn không tham gia vào <a href="https://www.phpbb.com/support/">danh sách thông báo qua email</a> của chúng tôi?<br /><br />',
+	'SUPPORT_BODY'		=> 'Việc hỗ trợ được cung cấp đầy đủ cho bản phát hành chuẩn hiện tại của phpBB3, hoàn toàn miễn phí và phi lợi nhuận. Việc hỗ trợ này bao gồm:</p><ul><li>Cài đặt.</li><li>Cấu hình.</li><li>Các câu hỏi chuyên môn.</li><li>Các rắc rối liên quan đến những lỗi tiềm tàng trong phần mềm.</li><li>Cập nhật từ các phiên bản RC (Release Candidate) đến bản phát hành chuẩn mới nhất.</li><li>Nâng cấp từ phpBB 2.0.x lên phpBB3.</li><li>Chuyển đổi từ phần mềm diễn đàn khác sang phpBB3 (vui lòng xem qua chuyên mục <a href="https://www.phpbb.com/community/viewforum.php?f=65">Các công cụ chuyển đổi</a>).</li></ul><p>Chúng tôi khuyến cáo nếu bạn vẫn còn sử dụng các phiên bản thử nghiệm (Beta) của phpBB3 hãy thay thế ngay những bản cài đặt này bằng một bản chuẩn của phiên bản mới nhất.</p><h2>Các gói mở rộng / Giao diện</h2><p>Về những câu hỏi liên quan đến các gói mở rộng, bạn hãy vui lòng gửi trong chuyên mục <a href="https://www.phpbb.com/community/viewforum.php?f=451">Các gói mở rộng</a> thích hợp.<br />Về những câu hỏi liên quan đến giao diện, khuôn mẫu và kiểu dáng, hãy vui lòng gửi trong chuyên mục <a href="https://www.phpbb.com/community/viewforum.php?f=471">Giao diện</a> thích hợp.<br /><br />Nếu câu hỏi của bạn có liên quan đến một công cụ xác định, hãy vui lòng gửi trực tiếp trong chủ đề đã dành cho công cụ đó.</p><h2>Hỗ trợ sử dụng</h2><p><a href="https://www.phpbb.com/community/viewtopic.php?f=14&amp;t=571070">Giới thiệu chào mừng đến với phpBB</a><br /><a href="https://www.phpbb.com/support/">Khu vực hỗ trợ</a><br /><a href="https://www.phpbb.com/support/documentation/3.1/quickstart/">Tài liệu cho người mới bắt đầu</a><br /><br />Để chắc chắn bạn luôn sử dụng phiên bản mới nhất và nắm bắt các tin tức mới nhất của phần mềm này, tại sao bạn không tham gia vào <a href="https://www.phpbb.com/support/">danh sách thông báo qua email</a> của chúng tôi?<br /><br />',
 
 	'SYNC_FORUMS'			=> 'Bắt đầu đồng bộ hóa các chuyên mục',
 	'SYNC_POST_COUNT'		=> 'Đang đồng bộ <var>post_counts</var>',
@@ -433,6 +433,8 @@ $lang = array_merge($lang, array(
 	'FILE_USED'						=> 'Thông tin được sử dụng từ', // Single file
 	'FILES_CONFLICT'				=> 'Những tập tin xung đột',
 	'FILES_CONFLICT_EXPLAIN'		=> 'Những tập tin bên dưới đã được chỉnh sửa và không còn là những tập tin gốc của hệ thống phpBB phiên bản cũ. Hệ thống phpBB đã xác định rằng những tập tin này sẽ tạo ra xung đột nếu bạn cố gắng nhập chung chúng lại với nhau. Bạn hãy vui lòng kiểm tra lại các xung đột xuất hiện và cố gắng tự mình giải quyết các xung đột đó hoặc tiếp tục việc cập nhật bằng cách lựa chọn phương pháp nhập chung như trên. Nếu bạn tự mình giải quyết các xung đột, hãy kiểm tra lại các tập tin sau khi bạn đã chỉnh sửa chúng. Bạn cũng có thể lựa chọn phương pháp nhập chung mà mình thích sử dụng cho riêng mỗi tập tin. Phương pháp đầu tiên sẽ cho kết quả một tập tin mà trong đó những dòng mã nguồn gây xung đột trong các tập tin cũ của bạn sẽ bị loại bỏ, phương pháp còn lại sẽ cho kết quả một tập tin đã loại bỏ những thay đổi từ tập tin mới.',
+	'FILES_DELETED'					=> 'Những tập tin đã xóa',
+	'FILES_DELETED_EXPLAIN'			=> 'Những tập tin bên dưới không còn được sử dụng trong phiên bản mới và cần được xóa khỏi bản cài đặt hiện tại.',
 	'FILES_MODIFIED'				=> 'Những tập tin đã chỉnh sửa',
 	'FILES_MODIFIED_EXPLAIN'		=> 'Những tập tin bên dưới đã được chỉnh sửa và không còn là những tập tin gốc của hệ thống phpBB phiên bản cũ. Tập tin đã cập nhật là tập tin được nhập chung giữa những chỉnh sửa mã nguồn của bạn với tập tin mới.',
 	'FILES_NEW'						=> 'Những tập tin mới',
@@ -501,6 +503,7 @@ $lang = array_merge($lang, array(
 	'SELECT_DOWNLOAD_FORMAT'	=> 'Chọn định dạng tập tin tải về',
 	'SELECT_FTP_SETTINGS'		=> 'Chọn thiết lập FTP',
 	'SHOW_DIFF_CONFLICT'		=> 'Hiện những chỗ khác nhau trong mã nguồn/mã nguồn xung đột',
+	'SHOW_DIFF_DELETED'			=> 'Hiện nội dung tập tin',
 	'SHOW_DIFF_FINAL'			=> 'Hiện tập tin kết quả',
 	'SHOW_DIFF_MODIFIED'		=> 'Hiện những chỗ khác nhau trong mã nguồn đã chỉnh sửa',
 	'SHOW_DIFF_NEW'				=> 'Hiện mã nguồn tập tin',
@@ -514,6 +517,7 @@ $lang = array_merge($lang, array(
 	'STAGE_UPDATE_FILES'		=> 'Cập nhật tập tin',
 	'STAGE_VERSION_CHECK'		=> 'Kiểm tra phiên bản',
 	'STATUS_CONFLICT'			=> 'Tập tin đã chỉnh sửa gây ra xung đột',
+	'STATUS_DELETED'			=> 'Tập tin đã xóa',
 	'STATUS_MODIFIED'			=> 'Tập tin đã chỉnh sửa',
 	'STATUS_NEW'				=> 'Tập tin mới',
 	'STATUS_NEW_CONFLICT'		=> 'Tập tin mới xung đột',

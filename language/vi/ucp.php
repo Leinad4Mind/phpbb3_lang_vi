@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version 1.124
+* @version 1.125
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -361,6 +361,7 @@ $lang = array_merge($lang, array(
 	),
 	'NO_ACTION_MODE'						=> 'Không có yêu cầu tin nhắn nào được xác định',
 	'NO_AUTHOR'								=> 'Không xác định được người gửi tin nhắn này',
+	'NO_AVATAR'								=> 'Chưa chọn hình đại diện',
 	'NO_AVATAR_CATEGORY'					=> 'Không có hình đại diện nào',
 
 	'NO_AUTH_DELETE_MESSAGE'		=> 'Bạn không được phép xóa tin nhắn.',

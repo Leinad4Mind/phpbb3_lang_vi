@@ -4,7 +4,7 @@
 * acp/search [Vietnamese]
 *
 * @package language
-* @version 1.35
+* @version 1.36
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -70,7 +70,6 @@ $lang = array_merge($lang, array(
 	'FULLTEXT_POSTGRES_TOTAL_POSTS'				=> 'Số bài viết đã lập chỉ mục',
 	'FULLTEXT_POSTGRES_TS_NAME'					=> 'Cấu hình tìm kiếm văn bản:',
 	'FULLTEXT_POSTGRES_TS_NAME_EXPLAIN'			=> 'Thông tin cấu hình tìm kiếm văn bản này được sử dụng để phân tích cú pháp và xây dựng danh mục dữ liệu.',
-	'FULLTEXT_POSTGRES_TS_NOT_USABLE'			=> 'Phương pháp tìm kiếm FULLTEXT với PostgreSQL chỉ dùng cho hệ quản trị PostgreSQL phiên bản 8.3 trở lên.',
 	'FULLTEXT_POSTGRES_VERSION_CHECK'			=> 'Phiên bản PostgreSQL',
 	'FULLTEXT_POSTGRES_VERSION_CHECK_EXPLAIN'	=> 'Phương pháp tìm kiếm này yêu cầu phiên bản PostgreSQL 8.3 trở lên.',
 	'FULLTEXT_SPHINX_CONFIG_FILE'				=> 'Tập tin cấu hình Sphinx',
