@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version 1.161
+* @version 1.162
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -163,6 +163,7 @@ $lang = array_merge($lang, array(
 	'COLOUR_SWATCH'			=> 'Bảng mã màu',
 	'COMMA_SEPARATOR'		=> ', ', // Comma used to join lists into a single string, use localised comma if appropriate, eg: Ideographic or Arabic
 	'CONFIRM'				=> 'Xác nhận',
+	'CONFIRM_AVATAR_DELETE' => 'Bạn có chắc chắn muốn xóa hình đại diện này?',
 	'CONFIRM_CODE'			=> 'Mã xác nhận',
 	'CONFIRM_CODE_EXPLAIN'	=> 'Nhập vào đoạn mã xác nhận mà bạn nhìn thấy trong hình. Tất cả chữ cái đều không phân biệt hoa thường.',
 	'CONFIRM_CODE_WRONG'	=> 'Mã xác nhận bạn nhập không chính xác.',
@@ -191,8 +192,6 @@ $lang = array_merge($lang, array(
 	'DISPLAY_MESSAGES'			=> 'Xem tin nhắn cách đây',
 	'DISPLAY_POSTS'				=> 'Xem bài viết cách đây',
 	'DISPLAY_TOPICS'			=> 'Xem chủ đề cách đây',
-	'DOWNLOAD_ALL'				=> 'Tải về hết',
-	'DOWNLOAD_ALL_ATTACHMENTS'	=> 'Tải về hết tập tin đính kèm',
 	'DOWNLOAD_COUNTS'			=> array(
 		0	=> 'Chưa tải lần nào',
 		1	=> 'Đã tải <strong>%d</strong> lần',
@@ -487,7 +486,6 @@ $lang = array_merge($lang, array(
 	'NO_AUTH_ADMIN_USER_DIFFER'				=> 'Bạn không thể xác nhận lại như là một người dùng khác.',
 	'NO_AUTH_OPERATION'						=> 'Bạn không được cấp phép đầy đủ để hoàn tất yêu cầu này.',
 	'NO_AVATARS'							=> 'Không có hình đại diện nào để sử dụng',
-	'NO_AVATAR_SELECTED'					=> 'Bạn chưa chọn hình đại diện nào.',
 	'NO_CONNECT_TO_SMTP_HOST'				=> 'Không thể kết nối đến địa chỉ SMTP: %1$s : %2$s',	
 	'NO_BIRTHDAYS'							=> 'Không có sinh nhật của thành viên nào hôm nay.',
 	'NO_EMAIL_MESSAGE'						=> 'Bạn chưa nhập nội dung email.',
@@ -820,6 +818,7 @@ $lang = array_merge($lang, array(
 		1	=> 'Đã xem %d lần',
 		2	=> 'Đã xem %d lần',
 	),
+	'VIEWING_CONTACT_ADMIN'		=> 'Đang sử dụng trang liên hệ',
 	'VIEWING_FAQ'				=> 'Đang xem trợ giúp',
 	'VIEWING_MEMBERS'			=> 'Đang xem danh sách thành viên',
 	'VIEWING_ONLINE'			=> 'Đang xem các thành viên trực tuyến',

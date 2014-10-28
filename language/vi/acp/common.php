@@ -4,7 +4,7 @@
 * acp/common [Vietnamese]
 *
 * @package language
-* @version 1.115
+* @version 1.116
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -226,11 +226,6 @@ $lang = array_merge($lang, array(
 	'ADM_LOGGED_OUT'	=> 'Bạn đã thoát khỏi bảng quản trị thành công.',
 
 	'BACK'	=> 'Quay lại',
-
-	'CLI_DESCRIPTION_CRON_LIST'				=> 'In danh sách toàn bộ các thao tác hẹn giờ.',
-	'CLI_DESCRIPTION_CRON_RUN'				=> 'Chạy tất cả thao tác đã sẵn sàng.',
-	'CLI_DESCRIPTION_CRON_RUN_ARGUMENT_1'	=> 'Tên thao tác được chạy',
-	'CLI_DESCRIPTION_OPTION_SHELL'			=> 'Chạy dòng lệnh.',
 
 	'COLOUR_SWATCH'		=> 'Bảng mã màu',
 	'CONFIG_UPDATED'	=> 'Cấu hình hệ thống đã được cập nhật thành công.',

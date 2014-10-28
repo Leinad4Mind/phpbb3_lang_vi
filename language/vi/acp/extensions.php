@@ -4,7 +4,7 @@
 * acp/extensions [Vietnamese]
 *
 * @package language
-* @version 2.05
+* @version 2.06
 * @copyright (c) 2013 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -78,6 +78,7 @@ $lang = array_merge($lang, array(
 	'EXTENSION_INVALID_LIST'			=> 'Phần mở rộng “%s” không hợp lệ.<br />%s<br /><br />',
 	'EXTENSION_NAME'					=> 'Tên phần mở rộng',
 	'EXTENSION_NOT_AVAILABLE'			=> 'Phần mở rộng đã chọn không thể sử dụng trên hệ thống này. Bạn hãy vui lòng kiểm tra lại phiên bản phpBB cũng như PHP được hỗ trợ bên dưới.',
+	'EXTENSION_NOT_ENABLEABLE'			=> 'Phần mở rộng đã chọn không thể sử dụng, vui lòng kiểm tra lại yêu cầu cài đặt.',
 	'EXTENSION_OPTIONS'					=> 'Tùy chọn',
 	'EXTENSION_REMOVE_EXPLAIN'			=> '<ol>
 		<li>Vô hiệu phần mở rộng.</li>
