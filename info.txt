@@ -19,7 +19,7 @@ _ _ _ _ _    |  |_ _ _   _ _ _ _ _     |  |__|  /  |  |__|  /                   
 @ VinaBB Team
 ---[ Information ]--------------------------------------------------------------
 Language Pack Name: Vietnamese Language Pack for phpBB3
-Language Pack Version: 3.1.0.RC6-a
+Language Pack Version: 3.1.0a
 Encoding: Unicode (UTF-8)
 Release Date: 2014/10/28
 ---[ Description ]--------------------------------------------------------------
@@ -31,6 +31,10 @@ Vietnamese Language Pack for phpBB 3.1.x with following parts:
 ---[ Translator ]----------------------------------------
 # nedka (Khoa Nguyen) <nedka@nedka.vn> http://www.nedka.vn/
 ---[ History ]------------------------------------------------------------------
+# 2014/10/28: Version 3.1.0a
+Updated code changes in language files from RC6 to 3.1.0
+Welcome to Ascraeus :)
+
 # 2014/10/28: Version 3.1.0.RC6-a
 Updated code changes in language files from RC5 to RC6
 

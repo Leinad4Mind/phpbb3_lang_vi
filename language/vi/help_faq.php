@@ -4,7 +4,7 @@
 * help_faq [Vietnamese]
 *
 * @package language
-* @version 1.73
+* @version 1.75
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -41,32 +41,8 @@ $help = array(
 		1 => 'Những câu hỏi về đăng ký tài khoản và đăng nhập'
 	),
 	array(
-		0 => 'Tại sao tôi không thể đăng nhập được?',
-		1 => 'Có một vài lý do dẫn đến việc này. Trước tiên, hãy chắc chắn rằng tên tài khoản và mật khẩu của bạn đã nhập vào chính xác. Nếu bạn đã nhập chính xác mà vẫn không thể đăng nhập được, hãy liên hệ với người quản trị để chắc chắn rằng bạn không bị cấm tham gia. Cũng có thể, người quản lí website đã cấu hình sai hệ thống ở một chỗ nào đó và họ cần bạn thông báo để biết mà tiến hành khắc phục.'
-	),
-	array(
 		0 => 'Tại sao tôi cần phải đăng ký tài khoản?',
 		1 => 'Bạn có thể không cần phải làm như thế nhưng đôi khi bạn cần phải đăng ký mới có thể gửi bài trong diễn đàn, tùy theo yêu cầu của người quản trị. Tuy nhiên, việc đăng ký làm thành viên sẽ giúp bạn sử dụng được hết tất cả các chức năng mà hệ thống chỉ dành cho những ai đã đăng ký và không dành cho khách sử dụng, ví dụ như hình đại diện, gửi tin nhắn, gửi email đến các người dùng khác, tham gia vào các nhóm… Bạn chỉ mất vài phút để hoàn tất việc đăng ký, vì vậy hãy đăng ký làm thành viên của chúng tôi.'
-	),
-	array(
-		0 => 'Tại sao tôi thường xuyên bị thoát ra khỏi hệ thống?',
-		1 => 'Nếu bạn không đánh dấu chọn vào lựa chọn <em>Đăng nhập tự động</em> khi bạn đăng nhập, hệ thống sẽ chỉ cho phép bạn đăng nhập vào trong thời điểm hiện tại. Điều này sẽ giúp ngăn cản việc lạm dụng tài khoản của bạn bởi một ai đó. Để vẫn luôn trong trạng thái đã đăng nhập, hãy đánh dấu vào lựa chọn trên một lần trong khi đăng nhập. Điều này không được khuyến cáo sử dụng nếu bạn đang truy nhập vào hệ thống từ một máy tính dùng chung, ví dụ như trong thư viện, tiệm Internet, phòng vi tính trong trường học. Nếu bạn không nhìn thấy lựa chọn trên thì có nghĩa là người quản trị đã vô hiệu chức năng này.'
-	),
-	array(
-		0 => 'Làm sao để tên tài khoản của tôi không xuất hiện trong danh sách các thành viên trực tuyến?',
-		1 => 'Trong bảng thiết lập cá nhân của mình, tại phần “Thiết lập hệ thống”, bạn hãy tìm đến lựa chọn <em>Luôn ẩn trạng thái trực tuyến của tôi</em>. Nếu bạn chọn <samp>Có</samp>, bạn sẽ chỉ xuất hiện trực tuyến đối với các quản trị viên, các điều hành viên hoặc với chính mình. Bạn sẽ được tính như là một thành viên ẩn.'
-	),
-	array(
-		0 => 'Tôi đã quên mật khẩu của mình!',
-		1 => 'Đừng lo lắng! Tuy mật khẩu của bạn không thể phục hồi lại được nhưng có thể được tạo lại dễ dàng. Trong trang đăng nhập, bạn hãy bấm vào liên kết <em>Quên mật khẩu</em>. Hãy làm theo hướng dẫn của công cụ này và bạn sẽ có thể đăng nhập trở lại vào hệ thống một cách nhanh chóng.'
-	),
-	array(
-		0 => 'Tôi đã đăng ký nhưng không thể đăng nhập được!',
-		1 => 'Trước tiên, hãy kiểm tra tên tài khoản và mật khẩu của bạn. Nếu tất cả đều chính xác thì có thể bạn rơi vào một trong hai trường hợp sau: Nếu yêu cầu COPPA được bật trong hệ thống và bạn đã xác định mình dưới 13 tuổi khi đăng ký thành viên thì bạn cần phải làm theo những hướng dẫn đã được gửi sau đó. Nếu bạn không rơi vào trường hợp trên thì có thể tài khoản của bạn chưa được kích hoạt. Một vài diễn đàn bắt buộc tài khoản phải được kích hoạt sau khi đăng ký thành công, có thể bạn được yêu cầu tự làm việc này hoặc chờ người quản trị kích hoạt trước khi bạn có thể đăng nhập vào hệ thống. Khi bạn đăng ký thành công, bạn sẽ được thông báo có phải kích hoạt tài khoản của mình hay không. Nếu bạn nhận được một email yêu cầu kích hoạt thì hãy làm theo hướng dẫn trong đó. Nếu bạn không nhận được email nào, có thể bạn đã cung cấp sai địa chỉ email của mình khi đăng ký hoặc địa chỉ email này bị chặn bởi các công cụ quét thư rác. Lý do của việc bắt buộc phải kích hoạt tài khoản này là để hạn chế sự lạm dụng của một vài người muốn quấy phá hệ thống. Nếu bạn chắc chắn mình đã nhập đúng địa chỉ email, hãy cố gắng liên hệ với người quản trị.'
-	),
-	array(
-		0 => 'Tôi đã từng đăng ký trước đây nhưng bây giờ không thể đăng nhập được nữa!',
-		1 => 'Có thể người quản trị đã ngưng kích hoạt hoặc xóa tài khoản của bạn ra khỏi hệ thống vì một vài lý do nào đó. Thông thường, một vài diễn đàn sẽ xóa định kỳ các tài khoản không hoạt động trong một thời gian dài để giảm bớt dung lượng của cơ sở dữ liệu trong hệ thống. Nếu đúng như thế, bạn hãy cố gắng đăng ký trở lại và tham gia thảo luận nhiệt tình hơn với mọi người.'
 	),
 	array(
 		0 => 'Điều khoản COPPA là gì?',
@@ -75,6 +51,26 @@ $help = array(
 	array(
 		0 => 'Tại sao tôi không thể đăng ký tài khoản?',
 		1 => 'Có thể người quản lí website đã cấm địa chỉ IP của bạn hoặc không cho phép sử dụng tên tài khoản mà bạn đang định sử dụng để đăng ký mới. Cũng có thể người quản lí website đã cho tạm ngưng đăng ký mới bằng cách vô hiệu chức năng này trong hệ thống vì một lý do nào đó. Bạn hãy liên hệ với người quản trị để được giúp đỡ.',
+	),
+	array(
+		0 => 'Tôi đã đăng ký nhưng không thể đăng nhập được!',
+		1 => 'Trước tiên, hãy kiểm tra tên tài khoản và mật khẩu của bạn. Nếu tất cả đều chính xác thì có thể bạn rơi vào một trong hai trường hợp sau: Nếu yêu cầu COPPA được bật trong hệ thống và bạn đã xác định mình dưới 13 tuổi khi đăng ký thành viên thì bạn cần phải làm theo những hướng dẫn đã được gửi sau đó. Nếu bạn không rơi vào trường hợp trên thì có thể tài khoản của bạn chưa được kích hoạt. Một vài diễn đàn bắt buộc tài khoản phải được kích hoạt sau khi đăng ký thành công, có thể bạn được yêu cầu tự làm việc này hoặc chờ người quản trị kích hoạt trước khi bạn có thể đăng nhập vào hệ thống. Khi bạn đăng ký thành công, bạn sẽ được thông báo có phải kích hoạt tài khoản của mình hay không. Nếu bạn nhận được một email yêu cầu kích hoạt thì hãy làm theo hướng dẫn trong đó. Nếu bạn không nhận được email nào, có thể bạn đã cung cấp sai địa chỉ email của mình khi đăng ký hoặc địa chỉ email này bị chặn bởi các công cụ quét thư rác. Lý do của việc bắt buộc phải kích hoạt tài khoản này là để hạn chế sự lạm dụng của một vài người muốn quấy phá hệ thống. Nếu bạn chắc chắn mình đã nhập đúng địa chỉ email, hãy cố gắng liên hệ với người quản trị.'
+	),
+	array(
+		0 => 'Tại sao tôi không thể đăng nhập được?',
+		1 => 'Có một vài lý do dẫn đến việc này. Trước tiên, hãy chắc chắn rằng tên tài khoản và mật khẩu của bạn đã nhập vào chính xác. Nếu bạn đã nhập chính xác mà vẫn không thể đăng nhập được, hãy liên hệ với người quản trị để chắc chắn rằng bạn không bị cấm tham gia. Cũng có thể, người quản lí website đã cấu hình sai hệ thống ở một chỗ nào đó và họ cần bạn thông báo để biết mà tiến hành khắc phục.'
+	),
+	array(
+		0 => 'Tôi đã từng đăng ký trước đây nhưng bây giờ không thể đăng nhập được nữa!',
+		1 => 'Có thể người quản trị đã ngưng kích hoạt hoặc xóa tài khoản của bạn ra khỏi hệ thống vì một vài lý do nào đó. Thông thường, một vài diễn đàn sẽ xóa định kỳ các tài khoản không hoạt động trong một thời gian dài để giảm bớt dung lượng của cơ sở dữ liệu trong hệ thống. Nếu đúng như thế, bạn hãy cố gắng đăng ký trở lại và tham gia thảo luận nhiệt tình hơn với mọi người.'
+	),
+	array(
+		0 => 'Tôi đã quên mật khẩu của mình!',
+		1 => 'Đừng lo lắng! Tuy mật khẩu của bạn không thể phục hồi lại được nhưng có thể được tạo lại dễ dàng. Trong trang đăng nhập, bạn hãy bấm vào liên kết <em>Quên mật khẩu</em>. Hãy làm theo hướng dẫn của công cụ này và bạn sẽ có thể đăng nhập trở lại vào hệ thống một cách nhanh chóng.'
+	),
+	array(
+		0 => 'Tại sao tôi thường xuyên bị thoát ra khỏi hệ thống?',
+		1 => 'Nếu bạn không đánh dấu chọn vào lựa chọn <em>Đăng nhập tự động</em> khi bạn đăng nhập, hệ thống sẽ chỉ cho phép bạn đăng nhập vào trong thời điểm hiện tại. Điều này sẽ giúp ngăn cản việc lạm dụng tài khoản của bạn bởi một ai đó. Để vẫn luôn trong trạng thái đã đăng nhập, hãy đánh dấu vào lựa chọn trên một lần trong khi đăng nhập. Điều này không được khuyến cáo sử dụng nếu bạn đang truy nhập vào hệ thống từ một máy tính dùng chung, ví dụ như trong thư viện, tiệm Internet, phòng vi tính trong trường học. Nếu bạn không nhìn thấy lựa chọn trên thì có nghĩa là người quản trị đã vô hiệu chức năng này.'
 	),
 	array(
 		0 => 'Liên kết “Xóa hết cookie” có tác dụng gì?',
@@ -89,6 +85,10 @@ $help = array(
 		1 => 'Nếu bạn đã đăng ký tài khoản, tất cả thiết lập cá nhân của bạn đều được lưu giữ trong cơ sở dữ liệu của hệ thống. Để thay đổi chúng, bạn hãy truy cập vào bảng thiết lập cá nhân của mình. Liên kết này thường hiện ra ở đầu mỗi trang. Bảng điều khiển này cũng sẽ giúp bạn thay đổi tất cả thiết lập và thông tin cá nhân của mình.'
 	),
 	array(
+		0 => 'Làm sao để tên tài khoản của tôi không xuất hiện trong danh sách các thành viên trực tuyến?',
+		1 => 'Trong bảng thiết lập cá nhân của mình, tại phần “Thiết lập hệ thống”, bạn hãy tìm đến lựa chọn <em>Luôn ẩn trạng thái trực tuyến của tôi</em>. Nếu bạn chọn <samp>Có</samp>, bạn sẽ chỉ xuất hiện trực tuyến đối với các quản trị viên, các điều hành viên hoặc với chính mình. Bạn sẽ được tính như là một thành viên ẩn.'
+	),
+	array(
 		0 => 'Thời gian trên hệ thống chạy không chính xác!',
 		1 => 'Nếu được thiết lập, thời gian có thể được hiển thị với một múi giờ khác múi giờ tại nơi bạn đang sống. Nếu rơi vào trường hợp này, bạn nên thay đổi lại múi giờ cho phù hợp trong bảng thiết lập cá nhân của mình theo từng khu vực xác định, ví dụ như <em>London, Paris, New York, Sydney…</em> Bạn cũng cần lưu ý rằng thiết lập thay đổi lại múi giờ cũng như hầu hết những thiết lập cá nhân khác, chỉ dành cho những ai đã đăng ký. Vì thế, nếu bạn vẫn chưa đăng ký làm thành viên của chúng tôi thì đây là thời điểm thích hợp cho bạn thực hiện điều này!'
 	),
@@ -98,11 +98,15 @@ $help = array(
 	),
 	array(
 		0 => 'Ngôn ngữ của tôi không có trong danh sách hỗ trợ!',
-		1 => 'Có thể quản trị viên chưa cài đặt ngôn ngữ mà bạn dùng vào hệ thống hay đơn giản là chưa từng có ai phiên dịch hệ thống này sang ngôn ngữ của bạn. Hãy cố gắng yêu cầu người quản trị cài đặt ngôn ngữ của bạn vào hệ thống nếu nó có sẵn. Nếu chưa có, bạn có thể đề nghị cùng tham gia phiên dịch hệ thống sang ngôn ngữ của bạn. Bạn có thể tìm hiểu nhiều thông tin về các ngôn ngữ cho hệ thống này tại website của công ty phpBB có ở cuối trang.'
+		1 => 'Có thể quản trị viên chưa cài đặt ngôn ngữ mà bạn dùng vào hệ thống hay đơn giản là chưa từng có ai phiên dịch hệ thống này sang ngôn ngữ của bạn. Hãy cố gắng yêu cầu người quản trị cài đặt ngôn ngữ của bạn vào hệ thống nếu nó có sẵn. Nếu chưa có, bạn có thể đề nghị cùng tham gia phiên dịch hệ thống sang ngôn ngữ của bạn. Bạn có thể tìm hiểu thêm thông tin về các ngôn ngữ cho hệ thống này tại website của công ty <a href="https://www.phpbb.com/">phpBB</a>&reg;.'
 	),
 	array(
-		0 => 'Làm sao để hiển thị hình ảnh đi kèm tên tài khoản của tôi?',
-		1 => 'Có hai hình ảnh có thể được hiển thị kèm theo tên tài khoản trong phần xem bài viết. Một trong hai hình có thể là hình ảnh thể hiện danh hiệu hiện tại của bạn. Thông thường, chúng là những hình ngôi sao hay hình khối hiển thị tùy thuộc vào số lượng bài viết mà bạn đã gửi hay trạng thái, vị trí, chức vụ… của bạn trong hệ thống. Hình còn lại, thường lớn hơn, được gọi là hình đại diện. Đây là những hình ảnh thể hiện cá tính và phong cách riêng của mỗi thành viên. Nếu người quản trị cho phép sử dụng hình đại diện, bạn có thể tự do thay đổi chúng và lựa chọn cách thức sử dụng phù hợp. Nếu bạn không thể sử dụng hình đại diện, bạn hãy liên hệ với người quản trị và hỏi họ lý do tại sao.'
+		0 => 'Hình ảnh đi kèm tên tài khoản của tôi là gì?',
+		1 => 'Có hai hình ảnh có thể được hiển thị kèm theo tên tài khoản trong phần xem bài viết. Một trong hai hình có thể là hình ảnh thể hiện danh hiệu hiện tại của bạn. Thông thường, chúng là những hình ngôi sao hay hình khối hiển thị tùy thuộc vào số lượng bài viết mà bạn đã gửi hay trạng thái, vị trí, chức vụ… của bạn trong hệ thống. Hình còn lại, thường lớn hơn, được gọi là hình đại diện. Đây là những hình ảnh thể hiện cá tính và phong cách riêng của mỗi thành viên.'
+	),
+	array(
+		0 => 'Làm sao để tôi chọn cho mình một hình đại diện?',
+		1 => 'Từ bảng thiết lập cá nhân của mình, tại phần “Thông tin cá nhân”, bạn có thể tạo cho mình một hình đại diện bằng 1 trong 4 cách sau: chọn hình có sẵn trên hệ thống, liên kết từ một địa chỉ URL khác, tải lên từ máy tính của bạn hoặc sử dụng dịch vụ Gravatar. Điều này còn tùy thuộc vào người quản trị có cho phép sử dụng hình đại diện hay không và sử dụng theo cách nào. Nếu không thể sử dụng hình đại diện, bạn hãy liên hệ với người quản trị.',
 	),
 	array(
 		0 => 'Danh hiệu là gì và làm sao tôi có thể thay đổi danh hiệu của mình?',
@@ -117,8 +121,8 @@ $help = array(
 		1 => 'Những câu hỏi về chức năng gửi bài'
 	),
 	array(
-		0 => 'Làm sao để tôi tạo chủ đề mới trong một chuyên mục?',
-		1 => 'Để tạo một chủ đề mới trong chuyên mục, bạn hãy bấm vào nút tạo chủ đề mới trong trang xem chuyên mục hay trang xem chủ đề. Bạn có thể được yêu cầu phải đăng nhập trước khi gửi bài. Những chức năng của công cụ gửi bài mà bạn có thể sử dụng được liệt kê cuối mỗi trang xem chuyên mục hay trang xem chủ đề. Ví dụ như: <em>Bạn có thể tạo chủ đề mới trong chuyên mục này, Bạn có thể tham gia bình chọn trong chuyên mục này…</em>'
+		0 => 'Làm sao để tôi tạo chủ đề mới hay gửi bài trả lời?',
+		1 => 'Để tạo một chủ đề mới trong chuyên mục, bạn hãy bấm vào nút “Chủ đề mới”. Tương tự, bấm vào nút “Trả lời” để gửi bài trả lời trong một chủ đề. Bạn có thể được yêu cầu phải đăng nhập trước khi gửi bài. Những chức năng của công cụ gửi bài mà bạn có thể sử dụng được liệt kê cuối mỗi trang xem chuyên mục hay trang xem chủ đề. Ví dụ như: <em>Bạn có thể tạo chủ đề mới trong chuyên mục này, Bạn có thể tham gia bình chọn trong chuyên mục này…</em>'
 	),
 	array(
 		0 => 'Làm sao để tôi sửa hay xóa một bài viết?',
@@ -299,7 +303,7 @@ $help = array(
 	),
 	array(
 		0 => 'Làm thế nào tôi có thể xem lại các chủ đề và bài viết của mình?',
-		1 => 'Bạn có thể xem lại các bài viết của chính mình bằng cách bấm vào liên kết “Tìm tất cả bài viết của thành viên này” trong bảng thiết lập cá nhân hoặc thông qua trang thông tin cá nhân của chính mình. Để tìm lại các chủ đề của mình, bạn hãy sử dụng trang tìm kiếm nâng cao của hệ thống và điền vào các điều kiện tìm kiếm thích hợp.'
+		1 => 'Bạn có thể xem lại các bài viết của mình từ 3 liên kết sau: “Bài viết của bạn” trong bảng thiết lập cá nhân, “Tìm các bài viết của thành viên” tại chính trang thông tin cá nhân của mình hoặc “Tiện ích” từ trình đơn có ở đầu mỗi trang. Để xem lại danh sách chủ đề mình đã tạo, hãy sử dụng chức năng tìm kiếm nâng cao và điền vào các tùy chọn tìm kiếm thích hợp.'
 	),
 	array(
 		0 => '--',
@@ -307,15 +311,19 @@ $help = array(
 	),
 	array(
 		0 => 'Theo dõi chủ đề và đánh dấu chủ đề khác nhau như thế nào?',
-		1 => 'Chức năng đánh dấu chủ đề trong hệ thống phpBB cũng giống như việc bạn đánh dấu các trang Web trong trình duyệt của mình. Bạn không nhất thiết phải được thông báo mỗi khi chủ đề này được cập nhật nhưng bạn có thể quay lại xem chủ đề này bất cứ khi nào bạn muốn. Ngược lại, chức năng theo dõi chủ đề sẽ thông báo cho bạn biết mỗi khi chủ đề hay chuyên mục mà bạn chọn theo dõi được cập nhật trong diễn đàn thông qua cách thông báo mà bạn đã thiết lập hay của hệ thống.'
+		1 => 'Trong phiên bản phpBB 3.0, chức năng đánh dấu chủ đề tương tự như việc bạn đánh dấu các trang web trong trình duyệt của mình. Bạn không được thông báo mỗi khi chủ đề này được cập nhật. Kể từ phiên bản phpBB 3.1, dù chỉ đánh dấu chủ đề bạn cũng có thể chọn nhận thông báo nếu chủ đề đó có bài viết mới. Chức năng theo dõi cũng tương tự như thế nhưng bạn có thể chọn theo dõi cả một chuyên mục, thay vì chỉ từng chủ đề riêng lẻ. Tùy chọn nhận thông báo khi đánh dấu hay theo dõi nội dung có thể được thay đổi từ bảng thiết lập cá nhân của bạn, tại phần “Thiết lập hệ thống”.'
 	),
 	array(
-		0 => 'Làm thế nào tôi có thể theo dõi các chuyên mục hay chủ đề xác định?',
-		1 => 'Để theo dõi một chuyên mục, bạn hãy bấm vào liên kết “Theo dõi chuyên mục” nằm bên trên chuyên mục đó. Để theo dõi một chủ đề, trong khi trả lời chủ đề đó, bạn hãy đánh dấu chọn vào lựa chọn thông báo bằng email khi có bài viết trả lời hoặc bạn có thể bấm vào liên kết “Theo dõi chủ đề” nằm trong chính chủ đề.'
+		0 => 'Làm thế nào tôi đánh dấu hay theo dõi các chủ đề?',
+		1 => 'Để đánh dấu hay theo dõi một chủ đề, tại trang chủ đề đang xem, từ trình đơn “Công cụ chủ đề” xuất hiện ở đầu và cuối trang, hãy chọn tùy chọn đánh dấu hay theo dõi chủ đề đó.<br />Nếu đánh dấu vào tùy chọn “Thông báo cho tôi khi có bài trả lời” khi đang gửi bài trong một chủ đề tức là bạn đã chọn theo dõi chủ đề đó.',
+	),
+	array(
+		0 => 'Làm thế nào tôi theo dõi các chuyên mục?',
+		1 => 'Để theo dõi một chuyên mục, bạn hãy bấm vào liên kết “Theo dõi chuyên mục” ở cuối trang khi vào xem chuyên mục đó.',
 	),
 	array(
 		0 => 'Làm thế nào tôi có thể ngưng việc theo dõi của mình?',
-		1 => 'Để ngưng việc theo dõi này, bạn hãy chuyển đến bảng thiết lập cá nhân của mình và bấm vào liên kết đến bảng theo dõi của bạn.'
+		1 => 'Để ngưng việc theo dõi này, bạn hãy chuyển đến bảng thiết lập cá nhân, bấm vào liên kết đến từng đối tượng đang theo dõi và chọn tùy chọn ngừng theo dõi.'
 	),
 	array(
 		0 => '--',
@@ -335,7 +343,7 @@ $help = array(
 	),
 	array(
 		0 => 'Ai đã viết và phát triển hệ thống này?',
-		1 => 'Chương trình này với những chức năng ban đầu của nó đã được phát triển, phát hành và thuộc bản quyền của <a href="https://www.phpbb.com/">công ty phpBB</a>. Nó được phát hành dưới bản quyền của <em>GNU General Public License</em> và phân phối hoàn toàn miễn phí. Bạn hãy ghé thăm website chính của chúng tôi để tìm hiểu thêm thông tin về phpBB.'
+		1 => 'Chương trình này với những chức năng ban đầu của nó đã được phát triển, phát hành và thuộc bản quyền của <a href="https://www.phpbb.com/">công ty phpBB</a>. Nó được phát hành dưới những điều khoản sử dụng của giấy phép <em>GNU General Public License</em>, phiên bản 2 (GPL-2.0) và được phép tự do phân phối lại. Ghé thăm <a href="https://www.phpbb.com/about/">trang giới thiệu phpBB</a> để tìm hiểu thêm thông tin.'
 	),
 	array(
 		0 => 'Tại sao hệ thống không có những chức năng khác?',
@@ -344,5 +352,9 @@ $help = array(
 	array(
 		0 => 'Tôi phải liên hệ với ai về việc lạm dụng và vi phạm pháp luật liên quan đến website này?',
 		1 => 'Bất kì người quản trị nào được liệt kê trong trang “Ban điều hành” đều là người thích hợp cho bạn cần liên hệ hay gửi các thắc mắc của mình. Nếu như việc liên hệ này không có phản hồi nào, bạn nên liên hệ với người quản lí tên miền này bằng cách thực hiện <a href="http://www.google.com/search?q=whois">tra cứu trên miền</a> hoặc nếu website này đang chạy trên một dịch vụ lưu trữ Web miễn phí như Yahoo!, free.fr, f2s.com… thì bạn hãy thử liên hệ với người quản lí hay bộ phận giải quyết các vi phạm của dịch vụ đó. Bạn cần lưu ý rằng <em>công ty phpBB</em> hoàn toàn <strong>không liên quan và không chịu trách nhiệm</strong> đến bất kì vấn đề nào xảy ra trong website này ở bất kì đâu và với bất kì ai sử dụng chương trình này. Sẽ hoàn toàn vô nghĩa nếu bạn tìm cách liên hệ với <em>công ty phpBB</em> về các vấn đề liên quan đến pháp luật, các trách nhiệm pháp lý, những bài viết nói xấu lẫn nhau… nếu nó <strong>không liên quan trực tiếp</strong> đến website phpBB.com hoặc những chương trình riêng biệt của chính phpBB. Nếu bạn gửi email cho <em>công ty phpBB</em> về <strong>bất kì vấn đề nào phát sinh từ bên thứ ba</strong> trong việc sử dụng chương trình này của người dùng cuối thì có thể bạn sẽ nhận được một hồi âm ngắn gọn hoặc không có sự phản hồi nào.'
+	),
+	array(
+		0 => 'Làm thế nào tôi có thể liên hệ người quản trị?',
+		1 => 'Tất cả người dùng trên hệ thống có thể vào trang “Liên hệ” để thực hiện việc này, nếu nó được người quản trị cho phép sử dụng.<br />Ngoài ra, nếu bạn đã đăng ký thành viên có thể sử dụng liên kết “Ban điều hành”.',
 	),
 );

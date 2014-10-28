@@ -4,7 +4,7 @@
 * acp/language [Vietnamese]
 *
 * @package language
-* @version 1.25
+* @version 1.26
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -54,8 +54,8 @@ $lang = array_merge($lang, array(
 	'LANGUAGE_PACK_DELETED'				=> 'Ngôn ngữ “%s” đã được gỡ bỏ thành công. Tất cả người dùng đang sử dụng ngôn ngữ này sẽ được tự động thay bằng ngôn ngữ mặc định của hệ thống.',
 	'LANGUAGE_PACK_DETAILS'				=> 'Thông tin chi tiết về ngôn ngữ',
 	'LANGUAGE_PACK_INSTALLED'			=> 'Ngôn ngữ “%s” đã được cài đặt thành công.',
-	'LANGUAGE_PACK_ISO'					=> 'Mã ISO ngôn ngữ',
-	'LANGUAGE_PACK_LOCALNAME'			=> 'Tên hệ thống',
+	'LANGUAGE_PACK_ISO'					=> 'Mã ISO',
+	'LANGUAGE_PACK_LOCALNAME'			=> 'Tên địa phương',
 	'LANGUAGE_PACK_NAME'				=> 'Tên',
 	'LANGUAGE_PACK_NOT_EXIST'			=> 'Ngôn ngữ vừa chọn không tồn tại.',
 	'LANGUAGE_PACK_USED_BY'				=> 'Số người sử dụng (Bao gồm máy tìm kiếm)',

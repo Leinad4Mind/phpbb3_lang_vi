@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version 1.164
+* @version 1.165
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -601,7 +601,7 @@ $lang = array_merge($lang, array(
 	'PRIVATE_MESSAGING'			=> 'Đang gửi tin nhắn',
 	'PROFILE'					=> 'Thiết lập cá nhân',
 
-	'QUICK_LINKS'	=> 'Thao tác nhanh',
+	'QUICK_LINKS'	=> 'Tiện ích',
 
 	'RANK'						=> 'Danh hiệu',
 	'READING_FORUM'				=> 'Đang xem các chủ đề trong chuyên mục %s',
