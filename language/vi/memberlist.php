@@ -4,7 +4,7 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version 1.50
+* @version 1.51
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -57,6 +57,7 @@ $lang = array_merge($lang, array(
 	'DEST_LANG'			=> 'Ngôn ngữ',
 	'DEST_LANG_EXPLAIN'	=> 'Chọn một ngôn ngữ thích hợp cho người nhận tin nhắn này.',
 
+	'EDIT_PROFILE'			=> 'Sửa thông tin cá nhân',
 	'EMAIL_BODY_EXPLAIN'	=> 'Email này sẽ được gửi dưới dạng văn bản thuần túy, vì thế bạn đừng sử dụng bất cứ thẻ HTML hay BBCode nào trong nội dung email này. Địa chỉ hồi âm của email này sẽ được thiết lập là địa chỉ email của bạn.',
 	'EMAIL_DISABLED'		=> 'Xin lỗi, tất cả chức năng liên quan đến email trong hệ thống đã bị vô hiệu.',
 	'EMAIL_SENT'			=> 'Email đã được gửi thành công.',

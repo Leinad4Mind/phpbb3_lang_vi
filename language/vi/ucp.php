@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version 1.126
+* @version 1.127
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -418,6 +418,8 @@ $lang = array_merge($lang, array(
 	'PM_FROM_REMOVED_AUTHOR'			=> 'Tin nhắn này được gửi bởi một người dùng đã bị xóa khỏi hệ thống.',
 	'PM_ICON'							=> 'Biểu tượng tin nhắn',
 	'PM_INBOX'							=> 'Hộp tin nhận',
+	'PM_MARK_ALL_READ'					=> 'Đánh dấu đã xem tất cả tin nhắn',
+	'PM_MARK_ALL_READ_SUCCESS'			=> 'Tất cả tin nhắn trong thư mục này đã được đánh dấu xem rồi.',
 	'PM_NO_USERS'						=> 'Người dùng bạn vừa yêu cầu thêm vào không tồn tại.',
 	'PM_OUTBOX'							=> 'Hộp tin chuyển đi',
 	'PM_SENTBOX'						=> 'Hộp tin đã gửi',
@@ -590,6 +592,7 @@ $lang = array_merge($lang, array(
 	),
 	'VIEW_PREVIOUS_HISTORY'		=> 'Tin nhắn trước trong quá trình gửi tin',
 	'VIEW_PREVIOUS_PM'			=> 'Tin nhắn trước',
+	'VIEW_PROFILE'				=> 'Xem thông tin cá nhân',
 	'VIEW_SIGS'					=> 'Hiển thị chữ ký cá nhân',
 	'VIEW_SMILIES'				=> 'Hiển thị biểu tượng vui',
 	'VIEW_TOPICS_DAYS'			=> 'Hiển thị những chủ đề cách đây',

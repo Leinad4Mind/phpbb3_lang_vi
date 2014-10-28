@@ -4,7 +4,7 @@
 * acp/search [Vietnamese]
 *
 * @package language
-* @version 1.36
+* @version 1.37
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -73,7 +73,7 @@ $lang = array_merge($lang, array(
 	'FULLTEXT_POSTGRES_VERSION_CHECK'			=> 'Phiên bản PostgreSQL',
 	'FULLTEXT_POSTGRES_VERSION_CHECK_EXPLAIN'	=> 'Phương pháp tìm kiếm này yêu cầu phiên bản PostgreSQL 8.3 trở lên.',
 	'FULLTEXT_SPHINX_CONFIG_FILE'				=> 'Tập tin cấu hình Sphinx',
-	'FULLTEXT_SPHINX_CONFIG_FILE_EXPLAIN'		=> 'Nội dung được tạo ra của tập tin cấu hình Sphinx. Nội dung này cần được sao chép chính xác vào tập tin <samp>sphinx.conf</samp> để thư viện tìm kiếm Sphinx sử dụng.',
+	'FULLTEXT_SPHINX_CONFIG_FILE_EXPLAIN'		=> 'Nội dung được tạo ra của tập tin cấu hình Sphinx. Nội dung này cần được sao chép chính xác vào tập tin <samp>sphinx.conf</samp> để thư viện tìm kiếm Sphinx sử dụng. Thay thế chuỗi [dbuser] và [dbpassword] bằng tên đăng nhập và mật khẩu cơ sở dữ liệu.',
 	'FULLTEXT_SPHINX_CONFIGURE'					=> 'Thiết lập các mục dưới đây để tạo ra tập tin cấu hình cho Sphinx',
 	'FULLTEXT_SPHINX_DATA_PATH'					=> 'Đường dẫn đến thư mục dữ liệu',
 	'FULLTEXT_SPHINX_DATA_PATH_EXPLAIN'			=> 'Thư mục này được dùng để lưu các chỉ mục tìm kiếm và tập tin ghi nhận. Bạn nên tạo thư mục này nằm ngoài thư mục quản lí website trên máy chủ và sử dụng dấu / trên đường dẫn thư mục.',
