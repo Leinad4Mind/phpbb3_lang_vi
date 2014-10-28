@@ -4,7 +4,7 @@
 * acp/board [Vietnamese]
 *
 * @package language
-* @version 1.113
+* @version 1.114
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -46,17 +46,21 @@ $lang = array_merge($lang, array(
 
 	'BOARD_INDEX_TEXT'				=> 'Tên chỉ mục trang chủ',
 	'BOARD_INDEX_TEXT_EXPLAIN'		=> 'Tên hiển thị cho trang chủ của hệ thống trên nhánh trình đơn duyệt trang. Nếu bạn không xác định, tên mặc định “Trang chủ” sẽ được sử dụng.',
+	'BOARD_STYLE'					=> 'Giao diện',
 	'CUSTOM_DATEFORMAT'				=> 'Tùy chọn…',
 	'DEFAULT_DATE_FORMAT'			=> 'Định dạng ngày tháng',
 	'DEFAULT_DATE_FORMAT_EXPLAIN'	=> 'Sử dụng cú pháp giống như hàm <code>date()</code> trong PHP.',
 	'DEFAULT_LANGUAGE'				=> 'Ngôn ngữ mặc định',
 	'DEFAULT_STYLE'					=> 'Giao diện mặc định',
+	'DEFAULT_STYLE_EXPLAIN'			=> 'Giao diện mặc định cho người dùng mới đăng ký.',
 	'DISABLE_BOARD'					=> 'Ngưng hoạt động hệ thống',
 	'DISABLE_BOARD_EXPLAIN'			=> 'Tùy chọn này sẽ ngưng hoạt động của hệ thống đối với những người dùng không phải quản trị viên hay điều hành viên. Bạn cũng có nhập vào một tin nhắn giới hạn trong <strong>255</strong> ký tự hiển thị như thông báo ngưng hoạt động của hệ thống nếu muốn.',
 	'DISPLAY_LAST_SUBJECT'			=> 'Hiện bài viết sau cùng trên các chuyên mục',
 	'DISPLAY_LAST_SUBJECT_EXPLAIN'	=> 'Hiện tiêu đề của bài viết được gửi sau cùng tại mỗi chuyên mục với liên kết dẫn đến bài viết đó. Tiêu đề bài viết từ chuyên mục có mật khẩu bảo vệ hay chuyên mục người dùng không được phép xem nội dung sẽ không hiện ra.',
+	'GUEST_STYLE'					=> 'Giao diện khách',
+	'GUEST_STYLE_EXPLAIN'			=> 'Giao diện hiển thị dành cho khách.',
 	'OVERRIDE_STYLE'				=> 'Thay thế cho giao diện lựa chọn của người dùng',
-	'OVERRIDE_STYLE_EXPLAIN'		=> 'Tùy chọn thay thế toàn bộ những giao diện đã được người dùng lựa chọn bằng giao diện mặc định duy nhất của hệ thống.',
+	'OVERRIDE_STYLE_EXPLAIN'		=> 'Thay thế những giao diện đã được người dùng lựa chọn cũng như giao diện khách bằng giao diện mặc định của hệ thống.',
 	'SITE_DESC'						=> 'Giới thiệu về website',
 	'SITE_HOME_TEXT'				=> 'Tên trang chủ website',
 	'SITE_HOME_TEXT_EXPLAIN'		=> 'Tên hiển thị cho trang chủ website chính trên nhánh trình đơn duyệt trang. Nếu bạn không xác định, tên mặc định “Trang chủ” sẽ được sử dụng.',

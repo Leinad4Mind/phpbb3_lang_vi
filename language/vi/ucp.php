@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version 1.125
+* @version 1.126
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -200,59 +200,63 @@ $lang = array_merge($lang, array(
 	'EXPORT_AS_MSG'				=> 'Định dạng CSV MSG',
 	'EXPORT_FOLDER'				=> 'Xuất thư mục đang xem',
 
-	'FIELD_REQUIRED'					=> 'Mục thông tin “%s” không được để trống.',
-	'FIELD_TOO_SHORT'					=> array(
+	'FIELD_REQUIRED'								=> 'Mục thông tin “%s” không được để trống.',
+	'FIELD_TOO_SHORT'								=> array(
 		1	=> 'Mục thông tin “%2$s” quá ngắn, tối thiểu phải có ít nhất <strong>%1$d</strong> ký tự.',
 		2	=> 'Mục thông tin “%2$s” quá ngắn, tối thiểu phải có ít nhất <strong>%1$d</strong> ký tự.',
 	),
-	'FIELD_TOO_LONG'					=> array(
+	'FIELD_TOO_LONG'								=> array(
 		1	=> 'Mục thông tin “%2$s” quá dài, tối đa chỉ có <strong>%1$d</strong> ký tự được phép sử dụng.',
 		2	=> 'Mục thông tin “%2$s” quá dài, tối đa chỉ có <strong>%1$d</strong> ký tự được phép sử dụng.',
 	),
-	'FIELD_TOO_SMALL'						=> 'Giá trị của mục “%2$s” quá nhỏ, giá trị tối thiểu bắt buộc sử dụng là <strong>%1$d</strong>.',
-	'FIELD_TOO_LARGE'						=> 'Giá trị của mục “%2$s” quá lớn, giá trị tối đa được phép sử dụng là <strong>%1$d</strong>.',
-	'FIELD_INVALID_CHARS_INVALID'			=> 'Mục thông tin “%s” chứa ký tự không hợp lệ.',
-	'FIELD_INVALID_CHARS_NUMBERS_ONLY'		=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào số.',
-	'FIELD_INVALID_CHARS_ALPHA_DOTS'		=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số và dấu chấm.',
-	'FIELD_INVALID_CHARS_ALPHA_ONLY'		=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ và số.',
-	'FIELD_INVALID_CHARS_ALPHA_PUNCTUATION'	=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số và các dấu _ , - . nhưng ký tự đầu tiên phải là chữ.',
-	'FIELD_INVALID_CHARS_ALPHA_SPACERS'		=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số, khoảng trắng và các dấu - + _ [ ] đi kèm.',
-	'FIELD_INVALID_CHARS_ALPHA_UNDERSCORE'	=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số và dấu gạch dưới _ đi kèm.',
-	'FIELD_INVALID_DATE'					=> 'Mục thông tin “%s” chứa ngày tháng không hợp lệ.',
-	'FIELD_INVALID_URL'						=> 'Mục thông tin “%s” chứa địa chỉ URL không hợp lệ.',
-	'FIELD_INVALID_VALUE'					=> 'Mục thông tin “%s” chứa giá trị không hợp lệ.',
-
-	'FOE_MESSAGE'					=> 'Tin nhắn từ người bị chặn',
-	'FOES_EXPLAIN'					=> 'Người bị chặn là những người dùng đã được bạn thiết lập mặc định không quan hệ. Các bài viết được gửi bởi những người dùng này sẽ không được hiển thị khi bạn xem. Các tin nhắn từ họ vẫn được phép gửi đến bạn. Lưu ý rằng bạn không thể thêm vào danh sách chặn của mình các điều hành viên hay quản trị viên trong website.',
-	'FOES_UPDATED'					=> 'Danh sách chặn của bạn đã được cập nhật thành công.',
-	'FOLDER_ADDED'					=> 'Thư mục đã được tạo thành công.',
-	'FOLDER_MESSAGE_STATUS'			=> array(
+	'FIELD_TOO_SMALL'								=> 'Giá trị của mục “%2$s” quá nhỏ, giá trị tối thiểu bắt buộc sử dụng là <strong>%1$d</strong>.',
+	'FIELD_TOO_LARGE'								=> 'Giá trị của mục “%2$s” quá lớn, giá trị tối đa được phép sử dụng là <strong>%1$d</strong>.',
+	'FIELD_INVALID_CHARS_INVALID'					=> 'Mục thông tin “%s” chứa ký tự không hợp lệ.',
+	'FIELD_INVALID_CHARS_NUMBERS_ONLY'				=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào số.',
+	'FIELD_INVALID_CHARS_ALPHA_DOTS'				=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số và dấu chấm.',
+	'FIELD_INVALID_CHARS_ALPHA_ONLY'				=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ và số.',
+	'FIELD_INVALID_CHARS_ALPHA_PUNCTUATION'			=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số và các dấu _ , - . nhưng ký tự đầu tiên phải là chữ.',
+	'FIELD_INVALID_CHARS_ALPHA_SPACERS'				=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số, khoảng trắng và các dấu - + _ [ ] đi kèm.',
+	'FIELD_INVALID_CHARS_ALPHA_UNDERSCORE'			=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số và dấu gạch dưới _ đi kèm.',
+	'FIELD_INVALID_CHARS_LETTER_NUM_DOTS'			=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số và dấu chấm.',
+	'FIELD_INVALID_CHARS_LETTER_NUM_ONLY'			=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ và số.',
+	'FIELD_INVALID_CHARS_LETTER_NUM_PUNCTUATION'	=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số và các dấu _ , - . nhưng ký tự đầu tiên phải là chữ.',
+	'FIELD_INVALID_CHARS_LETTER_NUM_SPACERS'		=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số, khoảng trắng và các dấu - + _ [ ] đi kèm.',
+	'FIELD_INVALID_CHARS_LETTER_NUM_UNDERSCORE'		=> 'Mục thông tin “%s” chứa ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ, số và dấu gạch dưới _ đi kèm.',
+	'FIELD_INVALID_DATE'							=> 'Mục thông tin “%s” chứa ngày tháng không hợp lệ.',
+	'FIELD_INVALID_URL'								=> 'Mục thông tin “%s” chứa địa chỉ URL không hợp lệ.',
+	'FIELD_INVALID_VALUE'							=> 'Mục thông tin “%s” chứa giá trị không hợp lệ.',
+	'FOE_MESSAGE'									=> 'Tin nhắn từ người bị chặn',
+	'FOES_EXPLAIN'									=> 'Người bị chặn là những người dùng đã được bạn thiết lập mặc định không quan hệ. Các bài viết được gửi bởi những người dùng này sẽ không được hiển thị khi bạn xem. Các tin nhắn từ họ vẫn được phép gửi đến bạn. Lưu ý rằng bạn không thể thêm vào danh sách chặn của mình các điều hành viên hay quản trị viên trong website.',
+	'FOES_UPDATED'									=> 'Danh sách chặn của bạn đã được cập nhật thành công.',
+	'FOLDER_ADDED'									=> 'Thư mục đã được tạo thành công.',
+	'FOLDER_MESSAGE_STATUS'							=> array(
 		1	=> '%2$d / %1$s',
 		2	=> '%2$d / %1$s',
 	),
-	'FOLDER_NAME_EMPTY'				=> 'Bạn phải nhập tên cho thư mục này.',
-	'FOLDER_NAME_EXIST'				=> 'Thư mục mang tên “%s” đã có rồi.',
-	'FOLDER_OPTIONS'				=> 'Tùy chọn thư mục',
-	'FOLDER_RENAMED'				=> 'Thư mục đã được đổi tên thành công.',
-	'FOLDER_REMOVED'				=> 'Thư mục đã được gỡ bỏ thành công.',
-	'FOLDER_STATUS_MSG'				=> array(
+	'FOLDER_NAME_EMPTY'								=> 'Bạn phải nhập tên cho thư mục này.',
+	'FOLDER_NAME_EXIST'								=> 'Thư mục mang tên “%s” đã có rồi.',
+	'FOLDER_OPTIONS'								=> 'Tùy chọn thư mục',
+	'FOLDER_RENAMED'								=> 'Thư mục đã được đổi tên thành công.',
+	'FOLDER_REMOVED'								=> 'Thư mục đã được gỡ bỏ thành công.',
+	'FOLDER_STATUS_MSG'								=> array(
 		1	=> 'Dung lượng đầy: <strong>%3$d%%</strong> (%2$d / %1$s)',
 		2	=> 'Dung lượng đầy: <strong>%3$d%%</strong> (%2$d / %1$s)',
 	),
-	'FORWARD_PM'					=> 'Chuyển tiếp tin nhắn',
-	'FORCE_PASSWORD_EXPLAIN'		=> 'Trước khi bạn có thể tiếp tục truy cập website, bạn được yêu cầu phải thay đổi mật khẩu hiện tại của mình.',
-	'FRIEND_MESSAGE'				=> 'Tin nhắn từ bạn bè',
-	'FRIENDS'						=> 'Bạn bè',
-	'FRIENDS_EXPLAIN'				=> 'Bạn bè là những người dùng đã được bạn thiết lập mặc định để có thể nhanh chóng liên lạc với họ hoặc liên lạc thường xuyên. Nếu giao diện bạn đang sử dụng trong hệ thống có hỗ trợ, bất kì bài viết nào được gửi từ bạn bè của bạn đều được đánh dấu nổi bật.',
-	'FRIENDS_OFFLINE'				=> 'Bạn bè ngoại tuyến',
-	'FRIENDS_ONLINE'				=> 'Bạn bè trực tuyến',
-	'FRIENDS_UPDATED'				=> 'Danh sách bạn bè của bạn đã được cập nhật thành công.',
-	'FULL_FOLDER_OPTION_CHANGED'	=> 'Thiết lập thao tác xử lí mặc định khi thư mục đầy đã được cập nhật thành công.',
-	'FWD_ORIGINAL_MESSAGE'			=> '-------- Nội dung gốc --------',
-	'FWD_SUBJECT'					=> 'Tiêu đề: %s',
-	'FWD_DATE'						=> 'Ngày gửi: %s',
-	'FWD_FROM'						=> 'Người gửi: %s',
-	'FWD_TO'						=> 'Người nhận: %s',
+	'FORWARD_PM'									=> 'Chuyển tiếp tin nhắn',
+	'FORCE_PASSWORD_EXPLAIN'						=> 'Trước khi bạn có thể tiếp tục truy cập website, bạn được yêu cầu phải thay đổi mật khẩu hiện tại của mình.',
+	'FRIEND_MESSAGE'								=> 'Tin nhắn từ bạn bè',
+	'FRIENDS'										=> 'Bạn bè',
+	'FRIENDS_EXPLAIN'								=> 'Bạn bè là những người dùng đã được bạn thiết lập mặc định để có thể nhanh chóng liên lạc với họ hoặc liên lạc thường xuyên. Nếu giao diện bạn đang sử dụng trong hệ thống có hỗ trợ, bất kì bài viết nào được gửi từ bạn bè của bạn đều được đánh dấu nổi bật.',
+	'FRIENDS_OFFLINE'								=> 'Bạn bè ngoại tuyến',
+	'FRIENDS_ONLINE'								=> 'Bạn bè trực tuyến',
+	'FRIENDS_UPDATED'								=> 'Danh sách bạn bè của bạn đã được cập nhật thành công.',
+	'FULL_FOLDER_OPTION_CHANGED'					=> 'Thiết lập thao tác xử lí mặc định khi thư mục đầy đã được cập nhật thành công.',
+	'FWD_ORIGINAL_MESSAGE'							=> '-------- Nội dung gốc --------',
+	'FWD_SUBJECT'									=> 'Tiêu đề: %s',
+	'FWD_DATE'										=> 'Ngày gửi: %s',
+	'FWD_FROM'										=> 'Người gửi: %s',
+	'FWD_TO'										=> 'Người nhận: %s',
 
 	'GLOBAL_ANNOUNCEMENT'	=> 'Thông báo chung',
 

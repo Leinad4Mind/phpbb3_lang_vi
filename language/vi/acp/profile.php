@@ -4,7 +4,7 @@
 * acp/profile [Vietnamese]
 *
 * @package language
-* @version 1.35
+* @version 1.36
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -103,7 +103,7 @@ $lang = array_merge($lang, array(
 	'FIELD_IDENT_EXPLAIN'		=> 'Tên mục thông tin cá nhân là tên xác định mục thông tin cá nhân trong cơ sở dữ liệu và trong các tập tin khuôn mẫu.',
 	'FIELD_INT'					=> 'Chữ số',
 	'FIELD_IS_CONTACT'			=> 'Mục thông tin cá nhân dùng để liên lạc',
-	'FIELD_IS_CONTACT_EXPLAIN'	=> 'Các mục thông tin liên lạc được hiển thị khác biệt trong một góc nhỏ riêng để người xem liên hệ với người gửi bài ngay sau số bài viết và nút nhắn tin.',
+	'FIELD_IS_CONTACT_EXPLAIN'	=> 'Các mục thông tin liên lạc được hiển thị khác biệt trong một góc nhỏ riêng để người xem liên hệ với người gửi bài ngay sau số bài viết và nút nhắn tin. Bạn có thể sử dụng <samp>%s</samp> như một biến giá trị động thay thế cho giá trị nhập vào bởi người dùng.',
 	'FIELD_LENGTH'				=> 'Độ dài khung nhập',
 	'FIELD_NOT_FOUND'			=> 'Không tìm thấy mục thông tin cá nhân.',
 	'FIELD_STRING'				=> 'Trường văn bản đơn',
@@ -122,6 +122,11 @@ $lang = array_merge($lang, array(
 	'ISO_LANGUAGE'				=> 'Ngôn ngữ [%s]',
 
 	'LANG_SPECIFIC_OPTIONS'		=> 'Tùy chọn xác định ngôn ngữ [<b>%s</b>]',
+	'LETTER_NUM_DOTS'			=> 'Bất kì chữ, số và dấu chấm',
+	'LETTER_NUM_ONLY'			=> 'Bất kì chữ và số',
+	'LETTER_NUM_PUNCTUATION'	=> 'Bất kì chữ, số, dấu phẩy, dấu chấm, dấu gạch dưới và dấu gạch ngang nhưng bắt đầu bằng chữ',
+	'LETTER_NUM_SPACERS'		=> 'Bất kì chữ, số và khoảng trắng',
+	'LETTER_NUM_UNDERSCORE'		=> 'Bất kì chữ, số và dấu gạch dưới',
 
 	'MAX_FIELD_CHARS'		=> 'Số lượng ký tự tối đa cho phép sử dụng',
 	'MAX_FIELD_NUMBER'		=> 'Số tối đa cho phép sử dụng',

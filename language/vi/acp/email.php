@@ -4,7 +4,7 @@
 * acp/email [Vietnamese]
 *
 * @package language
-* @version 1.19
+* @version 1.20
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -42,7 +42,7 @@ if (empty($lang) || !is_array($lang))
 
 // Email settings
 $lang = array_merge($lang, array(
-	'ACP_MASS_EMAIL_EXPLAIN'	=> 'Công cụ này sẽ giúp bạn gửi email đến tất cả người dùng trong hệ thống hoặc tất cả thành viên trong một nhóm xác định <strong>đã bật tùy chọn nhận các email thông báo trong phần thiết lập cá nhân</strong>. Để thực hiện quá trình trên, một email sẽ được gửi đến địa chỉ email của quản trị viên đã được cung cấp với bản sao được gửi đến cho tất cả người nhận đã chọn. Thiết lập mặc định chỉ đính kèm 50 người nhận trong một email như thế, càng nhiều người nhận thì càng có nhiều email được gửi đi. Nếu bạn gửi email cho một nhóm lớn có rất đông thành viên, hãy kiên nhẫn chờ đợi sau khi bấm vào nút gửi và đừng dừng nạp trang này lại. Điều này là bình thường vì thời gian chờ đợi tỉ lệ thuận với số lượng người nhận và bạn sẽ được thông báo khi quá trình gửi email hoàn tất.',
+	'ACP_MASS_EMAIL_EXPLAIN'	=> 'Công cụ này sẽ giúp bạn gửi email đến tất cả người dùng trong hệ thống hoặc tất cả thành viên trong một nhóm xác định <strong>đã bật tùy chọn nhận các email thông báo trong phần thiết lập cá nhân</strong>. Để thực hiện quá trình trên, một email sẽ được gửi đến địa chỉ email của quản trị viên đã được cung cấp với bản sao được gửi đến cho tất cả người nhận đã chọn. Thiết lập mặc định chỉ đính kèm 20 người nhận trong một email như thế, càng nhiều người nhận thì càng có nhiều email được gửi đi. Nếu bạn gửi email cho một nhóm lớn có rất đông thành viên, hãy kiên nhẫn chờ đợi sau khi bấm vào nút gửi và đừng dừng nạp trang này lại. Điều này là bình thường vì thời gian chờ đợi tỉ lệ thuận với số lượng người nhận và bạn sẽ được thông báo khi quá trình gửi email hoàn tất.',
 	'ALL_USERS'					=> 'Tất cả người dùng',
 
 	'COMPOSE'				=> 'Soạn nội dung',
