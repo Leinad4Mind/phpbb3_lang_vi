@@ -4,7 +4,7 @@
 * acp/board [Vietnamese]
 *
 * @package language
-* @version 1.112
+* @version 1.113
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -301,6 +301,7 @@ $lang = array_merge($lang, array(
 
 // Visual Confirmation Settings
 $lang = array_merge($lang, array(
+	'ACP_VC_EXT_GET_MORE'		=> 'Để sử dụng nhiều phần mở rộng khác, hãy ghé thăm <a href="https://www.phpbb.com/go/anti-spam-ext"><strong>trang tiện ích phần mở rộng</strong></a> tại trang chủ phpBB.com. Để tăng thêm hiểu biết về cách ngăn chặn các công cụ nhập liệu tự động, bạn có thể đọc thêm tại <a href="https://www.phpbb.com/go/anti-spam"><strong>thư viện kiến thức</strong></a> của phpBB.com.',
 	'ACP_VC_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể lựa chọn và cấu hình các phần mở rộng được thiết kế để ngăn chặn các công cụ nhập liệu tự động. Đây là phương pháp kiểm tra người dùng để xác định xem họ có phải là con người thực sự hay không và gây khó cho các máy tính xử lí tự động với mục đích tạo ra dữ liệu rác trong hệ thống.',
 	'AVAILABLE_CAPTCHAS'		=> 'Những phần mở rộng có thể sử dụng',
 

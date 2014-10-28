@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version 1.60
+* @version 1.61
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -97,7 +97,7 @@ $lang = array_merge($lang, array(
 	'DELETE_POST_PERMANENTLY'			=> 'Không thể phục hồi lại bài viết này một khi đã xóa vĩnh viễn',
 	'DELETE_POSTS_CONFIRM'				=> 'Bạn có chắc chắn muốn xóa những bài viết đã chọn?',
 	'DELETE_POSTS_PERMANENTLY_CONFIRM'	=> 'Bạn có chắc chắn muốn xóa <strong>vĩnh viễn</strong> những bài viết này?',
-	'DELETE_REASON'						=> 'Lý do xóa nháp',
+	'DELETE_REASON'						=> 'Lý do xóa bài',
 	'DELETE_REASON_EXPLAIN'				=> 'Chỉ có điều hành viên mới xem được lý do xóa bài.',
 	'DELETE_POST_WARN'					=> 'Xóa bài viết này',
 	'DELETE_TOPIC_CONFIRM'				=> 'Bạn có chắc chắn muốn xóa chủ đề này?',

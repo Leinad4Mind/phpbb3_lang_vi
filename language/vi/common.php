@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version 1.162
+* @version 1.163
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -522,6 +522,10 @@ $lang = array_merge($lang, array(
 	'NO_USER_SPECIFIED'						=> 'Không có tên tài khoản nào được xác định.',
 
 	// Nullar/Singular/Plural language entry. The key numbers define the number range in which a certain grammatical expression is valid.
+	'NUM_ATTACHMENTS'			=> array(
+		1	=> '%d tập tin đính kèm',
+		2	=> '%d tập tin đính kèm',
+	),
 	'NUM_POSTS_IN_QUEUE'		=> array(
 		0	=> 'Không có bài viết nào chờ kiểm duyệt', // 0
 		1	=> '<strong>1</strong> bài viết chờ kiểm duyệt', // 1
@@ -862,6 +866,10 @@ $lang = array_merge($lang, array(
 	'WRONG_DATA_COLOUR'		=> 'Mã màu bạn nhập không hợp lệ.',
 	'WRONG_DATA_JABBER'		=> 'Tên tài khoản Jabber bạn nhập không hợp lệ.',
 	'WRONG_DATA_LANG'		=> 'Ngôn ngữ bạn nhập không hợp lệ.',
+	'WRONG_DATA_POST_SD'	=> 'Thứ tự sắp xếp bài viết bạn chọn không hợp lệ.',
+	'WRONG_DATA_POST_SK'	=> 'Tùy chọn sắp xếp bài viết bạn chọn không hợp lệ.',
+	'WRONG_DATA_TOPIC_SD'	=> 'Thứ tự sắp xếp chủ đề bạn chọn không hợp lệ.',
+	'WRONG_DATA_TOPIC_SK'	=> 'Tùy chọn sắp xếp chủ đề bạn chọn không hợp lệ.',
 	'WROTE'					=> 'đã viết',
 
 	'YAHOO'				=> 'Tài khoản Yahoo',

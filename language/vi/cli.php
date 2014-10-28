@@ -4,7 +4,7 @@
 * cli [Vietnamese]
 *
 * @package language
-* @version 1.00
+* @version 1.01
 * @copyright (c) 2014 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -79,6 +79,9 @@ $lang = array_merge($lang, array(
 	'CLI_EXTENSION_PURGE_FAILURE'	=> 'Không thể xóa dữ liệu của phần mở rộng %s',
 	'CLI_EXTENSION_PURGE_SUCCESS'	=> 'Đã xóa dữ liệu của phần mở rộng %s thành công',
 	'CLI_EXTENSION_NOT_FOUND'		=> 'Không có phần mở rộng nào.',
+	'CLI_EXTENSIONS_AVAILABLE'		=> 'Chưa cài đặt',
+	'CLI_EXTENSIONS_DISABLED'		=> 'Đã vô hiệu',
+	'CLI_EXTENSIONS_ENABLED'		=> 'Đã cài đặt',
 
 	'CLI_FIXUP_RECALCULATE_EMAIL_HASH_SUCCESS'	=> 'Đã tạo lại chuỗi mã hóa cho toàn bộ địa chỉ email thành công.',
 ));

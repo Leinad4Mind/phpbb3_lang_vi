@@ -4,7 +4,7 @@
 * search [Vietnamese]
 *
 * @package language
-* @version 1.34
+* @version 1.35
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -55,7 +55,8 @@ $lang = array_merge($lang, array(
 		2	=> 'Đã tìm thấy nhiều hơn <strong>%d</strong> kết quả',
 	),
 
-	'GLOBAL'	=> 'Thông báo chung',
+	'GLOBAL'			=> 'Thông báo chung',
+	'GO_TO_SEARCH_ADV'	=> 'Chọn tìm kiếm nâng cao',
 
 	'IGNORED_TERMS'			=> 'không được phép sử dụng',
 	'IGNORED_TERMS_EXPLAIN'	=> 'Những từ khóa tìm kiếm của bạn dưới đây không được phép sử dụng bởi vì chúng là những từ phổ biến: <strong>%s</strong>.',
@@ -90,7 +91,6 @@ $lang = array_merge($lang, array(
 	'RESULT_DAYS'			=> 'Giới hạn kết quả tìm được cách đây',
 	'RESULT_SORT'			=> 'Sắp xếp kết quả tìm được theo',
 	'RETURN_FIRST'			=> 'Xem trước nội dung trong khoảng',
-	'RETURN_TO_SEARCH_ADV'	=> 'Quay về tìm kiếm nâng cao',
 
 	'SEARCHED_FOR'				=> 'Điều kiện tìm đã sử dụng',
 	'SEARCHED_TOPIC'			=> 'Chủ đề đã tìm',
