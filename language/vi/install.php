@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version 1.120
+* @version 1.121
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -549,9 +549,9 @@ $lang = array_merge($lang, array(
 		<p>Khuyến cáo bạn rằng đây là cách cập nhật bản cài đặt phpBB3 chỉ hợp lệ với gói cập nhật tự động. Bạn cũng có thể cập nhật bản cài đặt phpBB3 của mình bằng những phương pháp khác đã được liệt kê trong tài liệu <samp>INSTALL.html</samp>. Những bước tiến hành cập nhật tự động hệ thống như sau:</p>
 
 		<ul style="margin-left: 20px; font-size: 1.1em;">
-			<li>Chuyển đến trang <a href="https://www.phpbb.com/downloads/" title="https://www.phpbb.com/downloads/">tải về phpBB</a> và chọn chính xác “Gói cập nhật tự động”.<br /><br /></li>
-			<li>Giải nén gói tập tin vừa tải về.<br /><br /></li>
-			<li>Tải toàn bộ thư mục chính cài đặt hệ thống phpBB sau khi giải nén lên máy chủ của bạn (chung thư mục với tập tin <samp>config.php</samp>).<br /><br /></li>
+			<li>Chuyển đến trang <a href="https://www.phpbb.com/downloads/" title="https://www.phpbb.com/downloads/">tải về phpBB</a> và chọn “Gói cập nhật tự động”.<br /><br /></li>
+			<li>Giải nén tập tin vừa tải về.<br /><br /></li>
+			<li>Xóa thư mục “vendor” cũ trên hệ thống tập tin. Sau đó tải 2 thư mục “install” và “vendor” đã giải nén ở trên lên máy chủ (chung thư mục với tập tin <samp>config.php</samp>).<br /><br /></li>
 		</ul>
 
 		<p>Sau khi đã tải lên xong, hệ thống của bạn sẽ tạm ngưng hoạt động đối với các người dùng bình thường trong suốt thời gian thư mục cài đặt hệ thống mà bạn đã tải lên còn hiện diện.<br /><br />
