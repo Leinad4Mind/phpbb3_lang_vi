@@ -4,7 +4,7 @@
 * acp/styles [Vietnamese]
 *
 * @package language
-* @version 1.65
+* @version 1.66
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -78,6 +78,7 @@ $lang = array_merge($lang, array(
 	'STYLE_INSTALLED_RETURN_INSTALLED_STYLES'	=> 'Quay về danh sách giao diện đã cài',
 	'STYLE_INSTALLED_RETURN_UNINSTALLED_STYLES'	=> 'Cài thêm giao diện khác',
 	'STYLE_NAME'								=> 'Tên giao diện',
+	'STYLE_NAME_RESERVED'						=> 'Giao diện “%s” không thể cài đặt vì tên này dành riêng cho hệ thống sử dụng.',
 	'STYLE_NOT_INSTALLED'						=> 'Giao diện “%s” chưa được cài đặt.',
 	'STYLE_PATH'								=> 'Đường dẫn giao diện',
 	'STYLE_UNINSTALL'							=> 'Gỡ bỏ',

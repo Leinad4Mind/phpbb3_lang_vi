@@ -4,7 +4,7 @@
 * mcp [Vietnamese]
 *
 * @package language
-* @version 1.59
+* @version 1.60
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -240,8 +240,8 @@ $lang = array_merge($lang, array(
 	'NOTIFY_USER_WARN'				=> 'Thông báo cho người dùng biết về việc cảnh cáo?',
 	'NOT_MODERATOR'					=> 'Bạn không phải là người điều hành của chuyên mục này.',
 	'NO_DESTINATION_FORUM'			=> 'Hãy chọn một chuyên mục để tiếp tục.',
-	'NO_DESTINATION_FORUM_FOUND'	=> 'Không có chuyên mục nào có sẵn để chọn.',
-	'NO_ENTRIES'					=> 'Không có mục ghi nhận nào trong thời điểm này.',
+	'NO_DESTINATION_FORUM_FOUND'	=> 'Không chuyên mục nào có sẵn để chọn.',
+	'NO_ENTRIES'					=> 'Không có mục ghi nhận nào.',
 	'NO_FEEDBACK'					=> 'Không có phản hồi nào về người dùng này.',
 	'NO_FINAL_TOPIC_SELECTED'		=> 'Bạn phải chọn một chủ đề để thực hiện nhập chung những bài viết.',
 	'NO_MATCHES_FOUND'				=> 'Không tìm thấy kết quả.',

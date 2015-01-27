@@ -4,7 +4,7 @@
 * acp/board [Vietnamese]
 *
 * @package language
-* @version 1.114
+* @version 1.115
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -225,7 +225,8 @@ $lang = array_merge($lang, array(
 $lang = array_merge($lang, array(
 	'ACP_REGISTER_SETTINGS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thay đổi những thiết lập đăng ký tài khoản và thông tin cá nhân của người dùng trong hệ thống.',
 	'ACC_ACTIVATION'					=> 'Kích hoạt tài khoản',
-	'ACC_ACTIVATION_EXPLAIN'			=> 'Tùy chọn này cho phép bạn quyết định cách thức kích hoạt tài khoản khi đăng ký mới. Bạn cũng có thể cho ngưng đăng ký tài khoản mới với tùy chọn này. Chức năng gửi email trong hệ thống phải được bật để có thể kích hoạt tài khoản bởi người dùng hoặc quản trị viên.',
+	'ACC_ACTIVATION_EXPLAIN'			=> 'Tùy chọn này cho phép bạn quyết định cách thức kích hoạt tài khoản khi đăng ký mới. Bạn cũng có thể cho ngưng đăng ký tài khoản mới với tùy chọn này. <em>Chức năng gửi email trong hệ thống phải được bật để có thể kích hoạt tài khoản bởi người dùng hoặc quản trị viên.</em>',
+	'ACC_ACTIVATION_WARNING'			=> 'Lưu ý rằng cách thức kích hoạt tài khoản bạn đang chọn yêu cầu chức năng gửi email trong hệ thống phải được bật. Nếu không, việc đăng ký tài khoản mới sẽ bị vô hiệu. Chúng tôi khuyên bạn nên chọn một cách thức kích hoạt khác, hoặc cho phép gửi email toàn hệ thống.',
 	'ACC_ADMIN'							=> 'Bởi quản trị viên',
 	'ACC_DISABLE'						=> 'Ngưng đăng ký mới',
 	'ACC_NONE'							=> 'Không cần (tham gia ngay)',
@@ -557,7 +558,7 @@ $lang = array_merge($lang, array(
 	'EMAIL_SIG'						=> 'Chữ ký email',
 	'EMAIL_SIG_EXPLAIN'				=> 'Chữ ký được đính kèm trong tất cả các email được gửi đi từ hệ thống.',
 	'ENABLE_EMAIL'					=> 'Bật chức năng gửi email trong hệ thống',
-	'ENABLE_EMAIL_EXPLAIN'			=> 'Nếu tắt tùy chọn này, sẽ không có email nào được gửi đi từ hệ thống. <em>Lưu ý rằng tùy chọn kích hoạt tài khoản bởi chính người dùng hay quản trị viên qua email phụ thuộc vào tùy chọn này. Nếu bạn đang sử dụng một trong hai loại yêu cầu kích hoạt trên thì khi tắt tùy chọn này cũng đồng nghĩa không yêu cầu kích hoạt tài khoản khi đăng ký.</em>',
+	'ENABLE_EMAIL_EXPLAIN'			=> 'Nếu tắt tùy chọn này, sẽ không có email nào được gửi đi từ hệ thống. <em>Lưu ý rằng tùy chọn kích hoạt tài khoản bởi chính người dùng hay quản trị viên qua email phụ thuộc vào tùy chọn này. Nếu bạn đang sử dụng một trong hai loại yêu cầu kích hoạt trên thì khi tắt tùy chọn này cũng đồng nghĩa việc đăng ký tài khoản mới sẽ bị vô hiệu.</em>',
 	'SMTP_AUTH_METHOD'				=> 'Chọn phương pháp xác thực cho SMTP',
 	'SMTP_AUTH_METHOD_EXPLAIN'		=> 'Chỉ sử dụng nếu tên đăng nhập/mật khẩu xác thực đã được thiết lập. Hãy yêu cầu nhà cung cấp dịch vụ lưu trữ Web của bạn nếu bạn không chắc chắn phải chọn phương pháp nào.',
 	'SMTP_CRAM_MD5'					=> 'CRAM-MD5',
