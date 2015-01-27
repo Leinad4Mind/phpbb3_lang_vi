@@ -1,4 +1,4 @@
-Subject: "{SITENAME}" - Email giới thiệu chủ đề
+Subject: "{SITENAME}" - Gửi email giới thiệu chủ đề
 
 Chào bạn, {TO_USERNAME}
 

@@ -4,7 +4,7 @@
 * captcha_qa [Vietnamese]
 *
 * @package language
-* @version 1.09
+* @version 1.08
 * @copyright (c) 2009 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,22 +23,17 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-/**
-* DEVELOPERS PLEASE NOTE
-*
-* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-*
-* Placeholders can now contain order information, e.g. instead of
-* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-* translators to re-order the output of data while ensuring it remains correct
-*
-* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-* equally where a string contains only two placeholders which are used to wrap text
-* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
-*
-* Some characters you may want to copy & paste:
-* ’ » “ ” …
-*/
+// DEVELOPERS PLEASE NOTE
+//
+// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+//
+// Placeholders can now contain order information, e.g. instead of
+// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+// translators to re-order the output of data while ensuring it remains correct
+//
+// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+// equally where a string contains only two placeholders which are used to wrap text
+// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
 	'ANSWER'			=> 'Trả lời',
@@ -64,3 +59,5 @@ $lang = array_merge($lang, array(
 	'QUESTIONS'					=> 'Các câu hỏi',
 	'QUESTIONS_EXPLAIN'			=> 'Trong mỗi trang nhập liệu có bật chức năng kiểm tra này, người dùng sẽ phải trả lời một trong những câu hỏi đã được thiết lập sẵn. Để sử dụng phần mở rộng này, phải có ít nhất một câu hỏi được thiết lập với ngôn ngữ mặc định của hệ thống. Các câu hỏi nên dễ dàng cho người dùng trả lời nhưng tránh thông dụng vì chương trình tự động có thể truy vấn tìm kiếm thông qua Google. Sử dụng số lượng câu hỏi đa dạng và thường xuyên thay đổi sẽ giúp việc ngăn chặn đạt kết quả tốt. Nếu câu hỏi yêu cầu phân biệt hoa thường, xác định rõ dấu chấm câu hay khoảng trắng, hãy sử dụng tùy chọn kiểm tra chặt chẽ.',
 ));
+
+?>

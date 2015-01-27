@@ -4,7 +4,7 @@
 * acp/common [Vietnamese]
 *
 * @package language
-* @version 1.116
+* @version 1.107
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,22 +23,17 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-/**
-* DEVELOPERS PLEASE NOTE
-*
-* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-*
-* Placeholders can now contain order information, e.g. instead of
-* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-* translators to re-order the output of data while ensuring it remains correct
-*
-* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-* equally where a string contains only two placeholders which are used to wrap text
-* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
-*
-* Some characters you may want to copy & paste:
-* ’ » “ ” …
-*/
+// DEVELOPERS PLEASE NOTE
+//
+// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+//
+// Placeholders can now contain order information, e.g. instead of
+// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+// translators to re-order the output of data while ensuring it remains correct
+//
+// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+// equally where a string contains only two placeholders which are used to wrap text
+// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 // Common
 $lang = array_merge($lang, array(
@@ -65,9 +60,8 @@ $lang = array_merge($lang, array(
 
 	'ACP_CAPTCHA'				=> 'Kiểm tra nhập liệu tự động',
 
-	'ACP_CAT_CUSTOMISE'			=> 'Tùy biến',
 	'ACP_CAT_DATABASE'			=> 'Cơ sở dữ liệu',
-	'ACP_CAT_DOT_MODS'			=> 'Phần mở rộng',
+	'ACP_CAT_DOT_MODS'			=> 'MOD',
 	'ACP_CAT_FORUMS'			=> 'Chuyên mục',
 	'ACP_CAT_GENERAL'			=> 'Tổng quát',
 	'ACP_CAT_MAINTENANCE'		=> 'Bảo trì',
@@ -79,8 +73,6 @@ $lang = array_merge($lang, array(
 	'ACP_CAT_USERS'				=> 'Người dùng',
 	'ACP_CLIENT_COMMUNICATION'	=> 'Ứng dụng truyền thông',
 	'ACP_COOKIE_SETTINGS'		=> 'Thiết lập cookie',
-	'ACP_CONTACT'				=> 'Trang liên hệ',
-	'ACP_CONTACT_SETTINGS'		=> 'Thiết lập trang liên hệ',
 	'ACP_CRITICAL_LOGS'			=> 'Ghi nhận lỗi',
 	'ACP_CUSTOM_PROFILE_FIELDS'	=> 'Tùy biến mục thông tin cá nhân',
 
@@ -90,8 +82,6 @@ $lang = array_merge($lang, array(
 
 	'ACP_EMAIL_SETTINGS'		=> 'Thiết lập email',
 	'ACP_EXTENSION_GROUPS'		=> 'Quản lí nhóm tập tin đính kèm',
-	'ACP_EXTENSION_MANAGEMENT'	=> 'Quản lí phần mở rộng tập tin',
-	'ACP_EXTENSIONS'			=> 'Quản lí phần mở rộng',
 
 	'ACP_FORUM_BASED_PERMISSIONS'	=> 'Cấp phép cho chuyên mục',
 	'ACP_FORUM_LOGS'				=> 'Ghi nhận chuyên mục',
@@ -110,34 +100,32 @@ $lang = array_merge($lang, array(
 	'ACP_GROUPS_MANAGE'				=> 'Quản lí nhóm',
 	'ACP_GROUPS_MANAGEMENT'			=> 'Quản lí nhóm',
 	'ACP_GROUPS_PERMISSIONS'		=> 'Cấp phép nhóm',
-	'ACP_GROUPS_POSITION'			=> 'Quản lí vị trí nhóm',
 
-	'ACP_ICONS'				=> 'Biểu tượng bài viết',
-	'ACP_ICONS_SMILIES'		=> 'Biểu tượng bài viết/biểu tượng vui',
-	'ACP_INACTIVE_USERS'	=> 'Tài khoản chưa kích hoạt',
-	'ACP_INDEX'				=> 'Bảng quản trị',
+	'ACP_ICONS'					=> 'Biểu tượng bài viết',
+	'ACP_ICONS_SMILIES'			=> 'Biểu tượng bài viết/biểu tượng vui',
+	'ACP_IMAGESETS'				=> 'Gói hình giao diện',
+	'ACP_INACTIVE_USERS'		=> 'Tài khoản chưa kích hoạt',
+	'ACP_INDEX'					=> 'Bảng quản trị viên',
 
-	'ACP_JABBER_SETTINGS'	=> 'Thiết lập Jabber',
+	'ACP_JABBER_SETTINGS'		=> 'Thiết lập Jabber',
 
-	'ACP_LANGUAGE'			=> 'Quản lí ngôn ngữ',
-	'ACP_LANGUAGE_PACKS'	=> 'Ngôn ngữ',
-	'ACP_LOAD_SETTINGS'		=> 'Thiết lập nạp trang',
-	'ACP_LOGGING'			=> 'Ghi nhận',
+	'ACP_LANGUAGE'				=> 'Quản lí ngôn ngữ',
+	'ACP_LANGUAGE_PACKS'		=> 'Ngôn ngữ',
+	'ACP_LOAD_SETTINGS'			=> 'Thiết lập nạp trang',
+	'ACP_LOGGING'				=> 'Ghi nhận',
 
-	'ACP_MAIN'							=> 'Bảng quản trị',
-	'ACP_MANAGE_ATTACHMENTS'			=> 'Quản lí tập tin đính kèm',
-	'ACP_MANAGE_ATTACHMENTS_EXPLAIN'	=> 'Với công cụ này, bạn có thể xem danh sách và chọn xóa các tập tin đính kèm theo bài viết hay tin nhắn.',
-	'ACP_MANAGE_EXTENSIONS'				=> 'Quản lí loại tập tin đính kèm',
-	'ACP_MANAGE_FORUMS'					=> 'Quản lí chuyên mục',
-	'ACP_MANAGE_RANKS'					=> 'Quản lí danh hiệu',
-	'ACP_MANAGE_REASONS'				=> 'Quản lí báo cáo/lý do từ chối',
-	'ACP_MANAGE_USERS'					=> 'Quản lí người dùng',
-	'ACP_MASS_EMAIL'					=> 'Gửi email người dùng',
-	'ACP_MESSAGES'						=> 'Bài viết',
-	'ACP_MESSAGE_SETTINGS'				=> 'Thiết lập tin nhắn',
-	'ACP_MODULE_MANAGEMENT'				=> 'Quản lí gói chức năng',
-	'ACP_MOD_LOGS'						=> 'Ghi nhận điều hành viên',
-	'ACP_MOD_ROLES'						=> 'Nhiệm vụ điều hành viên',
+	'ACP_MAIN'					=> 'Bảng quản trị viên',
+	'ACP_MANAGE_EXTENSIONS'		=> 'Quản lí tập tin đính kèm',
+	'ACP_MANAGE_FORUMS'			=> 'Quản lí chuyên mục',
+	'ACP_MANAGE_RANKS'			=> 'Quản lí danh hiệu',
+	'ACP_MANAGE_REASONS'		=> 'Quản lí báo cáo/nguyên nhân từ chối',
+	'ACP_MANAGE_USERS'			=> 'Quản lí người dùng',
+	'ACP_MASS_EMAIL'			=> 'Gửi email người dùng',
+	'ACP_MESSAGES'				=> 'Bài viết',
+	'ACP_MESSAGE_SETTINGS'		=> 'Thiết lập tin nhắn',
+	'ACP_MODULE_MANAGEMENT'		=> 'Quản lí gói chức năng',
+	'ACP_MOD_LOGS'				=> 'Ghi nhận điều hành viên',
+	'ACP_MOD_ROLES'				=> 'Nhiệm vụ điều hành viên',
 
 	'ACP_NO_ITEMS'	=> 'Chưa có mục nào.',
 
@@ -156,7 +144,7 @@ $lang = array_merge($lang, array(
 	'ACP_QUICK_ACCESS'	=> 'Truy cập nhanh',
 
 	'ACP_RANKS'				=> 'Danh hiệu',
-	'ACP_REASONS'			=> 'Báo cáo/lý do từ chối',
+	'ACP_REASONS'			=> 'Báo cáo/nguyên nhân từ chối',
 	'ACP_REGISTER_SETTINGS'	=> 'Thiết lập đăng ký tài khoản',
 
 	'ACP_RESTORE'	=> 'Phục hồi',
@@ -174,10 +162,9 @@ $lang = array_merge($lang, array(
 	'ACP_SERVER_SETTINGS'		=> 'Thiết lập máy chủ',
 	'ACP_SIGNATURE_SETTINGS'	=> 'Thiết lập chữ ký cá nhân',
 	'ACP_SMILIES'				=> 'Biểu tượng vui',
+	'ACP_STYLE_COMPONENTS'		=> 'Thành phần giao diện',
 	'ACP_STYLE_MANAGEMENT'		=> 'Quản lí giao diện',
 	'ACP_STYLES'				=> 'Giao diện',
-	'ACP_STYLES_CACHE'			=> 'Xóa bộ đệm',
-	'ACP_STYLES_INSTALL'		=> 'Cài đặt giao diện',
 
 	'ACP_SUBMIT_CHANGES'	=> 'Lưu thay đổi',
 
@@ -206,11 +193,11 @@ $lang = array_merge($lang, array(
 	'ACP_VC_SETTINGS'					=> 'Thiết lập mã xác nhận',
 	'ACP_VC_CAPTCHA_DISPLAY'			=> 'Xem trước mã xác nhận',	
 	'ACP_VERSION_CHECK'					=> 'Kiểm tra cập nhật',
-	'ACP_VIEW_ADMIN_PERMISSIONS'		=> 'Xem cấp phép quản trị viên',
-	'ACP_VIEW_FORUM_MOD_PERMISSIONS'	=> 'Xem cấp phép chuyên mục cho điều hành viên',
-	'ACP_VIEW_FORUM_PERMISSIONS'		=> 'Xem cấp phép chuyên mục',
-	'ACP_VIEW_GLOBAL_MOD_PERMISSIONS'	=> 'Xem cấp phép điều hành viên chính',
-	'ACP_VIEW_USER_PERMISSIONS'			=> 'Xem cấp phép người dùng',
+	'ACP_VIEW_ADMIN_PERMISSIONS'		=> 'Xem cấp phép dành cho quản trị viên',
+	'ACP_VIEW_FORUM_MOD_PERMISSIONS'	=> 'Xem cấp phép chuyên mục dành cho điều hành viên',
+	'ACP_VIEW_FORUM_PERMISSIONS'		=> 'Xem cấp phép dành cho chuyên mục',
+	'ACP_VIEW_GLOBAL_MOD_PERMISSIONS'	=> 'Xem cấp phép dành cho điều hành viên chính',
+	'ACP_VIEW_USER_PERMISSIONS'			=> 'Xem cấp phép dành cho người dùng',
 
 	'ACP_WORDS'	=> 'Kiểm duyệt từ',
 
@@ -220,19 +207,15 @@ $lang = array_merge($lang, array(
 	'ADD'			=> 'Thêm',
 	'ADMIN'			=> 'Quản trị viên',
 	'ADMIN_INDEX'	=> 'Trang quản trị',
-	'ADMIN_PANEL'	=> 'Bảng quản trị',
+	'ADMIN_PANEL'	=> 'Bảng quản trị viên',
 
 	'ADM_LOGOUT'		=> 'Thoát quản trị',
-	'ADM_LOGGED_OUT'	=> 'Bạn đã thoát khỏi bảng quản trị thành công.',
+	'ADM_LOGGED_OUT'	=> 'Bạn đã thoát khỏi bảng điều khiển quản trị viên thành công.',
 
 	'BACK'	=> 'Quay lại',
 
-	'COLOUR_SWATCH'		=> 'Bảng mã màu',
+	'COLOUR_SWATCH'		=> 'Bảng mã màu an toàn',
 	'CONFIG_UPDATED'	=> 'Cấu hình hệ thống đã được cập nhật thành công.',
-	'CRON_LOCK_ERROR'	=> 'Không thể tiến hành khóa thao tác hẹn giờ.',
-	'CRON_NO_SUCH_TASK'	=> 'Không tìm thấy thao tác “%s”.',
-	'CRON_NO_TASK'		=> 'Không có thao tác hẹn giờ nào cần chạy lúc này.',
-	'CRON_NO_TASKS'		=> 'Không có thao tác hẹn giờ nào.',
 
 	'DEACTIVATE'				=> 'Ngưng kích hoạt',
 	'DIRECTORY_DOES_NOT_EXIST'	=> 'Đường dẫn bạn nhập “%s” không tồn tại.',
@@ -243,7 +226,6 @@ $lang = array_merge($lang, array(
 	'DOWNLOAD_AS'				=> 'Tải về dưới dạng',
 	'DOWNLOAD_STORE'			=> 'Tải về hoặc lưu trữ tập tin',
 	'DOWNLOAD_STORE_EXPLAIN'	=> 'Bạn có thể tải về trực tiếp tập tin hoặc lưu trữ lại trong thư mục <samp>store/</samp> của hệ thống.',
-	'DOWNLOADS'          		=> 'Lượt tải về',
 
 	'EDIT'				=> 'Sửa',
 	'ENABLE'			=> 'Bật',
@@ -258,14 +240,12 @@ $lang = array_merge($lang, array(
 	'IP'			=> 'Địa chỉ IP',
 	'IP_HOSTNAME'	=> 'Địa chỉ IP hoặc tên miền',
 
-	'LOAD_NOTIFICATIONS'			=> 'Hiện thông báo hệ thống',
-	'LOAD_NOTIFICATIONS_EXPLAIN'	=> 'Hiển thị thông báo từ hệ thống đến người dùng tại đầu mỗi trang.',
-	'LOGGED_IN_AS'					=> 'Bạn đã đăng nhập dưới tên:',
-	'LOGIN_ADMIN'					=> 'Bạn phải được cấp phép trong hệ thống để truy cập vào bảng quản trị.',
-	'LOGIN_ADMIN_CONFIRM'			=> 'Để chuyển đến bảng quản trị, bạn cần phải xác thực lại tài khoản của mình trong hệ thống.',
-	'LOGIN_ADMIN_SUCCESS'			=> 'Bạn đã xác thực thành công với hệ thống và sẽ được chuyển đến bảng quản trị ngay bây giờ.',
-	'LOOK_UP_FORUM'					=> 'Chọn một chuyên mục',
-	'LOOK_UP_FORUMS_EXPLAIN'		=> 'Bạn có thể chọn nhiều hơn một chuyên mục.',
+	'LOGGED_IN_AS'				=> 'Bạn đã đăng nhập dưới tên:',
+	'LOGIN_ADMIN'				=> 'Bạn phải được cấp phép trong hệ thống để truy cập vào bảng quản trị viên.',
+	'LOGIN_ADMIN_CONFIRM'		=> 'Để chuyển đến bảng quản trị viên, bạn cần phải xác thực lại tài khoản của mình trong hệ thống.',
+	'LOGIN_ADMIN_SUCCESS'		=> 'Bạn đã xác thực thành công với hệ thống và sẽ được chuyển đến bảng quản trị viên ngay bây giờ.',
+	'LOOK_UP_FORUM'				=> 'Chọn một chuyên mục',
+	'LOOK_UP_FORUMS_EXPLAIN'	=> 'Bạn có thể chọn nhiều hơn một chuyên mục.',
 
 	'MANAGE'			=> 'Quản lí',
 	'MENU_TOGGLE'		=> 'Ẩn/Hiện trình đơn',
@@ -277,22 +257,21 @@ $lang = array_merge($lang, array(
 	'NOTIFY'				=> 'Thông báo',
 	'NO_ADMIN'				=> 'Bạn không được cấp phép để quản lí hệ thống.',
 	'NO_EMAILS_DEFINED'		=> 'Không có địa chỉ email hợp lệ nào được tìm thấy.',
-	'NO_FILES_TO_DELETE'	=> 'Tập tin đính kèm bạn chọn xóa không tồn tại.',
-	'NO_PASSWORD_SUPPLIED'	=> 'Bạn cần phải nhập mật khẩu của mình để truy cập vào bảng quản trị.',
+	'NO_PASSWORD_SUPPLIED'	=> 'Bạn cần phải nhập mật khẩu của mình để truy cập vào bảng điều khiển dành cho quản trị viên.',
 
 	'OFF'	=> 'Tắt',
 	'ON'	=> 'Bật',
 
-	'PARSE_BBCODE'						=> 'Sử dụng BBCode',
-	'PARSE_SMILIES'						=> 'Sử dụng biểu tượng vui',
-	'PARSE_URLS'						=> 'Nhận dạng liên kết',
+	'PARSE_BBCODE'						=> 'Nhận diện BBCode',
+	'PARSE_SMILIES'						=> 'Nhận diện biểu tượng vui',
+	'PARSE_URLS'						=> 'Nhận diện liên kết',
 	'PERMISSIONS_TRANSFERRED'			=> 'Thiết lập cấp phép đã được chuyển',
-	'PERMISSIONS_TRANSFERRED_EXPLAIN'	=> 'Bạn hiện đang có những thiết lập cấp phép từ “%1$s”. Bạn có thể truy cập vào hệ thống với thiết lập cấp phép người dùng này nhưng không thể truy cập được vào bảng quản trị bởi vì những thiết lập cấp phép dành cho người quản trị không được chuyển đến bạn. Bạn cũng có thể <a href="%2$s"><strong>phục hồi lại thiết lập cấp phép của mình</strong></a> bất cứ lúc nào bạn muốn.',
-	'PROCEED_TO_ACP'					=> '%sChuyển đến bảng quản trị%s',
+	'PERMISSIONS_TRANSFERRED_EXPLAIN'	=> 'Bạn hiện đang có những thiết lập cấp phép từ “%1$s”. Bạn có thể truy cập vào hệ thống với thiết lập cấp phép người dùng này nhưng không thể truy cập được vào bảng điều khiển dành cho quản trị viên bởi vì những thiết lập cấp phép dành cho người quản trị không được chuyển đến bạn. Bạn cũng có thể <a href="%2$s"><strong>phục hồi lại thiết lập cấp phép của mình</strong></a> bất cứ lúc nào bạn muốn.',
+	'PROCEED_TO_ACP'					=> '%sChuyển đến bảng quản trị viên%s',
 
-	'REMIND'		=> 'Nhắc nhở',
-	'RESYNC'		=> 'Đồng bộ hóa',
-	'RUNNING_TASK'	=> 'Đang chạy thao tác: %s.',
+	'REMIND'	=> 'Nhắc nhở',
+	'RESYNC'	=> 'Đồng bộ hóa',	
+	'RETURN_TO'	=> 'Quay về…',
 
 	'SELECT_ANONYMOUS'	=> 'Chọn tài khoản khách',
 	'SELECT_OPTION'		=> 'Chọn các mục tùy chọn',
@@ -304,12 +283,8 @@ $lang = array_merge($lang, array(
 
 	'SHOW_ALL_OPERATIONS'	=> 'Hiện tất cả thao tác',
 
-	'TASKS_NOT_READY'	=> 'Thao tác chưa sẵn sàng:',
-	'TASKS_READY'		=> 'Thao tác sẵn sàng:',
-	'TOTAL_SIZE'		=> 'Tổng dung lượng',
-
 	'UCP'					=> 'Bảng thiết lập cá nhân',
-	'USERNAMES_EXPLAIN'		=> 'Nhập vào mỗi tên tài khoản trên một hàng riêng.',
+	'USERNAMES_EXPLAIN'		=> 'Nhập vào mỗi tên tài khoản trên một hàng nhất định.',
 	'USER_CONTROL_PANEL'	=> 'Bảng thiết lập cá nhân',
 
 	'WARNING'				=> 'Cảnh báo',
@@ -317,9 +292,9 @@ $lang = array_merge($lang, array(
 
 // PHP info
 $lang = array_merge($lang, array(
-	'ACP_PHP_INFO_EXPLAIN'	=> 'Trang này liệt kê các thông tin về phiên bản PHP hiện tại được cài đặt trên máy chủ của bạn. Trang này cũng đính kèm thông tin chi tiết về các gói chức năng đã được cài đặt và nạp cùng với PHP, những biến PHP sẵn có và những thiết lập PHP mặc định. Thông tin này có thể hữu ích cho bạn nếu bạn đang giải quyết những rắc rối mà mình gặp phải với hệ thống. Cần lưu ý rằng có một vài công ty cung cấp dịch vụ lưu trữ Web sẽ hạn chế những thông tin về PHP được hiển thị trong đây vì lý do bảo mật. Một lời khuyên dành cho bạn là đừng bao giờ cung cấp cho người khác biết những thông tin trên trang này ngoại trừ khi bạn đang yêu cầu hỗ trợ từ các thành viên trong  <a href="https://www.phpbb.com/about/team/">nhóm hỗ trợ chính thức</a> của diễn đàn phpBB.',
+	'ACP_PHP_INFO_EXPLAIN'	=> 'Trang này liệt kê các thông tin về phiên bản PHP hiện tại được cài đặt trên máy chủ của bạn. Trang này cũng đính kèm thông tin chi tiết về các gói chức năng đã được cài đặt và nạp cùng với PHP, những biến PHP sẵn có và những thiết lập PHP mặc định. Thông tin này có thể hữu ích cho bạn nếu bạn đang giải quyết những rắc rối mà mình gặp phải với hệ thống. Cần lưu ý rằng có một vài công ty cung cấp dịch vụ lưu trữ Web sẽ hạn chế những thông tin về PHP được hiển thị trong đây vì nguyên nhân bảo mật. Một lời khuyên dành cho bạn là đừng bao giờ cung cấp cho người khác biết những thông tin trên trang này ngoại trừ khi bạn đang yêu cầu hỗ trợ từ các thành viên trong  <a href="https://www.phpbb.com/about/team/">nhóm hỗ trợ chính thức</a> của diễn đàn phpBB.',
 
-	'NO_PHPINFO_AVAILABLE'	=> 'Thông tin cấu hình PHP trên máy chủ của bạn không thể thu thập được. Hàm <code>phpinfo()</code> đã bị vô hiệu vì lý do bảo mật.',
+	'NO_PHPINFO_AVAILABLE'	=> 'Thông tin cấu hình PHP trên máy chủ của bạn không thể thu thập được. Hàm <code>phpinfo()</code> đã bị vô hiệu vì nguyên nhân bảo mật.',
 ));
 
 // Logs
@@ -367,7 +342,6 @@ $lang = array_merge($lang, array(
 
 	'GZIP_COMPRESSION'	=> 'Chế độ nén Gzip',
 
-	'NO_SEARCH_INDEX'	=> 'Phương pháp tìm kiếm đang dùng chưa được lập chỉ mục.<br />Vui lòng tạo chỉ mục cho “%1$s” trong phần %2$schỉ mục tìm kiếm%3$s.',
 	'NOT_AVAILABLE'		=> 'Không có sẵn',
 	'NUMBER_FILES'		=> 'Số tập tin đính kèm',
 	'NUMBER_POSTS'		=> 'Số bài viết',
@@ -382,41 +356,32 @@ $lang = array_merge($lang, array(
 	'PURGE_CACHE'			=> 'Dọn sạch bộ đệm',
 	'PURGE_CACHE_CONFIRM'	=> 'Bạn có chắc chắn muốn dọn sạch bộ đệm?',
 	'PURGE_CACHE_EXPLAIN'	=> 'Dọn sạch tất cả các thành phần có liên quan đến bộ đệm, bao gồm tất cả các tập tin khuôn mẫu và lệnh truy xuất SQL đã được tạo bộ đệm.',
-	'PURGE_CACHE_SUCCESS'	=> 'Bộ đệm đã được dọn sạch thành công.',
 
 	'PURGE_SESSIONS'			=> 'Dọn sạch phiên đăng nhập',
 	'PURGE_SESSIONS_CONFIRM'	=> 'Bạn có chắc chắn muốn dọn sạch tất cả phiên đăng nhập? Mọi người dùng đều sẽ mất trạng thái đăng nhập vào hệ thống.',
 	'PURGE_SESSIONS_EXPLAIN'	=> 'Dọn sạch tất cả phiên đăng nhập. Thao tác này sẽ xóa hết trạng thái đăng nhập của người dùng bằng cách dọn sạch bảng dữ liệu phiên đăng nhập.',
-	'PURGE_SESSIONS_SUCCESS'	=> 'Phiên đăng nhập đã được dọn sạch thành công.',
 
 	'RESET_DATE'					=> 'Tạo lại ngày hệ thống bắt đầu hoạt động mới',
 	'RESET_DATE_CONFIRM'			=> 'Bạn có chắc chắn muốn tạo lại ngày hệ thống bắt đầu hoạt động mới?',
-	'RESET_DATE_SUCCESS'			=> 'Ngày hệ thống bắt đầu hoạt động đã được tạo mới.',
 	'RESET_ONLINE'					=> 'Tạo lại số lượng người dùng trực tuyến đông nhất',
 	'RESET_ONLINE_CONFIRM'			=> 'Bạn có chắc chắn muốn tạo lại thông tin số lượng người dùng trực tuyến đông nhất?',
-	'RESET_ONLINE_SUCCESS'			=> 'Thông tin người dùng trực tuyến đã được tạo mới',
 	'RESYNC_POSTCOUNTS'				=> 'Đồng bộ hóa bộ đếm số bài viết',
 	'RESYNC_POSTCOUNTS_EXPLAIN'		=> 'Chỉ những bài viết còn hiệu hữu trong diễn đàn mới được tính vào bộ đếm. Những bài viết đã được dọn dẹp sẽ không được tính.',
 	'RESYNC_POSTCOUNTS_CONFIRM'		=> 'Bạn có chắc chắn muốn đồng bộ hóa lại bộ đếm số bài viết?',
-	'RESYNC_POSTCOUNTS_SUCCESS'		=> 'Bộ đếm số bài viết đã được đồng bộ hóa.',
 	'RESYNC_POST_MARKING'			=> 'Đồng bộ hóa những chủ đề đã đánh dấu',
 	'RESYNC_POST_MARKING_CONFIRM'	=> 'Bạn có chắc chắn muốn đồng bộ hóa lại những chủ đề đã đánh dấu?',
 	'RESYNC_POST_MARKING_EXPLAIN'	=> 'Đầu tiên là tất cả các chủ đề không được đánh dấu và sau đó đánh dấu chính xác những chủ đề không còn bất cứ bài viết nào được gửi trong suốt 6 tháng qua.',
-	'RESYNC_POST_MARKING_SUCCESS'	=> 'Chủ đề đã đánh dấu đã được đồng bộ hóa.',
 	'RESYNC_STATS'					=> 'Đồng bộ hóa thông tin thống kê',
 	'RESYNC_STATS_CONFIRM'			=> 'Bạn có chắc chắn muốn đồng bộ hóa thông tin thống kê?',
 	'RESYNC_STATS_EXPLAIN'			=> 'Đếm lại tổng số chủ đề, bài viết, tài khoản người dùng và tập tin đính kèm trong hệ thống.',
-	'RESYNC_STATS_SUCCESS'			=> 'Thông tin thống kê đã được đồng bộ hóa',
 	'RUN'							=> 'Chạy',
 
 	'STATISTIC'					=> 'Thống kê',
 	'STATISTIC_RESYNC_OPTIONS'	=> 'Đồng bộ hóa hoặc tạo mới lại thông tin thống kê',
 
-	'TIMEZONE_INVALID'	=> 'Múi giờ bạn chọn không hợp lệ.',
-	'TIMEZONE_SELECTED'	=> '(đang chọn)',
 	'TOPICS_PER_DAY'	=> 'Số chủ đề/ngày',
 
-	'UPLOAD_DIR_SIZE'	=> 'Tổng dung lượng tập tin đính kèm',
+	'UPLOAD_DIR_SIZE'	=> 'Dung lượng thư mục tập tin đính kèm',
 	'USERS_PER_DAY'		=> 'Số người dùng/ngày',
 
 	'VALUE'						=> 'Giá trị',
@@ -426,13 +391,13 @@ $lang = array_merge($lang, array(
 	'VIEW_INACTIVE_USERS'		=> 'Xem các tài khoản chưa kích hoạt',
 
 	'WELCOME_PHPBB'			=> 'phpBB xin chào bạn!',
-	'WRITABLE_CONFIG'		=> 'Tập tin cấu hình của bạn (config.php) hiện tại đang được cấp phép có thể ghi với mọi người dùng. Chúng tôi khuyến cáo bạn phải thay đổi ngay cấp phép cho tập tin này thành <strong>640</strong> hoặc ít nhất là <strong>644</strong> (Ví dụ: <a href="http://en.wikipedia.org/wiki/Chmod" rel="external">CHMOD</a> 640 cho tập tin config.php).',
+	'WRITABLE_CONFIG'		=> 'Tập tin cấu hình của bạn (config.php) hiện tại đang được cấp phép có thể ghi với mọi loại người dùng. Chúng tôi khuyến cáo bạn phải thay đổi ngay cấp phép cho tập tin này thành <strong>640</strong> hoặc ít nhất là <strong>644</strong> (Ví dụ: <a href="http://en.wikipedia.org/wiki/Chmod" rel="external">CHMOD</a> 640 cho tập tin config.php).',
 ));
 
 // Inactive Users
 $lang = array_merge($lang, array(
 	'INACTIVE_DATE'					=> 'Ngày chưa kích hoạt',
-	'INACTIVE_REASON'				=> 'Lý do chưa kích hoạt',
+	'INACTIVE_REASON'				=> 'Nguyên nhân chưa kích hoạt',
 	'INACTIVE_REASON_MANUAL'		=> 'Tài khoản đã bị ngưng kích hoạt bởi quản trị viên',
 	'INACTIVE_REASON_PROFILE'		=> 'Đã thay đổi thông tin cá nhân',
 	'INACTIVE_REASON_REGISTER'		=> 'Tài khoản mới đăng ký',
@@ -446,7 +411,7 @@ $lang = array_merge($lang, array(
 
 	'SORT_INACTIVE'			=> 'Ngày ngưng kích hoạt',
 	'SORT_LAST_VISIT'		=> 'Lần ghé thăm trước',
-	'SORT_REASON'			=> 'Lý do',
+	'SORT_REASON'			=> 'Nguyên nhân',
 	'SORT_REG_DATE'			=> 'Ngày đăng ký',
 	'SORT_LAST_REMINDER'	=> 'Lần nhắc nhở cuối',
 	'SORT_REMINDER'			=> 'Ngày gửi nhắc nhở',
@@ -458,8 +423,8 @@ $lang = array_merge($lang, array(
 $lang = array_merge($lang, array(
 	'EXPLAIN_SEND_STATISTICS'	=> 'Bạn hãy vui lòng gửi thông tin thống kê về máy chủ và cấu hình hệ thống phpBB của mình đến nhóm phát triển phpBB để chúng tôi thống kê việc sử dụng. Tất cả thông tin cá nhân về bạn hay website của bạn đều được <strong>loại bỏ</strong> và dữ liệu thống kê gửi đến được <strong>ẩn hoàn toàn</strong>. Chúng tôi sẽ dựa vào thông tin này để quyết định những thay đổi trong các phiên bản phpBB sắp tới. Kết quả thống kê được công bố rộng rãi cũng như chúng tôi có thể chia sẻ thông tin này với dự án PHP - ngôn ngữ lập trình dùng để viết phpBB.',
 	'EXPLAIN_SHOW_STATISTICS'	=> 'Nhấp vào nút bên dưới, bạn có thể xem trước tất cả các biến thống kê sẽ được gửi đến chúng tôi.',
-	'DONT_SEND_STATISTICS'		=> 'Quay về bảng quản trị nếu bạn không muốn gửi thông tin thống kê cho nhóm phát triển phpBB.',
-	'GO_ACP_MAIN'				=> 'Chuyển đến trang chính bảng quản trị',
+	'DONT_SEND_STATISTICS'		=> 'Quay về bảng quản trị viên nếu bạn không muốn gửi thông tin thống kê cho nhóm phát triển phpBB.',
+	'GO_ACP_MAIN'				=> 'Chuyển đến trang chính bảng quản trị viên',
 	'HIDE_STATISTICS'			=> 'Ẩn chi tiết',
 	'SEND_STATISTICS'			=> 'Gửi thông tin thống kê',
 	'SHOW_STATISTICS'			=> 'Hiện chi tiết',
@@ -494,8 +459,8 @@ $lang = array_merge($lang, array(
 	'LOG_ACL_TRANSFER_PERMISSIONS'		=> '<strong>Thiết lập cấp phép đã được chuyển từ</strong><br />» %s',
 	'LOG_ACL_RESTORE_PERMISSIONS'		=> '<strong>Thiết lập cấp phép đã được khôi phục kể từ khi chuyển thiết lập cấp phép từ</strong><br />» %s',
 
-	'LOG_ADMIN_AUTH_FAIL'		=> '<strong>Đăng nhập thất bại vào bảng quản trị</strong>',
-	'LOG_ADMIN_AUTH_SUCCESS'	=> '<strong>Đăng nhập thành công vào bảng quản trị</strong>',
+	'LOG_ADMIN_AUTH_FAIL'		=> '<strong>Đăng nhập thất bại vào bảng quản trị viên</strong>',
+	'LOG_ADMIN_AUTH_SUCCESS'	=> '<strong>Đăng nhập thành công vào bảng quản trị viên</strong>',
 
 	'LOG_ATTACHMENTS_DELETED'	=> '<strong>Đã gỡ bỏ những tập tin đính kèm của tài khoản</strong><br />» %s',
 
@@ -508,12 +473,12 @@ $lang = array_merge($lang, array(
 	'LOG_ATTACH_FILEUPLOAD'		=> '<strong>Tập tin đính kèm không sử dụng đã được đính kèm vào bài viết</strong><br />» Số ID %1$d - %2$s',
 	'LOG_ATTACH_ORPHAN_DEL'		=> '<strong>Những tập tin đính kèm không sử dụng đã được xóa</strong><br />» %s',
 
-	'LOG_BAN_EXCLUDE_USER'	=> '<strong>Đã loại trừ tài khoản khỏi danh sách cấm</strong> vì lý do “<em>%1$s</em>”<br />» %2$s',
-	'LOG_BAN_EXCLUDE_IP'	=> '<strong>Đã loại trừ địa chỉ IP khỏi danh sách cấm</strong> vì lý do “<em>%1$s</em>”<br />» %2$s',
-	'LOG_BAN_EXCLUDE_EMAIL' => '<strong>Đã loại trừ địa chỉ email khỏi danh sách cấm</strong> vì lý do “<em>%1$s</em>”<br />» %2$s',
-	'LOG_BAN_USER'			=> '<strong>Đã cấm tài khoản</strong> vì lý do “<em>%1$s</em>”<br />» %2$s',
-	'LOG_BAN_IP'			=> '<strong>Đã cấm địa chỉ IP</strong> vì lý do “<em>%1$s</em>”<br />» %2$s',
-	'LOG_BAN_EMAIL'			=> '<strong>Đã cấm địa chỉ email</strong> vì lý do “<em>%1$s</em>”<br />» %2$s',
+	'LOG_BAN_EXCLUDE_USER'	=> '<strong>Đã loại trừ tài khoản khỏi danh sách cấm</strong> vì nguyên nhân “<em>%1$s</em>”<br />» %2$s',
+	'LOG_BAN_EXCLUDE_IP'	=> '<strong>Đã loại trừ địa chỉ IP khỏi danh sách cấm</strong> vì nguyên nhân “<em>%1$s</em>”<br />» %2$s',
+	'LOG_BAN_EXCLUDE_EMAIL' => '<strong>Đã loại trừ địa chỉ email khỏi danh sách cấm</strong> vì nguyên nhân “<em>%1$s</em>”<br />» %2$s',
+	'LOG_BAN_USER'			=> '<strong>Đã cấm tài khoản</strong> vì nguyên nhân “<em>%1$s</em>”<br />» %2$s',
+	'LOG_BAN_IP'			=> '<strong>Đã cấm địa chỉ IP</strong> vì nguyên nhân “<em>%1$s</em>”<br />» %2$s',
+	'LOG_BAN_EMAIL'			=> '<strong>Đã cấm địa chỉ email</strong> vì nguyên nhân “<em>%1$s</em>”<br />» %2$s',
 	'LOG_UNBAN_USER'		=> '<strong>Đã ngưng cấm tài khoản</strong><br />» %s',
 	'LOG_UNBAN_IP'			=> '<strong>Đã ngưng cấm địa chỉ IP</strong><br />» %s',
 	'LOG_UNBAN_EMAIL'		=> '<strong>Đã ngưng cấm địa chỉ email</strong><br />» %s',
@@ -522,7 +487,7 @@ $lang = array_merge($lang, array(
 	'LOG_BBCODE_EDIT'		=> '<strong>Đã chỉnh sửa thẻ BBCode</strong><br />» %s',
 	'LOG_BBCODE_DELETE'		=> '<strong>Đã xóa thẻ BBCode</strong><br />» %s',
 
-	'LOG_BOT_ADDED'		=> '<strong>Máy tìm kiếm mới đã được tạo</strong><br />» %s',
+	'LOG_BOT_ADDED'		=> '<strong>Bot mới đã được tạo</strong><br />» %s',
 	'LOG_BOT_DELETE'	=> '<strong>Đã xóa Bot</strong><br />» %s',
 	'LOG_BOT_UPDATED'	=> '<strong>Bot đã được cập nhật</strong><br />» %s',
 
@@ -552,9 +517,9 @@ $lang = array_merge($lang, array(
 
 	'LOG_APPROVE_TOPIC'			=> '<strong>Đã duyệt chủ đề</strong><br />» %s',
 	'LOG_BUMP_TOPIC'			=> '<strong>Người dùng đã đẩy chủ đề lên</strong><br />» %s',
-	'LOG_DELETE_POST'			=> '<strong>Đã xóa bài viết “%1$s” gửi bởi “%2$s” vì lý do</strong><br />» %3$s',
+	'LOG_DELETE_POST'			=> '<strong>Đã xóa bài viết “%1$s” gửi bởi</strong><br />» %2$s',
 	'LOG_DELETE_SHADOW_TOPIC'	=> '<strong>Đã xóa liên kết đến chủ đề cũ</strong><br />» %s',
-	'LOG_DELETE_TOPIC'			=> '<strong>Đã xóa chủ đề “%1$s” gửi bởi “%2$s” vì lý do</strong><br />» %3$s',
+	'LOG_DELETE_TOPIC'			=> '<strong>Đã xóa chủ đề “%1$s” gửi bởi</strong><br />» %2$s',
 	'LOG_FORK'					=> '<strong>Đã sao chép chủ đề</strong><br />» từ %s',
 	'LOG_LOCK'					=> '<strong>Đã khóa chủ đề</strong><br />» %s',
 	'LOG_LOCK_POST'				=> '<strong>Đã khóa bài viết</strong><br />» %s',
@@ -563,20 +528,15 @@ $lang = array_merge($lang, array(
 	'LOG_PM_REPORT_CLOSED'		=> '<strong>Đã kết thúc báo cáo tin nhắn</strong><br />» %s',
 	'LOG_PM_REPORT_DELETED'		=> '<strong>Đã xóa báo cáo tin nhắn</strong><br />» %s',
 	'LOG_POST_APPROVED'			=> '<strong>Đã duyệt bài viết</strong><br />» %s',
-	'LOG_POST_DISAPPROVED'		=> '<strong>Đã từ chối bài viết “%1$s” gửi bởi “%3$s” vì lý do</strong><br />» %2$s',
-	'LOG_POST_EDITED'			=> '<strong>Đã sửa bài viết “%1$s” gửi bởi “%2$s” vì lý do</strong><br />» %3$s',
-	'LOG_POST_RESTORED'			=> '<strong>Đã phục hồi bài viết</strong><br />» %s',
+	'LOG_POST_DISAPPROVED'		=> '<strong>Đã từ chối bài viết “%1$s” với nguyên nhân sau</strong><br />» %2$s',
+	'LOG_POST_EDITED'			=> '<strong>Đã sửa bài viết “%1$s” được gửi bởi</strong><br />» %2$s',
 	'LOG_REPORT_CLOSED'			=> '<strong>Đã kết thúc báo cáo</strong><br />» %s',
 	'LOG_REPORT_DELETED'		=> '<strong>Đã xóa báo cáo</strong><br />» %s',
-	'LOG_RESTORE_TOPIC'			=> '<strong>Đã phục hồi chủ đề “%1$s” gửi bởi</strong><br />» %2$s',
-	'LOG_SOFTDELETE_POST'		=> '<strong>Đã xóa nháp bài viết “%1$s” gửi bởi “%2$s” vì lý do</strong><br />» %3$s',
-	'LOG_SOFTDELETE_TOPIC'		=> '<strong>Đã xóa nháp chủ đề “%1$s” gửi bởi “%2$s” vì lý do</strong><br />» %3$s',
 	'LOG_SPLIT_DESTINATION'		=> '<strong>Đã di chuyển các bài viết được chia nhỏ</strong><br />» đến %s',
 	'LOG_SPLIT_SOURCE'			=> '<strong>Các bài viết được chia nhỏ</strong><br />» từ %s',
 
 	'LOG_TOPIC_APPROVED'		=> '<strong>Đã duyệt chủ đề</strong><br />» %s',
-	'LOG_TOPIC_RESTORED'		=> '<strong>Đã phục hồi chủ đề</strong><br />» %s',
-	'LOG_TOPIC_DISAPPROVED'		=> '<strong>Đã từ chối chủ đề “%1$s” gửi bởi “%3$s” vì lý do</strong><br />» %2$s',
+	'LOG_TOPIC_DISAPPROVED'		=> '<strong>Đã từ chối chủ đề “%1$s” với nguyên nhân sau</strong><br />%2$s',
 	'LOG_TOPIC_RESYNC'			=> '<strong>Đã đồng bộ lại bộ đếm số chủ đề</strong><br />» %s',
 	'LOG_TOPIC_TYPE_CHANGED'	=> '<strong>Đã thay đổi loại chủ đề</strong><br />» %s',
 	'LOG_UNLOCK'				=> '<strong>Đã mở khóa chủ đề</strong><br />» %s',
@@ -593,11 +553,8 @@ $lang = array_merge($lang, array(
 	'LOG_DOWNLOAD_IP'			=> '<strong>Đã thêm vào địa chỉ IP/Tên miền từ danh sách cho phép tải về</strong><br />» %s',
 	'LOG_DOWNLOAD_REMOVE_IP'	=> '<strong>Đã gỡ bỏ địa chỉ IP/Tên miền từ danh sách cho phép tải về</strong><br />» %s',
 
-	'LOG_ERROR_JABBER'	=> '<strong>Lỗi Jabber</strong><br />» %s',
-	'LOG_ERROR_EMAIL'	=> '<strong>Lỗi email</strong><br />» %s',
-	'LOG_EXT_DISABLE'	=> '<strong>Phần mở rộng bị vô hiệu</strong><br />» %s',
-	'LOG_EXT_ENABLE'	=> '<strong>Phần mở rộng được bật</strong><br />» %s',
-	'LOG_EXT_PURGE'		=> '<strong>Đã xóa dữ liệu của phần mở rộng</strong><br />» %s',
+	'LOG_ERROR_JABBER'		=> '<strong>Lỗi Jabber</strong><br />» %s',
+	'LOG_ERROR_EMAIL'		=> '<strong>Lỗi email</strong><br />» %s',
 
 	'LOG_FORUM_ADD'							=> '<strong>Đã tạo chuyên mục mới</strong><br />» %s',
 	'LOG_FORUM_COPIED_PERMISSIONS'			=> '<strong>Đã sao chép cấp phép chuyên mục</strong> từ %1$s<br />» %2$s',
@@ -630,6 +587,16 @@ $lang = array_merge($lang, array(
 	'LOG_USERS_PENDING'		=> '<strong>Thành viên gửi yêu cầu tham gia vào nhóm “%1$s” và đang chờ chấp thuận</strong><br />» %2$s',
 
 	'LOG_IMAGE_GENERATION_ERROR'	=> '<strong>Lỗi khi tạo hình ảnh</strong><br />» Lỗi trong %1$s tại dòng %2$s: %3$s',
+
+	'LOG_IMAGESET_ADD_DB'		=> '<strong>Đã thêm vào gói hình giao diện mới trong cơ sở dữ liệu</strong><br />» %s',
+	'LOG_IMAGESET_ADD_FS'		=> '<strong>Đã thêm vào gói hình giao diện mới trong hệ thống tập tin giao diện</strong><br />» %s',
+	'LOG_IMAGESET_DELETE'			=> '<strong>Đã xóa gói hình giao diện</strong><br />» %s',
+	'LOG_IMAGESET_EDIT_DETAILS'		=> '<strong>Đã chỉnh sửa thông tin gói hình giao diện</strong><br />» %s',
+	'LOG_IMAGESET_EDIT'				=> '<strong>Đã chỉnh sửa gói hình giao diện</strong><br />» %s',
+	'LOG_IMAGESET_EXPORT'			=> '<strong>Đã xuất gói hình giao diện</strong><br />» %s',
+	'LOG_IMAGESET_LANG_MISSING'		=> '<strong>Gói hình giao diện đã bỏ sót phần phiên dịch “%2$s”</strong><br />» %1$s',
+	'LOG_IMAGESET_LANG_REFRESHED'	=> '<strong>Đã nạp lại bản phiên dịch “%2$s” của gói hình giao diện</strong><br />» %1$s',
+	'LOG_IMAGESET_REFRESHED'		=> '<strong>Đã nạp lại gói hình giao diện</strong><br />» %s',
 
 	'LOG_INACTIVE_ACTIVATE'	=> '<strong>Đã kích hoạt những tài khoản chưa kích hoạt</strong><br />» %s',
 	'LOG_INACTIVE_DELETE'	=> '<strong>Đã xóa những tài khoản chưa kích hoạt</strong><br />» %s',
@@ -675,8 +642,6 @@ $lang = array_merge($lang, array(
 	'LOG_U_ROLE_EDIT'		=> '<strong>Nhiệm vụ người dùng đã được chỉnh sửa</strong><br />» %s',
 	'LOG_U_ROLE_REMOVED'	=> '<strong>Nhiệm vụ người dùng đã được gỡ bỏ</strong><br />» %s',
 
-	'LOG_PLUPLOAD_TIDY_FAILED'	=> '<strong>Không thể mở “%1$s” để xử lí, hãy kiểm tra lại cấp phép.</strong><br />Ngoại lệ: %2$s<br />Theo dấu: %3$s',
-
 	'LOG_PROFILE_FIELD_ACTIVATE'	=> '<strong>Mục thông tin cá nhân đã được kích hoạt</strong><br />» %s',
 	'LOG_PROFILE_FIELD_CREATE'		=> '<strong>Mục thông tin cá nhân đã được thêm vào</strong><br />» %s',
 	'LOG_PROFILE_FIELD_DEACTIVATE'	=> '<strong>Mục thông tin cá nhân đã được ngưng kích hoạt</strong><br />» %s',
@@ -685,7 +650,6 @@ $lang = array_merge($lang, array(
 
 	'LOG_PRUNE'					=> '<strong>Đã dọn dẹp chuyên mục</strong><br />» %s',
 	'LOG_AUTO_PRUNE'			=> '<strong>Đã dọn dẹp tự động chuyên mục</strong><br />» %s',
-	'LOG_PRUNE_SHADOW'			=> '<strong>Đã dọn dẹp tự động các liên kết đến chủ đề cũ</strong><br />» %s',
 	'LOG_PRUNE_USER_DEAC'		=> '<strong>Tài khoản đã được ngưng kích hoạt</strong><br />» %s',
 	'LOG_PRUNE_USER_DEL_DEL'	=> '<strong>Tài khoản đã được dọn dẹp và toàn bộ bài viết đã bị xóa</strong><br />» %s',
 	'LOG_PRUNE_USER_DEL_ANON'	=> '<strong>Tài khoản đã được dọn dẹp và toàn bộ bài viết được giữ lại</strong><br />» %s',
@@ -697,57 +661,49 @@ $lang = array_merge($lang, array(
 	'LOG_RANK_REMOVED'		=> '<strong>Đã gỡ bỏ danh hiệu</strong><br />» %s',
 	'LOG_RANK_UPDATED'		=> '<strong>Đã cập nhật danh hiệu</strong><br />» %s',
 
-	'LOG_REASON_ADDED'		=> '<strong>Đã thêm vào báo cáo/lý do từ chối</strong><br />» %s',
-	'LOG_REASON_REMOVED'	=> '<strong>Đã gỡ bỏ báo cáo/lý do từ chối</strong><br />» %s',
-	'LOG_REASON_UPDATED'	=> '<strong>Đã cập nhật báo cáo/lý do từ chối</strong><br />» %s',
+	'LOG_REASON_ADDED'		=> '<strong>Đã thêm vào báo cáo/nguyên nhân từ chối</strong><br />» %s',
+	'LOG_REASON_REMOVED'	=> '<strong>Đã gỡ bỏ báo cáo/nguyên nhân từ chối</strong><br />» %s',
+	'LOG_REASON_UPDATED'	=> '<strong>Đã cập nhật báo cáo/nguyên nhân từ chối</strong><br />» %s',
 
 	'LOG_REFERER_INVALID'		=> '<strong>Kiểm tra tham chiếu thất bại</strong><br />» Tham chiếu là “<em>%1$s</em>”. Yêu cầu đã bị từ chối và phiên đăng nhập bị hủy bỏ.',
 	'LOG_RESET_DATE'			=> '<strong>Ngày hệ thống bắt đầu hoạt động đã được tạo lại</strong>',
 	'LOG_RESET_ONLINE'			=> '<strong>Thông tin người dùng trực tuyến đã được tạo lại</strong>',
-	'LOG_RESYNC_FILES_STATS'	=> '<strong>Thống kê tập tin đính kèm đã được đồng bộ lại</strong>',
 	'LOG_RESYNC_POSTCOUNTS'		=> '<strong>Bộ đếm số bài viết đã được đồng bộ lại</strong>',
 	'LOG_RESYNC_POST_MARKING'	=> '<strong>Những chủ đề được đánh dấu đã được đồng bộ lại</strong>',
 	'LOG_RESYNC_STATS'			=> '<strong>Trạng thái chủ đề, bài viết và tài khoản người dùng đã được đồng bộ lại</strong>',
 
 	'LOG_SEARCH_INDEX_CREATED'	=> '<strong>Đã tạo chỉ mục tìm kiếm cho</strong><br />» %s',
 	'LOG_SEARCH_INDEX_REMOVED'	=> '<strong>Đã gỡ bỏ chỉ mục tìm kiếm của</strong><br />» %s',
-	'LOG_SPHINX_ERROR'			=> '<strong>Lỗi Sphinx</strong><br />» %s',
 	'LOG_STYLE_ADD'				=> '<strong>Đã thêm vào giao diện mới</strong><br />» %s',
 	'LOG_STYLE_DELETE'			=> '<strong>Đã xóa giao diện</strong><br />» %s',
 	'LOG_STYLE_EDIT_DETAILS'	=> '<strong>Đã chỉnh sửa giao diện</strong><br />» %s',
 	'LOG_STYLE_EXPORT'			=> '<strong>Đã xuất giao diện</strong><br />» %s',
 
-	// @deprecated 3.1
 	'LOG_TEMPLATE_ADD_DB'			=> '<strong>Đã thêm vào khuôn mẫu mới trong cơ sở dữ liệu</strong><br />» %s',
-	// @deprecated 3.1
 	'LOG_TEMPLATE_ADD_FS'			=> '<strong>Đã thêm vào khuôn mẫu mới trong hệ thống tập tin giao diện</strong><br />» %s',
 	'LOG_TEMPLATE_CACHE_CLEARED'	=> '<strong>Đã xóa những tập tin khuôn mẫu được tạo bộ đệm <em>%1$s</em></strong><br />» %2$s',
 	'LOG_TEMPLATE_DELETE'			=> '<strong>Đã xóa khuôn mẫu</strong><br />» %s',
 	'LOG_TEMPLATE_EDIT'				=> '<strong>Đã chỉnh sửa khuôn mẫu <em>%1$s</em></strong><br />» %2$s',
 	'LOG_TEMPLATE_EDIT_DETAILS'		=> '<strong>Đã chỉnh sửa thông tin khuôn mẫu</strong><br />» %s',
 	'LOG_TEMPLATE_EXPORT'			=> '<strong>Đã xuất khuôn mẫu</strong><br />» %s',
-	// @deprecated 3.1
 	'LOG_TEMPLATE_REFRESHED'		=> '<strong>Đã nạp lại khuôn mẫu</strong><br />» %s',
-
-	// @deprecated 3.1
+	
 	'LOG_THEME_ADD_DB'			=> '<strong>Đã thêm vào kiểu dáng mới trong cơ sở dữ liệu</strong><br />» %s',
-	// @deprecated 3.1
 	'LOG_THEME_ADD_FS'			=> '<strong>Đã thêm vào kiểu dáng mới trong hệ thống tập tin giao diện</strong><br />» %s',
 	'LOG_THEME_DELETE'			=> '<strong>Kiểu dáng đã được xóa</strong><br />» %s',
 	'LOG_THEME_EDIT_DETAILS'	=> '<strong>Đã chỉnh sửa thông tin kiểu dáng</strong><br />» %s',
 	'LOG_THEME_EDIT'			=> '<strong>Đã chỉnh sửa kiểu dáng <em>%1$s</em></strong>',
 	'LOG_THEME_EDIT_FILE'		=> '<strong>Đã chỉnh sửa kiểu dáng <em>%1$s</em></strong><br />» Tập tin đã chỉnh sửa <em>%2$s</em>',
 	'LOG_THEME_EXPORT'			=> '<strong>Đã xuất kiểu dáng</strong><br />» %s',
-	// @deprecated 3.1
 	'LOG_THEME_REFRESHED'		=> '<strong>Đã nạp lại kiểu dáng</strong><br />» %s',
 
 	'LOG_UPDATE_DATABASE'	=> '<strong>Đã cập nhật cơ sở dữ liệu từ phiên bản %1$s lên phiên bản %2$s</strong>',
 	'LOG_UPDATE_PHPBB'		=> '<strong>Đã cập nhật hệ thống phpBB từ phiên bản %1$s lên phiên bản %2$s</strong>',
 
 	'LOG_USER_ACTIVE'		=> '<strong>Tài khoản đã được kích hoạt</strong><br />» %s',
-	'LOG_USER_BAN_USER'		=> '<strong>Đã cấm tài khoản thông qua phần quản lí người dùng</strong> vì lý do “<em>%1$s</em>”<br />» %2$s',
-	'LOG_USER_BAN_IP'		=> '<strong>Đã cấm địa chỉ IP thông qua phần quản lí người dùng</strong> vì lý do “<em>%1$s</em>”<br />» %2$s',
-	'LOG_USER_BAN_EMAIL'	=> '<strong>Đã cấm địa chỉ email thông qua phần quản lí người dùng</strong> vì lý do “<em>%1$s</em>”<br />» %2$s',
+	'LOG_USER_BAN_USER'		=> '<strong>Đã cấm tài khoản thông qua phần quản lí người dùng</strong> vì nguyên nhân “<em>%1$s</em>”<br />» %2$s',
+	'LOG_USER_BAN_IP'		=> '<strong>Đã cấm địa chỉ IP thông qua phần quản lí người dùng</strong> vì nguyên nhân “<em>%1$s</em>”<br />» %2$s',
+	'LOG_USER_BAN_EMAIL'	=> '<strong>Đã cấm địa chỉ email thông qua phần quản lí người dùng</strong> vì nguyên nhân “<em>%1$s</em>”<br />» %2$s',
 	'LOG_USER_DELETED'		=> '<strong>Đã xóa tài khoản</strong><br />» %s',
 	'LOG_USER_DEL_ATTACH'	=> '<strong>Đã gỡ bỏ toàn bộ tập tin đính kèm được gửi bởi</strong><br />» %s',
 	'LOG_USER_DEL_AVATAR'	=> '<strong>Đã gỡ bỏ hình đại diện của tài khoản</strong><br />» %s',
@@ -782,14 +738,13 @@ $lang = array_merge($lang, array(
 	'LOG_USER_GROUP_JOIN_PENDING'	=> '<strong>Thành viên đã tham gia vào nhóm và đang chờ quyết định chấp thuận</strong><br />» %s',
 	'LOG_USER_GROUP_RESIGN'			=> '<strong>Người dùng đã từ bỏ tư cách thành viên trong nhóm</strong><br />» %s',
 
-	'LOG_WARNING_DELETED'		=> '<strong>Đã xóa cảnh cáo người dùng</strong><br />» %s',
-	'LOG_WARNINGS_DELETED'		=> array(
-		1 => '<strong>Đã xóa cảnh cáo người dùng</strong><br />» %1$s',
-		2 => '<strong>Đã xóa %2$d cảnh cáo người dùng</strong><br />» %1$s', // Example: '<strong>Deleted 2 user warnings</strong><br />» username'
-	),
-	'LOG_WARNINGS_DELETED_ALL'	=> '<strong>Đã xóa hết cảnh cáo người dùng</strong><br />» %s',
+	'LOG_WARNING_DELETED'		=> '<strong>Đã xóa cảnh cáo cho người dùng</strong><br />» %s',
+	'LOG_WARNINGS_DELETED'		=> '<strong>Đã xóa %2$s cảnh cáo cho người dùng</strong><br />» %1$s', // Example: '<strong>Deleted 2 user warnings</strong><br />» username'
+	'LOG_WARNINGS_DELETED_ALL'	=> '<strong>Đã xóa hết cảnh cáo cho người dùng</strong><br />» %s',
 
-	'LOG_WORD_ADD'		=> '<strong>Đã thêm từ kiểm duyệt</strong><br />» %s',
-	'LOG_WORD_DELETE'	=> '<strong>Đã xóa từ kiểm duyệt</strong><br />» %s',
-	'LOG_WORD_EDIT'		=> '<strong>Đã sửa từ kiểm duyệt</strong><br />» %s',
+	'LOG_WORD_ADD'			=> '<strong>Đã thêm từ kiểm duyệt</strong><br />» %s',
+	'LOG_WORD_DELETE'		=> '<strong>Đã xóa từ kiểm duyệt</strong><br />» %s',
+	'LOG_WORD_EDIT'			=> '<strong>Đã sửa từ kiểm duyệt</strong><br />» %s',
 ));
+
+?>

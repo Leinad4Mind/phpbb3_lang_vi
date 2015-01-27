@@ -4,7 +4,7 @@
 * acp/modules [Vietnamese]
 *
 * @package language
-* @version 1.19
+* @version 1.17
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,25 +23,20 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-/**
-* DEVELOPERS PLEASE NOTE
-*
-* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-*
-* Placeholders can now contain order information, e.g. instead of
-* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-* translators to re-order the output of data while ensuring it remains correct
-*
-* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-* equally where a string contains only two placeholders which are used to wrap text
-* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
-*
-* Some characters you may want to copy & paste:
-* ’ » “ ” …
-*/
+// DEVELOPERS PLEASE NOTE
+//
+// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+//
+// Placeholders can now contain order information, e.g. instead of
+// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+// translators to re-order the output of data while ensuring it remains correct
+//
+// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+// equally where a string contains only two placeholders which are used to wrap text
+// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ACP_MODULE_MANAGEMENT_EXPLAIN'	=> 'Công cụ này cho phép bạn quản lí tất cả các loại nhóm và gói chức năng trong hệ thống. Cần lưu ý rằng bảng quản trị có cấu trúc trình đơn đến ba cấp (Nhóm chức năng -> Nhóm chức năng -> Gói chức năng) nhờ đó mà các gói chức năng khác có cấu trúc trình đơn hai cấp (Nhóm chức năng -> Gói chức năng) mới được giữ lại bên trong. Hãy cẩn thận vì bạn có thể làm hư hỏng toàn bộ các trình đơn trong bảng quản trị và mất chức năng điều khiển nếu bạn vô hiệu hay xóa các gói chức năng có nhiệm vụ quản lí cho các gói chức năng khác và cả chính nó.',
+	'ACP_MODULE_MANAGEMENT_EXPLAIN'	=> 'Công cụ này cho phép bạn quản lí tất cả các loại nhóm và gói chức năng trong hệ thống. Cần lưu ý rằng bảng quản trị viên có cấu trúc trình đơn đến ba cấp (Nhóm chức năng -> Nhóm chức năng -> Gói chức năng) nhờ đó mà các gói chức năng khác có cấu trúc trình đơn hai cấp (Nhóm chức năng -> Gói chức năng) mới được giữ lại bên trong. Hãy cẩn thận vì bạn có thể làm hư hỏng toàn bộ các trình đơn trong bảng quản trị viên và mất chức năng điều khiển nếu bạn vô hiệu hay xóa các gói chức năng có nhiệm vụ quản lí cho các gói chức năng khác và cả chính nó.',
 	'ADD_MODULE'					=> 'Thêm gói chức năng',
 	'ADD_MODULE_CONFIRM'			=> 'Bạn có chắc chắn muốn thêm vào gói chức năng với chế độ đã chọn?',
 	'ADD_MODULE_TITLE'				=> 'Thêm vào gói chức năng',
@@ -85,3 +80,5 @@ $lang = array_merge($lang, array(
 
 	'SELECT_MODULE'			=> 'Chọn một gói chức năng',
 ));
+
+?>

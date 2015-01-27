@@ -4,7 +4,7 @@
 * acp/attachments [Vietnamese]
 *
 * @package language
-* @version 1.33
+* @version 1.31
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,22 +23,17 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-/**
-* DEVELOPERS PLEASE NOTE
-*
-* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-*
-* Placeholders can now contain order information, e.g. instead of
-* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-* translators to re-order the output of data while ensuring it remains correct
-*
-* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-* equally where a string contains only two placeholders which are used to wrap text
-* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
-*
-* Some characters you may want to copy & paste:
-* ’ » “ ” …
-*/
+// DEVELOPERS PLEASE NOTE 
+//
+// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+//
+// Placeholders can now contain order information, e.g. instead of
+// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+// translators to re-order the output of data while ensuring it remains correct
+//
+// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+// equally where a string contains only two placeholders which are used to wrap text
+// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
 	'ACP_ATTACHMENT_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thay đổi những thiết lập chính về chức năng đính kèm tập tin và những nhóm tập tin kết hợp trong hệ thống.',
@@ -67,7 +62,6 @@ $lang = array_merge($lang, array(
 	'ATTACH_MAX_PM_FILESIZE_EXPLAIN'	=> 'Dung lượng tối đa được phép sử dụng cho mỗi tập tin được đính kèm trong tin nhắn. Nhập số <strong>0</strong> để không hạn chế dung lượng này.',
 	'ATTACH_ORPHAN_URL'					=> 'Tập tin đính kèm không được sử dụng',
 	'ATTACH_POST_ID'					=> 'Số ID bài viết',
-	'ATTACH_POST_TYPE'					=> 'Loại bài viết',
 	'ATTACH_QUOTA'						=> 'Tổng dung lượng đính kèm tập tin',
 	'ATTACH_QUOTA_EXPLAIN'				=> 'Tổng dung lượng tối đa cho phép của tất cả các tập tin đính kèm trong diễn đàn. Nhập số <strong>0</strong> để không hạn chế dung lượng tập tin.',
 	'ATTACH_TO_POST'					=> 'Đính kèm tập tin vào bài viết',
@@ -113,11 +107,8 @@ $lang = array_merge($lang, array(
 	'EXT_GROUP_REAL_MEDIA'			=> 'Tập tin Real Media',
 	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Tập tin Windows Media',
 
-	'FILES_GONE'		=> 'Một vài tập tin đính kèm bạn chọn xóa không tồn tại trên máy chủ. Có thể chúng vừa bị xóa nhưng thời gian phản hồi trễ dẫn đến ghi nhận sai. Những tập tin hiện diện còn lại đều đã được xóa.',
-	'FILES_STATS_WRONG'	=> 'Dữ liệu thống kê tập tin đính kèm trên hệ thống dường như không chính xác và cần được đồng bộ lại. Giá trị ghi nhận trên thực tế: số tập tin đính kèm = %1$d, tổng dung lượng tập tin đính kèm = %2$s.<br />Bấm %3$svào đây%4$s để đồng bộ lại.',
-
-	'GO_TO_EXTENSIONS'	=> 'Chuyển đến phần quản lí loại tập tin',
-	'GROUP_NAME'		=> 'Tên nhóm tập tin',
+	'GO_TO_EXTENSIONS'		=> 'Chuyển đến phần quản lí loại tập tin',
+	'GROUP_NAME'			=> 'Tên nhóm tập tin',
 
 	'IMAGE_LINK_SIZE'			=> 'Kích thước hình ảnh sẽ hiển thị như liên kết',
 	'IMAGE_LINK_SIZE_EXPLAIN'	=> 'Hiển thị những hình ảnh được đính kèm như là một liên kết văn bản trong dòng nếu kích thước hình ảnh lớn hơn kích thước đã chọn. Thiết lập <strong>0 Pixel x 0 Pixel</strong> để vô hiệu chức năng này.',
@@ -139,7 +130,6 @@ $lang = array_merge($lang, array(
 	'NOT_ALLOWED_IN_PM'			=> 'Chỉ cho phép trong bài viết',
 	'NOT_ALLOWED_IN_PM_POST'	=> 'Không cho phép',
 	'NOT_ASSIGNED'				=> 'Không chỉ định',
-	'NO_ATTACHMENTS'			=> 'Không có tập tin nào vào thời điểm này.',
 	'NO_EXT_GROUP'				=> 'Không có nhóm tập tin nào',
 	'NO_EXT_GROUP_NAME'			=> 'Bạn chưa nhập tên nhóm tập tin',
 	'NO_EXT_GROUP_SPECIFIED'	=> 'Không có nhóm tập tin nào được xác định.',
@@ -153,9 +143,8 @@ $lang = array_merge($lang, array(
 	'ORDER_ALLOW_DENY'		=> 'Đồng ý',
 	'ORDER_DENY_ALLOW'		=> 'Từ chối',
 
-	'REMOVE_ALLOWED_IPS'			=> 'Gỡ bỏ hoặc ngưng loại trừ những địa chỉ IP/tên miền <em>đã cho phép</em>',
-	'REMOVE_DISALLOWED_IPS'			=> 'Gỡ bỏ hoặc ngưng loại trừ những địa chỉ IP/tên miền <em>đã bị cấm</em>',
-	'RESYNC_FILES_STATS_CONFIRM'	=> 'Bạn có chắc chắn muốn đồng bộ lại dữ liệu thống kê tập tin đính kèm?',
+	'REMOVE_ALLOWED_IPS'		=> 'Gỡ bỏ hoặc ngưng loại trừ những địa chỉ IP/tên miền <em>đã cho phép</em>',
+	'REMOVE_DISALLOWED_IPS'		=> 'Gỡ bỏ hoặc ngưng loại trừ những địa chỉ IP/tên miền <em>đã bị cấm</em>',
 
 	'SEARCH_IMAGICK'				=> 'Tìm kiếm ứng dụng Imagemagick',
 	'SECURE_ALLOW_DENY'				=> 'Danh sách đồng ý/từ chối',
@@ -181,3 +170,5 @@ $lang = array_merge($lang, array(
 	'UPLOAD_ICON'					=> 'Biểu tượng tập tin',
 	'UPLOAD_NOT_DIR'				=> 'Thư mục tải lên vừa chọn không phải là địa chỉ của một thư mục.',
 ));
+
+?>

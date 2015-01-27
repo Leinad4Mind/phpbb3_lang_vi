@@ -2,10 +2,11 @@ Subject: Chào mừng bạn đến với "{SITENAME}"
 
 {WELCOME_MSG}
 
-Hãy giữ lại email này cẩn thận. Thông tin về tài khoản của bạn như sau:
+Hãy giữ lại email này cẩn thận. Thông tin về tài khoản thành viên của bạn như sau:
 
 ----------------------------
-Tên tài khoản: {USERNAME}
+Tên thành viên: {USERNAME}
+
 Địa chỉ: {U_BOARD}
 ----------------------------
 

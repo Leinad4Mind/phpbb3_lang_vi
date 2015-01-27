@@ -4,7 +4,7 @@
 * mcp [Vietnamese]
 *
 * @package language
-* @version 1.60
+* @version 1.56
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,45 +23,36 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-/**
-* DEVELOPERS PLEASE NOTE
-*
-* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-*
-* Placeholders can now contain order information, e.g. instead of
-* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-* translators to re-order the output of data while ensuring it remains correct
-*
-* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-* equally where a string contains only two placeholders which are used to wrap text
-* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
-*
-* Some characters you may want to copy & paste:
-* ’ » “ ” …
-*/
+// DEVELOPERS PLEASE NOTE
+//
+// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+//
+// Placeholders can now contain order information, e.g. instead of
+// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+// translators to re-order the output of data while ensuring it remains correct
+//
+// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+// equally where a string contains only two placeholders which are used to wrap text
+// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ACTION'					=> 'Thao tác',
-	'ACTION_NOTE'				=> 'Thao tác/Ghi chú',
-	'ADD_FEEDBACK'				=> 'Thêm phản hồi',
-	'ADD_FEEDBACK_EXPLAIN'		=> 'Nếu bạn muốn thêm vào một báo cáo trong trang này thì hãy điền đầy đủ thông tin cho các mục trong bảng bên dưới. Chỉ sử dụng văn bản thuần túy, các thẻ HTML, BBCode… đều không được phép sử dụng.',
-	'ADD_WARNING'				=> 'Thêm cảnh cáo',
-	'ADD_WARNING_EXPLAIN'		=> 'Để gửi một cảnh cáo đến người dùng này, bạn hãy điền đầy đủ thông tin cho các mục trong bảng bên dưới. Chỉ sử dụng văn bản thuần túy, các thẻ HTML, BBCode… đều không được phép sử dụng.',
-	'ALL_ENTRIES'				=> 'Tất cả các mục',
-	'ALL_NOTES_DELETED'			=> 'Đã gỡ bỏ thành công tất cả ghi chú của người dùng',	
-	'ALL_REPORTS'				=> 'Tất cả báo cáo',
-	'ALREADY_REPORTED'			=> 'Bài viết này đã được báo cáo rồi.',
-	'ALREADY_REPORTED_PM'		=> 'Tin nhắn này đã được báo cáo rồi.',
-	'ALREADY_WARNED'			=> 'Một cảnh cáo đã được đưa ra cho bài viết này.',
-	'APPROVE'					=> 'Duyệt',
-	'APPROVE_POST'				=> 'Duyệt các bài viết',
-	'APPROVE_POST_CONFIRM'		=> 'Bạn có chắc chắn muốn duyệt bài viết này?',
-	'APPROVE_POSTS'				=> 'Duyệt bài viết',
-	'APPROVE_POSTS_CONFIRM'		=> 'Bạn có chắc chắn muốn duyệt những bài viết đã chọn?',
-	'APPROVE_TOPIC'				=> 'Duyệt chủ đề',
-	'APPROVE_TOPIC_CONFIRM'		=> 'Bạn có chắc chắn muốn duyệt chủ đề này?',
-	'APPROVE_TOPICS'			=> 'Duyệt các chủ đề',
-	'APPROVE_TOPICS_CONFIRM'	=> 'Bạn có chắc chắn muốn duyệt những chủ đề đã chọn?',
+	'ACTION'				=> 'Thao tác',
+	'ACTION_NOTE'			=> 'Thao tác/Ghi chú',
+	'ADD_FEEDBACK'			=> 'Thêm phản hồi',
+	'ADD_FEEDBACK_EXPLAIN'	=> 'Nếu bạn muốn thêm vào một báo cáo trong trang này thì hãy điền đầy đủ thông tin cho các mục trong bảng bên dưới. Chỉ sử dụng văn bản thuần túy, các thẻ lệnh HTML, BBCode… đều không được phép sử dụng.',
+	'ADD_WARNING'			=> 'Thêm cảnh cáo',
+	'ADD_WARNING_EXPLAIN'	=> 'Để gửi một cảnh cáo đến người dùng này, bạn hãy điền đầy đủ thông tin cho các mục trong bảng bên dưới. Chỉ sử dụng văn bản thuần túy, các thẻ lệnh HTML, BBCode… đều không được phép sử dụng.',
+	'ALL_ENTRIES'			=> 'Tất cả các mục',
+	'ALL_NOTES_DELETED'		=> 'Đã gỡ bỏ thành công tất cả ghi chú của người dùng',	
+	'ALL_REPORTS'			=> 'Tất cả báo cáo',
+	'ALREADY_REPORTED'		=> 'Bài viết này đã được báo cáo rồi.',
+	'ALREADY_REPORTED_PM'	=> 'Tin nhắn này đã được báo cáo rồi.',
+	'ALREADY_WARNED'		=> 'Một cảnh cáo đã được đưa ra cho bài viết này.',
+	'APPROVE'				=> 'Chấp nhận',
+	'APPROVE_POST'			=> 'Chấp nhận bài viết',
+	'APPROVE_POST_CONFIRM'	=> 'Bạn có chắc chắn muốn duyệt bài viết này?',
+	'APPROVE_POSTS'			=> 'Chấp nhận bài viết',
+	'APPROVE_POSTS_CONFIRM'	=> 'Bạn có chắc chắn muốn duyệt những bài viết đã chọn?',
 
 	'CANNOT_MOVE_SAME_FORUM'	=> 'Bạn không thể di chuyển một chủ đề đến chuyên mục đang chứa chủ đề đó.',
 	'CANNOT_WARN_ANONYMOUS'		=> 'Bạn không thể cảnh cáo khách chưa đăng ký tài khoản.',
@@ -82,12 +73,16 @@ $lang = array_merge($lang, array(
 	'DELETE_PM_REPORTS'			=> 'Xóa các báo cáo tin nhắn',
 	'DELETE_PM_REPORTS_CONFIRM'	=> 'Bạn có chắc chắn muốn các xóa báo cáo tin nhắn đã chọn?',
 	'DELETE_POSTS'				=> 'Xóa bài viết',
+	'DELETE_POSTS_CONFIRM'		=> 'Bạn có chắc chắn muốn xóa những bài viết này?',
+	'DELETE_POST_CONFIRM'		=> 'Bạn có chắc chắn muốn xóa bài viết này?',
 	'DELETE_REPORT'				=> 'Xóa báo cáo',
 	'DELETE_REPORT_CONFIRM'		=> 'Bạn có chắc chắn muốn xóa báo cáo đã chọn?',
 	'DELETE_REPORTS'			=> 'Xóa các báo cáo',
 	'DELETE_REPORTS_CONFIRM'	=> 'Bạn có chắc chắn muốn xóa những báo cáo đã chọn?',
 	'DELETE_SHADOW_TOPIC'		=> 'Xóa liên kết đến chủ đề trong chuyên mục cũ',
 	'DELETE_TOPICS'				=> 'Xóa những chủ đề đã chọn',
+	'DELETE_TOPICS_CONFIRM'		=> 'Bạn có chắc chắn muốn xóa những chủ đề này?',
+	'DELETE_TOPIC_CONFIRM'		=> 'Bạn có chắc chắn muốn xóa chủ đề này?',
 	'DISAPPROVE'				=> 'Từ chối',
 	'DISAPPROVE_REASON'			=> 'Lý do từ chối',
 	'DISAPPROVE_POST'			=> 'Từ chối bài viết này',
@@ -125,10 +120,8 @@ $lang = array_merge($lang, array(
 	'LATEST_WARNING_TIME'		=> 'Cảnh cáo mới nhất được đưa ra',
 	'LATEST_WARNINGS'			=> '5 cảnh cáo mới nhất',
 	'LEAVE_SHADOW'				=> 'Để lại liên kết đến chủ đề trong chuyên mục cũ',
-	'LIST_REPORTS'				=> array(
-		1	=> '%d báo cáo',
-		2	=> '%d báo cáo',
-	),
+	'LIST_REPORT'				=> 'Chỉ có <strong>1</strong> báo cáo',
+	'LIST_REPORTS'				=> 'Có <strong>%d</strong> báo cáo',
 	'LOCK'						=> 'Khóa',
 	'LOCK_POST_POST'			=> 'Khóa bài viết',
 	'LOCK_POST_POST_CONFIRM'	=> 'Bạn có chắc chắn muốn khóa bài viết này?',
@@ -203,14 +196,10 @@ $lang = array_merge($lang, array(
 
 	'MCP_QUEUE'								=> 'Công việc chờ xử lí',
 	'MCP_QUEUE_APPROVE_DETAILS'				=> 'Thông tin chi tiết về việc duyệt bài',
-	'MCP_QUEUE_UNAPPROVED_POSTS'			=> 'Bài viết đang chờ duyệt',
-	'MCP_QUEUE_UNAPPROVED_POSTS_EXPLAIN'	=> 'Đây là danh sách tất cả bài viết phải được duyệt trước khi hiển thị cho mọi người xem.',
-	'MCP_QUEUE_UNAPPROVED_TOPICS'			=> 'Chủ đề đang chờ duyệt',
-	'MCP_QUEUE_UNAPPROVED_TOPICS_EXPLAIN'	=> 'Đây là danh sách tất cả chủ đề phải được duyệt trước khi hiển thị cho mọi người xem.',
-	'MCP_QUEUE_DELETED_POSTS'				=> 'Bài viết đã xóa',
-	'MCP_QUEUE_DELETED_POSTS_EXPLAIN'		=> 'Đây là danh sách tất cả bài viết đã được xóa nháp. Bạn có thể phục hồi lại hoặc xóa vĩnh viễn các bài viết tại đây.',
-	'MCP_QUEUE_DELETED_TOPICS'				=> 'Chủ đề đã xóa',
-	'MCP_QUEUE_DELETED_TOPICS_EXPLAIN'		=> 'Đây là danh sách tất cả chủ đề đã được xóa nháp. Bạn có thể phục hồi lại hoặc xóa vĩnh viễn các chủ đề tại đây.',
+	'MCP_QUEUE_UNAPPROVED_POSTS'			=> 'Những bài viết đang chờ được duyệt',
+	'MCP_QUEUE_UNAPPROVED_POSTS_EXPLAIN'	=> 'Đây là danh sách của tất cả các bài viết đòi hỏi phải được duyệt trước khi hiển thị cho mọi người xem.',
+	'MCP_QUEUE_UNAPPROVED_TOPICS'			=> 'Những chủ đề đang chờ được duyệt',
+	'MCP_QUEUE_UNAPPROVED_TOPICS_EXPLAIN'	=> 'Đây là danh sách của tất cả các chủ đề đòi hỏi phải được duyệt trước khi hiển thị cho mọi người xem.',
 
 	'MCP_VIEW_USER'			=> 'Xem cảnh cáo đối với một người dùng xác định',
 
@@ -240,41 +229,33 @@ $lang = array_merge($lang, array(
 	'NOTIFY_USER_WARN'				=> 'Thông báo cho người dùng biết về việc cảnh cáo?',
 	'NOT_MODERATOR'					=> 'Bạn không phải là người điều hành của chuyên mục này.',
 	'NO_DESTINATION_FORUM'			=> 'Hãy chọn một chuyên mục để tiếp tục.',
-	'NO_DESTINATION_FORUM_FOUND'	=> 'Không chuyên mục nào có sẵn để chọn.',
-	'NO_ENTRIES'					=> 'Không có mục ghi nhận nào.',
+	'NO_DESTINATION_FORUM_FOUND'	=> 'Không có chuyên mục nào có sẵn để chọn.',
+	'NO_ENTRIES'					=> 'Không có mục ghi nhận nào trong thời điểm này.',
 	'NO_FEEDBACK'					=> 'Không có phản hồi nào về người dùng này.',
 	'NO_FINAL_TOPIC_SELECTED'		=> 'Bạn phải chọn một chủ đề để thực hiện nhập chung những bài viết.',
 	'NO_MATCHES_FOUND'				=> 'Không tìm thấy kết quả.',
 	'NO_POST'						=> 'Bạn phải chọn một bài viết để cảnh cáo người dùng về bài viết đó.',	
 	'NO_POST_REPORT'				=> 'Bài viết này đã không được báo cáo',
 	'NO_POST_SELECTED'				=> 'Bạn phải chọn ít nhất một bài viết để thực hiện yêu cầu này.',
-	'NO_POSTS_DELETED'				=> 'Không có bài viết nào bị xóa.',
-	'NO_POSTS_QUEUE'				=> 'Không có bài viết nào chờ duyệt.',
-	'NO_REASON_DISAPPROVAL'			=> 'Hãy đưa ra một lý do thích hợp về việc từ chối.',	
+	'NO_REASON_DISAPPROVAL'			=> 'Hãy đưa ra một nguyên nhân thích hợp về việc từ chối.',	
 	'NO_REPORT'						=> 'Không có báo cáo nào được tìm thấy.',
 	'NO_REPORTS'					=> 'Không có báo cáo nào được tìm thấy.',
 	'NO_REPORT_SELECTED'			=> 'Bạn phải chọn ít nhất một báo cáo để thực hiện yêu cầu này.',
 	'NO_TOPIC_ICON'					=> 'Không dùng',
 	'NO_TOPIC_SELECTED'				=> 'Bạn phải chọn ít nhất một chủ đề để thực hiện yêu cầu này.',
-	'NO_TOPICS_DELETED'				=> 'Không có chủ đề nào bị xóa.',
-	'NO_TOPICS_QUEUE'				=> 'Không có chủ đề nào chờ duyệt.',
-	'NO_WARNINGS'					=> 'Không có cảnh cáo nào.',
+	'NO_TOPICS_QUEUE'				=> 'Không có chủ đề nào chờ được duyệt.',
 
 	'ONLY_TOPIC'	=> 'Chỉ trong chủ đề “%s”',	
 	'OTHER_USERS'	=> 'Những người dùng khác gửi bài từ địa chỉ IP này',
 
-	'QUICKMOD_ACTION_NOT_ALLOWED' => "Thao tác “%s” không được phép xử lí nhanh",
-
 	'PM_REPORT_CLOSED_SUCCESS'		=> 'Báo cáo tin nhắn vừa chọn đã được kết thúc thành công.',
 	'PM_REPORT_DELETED_SUCCESS'		=> 'Báo cáo tin nhắn vừa chọn đã được xóa thành công.',
 	'PM_REPORTED_SUCCESS'			=> 'Tin nhắn vừa chọn đã được báo cáo thành công.',
+	'PM_REPORT_TOTAL'				=> 'Chỉ có <strong>1</strong> báo cáo để xem lại.',
 	'PM_REPORTS_CLOSED_SUCCESS'		=> 'Những báo cáo tin nhắn vừa chọn đã được kết thúc thành công.',
 	'PM_REPORTS_DELETED_SUCCESS'	=> 'Những báo cáo tin nhắn vừa chọn đã được xóa thành công.',
-	'PM_REPORTS_TOTAL'				=> array(
-		0	=> 'Không có báo cáo tin nhắn nào.',
-		1	=> 'Có <strong>1</strong> báo cáo tin nhắn chờ xem.',
-		2	=> 'Có <strong>%d</strong> báo cáo tin nhắn chờ xem.',
-	),
+	'PM_REPORTS_TOTAL'				=> 'Có tất cả <strong>%d</strong> báo cáo để xem lại.',
+	'PM_REPORTS_ZERO_TOTAL'			=> 'Không có báo cáo nào để xem lại.',
 	'PM_REPORT_DETAILS'				=> 'Chi tiết báo cáo tin nhắn',
 	'POSTER'						=> 'Người gửi',
 	'POSTS_APPROVED_SUCCESS'		=> 'Những bài viết vừa chọn đã được duyệt thành công.',
@@ -282,17 +263,15 @@ $lang = array_merge($lang, array(
 	'POSTS_DISAPPROVED_SUCCESS'		=> 'Những bài viết vừa chọn đã được từ chối thành công.',
 	'POSTS_LOCKED_SUCCESS'			=> 'Những bài viết vừa chọn đã được khóa thành công.',
 	'POSTS_MERGED_SUCCESS'			=> 'Những bài viết vừa chọn đã được nhập chung thành công.',
+	'POSTS_UNLOCKED_SUCCESS'		=> 'Những bài viết vừa chọn đã được mở khóa thành công.',
 	'POSTS_PER_PAGE'				=> 'Bài viết mỗi trang',
 	'POSTS_PER_PAGE_EXPLAIN'		=> '(Nhập số <strong>0</strong> để xem tất cả báo cáo)',
-	'POSTS_RESTORED_SUCCESS'		=> 'Những bài viết vừa chọn đã được phục hồi thành công.',
-	'POSTS_UNLOCKED_SUCCESS'		=> 'Những bài viết vừa chọn đã được mở khóa thành công.',
 	'POST_APPROVED_SUCCESS'			=> 'Bài viết vừa chọn đã được duyệt thành công.',
 	'POST_DELETED_SUCCESS'			=> 'Bài viết vừa chọn đã được xóa thành công.',
 	'POST_DISAPPROVED_SUCCESS'		=> 'Bài viết vừa chọn đã được từ chối thành công.',
 	'POST_LOCKED_SUCCESS'			=> 'Bài viết đã được khóa thành công.',
 	'POST_NOT_EXIST'				=> 'Bài viết bạn vừa yêu cầu không tồn tại.',
 	'POST_REPORTED_SUCCESS'			=> 'Bài viết đã được báo cáo thành công.',
-	'POST_RESTORED_SUCCESS'			=> 'Bài viết đã được phục hồi thành công.',
 	'POST_UNLOCKED_SUCCESS'			=> 'Bài viết đã được mở khóa thành công.',
 
 	'READ_USERNOTES'			=> 'Ghi chú người dùng',
@@ -303,11 +282,8 @@ $lang = array_merge($lang, array(
 	'REPORTED_ON_DATE'			=> 'vào ngày',
 	'REPORTS_CLOSED_SUCCESS'	=> 'Các báo cáo vừa chọn đã được kết thúc thành công.',
 	'REPORTS_DELETED_SUCCESS'	=> 'Các báo cáo vừa chọn đã được xóa thành công.',
-	'REPORTS_TOTAL'				=> array(
-		0	=> 'Không có báo cáo nào.',
-		1	=> 'Có <strong>1</strong> báo cáo chờ xem.',
-		2	=> 'Có <strong>%d</strong> báo cáo chờ xem.',
-	),
+	'REPORTS_TOTAL'				=> 'Có tất cả <strong>%d</strong> báo cáo để xem lại.',
+	'REPORTS_ZERO_TOTAL'		=> 'Không có báo cáo nào để xem lại.',
 	'REPORT_CLOSED'				=> 'Báo cáo này đã được kết thúc.',
 	'REPORT_CLOSED_SUCCESS'		=> 'Báo cáo vừa chọn đã được kết thúc thành công.',
 	'REPORT_DELETED_SUCCESS'	=> 'Báo cáo vừa chọn đã được xóa thành công.',
@@ -319,15 +295,7 @@ $lang = array_merge($lang, array(
 	'REPORT_POST_EXPLAIN'		=> 'Sử dụng bảng điều khiển này để báo cáo bài viết đã chọn đến các điều hành viên của chuyên mục này và quản trị viên. Bạn chỉ nên tiến hành báo cáo nếu bài viết thực sự vi phạm nội qui chuyên mục.',
 	'REPORT_REASON'				=> 'Lý do báo cáo',
 	'REPORT_TIME'				=> 'Ngày báo cáo',
-	'RESTORE'					=> 'Phục hồi',
-	'RESTORE_POST'				=> 'Phục hồi bài viết',
-	'RESTORE_POST_CONFIRM'		=> 'Bạn có chắc chắn muốn phục hồi bài viết này?',
-	'RESTORE_POSTS'				=> 'Phục hồi các bài viết',
-	'RESTORE_POSTS_CONFIRM'		=> 'Bạn có chắc chắn muốn phục hồi những bài viết đã chọn?',
-	'RESTORE_TOPIC'				=> 'Phục hồi chủ đề',
-	'RESTORE_TOPIC_CONFIRM'		=> 'Bạn có chắc chắn muốn phục hồi chủ đề này?',
-	'RESTORE_TOPICS'			=> 'Phục hồi các chủ đề',
-	'RESTORE_TOPICS_CONFIRM'	=> 'Bạn có chắc chắn muốn phục hồi những chủ đề đã chọn?',
+	'REPORT_TOTAL'				=> 'Chỉ có <strong>1</strong> báo cáo để xem lại.',
 	'RESYNC'					=> 'Đồng bộ',
 	'RETURN_MESSAGE'			=> '%sQuay về nội dung vừa xem%s',
 	'RETURN_NEW_FORUM'			=> '%sChuyển đến chuyên mục mới%s',
@@ -368,7 +336,6 @@ $lang = array_merge($lang, array(
 	'TOPICS_FORKED_SUCCESS'		=> 'Những chủ đề vừa chọn đã được sao chép thành công.',
 	'TOPICS_LOCKED_SUCCESS'		=> 'Những chủ đề vừa chọn đã được khóa thành công.',
 	'TOPICS_MOVED_SUCCESS'		=> 'Những chủ đề vừa chọn đã được di chuyển thành công.',
-	'TOPICS_RESTORED_SUCCESS'	=> 'Những chủ đề vừa chọn đã được phục hồi thành công.',
 	'TOPICS_RESYNC_SUCCESS'		=> 'Những chủ đề vừa chọn đã được đồng bộ thành công.',
 	'TOPICS_TYPE_CHANGED'		=> 'Những loại chủ đề đã được thay đổi thành công.',
 	'TOPICS_UNLOCKED_SUCCESS'	=> 'Những chủ đề vừa chọn đã được mở khóa thành công.',
@@ -379,7 +346,6 @@ $lang = array_merge($lang, array(
 	'TOPIC_LOCKED_SUCCESS'		=> 'Chủ đề vừa chọn đã được khóa thành công.',
 	'TOPIC_MOVED_SUCCESS'		=> 'Chủ đề vừa chọn đã được di chuyển thành công.',
 	'TOPIC_NOT_EXIST'			=> 'Chủ đề vừa chọn không tồn tại.',
-	'TOPIC_RESTORED_SUCCESS'	=> 'Chủ đề vừa chọn đã được phục hồi thành công.',
 	'TOPIC_RESYNC_SUCCESS'		=> 'Chủ đề vừa chọn đã được đồng bộ thành công.',
 	'TOPIC_SPLIT_SUCCESS'		=> 'Chủ đề vừa chọn đã được chia nhỏ thành công.',
 	'TOPIC_TIME'				=> 'Ngày tạo chủ đề',
@@ -387,11 +353,9 @@ $lang = array_merge($lang, array(
 	'TOPIC_UNLOCKED_SUCCESS'	=> 'Chủ đề vừa chọn đã được mở khóa thành công.',
 	'TOTAL_WARNINGS'			=> 'Số lần cảnh cáo',
 
-	'UNAPPROVED_POSTS_TOTAL'		=> array(
-		0	=> 'Không có bài viết nào chờ duyệt.',
-		1	=> 'Có <strong>1</strong> bài viết chờ duyệt.',
-		2	=> 'Có <strong>%d</strong> bài viết chờ duyệt.',
-	),
+	'UNAPPROVED_POSTS_TOTAL'		=> 'Có tất cả <strong>%d</strong> bài viết đang chờ được duyệt.',
+	'UNAPPROVED_POSTS_ZERO_TOTAL'	=> 'Không có bài viết nào đang chờ được duyệt.',
+	'UNAPPROVED_POST_TOTAL'			=> 'Chỉ có <strong>1</strong> bài viết đang chờ được duyệt.',
 	'UNLOCK'						=> 'Mở khóa',
 	'UNLOCK_POST'					=> 'Mở khóa bài viết',
 	'UNLOCK_POST_EXPLAIN'			=> 'Cho phép sửa bài viết',
@@ -417,6 +381,7 @@ $lang = array_merge($lang, array(
 	'WARNING_PM_BODY'		=> 'Dưới đây là cảnh cáo dành cho bạn bởi các điều hành viên hay quản trị viên của website. [quote]%s[/quote]',
 	'WARNING_PM_SUBJECT'	=> 'Cảnh cáo từ ban điều hành diễn đàn',
 	'WARNING_POST_DEFAULT'	=> 'Đây là cảnh cáo về việc gửi bài của bạn: “%s”.',
+	'WARNINGS_ZERO_TOTAL'	=> 'Không có cảnh cáo nào.',
 
 	'YOU_SELECTED_TOPIC'	=> 'Bạn đã chọn chủ đề số <strong>%d</strong>: “%s”.',
 
@@ -425,13 +390,15 @@ $lang = array_merge($lang, array(
 			'WAREZ'		=> 'Vi phạm bản quyền',
 			'SPAM'		=> 'Nhảm nhí',
 			'OFF_TOPIC'	=> 'Không phù hợp',
-			'OTHER'		=> 'Lý do khác',
+			'OTHER'		=> 'Nguyên nhân khác',
 		),
 		'DESCRIPTION' => array(
 			'WAREZ'		=> 'Nội dung có chứa các liên kết liên quan đến những phần mềm sao chép trái phép.',
 			'SPAM'		=> 'Nội dung chỉ nhằm mục đích quảng cáo cho một website hay các sản phẩm khác.',
 			'OFF_TOPIC'	=> 'Nội dung không phù hợp.',
-			'OTHER'		=> 'Nội dung được báo cáo không phải vì các lý do đã liệt kê ở trên, bạn hãy tự nhập vào mô tả chi tiết.',
-		),
+			'OTHER'		=> 'Nội dung được báo cáo không phải vì các nguyên nhân đã liệt kê ở trên, bạn hãy tự nhập vào mô tả chi tiết.',
+		)
 	),
 ));
+
+?>
