@@ -4,7 +4,7 @@
 * acp/profile [Vietnamese]
 *
 * @package language
-* @version 1.32
+* @version 1.36
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,23 +23,31 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE
-//
-// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-//
-// Placeholders can now contain order information, e.g. instead of
-// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-// translators to re-order the output of data while ensuring it remains correct
-//
-// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-// equally where a string contains only two placeholders which are used to wrap text
-// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+/**
+* DEVELOPERS PLEASE NOTE
+*
+* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+*
+* Placeholders can now contain order information, e.g. instead of
+* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+* translators to re-order the output of data while ensuring it remains correct
+*
+* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+* equally where a string contains only two placeholders which are used to wrap text
+* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+*
+* Some characters you may want to copy & paste:
+* ’ » “ ” …
+*/
 
 // Custom profile fields
 $lang = array_merge($lang, array(
 	'ADDED_PROFILE_FIELD'	=> 'Mục thông tin cá nhân mới đã được thêm vào thành công.',
-	'ALPHA_ONLY'			=> 'Chỉ sử dụng chữ số và chữ cái',
-	'ALPHA_SPACERS'			=> 'Chỉ sử dụng chữ số, chữ cái và khoảng trắng',
+	'ALPHA_DOTS'			=> 'Chữ, số và dấu chấm',
+	'ALPHA_ONLY'			=> 'Chữ và số',
+	'ALPHA_PUNCTUATION'		=> 'Chữ, số và các dấu: phẩy, chấm, gạch dưới, gạch nối (phải bắt đầu bằng chữ)',
+	'ALPHA_SPACERS'			=> 'Chữ, số và khoảng trắng',
+	'ALPHA_UNDERSCORE'		=> 'Chữ, số và dấu gạch dưới',
 	'ALWAYS_TODAY'			=> 'Sử dụng ngày tháng hiện tại',
 
 	'BOOL_ENTRIES_EXPLAIN'	=> 'Nhập vào tùy chọn của bạn',
@@ -66,6 +74,10 @@ $lang = array_merge($lang, array(
 	'DISPLAY_AT_PROFILE_EXPLAIN'	=> 'Cho phép người dùng có thể thay đổi mục thông tin cá nhân này trong bảng điều khiển của mình.',	
 	'DISPLAY_AT_REGISTER'			=> 'Hiển thị trong phần đăng ký tài khoản mới',
 	'DISPLAY_AT_REGISTER_EXPLAIN'	=> 'Nếu tùy chọn này được bật, mục thông tin cá nhân sẽ được thêm vào trong phần đăng ký tài khoản.',
+	'DISPLAY_ON_MEMBERLIST'			=> 'Hiển trị trong danh sách thành viên',
+	'DISPLAY_ON_MEMBERLIST_EXPLAIN'	=> 'Nếu tùy chọn này được bật, mục thông tin cá nhân sẽ được hiển thị từng dòng trong danh sách thành viên.',
+	'DISPLAY_ON_PM'					=> 'Hiển thị trên màn hình nhắn tin',
+	'DISPLAY_ON_PM_EXPLAIN'			=> 'Nếu tùy chọn này được bật, mục thông tin cá nhân sẽ được hiển thị trong phần thông tin người gửi của tin nhắn.',
 	'DISPLAY_ON_VT'					=> 'Hiển thị trên trang xem chủ đề',
 	'DISPLAY_ON_VT_EXPLAIN'			=> 'Nếu tùy chọn này được bật, mục thông tin cá nhân sẽ được hiển thị trong phần thông tin người gửi trên trang xem chủ đề.',
 	'DISPLAY_PROFILE_FIELD'			=> 'Hiển thị mục thông tin cá nhân',
@@ -78,21 +90,27 @@ $lang = array_merge($lang, array(
 	'ENTRIES'					=> 'Mục',
 	'EVERYTHING_OK'				=> 'Mọi thứ đều bình thường',
 
-	'FIELD_BOOL'				=> 'Toán tử chỉ hai lựa chọn (có/không)',
+	'FIELD_BOOL'				=> 'Chỉ 2 lựa chọn (có/không)',
+	'FIELD_CONTACT_DESC'		=> 'Giới thiệu mục liên lạc',
+	'FIELD_CONTACT_URL'			=> 'Địa chỉ URL mục liên lạc',
 	'FIELD_DATE'				=> 'Ngày tháng',
 	'FIELD_DESCRIPTION'			=> 'Giới thiệu mục thông tin cá nhân',
 	'FIELD_DESCRIPTION_EXPLAIN'	=> 'Giới thiệu về mục thông tin cá nhân này hiển thị cho người dùng.',
 	'FIELD_DROPDOWN'			=> 'Danh sách chọn thả xuống',
+	'FIELD_GOOGLEPLUS'			=> 'Google+',
 	'FIELD_IDENT'				=> 'Tên mục thông tin cá nhân',
 	'FIELD_IDENT_ALREADY_EXIST'	=> 'Tên mục thông tin cá nhân vừa chọn đã có sẵn. Hãy vui lòng chọn một tên khác.',
 	'FIELD_IDENT_EXPLAIN'		=> 'Tên mục thông tin cá nhân là tên xác định mục thông tin cá nhân trong cơ sở dữ liệu và trong các tập tin khuôn mẫu.',
 	'FIELD_INT'					=> 'Chữ số',
+	'FIELD_IS_CONTACT'			=> 'Mục thông tin cá nhân dùng để liên lạc',
+	'FIELD_IS_CONTACT_EXPLAIN'	=> 'Các mục thông tin liên lạc được hiển thị khác biệt trong một góc nhỏ riêng để người xem liên hệ với người gửi bài ngay sau số bài viết và nút nhắn tin. Bạn có thể sử dụng <samp>%s</samp> như một biến giá trị động thay thế cho giá trị nhập vào bởi người dùng.',
 	'FIELD_LENGTH'				=> 'Độ dài khung nhập',
 	'FIELD_NOT_FOUND'			=> 'Không tìm thấy mục thông tin cá nhân.',
 	'FIELD_STRING'				=> 'Trường văn bản đơn',
 	'FIELD_TEXT'				=> 'Khung nhập văn bản',
 	'FIELD_TYPE'				=> 'Loại mục thông tin cá nhân',
 	'FIELD_TYPE_EXPLAIN'		=> 'Bạn không thể thay đổi loại mục thông tin cá nhân sau này.',
+	'FIELD_URL'					=> 'Địa chỉ URL (Liên kết)',
 	'FIELD_VALIDATION'			=> 'Kiểm tra mục thông tin cá nhân',
 	'FIRST_OPTION'				=> 'Tùy chọn đầu tiên',
 
@@ -104,6 +122,11 @@ $lang = array_merge($lang, array(
 	'ISO_LANGUAGE'				=> 'Ngôn ngữ [%s]',
 
 	'LANG_SPECIFIC_OPTIONS'		=> 'Tùy chọn xác định ngôn ngữ [<b>%s</b>]',
+	'LETTER_NUM_DOTS'			=> 'Bất kì chữ, số và dấu chấm',
+	'LETTER_NUM_ONLY'			=> 'Bất kì chữ và số',
+	'LETTER_NUM_PUNCTUATION'	=> 'Bất kì chữ, số, dấu phẩy, dấu chấm, dấu gạch dưới và dấu gạch ngang nhưng bắt đầu bằng chữ',
+	'LETTER_NUM_SPACERS'		=> 'Bất kì chữ, số và khoảng trắng',
+	'LETTER_NUM_UNDERSCORE'		=> 'Bất kì chữ, số và dấu gạch dưới',
 
 	'MAX_FIELD_CHARS'		=> 'Số lượng ký tự tối đa cho phép sử dụng',
 	'MAX_FIELD_NUMBER'		=> 'Số tối đa cho phép sử dụng',
@@ -154,5 +177,3 @@ $lang = array_merge($lang, array(
 
 	'VISIBILITY_OPTION'	=> 'Các tùy chọn ẩn hiển thị',
 ));
-
-?>

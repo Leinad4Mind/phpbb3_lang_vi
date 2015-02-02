@@ -4,7 +4,7 @@
 * acp/permissions [Vietnamese]
 *
 * @package language
-* @version 1.55
+* @version 1.59
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,17 +23,22 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE
-//
-// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-//
-// Placeholders can now contain order information, e.g. instead of
-// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-// translators to re-order the output of data while ensuring it remains correct
-//
-// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-// equally where a string contains only two placeholders which are used to wrap text
-// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+/**
+* DEVELOPERS PLEASE NOTE
+*
+* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+*
+* Placeholders can now contain order information, e.g. instead of
+* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+* translators to re-order the output of data while ensuring it remains correct
+*
+* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+* equally where a string contains only two placeholders which are used to wrap text
+* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+*
+* Some characters you may want to copy & paste:
+* ’ » “ ” …
+*/
 
 $lang = array_merge($lang, array(
 	'ACP_PERMISSIONS_EXPLAIN'	=> '
@@ -53,12 +58,12 @@ $lang = array_merge($lang, array(
 
 		<br />
 
-		<p>Để biết thêm nhiều thông tin về những thiết lập này và quản lí thiết lập cấp phép trong hệ thống phpBB, bạn có thể tham khảo chương 1.5 trong <a href="https://www.phpbb.com/support/documentation/3.0/quickstart/quick_permissions.html">Tài liệu cho người mới bắt đầu</a> của chúng tôi.</p>
+		<p>Để biết thêm nhiều thông tin về những thiết lập này và quản lí thiết lập cấp phép trong hệ thống phpBB, bạn có thể tham khảo phần <a href="https://www.phpbb.com/support/docs/en/3.1/ug/quickstart/permissions/">Thiết lập cấp phép</a> trong tài liệu cho người mới bắt đầu của chúng tôi.</p>
 	',
 
 	'ACL_NEVER'				=> 'Chưa bao giờ',	
 	'ACL_SET'				=> 'Thiết lập cấp phép',
-	'ACL_SET_EXPLAIN'		=> 'Những thiết lập cấp phép được thiết lập đơn giản bằng cách chọn <samp>CÓ</samp>/<samp>KHÔNG</samp> trong từng mục tương ứng. Thiết lập một tùy chọn là <samp>CHƯA BAO GIỜ</samp> cho một người dùng hay nhóm sẽ thay thế cho bất kì giá trị nào được gán. Nếu bạn không muốn gán cấp phép trong một tùy chọn nào dành cho người dùng hay nhóm, hãy chọn <samp>KHÔNG</samp>. Nếu các giá trị được gán trong tùy chọn đã có trong thiết lập cá nhân của người dùng, hãy chọn <samp>CHƯA BAO GIỜ</samp> để sử dụng thiết lập của người dùng. Tất cả các đối tượng được đánh dấu chọn trong ô kiểm phía trước sẽ được sao chép thiết lập cấp phép giống như thiết lập cấp phép bạn đã gán.',
+	'ACL_SET_EXPLAIN'		=> 'Những thiết lập cấp phép được thiết lập đơn giản bằng cách chọn <strong>CÓ</strong>/<strong>KHÔNG</strong> trong từng mục tương ứng. Thiết lập một tùy chọn là <strong>CHƯA BAO GIỜ</strong> cho một người dùng hay nhóm sẽ thay thế cho bất kì giá trị nào được gán. Nếu bạn không muốn gán cấp phép trong một tùy chọn nào dành cho người dùng hay nhóm, hãy chọn <strong>KHÔNG</strong>. Nếu các giá trị được gán trong tùy chọn đã có trong thiết lập cá nhân của người dùng, hãy chọn <strong>CHƯA BAO GIỜ</strong> để sử dụng thiết lập của người dùng. Tất cả các đối tượng được đánh dấu chọn trong ô kiểm phía trước sẽ được sao chép thiết lập cấp phép giống như thiết lập cấp phép bạn đã gán.',
 	'ACL_SETTING'			=> 'Thiết lập',
 
 	'ACL_TYPE_A_'			=> 'Cấp phép quản trị viên',
@@ -77,7 +82,7 @@ $lang = array_merge($lang, array(
 	'ACL_VIEW_EXPLAIN'		=> 'Với công cụ này, bạn có thể xem toàn bộ thiết lập cấp phép đã gán cho người dùng/nhóm. Ô màu đỏ cho biết người dùng/nhóm đó chưa được thiết lập cấp phép và ngược lại, ô màu xanh lá tức là người dùng/nhóm đó đã được thiết lập cấp phép.',
 	'ACL_YES'				=> 'Có',
 
-	'ACP_ADMINISTRATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể gán những thiết lập cấp phép của người quản trị đối với người dùng và nhóm. Tất cả người dùng được cấp phép quản trị viên đều có thể truy cập vào bảng quản trị viên.',
+	'ACP_ADMINISTRATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể gán những thiết lập cấp phép của người quản trị đối với người dùng và nhóm. Tất cả người dùng được cấp phép quản trị viên đều có thể truy cập vào bảng quản trị.',
 	'ACP_FORUM_MODERATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể chọn người dùng hay nhóm sẽ trở thành điều hành viên của chuyên mục. Để xác định người dùng được phép truy cập chuyên mục, gán thiết lập cấp phép của điều hành viên chính hay quản trị viên, hãy sử dụng trang cấp phép tương ứng.',
 	'ACP_FORUM_PERMISSIONS_EXPLAIN'				=> 'Với công cụ này, bạn có thể thay đổi những người dùng và nhóm nào có thể truy cập vào chuyên mục. Để xác định điều hành viên hay quản trị viên, hãy sử dụng trang cấp phép tương ứng.',
 	'ACP_FORUM_PERMISSIONS_COPY_EXPLAIN'		=> 'Với công cụ này, bạn có thể sao chép cấp phép chuyên mục từ một chuyên mục ban đầu sang một hay nhiều chuyên mục khác.',
@@ -138,7 +143,7 @@ $lang = array_merge($lang, array(
 
 	'NO_AUTH_SETTING_FOUND'		=> 'Thiết lập cấp phép không xác định.',
 	'NO_ROLE_ASSIGNED'			=> 'Không có nhiệm vụ nào được gán…',
-	'NO_ROLE_ASSIGNED_EXPLAIN'	=> 'Thiết lập nhiệm vụ này sẽ không thay đổi những thiết lập cấp phép. Nếu bạn muốn không thiết lập/gỡ bỏ tất cả thiết lập cấp phép, bạn nên bấm vào liên kết <samp>Chọn tất cả không</samp>.',
+	'NO_ROLE_ASSIGNED_EXPLAIN'	=> 'Thiết lập nhiệm vụ này sẽ không thay đổi những thiết lập cấp phép. Nếu bạn muốn không thiết lập/gỡ bỏ tất cả thiết lập cấp phép, bạn nên bấm vào liên kết <strong>Chọn tất cả không</strong>.',
 	'NO_ROLE_AVAILABLE'			=> 'Không có nhiệm vụ nào hiện tại',
 	'NO_ROLE_NAME_SPECIFIED'	=> 'Bạn chưa nhập tên của nhiệm vụ.',
 	'NO_ROLE_SELECTED'			=> 'Không thể tìm thấy nhiệm vụ.',
@@ -196,7 +201,7 @@ $lang = array_merge($lang, array(
 	'ROLE_DESCRIPTION_FORUM_POLLS'			=> 'Giống như truy cập bình thường nhưng có thể tạo bình chọn.',
 	'ROLE_DESCRIPTION_FORUM_READONLY'		=> 'Có thể xem chuyên mục nhưng không thể tạo chủ đề mới hay trả lời bài viết.',
 	'ROLE_DESCRIPTION_FORUM_STANDARD'		=> 'Có thể sử dụng hầu hết chức năng trong chuyên mục như đính kèm tập tin và xóa những chủ đề của mình nhưng không thể khóa chúng và không thể tạo bình chọn.',
-	'ROLE_DESCRIPTION_FORUM_NEW_MEMBER'		=> 'Nhiệm vụ dành riêng cho nhóm đặc biệt “Người dùng mới đăng ký”, bao gồm những thiết lập cấp phép <samp>CHƯA BAO GIỜ</samp> để khóa những chức năng chuyên mục đối với các người dùng thuộc nhóm này.',
+	'ROLE_DESCRIPTION_FORUM_NEW_MEMBER'		=> 'Nhiệm vụ dành riêng cho nhóm đặc biệt “Người dùng mới đăng ký”, bao gồm những thiết lập cấp phép <strong>CHƯA BAO GIỜ</strong> để khóa những chức năng chuyên mục đối với các người dùng thuộc nhóm này.',
 	'ROLE_DESCRIPTION_MOD_FULL'				=> 'Có thể sử dụng tất cả chức năng của điều hành viên bao gồm cả bảng cấm.',
 	'ROLE_DESCRIPTION_MOD_QUEUE'			=> 'Có thể sử dụng chức năng của điều hành viên để kiểm tra và sửa bài viết, ngoài ra không có gì khác.',
 	'ROLE_DESCRIPTION_MOD_SIMPLE'			=> 'Có thể sử dụng các thao tác chủ đề đơn giản. Không thể gửi cảnh cáo hay sử dụng các chức năng điều hành viên khác.',
@@ -206,7 +211,7 @@ $lang = array_merge($lang, array(
 	'ROLE_DESCRIPTION_USER_NOAVATAR'		=> 'Hạn chế chức năng thiết lập và không được phép sử dụng hình đại diện.',
 	'ROLE_DESCRIPTION_USER_NOPM'			=> 'Hạn chế chức năng thiết lập và không được phép sử dụng tin nhắn.',
 	'ROLE_DESCRIPTION_USER_STANDARD'		=> 'Có thể sử dụng hầu hết chức năng của người dùng nhưng không thể thay đổi tên tài khoản hay bị giới hạn thời gian gửi bài giữa hai bài viết.',
-	'ROLE_DESCRIPTION_USER_NEW_MEMBER'		=> 'Nhiệm vụ dành riêng cho nhóm đặc biệt “Người dùng mới đăng ký”, bao gồm những thiết lập cấp phép <samp>CHƯA BAO GIỜ</samp> để khóa những chức năng người dùng đối với các người dùng thuộc nhóm này.',
+	'ROLE_DESCRIPTION_USER_NEW_MEMBER'		=> 'Nhiệm vụ dành riêng cho nhóm đặc biệt “Người dùng mới đăng ký”, bao gồm những thiết lập cấp phép <strong>CHƯA BAO GIỜ</strong> để khóa những chức năng người dùng đối với các người dùng thuộc nhóm này.',
 
 	'ROLE_DESCRIPTION_EXPLAIN'		=> 'Bạn có thể nhập vào một giới thiệu ngắn về nhiệm vụ này có vai trò như thế nào trong hệ thống. Nội dung bạn nhập vào đây cũng sẽ được hiển thị trong trang thiết lập cấp phép.',
 	'ROLE_DESCRIPTION_LONG'			=> 'Giới thiệu về nhiệm vụ mà bạn nhập quá dài. Hãy giới hạn nội dung giới thiệu này trong <strong>4000</strong> ký tự.',
@@ -227,48 +232,48 @@ $lang = array_merge($lang, array(
 	'SET_USERS_PERMISSIONS'			=> 'Thiết lập cấp phép người dùng',
 	'SET_USERS_FORUM_PERMISSIONS'	=> 'Thiết lập cấp phép chuyên mục cho người dùng',
 
-	'TRACE_DEFAULT'							=> 'Mặc định, mọi thiết lập cấp phép đều là <samp>KHÔNG</samp> (chưa thiết lập). Vì thế, những thiết lập cấp phép có thể được thay thế bằng những thiết lập khác.',
+	'TRACE_DEFAULT'							=> 'Mặc định, mọi thiết lập cấp phép đều là <strong>KHÔNG</strong> (chưa thiết lập). Vì thế, những thiết lập cấp phép có thể được thay thế bằng những thiết lập khác.',
 	'TRACE_FOR'								=> 'Xác định cho',
 	'TRACE_GLOBAL_SETTING'					=> '%s (toàn bộ)',
-	'TRACE_GROUP_NEVER_TOTAL_NEVER'			=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>CHƯA BAO GIỜ</samp> giống như tất cả kết quả vì thế kết quả cũ được giữ lại.',
-	'TRACE_GROUP_NEVER_TOTAL_NEVER_LOCAL'	=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>CHƯA BAO GIỜ</samp> giống như tất cả kết quả vì thế kết quả cũ được giữ lại.',
-	'TRACE_GROUP_NEVER_TOTAL_NO'			=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>CHƯA BAO GIỜ</samp> sẽ trở thành tất cả giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <samp>KHÔNG</samp>).',
-	'TRACE_GROUP_NEVER_TOTAL_NO_LOCAL'		=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>CHƯA BAO GIỜ</samp> sẽ trở thành tất cả giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <samp>KHÔNG</samp>).',
-	'TRACE_GROUP_NEVER_TOTAL_YES'			=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>CHƯA BAO GIỜ</samp> sẽ thay thế cho tất cả giá trị <samp>CÓ</samp> trở thành <samp>CHƯA BAO GIỜ</samp> cho người dùng này.',
-	'TRACE_GROUP_NEVER_TOTAL_YES_LOCAL'		=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>CHƯA BAO GIỜ</samp> sẽ thay thế cho tất cả giá trị <samp>CÓ</samp> trở thành <samp>CHƯA BAO GIỜ</samp> cho người dùng này.',
-	'TRACE_GROUP_NO'						=> 'Thiết lập cấp phép của nhóm này là <samp>KHÔNG</samp> vì thế toàn bộ giá trị cũ được giữ lại.',
-	'TRACE_GROUP_NO_LOCAL'					=> 'Thiết lập cấp phép của nhóm trong chuyên mục này là <samp>KHÔNG</samp> vì thế toàn bộ giá trị cũ được giữ lại.',
-	'TRACE_GROUP_YES_TOTAL_NEVER'			=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>CÓ</samp> nhưng tất cả giá trị <samp>CHƯA BAO GIỜ</samp> không thể bị thay thế.',
-	'TRACE_GROUP_YES_TOTAL_NEVER_LOCAL'		=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>CÓ</samp> nhưng tất cả giá trị <samp>CHƯA BAO GIỜ</samp> không thể bị thay thế.',
-	'TRACE_GROUP_YES_TOTAL_NO'				=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>CÓ</samp> sẽ trở thành tất cả giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <samp>KHÔNG</samp>).',
-	'TRACE_GROUP_YES_TOTAL_NO_LOCAL'		=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>CÓ</samp> sẽ trở thành tất cả giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <samp>KHÔNG</samp>).',
-	'TRACE_GROUP_YES_TOTAL_YES'				=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>CÓ</samp> và toàn bộ thiết lập cấp phép vừa được chọn là <samp>CÓ</samp>, vì thế tất cả giá trị được giữ lại.',
-	'TRACE_GROUP_YES_TOTAL_YES_LOCAL'		=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>CÓ</samp> và toàn bộ thiết lập cấp phép vừa được chọn là <samp>CÓ</samp>, vì thế tất cả giá trị được giữ lại.',
+	'TRACE_GROUP_NEVER_TOTAL_NEVER'			=> 'Thiết lập cấp phép của nhóm này đã được chọn là <strong>CHƯA BAO GIỜ</strong> giống như tất cả kết quả vì thế kết quả cũ được giữ lại.',
+	'TRACE_GROUP_NEVER_TOTAL_NEVER_LOCAL'	=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <strong>CHƯA BAO GIỜ</strong> giống như tất cả kết quả vì thế kết quả cũ được giữ lại.',
+	'TRACE_GROUP_NEVER_TOTAL_NO'			=> 'Thiết lập cấp phép của nhóm này đã được chọn là <strong>CHƯA BAO GIỜ</strong> sẽ trở thành tất cả giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <strong>KHÔNG</strong>).',
+	'TRACE_GROUP_NEVER_TOTAL_NO_LOCAL'		=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <strong>CHƯA BAO GIỜ</strong> sẽ trở thành tất cả giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <strong>KHÔNG</strong>).',
+	'TRACE_GROUP_NEVER_TOTAL_YES'			=> 'Thiết lập cấp phép của nhóm này đã được chọn là <strong>CHƯA BAO GIỜ</strong> sẽ thay thế cho tất cả giá trị <strong>CÓ</strong> trở thành <strong>CHƯA BAO GIỜ</strong> cho người dùng này.',
+	'TRACE_GROUP_NEVER_TOTAL_YES_LOCAL'		=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <strong>CHƯA BAO GIỜ</strong> sẽ thay thế cho tất cả giá trị <strong>CÓ</strong> trở thành <strong>CHƯA BAO GIỜ</strong> cho người dùng này.',
+	'TRACE_GROUP_NO'						=> 'Thiết lập cấp phép của nhóm này là <strong>KHÔNG</strong> vì thế toàn bộ giá trị cũ được giữ lại.',
+	'TRACE_GROUP_NO_LOCAL'					=> 'Thiết lập cấp phép của nhóm trong chuyên mục này là <strong>KHÔNG</strong> vì thế toàn bộ giá trị cũ được giữ lại.',
+	'TRACE_GROUP_YES_TOTAL_NEVER'			=> 'Thiết lập cấp phép của nhóm này đã được chọn là <strong>CÓ</strong> nhưng tất cả giá trị <strong>CHƯA BAO GIỜ</strong> không thể bị thay thế.',
+	'TRACE_GROUP_YES_TOTAL_NEVER_LOCAL'		=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <strong>CÓ</strong> nhưng tất cả giá trị <strong>CHƯA BAO GIỜ</strong> không thể bị thay thế.',
+	'TRACE_GROUP_YES_TOTAL_NO'				=> 'Thiết lập cấp phép của nhóm này đã được chọn là <strong>CÓ</strong> sẽ trở thành tất cả giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <strong>KHÔNG</strong>).',
+	'TRACE_GROUP_YES_TOTAL_NO_LOCAL'		=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <strong>CÓ</strong> sẽ trở thành tất cả giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <strong>KHÔNG</strong>).',
+	'TRACE_GROUP_YES_TOTAL_YES'				=> 'Thiết lập cấp phép của nhóm này đã được chọn là <strong>CÓ</strong> và toàn bộ thiết lập cấp phép vừa được chọn là <strong>CÓ</strong>, vì thế tất cả giá trị được giữ lại.',
+	'TRACE_GROUP_YES_TOTAL_YES_LOCAL'		=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <strong>CÓ</strong> và toàn bộ thiết lập cấp phép vừa được chọn là <strong>CÓ</strong>, vì thế tất cả giá trị được giữ lại.',
 	'TRACE_PERMISSION'						=> 'Xác định cấp phép - %s',
 	'TRACE_RESULT'							=> 'Xác định kết quả',
 	'TRACE_SETTING'							=> 'Thiết lập xác định',
 
-	'TRACE_USER_GLOBAL_YES_TOTAL_YES'		=> 'Thiết lập cấp phép người dùng trong chuyên mục độc lập được đánh giá là <samp>CÓ</samp> nhưng toàn bộ số thiết lập cấp phép được chọn là <samp>CÓ</samp>, vì thế toàn bộ số giá trị được giữ lại. %sTheo dõi cấp phép chung%s',
-	'TRACE_USER_GLOBAL_YES_TOTAL_NEVER'		=> 'Thiết lập cấp phép người dùng trong chuyên mục độc lập được đánh giá là <samp>CÓ</samp> thay thế cho giá trị hiện tại là <samp>CHƯA BAO GIỜ</samp>. %sTheo dõi cấp phép chung%s',
-	'TRACE_USER_GLOBAL_NEVER_TOTAL_KEPT'	=> 'Thiết lập cấp phép người dùng trong chuyên mục độc lập được đánh giá là <samp>CHƯA BAO GIỜ</samp> không ảnh hưởng đến thiết lập cấp phép riêng. %sTheo dõi cấp phép chung%s',
+	'TRACE_USER_GLOBAL_YES_TOTAL_YES'		=> 'Thiết lập cấp phép người dùng trong chuyên mục độc lập được đánh giá là <strong>CÓ</strong> nhưng toàn bộ số thiết lập cấp phép được chọn là <strong>CÓ</strong>, vì thế toàn bộ số giá trị được giữ lại. %sTheo dõi cấp phép chung%s',
+	'TRACE_USER_GLOBAL_YES_TOTAL_NEVER'		=> 'Thiết lập cấp phép người dùng trong chuyên mục độc lập được đánh giá là <strong>CÓ</strong> thay thế cho giá trị hiện tại là <strong>CHƯA BAO GIỜ</strong>. %sTheo dõi cấp phép chung%s',
+	'TRACE_USER_GLOBAL_NEVER_TOTAL_KEPT'	=> 'Thiết lập cấp phép người dùng trong chuyên mục độc lập được đánh giá là <strong>CHƯA BAO GIỜ</strong> không ảnh hưởng đến thiết lập cấp phép riêng. %sTheo dõi cấp phép chung%s',
 
-	'TRACE_USER_FOUNDER'					=> 'Đây là người sáng lập, vì thế những thiết lập quản trị viên luôn được thiết lập là <samp>CÓ</samp>.',
-	'TRACE_USER_KEPT'						=> 'Thiết lập cấp phép của người dùng là <samp>KHÔNG</samp> vì thế tất cả giá trị cũ được giữ lại.',
-	'TRACE_USER_KEPT_LOCAL'					=> 'Thiết lập cấp phép của người dùng trong chuyên mục này là <samp>KHÔNG</samp> vì thế tất cả giá trị cũ được giữ lại.',
-	'TRACE_USER_NEVER_TOTAL_NEVER'			=> 'Thiết lập cấp phép của người dùng đã được chọn là <samp>CHƯA BAO GIỜ</samp> và tất cả giá trị đã được chọn là <samp>CHƯA BAO GIỜ</samp>, vì thế không có gì thay đổi.',
-	'TRACE_USER_NEVER_TOTAL_NEVER_LOCAL'	=> 'Thiết lập cấp phép của người dùng trong chuyên mục này đã được chọn là <samp>CHƯA BAO GIỜ</samp> và tất cả giá trị đã được chọn là <samp>CHƯA BAO GIỜ</samp>, vì thế không có gì thay đổi.',
-	'TRACE_USER_NEVER_TOTAL_NO'				=> 'Thiết lập cấp phép của người dùng đã được chọn là <samp>CHƯA BAO GIỜ</samp> sẽ trở thành tất cả giá trị bởi vì nó đã được chọn là <samp>KHÔNG</samp>.',
-	'TRACE_USER_NEVER_TOTAL_NO_LOCAL'		=> 'Thiết lập cấp phép của người dùng trong chuyên mục này đã được chọn là <samp>CHƯA BAO GIỜ</samp> sẽ trở thành tất cả giá trị bởi vì nó đã được chọn là <samp>KHÔNG</samp>.',
-	'TRACE_USER_NEVER_TOTAL_YES'			=> 'Thiết lập cấp phép của người dùng đã được chọn là <samp>CHƯA BAO GIỜ</samp> và thay thế giá trị <samp>CÓ</samp> trước đó.',
-	'TRACE_USER_NEVER_TOTAL_YES_LOCAL'		=> 'Thiết lập cấp phép của người dùng trong chuyên mục này đã được chọn là <samp>CHƯA BAO GIỜ</samp> và thay thế giá trị <samp>CÓ</samp> trước đó.',
-	'TRACE_USER_NO_TOTAL_NO'				=> 'Thiết lập cấp phép của người dùng là <samp>KHÔNG</samp> và tất cả giá trị đã được chọn là <samp>KHÔNG</samp> vì mặc định ban đầu của nó là <samp>CHƯA BAO GIỜ</samp>.',
-	'TRACE_USER_NO_TOTAL_NO_LOCAL'			=> 'Thiết lập cấp phép của người dùng trong chuyên mục này là <samp>KHÔNG</samp> và tất cả giá trị đã được chọn là <samp>KHÔNG</samp> vì mặc định ban đầu của nó là <samp>CHƯA BAO GIỜ</samp>.',
-	'TRACE_USER_YES_TOTAL_NEVER'			=> 'Thiết lập cấp phép của người dùng đã được chọn là <samp>CÓ</samp> nhưng tất cả giá trị <samp>CHƯA BAO GIỜ</samp> không thể bị thay thế.',
-	'TRACE_USER_YES_TOTAL_NEVER_LOCAL'		=> 'Thiết lập cấp phép của người dùng trong chuyên mục này đã được chọn là <samp>CÓ</samp> nhưng tất cả giá trị <samp>CHƯA BAO GIỜ</samp> không thể bị thay thế.',
-	'TRACE_USER_YES_TOTAL_NO'				=> 'Thiết lập cấp phép của người dùng đã được chọn là <samp>CÓ</samp> sẽ trở thành tất cả giá trị bởi vì nó đã được chọn là <samp>KHÔNG</samp>.',
-	'TRACE_USER_YES_TOTAL_NO_LOCAL'			=> 'Thiết lập cấp phép của người dùng trong chuyên mục này đã được chọn là <samp>CÓ</samp> sẽ trở thành tất cả giá trị bởi vì nó đã được chọn là <samp>KHÔNG</samp>.',
-	'TRACE_USER_YES_TOTAL_YES'				=> 'Thiết lập cấp phép của người dùng đã được chọn là <samp>CÓ</samp> và tất cả giá trị đã được chọn là <samp>CÓ</samp>, vì thế không có gì thay đổi.',
-	'TRACE_USER_YES_TOTAL_YES_LOCAL'		=> 'Thiết lập cấp phép của người dùng trong chuyên mục này đã được chọn là <samp>CÓ</samp> và tất cả giá trị đã được chọn là <samp>CÓ</samp>, vì thế không có gì thay đổi.',
+	'TRACE_USER_FOUNDER'					=> 'Đây là người sáng lập, vì thế những thiết lập quản trị viên luôn được thiết lập là <strong>CÓ</strong>.',
+	'TRACE_USER_KEPT'						=> 'Thiết lập cấp phép của người dùng là <strong>KHÔNG</strong> vì thế tất cả giá trị cũ được giữ lại.',
+	'TRACE_USER_KEPT_LOCAL'					=> 'Thiết lập cấp phép của người dùng trong chuyên mục này là <strong>KHÔNG</strong> vì thế tất cả giá trị cũ được giữ lại.',
+	'TRACE_USER_NEVER_TOTAL_NEVER'			=> 'Thiết lập cấp phép của người dùng đã được chọn là <strong>CHƯA BAO GIỜ</strong> và tất cả giá trị đã được chọn là <strong>CHƯA BAO GIỜ</strong>, vì thế không có gì thay đổi.',
+	'TRACE_USER_NEVER_TOTAL_NEVER_LOCAL'	=> 'Thiết lập cấp phép của người dùng trong chuyên mục này đã được chọn là <strong>CHƯA BAO GIỜ</strong> và tất cả giá trị đã được chọn là <strong>CHƯA BAO GIỜ</strong>, vì thế không có gì thay đổi.',
+	'TRACE_USER_NEVER_TOTAL_NO'				=> 'Thiết lập cấp phép của người dùng đã được chọn là <strong>CHƯA BAO GIỜ</strong> sẽ trở thành tất cả giá trị bởi vì nó đã được chọn là <strong>KHÔNG</strong>.',
+	'TRACE_USER_NEVER_TOTAL_NO_LOCAL'		=> 'Thiết lập cấp phép của người dùng trong chuyên mục này đã được chọn là <strong>CHƯA BAO GIỜ</strong> sẽ trở thành tất cả giá trị bởi vì nó đã được chọn là <strong>KHÔNG</strong>.',
+	'TRACE_USER_NEVER_TOTAL_YES'			=> 'Thiết lập cấp phép của người dùng đã được chọn là <strong>CHƯA BAO GIỜ</strong> và thay thế giá trị <strong>CÓ</strong> trước đó.',
+	'TRACE_USER_NEVER_TOTAL_YES_LOCAL'		=> 'Thiết lập cấp phép của người dùng trong chuyên mục này đã được chọn là <strong>CHƯA BAO GIỜ</strong> và thay thế giá trị <strong>CÓ</strong> trước đó.',
+	'TRACE_USER_NO_TOTAL_NO'				=> 'Thiết lập cấp phép của người dùng là <strong>KHÔNG</strong> và tất cả giá trị đã được chọn là <strong>KHÔNG</strong> vì mặc định ban đầu của nó là <strong>CHƯA BAO GIỜ</strong>.',
+	'TRACE_USER_NO_TOTAL_NO_LOCAL'			=> 'Thiết lập cấp phép của người dùng trong chuyên mục này là <strong>KHÔNG</strong> và tất cả giá trị đã được chọn là <strong>KHÔNG</strong> vì mặc định ban đầu của nó là <strong>CHƯA BAO GIỜ</strong>.',
+	'TRACE_USER_YES_TOTAL_NEVER'			=> 'Thiết lập cấp phép của người dùng đã được chọn là <strong>CÓ</strong> nhưng tất cả giá trị <strong>CHƯA BAO GIỜ</strong> không thể bị thay thế.',
+	'TRACE_USER_YES_TOTAL_NEVER_LOCAL'		=> 'Thiết lập cấp phép của người dùng trong chuyên mục này đã được chọn là <strong>CÓ</strong> nhưng tất cả giá trị <strong>CHƯA BAO GIỜ</strong> không thể bị thay thế.',
+	'TRACE_USER_YES_TOTAL_NO'				=> 'Thiết lập cấp phép của người dùng đã được chọn là <strong>CÓ</strong> sẽ trở thành tất cả giá trị bởi vì nó đã được chọn là <strong>KHÔNG</strong>.',
+	'TRACE_USER_YES_TOTAL_NO_LOCAL'			=> 'Thiết lập cấp phép của người dùng trong chuyên mục này đã được chọn là <strong>CÓ</strong> sẽ trở thành tất cả giá trị bởi vì nó đã được chọn là <strong>KHÔNG</strong>.',
+	'TRACE_USER_YES_TOTAL_YES'				=> 'Thiết lập cấp phép của người dùng đã được chọn là <strong>CÓ</strong> và tất cả giá trị đã được chọn là <strong>CÓ</strong>, vì thế không có gì thay đổi.',
+	'TRACE_USER_YES_TOTAL_YES_LOCAL'		=> 'Thiết lập cấp phép của người dùng trong chuyên mục này đã được chọn là <strong>CÓ</strong> và tất cả giá trị đã được chọn là <strong>CÓ</strong>, vì thế không có gì thay đổi.',
 	'TRACE_WHO'								=> 'Ai?',
 	'TRACE_TOTAL'							=> 'Toàn bộ',
 
@@ -284,5 +289,3 @@ $lang = array_merge($lang, array(
 	'WRONG_PERMISSION_TYPE'				=> 'Loại thiết lập cấp phép sai đã được chọn',
 	'WRONG_PERMISSION_SETTING_FORMAT'	=> 'Những thiết lập cấp phép đang nằm trong một định dạng sai, hệ thống phpBB không thể thực thi chúng chính xác.',
 ));
-
-?>

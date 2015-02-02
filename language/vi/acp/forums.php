@@ -4,7 +4,7 @@
 * acp/forums [Vietnamese]
 *
 * @package language
-* @version 1.46
+* @version 1.50
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,26 +23,35 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE
-//
-// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-//
-// Placeholders can now contain order information, e.g. instead of
-// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-// translators to re-order the output of data while ensuring it remains correct
-//
-// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-// equally where a string contains only two placeholders which are used to wrap text
-// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+/**
+* DEVELOPERS PLEASE NOTE
+*
+* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+*
+* Placeholders can now contain order information, e.g. instead of
+* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+* translators to re-order the output of data while ensuring it remains correct
+*
+* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+* equally where a string contains only two placeholders which are used to wrap text
+* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+*
+* Some characters you may want to copy & paste:
+* ’ » “ ” …
+*/
 
 // Forum Admin
 $lang = array_merge($lang, array(
-	'AUTO_PRUNE_DAYS'			=> 'Số ngày tự động dọn dẹp bài viết sau khi gửi',
-	'AUTO_PRUNE_DAYS_EXPLAIN'	=> 'Nếu chủ đề không có bài viết mới nào sau số ngày được thiết lập này thì chủ đề sẽ được tự động gỡ bỏ.',
-	'AUTO_PRUNE_FREQ'			=> 'Chu kỳ thực hiện dọn dẹp tự động',
-	'AUTO_PRUNE_FREQ_EXPLAIN'	=> 'Số ngày giữa hai lần thực hiện việc dọn dẹp tự động.',
-	'AUTO_PRUNE_VIEWED'			=> 'Số ngày tự động dọn dẹp bài viết sau khi xem',
-	'AUTO_PRUNE_VIEWED_EXPLAIN'	=> 'Nếu chủ đề không có ai xem sau số ngày được thiết lập này thì chủ đề sẽ được tự động gỡ bỏ.',
+	'AUTO_PRUNE_DAYS'					=> 'Số ngày tự động dọn dẹp bài viết sau khi gửi',
+	'AUTO_PRUNE_DAYS_EXPLAIN'			=> 'Nếu chủ đề không có bài viết mới nào sau số ngày được thiết lập này thì chủ đề sẽ được tự động gỡ bỏ.',
+	'AUTO_PRUNE_FREQ'					=> 'Chu kỳ thực hiện dọn dẹp tự động',
+	'AUTO_PRUNE_FREQ_EXPLAIN'			=> 'Số ngày giữa hai lần thực hiện việc dọn dẹp tự động.',
+	'AUTO_PRUNE_VIEWED'					=> 'Số ngày tự động dọn dẹp bài viết sau khi xem',
+	'AUTO_PRUNE_VIEWED_EXPLAIN'			=> 'Nếu chủ đề không có ai xem sau số ngày được thiết lập này thì chủ đề sẽ được tự động gỡ bỏ.',
+	'AUTO_PRUNE_SHADOW_DAYS'			=> 'Thời gian để lại liên kết đến chủ đề cũ',
+	'AUTO_PRUNE_SHADOW_DAYS_EXPLAIN'	=> 'Sau khi chủ đề đã được di chuyển, liên kết cũ để lại sẽ bị xóa sau số ngày thiết lập này.',
+	'AUTO_PRUNE_SHADOW_FREQ'			=> 'Chu kỳ xóa liên kết chủ đề cũ tự động',
+	'AUTO_PRUNE_SHADOW_FREQ_EXPLAIN'	=> 'Số ngày tự động dọn dẹp các liên kết đến chủ đề cũ.',
 
 	'CONTINUE'						=> 'Tiếp tục',
 	'COPY_PERMISSIONS'				=> 'Sao chép thiết lập cấp phép từ',
@@ -101,7 +110,9 @@ $lang = array_merge($lang, array(
 	'FORUM_PASSWORD_UNSET_EXPLAIN'		=> 'Đánh dấu vào tùy chọn này nếu bạn muốn gỡ bỏ mật khẩu chuyên mục.',
 	'FORUM_PASSWORD_MISMATCH'			=> 'Mật khẩu chuyên mục bạn nhập không phù hợp.',
 	'FORUM_PASSWORD_OLD'				=> 'Mật khẩu chuyên mục này được mã hóa theo phương pháp cũ và bạn nên thay đổi lại nó.',
-	'FORUM_PRUNE_SETTINGS'				=> 'Thiết lập dọn dẹp chuyên mục',	
+	'FORUM_PRUNE_SETTINGS'				=> 'Thiết lập dọn dẹp chuyên mục',
+	'FORUM_PRUNE_SHADOW'				=> 'Dọn dẹp liên kết đến chủ đề cũ',
+	'FORUM_PRUNE_SHADOW_EXPLAIN'		=> 'Thiết lập hệ thống tự động dọn dẹp các liên kết để lại khi một chủ đề bị di chuyển đi nơi khác, bằng cách điều chỉnh tham số chu kỳ thời gian bên dưới.',
 	'FORUM_RESYNCED'					=> 'Chuyên mục <strong>%s</strong> đã được đồng bộ thành công.',
 	'FORUM_RULES_EXPLAIN'				=> 'Nội qui chuyên mục được hiển thị trong bất cứ trang nào của chuyên mục đó.',
 	'FORUM_RULES_LINK'					=> 'Liên kết đến nội qui chuyên mục',
@@ -156,5 +167,3 @@ $lang = array_merge($lang, array(
 
 	'UNLOCKED'	=> 'Không khóa',
 ));
-
-?>

@@ -4,7 +4,7 @@
 * search_ignore_words [Vietnamese]
 *
 * @package language
-* @version 1.08
+* @version 1.09
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -21,5 +21,3 @@ if (!defined('IN_PHPBB'))
 $words = array(
 	'www',
 );
-
-?>

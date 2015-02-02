@@ -4,7 +4,7 @@
 * acp/posting [Vietnamese]
 *
 * @package language
-* @version 1.56
+* @version 1.60
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,17 +23,22 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE
-//
-// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-//
-// Placeholders can now contain order information, e.g. instead of
-// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-// translators to re-order the output of data while ensuring it remains correct
-//
-// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-// equally where a string contains only two placeholders which are used to wrap text
-// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+/**
+* DEVELOPERS PLEASE NOTE
+*
+* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+*
+* Placeholders can now contain order information, e.g. instead of
+* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+* translators to re-order the output of data while ensuring it remains correct
+*
+* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+* equally where a string contains only two placeholders which are used to wrap text
+* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+*
+* Some characters you may want to copy & paste:
+* ’ » “ ” …
+*/
 
 // BBCodes
 // Note to translators: you can translate everything but what's between { and }
@@ -44,6 +49,7 @@ $lang = array_merge($lang, array(
 	'BBCODE_ADDED'				=> 'Thẻ BBCode đã được tạo thành công.',
 	'BBCODE_DANGER'				=> 'Thẻ BBCode bạn đang tạo dường như sử dụng một mã thay thế <var>{TEXT}</var> bên trong thuộc tính một thẻ HTML. Đây là một vấn đề trong bảo mật XSS. Hãy thử dùng những mã thay thế khác được giới hạn an toàn như <var>{SIMPLETEXT}</var> hoặc <var>{INTTEXT}</var>. Chỉ tiếp tục tiến hành nếu bạn hiểu rõ nguy hiểm đằng sau việc sử dụng nó và chắc chắn rằng dùng <var>{TEXT}</var> là một yêu cầu bắt buộc.',
 	'BBCODE_DANGER_PROCEED'		=> 'Vẫn tiến hành', //'Tôi hiểu sự nguy hiểm',
+	'BBCODE_DELETED'			=> 'Thẻ BBCode đã được gỡ bỏ thành công.',
 	'BBCODE_EDITED'				=> 'Thẻ BBCode đã được chỉnh sửa thành công.',
 	'BBCODE_NOT_EXIST'			=> 'Thẻ BBCode vừa chọn không tồn tại.',
 	'BBCODE_HELPLINE'			=> 'Hướng dẫn sử dụng thẻ BBCode',
@@ -75,7 +81,7 @@ $lang = array_merge($lang, array(
 	'TOO_MANY_BBCODES'		=> 'Bạn không thể tạo quá nhiều thẻ BBCode. Hãy gỡ bỏ một hay nhiều thẻ BBCode rồi thử lại.',
 
 	'tokens'	=>	array(
-		'TEXT'			=> 'Bất kì văn bản nào, bao gồm các ký tự, chữ số… Bạn không nên sử dụng những mã thay thế này trong các thẻ lệnh HTML. Thay vào đó, bạn hãy sử dụng <var>IDENTIFIER, INTTEXT</var> hoặc <var>SIMPLETEXT</var>.',
+		'TEXT'			=> 'Bất kì văn bản nào, bao gồm các ký tự, chữ số… Bạn không nên sử dụng những mã thay thế này trong các thẻ HTML. Thay vào đó, bạn hãy sử dụng <var>IDENTIFIER, INTTEXT</var> hoặc <var>SIMPLETEXT</var>.',
 		'SIMPLETEXT'	=> 'Những ký tự từ bảng chữ cái Latinh (A-Z), chữ số, khoảng trắng, dấu phẩy, dấu chấm, dấu trừ, dấu cộng, dấu gạch nối và dấu gạch dưới.',
 		'INTTEXT'		=> 'Những ký tự chữ Unicode, chữ số, khoảng trắng, dấu phẩy, dấu chấm, dấu trừ, dấu cộng, dấu gạch nối và dấu gạch dưới.',
 		'IDENTIFIER'	=> 'Những ký tự từ bảng chữ cái Latinh (A-Z), chữ số, dấu gạch nối và dấu gạch dưới.',
@@ -84,8 +90,8 @@ $lang = array_merge($lang, array(
 		'URL'			=> 'Địa chỉ URL hợp lệ sử dụng bất kì giao thức nào (http, ftp… không thể sử dụng được vì các vấn đề với mã Javascript). Nếu bạn không nhập vào giao thức, “http://” sẽ được sử dụng làm tiền tố đầu của chuỗi.',
 		'LOCAL_URL'		=> 'Địa chỉ URL trong hệ thống. Địa chỉ URL này phải liên quan đến các trang trong hệ thống và không thể chứa một tên miền khác hay giao thức nào, vì những liên kết này luôn có tiền tố đầu “%s”.',
 		'RELATIVE_URL'	=> 'Địa chỉ URL tương đối. Bạn có thể dùng loại này để tùy biến linh động địa chỉ URL, nhưng phải đảm bảo rằng: địa chỉ URL đầy đủ sau cùng phải là một địa chỉ hợp lệ. Khi bạn muốn dùng những địa chỉ URL tương đối bên trong hệ thống, hãy sử dụng LOCAL_URL để thay thế.',
-		'COLOR'			=> 'Mã màu HTML, có thể sử dụng định dạng mã màu số như <samp>#FF1234</samp> hay một <a href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">từ khóa màu định dạng CSS</a> giống như <samp>fuchsia</samp> hay <samp>InactiveBorder</samp>.'
-	)
+		'COLOR'			=> 'Mã màu HTML, có thể sử dụng định dạng mã màu số như <samp>#FF1234</samp> hay một <a href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">từ khóa màu định dạng CSS</a> giống như <samp>fuchsia</samp> hay <samp>InactiveBorder</samp>.',
+	),
 ));
 
 // Smilies and topic icons
@@ -119,15 +125,19 @@ $lang = array_merge($lang, array(
 	'FIRST'		=> 'Đầu tiên',
 
 	'ICONS_ADD'				=> 'Thêm biểu tượng bài viết mới',
-	'ICONS_NONE_ADDED'		=> 'Không có biểu tượng bài viết nào được thêm vào.',
-	'ICONS_ONE_ADDED'		=> 'Biểu tượng bài viết đã được thêm vào thành công.',
-	'ICONS_ADDED'			=> 'Những biểu tượng bài viết đã được thêm vào thành công.',
+	'ICONS_ADDED'			=> array(
+		0	=> 'Không có biểu tượng nào để thêm vào.',
+		1	=> 'Biểu tượng bài viết đã được thêm vào thành công.',
+		2	=> 'Biểu tượng bài viết đã được thêm vào thành công.',
+	),
 	'ICONS_CONFIG'			=> 'Thiết lập biểu tượng bài viết',
 	'ICONS_DELETED'			=> 'Biểu tượng bài viết đã được gỡ bỏ thành công.',
 	'ICONS_EDIT'			=> 'Sửa biểu tượng bài viết',
-	'ICONS_ONE_EDITED'		=> 'Biểu tượng bài viết đã được cập nhật thành công.',
-	'ICONS_NONE_EDITED'		=> 'Không có biểu tượng bài viết nào được cập nhật.',
-	'ICONS_EDITED'			=> 'Những biểu tượng bài viết đã được cập nhật thành công.',
+	'ICONS_EDITED'			=> array(
+		0	=> 'Không có biểu tượng nào để cập nhật.',
+		1	=> 'Biểu tượng bài viết đã được cập nhật thành công.',
+		2	=> 'Biểu tượng bài viết đã được cập nhật thành công.',
+	),
 	'ICONS_HEIGHT'			=> 'Chiều cao',
 	'ICONS_IMAGE'			=> 'Hình dùng làm biểu tượng bài viết',
 	'ICONS_IMPORTED'		=> 'Gói biểu tượng bài viết đã được cài đặt thành công.',
@@ -159,9 +169,11 @@ $lang = array_merge($lang, array(
 
 	'SELECT_PACKAGE'			=> 'Chọn một gói biểu tượng',
 	'SMILIES_ADD'				=> 'Thêm biểu tượng vui mới',
-	'SMILIES_NONE_ADDED'		=> 'Không có biểu tượng vui nào được thêm vào.',
-	'SMILIES_ONE_ADDED'			=> 'Biểu tượng vui đã được thêm vào thành công.',
-	'SMILIES_ADDED'				=> 'Những biểu tượng vui đã được thêm vào thành công.',
+	'SMILIES_ADDED'				=> array(
+		0	=> 'Không có biểu tượng nào để thêm vào.',
+		1	=> 'Biểu tượng vui đã được thêm vào thành công.',
+		2	=> 'Biểu tượng vui đã được thêm vào thành công.',
+	),
 	'SMILIES_CODE'				=> 'Mã nhập',
 	'SMILIES_CONFIG'			=> 'Thiết lập biểu tượng vui',
 	'SMILIES_DELETED'			=> 'Biểu tượng vui đã được gỡ bỏ thành công.',
@@ -169,9 +181,11 @@ $lang = array_merge($lang, array(
 	'SMILIE_NO_CODE'			=> 'Biểu tượng vui “%s” đã bị cấm dùng, vì thế mã bạn nhập vô hiệu.',
 	'SMILIE_NO_EMOTION'			=> 'Biểu tượng vui “%s” đã bị cấm dùng, vì thế cảm xúc bạn nhập vô hiệu.',
 	'SMILIE_NO_FILE'			=> 'Biểu tượng vui “%s” đã bị cấm dùng, bởi vì tập tin hình không tìm thấy.',
-	'SMILIES_NONE_EDITED'		=> 'Không có biểu tượng vui nào được cập nhật.',
-	'SMILIES_ONE_EDITED'		=> 'Biểu tượng vui đã được cập nhật thành công.',
-	'SMILIES_EDITED'			=> 'Những biểu tượng vui đã được cập nhật thành công.',
+	'SMILIES_EDITED'			=> array(
+		0	=> 'Không có biểu tượng nào để cập nhật.',
+		1	=> 'Biểu tượng vui đã được cập nhật thành công.',
+		2	=> 'Biểu tượng vui đã được cập nhật thành công.',
+	),
 	'SMILIES_EMOTION'			=> 'Cảm xúc',
 	'SMILIES_HEIGHT'			=> 'Chiều cao',
 	'SMILIES_IMAGE'				=> 'Hình dùng làm biểu tượng vui',
@@ -183,7 +197,10 @@ $lang = array_merge($lang, array(
 	'SMILIES_URL'				=> 'Hình biểu tượng',
 	'SMILIES_WIDTH'				=> 'Chiều rộng',
 
-	'TOO_MANY_SMILIES'	=> 'Vượt quá giới hạn <strong>%d</strong> biểu tượng vui.',
+	'TOO_MANY_SMILIES'			=> array(
+		1	=> 'Vượt giới hạn %d biểu tượng vui.',
+		2	=> 'Vượt giới hạn %d biểu tượng vui.',
+	),
 
 	'WRONG_PAK_TYPE'	=> 'Gói biểu tượng vừa chọn không chứa dữ liệu thích hợp.',
 ));
@@ -248,32 +265,30 @@ $lang = array_merge($lang, array(
 
 // Reasons
 $lang = array_merge($lang, array(
-	'ACP_REASONS_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí những nguyên nhân được sử dụng trong các báo cáo và nội dung từ chối khi từ chối những bài viết. Có một nguyên nhân mặc định trong đây được đánh dấu * mà bạn không thể gỡ bỏ được, nguyên nhân này được sử dụng cho tất cả các báo cáo khi từ chối mà không chọn nguyên nhân.',
-	'ADD_NEW_REASON'		=> 'Thêm nguyên nhân mới',
-	'AVAILABLE_TITLES'		=> 'Các nguyên nhân đã được phiên dịch có sẵn',
+	'ACP_REASONS_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí những lý do được sử dụng trong các báo cáo và nội dung từ chối khi từ chối những bài viết. Có một lý do mặc định trong đây được đánh dấu * mà bạn không thể gỡ bỏ được, lý do này được sử dụng cho tất cả các báo cáo khi từ chối mà không chọn lý do.',
+	'ADD_NEW_REASON'		=> 'Thêm lý do mới',
+	'AVAILABLE_TITLES'		=> 'Các lý do đã được phiên dịch có sẵn',
 
-	'IS_NOT_TRANSLATED'			=> 'Nguyên nhân <strong>chưa được</strong> phiên dịch',
-	'IS_NOT_TRANSLATED_EXPLAIN'	=> 'Đây là những nguyên nhân <strong>chưa được</strong> phiên dịch. Nếu bạn muốn cung cấp nội dung trong phần phiên dịch, hãy xác định một khóa chính xác từ các tập tin trong ngôn ngữ để báo cáo về nguyên nhân trên.',
-	'IS_TRANSLATED'				=> 'Nguyên nhân đã được phiên dịch',
-	'IS_TRANSLATED_EXPLAIN'		=> 'Đây là những nguyên nhân đã được phiên dịch. Nếu tên nguyên nhân bạn nhập vào ở đây đã được xác định từ các tập tin trong ngôn ngữ để báo cáo về nguyên nhân trên, phần nội dung phiên dịch của tên và nội dung nguyên nhân sẽ được sử dụng.',
+	'IS_NOT_TRANSLATED'			=> 'Lý do <strong>chưa được</strong> phiên dịch',
+	'IS_NOT_TRANSLATED_EXPLAIN'	=> 'Đây là những lý do <strong>chưa được</strong> phiên dịch. Nếu bạn muốn cung cấp nội dung trong phần phiên dịch, hãy xác định một khóa chính xác từ các tập tin trong ngôn ngữ để báo cáo về lý do trên.',
+	'IS_TRANSLATED'				=> 'Lý do đã được phiên dịch',
+	'IS_TRANSLATED_EXPLAIN'		=> 'Đây là những lý do đã được phiên dịch. Nếu tên lý do bạn nhập vào ở đây đã được xác định từ các tập tin trong ngôn ngữ để báo cáo về lý do trên, phần nội dung phiên dịch của tên và nội dung lý do sẽ được sử dụng.',
 
-	'NO_REASON'					=> 'Không thể tìm thấy nguyên nhân.',
-	'NO_REASON_INFO'			=> 'Bạn phải nhập vào tên và nội dung của nguyên nhân này.',
-	'NO_REMOVE_DEFAULT_REASON'	=> 'Bạn không thể gỡ bỏ nguyên nhân mặc định “Những nguyên nhân khác”.',
+	'NO_REASON'					=> 'Không thể tìm thấy lý do.',
+	'NO_REASON_INFO'			=> 'Bạn phải nhập vào tên và nội dung của lý do này.',
+	'NO_REMOVE_DEFAULT_REASON'	=> 'Bạn không thể gỡ bỏ lý do mặc định “Những lý do khác”.',
 
-	'REASON_ADD'				=> 'Thêm báo cáo/nguyên nhân từ chối',
-	'REASON_ADDED'				=> 'Báo cáo/nguyên nhân từ chối đã được thêm vào thành công.',
-	'REASON_ALREADY_EXIST'		=> 'Một nguyên nhân hiện tại đã sử dụng tên này, hãy nhập vào tên khác cho nguyên nhân này.',
-	'REASON_DESCRIPTION'		=> 'Nội dung nguyên nhân',
-	'REASON_DESC_TRANSLATED'	=> 'Nội dung nguyên nhân được hiển thị',
-	'REASON_EDIT'				=> 'Sửa báo cáo/nguyên nhân từ chối',
-	'REASON_EDIT_EXPLAIN'		=> 'Với công cụ này, bạn có thể thêm vào hoặc chỉnh sửa các nguyên nhân. Nếu nguyên nhân đã được phiên dịch trong ngôn ngữ thì nội dung phiên dịch này sẽ thay thế cho nội dung nguyên nhân bạn nhập vào tại đây.',
-	'REASON_REMOVED'			=> 'Báo cáo/nguyên nhân từ chối đã được gỡ bỏ thành công.',
-	'REASON_TITLE'				=> 'Tên nguyên nhân',
-	'REASON_TITLE_TRANSLATED'	=> 'Tên nguyên nhân được hiển thị',
-	'REASON_UPDATED'			=> 'Báo cáo/nguyên nhân từ chối đã được cập nhật thành công.',
+	'REASON_ADD'				=> 'Thêm báo cáo/lý do từ chối',
+	'REASON_ADDED'				=> 'Báo cáo/lý do từ chối đã được thêm vào thành công.',
+	'REASON_ALREADY_EXIST'		=> 'Một lý do hiện tại đã sử dụng tên này, hãy nhập vào tên khác cho lý do này.',
+	'REASON_DESCRIPTION'		=> 'Nội dung lý do',
+	'REASON_DESC_TRANSLATED'	=> 'Nội dung lý do được hiển thị',
+	'REASON_EDIT'				=> 'Sửa báo cáo/lý do từ chối',
+	'REASON_EDIT_EXPLAIN'		=> 'Với công cụ này, bạn có thể thêm vào hoặc chỉnh sửa các lý do. Nếu lý do đã được phiên dịch trong ngôn ngữ thì nội dung phiên dịch này sẽ thay thế cho nội dung lý do bạn nhập vào tại đây.',
+	'REASON_REMOVED'			=> 'Báo cáo/lý do từ chối đã được gỡ bỏ thành công.',
+	'REASON_TITLE'				=> 'Tên lý do',
+	'REASON_TITLE_TRANSLATED'	=> 'Tên lý do được hiển thị',
+	'REASON_UPDATED'			=> 'Báo cáo/lý do từ chối đã được cập nhật thành công.',
 
 	'USED_IN_REPORTS'		=> 'Đã sử dụng trong báo cáo',
 ));
-
-?>

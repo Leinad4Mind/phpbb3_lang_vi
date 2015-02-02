@@ -1,7 +1,7 @@
 
 Chào bạn,
 
-Email dưới đây được gửi đến cho bạn từ quản trị viên của "{SITENAME}". Nếu đây là thư rác, lừa đảo hay có nội dung không đúng đắn, bạn có thể liên hệ về điều này với người chủ của website theo địa chỉ email dưới đây:
+Email dưới đây được gửi đến cho bạn từ quản trị viên của diễn đàn "{SITENAME}". Nếu đây là thư rác, lừa đảo hay có nội dung không đúng đắn, bạn có thể liên hệ về điều này với người chủ của website theo địa chỉ email dưới đây:
 
 {CONTACT_EMAIL}
 

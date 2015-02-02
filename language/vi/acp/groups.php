@@ -4,7 +4,7 @@
 * acp/groups [Vietnamese]
 *
 * @package language
-* @version 1.42
+* @version 1.43
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,20 +23,26 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE
-//
-// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-//
-// Placeholders can now contain order information, e.g. instead of
-// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-// translators to re-order the output of data while ensuring it remains correct
-//
-// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-// equally where a string contains only two placeholders which are used to wrap text
-// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+/**
+* DEVELOPERS PLEASE NOTE
+*
+* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+*
+* Placeholders can now contain order information, e.g. instead of
+* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+* translators to re-order the output of data while ensuring it remains correct
+*
+* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+* equally where a string contains only two placeholders which are used to wrap text
+* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+*
+* Some characters you may want to copy & paste:
+* ’ » “ ” …
+*/
 
 $lang = array_merge($lang, array(
 	'ACP_GROUPS_MANAGE_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí tất cả nhóm trong hệ thống. Bạn có thể xóa, tạo mới hay chỉnh sửa những nhóm hiện có. Ngoài ra, bạn cũng có thể chọn ra trưởng nhóm, thay đổi loại nhóm tự do/ẩn/cố định cũng như cập nhật tên nhóm và giới thiệu về nhóm.',
+	'ADD_GROUP_CATEGORY'		=> 'Thêm loại nhóm',
 	'ADD_USERS'					=> 'Thêm thành viên',
 	'ADD_USERS_EXPLAIN'			=> 'Với công cụ này, bạn có thể thêm những thành viên mới cho nhóm. Bạn cũng có thể thay đổi nhóm mặc định cho các thành viên được chọn. Ngoài ra, bạn cũng có thể xác định thành viên trở thành trưởng nhóm. Hãy nhập mỗi tên tài khoản trên một dòng xác định.',
 
@@ -51,11 +57,14 @@ $lang = array_merge($lang, array(
 	'GROUP_APPROVED'				=> 'Thành viên được chấp nhận',
 	'GROUP_AVATAR'					=> 'Hình đại diện của nhóm',
 	'GROUP_AVATAR_EXPLAIN'			=> 'Hình ảnh được hiển thị trong bảng quản lí của nhóm.',
+	'GROUP_CATEGORY_NAME'			=> 'Tên loại nhóm',
 	'GROUP_CLOSED'					=> 'Nhóm cố định',
 	'GROUP_COLOR'					=> 'Màu nhóm',
 	'GROUP_COLOR_EXPLAIN'			=> 'Xác định màu phân biệt cho tên tài khoản của các thành viên trong nhóm, để trống để sử dụng màu mặc định dành cho thành viên.',
-	'GROUP_CONFIRM_ADD_USER'		=> 'Bạn có chắc chắn muốn thêm thành viên “%1$s” vào nhóm này?',
-	'GROUP_CONFIRM_ADD_USERS'		=> 'Bạn có chắc chắn muốn thêm những thành viên “%1$s” vào nhóm này?',
+	'GROUP_CONFIRM_ADD_USERS'		=> array(
+		1	=> 'Bạn có chắc chắn muốn thêm thành viên %2$s vào nhóm?',
+		2	=> 'Bạn có chắc chắn muốn thêm các thành viên %2$s vào nhóm?',
+	),
 	'GROUP_CREATED'					=> 'Nhóm đã được tạo thành công.',
 	'GROUP_DEFAULT'					=> 'Chọn làm nhóm mặc định của thành viên',
 	'GROUP_DEFS_UPDATED'			=> 'Nhóm mặc định thiết lập cho tất cả thành viên đã chọn.',
@@ -97,6 +106,8 @@ $lang = array_merge($lang, array(
 	'GROUP_SETTINGS_SAVE'			=> 'Thiết lập cho nhóm',
 	'GROUP_SKIP_AUTH'				=> 'Không áp dụng cấp phép cho trưởng nhóm',
 	'GROUP_SKIP_AUTH_EXPLAIN'		=> 'Nếu bật tùy chọn này, trưởng nhóm sẽ không bị ảnh hưởng bởi những thiết lập cấp phép từ nhóm này.',
+	'GROUP_SPECIAL'					=> 'Chỉ định trước',
+	'GROUP_TEAMPAGE'				=> 'Hiện nhóm trên trang thông tin nhóm',
 	'GROUP_TYPE'					=> 'Loại nhóm',
 	'GROUP_TYPE_EXPLAIN'			=> 'Chọn loại nhóm cho phép các thành viên tham gia vào nhóm hay xem thông tin về nhóm.',
 	'GROUP_UPDATED'					=> 'Thiết lập của nhóm đã được cập nhật thành công.',
@@ -105,20 +116,38 @@ $lang = array_merge($lang, array(
 	'GROUP_USERS_EXIST'				=> 'Thành viên vừa chọn đã là thành viên của nhóm.',
 	'GROUP_USERS_REMOVE'			=> 'Thành viên đã được gỡ bỏ khỏi nhóm và những thiết lập mặc định đã được chọn thành công.',
 
+	'LEGEND_EXPLAIN'				=> 'Những nhóm hiển thị trong phần chú thích:',
+	'LEGEND_SETTINGS'				=> 'Thiết lập chú thích',
+	'LEGEND_SORT_GROUPNAME'			=> 'Sắp xếp chú thích theo tên nhóm',
+	'LEGEND_SORT_GROUPNAME_EXPLAIN'	=> 'Nếu bật tùy chọn này, thứ tự sắp xếp bên dưới sẽ thay đổi lại theo tên nhóm.',
+
+	'MANAGE_LEGEND'			=> 'Quản lí chú thích nhóm',
+	'MANAGE_TEAMPAGE'		=> 'Quản lí trang thông tin nhóm',
 	'MAKE_DEFAULT_FOR_ALL'	=> 'Chọn làm nhóm mặc định cho tất cả thành viên',
 	'MEMBERS'				=> 'Thành viên',
 
 	'NO_GROUP'			=> 'Không có nhóm nào được xác định.',
+	'NO_GROUPS_ADDED'	=> 'Chưa thêm vào bất kì nhóm nào.',
 	'NO_GROUPS_CREATED'	=> 'Chưa có nhóm nào được tạo.',
 	'NO_PERMISSIONS'	=> 'Đừng sao chép thiết lập cấp phép',
 	'NO_USERS'			=> 'Bạn chưa nhập vào bất kì thành viên nào.',
 	'NO_USERS_ADDED'	=> 'Không có thành viên nào được thêm vào nhóm.',
 	'NO_VALID_USERS'	=> 'Bạn vẫn chưa nhập vào bất kì thành viên thích hợp nào cho thao tác trên.',
 
+	'SELECT_GROUP'				=> 'Chọn một nhóm',
 	'SPECIAL_GROUPS'			=> 'Nhóm đặc biệt',
 	'SPECIAL_GROUPS_EXPLAIN'	=> 'Có một vài loại nhóm đặc biệt khác hẳn với các nhóm còn lại, những nhóm này không thể xóa cũng như chỉnh sửa trực tiếp được. Tuy nhiên, bạn vẫn có thể thêm thành viên mới vào những nhóm này và thay đổi những thiết lập đơn giản.',
 
-	'TOTAL_MEMBERS'	=> 'Số thành viên',
+	'TEAMPAGE'					=> 'Trang thông tin nhóm',
+	'TEAMPAGE_DISP_ALL'			=> 'Tất cả tư cách thành viên',
+	'TEAMPAGE_DISP_DEFAULT'		=> 'Chỉ nhóm mặc định của thành viên',
+	'TEAMPAGE_DISP_FIRST'		=> 'Chỉ tư cách thành viên đầu tiên',
+	'TEAMPAGE_EXPLAIN'			=> 'Những nhóm hiển thị trên trang thông tin nhóm:',
+	'TEAMPAGE_FORUMS'			=> 'Hiện chuyên mục quản lí',
+	'TEAMPAGE_FORUMS_EXPLAIN'	=> 'Nếu bật tùy chọn này, các điều hành viên sẽ có thêm thông tin về chuyên mục mà họ đang quản lí. Thiết lập này có thể tốn thời gian truy vấn cơ sở dữ liệu khi số lượng chuyên mục lớn.',
+	'TEAMPAGE_MEMBERSHIPS'		=> 'Hiện tư cách thành viên',
+	'TEAMPAGE_SETTINGS'			=> 'Thiết lập trang thông tin nhóm',
+	'TOTAL_MEMBERS'				=> 'Số thành viên',
 
 	'USERS_APPROVED'				=> 'Thành viên đã được chấp nhận thành công.',
 	'USER_DEFAULT'					=> 'Thành viên mặc định',
@@ -128,5 +157,3 @@ $lang = array_merge($lang, array(
 	'USER_GROUP_DEFAULT_EXPLAIN'	=> 'Bật tùy chọn này để thiết lập nhóm này làm nhóm mặc định cho các thành viên đã thêm vào.',
 	'USER_GROUP_LEADER'				=> 'Chọn làm trưởng nhóm',
 ));
-
-?>

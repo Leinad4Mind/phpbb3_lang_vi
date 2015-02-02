@@ -14,7 +14,7 @@ Hoặc gửi email về địa chỉ:
 
 Đồng ý cho phép tham gia vào "{SITENAME}" - {U_BOARD}
 
-Tên thành viên: {USERNAME}
+Tên tài khoản: {USERNAME}
 Địa chỉ email: {EMAIL_ADDRESS}
 
 TÔI ĐÃ XEM XÉT KỸ CÁC THÔNG TIN BÊN TRÊN VÀ ĐỒNG Ý CHO CHÁU THAM GIA VÀO "{SITENAME}" VỚI NHỮNG THÔNG TIN LƯU TRỮ BÊN TRÊN. 

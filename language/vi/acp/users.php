@@ -4,7 +4,7 @@
 * acp/users [Vietnamese]
 *
 * @package language
-* @version 1.36
+* @version 1.37
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -23,17 +23,22 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE
-//
-// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-//
-// Placeholders can now contain order information, e.g. instead of
-// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-// translators to re-order the output of data while ensuring it remains correct
-//
-// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-// equally where a string contains only two placeholders which are used to wrap text
-// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+/**
+* DEVELOPERS PLEASE NOTE
+*
+* All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+*
+* Placeholders can now contain order information, e.g. instead of
+* 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+* translators to re-order the output of data while ensuring it remains correct
+*
+* You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+* equally where a string contains only two placeholders which are used to wrap text
+* in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+*
+* Some characters you may want to copy & paste:
+* ’ » “ ” …
+*/
 
 $lang = array_merge($lang, array(
 	'ADMIN_SIG_PREVIEW'		=> 'Xem trước chữ ký cá nhân',
@@ -51,9 +56,9 @@ $lang = array_merge($lang, array(
 	'CANNOT_FORCE_REACT_BOT'		=> 'Bạn không thể yêu cầu kích hoạt lại tài khoản của máy tìm kiếm. Hãy vui lòng kích hoạt lại từng máy tìm kiếm trong trang quản lí chúng.',
 	'CANNOT_FORCE_REACT_FOUNDER'	=> 'Bạn không thể yêu cầu kích hoạt lại tài khoản của người sáng lập.',
 	'CANNOT_FORCE_REACT_YOURSELF'	=> 'Bạn không thể yêu cầu kích hoạt lại tài khoản của chính mình.',
-	'CANNOT_REMOVE_ANONYMOUS'		=> 'Bạn không thể gỡ bỏ tài khoản khách.',
+	'CANNOT_REMOVE_ANONYMOUS'		=> 'Bạn không thể gỡ bỏ tài khoản của khách.',
 	'CANNOT_REMOVE_FOUNDER'			=> 'Bạn không thể gỡ bỏ tài khoản người sáng lập.',
-	'CANNOT_REMOVE_YOURSELF'		=> 'Bạn không thể gỡ bỏ tài khoản của chính mình.',
+	'CANNOT_REMOVE_YOURSELF'		=> 'Bạn không thể gỡ bỏ tài khoản người dùng của chính mình.',
 	'CANNOT_SET_FOUNDER_IGNORED'	=> 'Bạn không thể tăng cấp những người dùng bị cấm trở thành người sáng lập.',
 	'CANNOT_SET_FOUNDER_INACTIVE'	=> 'Bạn cần phải kích hoạt tài khoản của người dùng trước khi bạn tăng cấp cho người dùng này trở thành người sáng lập và chỉ có những người dùng đã kích hoạt mới có thể tăng cấp được.',
 	'CONFIRM_EMAIL_EXPLAIN'			=> 'Bạn chỉ cần xác nhận lại địa chỉ email nếu bạn muốn thay đổi địa chỉ email của người dùng.',
@@ -140,5 +145,3 @@ $lang = array_merge($lang, array(
 	'USER_WARNING_LOG_DELETED'		=> 'Không nhận được cảnh cáo nào. Có thể bản ghi cảnh cáo đã bị xóa.',
 	'USER_TOOLS'					=> 'Công cụ đơn giản',
 ));
-
-?>
