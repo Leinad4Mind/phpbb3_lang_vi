@@ -1,12 +1,13 @@
 <?php
-/** 
+/**
 *
-* acp_attachments [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: attachments.php,v 1.19 2010/08/24 20:19:00
-* @copyright (c) 2006, 2007 phpBBVietNam Group, (c) 2009 - 2010 ytuongsangtaovn.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -62,6 +63,7 @@ $lang = array_merge($lang, array(
 	'ATTACH_MAX_PM_FILESIZE_EXPLAIN'	=> 'Dung lượng đính kèm tập tin tối đa cho phép sử dụng cấp cho mỗi thành viên trong tin nhắn. Nhập vào số <strong>0</strong> để không hạn chế dung lượng tập tin.',
 	'ATTACH_ORPHAN_URL'					=> 'Tập tin đính kèm không được sử dụng',
 	'ATTACH_POST_ID'					=> 'Số ID bài viết',
+	'ATTACH_POST_TYPE'					=> 'Kiểu bài',
 	'ATTACH_QUOTA'						=> 'Tổng dung lượng đính kèm tập tin',
 	'ATTACH_QUOTA_EXPLAIN'				=> 'Tổng dung lượng tối đa cho phép của tất cả các tập tin đính kèm trong diễn đàn. Nhập vào số <strong>0</strong> để không hạn chế dung lượng tập tin.',
 	'ATTACH_TO_POST'					=> 'Đính kèm tập tin vào bài viết',
@@ -107,6 +109,9 @@ $lang = array_merge($lang, array(
 	'EXT_GROUP_REAL_MEDIA'			=> 'Tập tin Real Media',
 	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Tập tin Windows Media',
 
+	'FILES_GONE'			=> 'Some of the attachments you selected for deletion do not exist. They may have been already deleted. Attachments that did exist were deleted.',
+	'FILES_STATS_WRONG'		=> 'Your file statistics are likely inaccurate and need to be resynchronised. Actual values: number of attachments = %1$d, total size of attachments = %2$s.<br />Click %3$shere%4$s to resynchronise them.',
+
 	'GO_TO_EXTENSIONS'		=> 'Chuyển đến phần quản lý loại tập tin',
 	'GROUP_NAME'			=> 'Tên nhóm tập tin',
 
@@ -130,6 +135,7 @@ $lang = array_merge($lang, array(
 	'NOT_ALLOWED_IN_PM'			=> 'Chỉ cho phép trong bài viết',
 	'NOT_ALLOWED_IN_PM_POST'	=> 'Không cho phép',
 	'NOT_ASSIGNED'				=> 'Không chỉ định',
+	'NO_ATTACHMENTS'			=> 'Không tìm thấy file đính kèm cho thời gian này.',
 	'NO_EXT_GROUP'				=> 'Không có nhóm tập tin nào',
 	'NO_EXT_GROUP_NAME'			=> 'Bạn chưa nhập tên nhóm tập tin',
 	'NO_EXT_GROUP_SPECIFIED'	=> 'Không có nhóm tập tin nào được xác định.',
@@ -145,6 +151,7 @@ $lang = array_merge($lang, array(
 
 	'REMOVE_ALLOWED_IPS'		=> 'Gỡ bỏ hoặc ngưng loại trừ những địa chỉ IP/tên miền <em>đã cho phép</em>',
 	'REMOVE_DISALLOWED_IPS'		=> 'Gỡ bỏ hoặc ngưng loại trừ những địa chỉ IP/tên miền <em>đã bị cấm</em>',
+	'RESYNC_FILES_STATS_CONFIRM'	=> 'Are you sure you wish to resynchronise file statistics?',
 
 	'SEARCH_IMAGICK'				=> 'Tìm kiếm ứng dụng Imagemagick',
 	'SECURE_ALLOW_DENY'				=> 'Danh sách đồng ý/từ chối',
@@ -170,5 +177,3 @@ $lang = array_merge($lang, array(
 	'UPLOAD_ICON'					=> 'Biểu tượng tập tin',
 	'UPLOAD_NOT_DIR'				=> 'Thư mục tải lên bạn vừa chọn không phải là địa chỉ của một thư mục.',
 ));
-
-?>

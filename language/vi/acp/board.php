@@ -1,12 +1,13 @@
 <?php
-/** 
+/**
 *
-* acp_board [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: board.php,v 1.65 2010/08/25 11:14:00
-* @copyright (c) 2006, 2007 phpBBVietNam Group, (c) 2009 - 2010 ytuongsangtaovn.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -38,18 +39,29 @@ if (empty($lang) || !is_array($lang))
 // Board Settings
 $lang = array_merge($lang, array(
 	'ACP_BOARD_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể xác định một vài cơ chế hoạt động đơn giản của hệ thống, từ tên và giới thiệu thích hợp về website cho đến thay đổi những thiết lập khác trong hệ thống như điều chỉnh giá trị mặc định về múi giờ và ngôn ngữ.',
+	'BOARD_INDEX_TEXT'				=> 'Board index text',
+	'BOARD_INDEX_TEXT_EXPLAIN'		=> 'This text is displayed as the board index in the board’s breadcrumbs. If not specified, it will default to “Board index”.',
+	'BOARD_STYLE'					=> 'Board style',
 	'CUSTOM_DATEFORMAT'				=> 'Tuỳ chọn…',
 	'DEFAULT_DATE_FORMAT'			=> 'Định dạng ngày tháng',
 	'DEFAULT_DATE_FORMAT_EXPLAIN'	=> 'Sử dụng cú pháp giống như hàm <code>date()</code> trong PHP.',
 	'DEFAULT_LANGUAGE'				=> 'Ngôn ngữ mặc định',
 	'DEFAULT_STYLE'					=> 'Giao diện mặc định',
+	'DEFAULT_STYLE_EXPLAIN'			=> 'The default style for new users.',
 	'DISABLE_BOARD'					=> 'Ngưng hoạt động hệ thống',
 	'DISABLE_BOARD_EXPLAIN'			=> 'Tuỳ chọn này sẽ ngưng hoạt động của hệ thống đối với các thành viên. Bạn cũng có nhập vào một tin nhắn giới hạn trong <strong>255</strong> ký tự hiển thị như thông báo ngưng hoạt động của hệ thống nếu muốn.',
+	'DISPLAY_LAST_SUBJECT'			=> 'Display subject of last added post on forum list',
+	'DISPLAY_LAST_SUBJECT_EXPLAIN'	=> 'The subject of the last added post will be displayed in the forum list with a hyperlink to the post. Subjects from password protected forums and forums in which user doesn’t have read access are not shown.',
+	'GUEST_STYLE'					=> 'Guest style',
+	'GUEST_STYLE_EXPLAIN'			=> 'The board style for guests.',
 	'OVERRIDE_STYLE'				=> 'Thay thế cho giao diện lựa chọn của thành viên',
 	'OVERRIDE_STYLE_EXPLAIN'		=> 'Tuỳ chọn thay thế toàn bộ những giao diện đã được các thành viên lựa chọn bằng giao diện mặc định duy nhất của hệ thống.',
 	'SITE_DESC'						=> 'Giới thiệu về website',
+	'SITE_HOME_TEXT'				=> 'Main website text',
+	'SITE_HOME_TEXT_EXPLAIN'		=> 'This text will be displayed as a link to your website homepage in the board’s breadcrumbs. If not specified, it will default to “Home”.',
+	'SITE_HOME_URL'					=> 'Main website URL',
+	'SITE_HOME_URL_EXPLAIN'			=> 'If specified, a link to this URL will be prepended to your board’s breadcrumbs and the board logo will link to this URL instead of the forum index. An absolute URL is required, e.g. <samp>http://www.phpbb.com</samp>.',
 	'SITE_NAME'						=> 'Tên website',
-	'SYSTEM_DST'					=> 'Bật chế độ giờ mùa hè/DST (Daylight Saving Time)',
 	'SYSTEM_TIMEZONE'				=> 'Múi giờ hệ thống',
 	'SYSTEM_TIMEZONE_EXPLAIN'		=> 'Múi giờ hệ thống dùng để hiển thị thời gian của thành viên chưa đăng nhập (khách, các máy tìm kiếm). Thành viên đăng nhập thiết đặt múi giờ lúc đăng ký và có thể thay đổi nó trong bạn điều khiển cá nhân mình.',
 	'WARNINGS_EXPIRE'				=> 'Cảnh cáo trong vòng',
@@ -95,6 +107,7 @@ $lang = array_merge($lang, array(
 
 	'ALLOW_AVATARS'					=> 'Cho phép sử dụng ảnh đại diện',
 	'ALLOW_AVATARS_EXPLAIN'			=> 'Cho phép sử dụng ;<br />Nếu không cho phép dùng ảnh đại diện trên toàn hệ thống hay ảnh đại diện đối với một số chế độ nào đó, các ảnh đại diện sẽ không được hiển thị, tuy nhiên thành viên vẫn có thể tải về ảnh các đại diện trong Trang quản trị của thành viên đó.',
+	'ALLOW_GRAVATAR'				=> 'Enable gravatar avatars',
 	'ALLOW_LOCAL'					=> 'Cho phép sử dụng thư viện hình đại diện',
 	'ALLOW_REMOTE'					=> 'Cho phép liên kết hình đại diện',
 	'ALLOW_REMOTE_EXPLAIN'			=> 'Tuỳ chọn cho phép thành viên sử dụng hình đại diện được liên kết từ những website khác.',
@@ -209,6 +222,7 @@ $lang = array_merge($lang, array(
 
 	'ACC_ACTIVATION'				=> 'Kích hoạt tài khoản',
 	'ACC_ACTIVATION_EXPLAIN'		=> 'Tuỳ chọn này cho phép bạn quyết định cách thức kích hoạt tài khoản thành viên khi đăng ký mới. Bạn cũng có thể cho ngưng đăng ký thành viên mới với tuỳ chọn này.',
+	'ACC_ACTIVATION_WARNING'		=> 'Please note that the currently selected activation method requires emails to be enabled, otherwise registration will be disabled. We recommend to either select a different activation method or reenable emails.',
 	'NEW_MEMBER_POST_LIMIT'			=> 'Giới hạn gửi bài thành viên mới',
 	'NEW_MEMBER_POST_LIMIT_EXPLAIN'	=> 'Thành viên mới trong nhóm <em>Thành viên mới đăng ký</em> cho tới khi họ đạt một số giới hạn về bài viết. Bạn có thể dùng nhóm này để hạn chế họ trong việc sử dụng Tin nhắn riêng để dễ dàng kiểm tra Tin nhắn riêng. <strong>Đặt giá trị này thành 0 để vô hiệu chức năng này.</strong>',
 	'NEW_MEMBER_GROUP_DEFAULT'		=> 'Thiết đặt nhóm Thành viên mới đăng ký thành mặc định',
@@ -288,7 +302,8 @@ $lang = array_merge($lang, array(
 
 // Visual Confirmation Settings
 $lang = array_merge($lang, array(
-	'ACP_VC_SETTINGS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thay đổi những thiết lập mặc định đối với mã xác nhận và cơ chế đồ họa của mã xác nhận CAPTCHA này trong hệ thống.',
+	'ACP_VC_SETTINGS_EXPLAIN'				=> 'Với công cụ này, bạn có thể thay đổi những thiết lập mặc định đối với mã xác nhận và cơ chế đồ họa của mã xác nhận CAPTCHA này trong hệ thống.',
+	'ACP_VC_EXT_GET_MORE'					=> 'For additional (and possibly better) anti-spam plugins, visit the <a href="https://www.phpbb.com/go/anti-spam-ext"><strong>phpBB.com Extensions Database</strong></a>. For more information on preventing spam on your board, visit the <a href="https://www.phpbb.com/go/anti-spam"><strong>phpBB.com Knowledge Base</strong></a>.',
 	'AVAILABLE_CAPTCHAS'					=> 'Các plugin có thể dùng',
 	'CAPTCHA_UNAVAILABLE'					=> 'CAPTCHA này không chọn được vì hệ thống chưa đáp ứng được các yêu cầu của nó.',
 	'CAPTCHA_GD'							=> 'Mã xác nhận GD CAPTCHA',
@@ -343,20 +358,40 @@ $lang = array_merge($lang, array(
 	'SESSION_LENGTH_EXPLAIN'	=> 'Số giây mà phiên đăng nhập có hiệu lực kể từ khi được tạo mới.',
 ));
 
+// Contact Settings
+$lang = array_merge($lang, array(
+	'ACP_CONTACT_SETTINGS_EXPLAIN'		=> 'Here you can enable and disable the contact page and also add a text that is displayed on the page.',
+
+	'CONTACT_US_ENABLE'				=> 'Bật tính năng trang liên hệ',
+	'CONTACT_US_ENABLE_EXPLAIN'		=> 'Điều này này cho phép thành viên gửi email cho Ban quản trị',
+
+	'CONTACT_US_INFO'				=> 'Thông tin liên hệ',
+	'CONTACT_US_INFO_EXPLAIN'		=> 'Nội dung được hiển thị trên trang liên hệ',
+	'CONTACT_US_INFO_PREVIEW'		=> 'Contact page information - Preview',
+	'CONTACT_US_INFO_UPDATED'		=> 'Contact page information has been updated.',
+));
+
 // Load Settings
 $lang = array_merge($lang, array(
 	'ACP_LOAD_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể bật hay tắt những chức năng nhất định của hệ thống để giảm bớt số lượng xử lý được yêu cầu gửi đến máy chủ. Trên hều hết các máy chủ, bạn không cần thiết phải tắt bất kỳ chức năng nào của hệ thống tại đây. Tuy nhiên, trên một vài máy chủ nhất định hoặc các hệ thống sử dụng dịch vụ lưu trữ Web dùng chung với nhiều người khác trên cùng một máy chủ, việc tắt một vài chức năng không cần đến là rất hết sức cần thiết để giảm bớt khối lượng công việc xử lý cho máy chủ. Bạn cũng nên xác định giới hạn thời gian nạp hệ thống và số lượng phiên đăng nhập vượt quá để hệ thống tự động chuyển sang chế độ ngưng hoạt động kịp thời.',
 
+	'ALLOW_CDN'						=> 'Allow usage of third party content delivery networks',
+	'ALLOW_CDN_EXPLAIN'				=> 'If this setting is enabled, some files will be served from external third party servers instead of your server. This reduces the network bandwidth required by your server, but may present a privacy issue for some board administrators. In a default phpBB installation, this includes loading “jQuery” and the font “Open Sans” from Google’s content delivery network.',
+	'ALLOW_LIVE_SEARCHES'			=> 'Allow live searches',
+	'ALLOW_LIVE_SEARCHES_EXPLAIN'	=> 'If this setting is enabled, users are provided with keyword suggestions as they type in certain fields throughout the board.',
 	'CUSTOM_PROFILE_FIELDS'			=> 'Mục thông tin cá nhân tuỳ biến',
 	'LIMIT_LOAD'					=> 'Giới hạn thời gian nạp hệ thống',
 	'LIMIT_LOAD_EXPLAIN'			=> 'Nếu trong vòng một phút hệ thống nạp trung bình vượt quá giá trị được thiết lập này thì hệ thống sẽ tự động chuyển sang chế độ ngưng hoạt động. Giá trị 1.0 gần bằng ~100% tài nguyên được sử dụng của một bộ xử lý máy chủ. Chức năng này chỉ có tác dụng trên các máy chủ UNIX và chỉ trên những máy chủ này, thời gian giới hạn được thiết lập mới có thể sử dụng được. Giá trị này sẽ xác lập lại chính nó thành <strong>0</strong> nếu hệ thống phpBB không thể nhận được giới hạn nạp.',
 	'LIMIT_SESSIONS'				=> 'Giới hạn số phiên đăng nhập',
 	'LIMIT_SESSIONS_EXPLAIN'		=> 'Nếu số lượng phiên đăng nhập vượt quá giá trị được thiết lập này trong quãng thời gian một phút thì hệ thống sẽ tự động chuyển sang chế độ ngưng hoạt động. Nhập vào số <strong>0</strong> để không hạn chế số phiên đăng nhập.',
 	'LOAD_CPF_MEMBERLIST'			=> 'Hiển thị các mục thông tin cá nhân tuỳ biến trong danh sách thành viên',
+	'LOAD_CPF_PM'					=> 'Display custom profile fields in private messages',
 	'LOAD_CPF_VIEWPROFILE'			=> 'Hiển thị các mục thông tin cá nhân tuỳ biến trong trang thông tin cá nhân',
 	'LOAD_CPF_VIEWTOPIC'			=> 'Hiển thị các mục thông tin cá nhân tuỳ biến trong trang xem chủ đề',
 	'LOAD_USER_ACTIVITY'			=> 'Hiển thị những hoạt động của thành viên',
 	'LOAD_USER_ACTIVITY_EXPLAIN'	=> 'Hiển thị những chuyên mục/chủ đề không bị khoá trong phần thông tin cá nhân của thành viên và trong bảng điều khiển của thành viên. Chúng tôi khuyên bạn nên tắt tuỳ chọn này trên các diễn đàn có từ một triệu bài viết trở lên.',
+	'READ_NOTIFICATION_EXPIRE_DAYS'	=> 'Read Notification Expiration',
+	'READ_NOTIFICATION_EXPIRE_DAYS_EXPLAIN' => 'Number of days that will elapse before a read notification will automatically be deleted. Set this value to 0 to make notifications permanent.',
 	'RECOMPILE_STYLES'				=> 'Biên dịch lại các thành phần giao diện đã cũ',
 	'RECOMPILE_STYLES_EXPLAIN'		=> 'Kiểm tra những thành phần giao diện đã được cập nhật trong hệ thống tập tin giao diện và biên dịch lại.',
 	'YES_ANON_READ_MARKING'			=> 'Bật đánh dấu chủ đề cho khách',
@@ -384,8 +419,15 @@ $lang = array_merge($lang, array(
 
 	'AUTH_METHOD'				=> 'Chọn phương pháp xác thực',
 
+	'AUTH_PROVIDER_OAUTH_ERROR_ELEMENT_MISSING'	=> 'Both the key and secret of each enabled OAuth service provider must be provided. Only one was provided for an OAuth service provider.',
+	'AUTH_PROVIDER_OAUTH_EXPLAIN'				=> 'Each OAuth provider requires a unique secret and key in order to authenticate with the external server. These should be supplied by the OAuth service when you register your website with them and should be entered exactly as provided to you.<br />Any service that does not have both a key and a secret entered here will not be available for use by the forum users. Also note, that user can still register and login using the DB authentication plug-in.',
+	'AUTH_PROVIDER_OAUTH_KEY'					=> 'Key',
+	'AUTH_PROVIDER_OAUTH_TITLE'					=> 'OAuth',
+	'AUTH_PROVIDER_OAUTH_SECRET'				=> 'Secret',
+
 	'APACHE_SETUP_BEFORE_USE'	=> 'Bạn phải cài đặt bộ xác thực cho Apache trước khi bạn chuyển đổi hệ thống đến phương pháp xác thực này. Cần lưu ý rằng tên tài khoản bạn sử dụng cho phương pháp xác thực này của Apache phải giống với tài khoản thành viên của bạn trong hệ thống. Việc xác thực bằng Apache chỉ có thể sử dụng được nếu <samp>mod_php</samp> (không phải phiên bản CGI) và <samp>safe_mode</samp> đã được vô hiệu trên máy chủ.',
 
+	'LDAP'							=> 'LDAP',
 	'LDAP_DN'						=> 'Tên LDAP <var>dn</var>',
 	'LDAP_DN_EXPLAIN'				=> 'Đây là tên định danh LDAP, xác định thông tin về thành viên, ví dụ như <samp>o=My Company,c=US</samp>.',
 	'LDAP_EMAIL'					=> 'Thuộc tính địa chỉ Email LDAP',
@@ -417,6 +459,10 @@ $lang = array_merge($lang, array(
 	'FORCE_SERVER_VARS_EXPLAIN'	=> 'Nếu bật tuỳ chọn này, những thiết lập máy chủ đã được xác định trong phần này sẽ được sử dụng như những giá trị đã được thiết lập tự động.',
 	'ICONS_PATH'				=> 'Thư mục biểu tượng bài viết',
 	'ICONS_PATH_EXPLAIN'		=> 'Đường dẫn đến thư mục chứa biểu tượng bài viết trong hệ thống, ví dụ như <samp>images/icons</samp>.',
+	'MOD_REWRITE_ENABLE'		=> 'Enable URL Rewriting',
+	'MOD_REWRITE_ENABLE_EXPLAIN' => 'When enabled, URLs containing ’app.php’ will be rewritten to remove the filename (i.e. app.php/foo will become /foo). <strong>Apache server’s mod_rewrite module is required for this functionality to work; if this option is enabled without mod_rewrite support, URLs on your board may be broken.</strong>',
+	'MOD_REWRITE_DISABLED'		=> 'The <strong>mod_rewrite</strong> module on your Apache web server is disabled. Enable the module or contact your web hosting provider if you wish to enable this feature.',
+	'MOD_REWRITE_INFORMATION_UNAVAILABLE' => 'We are unable to determine whether or not this server supports URL rewriting. This setting may be enabled but if URL rewriting is not available, paths generated by this board (such as for use in links) may be broken. Contact your web hosting provider if you are unsure whether or not you can safely enable this feature.',
 	'PATH_SETTINGS'				=> 'Thiết lập đường dẫn đến thư mục',
 	'RANKS_PATH'				=> 'Thư mục hình xếp hạng',
 	'RANKS_PATH_EXPLAIN'		=> 'Đường dẫn đến thư mục chứa hình xếp hạng trong hệ thống, ví dụ như <samp>images/ranks</samp>.',
@@ -433,6 +479,8 @@ $lang = array_merge($lang, array(
 	'SMILIES_PATH_EXPLAIN'		=> 'Đường dẫn đến thư mục chứa biểu tượng vui trong hệ thống, ví dụ như <samp>images/smilies</samp>.',
 	'UPLOAD_ICONS_PATH'			=> 'Thư mục biểu tượng tập tin',
 	'UPLOAD_ICONS_PATH_EXPLAIN'	=> 'Đường dẫn đến thư mục chứa biểu tượng tập tin trong hệ thống, ví dụ như <samp>images/upload_icons</samp>.',
+	'USE_SYSTEM_CRON'		=> 'Run periodic tasks from system cron',
+	'USE_SYSTEM_CRON_EXPLAIN'		=> 'When off, phpBB will arrange for periodic tasks to be run automatically. When on, phpBB will not schedule any periodic tasks by itself; a system administrator must arrange for <code>bin/phpbbcli.php cron:run</code> to be run by the system cron facility at regular intervals (e.g. every 5 minutes).',
 ));
 
 // Security Settings
@@ -442,6 +490,8 @@ $lang = array_merge($lang, array(
 	'ALL'							=> 'Tất cả',
 	'ALLOW_AUTOLOGIN'				=> 'Cho phép đăng nhập tự động',
 	'ALLOW_AUTOLOGIN_EXPLAIN'		=> 'Tuỳ chọn cho phép thành viên có thể đăng nhập tự động vào hệ thống khi họ ghé thăm website.',
+	'ALLOW_PASSWORD_RESET'			=> 'Allow password reset ("Forgot Password")',
+	'ALLOW_PASSWORD_RESET_EXPLAIN'	=> 'Determines whether or not users are able to use the "I forgot my password" link on the login page to recover their account. If you use an external authentication mechanism you may wish to disable this feature.',
 	'AUTOLOGIN_LENGTH'				=> 'Số ngày hết hạn khoá đăng nhập tự động',
 	'AUTOLOGIN_LENGTH_EXPLAIN'		=> 'Số ngày kể từ lần ghé thăm trước của thành viên, khoá đăng nhập tự động sẽ hết hạn. Nhập vào số <strong>0</strong> để vô hiệu chức năng này.',
 	'BROWSER_VALID'					=> 'Kiểm tra trình duyệt',
@@ -480,8 +530,8 @@ $lang = array_merge($lang, array(
 	'PASS_TYPE_SYMBOL'				=> 'Phải sử dụng ký hiệu',
 	'REF_HOST'						=> 'Chỉ xác minh host',
 	'REF_PATH'						=> 'Xác minh cả đường dẫn',
-	'REFERER_VALID'					=> 'Xác minh Referer',
-	'REFERER_VALID_EXPLAIN'			=> 'Nếu hiệu lực, referer của những lần POST thông tin sẽ bị kiểm tra xác minh host/script path. Điều này có thể gây ra trở ngại đối với các hệ thống dùng nhiều tên miền hay dùng hệ thống đăng nhập ngoài.',
+	'REFERRER_VALID'				=> 'Xác minh Referer',
+	'REFERRER_VALID_EXPLAIN'		=> 'Nếu hiệu lực, referer của những lần POST thông tin sẽ bị kiểm tra xác minh host/script path. Điều này có thể gây ra trở ngại đối với các hệ thống dùng nhiều tên miền hay dùng hệ thống đăng nhập ngoài.',
 	'TPL_ALLOW_PHP'					=> 'Cho phép sử dụng mã PHP trong các tập tin khuôn mẫu',
 	'TPL_ALLOW_PHP_EXPLAIN'			=> 'Nếu tuỳ chọn này được bật, các lệnh <code>PHP</code> và <code>INCLUDEPHP</code> sẽ có thể được sử dụng và biên dịch trong các tập tin khuôn mẫu.',
 ));
@@ -498,6 +548,8 @@ $lang = array_merge($lang, array(
 	'BOARD_HIDE_EMAILS_EXPLAIN'		=> 'Tuỳ chọn ẩn toàn bộ địa chỉ Email cá nhân trong website.',
 	'CONTACT_EMAIL'					=> 'Địa chỉ Email liên hệ',
 	'CONTACT_EMAIL_EXPLAIN'			=> 'Địa chỉ Email này được sử dụng khi có việc cần liên hệ, ví dụ như vấn đề thư rác, có lỗi xảy ra… Nó sẽ luôn luôn được sử dụng trong phần thông tin <samp>Gửi từ</samp> và <samp>Trả lời đến địa chỉ</samp> của các Email.',
+	'CONTACT_EMAIL_NAME'			=> 'Contact name',
+	'CONTACT_EMAIL_NAME_EXPLAIN'	=> 'This is the contact name that e-mail recipients will see. If you don’t want to have a contact name, leave this field empty.',
 	'EMAIL_FUNCTION_NAME'			=> 'Tên hàm dùng để gửi Email',
 	'EMAIL_FUNCTION_NAME_EXPLAIN'	=> 'Hàm chức năng PHP bạn muốn sử dụng để gửi Email.',
 	'EMAIL_PACKAGE_SIZE'			=> 'Số lượng Email trong mỗi gói Email',
@@ -546,5 +598,3 @@ $lang = array_merge($lang, array(
 	'JAB_USERNAME'				=> 'Tên đăng nhập tài khoản Jabber',
 	'JAB_USERNAME_EXPLAIN'		=> 'Xác định một tài khoản đã đăng ký. Tên đăng nhập sẽ không được kiểm tra hợp lệ.',
 ));
-
-?>

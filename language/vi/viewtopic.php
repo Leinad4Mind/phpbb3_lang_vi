@@ -1,12 +1,13 @@
 <?php
-/** 
+/**
 *
-* viewtopic [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: viewtopic.php,v 1.21 2010/08/24 20:11:00
-* @copyright (c) 2006, 2007 phpBBVietNam Group, (c) 2009 - 2010 ytuongsangtaovn.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -36,6 +37,7 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
+	'APPROVE'								=> 'Approve',
 	'ATTACHMENT'						=> 'Tập tin đính kèm',
 	'ATTACHMENT_FUNCTIONALITY_DISABLED'	=> 'Chức năng gửi tập tin đính kèm đã bị vô hiệu.',
 
@@ -48,13 +50,16 @@ $lang = array_merge($lang, array(
 	'BUMP_TOPIC'			=> 'Đẩy chủ đề lên',
 
 	'CODE'					=> 'Mã',
-	'COLLAPSE_QR'			=> 'Ẩn Gửi trả lời nhanh',
 
 	'DELETE_TOPIC'			=> 'Xoá chủ đề',
+	'DELETED_INFORMATION'	=> 'Deleted by %1$s on %2$s',
+	'DISAPPROVE'					=> 'Disapprove',
 	'DOWNLOAD_NOTICE'		=> 'Bạn không được cấp phép để xem tập tin đính kèm trong bài viết này.',
 
-	'EDITED_TIMES_TOTAL'	=> 'Sửa lần cuối bởi <strong>%1$s</strong> vào ngày %2$s với %3$d lần sửa trong tổng số.',
-	'EDITED_TIME_TOTAL'		=> 'Sửa lần cuối bởi <strong>%1$s</strong> vào ngày %2$s với %3$d lần sửa trong tổng số.',
+	'EDITED_TIMES_TOTAL'	=> array(
+		1	=> 'Sửa lần cuối bởi %2$s vào ngày %3$s,với %1$d lần sửa trong tổng số.',
+		2	=> 'Sửa lần cuối bởi %2$s vào ngày %3$s, với %1$d lần sửa trong tổng số.',
+	),
 	'EMAIL_TOPIC'			=> 'Gửi Email giới thiệu',
 	'ERROR_NO_ATTACHMENT'	=> 'Tập tin đính kèm bạn vừa chọn không tồn tại.',
 
@@ -70,8 +75,10 @@ $lang = array_merge($lang, array(
 	'MAKE_GLOBAL'				=> 'Thay đổi thành “Thông báo chung”',
 	'MAKE_NORMAL'				=> 'Thay đổi thành “Bài viết bình thường”',
 	'MAKE_STICKY'				=> 'Thay đổi thành “Chú ý”',
-	'MAX_OPTIONS_SELECT'		=> 'Bạn có thể chọn đến <strong>%d</strong> đối tượng bình chọn',
-	'MAX_OPTION_SELECT'			=> 'Bạn chỉ có thể chọn <strong>1</strong> đối tượng bình chọn',
+	'MAX_OPTIONS_SELECT'		=> array(
+		1	=> 'Bạn có thể chọn đến <strong>%d</strong> đối tượng bình chọn',
+		2	=> 'Bạn chỉ có thể chọn <strong>%d</strong> đối tượng bình chọn',
+	),
 	'MISSING_INLINE_ATTACHMENT'	=> 'Tập tin đính kèm <strong>%s</strong> hiện tại không còn trên máy chủ',
 	'MOVE_TOPIC'				=> 'Di chuyển chủ đề',
 
@@ -85,6 +92,7 @@ $lang = array_merge($lang, array(
 	'POLL_ENDED_AT'			=> 'Bình chọn này sẽ kết thúc vào ngày %s',
 	'POLL_RUN_TILL'			=> 'Bình chọn cho đến ngày %s',
 	'POLL_VOTED_OPTION'		=> 'Bạn đã bình chọn cho đối tượng này',
+	'POST_DELETED_RESTORE'	=> 'This post has been deleted. It can be restored.',
 	'PRINT_TOPIC'			=> 'Xem bản in',
 
 	'QUICK_MOD'				=> 'Công cụ',
@@ -92,11 +100,13 @@ $lang = array_merge($lang, array(
 	'QUOTE'					=> 'Trích dẫn',
 
 	'REPLY_TO_TOPIC'		=> 'Gửi bài trả lời',
+	'RESTORE'				=> 'Khôi phục',
+	'RESTORE_TOPIC'			=> 'Khôi phục chủ đề',
 	'RETURN_POST'			=> '%sQuay về bài viết đang xem%s',
 
-	'SHOW_QR'				=> 'Trả lời nhanh',
 	'SUBMIT_VOTE'			=> 'Chấp nhận bình chọn',
 
+	'TOPIC_TOOLS'			=> 'Các công cụ chủ đề',
 	'TOTAL_VOTES'			=> 'Tổng số bình chọn',
 
 	'UNLOCK_TOPIC'			=> 'Mở khoá chủ đề',
@@ -105,13 +115,12 @@ $lang = array_merge($lang, array(
 	'VIEW_NEXT_TOPIC'		=> 'Chủ đề kế tiếp',
 	'VIEW_PREVIOUS_TOPIC'	=> 'Chủ đề trước',
 	'VIEW_RESULTS'			=> 'Xem kết quả bình chọn',
-	'VIEW_TOPIC_POST'		=> '1 bài viết',
-	'VIEW_TOPIC_POSTS'		=> '%d bài viết',
+	'VIEW_TOPIC_POSTS'		=> array(
+		1	=> '%d bài viết',
+		2	=> '%d bài viết',
+	),
 	'VIEW_UNREAD_POST'		=> 'Bài viết chưa xem đầu tiên',
-	'VISIT_WEBSITE'			=> 'Ghé thăm website của người gửi',
 	'VOTE_SUBMITTED'		=> 'Bạn đã tham gia bình chọn xong.',
 	'VOTE_CONVERTED'		=> 'Thay đổi bình chọn không được hỗ trợ cho các bình chọn được chuyển đổi.',
 
 ));
-
-?>

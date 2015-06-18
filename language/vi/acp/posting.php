@@ -1,12 +1,13 @@
 <?php
-/** 
+/**
 *
-* posting [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: posting.php,v 1.35 2010/08/21 15:37:00
-* @copyright (c) 2006, 2007 phpBBVietNam Group, (c) 2009 - 2010 ytuongsangtaovn.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -46,6 +47,7 @@ $lang = array_merge($lang, array(
 
 	'BBCODE_ADDED'				=> 'Thẻ BBCode đã được tạo thành công.',
 	'BBCODE_EDITED'				=> 'Thẻ BBCode đã được chỉnh sửa thành công.',
+	'BBCODE_DELETED'			=> 'The BBCode has been removed successfully.',
 	'BBCODE_NOT_EXIST'			=> 'Thẻ BBCode bạn vừa chọn không tồn tại.',
 	'BBCODE_HELPLINE'			=> 'Hướng dẫn sử dụng thẻ BBCode',
 	'BBCODE_HELPLINE_EXPLAIN'	=> 'Mục thông tin hướng dẫn sử dụng này sẽ được hiển thị khi rê chuột lên thẻ BBCode tương ứng trong phần soạn bài viết.',
@@ -84,6 +86,7 @@ $lang = array_merge($lang, array(
 		'EMAIL'			=> 'Địa chỉ Email hợp lệ.',
 		'URL'			=> 'Địa chỉ URL hợp lệ sử dụng bất kỳ giao thức nào (http, ftp… không thể sử dụng được vì các vấn đề với mã Javascript). Nếu bạn không nhập vào giao thức, &quot;http://&quot; sẽ được sử dụng làm tiền tố đầu của chuỗi.',
 		'LOCAL_URL'		=> 'Địa chỉ URL trong hệ thống. Địa chỉ URL này phải liên quan đến các trang trong hệ thống và không thể chứa một tên miền khác hay giao thức nào.',
+		'RELATIVE_URL'	=> 'A relative URL. You can use this to match parts of a URL, but be careful: a full URL is a valid relative URL. When you want to use relative URLs of your board, use the LOCAL_URL token.',
 		'COLOR'			=> 'Mã màu HTML, có thể sử dụng định dạng mã màu số như <samp>#FF1234</samp> hay một <a href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">từ khóa màu định dạng CSS</a> giống như <samp>fuchsia</samp> hay <samp>InactiveBorder</samp>.'
 	)
 ));
@@ -104,11 +107,9 @@ $lang = array_merge($lang, array(
 	'CURRENT_SMILIES'			=> 'Biểu tượng vui hiện tại',
 	'CURRENT_SMILIES_EXPLAIN'	=> 'Chọn yêu cầu bạn muốn thực hiện với những biểu tượng vui đã cài đặt hiện tại của mình.',
 
-	'DISPLAY_ON_POSTING'	=> 'Hiển thị trong trang gửi bài',
-	'DISPLAY_POSTING'		=> 'Hiển thị trong trang gửi bài',
-	'DISPLAY_POSTING_NO'	=> 'Không hiển thị trong trang gửi bài',
-
-
+	'DISPLAY_ON_POSTING'		=> 'Hiển thị trong trang gửi bài',
+	'DISPLAY_POSTING'			=> 'Hiển thị trong trang gửi bài',
+	'DISPLAY_POSTING_NO'		=> 'Không hiển thị trong trang gửi bài',
 
 	'EDIT_ICONS'				=> 'Sửa biểu tượng bài viết',
 	'EDIT_SMILIES'				=> 'Sửa biểu tượng vui',
@@ -121,15 +122,19 @@ $lang = array_merge($lang, array(
 	'FIRST'			=> 'Đầu tiên',
 
 	'ICONS_ADD'				=> 'Thêm biểu tượng bài viết mới',
-	'ICONS_NONE_ADDED'		=> 'Không có biểu tượng bài viết nào được thêm vào.',
-	'ICONS_ONE_ADDED'		=> 'Biểu tượng bài viết đã được thêm vào thành công.',
-	'ICONS_ADDED'			=> 'Những biểu tượng bài viết đã được thêm vào thành công.',
+	'ICONS_ADDED'			=> array(
+		0	=> 'Không có biểu tượng bài viết nào được thêm vào.',
+		1	=> 'Biểu tượng bài viết đã được thêm vào thành công.',
+		2	=> 'Những biểu tượng bài viết đã được thêm vào thành công.',
+	),
 	'ICONS_CONFIG'			=> 'Cấu hình biểu tượng bài viết',
 	'ICONS_DELETED'			=> 'Biểu tượng bài viết đã được gỡ bỏ thành công.',
 	'ICONS_EDIT'			=> 'Sửa biểu tượng bài viết',
-	'ICONS_ONE_EDITED'		=> 'Biểu tượng bài viết đã được cập nhật thành công.',
-	'ICONS_NONE_EDITED'		=> 'Không có biểu tượng bài viết nào được cập nhật.',
-	'ICONS_EDITED'			=> 'Những biểu tượng bài viết đã được cập nhật thành công.',
+	'ICONS_EDITED'			=> array(
+		0	=> 'Không có biểu tượng bài viết nào được cập nhật.',
+		1	=> 'Biểu tượng bài viết đã được cập nhật thành công.',
+		2	=> 'Những biểu tượng bài viết đã được cập nhật thành công.',
+	),
 	'ICONS_HEIGHT'			=> 'Chiều cao',
 	'ICONS_IMAGE'			=> 'Hình dùng làm biểu tượng bài viết',
 	'ICONS_IMPORTED'		=> 'Gói biểu tượng bài viết đã được cài đặt thành công.',
@@ -150,7 +155,7 @@ $lang = array_merge($lang, array(
 	'NO_ICONS_EDIT'		=> 'Không biểu tượng nào có sẵn để chỉnh sửa.',
 	'NO_ICONS_EXPORT'	=> 'Bạn không có biểu tượng bài viết nào để tạo gói biểu tượng.',
 	'NO_ICONS_PAK'		=> 'Không tìm thấy gói biểu tượng bài viết nào.',
-	'NO_SMILIES_ADD'	=> 'Không biểu tượng vui nào có sẵn để thêm vào.',
+	'NO_SMILIES_ADD'	=> 'Không biểu tượng vui nào có sẵn để thêm vào.',	
 	'NO_SMILIES_EDIT'	=> 'Không biểu tượng vui nào có sẵn để chỉnh sửa.',
 	'NO_SMILIES_EXPORT'	=> 'Bạn không có biểu tượng vui nào để tạo gói biểu tượng.',
 	'NO_SMILIES_PAK'	=> 'Không tìm thấy gói biểu tượng vui nào.',
@@ -161,9 +166,11 @@ $lang = array_merge($lang, array(
 
 	'SELECT_PACKAGE'			=> 'Chọn một gói biểu tượng',
 	'SMILIES_ADD'				=> 'Thêm biểu tượng vui mới',
-	'SMILIES_NONE_ADDED'		=> 'Không có biểu tượng vui nào được thêm vào.',
-	'SMILIES_ONE_ADDED'			=> 'Biểu tượng vui đã được thêm vào thành công.',
-	'SMILIES_ADDED'				=> 'Những biểu tượng vui đã được thêm vào thành công.',
+	'SMILIES_ADDED'				=> array(
+		0	=> 'Không có biểu tượng vui nào được thêm vào.',
+		1	=> 'Biểu tượng vui đã được thêm vào thành công.',
+		2	=> 'Những biểu tượng vui đã được thêm vào thành công.',
+	),
 	'SMILIES_CODE'				=> 'Mã nhập',
 	'SMILIES_CONFIG'			=> 'Cấu hình biểu tượng vui',
 	'SMILIES_DELETED'			=> 'Biểu tượng vui đã được gỡ bỏ thành công.',
@@ -171,9 +178,11 @@ $lang = array_merge($lang, array(
 	'SMILIE_NO_CODE'			=> 'Biểu tượng cảm “%s” đã bị bỏ qua, vì không có mã được nhập vào.',
 	'SMILIE_NO_EMOTION'			=> 'Biểu tượng cảm “%s” đã bị bỏ qua, vì không có thiếu dữ liệu nhập vào.',
 	'SMILIE_NO_FILE'			=> 'Biểu tượng cảm “%s” đã bị bỏ qua, vì tập tin tương ứng không tìm thấy.',
-	'SMILIES_NONE_EDITED'		=> 'Không có biểu tượng vui nào được cập nhật.',
-	'SMILIES_ONE_EDITED'		=> 'Biểu tượng vui đã được cập nhật thành công.',
-	'SMILIES_EDITED'			=> 'Những biểu tượng vui đã được cập nhật thành công.',
+	'SMILIES_EDITED'			=> array(
+		0	=> 'Không có biểu tượng vui nào được cập nhật.',
+		1	=> 'Biểu tượng vui đã được cập nhật thành công.',
+		2	=> 'Những biểu tượng vui đã được cập nhật thành công.',
+	),
 	'SMILIES_EMOTION'			=> 'Cảm xúc',
 	'SMILIES_HEIGHT'			=> 'Chiều cao',
 	'SMILIES_IMAGE'				=> 'Hình dùng làm biểu tượng vui',
@@ -185,7 +194,10 @@ $lang = array_merge($lang, array(
 	'SMILIES_URL'				=> 'Hình biểu tượng vui',
 	'SMILIES_WIDTH'				=> 'Chiều rộng',
 
-	'TOO_MANY_SMILIES'			=> 'Vượt quá giới hạn %d biểu tượng cảm.',
+	'TOO_MANY_SMILIES'			=> array(
+		1	=> 'Vượt quá giới hạn %d biểu tượng cảm xúc.',
+		2	=> 'Vượt quá giới hạn %d những biểu tượng cảm xúc.',
+	),
 
 	'WRONG_PAK_TYPE'	=> 'Gói biểu tượng bạn vừa chọn không chứa dữ liệu thích hợp.',
 ));
@@ -277,5 +289,3 @@ $lang = array_merge($lang, array(
 
 	'USED_IN_REPORTS'		=> 'Đã sử dụng trong báo cáo',
 ));
-
-?>

@@ -1,12 +1,13 @@
 <?php
-/** 
+/**
 *
-* acp_forums [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: forums.php,v 1.23 2010/08/24 20:48:00
-* @copyright (c) 2006, 2007 phpBBVietNam Group, (c) 2009 - 2010 ytuongsangtaovn.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -43,6 +44,10 @@ $lang = array_merge($lang, array(
 	'AUTO_PRUNE_FREQ_EXPLAIN'	=> 'Số ngày giữa hai lần thực hiện việc dọn dẹp tự động.',
 	'AUTO_PRUNE_VIEWED'			=> 'Số ngày tự động dọn dẹp bài viết sau khi xem',
 	'AUTO_PRUNE_VIEWED_EXPLAIN'	=> 'Nếu chủ đề không có ai xem sau số ngày được thiết lập này thì chủ đề sẽ được tự động gỡ bỏ.',
+	'AUTO_PRUNE_SHADOW_FREQ'	=> 'Auto-prune shadow topics frequency',
+	'AUTO_PRUNE_SHADOW_DAYS'	=> 'Auto-prune shadow topics age',
+	'AUTO_PRUNE_SHADOW_DAYS_EXPLAIN'	=> 'Number of days after which shadow topic is removed.',
+	'AUTO_PRUNE_SHADOW_FREQ_EXPLAIN'	=> 'Time in days between pruning events.',
 
 	'CONTINUE'						=> 'Tiếp tục',
 	'COPY_PERMISSIONS'				=> 'Sao chép thiết lập cấp phép từ',
@@ -102,6 +107,8 @@ $lang = array_merge($lang, array(
 	'FORUM_PASSWORD_OLD'				=> 'Mật khẩu của chuyên mục dùng cơ chế quá cũ và cần được thay đổi.',
 	'FORUM_PASSWORD_MISMATCH'			=> 'Mật khẩu của chuyên mục bạn vừa nhập không phù hợp.',
 	'FORUM_PRUNE_SETTINGS'				=> 'Thiết lập dọn dẹp chuyên mục',	
+	'FORUM_PRUNE_SHADOW'				=> 'Enable auto-pruning of shadow topics',
+	'FORUM_PRUNE_SHADOW_EXPLAIN'			=> 'Prunes the forum of shadow topics, set the frequency/age parameters below.',
 	'FORUM_RESYNCED'					=> 'Chuyên mục <strong>%s</strong> đã được đồng bộ thành công.',
 	'FORUM_RULES_EXPLAIN'				=> 'Nội quy chuyên mục được hiển thị trong bất cứ trang nào của chuyên mục đó.',
 	'FORUM_RULES_LINK'					=> 'Liên kết đến nội quy chuyên mục',
@@ -116,16 +123,16 @@ $lang = array_merge($lang, array(
 	'FORUM_TYPE'						=> 'Nhóm chuyên mục',
 	'FORUM_UPDATED'						=> 'Thông tin về chuyên mục đã được cập nhật thành công.',
 
-	'FORUM_WITH_SUBFORUMS_NOT_TO_LINK'	=> 'Bạn đã chọn thay đổi một chuyên mục có thể gửi bài có các chuyên mục con trở thành một liên kết. Hãy vui lòng di chuyển tất cả chuyên mục con của chuyên mục này trước khi bạn tiến hành, bởi vì sau khi thay đổi chuyên mục này thành một liên kết, bạn sẽ không còn xem được những chuyên mục con hiện tại đang nằm trong chuyên mục này.',
+	'FORUM_WITH_SUBFORUMS_NOT_TO_LINK'		=> 'Bạn đã chọn thay đổi một chuyên mục có thể gửi bài có các chuyên mục con trở thành một liên kết. Hãy vui lòng di chuyển tất cả chuyên mục con của chuyên mục này trước khi bạn tiến hành, bởi vì sau khi thay đổi chuyên mục này thành một liên kết, bạn sẽ không còn xem được những chuyên mục con hiện tại đang nằm trong chuyên mục này.',
 
 	'GENERAL_FORUM_SETTINGS'	=> 'Thiết lập chuyên mục tổng quát',
 
-	'LINK'					=> 'Liên kết',
-	'LIST_INDEX'			=> 'Liệt kê chuyên này trong phần chú giải của chuyên mục chứa nó',
-	'LIST_INDEX_EXPLAIN'	=> 'Hiển thị chuyên mục này trong trang trong phần chú giải của chuyên mục chứa nó.',
+	'LINK'						=> 'Liên kết',
+	'LIST_INDEX'				=> 'Liệt kê chuyên này trong phần chú giải của chuyên mục chứa nó',
+	'LIST_INDEX_EXPLAIN'		=> 'Hiển thị chuyên mục này trong trang trong phần chú giải của chuyên mục chứa nó.',
 	'LIST_SUBFORUMS'			=> 'Liệt kê các chuyên mục con của nó trong chú thích',
 	'LIST_SUBFORUMS_EXPLAIN'	=> 'Hiển thị các chuyên mục con của chuyên mục này trong trong phần chú giải cho các chuyên mục con với tùy “Liệt kê chuyên này trong phần chú giải của chuyên mục chứa nó” được bật.',	
-	'LOCKED'				=> 'Đã khoá',
+	'LOCKED'					=> 'Đã khoá',
 
 	'MOVE_POSTS_NO_POSTABLE_FORUM'	=> 'Chuyên mục bạn vừa chọn để di duyển các bài viết đến không cho phép gửi bài. Bạn hãy vui lòng chọn một chuyên mục cho phép gửi bài.',
 	'MOVE_POSTS_TO'					=> 'Di chuyển bài viết đến',
@@ -156,5 +163,3 @@ $lang = array_merge($lang, array(
 
 	'UNLOCKED'			=> 'Không khoá',
 ));
-
-?>
