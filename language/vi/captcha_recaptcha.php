@@ -4,7 +4,7 @@
 * captcha_recaptcha [Vietnamese]
 *
 * @package language
-* @version 1.06
+* @version 1.07
 * @copyright (c) 2009 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -43,7 +43,7 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'CAPTCHA_RECAPTCHA'	=> 'reCaptcha',
 
-	'RECAPTCHA_EXPLAIN'			=> 'Nhằm ngăn cản các chương trình nhập liệu tự động, bạn hãy vui lòng nhập vào cả hai từ nhìn thấy trong hình vào dòng bên dưới.',
+	'RECAPTCHA_EXPLAIN'			=> 'Nhằm ngăn cản các chương trình nhập liệu tự động, bạn hãy vui lòng nhập nội dung nhìn thấy trong hình vào dòng bên dưới.',
 	'RECAPTCHA_INCORRECT'		=> 'Mã xác nhận vừa nhập không chính xác.',
 	'RECAPTCHA_LANG'			=> 'en',// Nên để 'en' nếu dịch vụ reCaptcha chưa hỗ trợ tiếng Việt
 	'RECAPTCHA_NOT_AVAILABLE'	=> 'Để sử dụng được reCaptcha, bạn phải tạo tài khoản tại trang <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
