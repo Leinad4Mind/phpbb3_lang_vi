@@ -19,18 +19,20 @@ _ _ _ _ _    |  |_ _ _   _ _ _ _ _     |  |__|  /  |  |__|  /                   
 @ VinaBB Team
 ---[ Information ]--------------------------------------------------------------
 Language Pack Name: Vietnamese Language Pack for phpBB3
-Language Pack Version: 3.1.5a
+Language Pack Version: 3.1.6a
 Encoding: Unicode (UTF-8)
-Release Date: 2015/06/21
+Release Date: 2015/08/27
 ---[ Description ]--------------------------------------------------------------
 Vietnamese Language Pack for phpBB 3.1.x with following parts:
 + Main translation
 + ACP translation
 + Email translation
-+ Vietnamese buttons for default style: proSilver
 ---[ Translator ]----------------------------------------
 # nedka (Khoa Nguyen) <nedka@nedka.vn> http://www.nedka.vn/
 ---[ History ]------------------------------------------------------------------
+# 2015/08/27: Version 3.1.6a
+Updated changes in language files from 3.1.5 to 3.1.6
+
 # 2015/06/21: Version 3.1.5a
 Updated changes in language files from 3.1.4 to 3.1.5
 No language changes from 3.1.3 to 3.1.4
@@ -240,6 +242,6 @@ Thanks you for using this language pack
 ---[ License ]------------------------------------------------------------------
 http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 ---[ About ]--------------------------------------------------------------------
-Homepage: http://phpbb.nedka.vn/
+Homepage: http://www.vinabb.vn/
 Facebook: http://facebook.com/vinabb
-Email: phpbb@nedka.vn
+Email: contact@vinabb.vn

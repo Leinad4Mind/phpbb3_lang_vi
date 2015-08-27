@@ -4,7 +4,7 @@
 * acp/extensions [Vietnamese]
 *
 * @package language
-* @version 2.06
+* @version 2.07
 * @copyright (c) 2013 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -48,6 +48,8 @@ $lang = array_merge($lang, array(
 	'AUTHOR_NAME'			=> 'Tên',
 	'AUTHOR_ROLE'			=> 'Chức vụ',
 
+	'BROWSE_EXTENSIONS_DATABASE'	=> 'Tìm phần mở rộng',
+
 	'CLEAN_NAME'	=> 'Tên gốc',
 
 	'DESCRIPTION'		=> 'Giới thiệu',
@@ -75,6 +77,12 @@ $lang = array_merge($lang, array(
 	'EXTENSION_ENABLE_IN_PROGRESS'		=> 'Phần mở rộng đang được cài đặt. Vui lòng đừng đóng hay nạp lại trang này cho đến khi hoàn tất.',
 	'EXTENSION_ENABLE_SUCCESS'			=> 'Phần mở rộng đã được bật thành công.',
 	'EXTENSION_FORCE_UNSTABLE_CONFIRM'	=> 'Bạn có chắc chắn muốn sử dụng phiên bản đang thử nghiệm?',
+	'EXTENSION_INSTALL_HEADLINE'		=> 'Cài đặt phần mở rộng',
+	'EXTENSION_INSTALL_EXPLAIN'			=> '<ol>
+			<li>Tải phần mở rộng từ thư viện của phpBB.com</li>
+			<li>Giải nén tập tin tải về và tải nội dung bên trong lên thư mục <samp>ext/</samp></li>
+			<li>Kích hoạt phần mở rộng từ trang này</li>
+		</ol>',
 	'EXTENSION_INVALID_LIST'			=> 'Phần mở rộng “%s” không hợp lệ.<br />%s<br /><br />',
 	'EXTENSION_NAME'					=> 'Tên phần mở rộng',
 	'EXTENSION_NOT_AVAILABLE'			=> 'Phần mở rộng đã chọn không thể sử dụng trên hệ thống này. Bạn hãy vui lòng kiểm tra lại phiên bản phpBB cũng như PHP được hỗ trợ bên dưới.',

@@ -4,7 +4,7 @@
 * acp/styles [Vietnamese]
 *
 * @package language
-* @version 1.66
+* @version 1.67
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -42,6 +42,8 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ACP_STYLES_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí các giao diện hiện có trên hệ thống. Bạn có thể thay đổi các giao diện, xóa, ngưng kích hoạt, kích hoạt lại hay cài đặt những giao diện mới. Bạn cũng có thể xem trước một giao diện sẽ trông như thế nào khi cài đặt trên hệ thống. Bên cạnh đó, thông tin về số lượng người dùng lựa chọn mỗi giao diện cũng được cung cấp bên dưới. Thiết lập thay thế giao diện mặc định của người dùng không nằm tại đây.',
+
+	'BROWSE_STYLES_DATABASE'	=> 'Tìm giao diện',
 
 	'CANNOT_BE_INSTALLED'		=> 'Không thể cài đặt',
 	'CONFIRM_UNINSTALL_STYLES'	=> 'Bạn có chắc chắn muốn gỡ bỏ giao diện đã chọn?',
