@@ -4,7 +4,7 @@
 * memberlist [Vietnamese]
 *
 * @package language
-* @version 1.52
+* @version 1.53
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -103,7 +103,8 @@ $lang = array_merge($lang, array(
 	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'Bạn phải đăng nhập để tìm kiếm thành viên.',	
 	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'Bạn phải đăng nhập để xem thông tin cá nhân của thành viên.',
 
-	'MORE_THAN'	=> 'Nhiều hơn',
+	'MANAGE_GROUP'	=> 'Quản lí nhóm',
+	'MORE_THAN'		=> 'Nhiều hơn',
 
 	'NO_CONTACT_FORM'	=> 'Thông tin liên hệ người quản trị đã bị vô hiệu.',
 	'NO_CONTACT_PAGE'	=> 'Trang liên hệ người quản trị đã bị vô hiệu.',

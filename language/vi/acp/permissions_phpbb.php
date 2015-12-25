@@ -4,7 +4,7 @@
 * acp/permissions_phpbb (phpBB Permission Set) [Vietnamese]
 *
 * @package language
-* @version 2.04
+* @version 2.05
 * @copyright (c) 2013 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -159,9 +159,10 @@ $lang = array_merge($lang, array(
 	'ACL_M_SPLIT'	=> 'Chia nhỏ chủ đề',
 	'ACL_M_MERGE'	=> 'Nhập chung chủ đề',
 
-	'ACL_M_INFO'	=> 'Xem thông tin bài viết',
-	'ACL_M_WARN'	=> 'Đưa ra cảnh cáo<br /><em>Thiết lập này không thể gán riêng cho từng chuyên mục.</em>', // This moderator setting is only global (and not local)
-	'ACL_M_BAN'		=> 'Quản lí lệnh cấm<br /><em>Thiết lập này không thể gán riêng cho từng chuyên mục.</em>', // This moderator setting is only global (and not local)
+	'ACL_M_INFO'		=> 'Xem thông tin bài viết',
+	'ACL_M_WARN'		=> 'Đưa ra cảnh cáo<br /><em>Thiết lập này không thể gán riêng cho từng chuyên mục.</em>', // This moderator setting is only global (and not local)
+	'ACL_M_BAN'			=> 'Quản lí lệnh cấm<br /><em>Thiết lập này không thể gán riêng cho từng chuyên mục.</em>', // This moderator setting is only global (and not local)
+	'ACL_M_PM_REPORT'	=> 'Đóng và xóa báo cáo tin nhắn<br /><em>Thiết lập này không thể gán riêng cho từng chuyên mục.</em>', // This moderator setting is only global (and not local)
 ));
 
 // Admin Permissions

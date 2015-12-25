@@ -4,7 +4,7 @@
 * cli [Vietnamese]
 *
 * @package language
-* @version 1.01
+* @version 1.02
 * @copyright (c) 2014 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -62,7 +62,7 @@ $lang = array_merge($lang, array(
 	'CLI_DESCRIPTION_ENABLE_EXTENSION'			=> 'Cài đặt phần mở rộng xác định.',
 	'CLI_DESCRIPTION_FIND_MIGRATIONS'			=> 'Tìm dữ liệu thay đổi không bị phụ thuộc.',
 	'CLI_DESCRIPTION_GET_CONFIG'				=> 'In giá trị một mục cấu hình',
-	'CLI_DESCRIPTION_INCREMENT_CONFIG'			=> 'Tăng thêm giá trị một mục cấu hình',
+	'CLI_DESCRIPTION_INCREMENT_CONFIG'			=> 'Tăng thêm giá trị số nguyên một mục cấu hình',
 	'CLI_DESCRIPTION_LIST_EXTENSIONS'			=> 'In danh sách tất cả phần mở rộng có trong cơ sở dữ liệu và hệ thống tập tin.',
 	'CLI_DESCRIPTION_OPTION_SAFE_MODE'			=> 'Chạy chế độ an toàn (không sử dụng phần mở rộng).',
 	'CLI_DESCRIPTION_OPTION_SHELL'				=> 'Chạy dòng lệnh.',
@@ -84,4 +84,9 @@ $lang = array_merge($lang, array(
 	'CLI_EXTENSIONS_ENABLED'		=> 'Đã cài đặt',
 
 	'CLI_FIXUP_RECALCULATE_EMAIL_HASH_SUCCESS'	=> 'Đã tạo lại chuỗi mã hóa cho toàn bộ địa chỉ email thành công.',
+));
+
+// Additional help for commands.
+$lang = array_merge($lang, array(
+	'CLI_HELP_CRON_RUN'			=> $lang['CLI_DESCRIPTION_CRON_RUN'] . ' Xác định thêm tên thao tác, hệ thống sẽ chỉ chạy mỗi thao tác đó mà thôi.',
 ));

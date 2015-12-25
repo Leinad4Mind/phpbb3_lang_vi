@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version 1.165
+* @version 1.166
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -65,7 +65,7 @@ $lang = array_merge($lang, array(
 	'ACCOUNT_NOT_ACTIVATED'									=> 'Tài khoản của bạn chưa được kích hoạt.',
 	'ACP'													=> 'Bảng quản trị',
 	'ACP_SHORT'												=> 'ACP',
-	'ACTIVE'												=> 'có hiệu lực',
+	'ACTIVE'												=> 'hoạt động',
 	'ACTIVE_ERROR'											=> 'Tên tài khoản đã chọn hiện tại chưa được kích hoạt. Nếu bạn gặp rắc rối trong việc kích hoạt tài khoản của mình, hãy liên hệ với người quản trị.',
 	'ADMINISTRATOR'											=> 'Quản trị viên',
 	'ADMINISTRATORS'										=> 'Quản trị viên',
@@ -333,6 +333,7 @@ $lang = array_merge($lang, array(
 	'IMAGE_FILETYPE_INVALID'	=> 'Loại tập tin hình ảnh “%d” trong nhóm tập tin “%s” không được hỗ trợ.',
 	'IMAGE_FILETYPE_MISMATCH'	=> 'Loại tập tin hình ảnh không phù hợp: đuôi tập tin mở rộng khai báo là “%1$s” nhưng thực sự lại là “%2$s”.',
 	'IN'						=> 'trong',
+	'INACTIVE'					=> 'Ngưng hoạt động',
 	'INDEX'						=> 'Trang chủ',
 	'INFORMATION'				=> 'Thông tin',
 	'INSECURE_REDIRECT'			=> 'Yêu cầu chuyển trang đến địa chỉ URL không an toàn.',
@@ -444,7 +445,7 @@ $lang = array_merge($lang, array(
 	// A, B and C replied...
 	// A, B, C and 2 others replied...
 	// A, B, C and others replied...
-	'NOTIFICATION_ADMIN_ACTIVATE_USER'		=> '<strong>Yêu cầu kích hoạt</strong> từ thành viên mới: “%1$s”',
+	'NOTIFICATION_ADMIN_ACTIVATE_USER'		=> '<strong>Yêu cầu kích hoạt</strong> từ thành viên mới hoặc ngưng hoạt động: “%1$s”',
 	'NOTIFICATION_BOOKMARK'					=> array(
 		1	=> '<strong>Bài mới</strong> từ %1$s trong chủ đề đã đánh dấu:',
 	),
