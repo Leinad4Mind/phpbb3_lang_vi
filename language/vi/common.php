@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version 1.166
+* @version 1.167
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -673,7 +673,7 @@ $lang = array_merge($lang, array(
 	'SEARCH_POSTS_BY'			=> 'Tìm bài viết được gửi bởi',
 	'SEARCH_SELF'				=> 'Bài viết của bạn',
 	'SEARCH_TOPIC'				=> 'Tìm trong chủ đề…',
-	'SEARCH_UNANSWERED'			=> 'Bài viết chưa được trả lời',
+	'SEARCH_UNANSWERED'			=> 'Chủ đề chưa được trả lời',
 	'SEARCH_UNREAD'				=> 'Bài viết chưa xem',
 	'SEARCH_USER_POSTS'			=> 'Tìm các bài viết của thành viên',
 	'SECONDS'					=> 'Giây',
@@ -814,7 +814,7 @@ $lang = array_merge($lang, array(
 	'USERS'						=> 'Người',
 	'USE_PERMISSIONS'			=> 'Kiểm tra cấp phép cho người dùng',
 
-	'USER_NEW_PERMISSION_DISALLOWED'	=> 'Xin lỗi, bạn không được phép sử dụng chức năng này. Có thể bạn vừa mới đăng ký tài khoản và cần tham gia nhiều hơn để có thể sử dụng chức năng này.',
+	'USER_NEW_PERMISSION_DISALLOWED'	=> 'Xin lỗi, bạn không được phép sử dụng chức năng này. Có thể bạn vừa mới đăng ký tài khoản và cần gửi bài nhiều hơn để có thể sử dụng chức năng này.',
 
 	'VARIANT_DATE_SEPARATOR'	=> ' / ', // Used in date format dropdown, eg: "Today, 13:37 / 01 Jan 2007, 13:37" ... to join a relative date with calendar date
 	'VIEWED'					=> 'Đã xem',

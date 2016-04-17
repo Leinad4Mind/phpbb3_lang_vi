@@ -4,7 +4,7 @@
 * captcha_qa [Vietnamese]
 *
 * @package language
-* @version 1.09
+* @version 1.10
 * @copyright (c) 2009 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -47,6 +47,7 @@ $lang = array_merge($lang, array(
 	'CAPTCHA_QA'				=> 'Hỏi &amp; Đáp',
 	'CONFIRM_QUESTION'			=> 'Câu hỏi',
 	'CONFIRM_QUESTION_EXPLAIN'	=> 'Câu hỏi trên dùng để ngăn chặn các chương trình nhập liệu tự động.',
+	'CONFIRM_QUESTION_MISSING'	=> 'Không tìm thấy dữ liệu dùng cho câu hỏi xác nhận. Vui lòng liên hệ người quản trị.',
 	'CONFIRM_QUESTION_WRONG'	=> 'Bạn đã trả lời sai câu hỏi xác nhận.',
 
 	'EDIT_QUESTION'	=> 'Sửa câu hỏi',
