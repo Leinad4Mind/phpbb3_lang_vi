@@ -121,8 +121,8 @@ $lang = array_merge($lang, array(
 
 	'IMAGE_LINK_SIZE'			=> 'Kích thước hình ảnh sẽ hiển thị như liên kết',
 	'IMAGE_LINK_SIZE_EXPLAIN'	=> 'Hiển thị những hình ảnh được đính kèm như là một liên kết văn bản trong dòng nếu kích thước hình ảnh lớn hơn kích thước đã chọn. Thiết lập <strong>0 Pixel x 0 Pixel</strong> để vô hiệu chức năng này.',
-	'IMAGICK_PATH'				=> 'Đường dẫn đến chương trình Imagemagick',
-	'IMAGICK_PATH_EXPLAIN'		=> 'Đường dẫn chính xác đến ứng dụng chuyển đổi hình ảnh Imagemagick trên máy chủ, ví dụ như <samp>/usr/bin/</samp>.',
+	'IMAGICK_PATH'				=> 'Đường dẫn đến chương trình ImageMagick',
+	'IMAGICK_PATH_EXPLAIN'		=> 'Đường dẫn chính xác đến ứng dụng chuyển đổi hình ảnh ImageMagick trên máy chủ, ví dụ như <samp>/usr/bin/</samp>.',
 
 	'MAX_ATTACHMENTS'				=> 'Số tập tin đính kèm tối đa trong mỗi bài viết',
 	'MAX_ATTACHMENTS_PM'			=> 'Số tập tin đính kèm tối đa trong mỗi tin nhắn',
@@ -157,7 +157,7 @@ $lang = array_merge($lang, array(
 	'REMOVE_DISALLOWED_IPS'			=> 'Gỡ bỏ hoặc ngưng loại trừ những địa chỉ IP/tên miền <em>đã bị cấm</em>',
 	'RESYNC_FILES_STATS_CONFIRM'	=> 'Bạn có chắc chắn muốn đồng bộ lại dữ liệu thống kê tập tin đính kèm?',
 
-	'SEARCH_IMAGICK'				=> 'Tìm kiếm ứng dụng Imagemagick',
+	'SEARCH_IMAGICK'				=> 'Tìm kiếm ứng dụng ImageMagick',
 	'SECURE_ALLOW_DENY'				=> 'Danh sách đồng ý/từ chối',
 	'SECURE_ALLOW_DENY_EXPLAIN'		=> 'Thay đổi cách xử lí mặc định khi chế độ tải về an toàn được bật của danh sách đồng ý/từ chối với một <strong>danh sách trắng</strong> (Đồng ý) hoặc một <strong>danh sách đen</strong> (Từ chối).',
 	'SECURE_DOWNLOADS'				=> 'Bật chế độ tải về an toàn',

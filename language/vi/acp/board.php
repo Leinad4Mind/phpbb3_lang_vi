@@ -571,6 +571,7 @@ $lang = array_merge($lang, array(
 	'SMTP_PORT'						=> 'Cổng máy chủ SMTP',
 	'SMTP_PORT_EXPLAIN'				=> 'Chỉ thay đổi cổng máy chủ SMTP nếu bạn chắc chắn máy chủ SMTP của mình đang chạy trên cổng khác.',
 	'SMTP_SERVER'					=> 'Địa chỉ máy chủ SMTP',
+	'SMTP_SERVER_EXPLAIN'			=> 'Bạn cần cung cấp giao thức của máy chủ SMTP. Nếu sử dụng SSL, giá trị nhập vào sẽ có dạng "ssl://your.mailserver.com"',
 	'SMTP_SETTINGS'					=> 'Thiết lập SMTP',
 	'SMTP_USERNAME'					=> 'Tên đăng nhập SMTP',
 	'SMTP_USERNAME_EXPLAIN'			=> 'Chỉ nhập vào tên đăng nhập nếu máy chủ SMTP của bạn yêu cầu.',

@@ -60,12 +60,16 @@ $lang = array_merge($lang, array(
 	'MIGRATION_NOT_FULFILLABLE'						=> 'Việc nâng cấp “%s” không thực thi toàn vẹn, đã bỏ qua thao tác “%2$s”.',
 	'MIGRATION_NOT_VALID'							=> '%s không phải thao tác nâng cấp hợp lệ.',
 	'MIGRATION_SCHEMA_DONE'							=> 'Cấu trúc dữ liệu đã hoàn tất: %1$s; Thời gian: %2$.2f giây',
+	'MIGRATION_SCHEMA_IN_PROGRESS'					=> 'Cấu trúc đang cập nhật: %1$s; Thời gian: %2$.2f giây',
 	'MIGRATION_SCHEMA_RUNNING'						=> 'Cấu trúc dữ liệu đang xử lí: %s.',
 	'MODULE_ERROR'									=> 'Có lỗi xuất hiện trong khi thêm vào gói chức năng: %s',
+	'MODULE_EXISTS'									=> 'Gói chức năng đã tồn tại: %s',
+	'MODULE_EXIST_MULTIPLE'							=> 'Một vài gói chức năng đã sử dụng tên danh mục khai báo: %s. Sừ dụng từ khóa “before/after” để xác định rõ nơi đặt gói chức năng.',
 	'MODULE_INFO_FILE_NOT_EXIST'					=> 'Tập tin cài đặt của gói chức năng đã yêu cầu bị thiếu: %2$s',
 	'MODULE_NOT_EXIST'								=> 'Gói chức năng đã yêu cầu không tồn tại: %s',
 
-	'PERMISSION_NOT_EXIST'	=> 'Thiết lập cấp phép “%s” không tồn tại.',
+	'PARENT_MODULE_FIND_ERROR'	=> 'Không tìm thấy danh mục chứa gói chức năng: %s',
+	'PERMISSION_NOT_EXIST'		=> 'Thiết lập cấp phép “%s” không tồn tại.',
 
 	'ROLE_NOT_EXIST'	=> 'Nhiệm vụ cấp phép “%s” không tồn tại.',
 ));
