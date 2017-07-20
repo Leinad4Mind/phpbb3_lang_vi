@@ -4,7 +4,7 @@
 * acp/common [Vietnamese]
 *
 * @package language
-* @version 1.118
+* @version 1.119
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -375,7 +375,7 @@ $lang = array_merge($lang, array(
 	'NUMBER_USERS'		=> 'Số thành viên',
 	'NUMBER_ORPHAN'		=> 'Số tập tin đính kèm không sử dụng',
 
-	'PHP_VERSION_OLD'	=> 'Phiên bản PHP trên máy chủ này không còn được hỗ trợ bởi các phiên bản phpBB sau này. %sXem chi tiết%s',
+	'PHP_VERSION_OLD'	=> 'Phiên bản PHP trên máy chủ này (%1$s) không còn được hỗ trợ bởi các phiên bản phpBB sau này. Phiên bản PHP tối thiểu yêu cầu là %2$s. %3$sChi tiết%4$s',
 
 	'POSTS_PER_DAY'		=> 'Số bài viết/ngày',
 
@@ -419,11 +419,14 @@ $lang = array_merge($lang, array(
 	'UPLOAD_DIR_SIZE'	=> 'Tổng dung lượng tập tin đính kèm',
 	'USERS_PER_DAY'		=> 'Số người dùng/ngày',
 
-	'VALUE'						=> 'Giá trị',
-	'VERSIONCHECK_FAIL'			=> 'Không thể nhận được thông tin phiên bản mới nhất.',
-	'VERSIONCHECK_FORCE_UPDATE'	=> 'Kiểm tra lại phiên bản',
-	'VIEW_ADMIN_LOG'			=> 'Xem ghi nhận về quản trị viên',
-	'VIEW_INACTIVE_USERS'		=> 'Xem các tài khoản chưa kích hoạt',
+	'VALUE'							=> 'Giá trị',
+	'VERSIONCHECK_FAIL'				=> 'Không thể nhận được thông tin phiên bản mới nhất.',
+	'VERSIONCHECK_FORCE_UPDATE'		=> 'Kiểm tra lại phiên bản',
+	'VERSIONCHECK_INVALID_ENTRY'	=> 'Dữ liệu phiên bản mới chứa đối tượng không hỗ trợ.',
+	'VERSIONCHECK_INVALID_URL'		=> 'Dữ liệu phiên bản mới chứa liên kết không hợp lệ.',
+	'VERSIONCHECK_INVALID_VERSION'	=> 'Dữ liệu phiên bản mới chứa số phiên bản không hợp lệ.',
+	'VIEW_ADMIN_LOG'				=> 'Xem ghi nhận về quản trị viên',
+	'VIEW_INACTIVE_USERS'			=> 'Xem các tài khoản chưa kích hoạt',
 
 	'WELCOME_PHPBB'			=> 'phpBB xin chào bạn!',
 	'WRITABLE_CONFIG'		=> 'Tập tin cấu hình của bạn (config.php) hiện tại đang được cấp phép có thể ghi với mọi người dùng. Chúng tôi khuyến cáo bạn phải thay đổi ngay cấp phép cho tập tin này thành <strong>640</strong> hoặc ít nhất là <strong>644</strong> (Ví dụ: <a href="http://en.wikipedia.org/wiki/Chmod" rel="external">CHMOD</a> 640 cho tập tin config.php).',

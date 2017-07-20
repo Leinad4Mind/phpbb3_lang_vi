@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version 1.167
+* @version 1.168
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -340,6 +340,7 @@ $lang = array_merge($lang, array(
 	'INTERESTS'					=> 'Sở thích',
 	'INVALID_DIGEST_CHALLENGE'	=> 'Giao thức yêu cầu ký số không hợp lệ.',	
 	'INVALID_EMAIL_LOG'			=> '<strong>%s</strong> có lẽ là một địa chỉ email không hợp lệ?',
+	'INVALID_FEED_ATTACHMENTS'	=> 'Kênh RSS đã chọn đang truy xuất dữ liệu tập tin đính kèm không hợp lệ.',
 	'INVALID_PLURAL_RULE'		=> 'Quy tắc số nhiều đã chọn không hợp lệ. Giá trị hợp lệ là số nguyên từ 0 đến 15.',
 	'IP'						=> 'Địa chỉ IP',
 	'IP_BLACKLISTED'			=> 'Địa chỉ IP của bạn <strong>%1$s</strong> đã bị chặn bởi vì nó có trong danh sách cấm. Để biết thêm chi tiết, hãy vui lòng xem tại đây <a href="%2$s">%2$s</a>.',

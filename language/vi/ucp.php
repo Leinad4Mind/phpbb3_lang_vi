@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version 1.128
+* @version 1.129
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -104,6 +104,7 @@ $lang = array_merge($lang, array(
 	'AVATAR_DRIVER_UPLOAD_TITLE'	=> 'Tải hình đại diện lên',
 	'AVATAR_DRIVER_UPLOAD_EXPLAIN'	=> 'Tải lên hình đại diện có sẵn trên máy tính của bạn.',
 	'AVATAR_EXPLAIN'				=> 'Kích thước tối đa; rộng: %1$s, cao: %2$s, dung lượng tập tin: %3$.2f KiB.',
+	'AVATAR_EXPLAIN_NO_FILESIZE'	=> 'Kích thước tối đa; rộng: %1$s, cao: %2$s.',
 	'AVATAR_FEATURES_DISABLED'		=> 'Chức năng sử dụng hình đại diện hiện tại đã bị vô hiệu.',
 	'AVATAR_GALLERY'				=> 'Thư viện hình đại diện',
 	'AVATAR_GENERAL_UPLOAD_ERROR'	=> 'Không thể tải lên hình đại diện đến “%s”.',

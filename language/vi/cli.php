@@ -4,7 +4,7 @@
 * cli [Vietnamese]
 *
 * @package language
-* @version 1.02
+* @version 1.03
 * @copyright (c) 2014 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -61,6 +61,7 @@ $lang = array_merge($lang, array(
 	'CLI_DESCRIPTION_DISABLE_EXTENSION'			=> 'Vô hiệu phần mở rộng xác định.',
 	'CLI_DESCRIPTION_ENABLE_EXTENSION'			=> 'Cài đặt phần mở rộng xác định.',
 	'CLI_DESCRIPTION_FIND_MIGRATIONS'			=> 'Tìm dữ liệu thay đổi không bị phụ thuộc.',
+	'CLI_DESCRIPTION_FIX_LEFT_RIGHT_IDS'		=> 'Sửa cấu trúc cây phân nhánh cho các chuyên mục và gói chức năng.',
 	'CLI_DESCRIPTION_GET_CONFIG'				=> 'In giá trị một mục cấu hình',
 	'CLI_DESCRIPTION_INCREMENT_CONFIG'			=> 'Tăng thêm giá trị số nguyên một mục cấu hình',
 	'CLI_DESCRIPTION_LIST_EXTENSIONS'			=> 'In danh sách tất cả phần mở rộng có trong cơ sở dữ liệu và hệ thống tập tin.',
@@ -70,6 +71,7 @@ $lang = array_merge($lang, array(
 	'CLI_DESCRIPTION_RECALCULATE_EMAIL_HASH'	=> 'Tạo lại chuỗi mã hóa cho cột dữ liệu user_email_hash trong bảng người dùng.',
 	'CLI_DESCRIPTION_SET_ATOMIC_CONFIG'			=> 'Chỉ cập nhật lại giá trị cho mục cấu hình nếu giá trị cũ trùng với giá trị nhập vào',
 	'CLI_DESCRIPTION_SET_CONFIG'				=> 'Gán giá trị một mục cấu hình',
+	'CLI_DESCRIPTION_UPDATE_HASH_BCRYPT'		=> 'Chuyển đổi chuỗi mã hóa mật khẩu cũ sang bcrypt.',
 
 	'CLI_EXTENSION_DISABLE_FAILURE'	=> 'Không thể vô hiệu phần mở rộng %s',
 	'CLI_EXTENSION_DISABLE_SUCCESS'	=> 'Đã vô hiệu phần mở rộng %s thành công',
@@ -83,7 +85,9 @@ $lang = array_merge($lang, array(
 	'CLI_EXTENSIONS_DISABLED'		=> 'Đã vô hiệu',
 	'CLI_EXTENSIONS_ENABLED'		=> 'Đã cài đặt',
 
-	'CLI_FIXUP_RECALCULATE_EMAIL_HASH_SUCCESS'	=> 'Đã tạo lại chuỗi mã hóa cho toàn bộ địa chỉ email thành công.',
+	'CLI_FIXUP_FIX_LEFT_RIGHT_IDS_SUCCESS'		=> 'Đã sửa lại cấu trúc cây phân nhánh cho các chuyên mục và gói chức năng.',
+	'CLI_FIXUP_RECALCULATE_EMAIL_HASH_SUCCESS'	=> 'Đã tạo lại chuỗi mã hóa cho địa chỉ email.',
+	'CLI_FIXUP_UPDATE_HASH_BCRYPT_SUCCESS'		=> 'Đã chuyển đổi chuỗi mã hóa mật khẩu cũ sang bcrypt.'
 ));
 
 // Additional help for commands.

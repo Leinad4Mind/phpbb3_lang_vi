@@ -4,7 +4,7 @@
 * acp/attachments [Vietnamese]
 *
 * @package language
-* @version 1.33
+* @version 1.34
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -129,7 +129,7 @@ $lang = array_merge($lang, array(
 	'MAX_EXTGROUP_FILESIZE'			=> 'Dung lượng tập tin tối đa',
 	'MAX_IMAGE_SIZE'				=> 'Kích thước hình ảnh tối đa',
 	'MAX_IMAGE_SIZE_EXPLAIN'		=> 'Kích thước tối đa cho những hình ảnh được đính kèm. Thiết lập <strong>0 Pixel x 0 Pixel</strong> để vô hiệu việc kiểm tra kích thước hình ảnh đính kèm.',
-	'MAX_THUMB_WIDTH'				=> 'Chiều rộng hình thu nhỏ tối đa',
+	'MAX_THUMB_WIDTH'				=> 'Chiều rộng/cao hình thu nhỏ tối đa',
 	'MAX_THUMB_WIDTH_EXPLAIN'		=> 'Hình thu nhỏ được tạo ra sẽ có chiều rộng không vượt quá giá trị được thiết lập ở đây.',
 	'MIN_THUMB_FILESIZE'			=> 'Dung lượng tập tin tạo hình thu nhỏ tối thiểu',
 	'MIN_THUMB_FILESIZE_EXPLAIN'	=> 'Không tạo hình thu nhỏ cho những tập tin có dung lượng lớn hơn mức dung lượng này.',

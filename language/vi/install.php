@@ -4,7 +4,7 @@
 * install [Vietnamese]
 *
 * @package language
-* @version 1.122
+* @version 1.123
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -576,6 +576,7 @@ $lang = array_merge($lang, array(
 	'UPDATING_DATA'					=> 'Đang cập nhật dữ liệu',
 	'UPDATING_TO_LATEST_STABLE'		=> 'Đang cập nhật cơ sở dữ liệu đến bản phát hành tiêu chuẩn mới nhất',
 	'UPDATED_VERSION'				=> 'Phiên bản đã cập nhật',
+	'UPGRADE_INSTRUCTIONS'			=> 'Phiên bản <strong>%1$s</strong> cùng chức năng mới đã được phát hành. Hãy xem qua <a href="%2$s" title="%2$s"><strong>thông báo phát hành</strong></a> để tìm hiểu về những chức năng này và cách cập nhật dễ nhất cho bạn.',
 	'UPLOAD_METHOD'					=> 'Phương pháp tải lên',
 
 	'UPDATE_DB_SUCCESS'		=> 'Cơ sở dữ liệu đã được cập nhật thành công.',
