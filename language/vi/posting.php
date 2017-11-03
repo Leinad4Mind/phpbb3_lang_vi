@@ -4,7 +4,7 @@
 * posting [Vietnamese]
 *
 * @package language
-* @version 1.61
+* @version 1.62
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -185,8 +185,10 @@ $lang = array_merge($lang, array(
 	'NO_POLL_TITLE'				=> 'Bạn chưa nhập câu hỏi bình chọn.',
 	'NO_POST'					=> 'Bài viết bạn vừa yêu cầu không tồn tại.',
 	'NO_POST_MODE'				=> 'Không xác định chế độ bài viết.',
+	'NO_TEMP_DIR'				=> 'Không tìm thấy thư mục tạm hoặc thư mục này không thể ghi.',
 
 	'PARTIAL_UPLOAD'			=> 'Tập tin đính kèm vừa chọn chỉ được tải lên một phần và chưa hoàn chỉnh.',
+	'PHP_UPLOAD_STOPPED'		=> 'Phần mở rộng PHP đã dừng tiến trình tải lên tập tin.',
 	'PHP_SIZE_NA'				=> 'Dung lượng tập tin đính kèm quá lớn.<br />Không thể xác định dung lượng tập tin tối đa xác lập bởi PHP trong tập tin <code>php.ini</code>.',
 	'PHP_SIZE_OVERRUN'			=> 'Dung lượng tập tin đính kèm quá lớn, dung lượng tập tin được phép tải lên tối đa là %1$d %2$s.<br />Dung lượng tối đa này được xác lập trong tập tin <strong>php.ini</strong> và không thể tự thay đổi.',
 	'PLACE_INLINE'				=> 'Đặt trong dòng',
@@ -243,9 +245,9 @@ $lang = array_merge($lang, array(
 	'SMILIES'						=> 'Biểu tượng vui',
 	'SMILIES_ARE_OFF'				=> 'Biểu tượng vui đang <em>TẮT</em>',
 	'SMILIES_ARE_ON'				=> 'Biểu tượng vui đang <em>BẬT</em>',
-	'STICKY_ANNOUNCE_TIME_LIMIT'	=> 'Thời gian hiển thị chủ đề dưới dạng chú ý/thông báo',
+	'STICKY_ANNOUNCE_TIME_LIMIT'	=> 'Thời gian hiển thị chủ đề dưới dạng đặc biệt',
 	'STICK_TOPIC_FOR'				=> 'Đánh dấu quan trọng cho chủ đề trong',
-	'STICK_TOPIC_FOR_EXPLAIN'		=> 'Nhập số <strong>0</strong> cho chú ý/thông báo không giới hạn thời gian. Lưu ý rằng con số này có liên quan đến ngày tháng gửi bài.',
+	'STICK_TOPIC_FOR_EXPLAIN'		=> 'Nhập số <strong>0</strong> cho chú ý hay thông báo không giới hạn thời gian. Lưu ý rằng con số này có liên quan đến ngày tháng gửi bài.',
 	'STYLES_TIP'					=> 'Chú ý: Bạn có thể chọn nhanh đoạn văn bản rồi bấm vào những nút bên trên.',
 
 	'TOO_FEW_CHARS'				=> 'Nội dung bài viết của bạn quá ngắn.',

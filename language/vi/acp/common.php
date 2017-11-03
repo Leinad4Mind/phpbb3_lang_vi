@@ -4,7 +4,7 @@
 * acp/common [Vietnamese]
 *
 * @package language
-* @version 1.119
+* @version 1.120
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -112,6 +112,8 @@ $lang = array_merge($lang, array(
 	'ACP_GROUPS_PERMISSIONS'		=> 'Cấp phép nhóm',
 	'ACP_GROUPS_POSITION'			=> 'Quản lí vị trí nhóm',
 
+	'ACP_HELP_PHPBB'	=> 'Giúp đỡ phpBB',
+
 	'ACP_ICONS'				=> 'Biểu tượng bài viết',
 	'ACP_ICONS_SMILIES'		=> 'Biểu tượng bài viết/biểu tượng vui',
 	'ACP_INACTIVE_USERS'	=> 'Tài khoản chưa kích hoạt',
@@ -169,7 +171,6 @@ $lang = array_merge($lang, array(
 	'ACP_SEARCH_SETTINGS'		=> 'Thiết lập tìm kiếm',
 
 	'ACP_SECURITY_SETTINGS'		=> 'Thiết lập bảo mật',
-	'ACP_SEND_STATISTICS'		=> 'Gửi thông tin thống kê',
 	'ACP_SERVER_CONFIGURATION'	=> 'Cấu hình máy chủ',
 	'ACP_SERVER_SETTINGS'		=> 'Thiết lập máy chủ',
 	'ACP_SIGNATURE_SETTINGS'	=> 'Thiết lập chữ ký cá nhân',
@@ -227,12 +228,23 @@ $lang = array_merge($lang, array(
 
 	'BACK'	=> 'Quay lại',
 
-	'COLOUR_SWATCH'		=> 'Bảng mã màu',
-	'CONFIG_UPDATED'	=> 'Cấu hình hệ thống đã được cập nhật thành công.',
-	'CRON_LOCK_ERROR'	=> 'Không thể tiến hành khóa thao tác hẹn giờ.',
-	'CRON_NO_SUCH_TASK'	=> 'Không tìm thấy thao tác “%s”.',
-	'CRON_NO_TASK'		=> 'Không có thao tác hẹn giờ nào cần chạy lúc này.',
-	'CRON_NO_TASKS'		=> 'Không có thao tác hẹn giờ nào.',
+	'CANNOT_CHANGE_FILE_GROUP'			=> 'Không thể đổi nhóm quản lý tập tin',
+	'CANNOT_CHANGE_FILE_PERMISSIONS'	=> 'Không thể đổi cấp phép tập tin',
+	'CANNOT_COPY_FILES'					=> 'Không thể sao chép tập tin',
+	'CANNOT_CREATE_SYMLINK'				=> 'Không thể tạo liên kết tắt',
+	'CANNOT_DELETE_FILES'				=> 'Không thể xóa tập tin',
+	'CANNOT_DUMP_FILE'					=> 'Không thể ghi tập tin',
+	'CANNOT_MIRROR_DIRECTORY'			=> 'Không thể sao chép thư mục',
+	'CANNOT_RENAME_FILE'				=> 'Không thể đổi tên tập tin',
+	'CANNOT_TOUCH_FILES'				=> 'Không thể kiểm tra tập tin tồn tại',
+	'CONTAINER_EXCEPTION' 				=> 'Hệ thống phpBB đã gặp lỗi vì một phần mở rộng đã cài đặt. Tất cả phần mở rộng sẽ tạm thời bị vô hiệu. Hãy thử xóa hết dữ liệu tạm. Tất cả phần mở rộng sẽ được tự động khôi phục một khi lỗi này không còn. Ghé thăm <a href="https://www.phpbb.com/support">phpBB.com</a> để được hỗ trợ nếu bạn không thể giải quyết rắc rối này.',
+	'COLOUR_SWATCH'						=> 'Bảng mã màu',
+	'CONFIG_UPDATED'					=> 'Cấu hình hệ thống đã được cập nhật thành công.',
+	'CRON_LOCK_ERROR'					=> 'Không thể tiến hành khóa thao tác hẹn giờ.',
+	'CRON_NO_SUCH_TASK'					=> 'Không tìm thấy thao tác “%s”.',
+	'CRON_NO_TASK'						=> 'Không có thao tác hẹn giờ nào cần chạy lúc này.',
+	'CRON_NO_TASKS'						=> 'Không có thao tác hẹn giờ nào.',
+	'CURRENT_VERSION'					=> 'Phiên bản hiện tại',
 
 	'DEACTIVATE'				=> 'Ngưng kích hoạt',
 	'DIRECTORY_DOES_NOT_EXIST'	=> 'Đường dẫn bạn nhập “%s” không tồn tại.',
@@ -247,6 +259,7 @@ $lang = array_merge($lang, array(
 
 	'EDIT'				=> 'Sửa',
 	'ENABLE'			=> 'Bật',
+	'EXCEPTION'			=> 'Ngoại lệ',
 	'EXPORT_DOWNLOAD'	=> 'Tải về',
 	'EXPORT_STORE'		=> 'Lưu trữ',
 
@@ -258,6 +271,7 @@ $lang = array_merge($lang, array(
 	'IP'			=> 'Địa chỉ IP',
 	'IP_HOSTNAME'	=> 'Địa chỉ IP hoặc tên miền',
 
+	'LATEST_VERSION'				=> 'Phiên bản mới nhất',
 	'LOAD_NOTIFICATIONS'			=> 'Hiện thông báo hệ thống',
 	'LOAD_NOTIFICATIONS_EXPLAIN'	=> 'Hiển thị thông báo từ hệ thống đến người dùng tại đầu mỗi trang.',
 	'LOGGED_IN_AS'					=> 'Bạn đã đăng nhập dưới tên:',
@@ -290,9 +304,11 @@ $lang = array_merge($lang, array(
 	'PERMISSIONS_TRANSFERRED_EXPLAIN'	=> 'Bạn hiện đang có những thiết lập cấp phép từ “%1$s”. Bạn có thể truy cập vào hệ thống với thiết lập cấp phép người dùng này nhưng không thể truy cập được vào bảng quản trị bởi vì những thiết lập cấp phép dành cho người quản trị không được chuyển đến bạn. Bạn cũng có thể <a href="%2$s"><strong>phục hồi lại thiết lập cấp phép của mình</strong></a> bất cứ lúc nào bạn muốn.',
 	'PROCEED_TO_ACP'					=> '%sChuyển đến bảng quản trị%s',
 
-	'REMIND'		=> 'Nhắc nhở',
-	'RESYNC'		=> 'Đồng bộ hóa',
-	'RUNNING_TASK'	=> 'Đang chạy thao tác: %s.',
+	'RELEASE_ANNOUNCEMENT'	=> 'Thông báo phát hành',
+	'REMIND'				=> 'Nhắc nhở',
+	'REPARSE_LOCK_ERROR'	=> 'Thao tác xử lý lại nội dung đã được chạy trên một tiến trình khác.',
+	'RESYNC'				=> 'Đồng bộ hóa',
+	'RUNNING_TASK'			=> 'Đang chạy thao tác: %s.',
 
 	'SELECT_ANONYMOUS'	=> 'Chọn tài khoản khách',
 	'SELECT_OPTION'		=> 'Chọn các mục tùy chọn',
@@ -311,6 +327,9 @@ $lang = array_merge($lang, array(
 	'UCP'					=> 'Bảng thiết lập cá nhân',
 	'USERNAMES_EXPLAIN'		=> 'Nhập vào mỗi tên tài khoản trên một hàng riêng.',
 	'USER_CONTROL_PANEL'	=> 'Bảng thiết lập cá nhân',
+	'UPDATE_NEEDED'			=> 'Phiên bản phpBB chưa cập nhật.',
+	'UPDATE_NOT_NEEDED'		=> 'Không có phiên bản mới.',
+	'UPDATES_AVAILABLE'		=> 'Phiên bản mới:',
 
 	'WARNING'				=> 'Cảnh báo',
 ));
@@ -375,7 +394,7 @@ $lang = array_merge($lang, array(
 	'NUMBER_USERS'		=> 'Số thành viên',
 	'NUMBER_ORPHAN'		=> 'Số tập tin đính kèm không sử dụng',
 
-	'PHP_VERSION_OLD'	=> 'Phiên bản PHP trên máy chủ này (%1$s) không còn được hỗ trợ bởi các phiên bản phpBB sau này. Phiên bản PHP tối thiểu yêu cầu là %2$s. %3$sChi tiết%4$s',
+	'PHP_VERSION_OLD'	=> 'Phiên bản PHP trên máy chủ không còn được hỗ trợ bởi các phiên bản phpBB sau này. %Chi tiết%s',
 
 	'POSTS_PER_DAY'		=> 'Số bài viết/ngày',
 
@@ -422,9 +441,11 @@ $lang = array_merge($lang, array(
 	'VALUE'							=> 'Giá trị',
 	'VERSIONCHECK_FAIL'				=> 'Không thể nhận được thông tin phiên bản mới nhất.',
 	'VERSIONCHECK_FORCE_UPDATE'		=> 'Kiểm tra lại phiên bản',
-	'VERSIONCHECK_INVALID_ENTRY'	=> 'Dữ liệu phiên bản mới chứa đối tượng không hỗ trợ.',
-	'VERSIONCHECK_INVALID_URL'		=> 'Dữ liệu phiên bản mới chứa liên kết không hợp lệ.',
-	'VERSIONCHECK_INVALID_VERSION'	=> 'Dữ liệu phiên bản mới chứa số phiên bản không hợp lệ.',
+	'VERSION_CHECK'					=> 'Kiểm tra phiên bản',
+	'VERSION_CHECK_EXPLAIN'			=> 'Kiểm tra phiên bản phpBB mới.',
+	'VERSION_NOT_UP_TO_DATE_ACP'	=> 'Bản cài đặt phpBB này đã cũ.<br />Bên dưới là thông báo phát hành của phiên bản mới nhất kèm hướng dẫn cho bạn cập nhật.',
+	'VERSION_NOT_UP_TO_DATE_TITLE'	=> 'Bản cài đặt phpBB này đã cũ.',
+	'VERSION_UP_TO_DATE_ACP'		=> 'Bản cài đặt phpBB này là mới nhất. Hiện tại không có cập nhật nào.',
 	'VIEW_ADMIN_LOG'				=> 'Xem ghi nhận về quản trị viên',
 	'VIEW_INACTIVE_USERS'			=> 'Xem các tài khoản chưa kích hoạt',
 
@@ -457,16 +478,18 @@ $lang = array_merge($lang, array(
 	'USER_IS_INACTIVE'	=> 'Tài khoản chưa kích hoạt',
 ));
 
-// Send statistics page
+// Help support phpBB page
 $lang = array_merge($lang, array(
 	'EXPLAIN_SEND_STATISTICS'	=> 'Bạn hãy vui lòng gửi thông tin thống kê về máy chủ và cấu hình hệ thống phpBB của mình đến nhóm phát triển phpBB để chúng tôi thống kê việc sử dụng. Tất cả thông tin cá nhân về bạn hay website của bạn đều được <strong>loại bỏ</strong> và dữ liệu thống kê gửi đến được <strong>ẩn hoàn toàn</strong>. Chúng tôi sẽ dựa vào thông tin này để quyết định những thay đổi trong các phiên bản phpBB sắp tới. Kết quả thống kê được công bố rộng rãi cũng như chúng tôi có thể chia sẻ thông tin này với dự án PHP - ngôn ngữ lập trình dùng để viết phpBB.',
 	'EXPLAIN_SHOW_STATISTICS'	=> 'Nhấp vào nút bên dưới, bạn có thể xem trước tất cả các biến thống kê sẽ được gửi đến chúng tôi.',
 	'DONT_SEND_STATISTICS'		=> 'Quay về bảng quản trị nếu bạn không muốn gửi thông tin thống kê cho nhóm phát triển phpBB.',
 	'GO_ACP_MAIN'				=> 'Chuyển đến trang chính bảng quản trị',
 	'HIDE_STATISTICS'			=> 'Ẩn chi tiết',
-	'SEND_STATISTICS'			=> 'Gửi thông tin thống kê',
+	'SEND_STATISTICS'			=> 'Gửi thống kê',
+	'SEND_STATISTICS_LONG'		=> 'Gửi dữ liệu thống kê',
 	'SHOW_STATISTICS'			=> 'Hiện chi tiết',
 	'THANKS_SEND_STATISTICS'	=> 'Cám ơn bạn đã gửi thông tin cho chúng tôi.',
+	'FAIL_SEND_STATISTICS'		=> 'Có lỗi trong quá trình gửi dữ liệu.',
 ));
 
 // Log Entries
@@ -603,6 +626,7 @@ $lang = array_merge($lang, array(
 	'LOG_EXT_DISABLE'	=> '<strong>Phần mở rộng bị vô hiệu</strong><br />» %s',
 	'LOG_EXT_ENABLE'	=> '<strong>Phần mở rộng được bật</strong><br />» %s',
 	'LOG_EXT_PURGE'		=> '<strong>Đã xóa dữ liệu của phần mở rộng</strong><br />» %s',
+	'LOG_EXT_UPDATE'	=> '<strong>Đã cập nhật phần mở rộng</strong><br />» %s',
 
 	'LOG_FORUM_ADD'							=> '<strong>Đã tạo chuyên mục mới</strong><br />» %s',
 	'LOG_FORUM_COPIED_PERMISSIONS'			=> '<strong>Đã sao chép cấp phép chuyên mục</strong> từ %1$s<br />» %2$s',

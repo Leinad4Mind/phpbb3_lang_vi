@@ -87,7 +87,6 @@ $lang = array_merge($lang, array(
 	'STYLE_UNINSTALL_DEPENDENT'					=> 'Không thể gỡ bỏ giao diện “%s” vì nó đang được các giao diện khác sử dụng kế thừa lại.',
 	'STYLE_UNINSTALLED'							=> 'Giao diện “%s” đã được gỡ bỏ thành công.',
 	'STYLE_USED_BY'								=> 'Số người sử dụng (Bao gồm máy tìm kiếm)',
-	'STYLE_VERSION'								=> 'Phiên bản giao diện',
 
 	'UNINSTALL_DEFAULT'	=> 'Bạn không thể gỡ bỏ giao diện mặc định.',
 ));
