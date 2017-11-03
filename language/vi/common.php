@@ -181,6 +181,7 @@ $lang = array_merge($lang, array(
 	'COOKIE_CONSENT_INFO'	=> 'Tìm hiểu thêm',
 	'COOKIE_CONSENT_MSG'	=> 'Website này sử dụng cookie để mang đến cho bạn trải nghiệm tốt nhất khi truy cập.',
 	'COOKIE_CONSENT_OK'		=> 'Tôi đã hiểu!',
+	'COOKIE_CONSENT_HREF'	=> 'http://cookiesandyou.com',
 	'COOKIES_DELETED'		=> 'Tất cả cookie đã được xóa thành công.',
 	'CURRENT_TIME'			=> 'Hôm nay, %s',
 

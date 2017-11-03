@@ -197,6 +197,7 @@ $lang = array_merge($lang, array(
 	'INST_ERR_DB_NO_ORACLE'			=> 'Phiên bản Oracle được cài đặt trên máy chủ yêu cầu bạn phải thiết lập thông số <var>NLS_CHARACTERSET</var> thành <var>UTF-8</var>. Bạn hãy vui lòng nâng cấp hệ thống lên phiên bản 9.2+ hoặc chỉ cần thay đổi lại thông số trên.',
 	'INST_ERR_DB_NO_POSTGRES'		=> 'Cơ sở dữ liệu vừa chọn không được tạo ra trong chế độ mã hóa <var>UNICODE</var> hoặc <var>UTF-8</var>. Bạn hãy vui lòng cài đặt lại với một cơ sở dữ liệu được mã hóa theo <var>UNICODE</var> hoặc <var>UTF-8</var>.',
 	'INST_ERR_DB_NO_SQLITE3'		=> 'Phiên bản phần mở rộng SQLite được cài đặt trên máy chủ đã quá cũ. Vui lòng nâng cấp ít nhất đến phiên bản 3.6.15.',
+	'INST_ERR_DB_NO_WRITABLE'		=> 'Cơ sở dữ liệu và thư mục chứa chúng phải ghi được.',
 	'INST_ERR_EMAIL_INVALID'		=> 'Địa chỉ email bạn nhập không hợp lệ.',
 	'INST_ERR_MISSING_DATA'			=> 'Bạn phải điền đầy đủ thông tin trong phần này.',
 	'INST_ERR_NO_DB'				=> 'Không thể nạp gói chức năng PHP cho loại cơ sở dữ liệu đã chọn.',
@@ -355,6 +356,7 @@ $lang = array_merge($lang, array(
 	'TASK_CLASS_NOT_FOUND'				=> 'Tên định danh dịch vụ cài đặt không hợp lệ. Tên dịch vụ “%1$s” được dùng, nhưng lại khai báo namespace là “%2$s”. Để biết thêm thông tin, hãy tham khảo tài liệu về <var>task_interface</var>.',
 	'TASK_CREATE_CONFIG_FILE'			=> 'Đang tạo tập tin cấu hình',
 	'TASK_CREATE_DATABASE_SCHEMA_FILE'	=> 'Đang tạo tập tin cấu trúc dữ liệu',
+	'TASK_CREATE_SEARCH_INDEX'			=> 'Đang tạo chỉ mục tìm kiếm',
 	'TASK_CREATE_TABLES'				=> 'Đang tạo bảng dữ liệu',
 	'TASK_INSTALL_EXTENSIONS'			=> 'Đang cài đặt phần mở rộng đi kèm',
 	'TASK_NOT_FOUND'					=> 'Không tìm thấy thao tác',
@@ -417,6 +419,7 @@ $lang = array_merge($lang, array(
 	'UPDATE_TYPE_ALL'					=> 'Cập nhật tập tin và dữ liệu',
 	'UPDATE_TYPE_DB_ONLY'				=> 'Chỉ cập nhật dữ liệu',
 	'UPDATE_UPDATING_FILES'				=> 'Đang cập nhật tập tin',
+	'UPGRADE_INSTRUCTIONS'				=> 'Phiên bản <strong>%1$s</strong> cùng chức năng mới đã được phát hành. Hãy xem qua <a href="%2$s" title="%2$s"><strong>thông báo phát hành</strong></a> để tìm hiểu về những chức năng này và cách cập nhật dễ nhất cho bạn.',
 
 	'VERSION'	=> 'Phiên bản',
 ));

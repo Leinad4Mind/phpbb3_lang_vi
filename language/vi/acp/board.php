@@ -166,6 +166,8 @@ $lang = array_merge($lang, array(
 	'ACP_POST_SETTINGS_EXPLAIN'			=> 'Với công cụ này, bạn có thể thay đổi những thiết lập mặc định đối với chức năng gửi bài viết trong hệ thống.',
 	'ALLOW_POST_LINKS'					=> 'Cho phép sử dụng liên kết trong bài viết/tin nhắn',
 	'ALLOW_POST_LINKS_EXPLAIN'			=> 'Nếu vô hiệu tùy chọn này, thẻ BBCode <code>[URL]</code> và các địa chỉ URL khác trong bài viết/tin nhắn sẽ không được hiển thị như liên kết.',
+	'ALLOWED_SCHEMES_LINKS'				=> 'Cho phép liên kết tài trợ',
+	'ALLOWED_SCHEMES_LINKS_EXPLAIN'		=> 'Người dùng chỉ có thể chèn liên kết thường hoặc liên kết tài trợ nằm trong danh sách được phép.',
 	'ALLOW_POST_FLASH'					=> 'Cho phép sử dụng thẻ BBCode <code>[FLASH]</code> trong bài viết',
 	'ALLOW_POST_FLASH_EXPLAIN'			=> 'Nếu vô hiệu tùy chọn này, thẻ BBCode <code>[FLASH]</code> sẽ bị vô hiệu trong các bài viết. Mặc khác, những thiết lập cấp phép cũng quyết định việc người dùng có thể sử dụng được thẻ BBCode <code>[FLASH]</code> hay không.',
 
@@ -350,13 +352,16 @@ $lang = array_merge($lang, array(
 
 // Cookie Settings
 $lang = array_merge($lang, array(
-	'ACP_COOKIE_SETTINGS_EXPLAIN'	=> 'Những thiết lập bên dưới được sử dụng để gửi cookie đến trình duyệt của khách ghé thăm. Trong hều hết các trường hợp, bạn nên sử dụng giá trị mặc định của cookie và đừng thay đổi chúng nếu không đủ khả năng quản lí hay không thực sự cần thiết. Nếu bạn thực sự cần thay đổi giá trị mặc định, hãy cẩn thận vì những thiết lập không chính xác sẽ ngăn cản người dùng đăng nhập vào hệ thống.',
+	'ACP_COOKIE_SETTINGS_EXPLAIN'	=> 'Những thiết lập bên dưới được sử dụng để gửi cookie đến trình duyệt của khách ghé thăm. Trong hều hết các trường hợp, bạn nên sử dụng giá trị mặc định của cookie và đừng thay đổi chúng nếu không đủ khả năng quản lí hay không thực sự cần thiết. Nếu bạn thực sự cần thay đổi giá trị mặc định, hãy cẩn thận vì những thiết lập không chính xác sẽ ngăn cản người dùng đăng nhập vào hệ thống. Nếu người dùng vẫn bị mất trạng thái ghi nhớ đăng nhập, hãy xem bài hướng dẫn <b><a href="https://www.phpbb.com/support/go/cookie-settings/">Sửa thiết lập cookie không đúng</a></b>.',
 
 	'COOKIE_DOMAIN'				=> 'Tên miền cookie',
+	'COOKIE_DOMAIN_EXPLAIN'		=> 'Đây là mục cấu hình tùy chọn, để trống nếu bạn không chắc chắn.<br /><br /> Nếu sử dụng nhiều tên miền cho hệ thống, hãy để trống phần này. Nếu cùng sử dụng tên miền chính hay tên miền con với nhau, ví dụ <code>example.com</code> và <code>forums.example.com</code>, thì hãy nhập vào phần tên miền chính đi sau dấu chấm, ví dụ <code>.example.com</code>.',
 	'COOKIE_NAME'				=> 'Tên cookie',
+	'COOKIE_NAME_EXPLAIN'		=> 'Đặt bất kỳ tên nào bạn thích. Khi thay đổi tên cookie, cookie cũ sẽ không còn được sử dụng trên trình duyệt người dùng.',
 	'COOKIE_NOTICE'				=> 'Thông báo sử dụng cookie',
 	'COOKIE_NOTICE_EXPLAIN'		=> 'Thông báo cho người dùng biết website có sử dụng cookie. Điều này được yêu cầu tùy thuộc vào luật pháp quốc gia và nội dung webiste của bạn.',
 	'COOKIE_PATH'				=> 'Đường dẫn cookie',
+	'COOKIE_PATH_EXPLAIN'		=> 'Chỉ nhập vào dấu / bất kể đường dẫn hệ thống là gì.',
 	'COOKIE_SECURE'				=> 'Cookie bảo mật',
 	'COOKIE_SECURE_EXPLAIN'		=> 'Nếu máy chủ của bạn đang chạy SSL thì hãy bật tùy chọn này, còn nếu không thì hãy vô hiệu đi. Nếu như bạn bật tùy chọn này và máy chủ của bạn không chạy trên SSL thì kết quả là sẽ xảy ra lỗi trong suốt quá trình truy xuất đến máy chủ.',
 	'ONLINE_LENGTH'				=> 'Thời gian tính số người trực tuyến',
@@ -396,6 +401,8 @@ $lang = array_merge($lang, array(
 	'LOAD_CPF_VIEWTOPIC'					=> 'Hiển thị mục thông tin cá nhân tùy biến trong trang xem chủ đề',
 	'LOAD_USER_ACTIVITY'					=> 'Hiển thị những hoạt động của thành viên',
 	'LOAD_USER_ACTIVITY_EXPLAIN'			=> 'Hiển thị những chuyên mục/chủ đề không bị khóa trong phần thông tin cá nhân của thành viên và trong phần thiết lập cá nhân. Chúng tôi khuyên bạn nên tắt tùy chọn này trên các diễn đàn có từ một triệu bài viết trở lên.',
+	'LOAD_USER_ACTIVITY_LIMIT'				=> 'Số bài viết tối đa xem là tích cực',
+	'LOAD_USER_ACTIVITY_LIMIT_EXPLAIN'		=> 'Phần chuyên mục và chủ đề tích cực sẽ không hiển thị nếu thành viên có số bài viết vượt qua mức thiết lập này. Nhập số <strong>0</strong> để không giới hạn.',
 	'READ_NOTIFICATION_EXPIRE_DAYS'			=> 'Số ngày thông báo hết hạn',
 	'READ_NOTIFICATION_EXPIRE_DAYS_EXPLAIN' => 'Số ngày mà các thông báo hệ thống gửi đến người dùng đã xem qua sẽ tự động bị xóa. Nhập số <strong>0</strong> để giữ lại tất cả thông báo.',
 	'RECOMPILE_STYLES'						=> 'Biên dịch lại các thành phần giao diện cũ',
@@ -566,6 +573,8 @@ $lang = array_merge($lang, array(
 	'ENABLE_EMAIL_EXPLAIN'				=> 'Nếu tắt tùy chọn này, sẽ không có email nào được gửi đi từ hệ thống. <em>Lưu ý rằng tùy chọn kích hoạt tài khoản bởi chính người dùng hay quản trị viên qua email phụ thuộc vào tùy chọn này. Nếu bạn đang sử dụng một trong hai loại yêu cầu kích hoạt trên thì khi tắt tùy chọn này cũng đồng nghĩa việc đăng ký tài khoản mới sẽ bị vô hiệu.</em>',
 	'SEND_TEST_EMAIL'					=> 'Gửi thử email',
 	'SEND_TEST_EMAIL_EXPLAIN'			=> 'Gửi thử email đến địa chỉ email của bạn.',
+	'SMTP_ALLOW_SELF_SIGNED'			=> 'Cho phép chứng chỉ SSL tự xác thực',
+	'SMTP_ALLOW_SELF_SIGNED_EXPLAIN'	=> 'Cho phép kết nối đến máy chủ SMTP dùng chứng chỉ SSL tự xác thực.<em><strong>CẢNH BÁO:</strong> Thiết lập này tiềm ẩn nguy cơ bảo mật.</em>',
 	'SMTP_AUTH_METHOD'					=> 'Chọn phương pháp xác thực cho SMTP',
 	'SMTP_AUTH_METHOD_EXPLAIN'			=> 'Chỉ sử dụng nếu tên đăng nhập/mật khẩu xác thực đã được thiết lập. Hãy yêu cầu nhà cung cấp dịch vụ lưu trữ Web của bạn nếu bạn không chắc chắn phải chọn phương pháp nào.',
 	'SMTP_CRAM_MD5'						=> 'CRAM-MD5',
@@ -582,6 +591,10 @@ $lang = array_merge($lang, array(
 	'SMTP_SETTINGS'						=> 'Thiết lập SMTP',
 	'SMTP_USERNAME'						=> 'Tên đăng nhập SMTP',
 	'SMTP_USERNAME_EXPLAIN'				=> 'Chỉ nhập vào tên đăng nhập nếu máy chủ SMTP của bạn yêu cầu.',
+	'SMTP_VERIFY_PEER'					=> 'Kiểm tra chứng chỉ SSL',
+	'SMTP_VERIFY_PEER_EXPLAIN'			=> 'Yêu cầu kiểm tra chứng chỉ SSL hợp lệ trên máy chủ SMTP.<em><strong>CẢNH BÁO:</strong> Kết nối đến máy chủ không có chứng chỉ SSL hợp lệ tiềm ẩn nguy cơ bảo mật.</em>',
+	'SMTP_VERIFY_PEER_NAME'				=> 'Kiểm tra tên máy chủ SMTP',
+	'SMTP_VERIFY_PEER_NAME_EXPLAIN'		=> 'Yêu cầu kiểm tra tên máy chủ SMTP đang kết nối qua SSL / TLS.<em><strong>CẢNH BÁO:</strong> Kết nối đến máy chủ không thể kiểm tra tiềm ẩn nguy cơ bảo mật.</em>',
 	'TEST_EMAIL_SENT'					=> 'Đã gửi thử email.<br />Nếu bạn không nhận được, vui lòng kiểm tra lại thiết lạp email.<br /><br />Để được trợ giúp, hãy ghé thăm <a href="https://www.phpbb.com/community/">diễn đàn hỗ trợ</a>.',
 
 	'USE_SMTP'							=> 'Sử dụng máy chủ SMTP để gửi email',
@@ -592,6 +605,8 @@ $lang = array_merge($lang, array(
 $lang = array_merge($lang, array(
 	'ACP_JABBER_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí thiết lập và bật tùy chọn sử dụng máy chủ Jabber để gửi tin nhắn nhanh và thông báo của hệ thống. Jabber là một giao thức mã nguồn mở và bất kì ai cũng có thể sử dụng miễn phí. Một vài máy chủ Jabber đính kèm cả cổng truy xuất và dịch vụ chuyển tin cho phép bạn liên hệ với các người dùng trên hệ thống mạng khác. Không phải tất cả các máy chủ đều có dịch vụ chuyển tin và những thay đổi trong giao thức kết nối có thể ngăn cản việc gửi tin nhắn. Hãy chắc chắn rằng bạn nhập thông tin về tài khoản đã được đăng ký. Hệ thống phpBB sẽ sử dụng những thông tin mà bạn cung cấp này tại đây.',
 
+	'JAB_ALLOW_SELF_SIGNED'			=> 'Cho phép chứng chỉ SSL tự xác thực',
+	'JAB_ALLOW_SELF_SIGNED_EXPLAIN'	=> 'Cho phép kết nối đến máy chủ Jabber dùng chứng chỉ SSL tự xác thực.<em><strong>CẢNH BÁO:</strong> Thiết lập này tiềm ẩn nguy cơ bảo mật.</em>',
 	'JAB_ENABLE'					=> 'Sử dụng tài khoản Jabber',
 	'JAB_ENABLE_EXPLAIN'			=> 'Tùy chọn cho phép nhắn tin và thông báo bằng máy chủ Jabber.',
 	'JAB_GTALK_NOTE'				=> 'Lưu ý rằng GTalk sẽ không hoạt động được bởi vì hàm chức năng <samp>dns_get_record</samp> không thể tìm thấy. Hàm chức năng này không có sẵn trong PHP4 và không được bổ sung trên các hệ thống Windows. Hiện tại, nó cũng không hoạt động trên các hệ thống BSD, bao gồm cả Mac OS.',
@@ -608,4 +623,8 @@ $lang = array_merge($lang, array(
 	'JAB_USE_SSL_EXPLAIN'			=> 'Nếu bật tùy chọn này, một kết nối an toàn sẽ được cố gắng thiết lập. Cổng máy chủ Jabber sẽ được chỉnh sửa thành <strong>5223</strong> nếu cổng <strong>5222</strong> được chỉ định.',
 	'JAB_USERNAME'					=> 'Tên người dùng Jabber hoặc JID',
 	'JAB_USERNAME_EXPLAIN'			=> 'Xác định một tên người dùng đã đăng ký hoặc một JID hợp lệ. Tên người dùng sẽ không được kiểm tra hợp lệ. Nếu bạn chỉ xác định một tên người dùng thì JID của bạn sẽ trở thành tên người dùng và máy chủ Jabber sẽ xác thực bạn như trên. Nếu không muốn, bạn có thể xác định một JID, ví dụ như <samp>user@jabber.org</samp>.',
+	'JAB_VERIFY_PEER'				=> 'Kiểm tra chứng chỉ SSL',
+	'JAB_VERIFY_PEER_EXPLAIN'		=> 'Yêu cầu kiểm tra chứng chỉ SSL hợp lệ trên máy chủ Jabber.<em><strong>CẢNH BÁO:</strong> Kết nối đến máy chủ không có chứng chỉ SSL hợp lệ tiềm ẩn nguy cơ bảo mật.</em>',
+	'JAB_VERIFY_PEER_NAME'			=> 'Kiểm tra tên tài khoản Jabber',
+	'JAB_VERIFY_PEER_NAME_EXPLAIN'	=> 'Yêu cầu kiểm tra tên tài khoản Jabber đang kết nối qua SSL / TLS.<em><strong>CẢNH BÁO:</strong> Kết nối đến tài khoản không thể kiểm tra tiềm ẩn nguy cơ bảo mật.</em>',
 ));

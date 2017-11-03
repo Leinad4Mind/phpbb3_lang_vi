@@ -394,7 +394,8 @@ $lang = array_merge($lang, array(
 	'NUMBER_USERS'		=> 'Số thành viên',
 	'NUMBER_ORPHAN'		=> 'Số tập tin đính kèm không sử dụng',
 
-	'PHP_VERSION_OLD'	=> 'Phiên bản PHP trên máy chủ không còn được hỗ trợ bởi các phiên bản phpBB sau này. %Chi tiết%s',
+	'PHP_VERSION'		=> 'Phiên bản PHP',
+	'PHP_VERSION_OLD'	=> 'Phiên bản PHP trên máy chủ (%1$s) không còn được hỗ trợ bởi các phiên bản phpBB sau này. Phiên bản PHP tối thiểu yêu cầu là %2$s. %3$sChi tiết%4$s',
 
 	'POSTS_PER_DAY'		=> 'Số bài viết/ngày',
 
@@ -443,6 +444,9 @@ $lang = array_merge($lang, array(
 	'VERSIONCHECK_FORCE_UPDATE'		=> 'Kiểm tra lại phiên bản',
 	'VERSION_CHECK'					=> 'Kiểm tra phiên bản',
 	'VERSION_CHECK_EXPLAIN'			=> 'Kiểm tra phiên bản phpBB mới.',
+	'VERSIONCHECK_INVALID_ENTRY'	=> 'Dữ liệu phiên bản mới chứa đối tượng không hỗ trợ.',
+	'VERSIONCHECK_INVALID_URL'		=> 'Dữ liệu phiên bản mới chứa liên kết không hợp lệ.',
+	'VERSIONCHECK_INVALID_VERSION'	=> 'Dữ liệu phiên bản mới chứa số phiên bản không hợp lệ.',
 	'VERSION_NOT_UP_TO_DATE_ACP'	=> 'Bản cài đặt phpBB này đã cũ.<br />Bên dưới là thông báo phát hành của phiên bản mới nhất kèm hướng dẫn cho bạn cập nhật.',
 	'VERSION_NOT_UP_TO_DATE_TITLE'	=> 'Bản cài đặt phpBB này đã cũ.',
 	'VERSION_UP_TO_DATE_ACP'		=> 'Bản cài đặt phpBB này là mới nhất. Hiện tại không có cập nhật nào.',
