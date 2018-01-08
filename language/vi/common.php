@@ -4,7 +4,7 @@
 * common [Vietnamese]
 *
 * @package language
-* @version 1.169
+* @version 1.168
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -81,9 +81,8 @@ $lang = array_merge($lang, array(
 	'ALL_FORUMS'											=> 'Tất cả chuyên mục',
 	'ALL_MESSAGES'											=> 'Tất cả tin nhắn',
 	'ALL_POSTS'												=> 'Tất cả bài viết',
-	'ALL_TIMES'												=> 'Múi giờ <span title="%2$s">%1$s</span>',
+	'ALL_TIMES'												=> 'Múi giờ <abbr title="%2$s">%1$s</abbr>',
 	'ALL_TOPICS'											=> 'Tất cả chủ đề',
-	'ALT_TEXT'												=> 'Tên khác',
 	'AND'													=> 'Và',
 	'ARE_WATCHING_FORUM'									=> 'Bạn đã đồng ý nhận thông báo bài viết mới trong chuyên mục này.',
 	'ARE_WATCHING_TOPIC'									=> 'Bạn đã đồng ý nhận thông báo bài viết mới trong chủ đề này.',
@@ -98,7 +97,6 @@ $lang = array_merge($lang, array(
 	'AUTH_PROVIDER_OAUTH_SERVICE_BITLY'						=> 'Bitly',
 	'AUTH_PROVIDER_OAUTH_SERVICE_FACEBOOK'					=> 'Facebook',
 	'AUTH_PROVIDER_OAUTH_SERVICE_GOOGLE'					=> 'Google',
-	'AUTH_PROVIDER_OAUTH_SERVICE_TWITTER'					=> 'Twitter',
 	'AUTH_PROVIDER_OAUTH_TOKEN_ERROR_NOT_STORED'			=> 'Khóa OAuth chưa được lưu.',
 	'AUTH_PROVIDER_OAUTH_TOKEN_ERROR_INCORRECTLY_STORED'	=> 'Khóa OAuth đã lưu không đúng.',
 	'AVATAR_DISALLOWED_CONTENT'								=> 'Hình bạn vừa tải lên bị từ chối bởi vì nội dung tập tin này đã được xác định có mục đích tấn công hệ thống.',
@@ -107,13 +105,11 @@ $lang = array_merge($lang, array(
 	'AVATAR_EMPTY_REMOTE_DATA'								=> 'Hình đại diện vừa chọn không thể tải lên được vì tập tin từ địa chỉ URL mà bạn đã xác định không hợp lệ hoặc đã bị hỏng.',
 	'AVATAR_INVALID_FILENAME'								=> '<strong>%s</strong> là tên tập tin hình đại diện không hợp lệ.',
 	'AVATAR_NOT_UPLOADED'									=> 'Không thể tải lên hình đại diện.',
-	'AVATAR_NO_TEMP_DIR'									=> 'Không tìm thấy thư mục tạm hoặc thư mục này không thể ghi.',
 	'AVATAR_NO_SIZE'										=> 'Chiều rộng hoặc chiều cao của hình đại diện liên kết không thể xác định được. Bạn hãy vui lòng tự nhập kích thước của hình.',
 	'AVATAR_PARTIAL_UPLOAD'									=> 'Hình đại diện vừa chọn chỉ được tải lên một phần và chưa hoàn chỉnh.',
 	'AVATAR_PHP_SIZE_NA'									=> 'Hình đại diện có dung lượng quá lớn.<br />Dung lượng tối đa cho phép thiết lập bởi tập tin <samp>php.ini</samp> không thể xác định được.',
 	'AVATAR_PHP_SIZE_OVERRUN'								=> 'Hình đại diện có dung lượng quá lớn. Dung lượng tập tin tối đa được phép tải lên là %1$d %2$s.<br />Bạn cần lưu ý rằng dung lượng tối đa này được thiết lập bởi tập tin <samp>php.ini</samp> và không thể thay thế.',
 	'AVATAR_REMOTE_UPLOAD_TIMEOUT'							=> 'Hình đại diện vừa chọn không tải lên thành công vì vượt quá thời gian xử lí.',
-	'AVATAR_PHP_UPLOAD_STOPPED'								=> 'Phần mở rộng PHP đã dừng tiến trình tải lên tập tin.',
 	'AVATAR_URL_INVALID'									=> 'Địa chỉ URL bạn nhập không hợp lệ.',
 	'AVATAR_URL_NOT_FOUND'									=> 'Tập tin bạn nhập không thể tìm thấy.',
 	'AVATAR_WRONG_FILESIZE'									=> 'Dung lượng tập tin hình đại diện phải từ 0 đến %1$d %2$s.',
@@ -178,10 +174,6 @@ $lang = array_merge($lang, array(
 	'CONTACT'				=> 'Liên hệ',
 	'CONTACT_USER'			=> 'Liên hệ %s',
 	'CONTACT_US'			=> 'Liên hệ',
-	'COOKIE_CONSENT_INFO'	=> 'Tìm hiểu thêm',
-	'COOKIE_CONSENT_MSG'	=> 'Website này sử dụng cookie để mang đến cho bạn trải nghiệm tốt nhất khi truy cập.',
-	'COOKIE_CONSENT_OK'		=> 'Tôi đã hiểu!',
-	'COOKIE_CONSENT_HREF'	=> 'http://cookiesandyou.com',
 	'COOKIES_DELETED'		=> 'Tất cả cookie đã được xóa thành công.',
 	'CURRENT_TIME'			=> 'Hôm nay, %s',
 
@@ -237,7 +229,6 @@ $lang = array_merge($lang, array(
 	'FACEBOOK'				=> 'Facebook',
 	'FAQ'					=> 'Trợ giúp',
 	'FAQ_EXPLAIN'			=> 'Những câu hỏi thường gặp',
-	'FEATURE_NOT_AVAILABLE' => 'Chức năng yêu cầu không thể sử dụng.',
 	'FEED'					=> 'Tin nhanh',
 	'FEED_NEWS'				=> 'Tin tức',
 	'FEED_TOPICS_ACTIVE'	=> 'Chủ đề sôi nổi',
@@ -462,7 +453,6 @@ $lang = array_merge($lang, array(
 	'NOTIFICATION_FORUM'					=> '<em>Chuyên mục:</em> %1$s',
 	'NOTIFICATION_GROUP_REQUEST'			=> '<strong>Yêu cầu tham gia</strong> vào nhóm %2$s từ %1$s.',
 	'NOTIFICATION_GROUP_REQUEST_APPROVED'	=> '<strong>Yêu cầu tham gia</strong> vào nhóm %1$s đã được chấp thuận.',
-	'NOTIFICATION_METHOD_INVALID'			=> 'Phương thức thông báo “%s” không hợp lệ.',
 	'NOTIFICATION_PM'						=> '<strong>Tin nhắn mới</strong> từ %1$s:',
 	'NOTIFICATION_POST'						=> array(
 		1	=> '<strong>Bài mới</strong> từ %1$s trong chủ đề:',
@@ -568,6 +558,7 @@ $lang = array_merge($lang, array(
 		1	=> '%d px',
 		2	=> '%d px',
 	),
+	'PLAY_QUICKTIME_FILE'		=> 'Chạy tập tin QuickTime',
 	'PLEASE_WAIT'				=> 'Vui lòng chờ…',
 	'PM'						=> 'Tin nhắn',
 	'PM_REPORTED'				=> 'Xem báo cáo',
@@ -701,13 +692,10 @@ $lang = array_merge($lang, array(
 	'SKYPE'						=> 'Skype',
 	'SMTP_NO_AUTH_SUPPORT'		=> 'Máy chủ SMTP không hỗ trợ giao thức xác thực.',	
 	'SORRY_AUTH_READ'			=> 'Bạn không được phép xem chuyên mục này.',
-	'SORRY_AUTH_READ_TOPIC'		=> 'Bạn không được phép xem chủ đề này.',
 	'SORRY_AUTH_VIEW_ATTACH'	=> 'Bạn không được phép tải về tập tin đính kèm này.',	
 	'SORT_BY'					=> 'Sắp xếp theo',
-	'SORT_DIRECTION'			=> 'Thứ tự',
 	'SORT_JOINED'				=> 'Ngày tham gia',
 	'SORT_LOCATION'				=> 'Nơi đến',
-	'SORT_OPTIONS'				=> 'Tùy chọn hiển thị và sắp xếp',
 	'SORT_RANK'					=> 'Danh hiệu',
 	'SORT_POSTS'				=> 'Số bài viết',
 	'SORT_TOPIC_TITLE'			=> 'Tiêu đề bài viết',
@@ -875,6 +863,7 @@ $lang = array_merge($lang, array(
 	'WEBSITE'				=> 'Website',
 	'WHOIS'					=> 'Tra cứu địa chỉ IP',
 	'WHO_IS_ONLINE'			=> 'Đang trực tuyến',
+	'WLM'					=> 'Tài khoản Windows Live',
 	'WRONG_PASSWORD'		=> 'Bạn vừa nhập mật khẩu không chính xác.',
 	'WRONG_DATA_COLOUR'		=> 'Mã màu bạn nhập không hợp lệ.',
 	'WRONG_DATA_JABBER'		=> 'Tên tài khoản Jabber bạn nhập không hợp lệ.',

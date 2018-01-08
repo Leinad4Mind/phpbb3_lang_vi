@@ -4,7 +4,7 @@
 * migrator [Vietnamese]
 *
 * @package language
-* @version 1.03
+* @version 1.02
 * @copyright (c) 2013 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -58,14 +58,7 @@ $lang = array_merge($lang, array(
 	'MIGRATION_INVALID_DATA_UNDEFINED_TOOL'			=> 'Dữ liệu nâng cấp không hợp lệ. Không xác định công cụ sử dụng.',
 	'MIGRATION_INVALID_DATA_UNKNOWN_TYPE'			=> 'Dữ liệu nâng cấp không hợp lệ. Không xác định loại hình nâng cấp.',
 	'MIGRATION_NOT_FULFILLABLE'						=> 'Việc nâng cấp “%s” không thực thi toàn vẹn, đã bỏ qua thao tác “%2$s”.',
-	'MIGRATION_NOT_INSTALLED'						=> 'Dữ liệu nâng cấp “%s” không được cài đặt.',
 	'MIGRATION_NOT_VALID'							=> '%s không phải thao tác nâng cấp hợp lệ.',
-	'MIGRATION_REVERT_DATA_DONE'					=> 'Dữ liệu đã phục hồi: %1$s; Thời gian: %2$.2f giây',
-	'MIGRATION_REVERT_DATA_IN_PROGRESS'				=> 'Đang phục hồi dữ liệu: %1$s; Thời gian: %2$.2f giây',
-	'MIGRATION_REVERT_DATA_RUNNING'					=> 'Đang phục hồi dữ liệu: %s.',
-	'MIGRATION_REVERT_SCHEMA_DONE'					=> 'Cấu trúc dữ liệu đã phục hồi: %1$s; Thời gian: %2$.2f giây',
-	'MIGRATION_REVERT_SCHEMA_IN_PROGRESS'			=> 'Đang phục hồi cấu trúc dữ liệu: %1$s; Thời gian: %2$.2f giây',
-	'MIGRATION_REVERT_SCHEMA_RUNNING'				=> 'Đang phục hồi cấu trúc dữ liệu: %s.',
 	'MIGRATION_SCHEMA_DONE'							=> 'Cấu trúc dữ liệu đã hoàn tất: %1$s; Thời gian: %2$.2f giây',
 	'MIGRATION_SCHEMA_IN_PROGRESS'					=> 'Cấu trúc đang cập nhật: %1$s; Thời gian: %2$.2f giây',
 	'MIGRATION_SCHEMA_RUNNING'						=> 'Cấu trúc dữ liệu đang xử lí: %s.',

@@ -4,7 +4,7 @@
 * ucp [Vietnamese]
 *
 * @package language
-* @version 1.130
+* @version 1.129
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -330,7 +330,6 @@ $lang = array_merge($lang, array(
 	'NOTIFICATION_GROUP_MISCELLANEOUS'		=> 'Thông báo khác',
 	'NOTIFICATION_GROUP_MODERATION'			=> 'Thông báo điều hành viên',
 	'NOTIFICATION_GROUP_POSTING'			=> 'Thông báo gửi bài',
-	'NOTIFICATION_METHOD_BOARD'				=> 'Thông báo',
 	'NOTIFICATION_METHOD_EMAIL'				=> 'Email',
 	'NOTIFICATION_METHOD_JABBER'			=> 'Jabber',
 	'NOTIFICATION_TYPE'						=> 'Loại thông báo',

@@ -4,7 +4,7 @@
 * mcp [Vietnamese]
 *
 * @package language
-* @version 1.61
+* @version 1.60
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -139,7 +139,6 @@ $lang = array_merge($lang, array(
 	'LOCK_TOPICS_CONFIRM'		=> 'Bạn có chắc chắn muốn khóa tất cả chủ đề đã chọn?',
 	'LOGS_CURRENT_TOPIC'		=> 'Hiện tại đang xem những ghi nhận của:',
 	'LOGIN_EXPLAIN_MCP'			=> 'Bạn phải đăng nhập để quản lí chuyên mục này.',
-	'LOGVIEW_VIEWPOST'			=> 'Xem bài viết',
 	'LOGVIEW_VIEWTOPIC'			=> 'Xem chủ đề',
 	'LOGVIEW_VIEWLOGS'			=> 'Xem ghi nhận chủ đề',
 	'LOGVIEW_VIEWFORUM'			=> 'Xem chuyên mục',

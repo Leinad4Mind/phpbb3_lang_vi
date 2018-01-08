@@ -4,7 +4,7 @@
 * acp/board [Vietnamese]
 *
 * @package language
-* @version 1.117
+* @version 1.116
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -104,7 +104,6 @@ $lang = array_merge($lang, array(
 	'ALLOW_TOPIC_NOTIFY'		=> 'Cho phép theo dõi chủ đề',
 	'BOARD_PM'					=> 'Cho phép gửi tin nhắn',
 	'BOARD_PM_EXPLAIN'			=> 'Tùy chọn kích hoạt chức năng gửi tin nhắn trong hệ thống cho tất cả người dùng.',
-	'ALLOW_BOARD_NOTIFICATIONS' => 'Bật thông báo tương tác',
 ));
 
 // Avatar Settings
@@ -166,8 +165,6 @@ $lang = array_merge($lang, array(
 	'ACP_POST_SETTINGS_EXPLAIN'			=> 'Với công cụ này, bạn có thể thay đổi những thiết lập mặc định đối với chức năng gửi bài viết trong hệ thống.',
 	'ALLOW_POST_LINKS'					=> 'Cho phép sử dụng liên kết trong bài viết/tin nhắn',
 	'ALLOW_POST_LINKS_EXPLAIN'			=> 'Nếu vô hiệu tùy chọn này, thẻ BBCode <code>[URL]</code> và các địa chỉ URL khác trong bài viết/tin nhắn sẽ không được hiển thị như liên kết.',
-	'ALLOWED_SCHEMES_LINKS'				=> 'Cho phép liên kết tài trợ',
-	'ALLOWED_SCHEMES_LINKS_EXPLAIN'		=> 'Người dùng chỉ có thể chèn liên kết thường hoặc liên kết tài trợ nằm trong danh sách được phép.',
 	'ALLOW_POST_FLASH'					=> 'Cho phép sử dụng thẻ BBCode <code>[FLASH]</code> trong bài viết',
 	'ALLOW_POST_FLASH_EXPLAIN'			=> 'Nếu vô hiệu tùy chọn này, thẻ BBCode <code>[FLASH]</code> sẽ bị vô hiệu trong các bài viết. Mặc khác, những thiết lập cấp phép cũng quyết định việc người dùng có thể sử dụng được thẻ BBCode <code>[FLASH]</code> hay không.',
 
@@ -358,8 +355,6 @@ $lang = array_merge($lang, array(
 	'COOKIE_DOMAIN_EXPLAIN'		=> 'Đây là mục cấu hình tùy chọn, để trống nếu bạn không chắc chắn.<br /><br /> Nếu sử dụng nhiều tên miền cho hệ thống, hãy để trống phần này. Nếu cùng sử dụng tên miền chính hay tên miền con với nhau, ví dụ <code>example.com</code> và <code>forums.example.com</code>, thì hãy nhập vào phần tên miền chính đi sau dấu chấm, ví dụ <code>.example.com</code>.',
 	'COOKIE_NAME'				=> 'Tên cookie',
 	'COOKIE_NAME_EXPLAIN'		=> 'Đặt bất kỳ tên nào bạn thích. Khi thay đổi tên cookie, cookie cũ sẽ không còn được sử dụng trên trình duyệt người dùng.',
-	'COOKIE_NOTICE'				=> 'Thông báo sử dụng cookie',
-	'COOKIE_NOTICE_EXPLAIN'		=> 'Thông báo cho người dùng biết website có sử dụng cookie. Điều này được yêu cầu tùy thuộc vào luật pháp quốc gia và nội dung webiste của bạn.',
 	'COOKIE_PATH'				=> 'Đường dẫn cookie',
 	'COOKIE_PATH_EXPLAIN'		=> 'Chỉ nhập vào dấu / bất kể đường dẫn hệ thống là gì.',
 	'COOKIE_SECURE'				=> 'Cookie bảo mật',
@@ -401,8 +396,6 @@ $lang = array_merge($lang, array(
 	'LOAD_CPF_VIEWTOPIC'					=> 'Hiển thị mục thông tin cá nhân tùy biến trong trang xem chủ đề',
 	'LOAD_USER_ACTIVITY'					=> 'Hiển thị những hoạt động của thành viên',
 	'LOAD_USER_ACTIVITY_EXPLAIN'			=> 'Hiển thị những chuyên mục/chủ đề không bị khóa trong phần thông tin cá nhân của thành viên và trong phần thiết lập cá nhân. Chúng tôi khuyên bạn nên tắt tùy chọn này trên các diễn đàn có từ một triệu bài viết trở lên.',
-	'LOAD_USER_ACTIVITY_LIMIT'				=> 'Số bài viết tối đa xem là tích cực',
-	'LOAD_USER_ACTIVITY_LIMIT_EXPLAIN'		=> 'Phần chuyên mục và chủ đề tích cực sẽ không hiển thị nếu thành viên có số bài viết vượt qua mức thiết lập này. Nhập số <strong>0</strong> để không giới hạn.',
 	'READ_NOTIFICATION_EXPIRE_DAYS'			=> 'Số ngày thông báo hết hạn',
 	'READ_NOTIFICATION_EXPIRE_DAYS_EXPLAIN' => 'Số ngày mà các thông báo hệ thống gửi đến người dùng đã xem qua sẽ tự động bị xóa. Nhập số <strong>0</strong> để giữ lại tất cả thông báo.',
 	'RECOMPILE_STYLES'						=> 'Biên dịch lại các thành phần giao diện cũ',
@@ -545,8 +538,6 @@ $lang = array_merge($lang, array(
 	'REFERRER_VALID_EXPLAIN'				=> 'Nếu bật tùy chọn này, tham chiếu của các yêu cầu <var>POST</var> sẽ được kiểm tra lại những thiết lập về máy chủ/đường dẫn. Thiết lập này có thể gây ra rắc rối cho những hệ thống đang sử dụng nhiều tên miền khác nhau hay các phương pháp xác thực bổ sung.',
 	'TPL_ALLOW_PHP'							=> 'Cho phép sử dụng mã PHP trong các tập tin khuôn mẫu',
 	'TPL_ALLOW_PHP_EXPLAIN'					=> 'Nếu bật tùy chọn này, các lệnh <code>PHP</code> và <code>INCLUDEPHP</code> sẽ có thể được sử dụng và biên dịch trong các tập tin khuôn mẫu.',
-	'UPLOAD_CERT_VALID'						=> 'Kiểm tra chứng chỉ an toàn khi tải lên',
-	'UPLOAD_CERT_VALID_EXPLAIN'				=> 'Kiểm tra chứng chỉ an toàn của máy chủ chứa tập tin được lấy về và tải lên lại hệ thống. Đây là chuẩn yêu cầu của các tập tin chứng chỉ <samp>openssl.cafile</samp> hay <samp>curl.cainfo</samp> trong thiết lập của <samp>php.ini</samp>.',
 ));
 
 // Email Settings
@@ -571,8 +562,6 @@ $lang = array_merge($lang, array(
 	'EMAIL_SIG_EXPLAIN'					=> 'Chữ ký được đính kèm trong tất cả các email được gửi đi từ hệ thống.',
 	'ENABLE_EMAIL'						=> 'Bật chức năng gửi email trong hệ thống',
 	'ENABLE_EMAIL_EXPLAIN'				=> 'Nếu tắt tùy chọn này, sẽ không có email nào được gửi đi từ hệ thống. <em>Lưu ý rằng tùy chọn kích hoạt tài khoản bởi chính người dùng hay quản trị viên qua email phụ thuộc vào tùy chọn này. Nếu bạn đang sử dụng một trong hai loại yêu cầu kích hoạt trên thì khi tắt tùy chọn này cũng đồng nghĩa việc đăng ký tài khoản mới sẽ bị vô hiệu.</em>',
-	'SEND_TEST_EMAIL'					=> 'Gửi thử email',
-	'SEND_TEST_EMAIL_EXPLAIN'			=> 'Gửi thử email đến địa chỉ email của bạn.',
 	'SMTP_ALLOW_SELF_SIGNED'			=> 'Cho phép chứng chỉ SSL tự xác thực',
 	'SMTP_ALLOW_SELF_SIGNED_EXPLAIN'	=> 'Cho phép kết nối đến máy chủ SMTP dùng chứng chỉ SSL tự xác thực.<em><strong>CẢNH BÁO:</strong> Thiết lập này tiềm ẩn nguy cơ bảo mật.</em>',
 	'SMTP_AUTH_METHOD'					=> 'Chọn phương pháp xác thực cho SMTP',
@@ -595,7 +584,6 @@ $lang = array_merge($lang, array(
 	'SMTP_VERIFY_PEER_EXPLAIN'			=> 'Yêu cầu kiểm tra chứng chỉ SSL hợp lệ trên máy chủ SMTP.<em><strong>CẢNH BÁO:</strong> Kết nối đến máy chủ không có chứng chỉ SSL hợp lệ tiềm ẩn nguy cơ bảo mật.</em>',
 	'SMTP_VERIFY_PEER_NAME'				=> 'Kiểm tra tên máy chủ SMTP',
 	'SMTP_VERIFY_PEER_NAME_EXPLAIN'		=> 'Yêu cầu kiểm tra tên máy chủ SMTP đang kết nối qua SSL / TLS.<em><strong>CẢNH BÁO:</strong> Kết nối đến máy chủ không thể kiểm tra tiềm ẩn nguy cơ bảo mật.</em>',
-	'TEST_EMAIL_SENT'					=> 'Đã gửi thử email.<br />Nếu bạn không nhận được, vui lòng kiểm tra lại thiết lạp email.<br /><br />Để được trợ giúp, hãy ghé thăm <a href="https://www.phpbb.com/community/">diễn đàn hỗ trợ</a>.',
 
 	'USE_SMTP'							=> 'Sử dụng máy chủ SMTP để gửi email',
 	'USE_SMTP_EXPLAIN'					=> 'Bật tùy chọn này nếu bạn muốn gửi email thông qua một tên miền thay cho hàm gửi email của PHP.',

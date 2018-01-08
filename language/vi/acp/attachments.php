@@ -4,7 +4,7 @@
 * acp/attachments [Vietnamese]
 *
 * @package language
-* @version 1.35
+* @version 1.34
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -74,6 +74,9 @@ $lang = array_merge($lang, array(
 
 	'CAT_FLASH_FILES'			=> 'Nhóm tập tin Flash',
 	'CAT_IMAGES'				=> 'Nhóm tập tin hình ảnh',
+	'CAT_QUICKTIME_FILES'		=> 'Nhóm tập tin Quick Time Media',
+	'CAT_RM_FILES'				=> 'Nhóm tập tin Real Media',
+	'CAT_WM_FILES'				=> 'Nhóm tập tin Windows Media',
 	'CHECK_CONTENT'				=> 'Kiểm tra các tập tin đính kèm',
 	'CHECK_CONTENT_EXPLAIN'		=> 'Một vài trình duyệt có thể bị đánh lừa bằng những loại tập tin nguy hiểm với phần mở rộng không bình thường từ việc tải lên các tập tin. Tùy chọn này sẽ giúp bạn yên tâm rằng những tập tin như thế sẽ bị chặn ngay từ đầu.',
 	'CREATE_GROUP'				=> 'Tạo nhóm tập tin mới',
@@ -106,6 +109,9 @@ $lang = array_merge($lang, array(
 	'EXT_GROUP_FLASH_FILES'			=> 'Tập tin Flash',
 	'EXT_GROUP_IMAGES'				=> 'Tập tin hình ảnh',
 	'EXT_GROUP_PLAIN_TEXT'			=> 'Tập tin văn bản thuần túy',
+	'EXT_GROUP_QUICKTIME_MEDIA'		=> 'Tập tin QuickTime Media',
+	'EXT_GROUP_REAL_MEDIA'			=> 'Tập tin Real Media',
+	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Tập tin Windows Media',
 
 	'FILES_GONE'		=> 'Một vài tập tin đính kèm bạn chọn xóa không tồn tại trên máy chủ. Có thể chúng vừa bị xóa nhưng thời gian phản hồi trễ dẫn đến ghi nhận sai. Những tập tin hiện diện còn lại đều đã được xóa.',
 	'FILES_STATS_WRONG'	=> 'Dữ liệu thống kê tập tin đính kèm trên hệ thống dường như không chính xác và cần được đồng bộ lại. Giá trị ghi nhận trên thực tế: số tập tin đính kèm = %1$d, tổng dung lượng tập tin đính kèm = %2$s.<br />Bấm %3$svào đây%4$s để đồng bộ lại.',
