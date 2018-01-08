@@ -4,7 +4,7 @@
 * acp/groups [Vietnamese]
 *
 * @package language
-* @version 1.43
+* @version 1.44
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -87,7 +87,7 @@ $lang = array_merge($lang, array(
 	'GROUP_MEMBERS'					=> 'Thành viên của nhóm',
 	'GROUP_MEMBERS_EXPLAIN'			=> 'Đây là danh sách toàn bộ các thành viên của nhóm. Danh sách liệt kê này xác định rõ những loại thành viên trong nhóm như những trưởng nhóm, các thành viên đang chờ quyết định cho phép tham gia và những thành viên hiện tại của nhóm. Với công cụ này, bạn có thể quản lí tư cách thành viên của tất cả thành viên cũng như vai trò của họ trong nhóm. Để bỏ chọn trưởng nhóm nhưng không gỡ bỏ họ khỏi nhóm, hãy giáng chức họ, việc này tốt hơn là xóa họ khỏi nhóm. Tương tự, việc chọn thăng chức sẽ thiết lập một thành viên trong nhóm trở thành trưởng nhóm.',
 	'GROUP_MESSAGE_LIMIT'			=> 'Số tin nhắn giới hạn trong mỗi thư mục của các thành viên trong nhóm',
-	'GROUP_MESSAGE_LIMIT_EXPLAIN'	=> 'Thiết lập này sẽ thay thế cho số tin nhắn giới hạn trong mỗi thư mục của các thành viên khác ngoài nhóm. Nhập số <strong>0</strong> để sử dụng giới hạn mặc định giống như các thành viên khác ngoài nhóm.',
+	'GROUP_MESSAGE_LIMIT_EXPLAIN'	=> 'Thiết lập này sẽ thay thế cho số tin nhắn giới hạn trong mỗi thư mục của các thành viên khác ngoài nhóm. Giá trị lớn nhất từ các nhóm mà thành viên tham gia sẽ được dùng làm giá trị sau cùng.<br />Nhập số <strong>0</strong> để bỏ qua thiết lập riêng của nhóm và sử dụng thiết lập chung từ hệ thống.',
 	'GROUP_MODS_ADDED'				=> 'Trưởng nhóm mới đã được thêm vào thành công.',
 	'GROUP_MODS_DEMOTED'			=> 'Trưởng nhóm đã được giáng chức thành công.',
 	'GROUP_MODS_PROMOTED'			=> 'Thành viên của nhóm đã được thăng chức thành công.',
@@ -96,7 +96,7 @@ $lang = array_merge($lang, array(
 	'GROUP_OPEN'					=> 'Nhóm tham gia tự do',
 	'GROUP_PENDING'					=> 'Thành viên chờ quyết định',
 	'GROUP_MAX_RECIPIENTS'			=> 'Số người nhận tối đa cho phép trong mỗi tin nhắn',
-	'GROUP_MAX_RECIPIENTS_EXPLAIN'	=> 'Số lượng người nhận tối đa cho phép đối với một tin nhắn gửi đến nhóm. Nhập số <strong>0</strong> để sử dụng thiết lập chung từ hệ thống.',
+	'GROUP_MAX_RECIPIENTS_EXPLAIN'	=> 'Số lượng người nhận tối đa cho phép đối với một tin nhắn gửi đến nhóm. Giá trị lớn nhất từ các nhóm mà thành viên tham gia sẽ được dùng làm giá trị sau cùng.<br />Nhập số <strong>0</strong> để bỏ qua thiết lập riêng của nhóm và sử dụng thiết lập chung từ hệ thống..',
 	'GROUP_OPTIONS_SAVE'			=> 'Thiết lập cho toàn nhóm',
 	'GROUP_PROMOTE'					=> 'Thăng chức thành trưởng nhóm',
 	'GROUP_RANK'					=> 'Danh hiệu của nhóm',
@@ -133,6 +133,8 @@ $lang = array_merge($lang, array(
 	'NO_USERS'			=> 'Bạn chưa nhập vào bất kì thành viên nào.',
 	'NO_USERS_ADDED'	=> 'Không có thành viên nào được thêm vào nhóm.',
 	'NO_VALID_USERS'	=> 'Bạn vẫn chưa nhập vào bất kì thành viên thích hợp nào cho thao tác trên.',
+
+	'PENDING_MEMBERS'	=> 'Chờ duyệt',
 
 	'SELECT_GROUP'				=> 'Chọn một nhóm',
 	'SPECIAL_GROUPS'			=> 'Nhóm đặc biệt',

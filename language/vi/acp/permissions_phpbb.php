@@ -4,7 +4,7 @@
 * acp/permissions_phpbb (phpBB Permission Set) [Vietnamese]
 *
 * @package language
-* @version 2.05
+* @version 2.07
 * @copyright (c) 2013 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -111,6 +111,7 @@ $lang = array_merge($lang, array(
 // Forum Permissions
 $lang = array_merge($lang, array(
 	'ACL_F_LIST'		=> 'Nhìn thấy chuyên mục',
+	'ACL_F_LIST_TOPICS' => 'Nhìn thấy chủ đề',
 	'ACL_F_READ'		=> 'Xem chuyên mục',
 	'ACL_F_SEARCH'		=> 'Tìm kiếm trong chuyên mục',
 	'ACL_F_SUBSCRIBE'	=> 'Theo dõi chuyên mục',
@@ -121,16 +122,17 @@ $lang = array_merge($lang, array(
 	'ACL_F_DOWNLOAD'	=> 'Tải về tập tin',
 	'ACL_F_REPORT'		=> 'Báo cáo bài viết',
 
-	'ACL_F_POST'		=> 'Tạo chủ đề mới',
-	'ACL_F_STICKY'		=> 'Tạo chú ý',
-	'ACL_F_ANNOUNCE'	=> 'Tạo thông báo',
-	'ACL_F_REPLY'		=> 'Trả lời chủ đề',
-	'ACL_F_EDIT'		=> 'Sửa bài viết của mình',
-	'ACL_F_DELETE'		=> 'Xóa vĩnh viễn bài viết của mình',
-	'ACL_F_SOFTDELETE'	=> 'Xóa nháp bài viết của mình<br /><em>Điều hành viên được cấp phép có thể phục hồi lại bài viết đã bị xóa nháp.</em>',
-	'ACL_F_IGNOREFLOOD' => 'Không giới hạn thời gian gửi bài',
-	'ACL_F_POSTCOUNT'	=> 'Cộng vào số bài viết<br /><em>Thiết lập này chỉ có tác dụng với những bài viết mới sau này.</em>',
-	'ACL_F_NOAPPROVE'	=> 'Gửi bài không cần kiểm duyệt',
+	'ACL_F_POST'			=> 'Tạo chủ đề mới',
+	'ACL_F_STICKY'			=> 'Tạo chú ý',
+	'ACL_F_ANNOUNCE'		=> 'Tạo thông báo',
+	'ACL_F_ANNOUNCE_GLOBAL'	=> 'Tạo thông báo chung',
+	'ACL_F_REPLY'			=> 'Trả lời chủ đề',
+	'ACL_F_EDIT'			=> 'Sửa bài viết của mình',
+	'ACL_F_DELETE'			=> 'Xóa vĩnh viễn bài viết của mình',
+	'ACL_F_SOFTDELETE'		=> 'Xóa nháp bài viết của mình<br /><em>Điều hành viên được cấp phép có thể phục hồi lại bài viết đã bị xóa nháp.</em>',
+	'ACL_F_IGNOREFLOOD'		=> 'Không giới hạn thời gian gửi bài',
+	'ACL_F_POSTCOUNT'		=> 'Cộng vào số bài viết<br /><em>Thiết lập này chỉ có tác dụng với những bài viết mới sau này.</em>',
+	'ACL_F_NOAPPROVE'		=> 'Gửi bài không cần kiểm duyệt',
 
 	'ACL_F_ATTACH'		=> 'Đính kèm tập tin',
 	'ACL_F_ICONS'		=> 'Sử dụng biểu tượng bài viết',

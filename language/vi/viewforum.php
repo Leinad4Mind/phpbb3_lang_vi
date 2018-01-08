@@ -4,7 +4,7 @@
 * viewforum [Vietnamese]
 *
 * @package language
-* @version 1.19
+* @version 1.20
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -55,6 +55,7 @@ $lang = array_merge($lang, array(
 
 	'NEW_POSTS_HOT'				=> 'Có bài viết mới [ Nhiều người xem ]', // Not used anymore
 	'NEW_POSTS_LOCKED'			=> 'Có bài viết mới [ Đã khóa ]', // Not used anymore
+	'NO_FORUMS_IN_CATEGORY'		=> 'Không có chuyên mục nào.',
 	'NO_NEW_POSTS_HOT'			=> 'Không có bài viết mới [ Nhiều người xem ]', // Not used anymore
 	'NO_NEW_POSTS_LOCKED'		=> 'Không có bài viết mới [ Đã khóa ]', // Not used anymore
 	'NO_READ_ACCESS'			=> 'Bạn không được cấp phép để xem các chủ đề trong chuyên mục này.',

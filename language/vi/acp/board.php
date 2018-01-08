@@ -4,7 +4,7 @@
 * acp/board [Vietnamese]
 *
 * @package language
-* @version 1.116
+* @version 1.118
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -104,6 +104,7 @@ $lang = array_merge($lang, array(
 	'ALLOW_TOPIC_NOTIFY'		=> 'Cho phép theo dõi chủ đề',
 	'BOARD_PM'					=> 'Cho phép gửi tin nhắn',
 	'BOARD_PM_EXPLAIN'			=> 'Tùy chọn kích hoạt chức năng gửi tin nhắn trong hệ thống cho tất cả người dùng.',
+	'ALLOW_BOARD_NOTIFICATIONS' => 'Bật thông báo tương tác',
 ));
 
 // Avatar Settings
@@ -111,7 +112,7 @@ $lang = array_merge($lang, array(
 	'ACP_AVATAR_SETTINGS_EXPLAIN'	=> 'Hình đại diện thường là những hình ảnh nhỏ, những hình đơn mà người dùng đính kèm trong thông tin cá nhân của mình. Tùy thuộc vào giao diện được sử dụng, hình đại diện thường hiển thị bên dưới tên tài khoản trong phần xem chủ đề. Với công cụ này, bạn có thể thay đổi cách sử dụng hình đại diện của người dùng. Lưu ý rằng trong trường hợp bạn kích hoạt tùy chọn cho phép người dùng tải lên hình đại diện, bạn cần phải tạo thư mục mang tên bên dưới trong hệ thống theo đúng đường dẫn đã thiết lập và chắc chắn thiết lập cấp phép có thể ghi cho thư mục này trên máy chủ. Bạn cũng cần lưu ý rằng dung lượng tập tin hạn chế cho hình đại diện chỉ áp dụng cho những hình đại diện được tải lên và không có tác dụng đối với những hình đại diện được liên kết từ các website khác.',
 
 	'ALLOW_AVATARS'					=> 'Cho phép sử dụng hình đại diện',
-	'ALLOW_AVATARS_EXPLAIN'			=> 'Tùy chọn cho phép sử dụng tất cả các loại hình đại diện.<br />Nếu bạn vô hiệu toàn bộ hình đại diện hay chỉ một vài chế độ nhất định, hình ảnh đại diện sẽ không còn hiển thị nhưng các người dùng vẫn có thể tải về hình đại diện của chính họ trong phần thiết lập cá nhân.',
+	'ALLOW_AVATARS_EXPLAIN'			=> 'Tùy chọn cho phép sử dụng tất cả các loại hình đại diện.<br>Nếu bạn vô hiệu toàn bộ hình đại diện hay chỉ một vài chế độ nhất định, hình ảnh đại diện sẽ không còn hiển thị nhưng các người dùng vẫn có thể tải về hình đại diện của chính họ trong phần thiết lập cá nhân.',
 	'ALLOW_GRAVATAR'				=> 'Cho phép sử dụng dịch vụ Gravatar',
 	'ALLOW_LOCAL'					=> 'Cho phép sử dụng thư viện hình đại diện',
 	'ALLOW_REMOTE'					=> 'Cho phép liên kết hình đại diện',
@@ -120,9 +121,9 @@ $lang = array_merge($lang, array(
 	'ALLOW_REMOTE_UPLOAD_EXPLAIN'	=> 'Tùy chọn cho phép người dùng tải lên hình đại diện được đặt trên các website khác.',
 	'ALLOW_UPLOAD'					=> 'Cho phép tải lên hình đại diện',
 	'AVATAR_GALLERY_PATH'			=> 'Đường dẫn thư viện hình đại diện',
-	'AVATAR_GALLERY_PATH_EXPLAIN'	=> 'Đường dẫn đến thư mục chứa hình ảnh sử dụng cho thư viện hình đại diện trong hệ thống, ví dụ như <samp>images/avatars/gallery</samp>.<br />Sử dụng 2 dấu chấm <samp>../</samp> sẽ bị bỏ qua vì lý do bảo mật.',
+	'AVATAR_GALLERY_PATH_EXPLAIN'	=> 'Đường dẫn đến thư mục chứa hình ảnh sử dụng cho thư viện hình đại diện trong hệ thống, ví dụ như <samp>images/avatars/gallery</samp>.<br>Sử dụng 2 dấu chấm <samp>../</samp> sẽ bị bỏ qua vì lý do bảo mật.',
 	'AVATAR_STORAGE_PATH'			=> 'Đường dẫn thư mục chứa hình đại diện tải lên',
-	'AVATAR_STORAGE_PATH_EXPLAIN'	=> 'Đường dẫn đến thư mục chứa hình đại diện được tải lên trong hệ thống, ví dụ như <samp>images/avatars/upload</samp>.<br />Chức năng tải lên hình đại diện <strong>sẽ bị vô hiệu</strong> nếu thư mục này không thể ghi.<br />Sử dụng 2 dấu chấm <samp>../</samp> sẽ bị bỏ qua vì lý do bảo mật.',
+	'AVATAR_STORAGE_PATH_EXPLAIN'	=> 'Đường dẫn đến thư mục chứa hình đại diện được tải lên trong hệ thống, ví dụ như <samp>images/avatars/upload</samp>.<br>Chức năng tải lên hình đại diện <strong>sẽ bị vô hiệu</strong> nếu thư mục này không thể ghi.<br>Sử dụng 2 dấu chấm <samp>../</samp> sẽ bị bỏ qua vì lý do bảo mật.',
 	'MAX_AVATAR_SIZE'				=> 'Kích thước hình đại diện tối đa cho phép',
 	'MAX_AVATAR_SIZE_EXPLAIN'		=> 'Chiều rộng x chiều cao với đơn vị tính Pixel.',
 	'MAX_FILESIZE'					=> 'Dung lượng tập tin hình đại diện tối đa cho phép',
@@ -165,6 +166,8 @@ $lang = array_merge($lang, array(
 	'ACP_POST_SETTINGS_EXPLAIN'			=> 'Với công cụ này, bạn có thể thay đổi những thiết lập mặc định đối với chức năng gửi bài viết trong hệ thống.',
 	'ALLOW_POST_LINKS'					=> 'Cho phép sử dụng liên kết trong bài viết/tin nhắn',
 	'ALLOW_POST_LINKS_EXPLAIN'			=> 'Nếu vô hiệu tùy chọn này, thẻ BBCode <code>[URL]</code> và các địa chỉ URL khác trong bài viết/tin nhắn sẽ không được hiển thị như liên kết.',
+	'ALLOWED_SCHEMES_LINKS'				=> 'Cho phép liên kết tài trợ',
+	'ALLOWED_SCHEMES_LINKS_EXPLAIN'		=> 'Người dùng chỉ có thể chèn liên kết thường hoặc liên kết tài trợ nằm trong danh sách được phép.',
 	'ALLOW_POST_FLASH'					=> 'Cho phép sử dụng thẻ BBCode <code>[FLASH]</code> trong bài viết',
 	'ALLOW_POST_FLASH_EXPLAIN'			=> 'Nếu vô hiệu tùy chọn này, thẻ BBCode <code>[FLASH]</code> sẽ bị vô hiệu trong các bài viết. Mặc khác, những thiết lập cấp phép cũng quyết định việc người dùng có thể sử dụng được thẻ BBCode <code>[FLASH]</code> hay không.',
 
@@ -273,22 +276,22 @@ $lang = array_merge($lang, array(
 // Feeds
 $lang = array_merge($lang, array(
 	'ACP_FEED_ENABLE'					=> 'Bật tin nhanh',
-	'ACP_FEED_ENABLE_EXPLAIN'			=> 'Tùy chọn bật/tắt chức năng tạo tin nhanh ATOM cho toàn bộ diễn đàn.<br />Việc vô hiệu tùy chọn này sẽ tắt toàn bộ chức năng tin nhanh, bất kể bạn thiết lập những gì trong phần bên dưới.',
+	'ACP_FEED_ENABLE_EXPLAIN'			=> 'Tùy chọn bật/tắt chức năng tạo tin nhanh ATOM cho toàn bộ diễn đàn.<br>Việc vô hiệu tùy chọn này sẽ tắt toàn bộ chức năng tin nhanh, bất kể bạn thiết lập những gì trong phần bên dưới.',
 	'ACP_FEED_EXCLUDE_ID'				=> 'Loại trừ các chuyên mục',
-	'ACP_FEED_EXCLUDE_ID_EXPLAIN'		=> 'Nội dung từ các chuyên mục này sẽ <strong>không được đính kèm</strong> vào trang tin nhanh. Không chọn chuyên mục nào trong phần này nghĩa là bạn chọn sử dụng toàn bộ các chuyên mục.<br />Chọn/bỏ chọn nhiều chuyên mục bằng cách giữ phím <samp>Ctrl</samp> và nhấp chuột.',
+	'ACP_FEED_EXCLUDE_ID_EXPLAIN'		=> 'Nội dung từ các chuyên mục này sẽ <strong>không được đính kèm</strong> vào trang tin nhanh. Không chọn chuyên mục nào trong phần này nghĩa là bạn chọn sử dụng toàn bộ các chuyên mục.<br>Chọn/bỏ chọn nhiều chuyên mục bằng cách giữ phím <samp>Ctrl</samp> và nhấp chuột.',
 	'ACP_FEED_FORUM'					=> 'Bật tin nhanh cho từng chuyên mục',
 	'ACP_FEED_FORUM_EXPLAIN'			=> 'Hiện những bài viết mới của từng chuyên mục đơn và chuyên mục con.',
 	'ACP_FEED_GENERAL'					=> 'Thiết lập chung',
 	'ACP_FEED_HTTP_AUTH'				=> 'Cho phép xác thực HTTP',
 	'ACP_FEED_HTTP_AUTH_EXPLAIN'		=> 'Tùy chọn cho phép người dùng có thể đọc được nội dung ẩn không dành cho khách bằng cách thêm vào tham số <samp>auth=http</samp> trong địa chỉ URL. Lưu ý rằng một vài bản cài đặt PHP có thể yêu cầu phải chỉnh sửa lại tập tin <code>.htaccess</code>. Bạn có thể đọc hướng dẫn ghi chú trong tập tin này.',
 	'ACP_FEED_ITEM_STATISTICS'			=> 'Thông tin thống kê',
-	'ACP_FEED_ITEM_STATISTICS_EXPLAIN'	=> 'Tùy chọn hiển thị thông tin thống kê cho từng mục tin.<br />(Ví dụ: người gửi, ngày giờ, lượt trả lời, lượt xem)',
+	'ACP_FEED_ITEM_STATISTICS_EXPLAIN'	=> 'Tùy chọn hiển thị thông tin thống kê cho từng mục tin.<br>(Ví dụ: người gửi, ngày giờ, lượt trả lời, lượt xem)',
 	'ACP_FEED_LIMIT'					=> 'Số lượng mục tin',
 	'ACP_FEED_LIMIT_EXPLAIN'			=> 'Số lượng tối đa các mục tin nhanh được hiển thị trên trang tin.',
 	'ACP_FEED_MANAGEMENT'				=> 'Thiết lập kênh tin nhanh',
 	'ACP_FEED_MANAGEMENT_EXPLAIN'		=> 'Sử dụng công cụ này, bạn có thể tạo ra các nguồn tin nhanh theo chuẩn ATOM, nhận dạng bất kỳ thẻ BBCode nào trong bài viết để có thể đọc được từ các nguồn bên ngoài.',
 	'ACP_FEED_NEWS'						=> 'Chuyên mục lấy tin',
-	'ACP_FEED_NEWS_EXPLAIN'				=> 'Lấy nội dung từ các bài viết mới nhất của những chuyên mục này. Không chọn chuyên mục nào trong phần này nghĩa là bạn vô hiệu chức năng tạo tin nhanh.<br />Chọn/bỏ chọn nhiều chuyên mục bằng cách giữ phím <samp>Ctrl</samp> và nhấp chuột.',
+	'ACP_FEED_NEWS_EXPLAIN'				=> 'Lấy nội dung từ các bài viết mới nhất của những chuyên mục này. Không chọn chuyên mục nào trong phần này nghĩa là bạn vô hiệu chức năng tạo tin nhanh.<br>Chọn/bỏ chọn nhiều chuyên mục bằng cách giữ phím <samp>Ctrl</samp> và nhấp chuột.',
 	'ACP_FEED_OVERALL'					=> 'Bật tin nhanh cho toàn bộ diễn đàn',
 	'ACP_FEED_OVERALL_EXPLAIN'			=> 'Hiện những bài viết mới của toàn bộ diễn đàn.',
 	'ACP_FEED_OVERALL_FORUMS'			=> 'Bật tin nhanh cho toàn bộ chuyên mục',
@@ -352,11 +355,13 @@ $lang = array_merge($lang, array(
 	'ACP_COOKIE_SETTINGS_EXPLAIN'	=> 'Những thiết lập bên dưới được sử dụng để gửi cookie đến trình duyệt của khách ghé thăm. Trong hều hết các trường hợp, bạn nên sử dụng giá trị mặc định của cookie và đừng thay đổi chúng nếu không đủ khả năng quản lí hay không thực sự cần thiết. Nếu bạn thực sự cần thay đổi giá trị mặc định, hãy cẩn thận vì những thiết lập không chính xác sẽ ngăn cản người dùng đăng nhập vào hệ thống. Nếu người dùng vẫn bị mất trạng thái ghi nhớ đăng nhập, hãy xem bài hướng dẫn <b><a href="https://www.phpbb.com/support/go/cookie-settings/">Sửa thiết lập cookie không đúng</a></b>.',
 
 	'COOKIE_DOMAIN'				=> 'Tên miền cookie',
-	'COOKIE_DOMAIN_EXPLAIN'		=> 'Đây là mục cấu hình tùy chọn, để trống nếu bạn không chắc chắn.<br /><br /> Nếu sử dụng nhiều tên miền cho hệ thống, hãy để trống phần này. Nếu cùng sử dụng tên miền chính hay tên miền con với nhau, ví dụ <code>example.com</code> và <code>forums.example.com</code>, thì hãy nhập vào phần tên miền chính đi sau dấu chấm, ví dụ <code>.example.com</code>.',
+	'COOKIE_DOMAIN_EXPLAIN'		=> 'Đây là mục cấu hình tùy chọn, để trống nếu bạn không chắc chắn.<br><br> Nếu sử dụng nhiều tên miền cho hệ thống, hãy để trống phần này. Nếu cùng sử dụng tên miền chính hay tên miền con với nhau, ví dụ <code>example.com</code> và <code>forums.example.com</code>, thì hãy nhập vào phần tên miền chính đi sau dấu chấm, ví dụ <code>.example.com</code>.',
 	'COOKIE_NAME'				=> 'Tên cookie',
 	'COOKIE_NAME_EXPLAIN'		=> 'Đặt bất kỳ tên nào bạn thích. Khi thay đổi tên cookie, cookie cũ sẽ không còn được sử dụng trên trình duyệt người dùng.',
+	'COOKIE_NOTICE'				=> 'Thông báo sử dụng cookie',
+	'COOKIE_NOTICE_EXPLAIN'		=> 'Thông báo cho người dùng biết website có sử dụng cookie. Điều này được yêu cầu tùy thuộc vào luật pháp quốc gia và nội dung webiste của bạn.',
 	'COOKIE_PATH'				=> 'Đường dẫn cookie',
-	'COOKIE_PATH_EXPLAIN'		=> 'Chỉ nhập vào dấu / bất kể đường dẫn hệ thống là gì.',
+	'COOKIE_PATH_EXPLAIN'		=> 'Khai báo giống như đường dẫn hệ thống phpBB hoặc chỉ cần nhập vào dấu / để sử dụng cho toàn bộ đường dẫn của tên miền.',
 	'COOKIE_SECURE'				=> 'Cookie bảo mật',
 	'COOKIE_SECURE_EXPLAIN'		=> 'Nếu máy chủ của bạn đang chạy SSL thì hãy bật tùy chọn này, còn nếu không thì hãy vô hiệu đi. Nếu như bạn bật tùy chọn này và máy chủ của bạn không chạy trên SSL thì kết quả là sẽ xảy ra lỗi trong suốt quá trình truy xuất đến máy chủ.',
 	'ONLINE_LENGTH'				=> 'Thời gian tính số người trực tuyến',
@@ -370,7 +375,7 @@ $lang = array_merge($lang, array(
 	'ACP_CONTACT_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể mở hay vô hiệu trang liên hệ, cũng như cung cấp các thông tin liên hệ khi cần thiết đến người dùng.',
 
 	'CONTACT_US_ENABLE'			=> 'Mở trang liên hệ',
-	'CONTACT_US_ENABLE_EXPLAIN'	=> 'Trang liên hệ giúp người dùng có thể dễ dàng gửi email trực tiếp đến người quản trị.',
+	'CONTACT_US_ENABLE_EXPLAIN'	=> 'Trang liên hệ giúp người dùng có thể dễ dàng gửi email trực tiếp đến người quản trị. Lưu ý rằng thiết lập gửi email phải được bật. Bạn có thể tìm thấy mục thiết lập này trong “Thiết lập email”.',
 	'CONTACT_US_INFO'			=> 'Thông tin liên hệ',
 	'CONTACT_US_INFO_EXPLAIN'	=> 'Nội dung sẽ được hiển thị trên trang liên hệ.',
 	'CONTACT_US_INFO_PREVIEW'	=> 'Trang liên hệ - Xem thử',
@@ -396,6 +401,8 @@ $lang = array_merge($lang, array(
 	'LOAD_CPF_VIEWTOPIC'					=> 'Hiển thị mục thông tin cá nhân tùy biến trong trang xem chủ đề',
 	'LOAD_USER_ACTIVITY'					=> 'Hiển thị những hoạt động của thành viên',
 	'LOAD_USER_ACTIVITY_EXPLAIN'			=> 'Hiển thị những chuyên mục/chủ đề không bị khóa trong phần thông tin cá nhân của thành viên và trong phần thiết lập cá nhân. Chúng tôi khuyên bạn nên tắt tùy chọn này trên các diễn đàn có từ một triệu bài viết trở lên.',
+	'LOAD_USER_ACTIVITY_LIMIT'				=> 'Số bài viết tối đa xem là tích cực',
+	'LOAD_USER_ACTIVITY_LIMIT_EXPLAIN'		=> 'Phần chuyên mục và chủ đề tích cực sẽ không hiển thị nếu thành viên có số bài viết vượt qua mức thiết lập này. Nhập số <strong>0</strong> để không giới hạn.',
 	'READ_NOTIFICATION_EXPIRE_DAYS'			=> 'Số ngày thông báo hết hạn',
 	'READ_NOTIFICATION_EXPIRE_DAYS_EXPLAIN' => 'Số ngày mà các thông báo hệ thống gửi đến người dùng đã xem qua sẽ tự động bị xóa. Nhập số <strong>0</strong> để giữ lại tất cả thông báo.',
 	'RECOMPILE_STYLES'						=> 'Biên dịch lại các thành phần giao diện cũ',
@@ -425,7 +432,7 @@ $lang = array_merge($lang, array(
 
 	'AUTH_METHOD'								=> 'Chọn phương pháp xác thực',
 	'AUTH_PROVIDER_OAUTH_ERROR_ELEMENT_MISSING'	=> 'Bạn phải cung cấp cả khóa định danh lẫn khóa bảo mật của dịch vụ OAuth muốn sử dụng. Bạn chỉ mới cung cấp một khóa và chưa đủ yêu cầu.',
-	'AUTH_PROVIDER_OAUTH_EXPLAIN'				=> 'Mỗi nhà cung cấp dịch vụ OAuth đều yêu cầu một khóa định danh và khóa bảo mật duy nhất để xác thực với hệ thống của họ. Bạn sẽ được cung cấp những khóa trên khi đăng ký website hay dịch vụ của mình với những dịch vụ OAuth này và hãy nhập vào chúng thật chính xác.<br />Bất kì dịch vụ nào không cung cấp đủ hai khóa trên sẽ không thể tiến hành kết nối với tài khoản người dùng trên hệ thống. Bên cạnh đó, người dùng vẫn có thể đăng ký và đăng nhập vào hệ thống qua cơ sở dữ liệu bình thường.',
+	'AUTH_PROVIDER_OAUTH_EXPLAIN'				=> 'Mỗi nhà cung cấp dịch vụ OAuth đều yêu cầu một khóa định danh và khóa bảo mật duy nhất để xác thực với hệ thống của họ. Bạn sẽ được cung cấp những khóa trên khi đăng ký website hay dịch vụ của mình với những dịch vụ OAuth này và hãy nhập vào chúng thật chính xác.<br>Bất kì dịch vụ nào không cung cấp đủ hai khóa trên sẽ không thể tiến hành kết nối với tài khoản người dùng trên hệ thống. Bên cạnh đó, người dùng vẫn có thể đăng ký và đăng nhập vào hệ thống qua cơ sở dữ liệu bình thường.',
 	'AUTH_PROVIDER_OAUTH_KEY'					=> 'Khóa',
 	'AUTH_PROVIDER_OAUTH_TITLE'					=> 'OAuth',
 	'AUTH_PROVIDER_OAUTH_SECRET'				=> 'Khóa bảo mật',
@@ -440,7 +447,7 @@ $lang = array_merge($lang, array(
 	'LDAP_NO_EMAIL'					=> 'Thuộc tính của địa chỉ email bạn vừa xác định không tồn tại.',	
 	'LDAP_NO_IDENTITY'				=> 'Không thể tìm khóa định danh đăng nhập cho <strong>%s</strong>.',
 	'LDAP_PASSWORD'					=> 'Mật khẩu LDAP',
-	'LDAP_PASSWORD_EXPLAIN'			=> 'Để trống phần này để sử dụng kết nối ẩn danh. Nếu không, bạn hãy điền vào mật khẩu cho tài khoản LDAP ở trên. Mục này được yêu cầu cho các thư mục máy chủ đang hoạt động.<br /><em><strong>CẢNH BÁO:</strong> Mật khẩu này sẽ được lưu trữ dưới dạng văn bản thuần trong cơ sở dữ liệu, vì thế nó có thể bị xem bởi bất kì ai có quyền truy cập vào cơ sở dữ liệu của bạn hoặc được phép xem trang cấu hình này.</em>',
+	'LDAP_PASSWORD_EXPLAIN'			=> 'Để trống phần này để sử dụng kết nối ẩn danh. Nếu không, bạn hãy điền vào mật khẩu cho tài khoản LDAP ở trên. Mục này được yêu cầu cho các thư mục máy chủ đang hoạt động.<br><em><strong>CẢNH BÁO:</strong> Mật khẩu này sẽ được lưu trữ dưới dạng văn bản thuần trong cơ sở dữ liệu, vì thế nó có thể bị xem bởi bất kì ai có quyền truy cập vào cơ sở dữ liệu của bạn hoặc được phép xem trang cấu hình này.</em>',
 	'LDAP_PORT'						=> 'Cổng máy chủ LDAP',
 	'LDAP_PORT_EXPLAIN'				=> 'Tùy chọn này cho phép bạn có thể xác định một cổng khác được sử dụng để kết nối đến máy chủ LDAP thay vì dùng cổng mặc định là <strong>389</strong>.',
 	'LDAP_SERVER'					=> 'Địa chỉ máy chủ LDAP',
@@ -521,7 +528,7 @@ $lang = array_merge($lang, array(
 	'IP_LOGIN_LIMIT_TIME'					=> 'Thời gian giới hạn địa chỉ IP đăng nhập',
 	'IP_LOGIN_LIMIT_TIME_EXPLAIN'			=> 'Việc cho phép đăng nhập lại sẽ kết thúc sau khoảng thời gian này.',
 	'IP_LOGIN_LIMIT_USE_FORWARDED'			=> 'Giới hạn số lần đăng nhập bằng khai báo <var>X_FORWARDED_FOR</var>',
-	'IP_LOGIN_LIMIT_USE_FORWARDED_EXPLAIN'	=> 'Thay vì giới hạn số lần đăng nhập bằng địa chỉ IP, bạn có thể giới hạn bằng giá trị của khai báo <var>X_FORWARDED_FOR</var>. <br /><em><strong>Cảnh báo:</strong> Chỉ bật chức năng này nếu hệ thống của bạn đang chạy trên một máy chủ proxy có thiết lập <var>X_FORWARDED_FOR</var> làm giá trị tin cậy.</em>',
+	'IP_LOGIN_LIMIT_USE_FORWARDED_EXPLAIN'	=> 'Thay vì giới hạn số lần đăng nhập bằng địa chỉ IP, bạn có thể giới hạn bằng giá trị của khai báo <var>X_FORWARDED_FOR</var>. <br><em><strong>Cảnh báo:</strong> Chỉ bật chức năng này nếu hệ thống của bạn đang chạy trên một máy chủ proxy có thiết lập <var>X_FORWARDED_FOR</var> làm giá trị tin cậy.</em>',
 	'MAX_LOGIN_ATTEMPTS'					=> 'Số lần đăng nhập tối đa cho phép mỗi người',
 	'MAX_LOGIN_ATTEMPTS_EXPLAIN'			=> 'Số lần cho phép một tài khoản cố gắng đăng nhập trước khi công cụ kiểm tra nhập liệu tự động được bật. Nhập số 0 để không giới hạn số lần đăng nhập thất bại vào hệ thống.',
 	'NO_IP_VALIDATION'						=> 'Không',
@@ -538,6 +545,8 @@ $lang = array_merge($lang, array(
 	'REFERRER_VALID_EXPLAIN'				=> 'Nếu bật tùy chọn này, tham chiếu của các yêu cầu <var>POST</var> sẽ được kiểm tra lại những thiết lập về máy chủ/đường dẫn. Thiết lập này có thể gây ra rắc rối cho những hệ thống đang sử dụng nhiều tên miền khác nhau hay các phương pháp xác thực bổ sung.',
 	'TPL_ALLOW_PHP'							=> 'Cho phép sử dụng mã PHP trong các tập tin khuôn mẫu',
 	'TPL_ALLOW_PHP_EXPLAIN'					=> 'Nếu bật tùy chọn này, các lệnh <code>PHP</code> và <code>INCLUDEPHP</code> sẽ có thể được sử dụng và biên dịch trong các tập tin khuôn mẫu.',
+	'UPLOAD_CERT_VALID'						=> 'Kiểm tra chứng chỉ an toàn khi tải lên',
+	'UPLOAD_CERT_VALID_EXPLAIN'				=> 'Kiểm tra chứng chỉ an toàn của máy chủ chứa tập tin được lấy về và tải lên lại hệ thống. Đây là chuẩn yêu cầu của các tập tin chứng chỉ <samp>openssl.cafile</samp> hay <samp>curl.cainfo</samp> trong thiết lập của <samp>php.ini</samp>.',
 ));
 
 // Email Settings
@@ -545,7 +554,7 @@ $lang = array_merge($lang, array(
 	'ACP_EMAIL_SETTINGS_EXPLAIN'	=> 'Những thiết lập này được sử dụng khi hệ thống gửi email đến các người dùng khác. Hãy chắc chắn địa chỉ email liên hệ mà bạn nhập vào là hợp lệ, bất kì thư rác hay email không gửi được nào có khả năng sẽ được gửi đến địa chỉ này. Nếu máy chủ của bạn không hỗ trợ gửi email thông qua PHP, bạn có thể thay thế bằng cách gửi email trực tiếp thông qua máy chủ SMTP. Điều này yêu cầu bạn phải cung cấp một địa chỉ máy chủ SMTP chính xác cho hệ thống biết. Bạn có thể hỏi nhà cung cấp dịch vụ lưu trữ Web của bạn nếu cần thiết và đừng xác định những máy chủ đã quá lạc hậu! Nếu máy chủ SMTP yêu cầu phải xác thực và chỉ khi thực sự được yêu cầu, bạn hãy cung cấp cho hệ thống biết tên tài khoản, mật khẩu đăng nhập và phương pháp xác thực của máy chủ SMTP.',
 
 	'ADMIN_EMAIL'						=> 'Địa chỉ email gửi đi',
-	'ADMIN_EMAIL_EXPLAIN'				=> 'Địa chỉ email này được sử dụng làm địa chỉ email của người gửi trên tất cả các email được gửi đi và địa chỉ email hỗ trợ kỹ thuật. Nó sẽ luôn luôn được sử dụng trong phần <samp>Địa chỉ quay về</samp> và <samp>Địa chỉ người gửi</samp> trong các email.',
+	'ADMIN_EMAIL_EXPLAIN'				=> 'Địa chỉ email này được sử dụng làm địa chỉ email của người gửi trên tất cả các email được gửi đi và địa chỉ email hỗ trợ kỹ thuật. Nó sẽ luôn luôn được sử dụng trong phần <samp>Địa chỉ người gửi</samp> trong các email.',
 	'BOARD_EMAIL_FORM'					=> 'Cho phép người dùng gửi email từ hệ thống',
 	'BOARD_EMAIL_FORM_EXPLAIN'			=> 'Thay cho việc hiển thị địa chỉ email của người dùng, tùy chọn này cho phép người dùng có thể gửi email cho nhau thông qua hệ thống.',
 	'BOARD_HIDE_EMAILS'					=> 'Ẩn địa chỉ email',
@@ -554,16 +563,18 @@ $lang = array_merge($lang, array(
 	'CONTACT_EMAIL_EXPLAIN'				=> 'Địa chỉ email này được sử dụng khi có việc cần liên hệ, ví dụ như vấn đề thư rác, có lỗi xảy ra… Nó sẽ luôn luôn được sử dụng trong phần thông tin <samp>Gửi từ</samp> và <samp>Trả lời đến địa chỉ</samp> của các email.',
 	'CONTACT_EMAIL_NAME'				=> 'Tên liên hệ',
 	'CONTACT_EMAIL_NAME_EXPLAIN'		=> 'Tên của người gửi mà những người nhận email sẽ nhìn thấy. Nếu bạn không muốn đề tên người gửi, hãy để trống phần này.',
-	'EMAIL_FUNCTION_NAME'				=> 'Tên hàm dùng để gửi email',
-	'EMAIL_FUNCTION_NAME_EXPLAIN'		=> 'Hàm chức năng PHP bạn muốn sử dụng để gửi email.',
+	'EMAIL_FORCE_SENDER'				=> 'Gán địa chỉ email gửi đi',
+	'EMAIL_FORCE_SENDER_EXPLAIN'		=> 'Lấy giá trị <samp>Return-Path</samp> làm địa chỉ email gửi đi thay vì sử dụng tài khoản cục bộ và tên miền trên máy chủ. Thiết lập này không áp dụng cho SMTP.<br><em><strong>CẢNH BÁO:</strong> Tài khoản người dùng trên máy chủ phải được thêm vào danh sách tin cậy trong cấu hình gửi email.</em>',
 	'EMAIL_PACKAGE_SIZE'				=> 'Số lượng email trong mỗi gói email',
 	'EMAIL_PACKAGE_SIZE_EXPLAIN'		=> 'Số lượng email tối đa được gửi đi trong một gói email. Thiết lập này được áp dụng cho những email chờ được gửi đi bên trong máy chủ. Nhập số 0 trong phần này nếu bạn gặp phải bất kì rắc rối nào về những email không gửi đi được.',
 	'EMAIL_SIG'							=> 'Chữ ký email',
 	'EMAIL_SIG_EXPLAIN'					=> 'Chữ ký được đính kèm trong tất cả các email được gửi đi từ hệ thống.',
 	'ENABLE_EMAIL'						=> 'Bật chức năng gửi email trong hệ thống',
 	'ENABLE_EMAIL_EXPLAIN'				=> 'Nếu tắt tùy chọn này, sẽ không có email nào được gửi đi từ hệ thống. <em>Lưu ý rằng tùy chọn kích hoạt tài khoản bởi chính người dùng hay quản trị viên qua email phụ thuộc vào tùy chọn này. Nếu bạn đang sử dụng một trong hai loại yêu cầu kích hoạt trên thì khi tắt tùy chọn này cũng đồng nghĩa việc đăng ký tài khoản mới sẽ bị vô hiệu.</em>',
+	'SEND_TEST_EMAIL'					=> 'Gửi thử email',
+	'SEND_TEST_EMAIL_EXPLAIN'			=> 'Gửi thử email đến địa chỉ email của bạn.',
 	'SMTP_ALLOW_SELF_SIGNED'			=> 'Cho phép chứng chỉ SSL tự xác thực',
-	'SMTP_ALLOW_SELF_SIGNED_EXPLAIN'	=> 'Cho phép kết nối đến máy chủ SMTP dùng chứng chỉ SSL tự xác thực.<em><strong>CẢNH BÁO:</strong> Thiết lập này tiềm ẩn nguy cơ bảo mật.</em>',
+	'SMTP_ALLOW_SELF_SIGNED_EXPLAIN'	=> 'Cho phép kết nối đến máy chủ SMTP dùng chứng chỉ SSL tự xác thực. <br><em><strong>CẢNH BÁO:</strong> Thiết lập này tiềm ẩn nguy cơ bảo mật.</em>',
 	'SMTP_AUTH_METHOD'					=> 'Chọn phương pháp xác thực cho SMTP',
 	'SMTP_AUTH_METHOD_EXPLAIN'			=> 'Chỉ sử dụng nếu tên đăng nhập/mật khẩu xác thực đã được thiết lập. Hãy yêu cầu nhà cung cấp dịch vụ lưu trữ Web của bạn nếu bạn không chắc chắn phải chọn phương pháp nào.',
 	'SMTP_CRAM_MD5'						=> 'CRAM-MD5',
@@ -581,9 +592,10 @@ $lang = array_merge($lang, array(
 	'SMTP_USERNAME'						=> 'Tên đăng nhập SMTP',
 	'SMTP_USERNAME_EXPLAIN'				=> 'Chỉ nhập vào tên đăng nhập nếu máy chủ SMTP của bạn yêu cầu.',
 	'SMTP_VERIFY_PEER'					=> 'Kiểm tra chứng chỉ SSL',
-	'SMTP_VERIFY_PEER_EXPLAIN'			=> 'Yêu cầu kiểm tra chứng chỉ SSL hợp lệ trên máy chủ SMTP.<em><strong>CẢNH BÁO:</strong> Kết nối đến máy chủ không có chứng chỉ SSL hợp lệ tiềm ẩn nguy cơ bảo mật.</em>',
+	'SMTP_VERIFY_PEER_EXPLAIN'			=> 'Yêu cầu kiểm tra chứng chỉ SSL hợp lệ trên máy chủ SMTP. <br><em><strong>CẢNH BÁO:</strong> Kết nối đến máy chủ không có chứng chỉ SSL hợp lệ tiềm ẩn nguy cơ bảo mật.</em>',
 	'SMTP_VERIFY_PEER_NAME'				=> 'Kiểm tra tên máy chủ SMTP',
-	'SMTP_VERIFY_PEER_NAME_EXPLAIN'		=> 'Yêu cầu kiểm tra tên máy chủ SMTP đang kết nối qua SSL / TLS.<em><strong>CẢNH BÁO:</strong> Kết nối đến máy chủ không thể kiểm tra tiềm ẩn nguy cơ bảo mật.</em>',
+	'SMTP_VERIFY_PEER_NAME_EXPLAIN'		=> 'Yêu cầu kiểm tra tên máy chủ SMTP đang kết nối qua SSL / TLS. <br><em><strong>CẢNH BÁO:</strong> Kết nối đến máy chủ không thể kiểm tra tiềm ẩn nguy cơ bảo mật.</em>',
+	'TEST_EMAIL_SENT'					=> 'Đã gửi thử email.<br>Nếu bạn không nhận được, vui lòng kiểm tra lại thiết lạp email.<br><br>Để được trợ giúp, hãy ghé thăm <a href="https://www.phpbb.com/community/">diễn đàn hỗ trợ</a>.',
 
 	'USE_SMTP'							=> 'Sử dụng máy chủ SMTP để gửi email',
 	'USE_SMTP_EXPLAIN'					=> 'Bật tùy chọn này nếu bạn muốn gửi email thông qua một tên miền thay cho hàm gửi email của PHP.',
@@ -594,7 +606,7 @@ $lang = array_merge($lang, array(
 	'ACP_JABBER_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể quản lí thiết lập và bật tùy chọn sử dụng máy chủ Jabber để gửi tin nhắn nhanh và thông báo của hệ thống. Jabber là một giao thức mã nguồn mở và bất kì ai cũng có thể sử dụng miễn phí. Một vài máy chủ Jabber đính kèm cả cổng truy xuất và dịch vụ chuyển tin cho phép bạn liên hệ với các người dùng trên hệ thống mạng khác. Không phải tất cả các máy chủ đều có dịch vụ chuyển tin và những thay đổi trong giao thức kết nối có thể ngăn cản việc gửi tin nhắn. Hãy chắc chắn rằng bạn nhập thông tin về tài khoản đã được đăng ký. Hệ thống phpBB sẽ sử dụng những thông tin mà bạn cung cấp này tại đây.',
 
 	'JAB_ALLOW_SELF_SIGNED'			=> 'Cho phép chứng chỉ SSL tự xác thực',
-	'JAB_ALLOW_SELF_SIGNED_EXPLAIN'	=> 'Cho phép kết nối đến máy chủ Jabber dùng chứng chỉ SSL tự xác thực.<em><strong>CẢNH BÁO:</strong> Thiết lập này tiềm ẩn nguy cơ bảo mật.</em>',
+	'JAB_ALLOW_SELF_SIGNED_EXPLAIN'	=> 'Cho phép kết nối đến máy chủ Jabber dùng chứng chỉ SSL tự xác thực. <br><em><strong>CẢNH BÁO:</strong> Thiết lập này tiềm ẩn nguy cơ bảo mật.</em>',
 	'JAB_ENABLE'					=> 'Sử dụng tài khoản Jabber',
 	'JAB_ENABLE_EXPLAIN'			=> 'Tùy chọn cho phép nhắn tin và thông báo bằng máy chủ Jabber.',
 	'JAB_GTALK_NOTE'				=> 'Lưu ý rằng GTalk sẽ không hoạt động được bởi vì hàm chức năng <samp>dns_get_record</samp> không thể tìm thấy. Hàm chức năng này không có sẵn trong PHP4 và không được bổ sung trên các hệ thống Windows. Hiện tại, nó cũng không hoạt động trên các hệ thống BSD, bao gồm cả Mac OS.',
@@ -612,7 +624,7 @@ $lang = array_merge($lang, array(
 	'JAB_USERNAME'					=> 'Tên người dùng Jabber hoặc JID',
 	'JAB_USERNAME_EXPLAIN'			=> 'Xác định một tên người dùng đã đăng ký hoặc một JID hợp lệ. Tên người dùng sẽ không được kiểm tra hợp lệ. Nếu bạn chỉ xác định một tên người dùng thì JID của bạn sẽ trở thành tên người dùng và máy chủ Jabber sẽ xác thực bạn như trên. Nếu không muốn, bạn có thể xác định một JID, ví dụ như <samp>user@jabber.org</samp>.',
 	'JAB_VERIFY_PEER'				=> 'Kiểm tra chứng chỉ SSL',
-	'JAB_VERIFY_PEER_EXPLAIN'		=> 'Yêu cầu kiểm tra chứng chỉ SSL hợp lệ trên máy chủ Jabber.<em><strong>CẢNH BÁO:</strong> Kết nối đến máy chủ không có chứng chỉ SSL hợp lệ tiềm ẩn nguy cơ bảo mật.</em>',
+	'JAB_VERIFY_PEER_EXPLAIN'		=> 'Yêu cầu kiểm tra chứng chỉ SSL hợp lệ trên máy chủ Jabber. <br><em><strong>CẢNH BÁO:</strong> Kết nối đến máy chủ không có chứng chỉ SSL hợp lệ tiềm ẩn nguy cơ bảo mật.</em>',
 	'JAB_VERIFY_PEER_NAME'			=> 'Kiểm tra tên tài khoản Jabber',
-	'JAB_VERIFY_PEER_NAME_EXPLAIN'	=> 'Yêu cầu kiểm tra tên tài khoản Jabber đang kết nối qua SSL / TLS.<em><strong>CẢNH BÁO:</strong> Kết nối đến tài khoản không thể kiểm tra tiềm ẩn nguy cơ bảo mật.</em>',
+	'JAB_VERIFY_PEER_NAME_EXPLAIN'	=> 'Yêu cầu kiểm tra tên tài khoản Jabber đang kết nối qua SSL / TLS. <br><em><strong>CẢNH BÁO:</strong> Kết nối đến tài khoản không thể kiểm tra tiềm ẩn nguy cơ bảo mật.</em>',
 ));

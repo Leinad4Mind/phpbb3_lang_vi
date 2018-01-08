@@ -4,7 +4,7 @@
 * acp/forums [Vietnamese]
 *
 * @package language
-* @version 1.50
+* @version 1.51
 * @copyright (c) 2006 nedka
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -91,7 +91,7 @@ $lang = array_merge($lang, array(
 	'FORUM_DELETE_EXPLAIN'				=> 'Bạn có thể xóa chuyên mục trong phần bên dưới. Nếu chuyên mục chuyển được, bạn có thể chọn chuyên mục khác mà bạn muốn chuyển toàn bộ chuyên mục con hay chủ đề sang.',
 	'FORUM_DELETED'						=> 'Chuyên mục đã được xóa thành công.',
 	'FORUM_DESC'						=> 'Giới thiệu chuyên mục',
-	'FORUM_DESC_EXPLAIN'				=> 'Bất kì thẻ đánh dấu HTML nào bạn nhập trong đây đều không có tác dụng.',
+	'FORUM_DESC_EXPLAIN'				=> 'Bất kì thẻ đánh dấu HTML nào bạn nhập trong đây đều không có tác dụng. Nếu là nhóm chuyên mục thì phần giới thiệu này không dùng đến.',
 	'FORUM_EDIT_EXPLAIN'				=> 'Bảng điều khiển bên dưới sẽ giúp bạn tùy chỉnh chuyên mục này. Lưu ý rằng việc thiết lập điều hành viên cho chuyên mục này cũng như bảng điều khiển bộ đếm số bài viết được thiết lập từ mục cấp phép chuyên mục trong công cụ cấp phép cho người dùng và nhóm.',
 	'FORUM_IMAGE'						=> 'Hình chuyên mục',
 	'FORUM_IMAGE_EXPLAIN'				=> 'Đường dẫn đến hình ảnh thêm vào sử dụng cho chuyên mục này, nằm trong thư mục chính cài đặt hệ thống.',
